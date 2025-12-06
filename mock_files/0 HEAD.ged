@@ -1,0 +1,207 @@
+0 HEAD
+1 SOUR MockGenerator
+1 GEDC
+2 VERS 5.5.5
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+1 FILE gedcom_3_extended.ged
+1 DEST ExampleSystem
+
+0 @I1@ INDI
+1 NAME John /Doe/
+2 GIVN John
+2 SURN Doe
+1 SEX M
+1 BIRT
+2 DATE 1 JAN 1950
+2 PLAC Boston, Suffolk, Massachusetts, USA
+1 CAST Middle Class
+1 EDUC PhD in Computer Science
+1 IDNO SSN-123-45-6789
+1 OCCU Software Engineer
+1 RESI
+2 PLAC Silicon Valley, California, USA
+1 NOTE Living near tech hub.
+1 NATI American
+1 NCHI 2
+1 NMR 1
+1 FACT
+2 TYPE First programmer in the family
+2 NOTE Pioneer in AI research.
+1 CHAN
+2 DATE 1 JAN 2023
+
+0 @I2@ INDI
+1 NAME Jane /Smith/
+2 GIVN Jane
+2 SURN Smith
+1 SEX F
+1 BIRT
+2 DATE 15 MAR 1955
+2 PLAC New York, New York, USA
+1 EDUC Master of Arts in Literature
+1 OCCU Author
+1 RESI
+2 PLAC Manhattan, New York, USA
+1 NATI British
+1 NCHI 2
+1 TITL Lady
+1 NOTE Writer and editor of novels.
+1 CHAN
+2 DATE 5 FEB 2023
+
+0 @F1@ FAM
+1 HUSB @I1@
+1 WIFE @I2@
+1 MARR
+2 DATE 20 MAY 1975
+2 PLAC New York, New York, USA
+1 CHIL @I3@
+1 CHIL @I4@
+
+0 @I3@ INDI
+1 NAME Alice /Doe/
+2 GIVN Alice
+2 SURN Doe
+1 SEX F
+1 BIRT
+2 DATE 20 AUG 1980
+2 PLAC Miami, Florida, USA
+1 EDUC High School Diploma
+1 OCCU Teacher
+1 RESI
+2 PLAC Orlando, Florida, USA
+1 NATI American
+1 NOTE Devoted to helping children.
+
+0 @I4@ INDI
+1 NAME Bob /Doe/
+2 GIVN Bob
+2 SURN Doe
+1 SEX M
+1 BIRT
+2 DATE 15 JUN 1985
+2 PLAC Boston, Suffolk, Massachusetts, USA
+1 OCCU Researcher
+1 RESI
+2 PLAC Cambridge, Massachusetts, USA
+1 NOTE Focused on climate change research.
+1 NATI American
+
+0 @S1@ SOUR
+1 TITL Example Source Title
+1 AUTH Example Author
+1 PUBL Example Publisher
+1 NOTE Example source text.
+1 CALN Call Number Example
+
+0 @R1@ REPO
+1 NAME Example Repository
+1 ADDR
+2 ADR1 123 Example St.
+2 CITY Example City
+2 STAE Example State
+2 POST 12345
+2 CTRY USA
+1 PHON +1-555-123-4567
+
+0 @I5@ INDI
+1 NAME Charles /Green/
+2 GIVN Charles
+2 SURN Green
+1 SEX M
+1 BIRT
+2 DATE 1 JAN 1960
+2 PLAC London, England
+1 CENS
+2 DATE 15 APR 1970
+2 PLAC London, England
+1 IMMI
+2 DATE 1 JAN 1985
+2 PLAC New York, USA
+1 NOTE Moved to the USA for work.
+
+0 @I6@ INDI
+1 NAME Emily /Taylor/
+2 GIVN Emily
+2 SURN Taylor
+1 SEX F
+1 BIRT
+2 DATE 10 MAY 1990
+2 PLAC Sydney, Australia
+1 BAPM
+2 DATE 20 JUN 1990
+2 PLAC St. Mary’s Church, Sydney, Australia
+1 CHR
+2 DATE 25 DEC 1990
+2 PLAC St. Mary’s Church, Sydney, Australia
+1 CONF
+2 DATE 12 MAY 2005
+2 PLAC St. Mary’s Church, Sydney, Australia
+1 NOTE Active in local charity.
+
+0 @I7@ INDI
+1 NAME Daniel /Brown/
+2 GIVN Daniel
+2 SURN Brown
+1 SEX M
+1 BIRT
+2 DATE 30 JUL 1985
+2 PLAC Houston, Texas, USA
+1 GRAD
+2 DATE 10 JUN 2005
+2 PLAC Texas A&M University, College Station, Texas, USA
+1 OCCU Engineer
+1 NATU
+2 DATE 1 JAN 2010
+2 PLAC Houston, Texas, USA
+
+0 @F2@ FAM
+1 HUSB @I5@
+1 WIFE @I6@
+1 MARR
+2 DATE 15 AUG 2010
+2 PLAC Sydney, Australia
+1 CHIL @I7@
+
+0 @I8@ INDI
+1 NAME Sarah /White/
+2 GIVN Sarah
+2 SURN White
+1 SEX F
+1 BIRT
+2 DATE 5 DEC 1975
+2 PLAC Los Angeles, California, USA
+1 EMIG
+2 DATE 1 FEB 1990
+2 PLAC London, England
+1 WILL
+2 DATE 10 OCT 2020
+2 NOTE Bequeathed estate to charity.
+
+0 @I9@ INDI
+1 NAME George /Black/
+2 GIVN George
+2 SURN Black
+1 SEX M
+1 BIRT
+2 DATE 25 NOV 1940
+2 PLAC Chicago, Illinois, USA
+1 DEAT
+2 DATE 1 JAN 2020
+2 PLAC Chicago, Illinois, USA
+1 PROB
+2 DATE 15 FEB 2020
+2 NOTE Probate of will completed.
+
+0 @SUB1@ SUBM
+1 NAME Family Historian
+1 ADDR
+2 ADR1 456 Heritage Lane
+2 CITY Anytown
+2 STAE Anystate
+2 POST 67890
+2 CTRY USA
+1 PHON +1-555-678-1234
+
+0 TRLR

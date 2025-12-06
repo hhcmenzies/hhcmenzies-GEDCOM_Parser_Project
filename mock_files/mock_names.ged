@@ -1,0 +1,163 @@
+0 HEAD
+1 GEDC
+2 VERS 5.5.5
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+1 SOUR Custom Software
+2 NAME Comprehensive GEDCOM Mock Generator
+2 VERS 1.0
+1 DATE 24 JAN 2025
+1 FILE comprehensive_mock_data.ged
+1 SUBM @SUBM@
+0 @SUBM@ SUBM
+1 NAME Test Submitter
+
+# --- INDIVIDUALS SECTION ---
+0 @I1@ INDI
+1 NAME Dr. Alexander "Alex" James /Montgomery/ Esq.
+1 NPFX Dr.
+1 GIVN Alexander James
+1 SPFX Mac
+1 SURN Montgomery
+1 NSFX Esq.
+1 NICK Alex
+1 ROMN Alexanderus Jacimus
+1 FONE Al-Ek-Zan-Der
+1 SEX M
+1 BIRT
+2 DATE 15 MAY 1985
+2 PLAC Glasgow, Scotland
+1 FAMS @F1@
+
+0 @I2@ INDI
+1 NAME Lady Catherine /Fitzgerald/
+1 NPFX Lady
+1 GIVN Catherine
+1 SURN Fitzgerald
+1 NICK Cathy
+1 ROMN Katerina
+1 FONE Kath-Er-In-Ah
+1 SEX F
+1 BIRT
+2 DATE 22 JUN 1983
+2 PLAC London, England
+1 FAMS @F1@
+
+0 @I3@ INDI
+1 NAME Henry /Johnson/
+1 GIVN Henry
+1 SURN Johnson
+1 ROMN Henricus
+1 FONE Hen-Ree
+1 SEX M
+1 BIRT
+2 DATE 1 SEP 2000
+2 PLAC Orlando, Florida, USA
+1 FAMC @F2@
+
+0 @I4@ INDI
+1 NAME Elizabeth "Liz" /Turner/
+1 GIVN Elizabeth
+1 SURN Turner
+1 NICK Liz
+1 ROMN Elisabetha
+1 FONE Eh-Liz-Ah-Beth
+1 SEX F
+1 BIRT
+2 DATE 25 DEC 2005
+2 PLAC Manchester, England
+1 FAMC @F3@
+
+0 @I5@ INDI
+1 NAME Thomas /Menzies/
+1 GIVN Thomas
+1 SURN Menzies
+1 ROMN Thomasius
+1 FONE Tom-Ahs
+1 SEX M
+1 BIRT
+2 DATE 18 JUL 1998
+2 PLAC Lawrence, Essex, Massachusetts, USA
+1 FAMC @F4@
+
+0 @I6@ INDI
+1 NAME Dr. Jonathan Edward /Carter/
+1 NPFX Dr.
+1 GIVN Jonathan Edward
+1 SURN Carter
+1 ROMN Ionathanus Eduardus
+1 FONE Jon-Uh-Than Ed-Ward
+1 SEX M
+1 BIRT
+2 DATE 12 FEB 1975
+2 PLAC Chicago, Illinois, USA
+1 FAMS @F5@
+
+0 @I7@ INDI
+1 NAME Susan Anne /Carter/
+1 GIVN Susan Anne
+1 SURN Carter
+1 ROMN Susanna Anna
+1 FONE Soo-Zan Ann
+1 SEX F
+1 BIRT
+2 DATE 8 AUG 1977
+2 PLAC Chicago, Illinois, USA
+1 FAMS @F5@
+
+0 @I8@ INDI
+1 NAME Capt. Theodore James /Brown/ Sr.
+1 NPFX Capt.
+1 GIVN Theodore James
+1 SURN Brown
+1 NSFX Sr.
+1 ROMN Theodorus Jacimus
+1 FONE Thee-O-Dore Jaymz
+1 SEX M
+1 BIRT
+2 DATE 14 MAY 1945
+2 PLAC Dublin, Ireland
+1 FAMS @F6@
+
+0 @I9@ INDI
+1 NAME Mrs. Margaret Ann /Brown/
+1 NPFX Mrs.
+1 GIVN Margaret Ann
+1 SURN Brown
+1 ROMN Margarita Anna
+1 FONE Marg-Aret An
+1 SEX F
+1 BIRT
+2 DATE 20 FEB 1948
+2 PLAC Dublin, Ireland
+1 FAMS @F6@
+
+0 @I10@ INDI
+1 NAME George William /Jones/ Jr.
+1 GIVN George William
+1 SURN Jones
+1 NSFX Jr.
+1 ROMN Georgius Gulielmus
+1 FONE Jorj Will-Yum
+1 SEX M
+1 BIRT
+2 DATE 15 NOV 1990
+2 PLAC London, England
+1 FAMC @F7@
+
+# Additional individuals will follow this format, ensuring variations of all tags are represented.
+
+# --- FAMILIES SECTION ---
+0 @F1@ FAM
+1 HUSB @I1@
+1 WIFE @I2@
+1 CHIL @I3@
+
+0 @F2@ FAM
+1 HUSB @I4@
+1 WIFE @I5@
+1 CHIL @I6@
+
+# Continue defining all families and linking them properly.
+
+0 TRLR

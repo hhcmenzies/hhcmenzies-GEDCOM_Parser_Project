@@ -1,0 +1,238 @@
+{
+  "spfx_list": {
+    "dutch_and_flemish": [
+      {
+        "value": "Van",
+        "description": "Meaning 'from'; capitalized in modern usage"
+      },
+      {
+        "value": "Van de",
+        "description": "Var. of Van; literally 'from the'"
+      },
+      {
+        "value": "Van der",
+        "description": "Var. of Van; literally 'from the'"
+      },
+      {
+        "value": "Van den",
+        "description": "Var. of Van; 'from the'"
+      },
+      {
+        "value": "Vanden",
+        "description": "Contracted form of 'Van den'"
+      },
+      {
+        "value": "Vander",
+        "description": "Contracted form of 'Van der'"
+      },
+      {
+        "value": "Ten",
+        "description": "Meaning 'at the'; e.g., Ten Hove"
+      },
+      {
+        "value": "Ter",
+        "description": "Meaning 'at the' or 'on the'; e.g., Ter Brugge"
+      },
+      {
+        "value": "Te",
+        "description": "Short prefix, e.g., Te Riele"
+      },
+      {
+        "value": "De",
+        "description": "Common prefix 'the'; also French/Spanish usage"
+      }
+    ],
+    "germanic": [
+      {
+        "value": "Von",
+        "description": "Meaning 'of' or 'from'; historically indicates nobility"
+      },
+      {
+        "value": "Zu",
+        "description": "Meaning 'at' or 'to'; less common"
+      },
+      {
+        "value": "Von und zu",
+        "description": "Aristocratic form, 'from and at'"
+      },
+      {
+        "value": "Uff",
+        "description": "Rare medieval prefix meaning 'upon'"
+      }
+    ],
+    "french_and_italian": [
+      {
+        "value": "De",
+        "description": "Meaning 'of/from' in French or Italian context"
+      },
+      {
+        "value": "Del",
+        "description": "Contracted 'de + el'; Spanish/Italian usage"
+      },
+      {
+        "value": "Della",
+        "description": "Italian 'of the'; e.g., Della Scala"
+      },
+      {
+        "value": "Di",
+        "description": "Italian 'of'; e.g., Di Caprio"
+      },
+      {
+        "value": "Des",
+        "description": "French 'of the'; less common modern usage"
+      },
+      {
+        "value": "Du",
+        "description": "French contraction for 'de + le' = 'of the (m.)'"
+      },
+      {
+        "value": "La",
+        "description": "French 'the (f.)'; occasionally prefix for older names"
+      },
+      {
+        "value": "Le",
+        "description": "French 'the (m.)'"
+      }
+    ],
+    "spanish_and_portuguese": [
+      {
+        "value": "De",
+        "description": "Spanish/Portuguese 'of' or 'from'"
+      },
+      {
+        "value": "Del",
+        "description": "Short for 'de + el' in Spanish, 'of the'"
+      },
+      {
+        "value": "De la",
+        "description": "Spanish 'of the (f.)'"
+      },
+      {
+        "value": "De las",
+        "description": "Spanish 'of the (f.pl.)', e.g., De las Heras"
+      },
+      {
+        "value": "Dos",
+        "description": "Portuguese 'of the (pl.)', e.g., Dos Santos"
+      },
+      {
+        "value": "Da",
+        "description": "Portuguese 'of/from' (f.)"
+      },
+      {
+        "value": "Do",
+        "description": "Portuguese 'of/from' (m.)"
+      },
+      {
+        "value": "Das",
+        "description": "Portuguese 'of/from the (pl.)' (f.)"
+      },
+      {
+        "value": "Dos",
+        "description": "Portuguese 'of/from the (pl.)' (m.)"
+      }
+    ],
+    "english_scots_irish": [
+      {
+        "value": "O'",
+        "description": "Irish 'descendant of'; e.g., O'Connor"
+      },
+      {
+        "value": "Mc",
+        "description": "Scottish/Irish 'son of'; variant of 'Mac'"
+      },
+      {
+        "value": "Mac",
+        "description": "Scottish Gaelic 'son of'"
+      }
+    ],
+    "nordic": [
+      {
+        "value": "Af",
+        "description": "Swedish prefix 'of/from', often indicates nobility"
+      }
+    ],
+    "slavic_eastern_europe": [
+      {
+        "value": "Z",
+        "description": "Polish 'from' or archaic usage, rare as prefix"
+      },
+      {
+        "value": "Od",
+        "description": "Czech/Polish 'from', archaic usage"
+      },
+      {
+        "value": "U",
+        "description": "Older variant in certain East Slavic dialects"
+      }
+    ],
+    "arabic_and_middle_eastern": [
+      {
+        "value": "Al",
+        "description": "Arabic 'the'; e.g., Al-Saud"
+      },
+      {
+        "value": "El",
+        "description": "Variant of 'the' in some Arabic or Spanish contexts"
+      },
+      {
+        "value": "Ibn",
+        "description": "'Son of'; used historically, e.g., Ibn Battuta"
+      },
+      {
+        "value": "Bint",
+        "description": "'Daughter of'; less common as a prefix in surnames"
+      }
+    ],
+    "african": [
+      {
+        "value": "Wa",
+        "description": "Swahili-based 'of'; found in East Africa, e.g., Wafula"
+      },
+      {
+        "value": "O'",
+        "description": "Some West African usage (rare, influenced by English or Gaelic forms)"
+      },
+      {
+        "value": "Bin",
+        "description": "Arabic-influenced usage in North/West Africa meaning 'son of'"
+      },
+      {
+        "value": "Oba",
+        "description": "Yoruba term for 'king' or royal prefix; more a title than a surname prefix"
+      }
+    ],
+    "south_southeast_asian": [
+      {
+        "value": "Sri",
+        "description": "Honorific used in Indian subcontinent, occasionally as a surname prefix"
+      },
+      {
+        "value": "Van",
+        "description": "Used in Vietnamese naming in certain contexts, e.g., 'Nguyen Van...' but not always a separate prefix"
+      },
+      {
+        "value": "Bin",
+        "description": "Malay/Indonesian 'son of', e.g., 'Mohamed bin Abdullah'"
+      },
+      {
+        "value": "Binti",
+        "description": "Malay/Indonesian 'daughter of'"
+      }
+    ],
+    "misc": [
+      {
+        "value": "Fitz",
+        "description": "Anglo-Norman 'son of'; e.g., Fitzgerald"
+      },
+      {
+        "value": "St.",
+        "description": "Prefix for 'Saint' in some English surnames (e.g., St. John)"
+      },
+      {
+        "value": "Ste.",
+        "description": "French 'Saint' abbreviation, e.g., Ste. Marie"
+      }
+    ]
+  }
+}

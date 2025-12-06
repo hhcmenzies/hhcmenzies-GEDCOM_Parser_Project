@@ -1,0 +1,24 @@
+{
+  "nickname_mappings": {
+    "Robert": {"nicknames": ["Rob", "Bob", "Bobby", "Robbie"]},
+    "William": {"nicknames": ["Will", "Bill", "Billy", "Liam"]},
+    "John": {"nicknames": ["Johnny", "Jon", "Jack"]},
+    "Elizabeth": {"nicknames": ["Liz", "Lizzie", "Beth", "Eliza", "Bess"]},
+    "James": {"nicknames": ["Jim", "Jimmy", "Jamie"]},
+    "Margaret": {"nicknames": ["Maggie", "Meg", "Peggy", "Daisy"]},
+    "Richard": {"nicknames": ["Rick", "Ricky", "Dick", "Rich"]},
+    "Edward": {"nicknames": ["Ed", "Eddie", "Ted", "Teddy", "Ned"]},
+    "Charles": {"nicknames": ["Charlie", "Chuck", "Chas"]},
+    "Catherine": {"nicknames": ["Kate", "Katie", "Cathy", "Kathy"]},
+    "Joseph": {"nicknames": ["Joe", "Joey"]},
+    "Michael": {"nicknames": ["Mike", "Mikey"]},
+    "Alexander": {"nicknames": ["Alex", "Xander", "Sandy"]},
+    "Henry": {"nicknames": ["Harry", "Hank"]},
+    "Frederick": {"nicknames": ["Fred", "Freddy", "Fritz"]},
+    "Samuel": {"nicknames": ["Sam", "Sammy"]},
+    "Francis": {"nicknames": ["Frank", "Frankie"]},
+    "Thomas": {"nicknames": ["Tom", "Tommy"]},
+    "Patrick": {"nicknames": ["Pat", "Paddy", "Rick"]},
+    "George": {"nicknames": ["Georgie"]}
+  }
+}

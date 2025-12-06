@@ -1,0 +1,318 @@
+{
+  "german_military_ranks": {
+    "heer": {
+      "enlisted": {
+        "E-1": {
+          "title": "Schütze (or other basic rank names)",
+          "abbreviation": "Schtz"
+        },
+        "E-2": {
+          "title": "Gefreiter",
+          "abbreviation": "Gfr"
+        },
+        "E-3": {
+          "title": "Obergefreiter",
+          "abbreviation": "OG"
+        },
+        "E-4": {
+          "title": "Hauptgefreiter",
+          "abbreviation": "HG"
+        },
+        "E-5": {
+          "title": "Stabsgefreiter",
+          "abbreviation": "StGfr"
+        },
+        "E-6": {
+          "title": "Unteroffizier",
+          "abbreviation": "Uffz"
+        },
+        "E-7": {
+          "title": "Stabsunteroffizier",
+          "abbreviation": "StUffz"
+        },
+        "E-8": {
+          "title": "Feldwebel",
+          "abbreviation": "Fw"
+        },
+        "E-9": {
+          "title": "Oberfeldwebel",
+          "abbreviation": "OFw"
+        },
+        "E-9b": {
+          "title": "Hauptfeldwebel",
+          "abbreviation": "HFw"
+        },
+        "E-9c": {
+          "title": "Stabsfeldwebel",
+          "abbreviation": "StFw"
+        },
+        "E-9d": {
+          "title": "Oberstabsfeldwebel",
+          "abbreviation": "OStFw"
+        }
+      },
+      "warrant_officers": {
+        "W-1": {
+          "title": "— (Not used in the Bundeswehr)",
+          "abbreviation": ""
+        }
+      },
+      "officers": {
+        "O-1": {
+          "title": "Leutnant",
+          "abbreviation": "Lt"
+        },
+        "O-2": {
+          "title": "Oberleutnant",
+          "abbreviation": "OLt"
+        },
+        "O-3": {
+          "title": "Hauptmann",
+          "abbreviation": "Hptm"
+        },
+        "O-4": {
+          "title": "Major",
+          "abbreviation": "Maj"
+        },
+        "O-5": {
+          "title": "Oberstleutnant",
+          "abbreviation": "Oblt"
+        },
+        "O-6": {
+          "title": "Oberst",
+          "abbreviation": "Oberst"
+        },
+        "O-7": {
+          "title": "Brigadegeneral",
+          "abbreviation": "BrigGen"
+        },
+        "O-8": {
+          "title": "Generalmajor",
+          "abbreviation": "GenMaj"
+        },
+        "O-9": {
+          "title": "Generalleutnant",
+          "abbreviation": "GenLt"
+        },
+        "O-10": {
+          "title": "General",
+          "abbreviation": "Gen"
+        },
+        "Special": {
+          "title": "Generalfeldmarschall (historical, not in current use)",
+          "abbreviation": "GFM"
+        }
+      }
+    },
+
+    "marine": {
+      "enlisted": {
+        "E-1": {
+          "title": "Matrose",
+          "abbreviation": "Mtrs"
+        },
+        "E-2": {
+          "title": "Gefreiter zur See / Matrosengefreiter (varies)",
+          "abbreviation": "GfrS"
+        },
+        "E-3": {
+          "title": "Obergefreiter zur See",
+          "abbreviation": "OGfrS"
+        },
+        "E-4": {
+          "title": "Hauptgefreiter zur See",
+          "abbreviation": "HGfrS"
+        },
+        "E-5": {
+          "title": "Stabsgefreiter zur See",
+          "abbreviation": "StGfrS"
+        },
+        "E-6": {
+          "title": "Maat",
+          "abbreviation": "Mt"
+        },
+        "E-7": {
+          "title": "Obermaat",
+          "abbreviation": "OMt"
+        },
+        "E-8": {
+          "title": "Bootsmann",
+          "abbreviation": "Btsm"
+        },
+        "E-9": {
+          "title": "Oberbootsmann",
+          "abbreviation": "OBtsm"
+        },
+        "E-9b": {
+          "title": "Hauptbootsmann",
+          "abbreviation": "HBtsm"
+        },
+        "E-9c": {
+          "title": "Stabsbootsmann",
+          "abbreviation": "StBtsm"
+        },
+        "E-9d": {
+          "title": "Oberstabsbootsmann",
+          "abbreviation": "OStBtsm"
+        }
+      },
+      "warrant_officers": {
+        "W-1": {
+          "title": "— (Not used in the Bundeswehr)",
+          "abbreviation": ""
+        }
+      },
+      "officers": {
+        "O-1": {
+          "title": "Leutnant zur See",
+          "abbreviation": "Lt zS"
+        },
+        "O-2": {
+          "title": "Oberleutnant zur See",
+          "abbreviation": "OLt zS"
+        },
+        "O-3": {
+          "title": "Kapitänleutnant",
+          "abbreviation": "KptLt"
+        },
+        "O-4": {
+          "title": "Korvettenkapitän",
+          "abbreviation": "KKpt"
+        },
+        "O-5": {
+          "title": "Fregattenkapitän",
+          "abbreviation": "FKpt"
+        },
+        "O-6": {
+          "title": "Kapitän zur See",
+          "abbreviation": "Kpt zS"
+        },
+        "O-7": {
+          "title": "Flottillenadmiral",
+          "abbreviation": "FltAdm"
+        },
+        "O-8": {
+          "title": "Konteradmiral",
+          "abbreviation": "KAdm"
+        },
+        "O-9": {
+          "title": "Vizeadmiral",
+          "abbreviation": "VAdm"
+        },
+        "O-10": {
+          "title": "Admiral",
+          "abbreviation": "Adm"
+        },
+        "Special": {
+          "title": "Großadmiral (historical, not in current use)",
+          "abbreviation": "GrAdm"
+        }
+      }
+    },
+
+    "luftwaffe": {
+      "enlisted": {
+        "E-1": {
+          "title": "Flieger (or Jäger for some units)",
+          "abbreviation": "Flg"
+        },
+        "E-2": {
+          "title": "Gefreiter",
+          "abbreviation": "Gfr"
+        },
+        "E-3": {
+          "title": "Obergefreiter",
+          "abbreviation": "OG"
+        },
+        "E-4": {
+          "title": "Hauptgefreiter",
+          "abbreviation": "HG"
+        },
+        "E-5": {
+          "title": "Stabsgefreiter",
+          "abbreviation": "StGfr"
+        },
+        "E-6": {
+          "title": "Unteroffizier",
+          "abbreviation": "Uffz"
+        },
+        "E-7": {
+          "title": "Stabsunteroffizier",
+          "abbreviation": "StUffz"
+        },
+        "E-8": {
+          "title": "Feldwebel",
+          "abbreviation": "Fw"
+        },
+        "E-9": {
+          "title": "Oberfeldwebel",
+          "abbreviation": "OFw"
+        },
+        "E-9b": {
+          "title": "Hauptfeldwebel",
+          "abbreviation": "HFw"
+        },
+        "E-9c": {
+          "title": "Stabsfeldwebel",
+          "abbreviation": "StFw"
+        },
+        "E-9d": {
+          "title": "Oberstabsfeldwebel",
+          "abbreviation": "OStFw"
+        }
+      },
+      "warrant_officers": {
+        "W-1": {
+          "title": "— (Not used in the Bundeswehr)",
+          "abbreviation": ""
+        }
+      },
+      "officers": {
+        "O-1": {
+          "title": "Leutnant",
+          "abbreviation": "Lt"
+        },
+        "O-2": {
+          "title": "Oberleutnant",
+          "abbreviation": "OLt"
+        },
+        "O-3": {
+          "title": "Hauptmann",
+          "abbreviation": "Hptm"
+        },
+        "O-4": {
+          "title": "Major",
+          "abbreviation": "Maj"
+        },
+        "O-5": {
+          "title": "Oberstleutnant",
+          "abbreviation": "Oblt"
+        },
+        "O-6": {
+          "title": "Oberst",
+          "abbreviation": "Oberst"
+        },
+        "O-7": {
+          "title": "Brigadegeneral",
+          "abbreviation": "BrigGen"
+        },
+        "O-8": {
+          "title": "Generalmajor",
+          "abbreviation": "GenMaj"
+        },
+        "O-9": {
+          "title": "Generalleutnant",
+          "abbreviation": "GenLt"
+        },
+        "O-10": {
+          "title": "General",
+          "abbreviation": "Gen"
+        },
+        "Special": {
+          "title": "Generalfeldmarschall (historical, not in current use)",
+          "abbreviation": "GFM"
+        }
+      }
+    }
+  }
+}

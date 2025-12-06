@@ -1,0 +1,45 @@
+{
+    "known_prefixes": [
+        "dr", "capt", "lady", "sir", "de", "von", "van", "van der", "di",
+        "la", "le", "el", "mac", "mc", "o'", "señor", "señora", "señorita",
+        "herr", "frau", "monsieur", "madame", "mademoiselle", "shah", "tsar",
+        "venerable", "rabbi", "imam", "sheikh", "brother", "sister", "monsignor",
+        "prof", "judge", "senator", "ambassador", "justice", "congressman",
+        "archbishop", "cardinal", "padishah", "rajah", "datu", "duke", "czar"
+    ],
+    "suffix_normalization_map": {
+        "jr": "Jr.", "sr": "Sr.", "iii": "III", "iv": "IV", "v": "V",
+        "vi": "VI", "vii": "VII", "viii": "VIII", "ix": "IX", "x": "X",
+        "esq": "Esq.", "phd": "Ph.D.", "md": "M.D.", "dds": "D.D.S.",
+        "do": "D.O.", "jd": "J.D.", "ed.d": "Ed.D.", "ms": "M.S.", "ma": "M.A.",
+        "ba": "B.A.", "king": "King", "queen": "Queen", "prince": "Prince",
+        "princess": "Princess", "duke": "Duke", "duchess": "Duchess",
+        "baron": "Baron", "baroness": "Baroness", "earl": "Earl", "count": "Count",
+        "viscount": "Viscount", "marquess": "Marquess", "margrave": "Margrave",
+        "archduke": "Archduke", "czar": "Czar", "tsar": "Tsar", "padishah": "Padishah",
+        "rajah": "Rajah", "bishop": "Bishop", "archbishop": "Archbishop", "cardinal": "Cardinal",
+        "pope": "Pope", "rabbi": "Rabbi", "imam": "Imam", "sheikh": "Sheikh",
+        "father": "Father", "sister": "Sister", "brother": "Brother",
+        "deacon": "Deacon", "monsignor": "Monsignor", "rev": "Rev.", "reverend": "Reverend",
+        "minister": "Minister", "pastor": "Pastor", "elder": "Elder",
+        "cpt": "Cpt.", "lt": "Lt.", "maj": "Maj.", "col": "Col.", "gen": "Gen.",
+        "marshal": "Marshal", "brigadier": "Brigadier", "fleet admiral": "Fleet Admiral",
+        "rear admiral": "Rear Admiral", "commodore": "Commodore", "vice admiral": "Vice Admiral",
+        "warrant officer": "Warrant Officer", "chief warrant officer": "Chief Warrant Officer",
+        "sgt": "Sgt.", "ssgt": "SSgt.", "csm": "CSM", "sgm": "SGM", "cw2": "CW2", "cw3": "CW3",
+        "cw4": "CW4", "cw5": "CW5", "judge": "Judge", "senator": "Senator",
+        "congressman": "Congressman", "ambassador": "Ambassador", "justice": "Justice",
+        "prof": "Prof.", "dr": "Dr.", "psy.d": "Psy.D.", "d.min": "D.Min.", "d.sc": "D.Sc.",
+        "th.d": "Th.D.",
+        "senior": "Sr.", "junior": "Jr."
+    },
+    "titles_to_attributes": [
+        "king", "queen", "prince", "princess", "duke", "duchess",
+        "baron", "baroness", "earl", "count", "marquess", "margrave",
+        "archduke", "czar", "tsar", "padishah", "rajah",
+        "bishop", "archbishop", "cardinal", "pope", "rabbi", "imam",
+        "sheikh", "monsignor", "reverend", "minister", "pastor",
+        "elder", "judge", "senator", "ambassador", "justice",
+        "professor", "doctor"
+    ]
+}

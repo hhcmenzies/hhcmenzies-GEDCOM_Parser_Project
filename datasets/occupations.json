@@ -1,0 +1,104 @@
+{
+  "occupations_normalization": {
+    "Farmer": {
+      "aliases": ["Husbandman", "Yeoman", "Agriculturist"],
+      "category": "Agriculture",
+      "description": "A person who grows crops or raises livestock."
+    },
+    "Laborer": {
+      "aliases": ["Labourer", "Field Hand", "Worker"],
+      "category": "General Labor",
+      "description": "An unskilled or semi-skilled worker in various industries."
+    },
+    "Servant": {
+      "aliases": ["Housemaid", "Domestic", "Governess", "Butler"],
+      "category": "Domestic Work",
+      "description": "A person employed in household work."
+    },
+    "Blacksmith": {
+      "aliases": ["Smith", "Farrier", "Metalsmith"],
+      "category": "Metalworking",
+      "description": "A person who forges and shapes metal objects, often including horseshoes."
+    },
+    "Weaver": {
+      "aliases": ["Textile Worker", "Spinner"],
+      "category": "Textiles",
+      "description": "A person who weaves fabric, often in a textile mill or at home."
+    },
+    "Cooper": {
+      "aliases": ["Barrel Maker"],
+      "category": "Woodworking",
+      "description": "A person who makes or repairs wooden barrels and casks."
+    },
+    "Carpenter": {
+      "aliases": ["Joiner", "Woodworker", "Cabinetmaker"],
+      "category": "Construction",
+      "description": "A person who builds or repairs wooden structures and furniture."
+    },
+    "Shoemaker": {
+      "aliases": ["Cordwainer", "Cobbler"],
+      "category": "Leatherworking",
+      "description": "A person who makes and repairs shoes."
+    },
+    "Tailor": {
+      "aliases": ["Seamstress", "Dressmaker"],
+      "category": "Textiles",
+      "description": "A person who makes, repairs, or alters clothing."
+    },
+    "Miller": {
+      "aliases": ["Flour Mill Operator", "Grain Miller"],
+      "category": "Food Production",
+      "description": "A person who grinds grain into flour using a mill."
+    },
+    "Fisherman": {
+      "aliases": ["Fisher", "Fishmonger"],
+      "category": "Fishing Industry",
+      "description": "A person who catches fish for trade or consumption."
+    },
+    "Tanner": {
+      "aliases": ["Leatherworker", "Hide Tannery Worker"],
+      "category": "Leatherworking",
+      "description": "A person who processes animal hides into leather."
+    },
+    "Chandler": {
+      "aliases": ["Candle Maker", "Soap Maker"],
+      "category": "Manufacturing",
+      "description": "A person who makes candles or soap."
+    },
+    "Merchant": {
+      "aliases": ["Trader", "Shopkeeper", "Grocer"],
+      "category": "Commerce",
+      "description": "A person who buys and sells goods for profit."
+    },
+    "Clerk": {
+      "aliases": ["Scribe", "Bookkeeper", "Accountant"],
+      "category": "Administrative Work",
+      "description": "A person responsible for keeping financial or written records."
+    },
+    "Teacher": {
+      "aliases": ["Schoolmaster", "Tutor"],
+      "category": "Education",
+      "description": "A person who instructs students in a school or privately."
+    },
+    "Minister": {
+      "aliases": ["Clergyman", "Reverend", "Priest", "Vicar"],
+      "category": "Religious Work",
+      "description": "A religious leader responsible for spiritual guidance."
+    },
+    "Doctor": {
+      "aliases": ["Physician", "Surgeon", "Apothecary"],
+      "category": "Medicine",
+      "description": "A person trained in medical treatment and diagnosis."
+    },
+    "Lawyer": {
+      "aliases": ["Barrister", "Solicitor", "Advocate"],
+      "category": "Legal Work",
+      "description": "A person who represents clients in legal matters."
+    },
+    "Soldier": {
+      "aliases": ["Militiaman", "Guardsman", "Cavalryman"],
+      "category": "Military Service",
+      "description": "A person who serves in an army or military force."
+    }
+  }
+}

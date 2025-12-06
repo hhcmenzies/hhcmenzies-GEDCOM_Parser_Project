@@ -1,0 +1,230 @@
+{
+  "nsfx_list": {
+    "generational_suffixes": [
+      {
+        "value": "Jr.",
+        "description": "Junior"
+      },
+      {
+        "value": "Sr.",
+        "description": "Senior"
+      },
+      {
+        "value": "II",
+        "description": "Second Generation"
+      },
+      {
+        "value": "III",
+        "description": "Third Generation"
+      },
+      {
+        "value": "IV",
+        "description": "Fourth Generation"
+      },
+      {
+        "value": "V",
+        "description": "Fifth Generation"
+      },
+      {
+        "value": "VI",
+        "description": "Sixth Generation"
+      },
+      {
+        "value": "VII",
+        "description": "Seventh Generation"
+      },
+      {
+        "value": "VIII",
+        "description": "Eighth Generation"
+      },
+      {
+        "value": "IX",
+        "description": "Ninth Generation"
+      },
+      {
+        "value": "X",
+        "description": "Tenth Generation"
+      }
+    ],
+    "academic_and_professional_suffixes": [
+      {
+        "value": "Ph.D.",
+        "description": "Doctor of Philosophy"
+      },
+      {
+        "value": "M.D.",
+        "description": "Doctor of Medicine"
+      },
+      {
+        "value": "D.O.",
+        "description": "Doctor of Osteopathic Medicine"
+      },
+      {
+        "value": "D.D.S.",
+        "description": "Doctor of Dental Surgery"
+      },
+      {
+        "value": "D.M.D.",
+        "description": "Doctor of Medicine in Dentistry"
+      },
+      {
+        "value": "J.D.",
+        "description": "Juris Doctor – Law"
+      },
+      {
+        "value": "Ed.D.",
+        "description": "Doctor of Education"
+      },
+      {
+        "value": "D.Sc.",
+        "description": "Doctor of Science"
+      },
+      {
+        "value": "Th.D.",
+        "description": "Doctor of Theology"
+      },
+      {
+        "value": "Psy.D.",
+        "description": "Doctor of Psychology"
+      },
+      {
+        "value": "D.Min.",
+        "description": "Doctor of Ministry"
+      },
+      {
+        "value": "D.V.M.",
+        "description": "Doctor of Veterinary Medicine"
+      },
+      {
+        "value": "M.B.A.",
+        "description": "Master of Business Administration"
+      },
+      {
+        "value": "M.S.",
+        "description": "Master of Science"
+      },
+      {
+        "value": "M.A.",
+        "description": "Master of Arts"
+      },
+      {
+        "value": "B.S.",
+        "description": "Bachelor of Science"
+      },
+      {
+        "value": "B.A.",
+        "description": "Bachelor of Arts"
+      },
+      {
+        "value": "Pharm.D.",
+        "description": "Doctor of Pharmacy"
+      },
+      {
+        "value": "B.S.N.",
+        "description": "Bachelor of Science in Nursing"
+      },
+      {
+        "value": "M.S.N.",
+        "description": "Master of Science in Nursing"
+      },
+      {
+        "value": "R.N.",
+        "description": "Registered Nurse"
+      },
+      {
+        "value": "P.E.",
+        "description": "Professional Engineer"
+      },
+      {
+        "value": "C.P.A.",
+        "description": "Certified Public Accountant"
+      },
+      {
+        "value": "F.A.C.S.",
+        "description": "Fellow of the American College of Surgeons"
+      },
+      {
+        "value": "F.R.C.P.",
+        "description": "Fellow of the Royal College of Physicians"
+      },
+      {
+        "value": "F.R.C.S.",
+        "description": "Fellow of the Royal College of Surgeons"
+      },
+      {
+        "value": "D.Litt.",
+        "description": "Doctor of Letters"
+      },
+      {
+        "value": "D.D.",
+        "description": "Doctor of Divinity"
+      },
+      {
+        "value": "MBChB",
+        "description": "Bachelor of Medicine, Bachelor of Surgery"
+      }
+    ],
+    "legal_and_honorary_suffixes": [
+      {
+        "value": "Esq.",
+        "description": "Esquire – Honorary Legal Title"
+      },
+      {
+        "value": "K.C.",
+        "description": "King’s Counsel – Legal Title (UK & Canada)"
+      },
+      {
+        "value": "Q.C.",
+        "description": "Queen’s Counsel – Legal Title (UK & Canada)"
+      },
+      {
+        "value": "Hon.",
+        "description": "Honorable – Government or Judicial"
+      },
+      {
+        "value": "C.B.E.",
+        "description": "Commander of the British Empire"
+      },
+      {
+        "value": "O.B.E.",
+        "description": "Officer of the British Empire"
+      },
+      {
+        "value": "M.B.E.",
+        "description": "Member of the British Empire"
+      },
+      {
+        "value": "Bart.",
+        "description": "Baronet"
+      },
+      {
+        "value": "Bt.",
+        "description": "Baronet (alternative abbreviation)"
+      },
+      {
+        "value": "K.C.B.",
+        "description": "Knight Commander of the Order of the Bath"
+      },
+      {
+        "value": "G.C.B.",
+        "description": "Knight Grand Cross of the Order of the Bath"
+      },
+      {
+        "value": "K.B.E.",
+        "description": "Knight Commander of the British Empire"
+      },
+      {
+        "value": "G.B.E.",
+        "description": "Knight or Dame Grand Cross of the British Empire"
+      },
+      {
+        "value": "K.G.",
+        "description": "Knight of the Garter"
+      },
+      {
+        "value": "JP",
+        "description": "Justice of the Peace"
+      }
+    ]
+  }
+}

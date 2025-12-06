@@ -1,0 +1,290 @@
+{
+  "canada_military_ranks": {
+    "canadian_army": {
+      "enlisted": {
+        "E-1": {
+          "title": "Private",
+          "abbreviation": "Pte"
+        },
+        "E-2": {
+          "title": "Corporal",
+          "abbreviation": "Cpl"
+        },
+        "E-3": {
+          "title": "Master Corporal",
+          "abbreviation": "MCpl"
+        },
+        "E-4": {
+          "title": "Sergeant",
+          "abbreviation": "Sgt"
+        },
+        "E-5": {
+          "title": "Warrant Officer",
+          "abbreviation": "WO"
+        },
+        "E-6": {
+          "title": "Master Warrant Officer",
+          "abbreviation": "MWO"
+        },
+        "E-7": {
+          "title": "Chief Warrant Officer",
+          "abbreviation": "CWO"
+        },
+        "E-8": {
+          "title": "— (Not used separately)",
+          "abbreviation": ""
+        },
+        "E-9": {
+          "title": "— (Not used separately)",
+          "abbreviation": ""
+        }
+      },
+      "warrant_officers": {
+        "W-1": {
+          "title": "Warrant Officer",
+          "abbreviation": "WO"
+        },
+        "W-2": {
+          "title": "Master Warrant Officer",
+          "abbreviation": "MWO"
+        },
+        "W-3": {
+          "title": "Chief Warrant Officer",
+          "abbreviation": "CWO"
+        }
+      },
+      "officers": {
+        "O-1": {
+          "title": "Second Lieutenant",
+          "abbreviation": "2Lt"
+        },
+        "O-2": {
+          "title": "Lieutenant",
+          "abbreviation": "Lt"
+        },
+        "O-3": {
+          "title": "Captain",
+          "abbreviation": "Capt"
+        },
+        "O-4": {
+          "title": "Major",
+          "abbreviation": "Maj"
+        },
+        "O-5": {
+          "title": "Lieutenant Colonel",
+          "abbreviation": "LCol"
+        },
+        "O-6": {
+          "title": "Colonel",
+          "abbreviation": "Col"
+        },
+        "O-7": {
+          "title": "Brigadier-General",
+          "abbreviation": "BGen"
+        },
+        "O-8": {
+          "title": "Major-General",
+          "abbreviation": "MGen"
+        },
+        "O-9": {
+          "title": "Lieutenant-General",
+          "abbreviation": "LGen"
+        },
+        "O-10": {
+          "title": "General",
+          "abbreviation": "Gen"
+        }
+      }
+    },
+
+    "royal_canadian_navy": {
+      "enlisted": {
+        "E-1": {
+          "title": "Ordinary Seaman",
+          "abbreviation": "OS"
+        },
+        "E-2": {
+          "title": "Able Seaman",
+          "abbreviation": "AB"
+        },
+        "E-3": {
+          "title": "Leading Seaman",
+          "abbreviation": "LS"
+        },
+        "E-4": {
+          "title": "Master Seaman",
+          "abbreviation": "MS"
+        },
+        "E-5": {
+          "title": "Petty Officer 2nd Class",
+          "abbreviation": "PO2"
+        },
+        "E-6": {
+          "title": "Petty Officer 1st Class",
+          "abbreviation": "PO1"
+        },
+        "E-7": {
+          "title": "Chief Petty Officer 2nd Class",
+          "abbreviation": "CPO2"
+        },
+        "E-8": {
+          "title": "Chief Petty Officer 1st Class",
+          "abbreviation": "CPO1"
+        },
+        "E-9": {
+          "title": "— (CPO1 is top Non-Commissioned rank)",
+          "abbreviation": ""
+        }
+      },
+      "warrant_officers": {
+        "W-1": {
+          "title": "— (RCN does not use Warrant Officers separately)",
+          "abbreviation": ""
+        }
+      },
+      "officers": {
+        "O-1": {
+          "title": "Naval Cadet",
+          "abbreviation": "NCdt"
+        },
+        "O-2": {
+          "title": "Acting Sub-Lieutenant",
+          "abbreviation": "A/SLt"
+        },
+        "O-3": {
+          "title": "Sub-Lieutenant",
+          "abbreviation": "SLt"
+        },
+        "O-4": {
+          "title": "Lieutenant (Navy)",
+          "abbreviation": "Lt(N)"
+        },
+        "O-5": {
+          "title": "Lieutenant-Commander",
+          "abbreviation": "LCdr"
+        },
+        "O-6": {
+          "title": "Commander",
+          "abbreviation": "Cdr"
+        },
+        "O-7": {
+          "title": "Captain (Navy)",
+          "abbreviation": "Capt(N)"
+        },
+        "O-8": {
+          "title": "Commodore",
+          "abbreviation": "Cmdre"
+        },
+        "O-9": {
+          "title": "Rear-Admiral",
+          "abbreviation": "RAdm"
+        },
+        "O-10": {
+          "title": "Vice-Admiral",
+          "abbreviation": "VAdm"
+        },
+        "Special": {
+          "title": "Admiral (4-Star)",
+          "abbreviation": "Adm"
+        }
+      }
+    },
+
+    "royal_canadian_air_force": {
+      "enlisted": {
+        "E-1": {
+          "title": "Aviator",
+          "abbreviation": "Avr"
+        },
+        "E-2": {
+          "title": "Corporal",
+          "abbreviation": "Cpl"
+        },
+        "E-3": {
+          "title": "Master Corporal",
+          "abbreviation": "MCpl"
+        },
+        "E-4": {
+          "title": "Sergeant",
+          "abbreviation": "Sgt"
+        },
+        "E-5": {
+          "title": "Warrant Officer",
+          "abbreviation": "WO"
+        },
+        "E-6": {
+          "title": "Master Warrant Officer",
+          "abbreviation": "MWO"
+        },
+        "E-7": {
+          "title": "Chief Warrant Officer",
+          "abbreviation": "CWO"
+        },
+        "E-8": {
+          "title": "— (Not used)",
+          "abbreviation": ""
+        },
+        "E-9": {
+          "title": "— (Not used)",
+          "abbreviation": ""
+        }
+      },
+      "warrant_officers": {
+        "W-1": {
+          "title": "Warrant Officer",
+          "abbreviation": "WO"
+        },
+        "W-2": {
+          "title": "Master Warrant Officer",
+          "abbreviation": "MWO"
+        },
+        "W-3": {
+          "title": "Chief Warrant Officer",
+          "abbreviation": "CWO"
+        }
+      },
+      "officers": {
+        "O-1": {
+          "title": "Second Lieutenant",
+          "abbreviation": "2Lt"
+        },
+        "O-2": {
+          "title": "Lieutenant",
+          "abbreviation": "Lt"
+        },
+        "O-3": {
+          "title": "Captain",
+          "abbreviation": "Capt"
+        },
+        "O-4": {
+          "title": "Major",
+          "abbreviation": "Maj"
+        },
+        "O-5": {
+          "title": "Lieutenant Colonel",
+          "abbreviation": "LCol"
+        },
+        "O-6": {
+          "title": "Colonel",
+          "abbreviation": "Col"
+        },
+        "O-7": {
+          "title": "Brigadier-General",
+          "abbreviation": "BGen"
+        },
+        "O-8": {
+          "title": "Major-General",
+          "abbreviation": "MGen"
+        },
+        "O-9": {
+          "title": "Lieutenant-General",
+          "abbreviation": "LGen"
+        },
+        "O-10": {
+          "title": "General",
+          "abbreviation": "Gen"
+        }
+      }
+    }
+  }
+}

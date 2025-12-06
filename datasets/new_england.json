@@ -1,0 +1,305 @@
+{
+  "states": [
+    {
+      "placeId": "MA",
+      "commonName": "Massachusetts",
+      "officialName": "Commonwealth of Massachusetts",
+      "abbreviations": {
+        "standard": "MA",
+        "others": ["Mass.", "Massachus.", "MASS"]
+      },
+      "historicalNames": [
+        {
+          "name": "Massachusetts Bay Colony",
+          "startDate": "1629-03-04",
+          "endDate": "1691-10-07"
+        },
+        {
+          "name": "Province of Massachusetts Bay",
+          "startDate": "1691-10-07",
+          "endDate": "1776-07-04"
+        },
+        {
+          "name": "State of Massachusetts Bay",
+          "startDate": "1776-07-04",
+          "endDate": "1780-10-25"
+        },
+        {
+          "name": "Commonwealth of Massachusetts",
+          "startDate": "1780-10-25"
+        }
+      ],
+      "map": {
+        "latitude": 42.407211,
+        "longitude": -71.382437,
+        "boundingBox": {
+          "minLat": 41.186328,
+          "maxLat": 42.886589,
+          "minLong": -73.508142,
+          "maxLong": -69.861534
+        }
+      },
+      "subdivisions": {
+        "type": "Counties",
+        "list": [
+          {
+            "countyName": "Barnstable County",
+            "type": "County",
+            "founded": "1685",
+            "map": {
+              "latitude": 41.667881,
+              "longitude": -70.387307
+            }
+          },
+          {
+            "countyName": "Berkshire County",
+            "type": "County",
+            "founded": "1761",
+            "map": {
+              "latitude": 42.374000,
+              "longitude": -73.207000
+            }
+          },
+          {
+            "countyName": "Bristol County",
+            "type": "County",
+            "founded": "1685",
+            "map": {
+              "latitude": 41.793000,
+              "longitude": -71.061000
+            }
+          },
+          {
+            "countyName": "Dukes County",
+            "type": "County",
+            "founded": "1695",
+            "map": {
+              "latitude": 41.397000,
+              "longitude": -70.650000
+            }
+          },
+          {
+            "countyName": "Essex County",
+            "type": "County",
+            "founded": "1643",
+            "map": {
+              "latitude": 42.632896,
+              "longitude": -70.782979
+            }
+          },
+          {
+            "countyName": "Franklin County",
+            "type": "County",
+            "founded": "1811",
+            "map": {
+              "latitude": 42.580000,
+              "longitude": -72.615000
+            }
+          },
+          {
+            "countyName": "Hampden County",
+            "type": "County",
+            "founded": "1812",
+            "map": {
+              "latitude": 42.110000,
+              "longitude": -72.586000
+            }
+          },
+          {
+            "countyName": "Hampshire County",
+            "type": "County",
+            "founded": "1662",
+            "map": {
+              "latitude": 42.340000,
+              "longitude": -72.656000
+            }
+          },
+          {
+            "countyName": "Middlesex County",
+            "type": "County",
+            "founded": "1643",
+            "map": {
+              "latitude": 42.486698,
+              "longitude": -71.388913
+            }
+          },
+          {
+            "countyName": "Nantucket County",
+            "type": "County",
+            "founded": "1695",
+            "map": {
+              "latitude": 41.283000,
+              "longitude": -70.100000
+            }
+          },
+          {
+            "countyName": "Norfolk County",
+            "type": "County",
+            "founded": "1793",
+            "map": {
+              "latitude": 42.157000,
+              "longitude": -71.202000
+            }
+          },
+          {
+            "countyName": "Plymouth County",
+            "type": "County",
+            "founded": "1685",
+            "map": {
+              "latitude": 41.988000,
+              "longitude": -70.667000
+            }
+          },
+          {
+            "countyName": "Suffolk County",
+            "type": "County",
+            "founded": "1643",
+            "map": {
+              "latitude": 42.360000,
+              "longitude": -71.058000
+            }
+          },
+          {
+            "countyName": "Worcester County",
+            "type": "County",
+            "founded": "1731",
+            "map": {
+              "latitude": 42.344000,
+              "longitude": -71.909000
+            }
+          }
+        ]
+      }
+    },
+    {
+      "placeId": "NH",
+      "commonName": "New Hampshire",
+      "officialName": "State of New Hampshire",
+      "abbreviations": {
+        "standard": "NH",
+        "others": ["N.H.", "N. Hamp."]
+      },
+      "historicalNames": [
+        {
+          "name": "Colony of New Hampshire",
+          "startDate": "1623-06-01",
+          "endDate": "1691-10-07"
+        },
+        {
+          "name": "Province of New Hampshire",
+          "startDate": "1691-10-07",
+          "endDate": "1776-07-04"
+        },
+        {
+          "name": "State of New Hampshire",
+          "startDate": "1776-07-04"
+        }
+      ],
+      "map": {
+        "latitude": 43.1938516,
+        "longitude": -71.5723953,
+        "boundingBox": {
+          "minLat": 42.696,
+          "maxLat": 45.305,
+          "minLong": -72.557,
+          "maxLong": -70.610
+        }
+      },
+      "subdivisions": {
+        "type": "Counties",
+        "list": [
+          {
+            "countyName": "Belknap County",
+            "type": "County",
+            "founded": "1840",
+            "map": {
+              "latitude": 43.6060,
+              "longitude": -71.4774
+            }
+          },
+          {
+            "countyName": "Carroll County",
+            "type": "County",
+            "founded": "1840",
+            "map": {
+              "latitude": 43.8373,
+              "longitude": -71.2018
+            }
+          },
+          {
+            "countyName": "Cheshire County",
+            "type": "County",
+            "founded": "1769",
+            "map": {
+              "latitude": 42.9337,
+              "longitude": -72.2781
+            }
+          },
+          {
+            "countyName": "Coos County",
+            "type": "County",
+            "founded": "1803",
+            "map": {
+              "latitude": 44.7301,
+              "longitude": -71.2950
+            }
+          },
+          {
+            "countyName": "Grafton County",
+            "type": "County",
+            "founded": "1769",
+            "map": {
+              "latitude": 44.0267,
+              "longitude": -71.8209
+            }
+          },
+          {
+            "countyName": "Hillsborough County",
+            "type": "County",
+            "founded": "1769",
+            "map": {
+              "latitude": 42.9243,
+              "longitude": -71.6371
+            }
+          },
+          {
+            "countyName": "Merrimack County",
+            "type": "County",
+            "founded": "1823",
+            "map": {
+              "latitude": 43.2845,
+              "longitude": -71.6870
+            }
+          },
+          {
+            "countyName": "Rockingham County",
+            "type": "County",
+            "founded": "1769",
+            "map": {
+              "latitude": 42.9931,
+              "longitude": -71.1270
+            }
+          },
+          {
+            "countyName": "Strafford County",
+            "type": "County",
+            "founded": "1769",
+            "map": {
+              "latitude": 43.2383,
+              "longitude": -71.0236
+            }
+          },
+          {
+            "countyName": "Sullivan County",
+            "type": "County",
+            "founded": "1827",
+            "map": {
+              "latitude": 43.4076,
+              "longitude": -72.1679
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

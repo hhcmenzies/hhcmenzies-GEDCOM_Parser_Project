@@ -1,0 +1,104 @@
+{
+  "given_name_variations": {
+    "William": {
+      "abbreviations": ["Wm.", "Wlm", "Willm"],
+      "variants": ["Will", "Bill", "Billy"]
+    },
+    "John": {
+      "abbreviations": ["Jno.", "Jhn", "Jo."],
+      "variants": ["Johnny", "Jon", "Jack"]
+    },
+    "James": {
+      "abbreviations": ["Jas."],
+      "variants": ["Jim", "Jimmy"]
+    },
+    "Robert": {
+      "abbreviations": ["Robt."],
+      "variants": ["Rob", "Bob", "Bobby"]
+    },
+    "Joseph": {
+      "abbreviations": ["Jos."],
+      "variants": ["Joe", "Joey"]
+    },
+    "Thomas": {
+      "abbreviations": ["Thos."],
+      "variants": ["Tom", "Tommy"]
+    },
+    "Alexander": {
+      "abbreviations": ["Alexr.", "Alex."],
+      "variants": ["Sandy", "Xander"]
+    },
+    "Edward": {
+      "abbreviations": ["Edw."],
+      "variants": ["Ed", "Eddie", "Ned"]
+    },
+    "Frederick": {
+      "abbreviations": ["Fredk."],
+      "variants": ["Fred", "Freddy"]
+    },
+    "Richard": {
+      "abbreviations": ["Richd.", "Rchd."],
+      "variants": ["Rick", "Ricky", "Dick"]
+    },
+    "Benjamin": {
+      "abbreviations": ["Benj."],
+      "variants": ["Ben", "Benny"]
+    },
+    "Samuel": {
+      "abbreviations": ["Saml."],
+      "variants": ["Sam", "Sammy"]
+    },
+    "George": {
+      "abbreviations": ["Geo."],
+      "variants": ["Georgie"]
+    },
+    "Charles": {
+      "abbreviations": ["Chas."],
+      "variants": ["Charlie", "Chuck"]
+    },
+    "Henry": {
+      "abbreviations": ["Hy.", "Hen."],
+      "variants": ["Harry", "Hank"]
+    },
+    "Stephen": {
+      "abbreviations": ["Steph.", "Stephn."],
+      "variants": ["Steve", "Stevie"]
+    },
+    "Nathaniel": {
+      "abbreviations": ["Nathl.", "Nath."],
+      "variants": ["Nat", "Nate"]
+    },
+    "Isaac": {
+      "abbreviations": ["Isac.", "Isaa."],
+      "variants": ["Ike"]
+    },
+    "Patrick": {
+      "abbreviations": ["Patk."],
+      "variants": ["Pat", "Paddy"]
+    },
+    "Jeremiah": {
+      "abbreviations": ["Jerm.", "Jerem.", "Jer."],
+      "variants": ["Jerry"]
+    },
+    "Daniel": {
+      "abbreviations": ["Danl.", "Dan."],
+      "variants": ["Danny"]
+    },
+    "Anthony": {
+      "abbreviations": ["Anth."],
+      "variants": ["Tony"]
+    },
+    "Wilhelm": {
+      "abbreviations": ["Wm.", "Wilh.", "Wil."],
+      "variants": ["Willie"]
+    },
+    "Elisabeth": {
+      "abbreviations": ["Elis.", "Lise", "Lsb."],
+      "variants": ["Beth", "Liz", "Lizzie", "Bess"]
+    },
+    "Charlotte": {
+      "abbreviations": ["Charl."],
+      "variants": ["Lotte", "Charlie"]
+    }
+  }
+}

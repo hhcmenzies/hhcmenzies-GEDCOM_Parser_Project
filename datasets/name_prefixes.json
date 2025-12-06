@@ -1,0 +1,282 @@
+{
+  "npfx_list": {
+    "academic_and_professional_prefixes": [
+      {
+        "value": "Dr.",
+        "description": "Doctor"
+      },
+      {
+        "value": "Prof.",
+        "description": "Professor"
+      },
+      {
+        "value": "Asst. Prof.",
+        "description": "Assistant Professor"
+      },
+      {
+        "value": "Assoc. Prof.",
+        "description": "Associate Professor"
+      },
+      {
+        "value": "Engr.",
+        "description": "Engineer"
+      },
+      {
+        "value": "Er.",
+        "description": "Engineer (common in some Asian countries)"
+      },
+      {
+        "value": "Adv.",
+        "description": "Advocate (legal professionals)"
+      },
+      {
+        "value": "CA.",
+        "description": "Chartered Accountant"
+      },
+      {
+        "value": "CPA.",
+        "description": "Certified Public Accountant"
+      },
+      {
+        "value": "Ar.",
+        "description": "Architect"
+      },
+      {
+        "value": "Actg.",
+        "description": "Acting (temporary position holder)"
+      }
+    ],
+    "government_and_political_prefixes": [
+      {
+        "value": "Gov.",
+        "description": "Governor"
+      },
+      {
+        "value": "Lt. Gov.",
+        "description": "Lieutenant Governor"
+      },
+      {
+        "value": "Sec.",
+        "description": "Secretary (government office)"
+      },
+      {
+        "value": "PM",
+        "description": "Prime Minister"
+      },
+      {
+        "value": "CM",
+        "description": "Chief Minister"
+      },
+      {
+        "value": "Chancellor",
+        "description": "Head of state or university (varies by country)"
+      },
+      {
+        "value": "Comr.",
+        "description": "Commissioner"
+      },
+      {
+        "value": "AG",
+        "description": "Attorney General"
+      }
+    ],
+    "judicial_and_legal_prefixes": [
+      {
+        "value": "Ch. Justice",
+        "description": "Chief Justice"
+      },
+      {
+        "value": "Lord Justice",
+        "description": "Judicial title in some legal systems"
+      },
+      {
+        "value": "Juris Doctor",
+        "description": "Latin term for Doctor of Law (often a degree rather than prefix)"
+      },
+      {
+        "value": "Arbitrator",
+        "description": "Legal mediator title"
+      },
+      {
+        "value": "Registrar",
+        "description": "Court or legal administrative role"
+      }
+    ],
+    "cultural_and_historical_prefixes": [
+      {
+        "value": "Sardar",
+        "description": "South Asian noble or leadership title"
+      },
+      {
+        "value": "Khan",
+        "description": "Central Asian noble or warrior title"
+      },
+      {
+        "value": "Sahib",
+        "description": "Polite honorific in South Asia"
+      },
+      {
+        "value": "Nawab",
+        "description": "Muslim nobleman title in South Asia"
+      },
+      {
+        "value": "Begum",
+        "description": "Female equivalent of Nawab"
+      },
+      {
+        "value": "Rai",
+        "description": "Honorific title in South Asian aristocracy"
+      },
+      {
+        "value": "Thakur",
+        "description": "Indian feudal title"
+      },
+      {
+        "value": "Mirza",
+        "description": "Persian/Turkic nobility title"
+      },
+      {
+        "value": "Kabiyesi",
+        "description": "Yoruba royal title for a king or chief"
+      },
+      {
+        "value": "Baasha",
+        "description": "Ethiopian or Middle Eastern noble title"
+      },
+      {
+        "value": "Jarl",
+        "description": "Scandinavian noble title (similar to Earl)"
+      }
+    ],
+    "foreign_language_honorifics_and_politeness_prefixes": [
+      {
+        "value": "Herr Doktor",
+        "description": "German for 'Mister Doctor'"
+      },
+      {
+        "value": "Herr Professor",
+        "description": "German for 'Professor' (male)"
+      },
+      {
+        "value": "Frau Doktor",
+        "description": "German for 'Mrs. Doctor'"
+      },
+      {
+        "value": "Frau Professor",
+        "description": "German for 'Mrs. Professor'"
+      },
+      {
+        "value": "Datu",
+        "description": "Indigenous Filipino chieftain title"
+      },
+      {
+        "value": "Tuan",
+        "description": "Malay/Indonesian honorific for respected men"
+      },
+      {
+        "value": "Dato",
+        "description": "Malaysian honorific for high-ranking individuals"
+      },
+      {
+        "value": "Dato’",
+        "description": "Alternative spelling of Dato"
+      },
+      {
+        "value": "Tan Sri",
+        "description": "Malaysian honorary title"
+      },
+      {
+        "value": "Toh Puan",
+        "description": "Title for wives of Malaysian Tan Sri honorees"
+      },
+      {
+        "value": "Tun",
+        "description": "Highest Malaysian honorific title"
+      },
+      {
+        "value": "Baba",
+        "description": "Honorific used in various cultures (Indian, Chinese, Middle Eastern)"
+      },
+      {
+        "value": "Abbot",
+        "description": "Head of a monastery (sometimes used as a prefix)"
+      },
+      {
+        "value": "Comte",
+        "description": "French for 'Count'"
+      },
+      {
+        "value": "Gräfin",
+        "description": "German for 'Countess'"
+      },
+      {
+        "value": "Signor",
+        "description": "Italian for 'Mister'"
+      },
+      {
+        "value": "Signora",
+        "description": "Italian for 'Mrs.'"
+      },
+      {
+        "value": "Signorina",
+        "description": "Italian for 'Miss'"
+      },
+      {
+        "value": "Mestre",
+        "description": "Portuguese for 'Master'"
+      },
+      {
+        "value": "Mevrouw",
+        "description": "Dutch for 'Mrs.'"
+      },
+      {
+        "value": "Jonkheer",
+        "description": "Dutch honorific for a young nobleman"
+      }
+    ],
+    "historical_and_outdated_prefixes": [
+      {
+        "value": "Caesar",
+        "description": "Roman imperial title"
+      },
+      {
+        "value": "Imperator",
+        "description": "Latin title for Emperor"
+      },
+      {
+        "value": "Viceroy",
+        "description": "Colonial governor title"
+      },
+      {
+        "value": "Doge",
+        "description": "Italian (Venetian) ruler title"
+      },
+      {
+        "value": "Despot",
+        "description": "Byzantine ruling title"
+      }
+    ],
+    "common_courtesy_prefixes": [
+      {
+        "value": "Mr.",
+        "description": "Mister (English courtesy title for men)"
+      },
+      {
+        "value": "Mrs.",
+        "description": "Missus (English courtesy title for married women)"
+      },
+      {
+        "value": "Ms.",
+        "description": "Used for adult women regardless of marital status"
+      },
+      {
+        "value": "Miss",
+        "description": "English courtesy title for an unmarried woman"
+      },
+      {
+        "value": "Mx.",
+        "description": "Gender-neutral courtesy title"
+      }
+    ]
+  }
+}

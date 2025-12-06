@@ -1,0 +1,64 @@
+{
+  "gedcom_date_normalization": {
+    "approximate": {
+      "standardized": "ABT",
+      "aliases": ["about", "abt", "abt.", "approx", "approx.", "approximately", "circa", "c", "c.", "around", "ca", "ca."],
+      "meaning": "An estimated or uncertain date"
+    },
+    "before": {
+      "standardized": "BEF",
+      "aliases": ["before", "bef", "bef.", "previous to", "prior to", "pre", "pre-", "earlier than"],
+      "meaning": "An event occurring before a certain date"
+    },
+    "after": {
+      "standardized": "AFT",
+      "aliases": ["after", "aft", "aft.", "post", "post-", "afterwards", "later than"],
+      "meaning": "An event occurring after a certain date"
+    },
+    "between": {
+      "standardized": "BET",
+      "aliases": ["between", "bet", "bet.", "betw", "betw.", "btw", "btw.", "ranging from"],
+      "meaning": "An event occurring within a range of dates"
+    },
+    "calculated": {
+      "standardized": "CAL",
+      "aliases": ["calculated", "calc", "calc.", "cal", "cal.", "computed", "estimation based on"],
+      "meaning": "A date derived from calculations or logical deduction"
+    },
+    "estimated": {
+      "standardized": "EST",
+      "aliases": ["estimated", "est", "est.", "estimate", "estim", "estim.", "roughly", "probable", "assumed"],
+      "meaning": "A date that is likely but not exact"
+    },
+    "from": {
+      "standardized": "FROM",
+      "aliases": ["from", "since"],
+      "meaning": "Indicates a starting date for an event"
+    },
+    "to": {
+      "standardized": "TO",
+      "aliases": ["to", "until", "thru", "through"],
+      "meaning": "Indicates an end date for an event"
+    },
+    "before present": {
+      "standardized": "BP",
+      "aliases": ["before present"],
+      "meaning": "Scientific dating reference, used in archaeology (e.g., 500 BP = 500 years before 1950)"
+    },
+    "seasonal": {
+      "standardized": "SEASONAL",
+      "aliases": ["spring", "summer", "autumn", "fall", "winter"],
+      "meaning": "A date reference to a particular season, commonly used in historical records"
+    },
+    "early-late references": {
+      "standardized": "RANGE",
+      "aliases": ["early", "mid", "late"],
+      "meaning": "Indicates an approximate time within a century or decade (e.g., early 1800s, late 1700s)"
+    },
+    "calendar systems": {
+      "standardized": "CALENDAR",
+      "aliases": ["Julian", "Gregorian", "Old Style", "New Style"],
+      "meaning": "Indicates a reference to a specific historical calendar system"
+    }
+  }
+}

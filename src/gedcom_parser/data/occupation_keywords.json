@@ -1,0 +1,150 @@
+{
+  "farmer": [
+    "farmer", "farm laborer", "farmhand", "agricultural worker",
+    "tiller", "planter"
+  ],
+  "laborer": [
+    "laborer", "day laborer", "general laborer", "workman"
+  ],
+  "carpenter": [
+    "carpenter", "joiner", "woodworker", "cabinet maker"
+  ],
+  "blacksmith": [
+    "blacksmith", "smith", "farrier", "metal worker"
+  ],
+  "shipwright": [
+    "shipwright", "ship builder", "boat builder", "ship carpenter"
+  ],
+  "mariner": [
+    "mariner", "sailor", "seaman", "naval", "boatswain"
+  ],
+  "merchant": [
+    "merchant", "trader", "shopkeeper", "storekeeper"
+  ],
+  "weaver": [
+    "weaver", "textile worker", "loom operator"
+  ],
+  "tailor": [
+    "tailor", "seamster", "seamstress", "clothier"
+  ],
+  "minister": [
+    "minister", "pastor", "clergyman", "reverend", "priest"
+  ],
+  "teacher": [
+    "teacher", "schoolteacher", "educator", "school master"
+  ],
+  "doctor": [
+    "doctor", "physician", "surgeon", "medical doctor"
+  ],
+  "nurse": [
+    "nurse", "caretaker", "caregiver"
+  ],
+  "lawyer": [
+    "lawyer", "attorney", "barrister", "solicitor"
+  ],
+  "judge": [
+    "judge", "magistrate", "justice"
+  ],
+  "soldier": [
+    "soldier", "private", "corporal", "sergeant", "militia", "infantry"
+  ],
+  "officer": [
+    "officer", "captain", "lieutenant", "colonel", "general"
+  ],
+  "engineer": [
+    "engineer", "civil engineer", "mechanical engineer"
+  ],
+  "miller": [
+    "miller", "grain miller", "gristmill worker"
+  ],
+  "butcher": [
+    "butcher", "meat cutter"
+  ],
+  "baker": [
+    "baker"
+  ],
+  "mason": [
+    "mason", "bricklayer", "stonemason"
+  ],
+  "shoemaker": [
+    "shoemaker", "cobbler"
+  ],
+  "cooper": [
+    "cooper", "barrel maker"
+  ],
+  "brewer": [
+    "brewer"
+  ],
+  "innkeeper": [
+    "innkeeper", "tavern keeper", "publican"
+  ],
+  "clerk": [
+    "clerk", "office clerk", "record keeper", "scribe"
+  ],
+  "postmaster": [
+    "postmaster", "postal worker"
+  ],
+  "railroad worker": [
+    "railroad worker", "railway worker", "conductor", "brakeman", "engineer"
+  ],
+  "machinist": [
+    "machinist", "machine operator", "toolmaker"
+  ],
+  "electrician": [
+    "electrician"
+  ],
+  "plumber": [
+    "plumber", "pipefitter"
+  ],
+  "painter": [
+    "painter", "house painter"
+  ],
+  "artist": [
+    "artist", "painter", "illustrator"
+  ],
+  "musician": [
+    "musician", "composer"
+  ],
+  "writer": [
+    "writer", "author"
+  ],
+  "editor": [
+    "editor", "publisher"
+  ],
+  "banker": [
+    "banker", "bank clerk"
+  ],
+  "accountant": [
+    "accountant", "bookkeeper"
+  ],
+  "police officer": [
+    "policeman", "police officer", "constable", "sheriff"
+  ],
+  "firefighter": [
+    "firefighter", "fireman"
+  ],
+  "administrator": [
+    "administrator", "manager", "overseer"
+  ],
+  "scientist": [
+    "scientist", "researcher", "chemist", "biologist"
+  ],
+  "professor": [
+    "professor", "college teacher"
+  ],
+  "government worker": [
+    "government worker", "bureaucrat", "civil servant"
+  ],
+  "politician": [
+    "politician", "senator", "representative", "mayor"
+  ],
+  "judge": [
+    "judge", "justice", "magistrate"
+  ],
+  "craftsman": [
+    "craftsman", "artisan"
+  ],
+  "unknown": [
+    "unknown", "not recorded", "none"
+  ]
+}

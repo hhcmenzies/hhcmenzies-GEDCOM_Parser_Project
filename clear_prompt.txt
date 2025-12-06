@@ -1,0 +1,6 @@
+cd /home/david/GEDCOM_Parser_Project
+source venv/bin/activate
+export PYTHONPATH=./src
+
+find . -name "__pycache__" -type d -exec rm -rf {} +
+find . -name "*.pyc" -delete

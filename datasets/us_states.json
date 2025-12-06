@@ -1,0 +1,702 @@
+{
+  "us_regions": [
+    {
+      "official_name": "State of Alabama",
+      "common_name": "Alabama",
+      "historical_names": [
+        {
+          "name": "Alabama Territory",
+          "from_date": "1817-03-03",
+          "to_date": "1819-12-14"
+        }
+      ],
+      "standard_abbr": "AL",
+      "nonstandard_abbr": ["Ala."]
+    },
+    {
+      "official_name": "State of Alaska",
+      "common_name": "Alaska",
+      "historical_names": [
+        {
+          "name": "Territory of Alaska",
+          "from_date": "1912-08-24",
+          "to_date": "1959-01-03"
+        }
+      ],
+      "standard_abbr": "AK",
+      "nonstandard_abbr": ["Alas."]
+    },
+    {
+      "official_name": "State of Arizona",
+      "common_name": "Arizona",
+      "historical_names": [
+        {
+          "name": "Arizona Territory",
+          "from_date": "1863-02-24",
+          "to_date": "1912-02-14"
+        }
+      ],
+      "standard_abbr": "AZ",
+      "nonstandard_abbr": ["Ariz."]
+    },
+    {
+      "official_name": "State of Arkansas",
+      "common_name": "Arkansas",
+      "historical_names": [
+        {
+          "name": "Territory of Arkansas",
+          "from_date": "1819-03-02",
+          "to_date": "1836-06-15"
+        }
+      ],
+      "standard_abbr": "AR",
+      "nonstandard_abbr": ["Ark."]
+    },
+    {
+      "official_name": "State of California",
+      "common_name": "California",
+      "historical_names": [],
+      "standard_abbr": "CA",
+      "nonstandard_abbr": ["Cal."]
+    },
+    {
+      "official_name": "State of Colorado",
+      "common_name": "Colorado",
+      "historical_names": [
+        {
+          "name": "Colorado Territory",
+          "from_date": "1861-02-28",
+          "to_date": "1876-08-01"
+        }
+      ],
+      "standard_abbr": "CO",
+      "nonstandard_abbr": ["Colo."]
+    },
+    {
+      "official_name": "State of Connecticut",
+      "common_name": "Connecticut",
+      "historical_names": [
+        {
+          "name": "Connecticut Colony",
+          "from_date": "1636-01-01",
+          "to_date": "1776-07-04"
+        }
+      ],
+      "standard_abbr": "CT",
+      "nonstandard_abbr": ["Conn."]
+    },
+    {
+      "official_name": "State of Delaware",
+      "common_name": "Delaware",
+      "historical_names": [
+        {
+          "name": "Delaware Colony",
+          "from_date": "1664-01-01",
+          "to_date": "1776-07-04"
+        }
+      ],
+      "standard_abbr": "DE",
+      "nonstandard_abbr": ["Del."]
+    },
+    {
+      "official_name": "State of Florida",
+      "common_name": "Florida",
+      "historical_names": [
+        {
+          "name": "Florida Territory",
+          "from_date": "1822-03-30",
+          "to_date": "1845-03-03"
+        }
+      ],
+      "standard_abbr": "FL",
+      "nonstandard_abbr": ["Fla."]
+    },
+    {
+      "official_name": "State of Georgia",
+      "common_name": "Georgia",
+      "historical_names": [
+        {
+          "name": "Province of Georgia",
+          "from_date": "1732-01-01",
+          "to_date": "1777-02-05"
+        }
+      ],
+      "standard_abbr": "GA",
+      "nonstandard_abbr": ["Ga."]
+    },
+    {
+      "official_name": "State of Hawaii",
+      "common_name": "Hawaii",
+      "historical_names": [
+        {
+          "name": "Territory of Hawaii",
+          "from_date": "1900-04-30",
+          "to_date": "1959-08-21"
+        }
+      ],
+      "standard_abbr": "HI",
+      "nonstandard_abbr": ["H.I."]
+    },
+    {
+      "official_name": "State of Idaho",
+      "common_name": "Idaho",
+      "historical_names": [
+        {
+          "name": "Idaho Territory",
+          "from_date": "1863-03-04",
+          "to_date": "1890-07-03"
+        }
+      ],
+      "standard_abbr": "ID",
+      "nonstandard_abbr": ["Ida."]
+    },
+    {
+      "official_name": "State of Illinois",
+      "common_name": "Illinois",
+      "historical_names": [
+        {
+          "name": "Illinois Territory",
+          "from_date": "1809-03-01",
+          "to_date": "1818-12-03"
+        }
+      ],
+      "standard_abbr": "IL",
+      "nonstandard_abbr": ["Ill."]
+    },
+    {
+      "official_name": "State of Indiana",
+      "common_name": "Indiana",
+      "historical_names": [
+        {
+          "name": "Indiana Territory",
+          "from_date": "1800-07-04",
+          "to_date": "1816-12-11"
+        }
+      ],
+      "standard_abbr": "IN",
+      "nonstandard_abbr": ["Ind."]
+    },
+    {
+      "official_name": "State of Iowa",
+      "common_name": "Iowa",
+      "historical_names": [
+        {
+          "name": "Iowa Territory",
+          "from_date": "1838-07-04",
+          "to_date": "1846-12-28"
+        }
+      ],
+      "standard_abbr": "IA",
+      "nonstandard_abbr": ["Ia."]
+    },
+    {
+      "official_name": "State of Kansas",
+      "common_name": "Kansas",
+      "historical_names": [
+        {
+          "name": "Kansas Territory",
+          "from_date": "1854-05-30",
+          "to_date": "1861-01-29"
+        }
+      ],
+      "standard_abbr": "KS",
+      "nonstandard_abbr": ["Kans."]
+    },
+    {
+      "official_name": "Commonwealth of Kentucky",
+      "common_name": "Kentucky",
+      "historical_names": [],
+      "standard_abbr": "KY",
+      "nonstandard_abbr": ["Ky."]
+    },
+    {
+      "official_name": "State of Louisiana",
+      "common_name": "Louisiana",
+      "historical_names": [
+        {
+          "name": "Territory of Orleans",
+          "from_date": "1804-10-01",
+          "to_date": "1812-04-30"
+        }
+      ],
+      "standard_abbr": "LA",
+      "nonstandard_abbr": ["La."]
+    },
+    {
+      "official_name": "State of Maine",
+      "common_name": "Maine",
+      "historical_names": [
+        {
+          "name": "District of Maine (part of Massachusetts)",
+          "from_date": "1780-01-01",
+          "to_date": "1820-03-15"
+        }
+      ],
+      "standard_abbr": "ME",
+      "nonstandard_abbr": ["Me."]
+    },
+    {
+      "official_name": "State of Maryland",
+      "common_name": "Maryland",
+      "historical_names": [
+        {
+          "name": "Maryland Colony",
+          "from_date": "1632-06-20",
+          "to_date": "1776-07-04"
+        }
+      ],
+      "standard_abbr": "MD",
+      "nonstandard_abbr": ["Md."]
+    },
+    {
+      "official_name": "Commonwealth of Massachusetts",
+      "common_name": "Massachusetts",
+      "historical_names": [
+        {
+          "name": "Province of Massachusetts Bay",
+          "from_date": "1691-10-07",
+          "to_date": "1776-07-04"
+        }
+      ],
+      "standard_abbr": "MA",
+      "nonstandard_abbr": ["Mass."]
+    },
+    {
+      "official_name": "State of Michigan",
+      "common_name": "Michigan",
+      "historical_names": [
+        {
+          "name": "Michigan Territory",
+          "from_date": "1805-06-30",
+          "to_date": "1837-01-26"
+        }
+      ],
+      "standard_abbr": "MI",
+      "nonstandard_abbr": ["Mich."]
+    },
+    {
+      "official_name": "State of Minnesota",
+      "common_name": "Minnesota",
+      "historical_names": [
+        {
+          "name": "Minnesota Territory",
+          "from_date": "1849-03-03",
+          "to_date": "1858-05-11"
+        }
+      ],
+      "standard_abbr": "MN",
+      "nonstandard_abbr": ["Minn."]
+    },
+    {
+      "official_name": "State of Mississippi",
+      "common_name": "Mississippi",
+      "historical_names": [
+        {
+          "name": "Mississippi Territory",
+          "from_date": "1798-04-07",
+          "to_date": "1817-12-10"
+        }
+      ],
+      "standard_abbr": "MS",
+      "nonstandard_abbr": ["Miss."]
+    },
+    {
+      "official_name": "State of Missouri",
+      "common_name": "Missouri",
+      "historical_names": [
+        {
+          "name": "Missouri Territory",
+          "from_date": "1812-06-04",
+          "to_date": "1821-08-10"
+        }
+      ],
+      "standard_abbr": "MO",
+      "nonstandard_abbr": ["Mo."]
+    },
+    {
+      "official_name": "State of Montana",
+      "common_name": "Montana",
+      "historical_names": [
+        {
+          "name": "Montana Territory",
+          "from_date": "1864-05-26",
+          "to_date": "1889-11-08"
+        }
+      ],
+      "standard_abbr": "MT",
+      "nonstandard_abbr": ["Mont."]
+    },
+    {
+      "official_name": "State of Nebraska",
+      "common_name": "Nebraska",
+      "historical_names": [
+        {
+          "name": "Nebraska Territory",
+          "from_date": "1854-05-30",
+          "to_date": "1867-03-01"
+        }
+      ],
+      "standard_abbr": "NE",
+      "nonstandard_abbr": ["Nebr."]
+    },
+    {
+      "official_name": "State of Nevada",
+      "common_name": "Nevada",
+      "historical_names": [
+        {
+          "name": "Nevada Territory",
+          "from_date": "1861-03-02",
+          "to_date": "1864-10-31"
+        }
+      ],
+      "standard_abbr": "NV",
+      "nonstandard_abbr": ["Nev."]
+    },
+    {
+      "official_name": "State of New Hampshire",
+      "common_name": "New Hampshire",
+      "historical_names": [
+        {
+          "name": "Province of New Hampshire",
+          "from_date": "1629-01-01",
+          "to_date": "1776-07-04"
+        }
+      ],
+      "standard_abbr": "NH",
+      "nonstandard_abbr": ["N.H."]
+    },
+    {
+      "official_name": "State of New Jersey",
+      "common_name": "New Jersey",
+      "historical_names": [
+        {
+          "name": "Province of New Jersey",
+          "from_date": "1664-01-01",
+          "to_date": "1776-07-04"
+        }
+      ],
+      "standard_abbr": "NJ",
+      "nonstandard_abbr": ["N.J."]
+    },
+    {
+      "official_name": "State of New Mexico",
+      "common_name": "New Mexico",
+      "historical_names": [
+        {
+          "name": "New Mexico Territory",
+          "from_date": "1850-09-09",
+          "to_date": "1912-01-06"
+        }
+      ],
+      "standard_abbr": "NM",
+      "nonstandard_abbr": ["N. Mex."]
+    },
+    {
+      "official_name": "State of New York",
+      "common_name": "New York",
+      "historical_names": [
+        {
+          "name": "Province of New York",
+          "from_date": "1664-01-01",
+          "to_date": "1776-07-04"
+        }
+      ],
+      "standard_abbr": "NY",
+      "nonstandard_abbr": ["N.Y."]
+    },
+    {
+      "official_name": "State of North Carolina",
+      "common_name": "North Carolina",
+      "historical_names": [
+        {
+          "name": "Province of North Carolina",
+          "from_date": "1712-01-01",
+          "to_date": "1776-07-04"
+        }
+      ],
+      "standard_abbr": "NC",
+      "nonstandard_abbr": ["N.C."]
+    },
+    {
+      "official_name": "State of North Dakota",
+      "common_name": "North Dakota",
+      "historical_names": [
+        {
+          "name": "Dakota Territory (part)",
+          "from_date": "1861-03-02",
+          "to_date": "1889-11-02"
+        }
+      ],
+      "standard_abbr": "ND",
+      "nonstandard_abbr": ["N. Dak."]
+    },
+    {
+      "official_name": "State of Ohio",
+      "common_name": "Ohio",
+      "historical_names": [
+        {
+          "name": "Northwest Territory (part)",
+          "from_date": "1787-07-13",
+          "to_date": "1803-03-01"
+        }
+      ],
+      "standard_abbr": "OH",
+      "nonstandard_abbr": []
+    },
+    {
+      "official_name": "State of Oklahoma",
+      "common_name": "Oklahoma",
+      "historical_names": [
+        {
+          "name": "Oklahoma Territory",
+          "from_date": "1890-05-02",
+          "to_date": "1907-11-16"
+        }
+      ],
+      "standard_abbr": "OK",
+      "nonstandard_abbr": ["Okla."]
+    },
+    {
+      "official_name": "State of Oregon",
+      "common_name": "Oregon",
+      "historical_names": [
+        {
+          "name": "Oregon Territory",
+          "from_date": "1848-08-14",
+          "to_date": "1859-02-14"
+        }
+      ],
+      "standard_abbr": "OR",
+      "nonstandard_abbr": ["Ore."]
+    },
+    {
+      "official_name": "Commonwealth of Pennsylvania",
+      "common_name": "Pennsylvania",
+      "historical_names": [
+        {
+          "name": "Province of Pennsylvania",
+          "from_date": "1681-03-04",
+          "to_date": "1776-07-04"
+        }
+      ],
+      "standard_abbr": "PA",
+      "nonstandard_abbr": ["Pa."]
+    },
+    {
+      "official_name": "State of Rhode Island",
+      "common_name": "Rhode Island",
+      "historical_names": [
+        {
+          "name": "Colony of Rhode Island and Providence Plantations",
+          "from_date": "1663-07-08",
+          "to_date": "1776-07-04"
+        }
+      ],
+      "standard_abbr": "RI",
+      "nonstandard_abbr": ["R.I."]
+    },
+    {
+      "official_name": "State of South Carolina",
+      "common_name": "South Carolina",
+      "historical_names": [
+        {
+          "name": "Province of South Carolina",
+          "from_date": "1712-01-01",
+          "to_date": "1776-07-04"
+        }
+      ],
+      "standard_abbr": "SC",
+      "nonstandard_abbr": ["S.C."]
+    },
+    {
+      "official_name": "State of South Dakota",
+      "common_name": "South Dakota",
+      "historical_names": [
+        {
+          "name": "Dakota Territory (part)",
+          "from_date": "1861-03-02",
+          "to_date": "1889-11-02"
+        }
+      ],
+      "standard_abbr": "SD",
+      "nonstandard_abbr": ["S. Dak."]
+    },
+    {
+      "official_name": "State of Tennessee",
+      "common_name": "Tennessee",
+      "historical_names": [
+        {
+          "name": "Territory South of the River Ohio",
+          "from_date": "1790-05-26",
+          "to_date": "1796-06-01"
+        }
+      ],
+      "standard_abbr": "TN",
+      "nonstandard_abbr": ["Tenn."]
+    },
+    {
+      "official_name": "State of Texas",
+      "common_name": "Texas",
+      "historical_names": [
+        {
+          "name": "Republic of Texas",
+          "from_date": "1836-03-02",
+          "to_date": "1845-12-29"
+        }
+      ],
+      "standard_abbr": "TX",
+      "nonstandard_abbr": ["Tex."]
+    },
+    {
+      "official_name": "State of Utah",
+      "common_name": "Utah",
+      "historical_names": [
+        {
+          "name": "Utah Territory",
+          "from_date": "1850-09-09",
+          "to_date": "1896-01-04"
+        }
+      ],
+      "standard_abbr": "UT",
+      "nonstandard_abbr": ["Ut."]
+    },
+    {
+      "official_name": "State of Vermont",
+      "common_name": "Vermont",
+      "historical_names": [
+        {
+          "name": "Republic of Vermont",
+          "from_date": "1777-01-15",
+          "to_date": "1791-03-04"
+        }
+      ],
+      "standard_abbr": "VT",
+      "nonstandard_abbr": ["Vt."]
+    },
+    {
+      "official_name": "Commonwealth of Virginia",
+      "common_name": "Virginia",
+      "historical_names": [
+        {
+          "name": "Colony and Dominion of Virginia",
+          "from_date": "1607-05-14",
+          "to_date": "1776-07-04"
+        }
+      ],
+      "standard_abbr": "VA",
+      "nonstandard_abbr": ["Va."]
+    },
+    {
+      "official_name": "State of Washington",
+      "common_name": "Washington",
+      "historical_names": [
+        {
+          "name": "Washington Territory",
+          "from_date": "1853-03-02",
+          "to_date": "1889-11-11"
+        }
+      ],
+      "standard_abbr": "WA",
+      "nonstandard_abbr": ["Wash."]
+    },
+    {
+      "official_name": "State of West Virginia",
+      "common_name": "West Virginia",
+      "historical_names": [],
+      "standard_abbr": "WV",
+      "nonstandard_abbr": ["W. Va."]
+    },
+    {
+      "official_name": "State of Wisconsin",
+      "common_name": "Wisconsin",
+      "historical_names": [
+        {
+          "name": "Territory of Wisconsin",
+          "from_date": "1836-07-03",
+          "to_date": "1848-05-29"
+        }
+      ],
+      "standard_abbr": "WI",
+      "nonstandard_abbr": ["Wis."]
+    },
+    {
+      "official_name": "State of Wyoming",
+      "common_name": "Wyoming",
+      "historical_names": [
+        {
+          "name": "Wyoming Territory",
+          "from_date": "1868-07-25",
+          "to_date": "1890-07-10"
+        }
+      ],
+      "standard_abbr": "WY",
+      "nonstandard_abbr": ["Wyo."]
+    },
+    {
+      "official_name": "District of Columbia",
+      "common_name": "Washington, D.C.",
+      "historical_names": [],
+      "standard_abbr": "DC",
+      "nonstandard_abbr": ["D.C."]
+    },
+    {
+      "official_name": "Commonwealth of Puerto Rico",
+      "common_name": "Puerto Rico",
+      "historical_names": [
+        {
+          "name": "Porto Rico",
+          "from_date": "1898-12-10",
+          "to_date": "1932-05-17"
+        }
+      ],
+      "standard_abbr": "PR",
+      "nonstandard_abbr": ["P.R.", "Pto. Rico"]
+    },
+    {
+      "official_name": "Virgin Islands of the United States",
+      "common_name": "U.S. Virgin Islands",
+      "historical_names": [
+        {
+          "name": "Danish West Indies",
+          "from_date": "1754-01-01",
+          "to_date": "1917-03-31"
+        }
+      ],
+      "standard_abbr": "VI",
+      "nonstandard_abbr": ["V.I."]
+    },
+    {
+      "official_name": "Guam",
+      "common_name": "Guam",
+      "historical_names": [],
+      "standard_abbr": "GU",
+      "nonstandard_abbr": ["G.U."]
+    },
+    {
+      "official_name": "Commonwealth of the Northern Mariana Islands",
+      "common_name": "Northern Mariana Islands",
+      "historical_names": [
+        {
+          "name": "Trust Territory of the Pacific Islands (part)",
+          "from_date": "1947-07-18",
+          "to_date": "1978-01-09"
+        }
+      ],
+      "standard_abbr": "MP",
+      "nonstandard_abbr": ["NMI"]
+    },
+    {
+      "official_name": "Territory of American Samoa",
+      "common_name": "American Samoa",
+      "historical_names": [
+        {
+          "name": "Naval Station Tutuila / Eastern Samoa",
+          "from_date": "1900-04-17",
+          "to_date": "1904-02-19"
+        }
+      ],
+      "standard_abbr": "AS",
+      "nonstandard_abbr": ["A.S."]
+    }
+  ]
+}

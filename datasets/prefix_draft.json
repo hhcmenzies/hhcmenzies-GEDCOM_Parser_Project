@@ -1,0 +1,249 @@
+{
+  "prefixes": [
+    /* ===============================
+       ACADEMIC & PROFESSIONAL
+       =============================== */
+    {
+      "category": "academic_and_professional",
+      "long_form": "Doctor",
+      "short_form": "Dr.",
+      "aliases": ["Dr", "dr", "dr."],
+      "description": "Used by individuals who hold a doctorate (PhD, MD, etc.)."
+    },
+    {
+      "category": "academic_and_professional",
+      "long_form": "Professor",
+      "short_form": "Prof.",
+      "aliases": ["Prof", "prof.", "Professor."],
+      "description": "Senior academic rank at universities."
+    },
+    {
+      "category": "academic_and_professional",
+      "long_form": "Engineer",
+      "short_form": "Engr.",
+      "aliases": ["Er.", "engr", "Eng."],
+      "description": "Used in some regions for licensed engineers."
+    },
+    {
+      "category": "academic_and_professional",
+      "long_form": "Chartered Accountant",
+      "short_form": "CA.",
+      "aliases": ["C.A", "C A", "CA"],
+      "description": "Professional accountant designation."
+    },
+
+    /* ===============================
+       GOVERNMENT & POLITICAL
+       =============================== */
+    {
+      "category": "government_and_political",
+      "long_form": "Governor",
+      "short_form": "Gov.",
+      "aliases": ["Gov", "Gouverneur (French)", "Guv."],
+      "description": "Head of a state or provincial government."
+    },
+    {
+      "category": "government_and_political",
+      "long_form": "Lieutenant Governor",
+      "short_form": "Lt. Gov.",
+      "aliases": ["Lt Gov", "LtGovernor"],
+      "description": "Deputy to a Governor."
+    },
+    {
+      "category": "government_and_political",
+      "long_form": "Chief Minister",
+      "short_form": "CM",
+      "aliases": ["C.M"],
+      "description": "Head of a state/province in certain countries."
+    },
+    {
+      "category": "government_and_political",
+      "long_form": "Prime Minister",
+      "short_form": "PM",
+      "aliases": ["Pm", "P. M."],
+      "description": "Head of government in many parliamentary systems."
+    },
+
+    /* ===============================
+       JUDICIAL & LEGAL
+       =============================== */
+    {
+      "category": "judicial_and_legal",
+      "long_form": "Chief Justice",
+      "short_form": "Ch. Justice",
+      "aliases": ["Chief Just.", "Ch Justice"],
+      "description": "Presiding judge of a supreme court or major legal body."
+    },
+    {
+      "category": "judicial_and_legal",
+      "long_form": "Lord Justice",
+      "short_form": null,
+      "aliases": ["Lord Just.", "Justice Lord"],
+      "description": "Judicial title in some legal systems."
+    },
+    {
+      "category": "judicial_and_legal",
+      "long_form": "Arbitrator",
+      "short_form": null,
+      "aliases": [],
+      "description": "Neutral party in dispute resolution."
+    },
+
+    /* ===============================
+       CULTURAL & HISTORICAL
+       (Might also appear as noble titles)
+       =============================== */
+    {
+      "category": "cultural_and_historical",
+      "long_form": "Sardar",
+      "short_form": null,
+      "aliases": [],
+      "description": "South Asian noble or leadership title, sometimes used as a prefix."
+    },
+    {
+      "category": "cultural_and_historical",
+      "long_form": "Khan",
+      "short_form": null,
+      "aliases": [],
+      "description": "Central Asian noble or warrior title, also used as a prefix."
+    },
+    {
+      "category": "cultural_and_historical",
+      "long_form": "Nawab",
+      "short_form": null,
+      "aliases": ["Nawaab"],
+      "description": "Muslim nobleman title in South Asia."
+    },
+    {
+      "category": "cultural_and_historical",
+      "long_form": "Begum",
+      "short_form": null,
+      "aliases": ["Baigum"],
+      "description": "Female equivalent of Nawab in South Asian contexts."
+    },
+    {
+      "category": "cultural_and_historical",
+      "long_form": "Thakur",
+      "short_form": null,
+      "aliases": [],
+      "description": "Indian feudal title, can be used as a prefix."
+    },
+
+    /* ===============================
+       FOREIGN LANGUAGE HONORIFICS
+       =============================== */
+    {
+      "category": "foreign_language_honorifics",
+      "long_form": "Herr Doktor",
+      "short_form": null,
+      "aliases": ["Herr Dr.", "HerrDoktor"],
+      "description": "German for 'Mister Doctor.' A combined courtesy and academic title."
+    },
+    {
+      "category": "foreign_language_honorifics",
+      "long_form": "Frau Professor",
+      "short_form": null,
+      "aliases": ["Frau Prof.", "FrauProfessor"],
+      "description": "German for 'Mrs. Professor.'"
+    },
+    {
+      "category": "foreign_language_honorifics",
+      "long_form": "Dato",
+      "short_form": null,
+      "aliases": ["Dato’", "Datuk"],
+      "description": "Malaysian honorific for high-ranking individuals."
+    },
+    {
+      "category": "foreign_language_honorifics",
+      "long_form": "Tan Sri",
+      "short_form": null,
+      "aliases": [],
+      "description": "Malaysian honorary title."
+    },
+    {
+      "category": "foreign_language_honorifics",
+      "long_form": "Mestre",
+      "short_form": null,
+      "aliases": [],
+      "description": "Portuguese for 'Master.'"
+    },
+    {
+      "category": "foreign_language_honorifics",
+      "long_form": "Mevrouw",
+      "short_form": null,
+      "aliases": [],
+      "description": "Dutch for 'Mrs.'"
+    },
+    {
+      "category": "foreign_language_honorifics",
+      "long_form": "Signorina",
+      "short_form": null,
+      "aliases": [],
+      "description": "Italian for 'Miss.'"
+    },
+
+    /* ===============================
+       HISTORICAL & OUTDATED
+       =============================== */
+    {
+      "category": "historical_and_outdated",
+      "long_form": "Caesar",
+      "short_form": null,
+      "aliases": [],
+      "description": "Roman imperial title often used as a prefix."
+    },
+    {
+      "category": "historical_and_outdated",
+      "long_form": "Imperator",
+      "short_form": null,
+      "aliases": [],
+      "description": "Latin title for Emperor, used in Ancient Rome."
+    },
+    {
+      "category": "historical_and_outdated",
+      "long_form": "Viceroy",
+      "short_form": null,
+      "aliases": [],
+      "description": "Appointed ruler of a colony or province on behalf of a monarch."
+    },
+
+    /* ===============================
+       COMMON COURTESY PREFIXES
+       =============================== */
+    {
+      "category": "common_courtesy",
+      "long_form": "Mister",
+      "short_form": "Mr.",
+      "aliases": ["mr", "Mr", "Mr."],
+      "description": "English courtesy title for men."
+    },
+    {
+      "category": "common_courtesy",
+      "long_form": "Missus",
+      "short_form": "Mrs.",
+      "aliases": ["mrs", "Mrs", "Mrs.", "Missus"],
+      "description": "English courtesy title for a married woman."
+    },
+    {
+      "category": "common_courtesy",
+      "long_form": null,
+      "short_form": "Ms.",
+      "aliases": ["ms", "Ms", "Ms."],
+      "description": "Courtesy title for adult women (marital status unspecified)."
+    },
+    {
+      "category": "common_courtesy",
+      "long_form": "Miss",
+      "short_form": "Miss",
+      "aliases": ["miss", "Miss."],
+      "description": "English courtesy title for unmarried women."
+    },
+    {
+      "category": "common_courtesy",
+      "long_form": null,
+      "short_form": "Mx.",
+      "aliases": ["mx", "MX", "Mx"],
+      "description": "Gender-neutral courtesy title."
+    }
+  ]
+}

@@ -1,0 +1,1642 @@
+{
+  "us_military_rank_normalization_map": {
+    "pvt": {
+      "canonical": "PVT",
+      "branch": "Army",
+      "payGrade": "E-1"
+    },
+    "pvt.": {
+      "canonical": "PVT",
+      "branch": "Army",
+      "payGrade": "E-1"
+    },
+    "private": {
+      "canonical": "PVT",
+      "branch": "Army",
+      "payGrade": "E-1"
+    },
+    "private e-1": {
+      "canonical": "PVT",
+      "branch": "Army",
+      "payGrade": "E-1"
+    },
+    "private (army)": {
+      "canonical": "PVT",
+      "branch": "Army",
+      "payGrade": "E-1"
+    },
+
+    "pv2": {
+      "canonical": "PV2",
+      "branch": "Army",
+      "payGrade": "E-2"
+    },
+    "private e-2": {
+      "canonical": "PV2",
+      "branch": "Army",
+      "payGrade": "E-2"
+    },
+
+    "pfc": {
+      "canonical": "PFC",
+      "branch": "Army",
+      "payGrade": "E-3"
+    },
+    "pfc.": {
+      "canonical": "PFC",
+      "branch": "Army",
+      "payGrade": "E-3"
+    },
+    "private first class": {
+      "canonical": "PFC",
+      "branch": "Army",
+      "payGrade": "E-3"
+    },
+
+    "spc": {
+      "canonical": "SPC",
+      "branch": "Army",
+      "payGrade": "E-4"
+    },
+    "spc.": {
+      "canonical": "SPC",
+      "branch": "Army",
+      "payGrade": "E-4"
+    },
+    "specialist": {
+      "canonical": "SPC",
+      "branch": "Army",
+      "payGrade": "E-4"
+    },
+    "specialist (army)": {
+      "canonical": "SPC",
+      "branch": "Army",
+      "payGrade": "E-4"
+    },
+
+    "cpl": {
+      "canonical": "CPL",
+      "branch": "Army",
+      "payGrade": "E-4"
+    },
+    "cpl.": {
+      "canonical": "CPL",
+      "branch": "Army",
+      "payGrade": "E-4"
+    },
+    "corporal": {
+      "canonical": "CPL",
+      "branch": "Army",
+      "payGrade": "E-4"
+    },
+
+    "sgt": {
+      "canonical": "SGT",
+      "branch": "Army",
+      "payGrade": "E-5"
+    },
+    "sgt.": {
+      "canonical": "SGT",
+      "branch": "Army",
+      "payGrade": "E-5"
+    },
+    "sergeant": {
+      "canonical": "SGT",
+      "branch": "Army",
+      "payGrade": "E-5"
+    },
+
+    "ssg": {
+      "canonical": "SSG",
+      "branch": "Army",
+      "payGrade": "E-6"
+    },
+    "ssg.": {
+      "canonical": "SSG",
+      "branch": "Army",
+      "payGrade": "E-6"
+    },
+    "staff sergeant": {
+      "canonical": "SSG",
+      "branch": "Army",
+      "payGrade": "E-6"
+    },
+
+    "sfc": {
+      "canonical": "SFC",
+      "branch": "Army",
+      "payGrade": "E-7"
+    },
+    "sfc.": {
+      "canonical": "SFC",
+      "branch": "Army",
+      "payGrade": "E-7"
+    },
+    "sergeant first class": {
+      "canonical": "SFC",
+      "branch": "Army",
+      "payGrade": "E-7"
+    },
+
+    "msg": {
+      "canonical": "MSG",
+      "branch": "Army",
+      "payGrade": "E-8"
+    },
+    "msg.": {
+      "canonical": "MSG",
+      "branch": "Army",
+      "payGrade": "E-8"
+    },
+    "master sergeant": {
+      "canonical": "MSG",
+      "branch": "Army",
+      "payGrade": "E-8"
+    },
+
+    "1sg": {
+      "canonical": "1SG",
+      "branch": "Army",
+      "payGrade": "E-8"
+    },
+    "1sg.": {
+      "canonical": "1SG",
+      "branch": "Army",
+      "payGrade": "E-8"
+    },
+    "first sergeant": {
+      "canonical": "1SG",
+      "branch": "Army",
+      "payGrade": "E-8"
+    },
+
+    "sgm": {
+      "canonical": "SGM",
+      "branch": "Army",
+      "payGrade": "E-9"
+    },
+    "sgm.": {
+      "canonical": "SGM",
+      "branch": "Army",
+      "payGrade": "E-9"
+    },
+    "sergeant major": {
+      "canonical": "SGM",
+      "branch": "Army",
+      "payGrade": "E-9"
+    },
+
+    "csm": {
+      "canonical": "CSM",
+      "branch": "Army",
+      "payGrade": "E-9"
+    },
+    "csm.": {
+      "canonical": "CSM",
+      "branch": "Army",
+      "payGrade": "E-9"
+    },
+    "command sergeant major": {
+      "canonical": "CSM",
+      "branch": "Army",
+      "payGrade": "E-9"
+    },
+
+    "sma": {
+      "canonical": "SMA",
+      "branch": "Army",
+      "payGrade": "E-9"
+    },
+    "sma.": {
+      "canonical": "SMA",
+      "branch": "Army",
+      "payGrade": "E-9"
+    },
+    "sergeant major of the army": {
+      "canonical": "SMA",
+      "branch": "Army",
+      "payGrade": "E-9 (Special)"
+    },
+
+    "wo1": {
+      "canonical": "WO1",
+      "branch": "Army",
+      "payGrade": "W-1"
+    },
+    "wo-1": {
+      "canonical": "WO1",
+      "branch": "Army",
+      "payGrade": "W-1"
+    },
+    "w-1": {
+      "canonical": "WO1",
+      "branch": "Army",
+      "payGrade": "W-1"
+    },
+    "warrant officer 1": {
+      "canonical": "WO1",
+      "branch": "Army",
+      "payGrade": "W-1"
+    },
+
+    "cw2": {
+      "canonical": "CW2",
+      "branch": "Army",
+      "payGrade": "W-2"
+    },
+    "cw-2": {
+      "canonical": "CW2",
+      "branch": "Army",
+      "payGrade": "W-2"
+    },
+    "chief warrant officer 2": {
+      "canonical": "CW2",
+      "branch": "Army",
+      "payGrade": "W-2"
+    },
+
+    "cw3": {
+      "canonical": "CW3",
+      "branch": "Army",
+      "payGrade": "W-3"
+    },
+    "cw-3": {
+      "canonical": "CW3",
+      "branch": "Army",
+      "payGrade": "W-3"
+    },
+    "chief warrant officer 3": {
+      "canonical": "CW3",
+      "branch": "Army",
+      "payGrade": "W-3"
+    },
+
+    "cw4": {
+      "canonical": "CW4",
+      "branch": "Army",
+      "payGrade": "W-4"
+    },
+    "cw-4": {
+      "canonical": "CW4",
+      "branch": "Army",
+      "payGrade": "W-4"
+    },
+    "chief warrant officer 4": {
+      "canonical": "CW4",
+      "branch": "Army",
+      "payGrade": "W-4"
+    },
+
+    "cw5": {
+      "canonical": "CW5",
+      "branch": "Army",
+      "payGrade": "W-5"
+    },
+    "cw-5": {
+      "canonical": "CW5",
+      "branch": "Army",
+      "payGrade": "W-5"
+    },
+    "chief warrant officer 5": {
+      "canonical": "CW5",
+      "branch": "Army",
+      "payGrade": "W-5"
+    },
+
+    "2lt": {
+      "canonical": "2LT",
+      "branch": "Army",
+      "payGrade": "O-1"
+    },
+    "2lt.": {
+      "canonical": "2LT",
+      "branch": "Army",
+      "payGrade": "O-1"
+    },
+    "2nd lt": {
+      "canonical": "2LT",
+      "branch": "Army",
+      "payGrade": "O-1"
+    },
+    "second lieutenant": {
+      "canonical": "2LT",
+      "branch": "Army",
+      "payGrade": "O-1"
+    },
+
+    "1lt": {
+      "canonical": "1LT",
+      "branch": "Army",
+      "payGrade": "O-2"
+    },
+    "1lt.": {
+      "canonical": "1LT",
+      "branch": "Army",
+      "payGrade": "O-2"
+    },
+    "1st lt": {
+      "canonical": "1LT",
+      "branch": "Army",
+      "payGrade": "O-2"
+    },
+    "first lieutenant": {
+      "canonical": "1LT",
+      "branch": "Army",
+      "payGrade": "O-2"
+    },
+
+    "cpt": {
+      "canonical": "CPT",
+      "branch": "Army",
+      "payGrade": "O-3"
+    },
+    "cpt.": {
+      "canonical": "CPT",
+      "branch": "Army",
+      "payGrade": "O-3"
+    },
+    "captain (army)": {
+      "canonical": "CPT",
+      "branch": "Army",
+      "payGrade": "O-3"
+    },
+
+    "maj": {
+      "canonical": "MAJ",
+      "branch": "Army",
+      "payGrade": "O-4"
+    },
+    "maj.": {
+      "canonical": "MAJ",
+      "branch": "Army",
+      "payGrade": "O-4"
+    },
+    "major (army)": {
+      "canonical": "MAJ",
+      "branch": "Army",
+      "payGrade": "O-4"
+    },
+
+    "ltc": {
+      "canonical": "LTC",
+      "branch": "Army",
+      "payGrade": "O-5"
+    },
+    "lt col": {
+      "canonical": "LTC",
+      "branch": "Army",
+      "payGrade": "O-5"
+    },
+    "lt. col.": {
+      "canonical": "LTC",
+      "branch": "Army",
+      "payGrade": "O-5"
+    },
+    "lieutenant colonel (army)": {
+      "canonical": "LTC",
+      "branch": "Army",
+      "payGrade": "O-5"
+    },
+
+    "col": {
+      "canonical": "COL",
+      "branch": "Army",
+      "payGrade": "O-6"
+    },
+    "col.": {
+      "canonical": "COL",
+      "branch": "Army",
+      "payGrade": "O-6"
+    },
+    "colonel (army)": {
+      "canonical": "COL",
+      "branch": "Army",
+      "payGrade": "O-6"
+    },
+
+    "bg": {
+      "canonical": "BG",
+      "branch": "Army",
+      "payGrade": "O-7"
+    },
+    "brig gen": {
+      "canonical": "BG",
+      "branch": "Army",
+      "payGrade": "O-7"
+    },
+    "brigadier general (army)": {
+      "canonical": "BG",
+      "branch": "Army",
+      "payGrade": "O-7"
+    },
+
+    "mg": {
+      "canonical": "MG",
+      "branch": "Army",
+      "payGrade": "O-8"
+    },
+    "maj gen": {
+      "canonical": "MG",
+      "branch": "Army",
+      "payGrade": "O-8"
+    },
+    "major general (army)": {
+      "canonical": "MG",
+      "branch": "Army",
+      "payGrade": "O-8"
+    },
+
+    "ltg": {
+      "canonical": "LTG",
+      "branch": "Army",
+      "payGrade": "O-9"
+    },
+    "lt gen": {
+      "canonical": "LTG",
+      "branch": "Army",
+      "payGrade": "O-9"
+    },
+    "lieutenant general (army)": {
+      "canonical": "LTG",
+      "branch": "Army",
+      "payGrade": "O-9"
+    },
+
+    "gen": {
+      "canonical": "GEN",
+      "branch": "Army",
+      "payGrade": "O-10"
+    },
+    "gen.": {
+      "canonical": "GEN",
+      "branch": "Army",
+      "payGrade": "O-10"
+    },
+    "general (army)": {
+      "canonical": "GEN",
+      "branch": "Army",
+      "payGrade": "O-10"
+    },
+
+    "ga": {
+      "canonical": "GA",
+      "branch": "Army",
+      "payGrade": "Special"
+    },
+    "general of the army": {
+      "canonical": "GA",
+      "branch": "Army",
+      "payGrade": "Special"
+    },
+
+    "pvt (usmc)": {
+      "canonical": "PVT",
+      "branch": "Marine Corps",
+      "payGrade": "E-1"
+    },
+    "marine private": {
+      "canonical": "PVT",
+      "branch": "Marine Corps",
+      "payGrade": "E-1"
+    },
+
+    "pfc (usmc)": {
+      "canonical": "PFC",
+      "branch": "Marine Corps",
+      "payGrade": "E-2"
+    },
+    "marine pfc": {
+      "canonical": "PFC",
+      "branch": "Marine Corps",
+      "payGrade": "E-2"
+    },
+
+    "lcpl": {
+      "canonical": "LCpl",
+      "branch": "Marine Corps",
+      "payGrade": "E-3"
+    },
+    "lcpl.": {
+      "canonical": "LCpl",
+      "branch": "Marine Corps",
+      "payGrade": "E-3"
+    },
+    "lance corporal (usmc)": {
+      "canonical": "LCpl",
+      "branch": "Marine Corps",
+      "payGrade": "E-3"
+    },
+
+    "cpl (usmc)": {
+      "canonical": "Cpl",
+      "branch": "Marine Corps",
+      "payGrade": "E-4"
+    },
+    "marine corporal": {
+      "canonical": "Cpl",
+      "branch": "Marine Corps",
+      "payGrade": "E-4"
+    },
+
+    "sgt (usmc)": {
+      "canonical": "Sgt",
+      "branch": "Marine Corps",
+      "payGrade": "E-5"
+    },
+    "marine sergeant": {
+      "canonical": "Sgt",
+      "branch": "Marine Corps",
+      "payGrade": "E-5"
+    },
+
+    "ssgt (usmc)": {
+      "canonical": "SSgt",
+      "branch": "Marine Corps",
+      "payGrade": "E-6"
+    },
+    "staff sergeant (usmc)": {
+      "canonical": "SSgt",
+      "branch": "Marine Corps",
+      "payGrade": "E-6"
+    },
+
+    "gysgt": {
+      "canonical": "GySgt",
+      "branch": "Marine Corps",
+      "payGrade": "E-7"
+    },
+    "gunny": {
+      "canonical": "GySgt",
+      "branch": "Marine Corps",
+      "payGrade": "E-7"
+    },
+    "gunnery sergeant": {
+      "canonical": "GySgt",
+      "branch": "Marine Corps",
+      "payGrade": "E-7"
+    },
+
+    "msgt (usmc)": {
+      "canonical": "MSgt",
+      "branch": "Marine Corps",
+      "payGrade": "E-8"
+    },
+    "master sergeant (usmc)": {
+      "canonical": "MSgt",
+      "branch": "Marine Corps",
+      "payGrade": "E-8"
+    },
+
+    "1stsgt (usmc)": {
+      "canonical": "1stSgt",
+      "branch": "Marine Corps",
+      "payGrade": "E-8"
+    },
+    "first sergeant (usmc)": {
+      "canonical": "1stSgt",
+      "branch": "Marine Corps",
+      "payGrade": "E-8"
+    },
+
+    "mgysgt": {
+      "canonical": "MGySgt",
+      "branch": "Marine Corps",
+      "payGrade": "E-9"
+    },
+    "master gunnery sergeant": {
+      "canonical": "MGySgt",
+      "branch": "Marine Corps",
+      "payGrade": "E-9"
+    },
+
+    "sgtmaj (usmc)": {
+      "canonical": "SgtMaj",
+      "branch": "Marine Corps",
+      "payGrade": "E-9"
+    },
+    "sergeant major (usmc)": {
+      "canonical": "SgtMaj",
+      "branch": "Marine Corps",
+      "payGrade": "E-9"
+    },
+
+    "sgtmajmc": {
+      "canonical": "SgtMajMC",
+      "branch": "Marine Corps",
+      "payGrade": "E-9 (Special)"
+    },
+    "smmc": {
+      "canonical": "SgtMajMC",
+      "branch": "Marine Corps",
+      "payGrade": "E-9 (Special)"
+    },
+    "sergeant major of the marine corps": {
+      "canonical": "SgtMajMC",
+      "branch": "Marine Corps",
+      "payGrade": "E-9 (Special)"
+    },
+
+    "2lt (usmc)": {
+      "canonical": "2ndLt",
+      "branch": "Marine Corps",
+      "payGrade": "O-1"
+    },
+    "2nd lt (usmc)": {
+      "canonical": "2ndLt",
+      "branch": "Marine Corps",
+      "payGrade": "O-1"
+    },
+
+    "1lt (usmc)": {
+      "canonical": "1stLt",
+      "branch": "Marine Corps",
+      "payGrade": "O-2"
+    },
+    "1st lt (usmc)": {
+      "canonical": "1stLt",
+      "branch": "Marine Corps",
+      "payGrade": "O-2"
+    },
+
+    "capt (usmc)": {
+      "canonical": "Capt",
+      "branch": "Marine Corps",
+      "payGrade": "O-3"
+    },
+    "captain (usmc)": {
+      "canonical": "Capt",
+      "branch": "Marine Corps",
+      "payGrade": "O-3"
+    },
+
+    "maj (usmc)": {
+      "canonical": "Maj",
+      "branch": "Marine Corps",
+      "payGrade": "O-4"
+    },
+    "major (usmc)": {
+      "canonical": "Maj",
+      "branch": "Marine Corps",
+      "payGrade": "O-4"
+    },
+
+    "ltcol (usmc)": {
+      "canonical": "LtCol",
+      "branch": "Marine Corps",
+      "payGrade": "O-5"
+    },
+    "lt col (usmc)": {
+      "canonical": "LtCol",
+      "branch": "Marine Corps",
+      "payGrade": "O-5"
+    },
+
+    "col (usmc)": {
+      "canonical": "Col",
+      "branch": "Marine Corps",
+      "payGrade": "O-6"
+    },
+    "colonel (usmc)": {
+      "canonical": "Col",
+      "branch": "Marine Corps",
+      "payGrade": "O-6"
+    },
+
+    "bgen": {
+      "canonical": "BGen",
+      "branch": "Marine Corps",
+      "payGrade": "O-7"
+    },
+    "brig gen (usmc)": {
+      "canonical": "BGen",
+      "branch": "Marine Corps",
+      "payGrade": "O-7"
+    },
+
+    "maj gen (usmc)": {
+      "canonical": "MajGen",
+      "branch": "Marine Corps",
+      "payGrade": "O-8"
+    },
+    "major general (usmc)": {
+      "canonical": "MajGen",
+      "branch": "Marine Corps",
+      "payGrade": "O-8"
+    },
+
+    "ltgen (usmc)": {
+      "canonical": "LtGen",
+      "branch": "Marine Corps",
+      "payGrade": "O-9"
+    },
+    "lieutenant general (usmc)": {
+      "canonical": "LtGen",
+      "branch": "Marine Corps",
+      "payGrade": "O-9"
+    },
+
+    "gen (usmc)": {
+      "canonical": "Gen",
+      "branch": "Marine Corps",
+      "payGrade": "O-10"
+    },
+    "general (usmc)": {
+      "canonical": "Gen",
+      "branch": "Marine Corps",
+      "payGrade": "O-10"
+    },
+
+    "sr": {
+      "canonical": "SR",
+      "branch": "Navy",
+      "payGrade": "E-1"
+    },
+    "seaman recruit": {
+      "canonical": "SR",
+      "branch": "Navy",
+      "payGrade": "E-1"
+    },
+
+    "sa": {
+      "canonical": "SA",
+      "branch": "Navy",
+      "payGrade": "E-2"
+    },
+    "seaman apprentice": {
+      "canonical": "SA",
+      "branch": "Navy",
+      "payGrade": "E-2"
+    },
+
+    "sn": {
+      "canonical": "SN",
+      "branch": "Navy",
+      "payGrade": "E-3"
+    },
+    "seaman": {
+      "canonical": "SN",
+      "branch": "Navy",
+      "payGrade": "E-3"
+    },
+
+    "po3": {
+      "canonical": "PO3",
+      "branch": "Navy",
+      "payGrade": "E-4"
+    },
+    "petty officer third class": {
+      "canonical": "PO3",
+      "branch": "Navy",
+      "payGrade": "E-4"
+    },
+
+    "po2": {
+      "canonical": "PO2",
+      "branch": "Navy",
+      "payGrade": "E-5"
+    },
+    "petty officer second class": {
+      "canonical": "PO2",
+      "branch": "Navy",
+      "payGrade": "E-5"
+    },
+
+    "po1": {
+      "canonical": "PO1",
+      "branch": "Navy",
+      "payGrade": "E-6"
+    },
+    "petty officer first class": {
+      "canonical": "PO1",
+      "branch": "Navy",
+      "payGrade": "E-6"
+    },
+
+    "cpo": {
+      "canonical": "CPO",
+      "branch": "Navy",
+      "payGrade": "E-7"
+    },
+    "chief petty officer": {
+      "canonical": "CPO",
+      "branch": "Navy",
+      "payGrade": "E-7"
+    },
+
+    "scpo": {
+      "canonical": "SCPO",
+      "branch": "Navy",
+      "payGrade": "E-8"
+    },
+    "senior chief petty officer": {
+      "canonical": "SCPO",
+      "branch": "Navy",
+      "payGrade": "E-8"
+    },
+
+    "mcpo": {
+      "canonical": "MCPO",
+      "branch": "Navy",
+      "payGrade": "E-9"
+    },
+    "master chief petty officer": {
+      "canonical": "MCPO",
+      "branch": "Navy",
+      "payGrade": "E-9"
+    },
+
+    "cmc": {
+      "canonical": "CMC",
+      "branch": "Navy",
+      "payGrade": "E-9"
+    },
+    "command master chief petty officer": {
+      "canonical": "CMC",
+      "branch": "Navy",
+      "payGrade": "E-9"
+    },
+
+    "mcpn": {
+      "canonical": "MCPON",
+      "branch": "Navy",
+      "payGrade": "E-9 (Special)"
+    },
+    "mcpon": {
+      "canonical": "MCPON",
+      "branch": "Navy",
+      "payGrade": "E-9 (Special)"
+    },
+    "master chief petty officer of the navy": {
+      "canonical": "MCPON",
+      "branch": "Navy",
+      "payGrade": "E-9 (Special)"
+    },
+
+    "wo1 (usn)": {
+      "canonical": "WO1",
+      "branch": "Navy",
+      "payGrade": "W-1"
+    },
+    "cwo2 (usn)": {
+      "canonical": "CWO2",
+      "branch": "Navy",
+      "payGrade": "W-2"
+    },
+    "chief warrant officer 2 (usn)": {
+      "canonical": "CWO2",
+      "branch": "Navy",
+      "payGrade": "W-2"
+    },
+    "cwo3 (usn)": {
+      "canonical": "CWO3",
+      "branch": "Navy",
+      "payGrade": "W-3"
+    },
+    "cwo4 (usn)": {
+      "canonical": "CWO4",
+      "branch": "Navy",
+      "payGrade": "W-4"
+    },
+    "cwo5 (usn)": {
+      "canonical": "CWO5",
+      "branch": "Navy",
+      "payGrade": "W-5"
+    },
+
+    "ens": {
+      "canonical": "ENS",
+      "branch": "Navy",
+      "payGrade": "O-1"
+    },
+    "ensign": {
+      "canonical": "ENS",
+      "branch": "Navy",
+      "payGrade": "O-1"
+    },
+
+    "ltjg": {
+      "canonical": "LTJG",
+      "branch": "Navy",
+      "payGrade": "O-2"
+    },
+    "lt jg": {
+      "canonical": "LTJG",
+      "branch": "Navy",
+      "payGrade": "O-2"
+    },
+    "lieutenant junior grade": {
+      "canonical": "LTJG",
+      "branch": "Navy",
+      "payGrade": "O-2"
+    },
+
+    "lt (usn)": {
+      "canonical": "LT",
+      "branch": "Navy",
+      "payGrade": "O-3"
+    },
+    "lieutenant (navy)": {
+      "canonical": "LT",
+      "branch": "Navy",
+      "payGrade": "O-3"
+    },
+
+    "lt cdr": {
+      "canonical": "LCDR",
+      "branch": "Navy",
+      "payGrade": "O-4"
+    },
+    "lcdr": {
+      "canonical": "LCDR",
+      "branch": "Navy",
+      "payGrade": "O-4"
+    },
+    "lieutenant commander": {
+      "canonical": "LCDR",
+      "branch": "Navy",
+      "payGrade": "O-4"
+    },
+
+    "cdr": {
+      "canonical": "CDR",
+      "branch": "Navy",
+      "payGrade": "O-5"
+    },
+    "commander": {
+      "canonical": "CDR",
+      "branch": "Navy",
+      "payGrade": "O-5"
+    },
+
+    "capt (usn)": {
+      "canonical": "CAPT",
+      "branch": "Navy",
+      "payGrade": "O-6"
+    },
+    "captain (navy)": {
+      "canonical": "CAPT",
+      "branch": "Navy",
+      "payGrade": "O-6"
+    },
+
+    "rdml": {
+      "canonical": "RDML",
+      "branch": "Navy",
+      "payGrade": "O-7"
+    },
+    "rear admiral (lower half)": {
+      "canonical": "RDML",
+      "branch": "Navy",
+      "payGrade": "O-7"
+    },
+
+    "radm": {
+      "canonical": "RADM",
+      "branch": "Navy",
+      "payGrade": "O-8"
+    },
+    "rear admiral": {
+      "canonical": "RADM",
+      "branch": "Navy",
+      "payGrade": "O-8"
+    },
+
+    "vadm": {
+      "canonical": "VADM",
+      "branch": "Navy",
+      "payGrade": "O-9"
+    },
+    "vice admiral": {
+      "canonical": "VADM",
+      "branch": "Navy",
+      "payGrade": "O-9"
+    },
+
+    "adm": {
+      "canonical": "ADM",
+      "branch": "Navy",
+      "payGrade": "O-10"
+    },
+    "admiral": {
+      "canonical": "ADM",
+      "branch": "Navy",
+      "payGrade": "O-10"
+    },
+
+    "fadm": {
+      "canonical": "FADM",
+      "branch": "Navy",
+      "payGrade": "Special"
+    },
+    "fleet admiral": {
+      "canonical": "FADM",
+      "branch": "Navy",
+      "payGrade": "Special"
+    },
+
+    "ab": {
+      "canonical": "AB",
+      "branch": "Air Force",
+      "payGrade": "E-1"
+    },
+    "airman basic": {
+      "canonical": "AB",
+      "branch": "Air Force",
+      "payGrade": "E-1"
+    },
+
+    "amn": {
+      "canonical": "Amn",
+      "branch": "Air Force",
+      "payGrade": "E-2"
+    },
+    "airman": {
+      "canonical": "Amn",
+      "branch": "Air Force",
+      "payGrade": "E-2"
+    },
+
+    "a1c": {
+      "canonical": "A1C",
+      "branch": "Air Force",
+      "payGrade": "E-3"
+    },
+    "airman first class": {
+      "canonical": "A1C",
+      "branch": "Air Force",
+      "payGrade": "E-3"
+    },
+
+    "sra": {
+      "canonical": "SrA",
+      "branch": "Air Force",
+      "payGrade": "E-4"
+    },
+    "senior airman": {
+      "canonical": "SrA",
+      "branch": "Air Force",
+      "payGrade": "E-4"
+    },
+
+    "ssgt": {
+      "canonical": "SSgt",
+      "branch": "Air Force",
+      "payGrade": "E-5"
+    },
+    "staff sergeant (usaf)": {
+      "canonical": "SSgt",
+      "branch": "Air Force",
+      "payGrade": "E-5"
+    },
+
+    "tsgt": {
+      "canonical": "TSgt",
+      "branch": "Air Force",
+      "payGrade": "E-6"
+    },
+    "technical sergeant": {
+      "canonical": "TSgt",
+      "branch": "Air Force",
+      "payGrade": "E-6"
+    },
+
+    "msgt": {
+      "canonical": "MSgt",
+      "branch": "Air Force",
+      "payGrade": "E-7"
+    },
+    "master sergeant (usaf)": {
+      "canonical": "MSgt",
+      "branch": "Air Force",
+      "payGrade": "E-7"
+    },
+
+    "smsgt": {
+      "canonical": "SMSgt",
+      "branch": "Air Force",
+      "payGrade": "E-8"
+    },
+    "senior master sergeant": {
+      "canonical": "SMSgt",
+      "branch": "Air Force",
+      "payGrade": "E-8"
+    },
+
+    "cmsgt": {
+      "canonical": "CMSgt",
+      "branch": "Air Force",
+      "payGrade": "E-9"
+    },
+    "chief master sergeant (usaf)": {
+      "canonical": "CMSgt",
+      "branch": "Air Force",
+      "payGrade": "E-9"
+    },
+
+    "ccm (usaf)": {
+      "canonical": "CCM",
+      "branch": "Air Force",
+      "payGrade": "E-9"
+    },
+    "command chief master sergeant": {
+      "canonical": "CCM",
+      "branch": "Air Force",
+      "payGrade": "E-9"
+    },
+
+    "cmsaf": {
+      "canonical": "CMSAF",
+      "branch": "Air Force",
+      "payGrade": "E-9 (Special)"
+    },
+    "chief master sergeant of the air force": {
+      "canonical": "CMSAF",
+      "branch": "Air Force",
+      "payGrade": "E-9 (Special)"
+    },
+
+    "2lt (usaf)": {
+      "canonical": "2d Lt",
+      "branch": "Air Force",
+      "payGrade": "O-1"
+    },
+    "second lieutenant (usaf)": {
+      "canonical": "2d Lt",
+      "branch": "Air Force",
+      "payGrade": "O-1"
+    },
+
+    "1lt (usaf)": {
+      "canonical": "1st Lt",
+      "branch": "Air Force",
+      "payGrade": "O-2"
+    },
+    "first lieutenant (usaf)": {
+      "canonical": "1st Lt",
+      "branch": "Air Force",
+      "payGrade": "O-2"
+    },
+
+    "capt (usaf)": {
+      "canonical": "Capt",
+      "branch": "Air Force",
+      "payGrade": "O-3"
+    },
+    "captain (usaf)": {
+      "canonical": "Capt",
+      "branch": "Air Force",
+      "payGrade": "O-3"
+    },
+
+    "maj (usaf)": {
+      "canonical": "Maj",
+      "branch": "Air Force",
+      "payGrade": "O-4"
+    },
+    "major (usaf)": {
+      "canonical": "Maj",
+      "branch": "Air Force",
+      "payGrade": "O-4"
+    },
+
+    "lt col (usaf)": {
+      "canonical": "Lt Col",
+      "branch": "Air Force",
+      "payGrade": "O-5"
+    },
+    "lieutenant colonel (usaf)": {
+      "canonical": "Lt Col",
+      "branch": "Air Force",
+      "payGrade": "O-5"
+    },
+
+    "col (usaf)": {
+      "canonical": "Col",
+      "branch": "Air Force",
+      "payGrade": "O-6"
+    },
+    "colonel (usaf)": {
+      "canonical": "Col",
+      "branch": "Air Force",
+      "payGrade": "O-6"
+    },
+
+    "brig gen (usaf)": {
+      "canonical": "Brig Gen",
+      "branch": "Air Force",
+      "payGrade": "O-7"
+    },
+    "bgen (usaf)": {
+      "canonical": "Brig Gen",
+      "branch": "Air Force",
+      "payGrade": "O-7"
+    },
+
+    "maj gen (usaf)": {
+      "canonical": "Maj Gen",
+      "branch": "Air Force",
+      "payGrade": "O-8"
+    },
+    "lt gen (usaf)": {
+      "canonical": "Lt Gen",
+      "branch": "Air Force",
+      "payGrade": "O-9"
+    },
+    "gen (usaf)": {
+      "canonical": "Gen",
+      "branch": "Air Force",
+      "payGrade": "O-10"
+    },
+
+    "gaf": {
+      "canonical": "GAF",
+      "branch": "Air Force",
+      "payGrade": "Special"
+    },
+    "general of the air force": {
+      "canonical": "GAF",
+      "branch": "Air Force",
+      "payGrade": "Special"
+    },
+
+    "spc1": {
+      "canonical": "Spc1",
+      "branch": "Space Force",
+      "payGrade": "E-1"
+    },
+    "specialist 1": {
+      "canonical": "Spc1",
+      "branch": "Space Force",
+      "payGrade": "E-1"
+    },
+
+    "spc2": {
+      "canonical": "Spc2",
+      "branch": "Space Force",
+      "payGrade": "E-2"
+    },
+    "specialist 2": {
+      "canonical": "Spc2",
+      "branch": "Space Force",
+      "payGrade": "E-2"
+    },
+
+    "spc3": {
+      "canonical": "Spc3",
+      "branch": "Space Force",
+      "payGrade": "E-3"
+    },
+    "specialist 3": {
+      "canonical": "Spc3",
+      "branch": "Space Force",
+      "payGrade": "E-3"
+    },
+
+    "spc4": {
+      "canonical": "Spc4",
+      "branch": "Space Force",
+      "payGrade": "E-4"
+    },
+    "specialist 4": {
+      "canonical": "Spc4",
+      "branch": "Space Force",
+      "payGrade": "E-4"
+    },
+
+    "sgt (ussf)": {
+      "canonical": "Sgt",
+      "branch": "Space Force",
+      "payGrade": "E-5"
+    },
+    "sergeant (space force)": {
+      "canonical": "Sgt",
+      "branch": "Space Force",
+      "payGrade": "E-5"
+    },
+
+    "tsgt (ussf)": {
+      "canonical": "TSgt",
+      "branch": "Space Force",
+      "payGrade": "E-6"
+    },
+    "technical sergeant (space force)": {
+      "canonical": "TSgt",
+      "branch": "Space Force",
+      "payGrade": "E-6"
+    },
+
+    "msgt (ussf)": {
+      "canonical": "MSgt",
+      "branch": "Space Force",
+      "payGrade": "E-7"
+    },
+    "master sergeant (space force)": {
+      "canonical": "MSgt",
+      "branch": "Space Force",
+      "payGrade": "E-7"
+    },
+
+    "smsgt (ussf)": {
+      "canonical": "SMSgt",
+      "branch": "Space Force",
+      "payGrade": "E-8"
+    },
+    "senior master sergeant (space force)": {
+      "canonical": "SMSgt",
+      "branch": "Space Force",
+      "payGrade": "E-8"
+    },
+
+    "cmsgt (ussf)": {
+      "canonical": "CMSgt",
+      "branch": "Space Force",
+      "payGrade": "E-9"
+    },
+    "chief master sergeant (space force)": {
+      "canonical": "CMSgt",
+      "branch": "Space Force",
+      "payGrade": "E-9"
+    },
+
+    "ccm (ussf)": {
+      "canonical": "CCM",
+      "branch": "Space Force",
+      "payGrade": "E-9"
+    },
+    "command chief master sergeant (space force)": {
+      "canonical": "CCM",
+      "branch": "Space Force",
+      "payGrade": "E-9"
+    },
+
+    "cmssf": {
+      "canonical": "CMSSF",
+      "branch": "Space Force",
+      "payGrade": "E-9 (Special)"
+    },
+    "chief master sergeant of the space force": {
+      "canonical": "CMSSF",
+      "branch": "Space Force",
+      "payGrade": "E-9 (Special)"
+    },
+
+    "2lt (ussf)": {
+      "canonical": "2d Lt",
+      "branch": "Space Force",
+      "payGrade": "O-1"
+    },
+    "1lt (ussf)": {
+      "canonical": "1st Lt",
+      "branch": "Space Force",
+      "payGrade": "O-2"
+    },
+    "capt (ussf)": {
+      "canonical": "Capt",
+      "branch": "Space Force",
+      "payGrade": "O-3"
+    },
+    "maj (ussf)": {
+      "canonical": "Maj",
+      "branch": "Space Force",
+      "payGrade": "O-4"
+    },
+    "lt col (ussf)": {
+      "canonical": "Lt Col",
+      "branch": "Space Force",
+      "payGrade": "O-5"
+    },
+    "col (ussf)": {
+      "canonical": "Col",
+      "branch": "Space Force",
+      "payGrade": "O-6"
+    },
+    "brig gen (ussf)": {
+      "canonical": "Brig Gen",
+      "branch": "Space Force",
+      "payGrade": "O-7"
+    },
+    "maj gen (ussf)": {
+      "canonical": "Maj Gen",
+      "branch": "Space Force",
+      "payGrade": "O-8"
+    },
+    "lt gen (ussf)": {
+      "canonical": "Lt Gen",
+      "branch": "Space Force",
+      "payGrade": "O-9"
+    },
+    "gen (ussf)": {
+      "canonical": "Gen",
+      "branch": "Space Force",
+      "payGrade": "O-10"
+    },
+
+    "sr (uscg)": {
+      "canonical": "SR",
+      "branch": "Coast Guard",
+      "payGrade": "E-1"
+    },
+    "seaman recruit (uscg)": {
+      "canonical": "SR",
+      "branch": "Coast Guard",
+      "payGrade": "E-1"
+    },
+
+    "sa (uscg)": {
+      "canonical": "SA",
+      "branch": "Coast Guard",
+      "payGrade": "E-2"
+    },
+    "seaman apprentice (uscg)": {
+      "canonical": "SA",
+      "branch": "Coast Guard",
+      "payGrade": "E-2"
+    },
+
+    "sn (uscg)": {
+      "canonical": "SN",
+      "branch": "Coast Guard",
+      "payGrade": "E-3"
+    },
+    "seaman (uscg)": {
+      "canonical": "SN",
+      "branch": "Coast Guard",
+      "payGrade": "E-3"
+    },
+
+    "po3 (uscg)": {
+      "canonical": "PO3",
+      "branch": "Coast Guard",
+      "payGrade": "E-4"
+    },
+    "petty officer third class (uscg)": {
+      "canonical": "PO3",
+      "branch": "Coast Guard",
+      "payGrade": "E-4"
+    },
+
+    "po2 (uscg)": {
+      "canonical": "PO2",
+      "branch": "Coast Guard",
+      "payGrade": "E-5"
+    },
+    "petty officer second class (uscg)": {
+      "canonical": "PO2",
+      "branch": "Coast Guard",
+      "payGrade": "E-5"
+    },
+
+    "po1 (uscg)": {
+      "canonical": "PO1",
+      "branch": "Coast Guard",
+      "payGrade": "E-6"
+    },
+    "petty officer first class (uscg)": {
+      "canonical": "PO1",
+      "branch": "Coast Guard",
+      "payGrade": "E-6"
+    },
+
+    "cpo (uscg)": {
+      "canonical": "CPO",
+      "branch": "Coast Guard",
+      "payGrade": "E-7"
+    },
+    "chief petty officer (uscg)": {
+      "canonical": "CPO",
+      "branch": "Coast Guard",
+      "payGrade": "E-7"
+    },
+
+    "scpo (uscg)": {
+      "canonical": "SCPO",
+      "branch": "Coast Guard",
+      "payGrade": "E-8"
+    },
+    "senior chief petty officer (uscg)": {
+      "canonical": "SCPO",
+      "branch": "Coast Guard",
+      "payGrade": "E-8"
+    },
+
+    "mcpo (uscg)": {
+      "canonical": "MCPO",
+      "branch": "Coast Guard",
+      "payGrade": "E-9"
+    },
+    "master chief petty officer (uscg)": {
+      "canonical": "MCPO",
+      "branch": "Coast Guard",
+      "payGrade": "E-9"
+    },
+
+    "cmc (uscg)": {
+      "canonical": "CMC",
+      "branch": "Coast Guard",
+      "payGrade": "E-9"
+    },
+    "command master chief petty officer (uscg)": {
+      "canonical": "CMC",
+      "branch": "Coast Guard",
+      "payGrade": "E-9"
+    },
+
+    "mcpo-cg": {
+      "canonical": "MCPOCG",
+      "branch": "Coast Guard",
+      "payGrade": "E-9 (Special)"
+    },
+    "mcpcg": {
+      "canonical": "MCPOCG",
+      "branch": "Coast Guard",
+      "payGrade": "E-9 (Special)"
+    },
+    "master chief petty officer of the coast guard": {
+      "canonical": "MCPOCG",
+      "branch": "Coast Guard",
+      "payGrade": "E-9 (Special)"
+    },
+
+    "wo1 (uscg)": {
+      "canonical": "WO1",
+      "branch": "Coast Guard",
+      "payGrade": "W-1"
+    },
+    "cw2 (uscg)": {
+      "canonical": "CWO2",
+      "branch": "Coast Guard",
+      "payGrade": "W-2"
+    },
+    "cw3 (uscg)": {
+      "canonical": "CWO3",
+      "branch": "Coast Guard",
+      "payGrade": "W-3"
+    },
+    "cw4 (uscg)": {
+      "canonical": "CWO4",
+      "branch": "Coast Guard",
+      "payGrade": "W-4"
+    },
+    "cw5 (uscg)": {
+      "canonical": "CWO5",
+      "branch": "Coast Guard",
+      "payGrade": "W-5"
+    },
+
+    "ens (uscg)": {
+      "canonical": "ENS",
+      "branch": "Coast Guard",
+      "payGrade": "O-1"
+    },
+    "ltjg (uscg)": {
+      "canonical": "LTJG",
+      "branch": "Coast Guard",
+      "payGrade": "O-2"
+    },
+    "lt (uscg)": {
+      "canonical": "LT",
+      "branch": "Coast Guard",
+      "payGrade": "O-3"
+    },
+    "lt cdr (uscg)": {
+      "canonical": "LCDR",
+      "branch": "Coast Guard",
+      "payGrade": "O-4"
+    },
+    "cdr (uscg)": {
+      "canonical": "CDR",
+      "branch": "Coast Guard",
+      "payGrade": "O-5"
+    },
+    "capt (uscg)": {
+      "canonical": "CAPT",
+      "branch": "Coast Guard",
+      "payGrade": "O-6"
+    },
+    "rdml (uscg)": {
+      "canonical": "RDML",
+      "branch": "Coast Guard",
+      "payGrade": "O-7"
+    },
+    "rear admiral (lower half) (uscg)": {
+      "canonical": "RDML",
+      "branch": "Coast Guard",
+      "payGrade": "O-7"
+    },
+    "radm (uscg)": {
+      "canonical": "RADM",
+      "branch": "Coast Guard",
+      "payGrade": "O-8"
+    },
+    "vadm (uscg)": {
+      "canonical": "VADM",
+      "branch": "Coast Guard",
+      "payGrade": "O-9"
+    },
+    "adm (uscg)": {
+      "canonical": "ADM",
+      "branch": "Coast Guard",
+      "payGrade": "O-10"
+    }
+  }
+}

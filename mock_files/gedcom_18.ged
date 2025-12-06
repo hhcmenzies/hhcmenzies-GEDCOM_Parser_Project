@@ -1,0 +1,2502 @@
+﻿0 HEAD
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+3 VERS 5.5.1
+1 CHAR UTF-8
+1 SOUR FTM
+2 NAME Family Tree Maker for Windows
+2 VERS 24.2.2.1560
+2 CORP The Software MacKiev Company
+3 ADDR 30 Union Wharf
+4 CONT Boston, MA 02109
+3 PHON (617) 227-6681
+1 DEST FTM
+1 DATE 5 DEC 2024
+1 FILE 5.ged
+1 SUBM @SUBM@
+0 @SUBM@ SUBM
+1 NAME Not Given
+0 @I49@ INDI
+1 NAME Greyson Forsyth /Menzies/
+1 SEX U
+1 BIRT
+2 DATE 22 DEC 2013
+2 PLAC Beverly, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.5584
+4 LONG W70.88
+1 ADDR 49 S. Central Street
+1 ADDR 49 S. Central Street
+1 BAPM
+2 DATE 7 DEC 2024
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 FCOM
+2 DATE MAY
+1 ADDR 49 S. Central Street
+1 _WEIG 127
+1 _HEIG 4'3"
+1 OCCU
+2 DATE SEP 2020
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 NAME Greyson Forsyth /Menzies/
+1 NAME Greyson Forsyth /Menzies/
+1 BIRT
+2 DATE 22 DEC 2013
+2 PLAC Beverly, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.5584
+4 LONG W70.88
+1 BAPM
+2 DATE 7 DEC 2024
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 BIRT
+2 DATE 22 DEC 2013
+2 PLAC Beverly, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.5584
+4 LONG W70.88
+1 FCOM
+2 DATE MAY
+1 _WEIG 127
+1 _HEIG 4'3"
+1 BAPM
+2 DATE 7 DEC 2024
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 OCCU
+2 DATE SEP 2020
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 FCOM
+2 DATE MAY
+1 _WEIG 127
+1 _HEIG 4'3"
+1 OCCU
+2 DATE SEP 2020
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 FAMC @F24@
+0 @I66@ INDI
+1 NAME Heather /Diguistino/
+2 SOUR @S29@
+3 PAGE City: Beverly; State: Massachusetts; Year(s): 2002
+2 SOUR @S30@
+3 PAGE The Boston Globe; Publication Date: 3 Dec 2009; Publication Place: Boston, Massachusetts, USA; URL: https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 _LINK https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 NOTE https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+2 SOUR @S25@
+1 SEX F
+1 BIRT
+2 DATE 7 FEB 1987
+2 PLAC Salem, Massachusetts
+2 SOUR @S25@
+1 RESI
+2 DATE BET 2010 AND 2014
+2 PLAC Salem, Massachusetts, USA
+2 SOUR @S25@
+1 NAME Heather /Diguistino/
+2 SOUR @S29@
+3 PAGE City: Beverly; State: Massachusetts; Year(s): 2002
+2 SOUR @S30@
+3 PAGE The Boston Globe; Publication Date: 3 Dec 2009; Publication Place: Boston, Massachusetts, USA; URL: https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 _LINK https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 NOTE https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+2 SOUR @S25@
+1 NAME Heather /Diguistino/
+2 SOUR @S29@
+3 PAGE City: Beverly; State: Massachusetts; Year(s): 2002
+2 SOUR @S30@
+3 PAGE The Boston Globe; Publication Date: 3 Dec 2009; Publication Place: Boston, Massachusetts, USA; URL: https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 _LINK https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 NOTE https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+2 SOUR @S25@
+1 BIRT
+2 DATE 7 FEB 1987
+2 PLAC Salem, Massachusetts
+2 SOUR @S25@
+1 RESI
+2 DATE BET 2010 AND 2014
+2 PLAC Salem, Massachusetts, USA
+2 SOUR @S25@
+1 BIRT
+2 DATE 7 FEB 1987
+2 PLAC Salem, Massachusetts
+2 SOUR @S25@
+1 RESI
+2 DATE BET 2010 AND 2014
+2 PLAC Salem, Massachusetts, USA
+2 SOUR @S25@
+1 RESI
+2 DATE BET 2013 AND 2016
+2 PLAC Haverhill, Massachusetts, USA
+2 SOUR @S25@
+1 RESI
+2 DATE BET 2015 AND 2016
+2 PLAC Danvers, Massachusetts, USA
+2 SOUR @S25@
+1 RESI
+2 DATE BET 2016 AND 2017
+2 PLAC Haverhill, Massachusetts, USA
+2 SOUR @S25@
+1 RESI
+2 DATE 3 DEC 2009
+2 PLAC Boston, Massachusetts, USA
+2 SOUR @S30@
+3 PAGE The Boston Globe; Publication Date: 3 Dec 2009; Publication Place: Boston, Massachusetts, USA; URL: https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 _LINK https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 NOTE https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+1 RESI
+2 DATE 2002
+2 PLAC Beverly, Massachusetts, USA
+2 SOUR @S29@
+3 PAGE City: Beverly; State: Massachusetts; Year(s): 2002
+1 RESI
+2 DATE BET 2013 AND 2016
+2 PLAC Haverhill, Massachusetts, USA
+2 SOUR @S25@
+1 RESI
+2 DATE BET 2015 AND 2016
+2 PLAC Danvers, Massachusetts, USA
+2 SOUR @S25@
+1 RESI
+2 DATE BET 2013 AND 2016
+2 PLAC Haverhill, Massachusetts, USA
+2 SOUR @S25@
+1 RESI
+2 DATE BET 2016 AND 2017
+2 PLAC Haverhill, Massachusetts, USA
+2 SOUR @S25@
+1 RESI
+2 DATE 3 DEC 2009
+2 PLAC Boston, Massachusetts, USA
+2 SOUR @S30@
+3 PAGE The Boston Globe; Publication Date: 3 Dec 2009; Publication Place: Boston, Massachusetts, USA; URL: https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 _LINK https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 NOTE https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+1 RESI
+2 DATE BET 2015 AND 2016
+2 PLAC Danvers, Massachusetts, USA
+2 SOUR @S25@
+1 RESI
+2 DATE 2002
+2 PLAC Beverly, Massachusetts, USA
+2 SOUR @S29@
+3 PAGE City: Beverly; State: Massachusetts; Year(s): 2002
+1 RESI
+2 DATE BET 2016 AND 2017
+2 PLAC Haverhill, Massachusetts, USA
+2 SOUR @S25@
+1 RESI
+2 DATE 3 DEC 2009
+2 PLAC Boston, Massachusetts, USA
+2 SOUR @S30@
+3 PAGE The Boston Globe; Publication Date: 3 Dec 2009; Publication Place: Boston, Massachusetts, USA; URL: https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 _LINK https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 NOTE https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+1 RESI
+2 DATE 2002
+2 PLAC Beverly, Massachusetts, USA
+2 SOUR @S29@
+3 PAGE City: Beverly; State: Massachusetts; Year(s): 2002
+1 FAMS @F24@
+0 @I34@ INDI
+1 NAME Valerie /Bathgate/
+2 SOUR @S12@
+3 OBJE @M28@
+1 SEX U
+1 BIRT
+2 DATE ABT 1944
+2 PLAC Caernarvon,Wales
+2 SOUR @S12@
+3 OBJE @M28@
+1 NAME Valerie /Bathgate/
+2 SOUR @S12@
+3 OBJE @M28@
+1 NAME Valerie /Bathgate/
+2 SOUR @S12@
+3 OBJE @M28@
+1 BIRT
+2 DATE ABT 1944
+2 PLAC Caernarvon,Wales
+2 SOUR @S12@
+3 OBJE @M28@
+1 BIRT
+2 DATE ABT 1944
+2 PLAC Caernarvon,Wales
+2 SOUR @S12@
+3 OBJE @M28@
+1 OBJE @M28@
+1 FAMS @F21@
+0 @I50@ INDI
+1 NAME PAT ANN /Dempsey/
+2 SOUR @S5@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Salem, Essex, Massachusetts; Roll: 5755; Page: 17; Enumeration District: 5-378
+3 OBJE @M19@
+1 SEX F
+1 BIRT
+2 DATE 13 FEB 1948
+2 PLAC Peabody, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.5279
+4 LONG W70.9287
+2 SOUR @S5@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Salem, Essex, Massachusetts; Roll: 5755; Page: 17; Enumeration District: 5-378
+3 OBJE @M19@
+1 RESI Relation to Head of House: Daughter; Marital Status: Never Married
+2 DATE 1950
+2 PLAC Salem, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.5195
+4 LONG W70.8967
+2 SOUR @S5@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Salem, Essex, Massachusetts; Roll: 5755; Page: 17; Enumeration District: 5-378
+3 OBJE @M19@
+1 OBJE @M19@
+1 FAMS @F16@
+0 @I22@ INDI
+1 NAME Rachael M /Cardone/
+2 SOUR @S16@
+2 SOUR @S5@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Haverhill, Essex, Massachusetts; Roll: 2860; Page: 8; Enumeration District: 5-155
+3 OBJE @M21@
+2 SOUR @S17@
+3 OBJE @M14@
+1 SEX F
+1 BIRT
+2 DATE 1948
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+2 SOUR @S5@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Haverhill, Essex, Massachusetts; Roll: 2860; Page: 8; Enumeration District: 5-155
+3 OBJE @M21@
+1 RESI Marital Status: Never Married
+2 DATE 1950
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+2 SOUR @S5@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Haverhill, Essex, Massachusetts; Roll: 2860; Page: 8; Enumeration District: 5-155
+3 OBJE @M21@
+1 NAME Rachael M /Cardone/
+2 SOUR @S16@
+2 SOUR @S5@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Haverhill, Essex, Massachusetts; Roll: 2860; Page: 8; Enumeration District: 5-155
+3 OBJE @M21@
+2 SOUR @S17@
+3 OBJE @M14@
+1 NAME Rachael M /Cardone/
+2 SOUR @S16@
+2 SOUR @S5@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Haverhill, Essex, Massachusetts; Roll: 2860; Page: 8; Enumeration District: 5-155
+3 OBJE @M21@
+2 SOUR @S17@
+3 OBJE @M14@
+1 BIRT
+2 DATE 1948
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+2 SOUR @S5@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Haverhill, Essex, Massachusetts; Roll: 2860; Page: 8; Enumeration District: 5-155
+3 OBJE @M21@
+1 BIRT
+2 DATE 1948
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+2 SOUR @S5@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Haverhill, Essex, Massachusetts; Roll: 2860; Page: 8; Enumeration District: 5-155
+3 OBJE @M21@
+1 RESI Marital Status: Never Married
+2 DATE 1950
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+2 SOUR @S5@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Haverhill, Essex, Massachusetts; Roll: 2860; Page: 8; Enumeration District: 5-155
+3 OBJE @M21@
+1 RESI Marital Status: Never Married
+2 DATE 1950
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+2 SOUR @S5@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Haverhill, Essex, Massachusetts; Roll: 2860; Page: 8; Enumeration District: 5-155
+3 OBJE @M21@
+1 OBJE @M14@
+1 OBJE @M21@
+1 FAMS @F15@
+0 @I56@ INDI
+1 NAME Emmet Parker /Menzies/
+1 SEX M
+1 FAMC @F24@
+0 @I65@ INDI
+1 NAME David Thomas /Menzies/
+2 SOUR @S7@
+3 PAGE Publication Place: Methuen, Massachusetts, USA; URL: https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+3 _LINK https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+3 NOTE https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+2 SOUR @S26@
+2 SOUR @S25@
+1 SEX M
+1 BIRT
+2 DATE 19 OCT 1979
+2 PLAC ,,,,,,,
+2 SOUR @S26@
+2 SOUR @S25@
+1 RESI
+2 DATE BET 2009 AND 2011
+2 PLAC Salem, Massachusetts, USA
+2 SOUR @S25@
+1 OCCU Retired Consultant
+2 DATE 19 OCT 2016
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 SSN 024-62-6977
+1 EVEN http://D2Five.com
+2 TYPE Web Address
+2 DATE 2010
+1 PHON 978-971-7699
+2 PLAC Massachusetts, USA
+3 MAP
+4 LATI N42.1562
+4 LONG W71.5662
+1 NATI American
+1 _MILTID 024-62-6977
+2 DATE 24 JUN 2017
+2 PLAC North Andover, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.6987
+4 LONG W71.1351
+1 _MILT
+2 DATE 2 SEP 1998
+2 PLAC Fort Campbell North, Christian, Kentucky, USA
+3 MAP
+4 LATI N36.6542
+4 LONG W87.4605
+1 _HEIG 5'10"
+1 _WEIG 187
+1 GRAD
+2 DATE 29 AUG 1998
+1 _EMPLOY Boston City Hall
+2 DATE 30 MAY 2006
+2 PLAC Boston, Suffolk, Massachusetts, USA
+3 MAP
+4 LATI N42.3583
+4 LONG W71.0603
+1 EMAIL david@d2five.com
+1 CHR
+2 DATE 19 OCT 1999
+1 CHRA River of Jordon
+2 DATE 19 OCT 1999
+2 PLAC Palistine
+1 NAME David Thomas /Menzies/
+2 SOUR @S7@
+3 PAGE Publication Place: Methuen, Massachusetts, USA; URL: https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+3 _LINK https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+3 NOTE https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+2 SOUR @S26@
+2 SOUR @S25@
+1 NAME David Thomas /Menzies/
+2 SOUR @S7@
+3 PAGE Publication Place: Methuen, Massachusetts, USA; URL: https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+3 _LINK https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+3 NOTE https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+2 SOUR @S26@
+2 SOUR @S25@
+1 BIRT
+2 DATE 19 OCT 1979
+2 PLAC ,,,,,,,
+2 SOUR @S26@
+2 SOUR @S25@
+1 RESI
+2 DATE BET 2009 AND 2011
+2 PLAC Salem, Massachusetts, USA
+2 SOUR @S25@
+1 OCCU Retired Consultant
+2 DATE 19 OCT 2016
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 SSN 024-62-6977
+1 EVEN http://D2Five.com
+2 TYPE Web Address
+2 DATE 2010
+1 PHON 978-971-7699
+2 PLAC Massachusetts, USA
+3 MAP
+4 LATI N42.1562
+4 LONG W71.5662
+1 NATI American
+1 _MILTID 024-62-6977
+2 DATE 24 JUN 2017
+2 PLAC North Andover, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.6987
+4 LONG W71.1351
+1 _MILT
+2 DATE 2 SEP 1998
+2 PLAC Fort Campbell North, Christian, Kentucky, USA
+3 MAP
+4 LATI N36.6542
+4 LONG W87.4605
+1 _HEIG 5'10"
+1 _WEIG 187
+1 GRAD
+2 DATE 29 AUG 1998
+1 _EMPLOY Boston City Hall
+2 DATE 30 MAY 2006
+2 PLAC Boston, Suffolk, Massachusetts, USA
+3 MAP
+4 LATI N42.3583
+4 LONG W71.0603
+1 EMAIL david@d2five.com
+1 CHR
+2 DATE 19 OCT 1999
+1 BIRT
+2 DATE 19 OCT 1979
+2 PLAC ,,,,,,,
+2 SOUR @S26@
+2 SOUR @S25@
+1 CHRA River of Jordon
+2 DATE 19 OCT 1999
+2 PLAC Palistine
+1 RESI
+2 DATE BET 2009 AND 2011
+2 PLAC Salem, Massachusetts, USA
+2 SOUR @S25@
+1 OCCU Retired Consultant
+2 DATE 19 OCT 2016
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 SSN 024-62-6977
+1 EVEN http://D2Five.com
+2 TYPE Web Address
+2 DATE 2010
+1 PHON 978-971-7699
+2 PLAC Massachusetts, USA
+3 MAP
+4 LATI N42.1562
+4 LONG W71.5662
+1 NATI American
+1 _MILTID 024-62-6977
+2 DATE 24 JUN 2017
+2 PLAC North Andover, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.6987
+4 LONG W71.1351
+1 _MILT
+2 DATE 2 SEP 1998
+2 PLAC Fort Campbell North, Christian, Kentucky, USA
+3 MAP
+4 LATI N36.6542
+4 LONG W87.4605
+1 _HEIG 5'10"
+1 _WEIG 187
+1 GRAD
+2 DATE 29 AUG 1998
+1 _EMPLOY Boston City Hall
+2 DATE 30 MAY 2006
+2 PLAC Boston, Suffolk, Massachusetts, USA
+3 MAP
+4 LATI N42.3583
+4 LONG W71.0603
+1 EMAIL david@d2five.com
+1 CHR
+2 DATE 19 OCT 1999
+1 CHRA River of Jordon
+2 DATE 19 OCT 1999
+2 PLAC Palistine
+1 RESI
+2 DATE BET 2017 AND 2020
+2 PLAC Haverhill, Massachusetts, USA
+2 SOUR @S25@
+1 RESI
+2 PLAC Lawrence, Massachusetts, USA
+2 SOUR @S26@
+1 RESI
+2 DATE BET 2017 AND 2020
+2 PLAC Haverhill, Massachusetts, USA
+2 SOUR @S25@
+1 RESI
+2 PLAC Lawrence, Massachusetts, USA
+2 SOUR @S26@
+1 RESI
+2 DATE BET 2017 AND 2020
+2 PLAC Haverhill, Massachusetts, USA
+2 SOUR @S25@
+1 RESI
+2 PLAC Lawrence, Massachusetts, USA
+2 SOUR @S26@
+1 FAMS @F24@
+1 FAMC @F16@
+0 @I21@ INDI
+1 NAME Sarah E. /Menzies/
+2 SOUR @S7@
+3 PAGE Publication Place: Methuen, Massachusetts, USA; URL: https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+3 _LINK https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+3 NOTE https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+1 SEX U
+1 BIRT Lawrence General Hospital
+2 DATE 10 DEC 1976
+2 PLAC Lawrence, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.707
+4 LONG W71.1631
+1 DEAT
+2 DATE 13 MAY 2024
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 NAME Sarah E. /Menzies/
+2 SOUR @S7@
+3 PAGE Publication Place: Methuen, Massachusetts, USA; URL: https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+3 _LINK https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+3 NOTE https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+1 NAME Sarah E. /Menzies/
+2 SOUR @S7@
+3 PAGE Publication Place: Methuen, Massachusetts, USA; URL: https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+3 _LINK https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+3 NOTE https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+1 BIRT Lawrence General Hospital
+2 DATE 10 DEC 1976
+2 PLAC Lawrence, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.707
+4 LONG W71.1631
+1 DEAT
+2 DATE 13 MAY 2024
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 BIRT Lawrence General Hospital
+2 DATE 10 DEC 1976
+2 PLAC Lawrence, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.707
+4 LONG W71.1631
+1 DEAT
+2 DATE 13 MAY 2024
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 FAMC @F16@
+0 @I37@ INDI
+1 NAME Donald M /Menzies/
+2 SOUR @S12@
+3 OBJE @M26@
+2 SOUR @S3@
+3 OBJE @M2@
+1 SEX M
+1 BIRT
+2 DATE ABT 1910
+2 PLAC Lawrence, Massachusetts
+2 SOUR @S12@
+3 OBJE @M26@
+2 SOUR @S3@
+3 OBJE @M2@
+1 RESI Marital Status: Single; Relation to Head of House: Son; Occupation: Hand dresser
+2 DATE 1930
+2 PLAC Lawrence, Lawrence, Essex, Massachusetts, USA
+2 SOUR @S3@
+3 OBJE @M2@
+1 NAME Donald M /Menzies/
+2 SOUR @S12@
+3 OBJE @M26@
+2 SOUR @S3@
+3 OBJE @M2@
+1 NAME Donald M /Menzies/
+2 SOUR @S12@
+3 OBJE @M26@
+2 SOUR @S3@
+3 OBJE @M2@
+1 BIRT
+2 DATE ABT 1910
+2 PLAC Lawrence, Massachusetts
+2 SOUR @S12@
+3 OBJE @M26@
+2 SOUR @S3@
+3 OBJE @M2@
+1 RESI Marital Status: Single; Relation to Head of House: Son; Occupation: Hand dresser
+2 DATE 1930
+2 PLAC Lawrence, Lawrence, Essex, Massachusetts, USA
+2 SOUR @S3@
+3 OBJE @M2@
+1 BIRT
+2 DATE ABT 1910
+2 PLAC Lawrence, Massachusetts
+2 SOUR @S12@
+3 OBJE @M26@
+2 SOUR @S3@
+3 OBJE @M2@
+1 RESI Marital Status: Single; Relation to Head of House: Son; Occupation: Hand dresser
+2 DATE 1930
+2 PLAC Lawrence, Lawrence, Essex, Massachusetts, USA
+2 SOUR @S3@
+3 OBJE @M2@
+1 OBJE @M2@
+1 OBJE @M26@
+1 FAMC @F18@
+0 @I32@ INDI
+1 NAME Gladys M /Menzies/
+2 SOUR @S3@
+3 OBJE @M2@
+1 SEX F
+1 BIRT
+2 DATE ABT 1913
+2 PLAC Massachusetts
+2 SOUR @S3@
+3 OBJE @M2@
+1 RESI Marital Status: Single; Relation to Head of House: Daughter; Occupation: Stenographer
+2 DATE 1930
+2 PLAC Lawrence, Lawrence, Essex, Massachusetts, USA
+2 SOUR @S3@
+3 OBJE @M2@
+1 NAME Gladys M /Menzies/
+2 SOUR @S3@
+3 OBJE @M2@
+1 NAME Gladys M /Menzies/
+2 SOUR @S3@
+3 OBJE @M2@
+1 BIRT
+2 DATE ABT 1913
+2 PLAC Massachusetts
+2 SOUR @S3@
+3 OBJE @M2@
+1 BIRT
+2 DATE ABT 1913
+2 PLAC Massachusetts
+2 SOUR @S3@
+3 OBJE @M2@
+1 RESI Marital Status: Single; Relation to Head of House: Daughter; Occupation: Stenographer
+2 DATE 1930
+2 PLAC Lawrence, Lawrence, Essex, Massachusetts, USA
+2 SOUR @S3@
+3 OBJE @M2@
+1 RESI Marital Status: Single; Relation to Head of House: Daughter; Occupation: Stenographer
+2 DATE 1930
+2 PLAC Lawrence, Lawrence, Essex, Massachusetts, USA
+2 SOUR @S3@
+3 OBJE @M2@
+1 OBJE @M2@
+1 FAMC @F18@
+0 @I62@ INDI
+1 NAME R. Bruce /Menzies/
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S7@
+2 SOUR @S28@
+3 PAGE News-Press; Publication Date: 25 Dec 1954; Publication Place: Fort Myers, Florida, USA; URL: https://www.newspapers.com/image/212678526/?article=877a6ef2-6b88-11ed-aea0-2a142d2bfa4b&xid=4639 &terms=Prime_Minister_Robert_Menzies
+3 _LINK https://www.newspapers.com/image/212678526/?article=877a6ef2-6b88-11ed-aea0-2a142d2bfa4b&xid=4639 &terms=Prime_Minister_Robert_Menzies
+3 NOTE https://www.newspapers.com/image/212678526/?article=877a6ef2-6b88-11ed-aea0-2a142d2bfa4b&xid=4639 &terms=Prime_Minister_Robert_Menzies
+1 SEX M
+1 BIRT
+2 DATE 29 MAR 1942
+2 PLAC Lawrence, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.707
+4 LONG W71.1631
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S6@
+3 PAGE Ancestry Family Tree
+1 RESI
+2 PLAC Methuen, Essex, Massachusetts
+2 SOUR @S5@
+3 OBJE @M1@
+1 DEAT
+2 DATE 7 MAR 2021
+2 PLAC Naples, Collier, Florida, USA
+3 MAP
+4 LATI N26.1486
+4 LONG W81.794
+1 NAME R. Bruce /Menzies/
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S7@
+1 NAME R. Bruce /Menzies/
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S7@
+1 BIRT
+2 DATE 29 MAR 1942
+2 PLAC Lawrence, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.707
+4 LONG W71.1631
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S6@
+3 PAGE Ancestry Family Tree
+1 RESI
+2 PLAC Methuen, Essex, Massachusetts
+2 SOUR @S5@
+3 OBJE @M1@
+1 DEAT
+2 DATE 7 MAR 2021
+2 PLAC Naples, Collier, Florida, USA
+3 MAP
+4 LATI N26.1486
+4 LONG W81.794
+1 BIRT
+2 DATE 29 MAR 1942
+2 PLAC Lawrence, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.707
+4 LONG W71.1631
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S6@
+3 PAGE Ancestry Family Tree
+1 RESI
+2 PLAC Methuen, Essex, Massachusetts
+2 SOUR @S5@
+3 OBJE @M1@
+1 DEAT
+2 DATE 7 MAR 2021
+2 PLAC Naples, Collier, Florida, USA
+3 MAP
+4 LATI N26.1486
+4 LONG W81.794
+1 RESI
+2 DATE 25 DEC 1954
+2 PLAC Fort Myers, Florida, USA
+2 SOUR @S28@
+3 PAGE News-Press; Publication Date: 25 Dec 1954; Publication Place: Fort Myers, Florida, USA; URL: https://www.newspapers.com/image/212678526/?article=877a6ef2-6b88-11ed-aea0-2a142d2bfa4b&xid=4639 &terms=Prime_Minister_Robert_Menzies
+3 _LINK https://www.newspapers.com/image/212678526/?article=877a6ef2-6b88-11ed-aea0-2a142d2bfa4b&xid=4639 &terms=Prime_Minister_Robert_Menzies
+3 NOTE https://www.newspapers.com/image/212678526/?article=877a6ef2-6b88-11ed-aea0-2a142d2bfa4b&xid=4639 &terms=Prime_Minister_Robert_Menzies
+1 RESI Relation to Head of House: Son; Marital Status: Never Married
+2 DATE 1950
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+2 SOUR @S5@
+3 OBJE @M1@
+1 RESI Relation to Head of House: Son; Marital Status: Never Married
+2 DATE 1950
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+2 SOUR @S5@
+3 OBJE @M1@
+1 RESI Relation to Head of House: Son; Marital Status: Never Married
+2 DATE 1950
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+2 SOUR @S5@
+3 OBJE @M1@
+1 OBJE @M1@
+1 FAMC @F5@
+0 @I61@ INDI
+1 NAME Thomas R /Menzies/
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S7@
+2 SOUR @S13@
+2 SOUR @S12@
+3 OBJE @M28@
+1 SEX M
+1 BIRT
+2 DATE 24 APR 1940
+2 PLAC Lawrence, Essex County, Massachusetts, United States of America
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S13@
+2 SOUR @S12@
+3 OBJE @M28@
+2 SOUR @S6@
+3 PAGE Ancestry Family Tree
+1 BURI
+2 PLAC Salem, Rockingham County, New Hampshire, United States of America
+2 SOUR @S13@
+1 RESI Relation to Head of House: Son; Marital Status: Never Married
+2 DATE 1950
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+2 SOUR @S5@
+3 OBJE @M1@
+1 DEAT
+2 DATE 3 JUN 1979
+2 PLAC Boston, Suffolk County, Massachusetts, United States of America
+2 SOUR @S13@
+1 NAME Thomas R /Menzies/
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S7@
+2 SOUR @S13@
+2 SOUR @S12@
+3 OBJE @M28@
+1 NAME Thomas R /Menzies/
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S7@
+2 SOUR @S13@
+2 SOUR @S12@
+3 OBJE @M28@
+1 BIRT
+2 DATE 24 APR 1940
+2 PLAC Lawrence, Essex County, Massachusetts, United States of America
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S13@
+2 SOUR @S12@
+3 OBJE @M28@
+2 SOUR @S6@
+3 PAGE Ancestry Family Tree
+1 BURI
+2 PLAC Salem, Rockingham County, New Hampshire, United States of America
+2 SOUR @S13@
+1 RESI Relation to Head of House: Son; Marital Status: Never Married
+2 DATE 1950
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+2 SOUR @S5@
+3 OBJE @M1@
+1 BIRT
+2 DATE 24 APR 1940
+2 PLAC Lawrence, Essex County, Massachusetts, United States of America
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S13@
+2 SOUR @S12@
+3 OBJE @M28@
+2 SOUR @S6@
+3 PAGE Ancestry Family Tree
+1 DEAT
+2 DATE 3 JUN 1979
+2 PLAC Boston, Suffolk County, Massachusetts, United States of America
+2 SOUR @S13@
+1 BURI
+2 PLAC Salem, Rockingham County, New Hampshire, United States of America
+2 SOUR @S13@
+1 RESI Relation to Head of House: Son; Marital Status: Never Married
+2 DATE 1950
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+2 SOUR @S5@
+3 OBJE @M1@
+1 DEAT
+2 DATE 3 JUN 1979
+2 PLAC Boston, Suffolk County, Massachusetts, United States of America
+2 SOUR @S13@
+1 OBJE @M1@
+1 OBJE @M28@
+1 FAMS @F21@
+1 FAMC @F5@
+0 @I48@ INDI
+1 NAME Norman Forsyth /Menzies/ Jr.
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S7@
+2 SOUR @S13@
+3 _LINK https://www.findagrave.com/memorial/270939597/norman-f.-menzies
+3 NOTE https://www.findagrave.com/memorial/270939597/norman-f.-menzies
+2 SOUR @S16@
+3 PAGE Texas Department of State Health Services; Austin, Texas
+2 SOUR @S17@
+3 OBJE @M14@
+2 SOUR @S24@
+2 SOUR @S25@
+2 SOUR @S26@
+1 SEX M
+1 BIRT
+2 DATE 24 JUN 1947
+2 PLAC Lawrence, , Massachusetts,,,,, US
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S7@
+2 SOUR @S13@
+3 _LINK https://www.findagrave.com/memorial/270939597/norman-f.-menzies
+3 NOTE https://www.findagrave.com/memorial/270939597/norman-f.-menzies
+2 SOUR @S16@
+3 PAGE Texas Department of State Health Services; Austin, Texas
+2 SOUR @S25@
+1 RESI
+2 PLAC Lawrence, Massachusetts, USA
+2 SOUR @S26@
+1 BURI
+2 PLAC Lawrence, Essex County, Massachusetts, United States of America
+2 SOUR @S7@
+2 SOUR @S13@
+3 _LINK https://www.findagrave.com/memorial/270939597/norman-f.-menzies
+3 NOTE https://www.findagrave.com/memorial/270939597/norman-f.-menzies
+1 DEAT
+2 DATE 1 SEP 2023
+2 PLAC Methuen, Essex County, Massachusetts, United States of America
+2 SOUR @S7@
+2 SOUR @S13@
+3 _LINK https://www.findagrave.com/memorial/270939597/norman-f.-menzies
+3 NOTE https://www.findagrave.com/memorial/270939597/norman-f.-menzies
+1 RESI
+2 DATE BET 1996 AND 2017
+2 PLAC Salem, New Hampshire, USA
+2 SOUR @S25@
+1 RESI
+2 DATE BET 2017 AND 2020
+2 PLAC Haverhill, Massachusetts, USA
+2 SOUR @S25@
+1 RESI
+2 DATE 1975
+2 PLAC Salem, NH
+2 SOUR @S24@
+1 RESI
+2 PLAC Haverhill
+2 SOUR @S7@
+1 RESI Relation to Head of House: Son; Marital Status: Never Married
+2 DATE 1950
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+2 SOUR @S5@
+3 OBJE @M1@
+1 OBJE @M1@
+1 OBJE @M14@
+1 FAMS @F15@
+1 FAMS @F16@
+1 FAMC @F5@
+0 @I18@ INDI
+1 NAME James Carr /Menzies/
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S6@
+3 PAGE Ancestry Family Tree
+2 SOUR @S7@
+2 SOUR @S8@
+3 PAGE "United States, Social Security Numerical Identification Files (NUMIDENT), 1936-2007", database, <i>FamilySearch</i> (https://www.familysearch.org/ark:/61903/1:1:6KM7-MNZZ : 10 February 2023), James Carr Menzies, .
+3 _LINK https://familysearch.org/ark:/61903/1:1:6KM7-MNZZ
+3 NOTE https://familysearch.org/ark:/61903/1:1:6KM7-MNZZ
+1 SEX M
+1 NAME James C Menzies
+2 TYPE aka
+1 BIRT
+2 DATE 4 MAR 1944
+2 PLAC Lawrence, Massachusetts
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S6@
+3 PAGE Ancestry Family Tree
+2 SOUR @S8@
+3 PAGE "United States, Social Security Numerical Identification Files (NUMIDENT), 1936-2007", database, <i>FamilySearch</i> (https://www.familysearch.org/ark:/61903/1:1:6KM7-MNZZ : 10 February 2023), James Carr Menzies, .
+3 _LINK https://familysearch.org/ark:/61903/1:1:6KM7-MNZZ
+3 NOTE https://familysearch.org/ark:/61903/1:1:6KM7-MNZZ
+1 RESI Relation to Head of House: Son; Marital Status: Never Married
+2 DATE 1950
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+2 SOUR @S5@
+3 OBJE @M1@
+1 FSID G1X4-Y7V
+2 SOUR @S9@
+3 PAGE "Family Tree," database, <i>FamilySearch</i> (http://familysearch.org : modified 26 November 2024, 15:31), entry for James Carr Menzies (PID https://ark.familysearch.org/ark:/61903/4:1:G1X4-Y7V ); contributed by various users.
+3 _LINK https://ark.familysearch.org/ark:/61903/4:1:G1X4-Y7V
+3 NOTE https://ark.familysearch.org/ark:/61903/4:1:G1X4-Y7V
+1 EVEN
+2 TYPE Social Program Application
+2 DATE MAY 1961
+1 EVEN
+2 TYPE Previous Residence
+2 PLAC Salem, Rockingham, New Hampshire, United States
+1 EVEN White
+2 TYPE Race
+1 EVEN Social Program Correspondence
+2 TYPE Social Program Correspondence
+1 DEAT
+2 DATE 20 FEB 1993
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+2 SOUR @S8@
+3 PAGE "United States, Social Security Numerical Identification Files (NUMIDENT), 1936-2007", database, <i>FamilySearch</i> (https://www.familysearch.org/ark:/61903/1:1:6KM7-MNZZ : 10 February 2023), James Carr Menzies, .
+3 _LINK https://familysearch.org/ark:/61903/1:1:6KM7-MNZZ
+3 NOTE https://familysearch.org/ark:/61903/1:1:6KM7-MNZZ
+1 OBJE @M1@
+1 FAMC @F5@
+0 @I87@ INDI
+1 NAME Hugh of Drum Urquhart /Vrquhart/
+1 SEX M
+1 BIRT
+2 DATE ABT 1680
+2 PLAC Nairn, Nairnshire, Scotland.
+1 DEAT
+2 DATE 5 JUN 1734
+2 PLAC Inverness , Inverness-shire, Scotland.
+1 FAMS @F30@
+0 @I84@ INDI
+1 NAME Janet  of Nairn /Gordon/
+1 SEX F
+1 BIRT
+2 DATE ?20 Nov 1690 /1695
+2 PLAC ?Aldearn, Nairnshire,/Duffus, Morayshire/ Scotland.
+1 DEAT
+2 DATE AFT 1724
+2 PLAC Scotland
+3 MAP
+4 LATI N56.8397
+4 LONG W4.1906
+1 FAMS @F30@
+0 @I86@ INDI
+1 NAME Jannet /FRASER/
+1 SEX F
+1 BIRT
+2 DATE 4 APR 1697
+2 PLAC Logie-Easter, Moray, Scotland
+1 _PHOTO @M13@
+1 OBJE @M13@
+1 FAMS @F29@
+0 @I85@ INDI
+1 NAME Donald Shoemaker /McPHERSON/
+1 SEX M
+1 BIRT
+2 DATE ABT 1695
+2 PLAC Inverness, Inverness, Scotland
+1 FAMS @F29@
+0 @I107@ INDI
+1 NAME Duncan /Menzies, Surgeon/ [7x GGF]
+1 SEX M
+1 BIRT
+2 DATE 10 DEC 1687
+2 PLAC Fowlis-Wester, Perthshire, Scotland
+1 DEAT
+2 DATE 15 FEB 1739
+2 PLAC Balquhidder, Perthshire, Scotland
+3 MAP
+4 LATI N56.3569
+4 LONG W4.3741
+1 _PHOTO @M18@
+1 OBJE @M18@
+1 FAMS @F39@
+0 @I106@ INDI
+1 NAME Catharine Minnie /Menzies/
+1 SEX F
+1 BIRT
+2 DATE 1692
+2 PLAC Dull, Perthshire, Tayside, Scotland, United Kingdom
+1 DEAT
+2 PLAC Dull, Perthshire, Tayside, Scotland, United Kingdom
+1 FAMS @F39@
+0 @I83@ INDI
+1 NAME Margaret /Urquhart/
+1 SEX F
+1 BIRT
+2 DATE 12 APR 1715
+2 PLAC Auldearn, Nairnshire, Scotland
+3 MAP
+4 LATI N57.576
+4 LONG W3.8076
+1 _PHOTO @M9@
+1 OBJE @M9@
+1 FAMS @F28@
+1 FAMC @F30@
+0 @I82@ INDI
+1 NAME Donald /McPherson/
+1 SEX M
+1 BIRT
+2 DATE 14 AUG 1715
+2 PLAC Inverness, Inverness-shire, Scotland
+3 MAP
+4 LATI N57.479
+4 LONG W4.2356
+1 DEAT
+2 PLAC Truimill
+1 _PHOTO @M16@
+1 OBJE @M16@
+1 FAMS @F28@
+1 FAMC @F29@
+0 @I105@ INDI
+1 NAME Rachel /Cameron/
+1 SEX F
+1 BIRT
+2 DATE ABT 1728
+2 PLAC Dull, Perthshire, Scotland
+3 MAP
+4 LATI N56.619
+4 LONG W3.9447
+1 FAMS @F38@
+0 @I104@ INDI
+1 NAME Donald /Menzies/
+1 SEX M
+1 BIRT
+2 DATE 17 APR 1718
+2 PLAC Balle MA Onich, Dull Parish, Perthshire, Tayside, Scotland, United Kingdom
+1 DEAT
+2 PLAC Perthshire, Scotland
+3 MAP
+4 LATI N56.396
+4 LONG W3.4324
+1 FAMS @F38@
+1 FAMC @F39@
+0 @I80@ INDI
+1 NAME Elspet /McPherson/
+1 SEX F
+1 BIRT
+2 DATE ABT 1730
+1 FAMS @F44@
+0 @I81@ INDI
+1 NAME Paul /MacPherson/
+1 SEX M
+1 BIRT
+2 DATE 1734
+2 PLAC Inverness, Inverness-shire, Scotland
+3 MAP
+4 LATI N57.479
+4 LONG W4.2356
+1 DEAT
+2 DATE 28 MAY 1828
+1 FAMS @F43@
+1 FAMC @F28@
+0 @I103@ INDI
+1 NAME Margaret /McDiarmid/
+1 SEX F
+1 BIRT
+2 DATE 12 JUN 1754
+2 PLAC Fortingall, Perthshire, Scotland
+3 MAP
+4 LATI N56.598
+4 LONG W4.0505
+1 DEAT
+2 DATE 20 FEB 1813
+1 FAMS @F37@
+0 @I102@ INDI
+1 NAME JAMES /MENZIES/
+1 SEX M
+1 BIRT
+2 DATE 4 NOV 1755
+2 PLAC Dull, Perthshire, Scotland
+3 MAP
+4 LATI N56.619
+4 LONG W3.9447
+1 DEAT
+2 DATE 13 JUN 1798
+2 PLAC Perth, Perthshire, Scotland
+3 MAP
+4 LATI N56.396
+4 LONG W3.4324
+1 FAMS @F37@
+1 FAMC @F38@
+0 @I79@ INDI
+1 NAME Elspet /Gordon/
+1 SEX F
+1 FAMS @F27@
+1 FAMC @F44@
+0 @I78@ INDI
+1 NAME John /McPherson/
+1 SEX M
+1 BIRT
+2 DATE 2 MAR 1745
+2 PLAC Tomachlaggan, Tomintoul, Banffshire, Scotland
+1 DEAT
+2 DATE 16 NOV 1822
+2 PLAC Balnakyle, Scotland
+1 FAMS @F27@
+1 FAMC @F43@
+0 @I3@ INDI
+1 NAME Christian /Veitch/
+1 SEX F
+1 BIRT
+2 DATE 23 AUG 1800
+2 PLAC Peebles, Peeblesshire, Scotland
+3 MAP
+4 LATI N55.6516
+4 LONG W3.1925
+1 DEAT
+2 DATE 4 SEP 1877
+2 PLAC 6 Park Street, Ladhope, Galashiels, Roxburghshire, Scotland
+1 FAMS @F1@
+0 @I2@ INDI
+1 NAME Walter /Forsyth/
+1 SEX M
+1 BIRT
+2 DATE 25 JUL 1798
+2 PLAC Peebles, Peeblesshire, Scotland
+3 MAP
+4 LATI N55.6516
+4 LONG W3.1925
+1 DEAT
+2 DATE 9 APR 1867
+2 PLAC Paisleys Close, Ladhope, Galashiels, Roxburghshire, Scotland
+1 FAMS @F1@
+0 @I101@ INDI
+1 NAME Catharine /Robertson/
+1 SEX F
+1 BIRT
+2 PLAC ,  ,  ,  Scotland
+1 DEAT
+2 PLAC ,  ,  ,  Scotland
+1 FAMS @F36@
+0 @I100@ INDI
+1 NAME Robert /Menzies/
+1 SEX M
+1 BIRT
+2 DATE 24 OCT 1784
+2 PLAC Fortingall, Perthshire, Scotland
+3 MAP
+4 LATI N56.598
+4 LONG W4.0505
+1 DEAT
+2 DATE 27 JAN 1876
+2 PLAC Logierait, Perthshire, Scotland
+3 MAP
+4 LATI N56.6478
+4 LONG W3.6791
+1 FAMS @F36@
+1 FAMC @F37@
+0 @I77@ INDI
+1 NAME Paul /Mcpherson/
+1 SEX M
+1 BIRT
+2 DATE ABT 1783
+2 PLAC Inveravon, Banff, Grampian, Scotland, United Kingdom
+1 DEAT
+2 DATE 19 FEB 1858
+2 PLAC Scalan Glenlivet Banffshire, Grampian, Scotland, United Kingdom
+1 _PHOTO @M12@
+1 OBJE @M12@
+1 FAMS @F42@
+1 FAMC @F27@
+0 @I93@ INDI
+1 NAME Duncan /McLean/
+1 SEX M
+1 BIRT
+2 DATE ABT 1803
+2 PLAC Roseneath, Argyll, Scotland
+1 NAME Duncan /McLean/
+1 NAME Duncan /McLean/
+1 BIRT
+2 DATE ABT 1803
+2 PLAC Roseneath, Argyll, Scotland
+1 BIRT
+2 DATE ABT 1803
+2 PLAC Roseneath, Argyll, Scotland
+1 FAMS @F45@
+0 @I98@ INDI
+1 NAME James /Forsyth/
+1 SEX M
+1 BIRT
+2 DATE 22 MAR 1821
+2 PLAC Tweeddale, Peeblesshire, Scotland
+1 DEAT
+2 DATE 31 AUG 1863
+2 PLAC Ladhope, Roxburghshire, Scotland
+1 FAMS @F34@
+1 FAMC @F1@
+0 @I1@ INDI
+1 NAME Margaret Reid /Brown/
+1 SEX F
+1 BIRT
+2 DATE 12 MAR 1821
+2 PLAC Corstorphine, Midlothian
+1 DEAT
+2 DATE 3 DEC 1853
+1 FAMS @F34@
+0 @I99@ INDI
+1 NAME Donald /Menzies/
+1 SEX M
+1 BIRT
+2 DATE 27 DEC 1812
+2 PLAC , Perthshire, , Scotland
+1 DEAT
+2 DATE ABT 1839
+1 FAMS @F35@
+1 FAMC @F36@
+0 @I75@ INDI
+1 NAME Elspet /McPherson/
+1 SEX F
+1 BIRT
+2 DATE 4 APR 1816
+2 PLAC Timberford, Glenlivet, Banffshire, Scotland
+1 DEAT
+2 DATE 24 MAR 1897
+2 PLAC Tomnarieve, Glenlivet, Banffshire, Scotland
+1 FAMS @F35@
+1 FAMC @F42@
+0 @I92@ INDI
+1 NAME Magdelene /Gourlay/
+1 SEX F
+1 BIRT
+2 DATE 23 OCT 1842
+2 PLAC Leslie, Fife, Scotland
+3 MAP
+4 LATI N56.2007
+4 LONG W3.2155
+1 DEAT
+2 DATE 2 APR 1919
+2 PLAC Linthouse, Glasgow City, Scotland
+1 NAME Magdelene /Gourlay/
+1 NAME Magdelene /Gourlay/
+1 BIRT
+2 DATE 23 OCT 1842
+2 PLAC Leslie, Fife, Scotland
+3 MAP
+4 LATI N56.2007
+4 LONG W3.2155
+1 BIRT
+2 DATE 23 OCT 1842
+2 PLAC Leslie, Fife, Scotland
+3 MAP
+4 LATI N56.2007
+4 LONG W3.2155
+1 DEAT
+2 DATE 2 APR 1919
+2 PLAC Linthouse, Glasgow City, Scotland
+1 DEAT
+2 DATE 2 APR 1919
+2 PLAC Linthouse, Glasgow City, Scotland
+1 FAMS @F32@
+0 @I91@ INDI
+1 NAME Duncan /Mclean/
+1 SEX M
+1 BIRT
+2 DATE 1844
+2 PLAC Whins of Milton, Stirlingshire, Scotland
+3 MAP
+4 LATI N56.0943
+4 LONG W3.934
+1 DEAT
+2 DATE 20 JUL 1913
+2 PLAC Linthouse, Glasgow City, Scotland
+1 NAME Duncan /Mclean/
+1 NAME Duncan /Mclean/
+1 BIRT
+2 DATE 1844
+2 PLAC Whins of Milton, Stirlingshire, Scotland
+3 MAP
+4 LATI N56.0943
+4 LONG W3.934
+1 BIRT
+2 DATE 1844
+2 PLAC Whins of Milton, Stirlingshire, Scotland
+3 MAP
+4 LATI N56.0943
+4 LONG W3.934
+1 DEAT
+2 DATE 20 JUL 1913
+2 PLAC Linthouse, Glasgow City, Scotland
+1 DEAT
+2 DATE 20 JUL 1913
+2 PLAC Linthouse, Glasgow City, Scotland
+1 FAMS @F32@
+1 FAMC @F45@
+0 @I76@ INDI
+1 NAME Mary /Forsyth/
+1 SEX F
+1 BIRT
+2 DATE 1847
+2 PLAC Melrose, Roxburghshire, Scotland
+3 MAP
+4 LATI N55.5988
+4 LONG W2.7353
+1 DEAT
+2 DATE 5 JAN 1899
+2 PLAC 156 Haliburton Place Galashiels
+1 _PHOTO @M15@
+1 OBJE @M15@
+1 FAMS @F26@
+1 FAMC @F34@
+0 @I74@ INDI
+1 NAME Robert /Menzies/
+1 SEX M
+1 BIRT
+2 DATE 1839
+2 PLAC Inveravon, Glenlivet, Banffshire, Scotland
+1 DEAT
+2 DATE 1 APR 1927
+2 PLAC Craigmoray Spynie Morayshire
+1 FAMS @F26@
+1 FAMC @F35@
+0 @I59@ INDI
+1 NAME Beatrice /Mawson/
+2 SOUR @S11@
+3 OBJE @M4@
+2 SOUR @S12@
+3 OBJE @M22@
+1 SEX F
+1 BIRT
+2 DATE 1892
+2 PLAC Skipton, Yorkshire, England
+3 MAP
+4 LATI N53.9618
+4 LONG W2.016
+2 SOUR @S12@
+3 OBJE @M22@
+1 NAME Beatrice /Mawson/
+2 SOUR @S11@
+3 OBJE @M4@
+2 SOUR @S12@
+3 OBJE @M22@
+1 NAME Beatrice /Mawson/
+2 SOUR @S11@
+3 OBJE @M4@
+2 SOUR @S12@
+3 OBJE @M22@
+1 BIRT
+2 DATE 1892
+2 PLAC Skipton, Yorkshire, England
+3 MAP
+4 LATI N53.9618
+4 LONG W2.016
+2 SOUR @S12@
+3 OBJE @M22@
+1 BIRT
+2 DATE 1892
+2 PLAC Skipton, Yorkshire, England
+3 MAP
+4 LATI N53.9618
+4 LONG W2.016
+2 SOUR @S12@
+3 OBJE @M22@
+1 OBJE @M4@
+1 OBJE @M22@
+1 FAMS @F20@
+0 @I58@ INDI
+1 NAME Richard P. /CARR/
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S11@
+3 OBJE @M4@
+2 SOUR @S12@
+3 OBJE @M22@
+1 SEX M
+1 BIRT
+2 DATE 29 SEP 1893
+2 PLAC Bradford, Yorkshire, England
+3 MAP
+4 LATI N53.794
+4 LONG W1.75
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S12@
+3 OBJE @M22@
+1 RESI Occupation: Dyer; Relation to Head of House: Father; Marital Status: Widowed
+2 DATE 1950
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+2 SOUR @S5@
+3 OBJE @M1@
+1 DEAT
+2 DATE 18 JUL 1972
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+1 NAME Richard P. /CARR/
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S11@
+3 OBJE @M4@
+2 SOUR @S12@
+3 OBJE @M22@
+1 NAME Richard P. /CARR/
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S11@
+3 OBJE @M4@
+2 SOUR @S12@
+3 OBJE @M22@
+1 BIRT
+2 DATE 29 SEP 1893
+2 PLAC Bradford, Yorkshire, England
+3 MAP
+4 LATI N53.794
+4 LONG W1.75
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S12@
+3 OBJE @M22@
+1 RESI Occupation: Dyer; Relation to Head of House: Father; Marital Status: Widowed
+2 DATE 1950
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+2 SOUR @S5@
+3 OBJE @M1@
+1 DEAT
+2 DATE 18 JUL 1972
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+1 BIRT
+2 DATE 29 SEP 1893
+2 PLAC Bradford, Yorkshire, England
+3 MAP
+4 LATI N53.794
+4 LONG W1.75
+2 SOUR @S5@
+3 OBJE @M1@
+2 SOUR @S12@
+3 OBJE @M22@
+1 RESI Occupation: Dyer; Relation to Head of House: Father; Marital Status: Widowed
+2 DATE 1950
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+2 SOUR @S5@
+3 OBJE @M1@
+1 DEAT
+2 DATE 18 JUL 1972
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+1 _PHOTO @M11@
+1 OBJE @M1@
+1 OBJE @M4@
+1 OBJE @M11@
+1 OBJE @M22@
+1 FAMS @F20@
+0 @I60@ INDI
+1 NAME Lillias Duncan "Lillian" /McLean/
+2 SOUR @S12@
+3 OBJE @M26@
+2 SOUR @S11@
+3 OBJE @M4@
+2 SOUR @S14@
+2 SOUR @S3@
+3 OBJE @M2@
+1 SEX F
+1 BIRT
+2 DATE ABT 1881
+2 PLAC Govan, Lanarkshire, Strathclyde, Scotland
+2 SOUR @S12@
+3 OBJE @M26@
+2 SOUR @S14@
+2 SOUR @S3@
+3 OBJE @M2@
+1 RESI Marital Status: Married; Relation to Head of House: Wife
+2 DATE 1930
+2 PLAC Lawrence, Lawrence, Essex, Massachusetts, USA
+2 SOUR @S3@
+3 OBJE @M2@
+1 EVEN
+2 TYPE Arrival
+2 DATE 1907
+2 SOUR @S3@
+3 OBJE @M2@
+1 DEAT
+2 DATE 1956
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+2 SOUR @S14@
+1 NAME Lillias Duncan "Lillian" /McLean/
+2 SOUR @S12@
+3 OBJE @M26@
+2 SOUR @S11@
+3 OBJE @M4@
+2 SOUR @S14@
+2 SOUR @S3@
+3 OBJE @M2@
+1 NAME Lillias Duncan "Lillian" /McLean/
+2 SOUR @S12@
+3 OBJE @M26@
+2 SOUR @S11@
+3 OBJE @M4@
+2 SOUR @S14@
+2 SOUR @S3@
+3 OBJE @M2@
+1 BIRT
+2 DATE ABT 1881
+2 PLAC Govan, Lanarkshire, Strathclyde, Scotland
+2 SOUR @S12@
+3 OBJE @M26@
+2 SOUR @S14@
+2 SOUR @S3@
+3 OBJE @M2@
+1 RESI Marital Status: Married; Relation to Head of House: Wife
+2 DATE 1930
+2 PLAC Lawrence, Lawrence, Essex, Massachusetts, USA
+2 SOUR @S3@
+3 OBJE @M2@
+1 EVEN
+2 TYPE Arrival
+2 DATE 1907
+2 SOUR @S3@
+3 OBJE @M2@
+1 DEAT
+2 DATE 1956
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+2 SOUR @S14@
+1 BIRT
+2 DATE ABT 1881
+2 PLAC Govan, Lanarkshire, Strathclyde, Scotland
+2 SOUR @S12@
+3 OBJE @M26@
+2 SOUR @S14@
+2 SOUR @S3@
+3 OBJE @M2@
+1 RESI Marital Status: Married; Relation to Head of House: Wife
+2 DATE 1930
+2 PLAC Lawrence, Lawrence, Essex, Massachusetts, USA
+2 SOUR @S3@
+3 OBJE @M2@
+1 EVEN
+2 TYPE Arrival
+2 DATE 1907
+2 SOUR @S3@
+3 OBJE @M2@
+1 DEAT
+2 DATE 1956
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+2 SOUR @S14@
+1 OBJE @M2@
+1 OBJE @M4@
+1 OBJE @M26@
+1 FAMS @F18@
+1 FAMC @F32@
+0 @I54@ INDI
+1 NAME Thomas Forsyth /Menzies/
+2 SOUR @S12@
+3 PAGE New Hampshire Department of Health & Human Services; Concord, NH, USA; New Hampshire Marriage Records, 1700-1969
+3 OBJE @M26@
+2 SOUR @S11@
+3 PAGE New England Historical Genealogical Society; New Hampshire Bureau of Vital Records, Concord, New Hampshire
+3 OBJE @M4@
+2 SOUR @S14@
+2 SOUR @S3@
+3 OBJE @M2@
+1 SEX M
+1 BIRT
+2 DATE 29 DEC 1884
+2 PLAC Ladhope, Galashiels, Selkirkshire, Scotland
+2 SOUR @S12@
+3 PAGE New Hampshire Department of Health & Human Services; Concord, NH, USA; New Hampshire Marriage Records, 1700-1969
+3 OBJE @M26@
+2 SOUR @S14@
+2 SOUR @S3@
+3 OBJE @M2@
+1 RESI Marital Status: Married; Relation to Head of House: Head; Occupation: Pattern Weaver
+2 DATE 1930
+2 PLAC Lawrence, Lawrence, Essex, Massachusetts, USA
+2 SOUR @S3@
+3 OBJE @M2@
+1 EVEN
+2 TYPE Arrival
+2 DATE 1908
+2 SOUR @S3@
+3 OBJE @M2@
+1 DEAT
+2 DATE 29 JUL 1931
+2 PLAC Lawrence, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.707
+4 LONG W71.1631
+2 SOUR @S14@
+1 _PHOTO @M29@
+1 OBJE @M2@
+1 OBJE @M4@
+1 OBJE @M26@
+1 OBJE @M29@
+1 FAMS @F18@
+1 FAMC @F26@
+0 @I33@ INDI
+1 NAME Helen Elizabeth /Carr/
+2 SOUR @S5@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Methuen, Essex, Massachusetts; Roll: 2863; Page: 76; Enumeration District: 5-268
+3 OBJE @M1@
+2 SOUR @S11@
+3 PAGE New England Historical Genealogical Society; New Hampshire Bureau of Vital Records, Concord, New Hampshire
+3 OBJE @M4@
+2 SOUR @S12@
+3 PAGE New Hampshire Department of Health & Human Services; Concord, NH, USA; New Hampshire Marriage Records, 1700-1969
+3 OBJE @M22@
+2 SOUR @S21@
+3 PAGE Year: 1920; Census Place: Methuen, Essex, Massachusetts; Roll: T625_689; Page: 4A; Enumeration District: 217
+3 OBJE @M24@
+2 SOUR @S4@
+3 PAGE Year: 1940; Census Place: Methuen, Essex, Massachusetts; Roll: m-t0627-01586; Page: 6A; Enumeration District: 5-259
+3 OBJE @M8@
+2 SOUR @S13@
+2 SOUR @S7@
+2 SOUR @S14@
+2 SOUR @S15@
+2 SOUR @S12@
+3 OBJE @M28@
+1 SEX F
+1 BIRT
+2 DATE 17 MAY 1917
+2 PLAC Lawrence, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.707
+4 LONG W71.1631
+2 SOUR @S5@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Methuen, Essex, Massachusetts; Roll: 2863; Page: 76; Enumeration District: 5-268
+3 OBJE @M1@
+2 SOUR @S11@
+3 PAGE New England Historical Genealogical Society; New Hampshire Bureau of Vital Records, Concord, New Hampshire
+3 OBJE @M4@
+2 SOUR @S12@
+3 PAGE New Hampshire Department of Health & Human Services; Concord, NH, USA; New Hampshire Marriage Records, 1700-1969
+3 OBJE @M22@
+2 SOUR @S21@
+3 PAGE Year: 1920; Census Place: Methuen, Essex, Massachusetts; Roll: T625_689; Page: 4A; Enumeration District: 217
+3 OBJE @M24@
+2 SOUR @S4@
+3 PAGE Year: 1940; Census Place: Methuen, Essex, Massachusetts; Roll: m-t0627-01586; Page: 6A; Enumeration District: 5-259
+3 OBJE @M8@
+2 SOUR @S13@
+2 SOUR @S7@
+2 SOUR @S14@
+2 SOUR @S15@
+2 SOUR @S12@
+3 OBJE @M28@
+1 BURI
+2 DATE 1 OCT 2012
+2 PLAC Salem, Rockingham County, New Hampshire, United States of America
+2 SOUR @S13@
+2 SOUR @S7@
+1 FSID GT61-3RY
+1 RESI
+2 DATE 1940
+2 PLAC Metheun, Essex, Massachusetts, United States
+2 SOUR @S7@
+1 EVEN
+2 TYPE Obituary
+2 DATE 26 JUL 2020
+2 PLAC Methuen, Essex, Massachusetts, United States
+1 EVEN Married
+2 TYPE Marital Status
+1 EVEN White
+2 TYPE Race
+1 DEAT
+2 DATE 25 SEP 2012
+2 PLAC Salem, Rockingham, New Hampshire, USA
+3 MAP
+4 LATI N42.7884
+4 LONG W71.2009
+2 SOUR @S13@
+2 SOUR @S7@
+2 SOUR @S14@
+1 RESI
+2 DATE 1935
+2 PLAC Lawrence, Essex, Massachusetts
+2 SOUR @S4@
+3 PAGE Year: 1940; Census Place: Methuen, Essex, Massachusetts; Roll: m-t0627-01586; Page: 6A; Enumeration District: 5-259
+3 OBJE @M8@
+1 RESI Marital Status: Married; Relation to Head of House: Wife
+2 DATE 1940
+2 PLAC Methuen Town, Methuen, Essex, Massachusetts, USA
+2 SOUR @S4@
+3 PAGE Year: 1940; Census Place: Methuen, Essex, Massachusetts; Roll: m-t0627-01586; Page: 6A; Enumeration District: 5-259
+3 OBJE @M8@
+1 RESI Occupation: None; Marital Status: Single; Relation to Head of House: Daughter
+2 DATE 1920
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+2 SOUR @S21@
+3 PAGE Year: 1920; Census Place: Methuen, Essex, Massachusetts; Roll: T625_689; Page: 4A; Enumeration District: 217
+3 OBJE @M24@
+1 RESI Relation to Head of House: Head; Marital Status: Married
+2 DATE 1950
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+2 SOUR @S5@
+3 PAGE National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Methuen, Essex, Massachusetts; Roll: 2863; Page: 76; Enumeration District: 5-268
+3 OBJE @M1@
+1 OBJE @M1@
+1 OBJE @M4@
+1 OBJE @M8@
+1 OBJE @M22@
+1 OBJE @M24@
+1 OBJE @M28@
+1 FAMS @F5@
+1 FAMC @F20@
+0 @I20@ INDI
+1 NAME Norman Forsyth /Menzies/ Sr
+2 SOUR @S11@
+3 OBJE @M4@
+2 SOUR @S12@
+3 OBJE @M22@
+2 SOUR @S4@
+3 OBJE @M8@
+2 SOUR @S13@
+2 SOUR @S7@
+2 SOUR @S14@
+2 SOUR @S15@
+2 SOUR @S3@
+3 OBJE @M2@
+2 SOUR @S12@
+3 OBJE @M28@
+1 SEX M
+1 BIRT
+2 DATE 29 DEC 1919
+2 PLAC Lawrence, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.707
+4 LONG W71.1631
+2 SOUR @S11@
+3 OBJE @M4@
+2 SOUR @S12@
+3 OBJE @M22@
+2 SOUR @S4@
+3 OBJE @M8@
+2 SOUR @S13@
+2 SOUR @S14@
+2 SOUR @S15@
+2 SOUR @S3@
+3 OBJE @M2@
+2 SOUR @S12@
+3 OBJE @M28@
+1 BURI
+2 PLAC Salem, Rockingham County, New Hampshire, United States of America
+2 SOUR @S13@
+1 FSID GT61-HQ7
+1 RESI
+2 DATE 1940
+2 PLAC Metheun, Essex, Massachusetts, United States
+2 SOUR @S3@
+3 OBJE @M2@
+1 EVEN Married
+2 TYPE Marital Status
+1 EVEN White
+2 TYPE Race
+1 DEAT
+2 DATE 29 NOV 1972
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+2 SOUR @S13@
+2 SOUR @S14@
+1 RESI
+2 DATE 1935
+2 PLAC Methuen, Essex, Massachusetts
+2 SOUR @S4@
+3 OBJE @M8@
+1 RESI Occupation: Batcher; Marital Status: Married; Relation to Head of House: Head
+2 DATE 1940
+2 PLAC Methuen Town, Methuen, Essex, Massachusetts, USA
+2 SOUR @S4@
+3 OBJE @M8@
+1 RESI
+2 DATE 1935
+2 PLAC Same Place
+1 OBJE @M2@
+1 OBJE @M4@
+1 OBJE @M8@
+1 OBJE @M22@
+1 OBJE @M28@
+1 FAMS @F5@
+1 FAMC @F18@
+0 @F24@ FAM
+1 HUSB @I65@
+1 WIFE @I66@
+1 CHIL @I49@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I56@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR Merrimack Valley Golf Club
+2 DATE 29 AUG 2015
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+1 ENGA
+2 DATE 29 AUG 2014
+2 PLAC West Newbury, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.8015
+4 LONG W70.9898
+1 _SEPR
+2 DATE NOV 2017
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 DIV
+2 DATE 15 OCT 2018
+2 PLAC Salem, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.5195
+4 LONG W70.8967
+1 ENGA
+2 DATE 29 AUG 2014
+2 PLAC West Newbury, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.8015
+4 LONG W70.9898
+1 MARR Merrimack Valley Golf Club
+2 DATE 29 AUG 2015
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+1 _SEPR
+2 DATE NOV 2017
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 DIV
+2 DATE 15 OCT 2018
+2 PLAC Salem, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.5195
+4 LONG W70.8967
+1 ENGA
+2 DATE 29 AUG 2014
+2 PLAC West Newbury, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.8015
+4 LONG W70.9898
+1 MARR Merrimack Valley Golf Club
+2 DATE 29 AUG 2015
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+1 _SEPR
+2 DATE NOV 2017
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 DIV
+2 DATE 15 OCT 2018
+2 PLAC Salem, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.5195
+4 LONG W70.8967
+0 @F21@ FAM
+1 HUSB @I61@
+1 WIFE @I34@
+1 MARR
+2 DATE 13 APR 1963
+2 PLAC Salem, New Hampshire
+2 SOUR @S12@
+3 OBJE @M28@
+1 MARR
+2 DATE 13 APR 1963
+2 PLAC Salem, New Hampshire
+2 SOUR @S12@
+3 OBJE @M28@
+1 MARR
+2 DATE 13 APR 1963
+2 PLAC Salem, New Hampshire
+2 SOUR @S12@
+3 OBJE @M28@
+0 @F16@ FAM
+1 HUSB @I48@
+1 WIFE @I50@
+1 CHIL @I21@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I65@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR Saint David's Church
+2 DATE 20 SEP 1975
+2 PLAC Salem, Rockingham, New Hampshire, USA
+3 MAP
+4 LATI N42.7884
+4 LONG W71.2009
+0 @F15@ FAM
+1 HUSB @I48@
+1 WIFE @I22@
+1 MARR
+2 DATE 16 APR 1966
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+2 SOUR @S16@
+2 SOUR @S17@
+3 OBJE @M14@
+2 SOUR @S16@
+3 PAGE Texas Department of State Health Services; Austin, Texas
+1 DIV
+2 DATE 15 MAR 1968
+2 PLAC Bell, Texas, USA
+3 MAP
+4 LATI N31.0375
+4 LONG W97.4759
+2 SOUR @S16@
+2 SOUR @S16@
+3 PAGE Texas Department of State Health Services; Austin, Texas
+1 MARR
+2 DATE 16 APR 1966
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+2 SOUR @S16@
+2 SOUR @S17@
+3 OBJE @M14@
+2 SOUR @S16@
+3 PAGE Texas Department of State Health Services; Austin, Texas
+1 MARR
+2 DATE 16 APR 1966
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+2 SOUR @S16@
+2 SOUR @S17@
+3 OBJE @M14@
+2 SOUR @S16@
+3 PAGE Texas Department of State Health Services; Austin, Texas
+1 DIV
+2 DATE 15 MAR 1968
+2 PLAC Bell, Texas, USA
+3 MAP
+4 LATI N31.0375
+4 LONG W97.4759
+2 SOUR @S16@
+2 SOUR @S16@
+3 PAGE Texas Department of State Health Services; Austin, Texas
+1 DIV
+2 DATE 15 MAR 1968
+2 PLAC Bell, Texas, USA
+3 MAP
+4 LATI N31.0375
+4 LONG W97.4759
+2 SOUR @S16@
+2 SOUR @S16@
+3 PAGE Texas Department of State Health Services; Austin, Texas
+0 @F30@ FAM
+1 HUSB @I87@
+1 WIFE @I84@
+1 CHIL @I83@
+2 _FREL Natural
+2 _MREL Natural
+0 @F29@ FAM
+1 HUSB @I85@
+1 WIFE @I86@
+1 CHIL @I82@
+2 _FREL Natural
+2 _MREL Natural
+0 @F39@ FAM
+1 HUSB @I107@
+1 WIFE @I106@
+1 CHIL @I104@
+2 _FREL Natural
+2 _MREL Natural
+0 @F28@ FAM
+1 HUSB @I82@
+1 WIFE @I83@
+1 CHIL @I81@
+2 _FREL Natural
+2 _MREL Natural
+0 @F38@ FAM
+1 HUSB @I104@
+1 WIFE @I105@
+1 CHIL @I102@
+2 _FREL Natural
+2 _MREL Natural
+0 @F44@ FAM
+1 WIFE @I80@
+1 CHIL @I79@
+2 _MREL Natural
+0 @F43@ FAM
+1 HUSB @I81@
+1 CHIL @I78@
+2 _FREL Natural
+0 @F37@ FAM
+1 HUSB @I102@
+1 WIFE @I103@
+1 CHIL @I100@
+2 _FREL Natural
+2 _MREL Natural
+0 @F27@ FAM
+1 HUSB @I78@
+1 WIFE @I79@
+1 CHIL @I77@
+2 _FREL Natural
+2 _MREL Natural
+0 @F1@ FAM
+1 HUSB @I2@
+1 WIFE @I3@
+1 CHIL @I98@
+2 _FREL Natural
+2 _MREL Natural
+0 @F36@ FAM
+1 HUSB @I100@
+1 WIFE @I101@
+1 CHIL @I99@
+2 _FREL Natural
+2 _MREL Natural
+0 @F42@ FAM
+1 HUSB @I77@
+1 CHIL @I75@
+2 _FREL Natural
+0 @F45@ FAM
+1 HUSB @I93@
+1 CHIL @I91@
+2 _FREL Natural
+0 @F34@ FAM
+1 HUSB @I98@
+1 WIFE @I1@
+1 CHIL @I76@
+2 _FREL Natural
+2 _MREL Natural
+0 @F35@ FAM
+1 HUSB @I99@
+1 WIFE @I75@
+1 CHIL @I74@
+2 _FREL Natural
+2 _MREL Natural
+0 @F32@ FAM
+1 HUSB @I91@
+1 WIFE @I92@
+1 CHIL @I60@
+2 _FREL Natural
+2 _MREL Natural
+0 @F26@ FAM
+1 HUSB @I74@
+1 WIFE @I76@
+1 CHIL @I54@
+2 _FREL Natural
+2 _MREL Natural
+0 @F20@ FAM
+1 HUSB @I58@
+1 WIFE @I59@
+1 CHIL @I33@
+2 _FREL Natural
+2 _MREL Natural
+0 @F18@ FAM
+1 HUSB @I54@
+1 WIFE @I60@
+1 CHIL @I20@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I32@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I37@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR
+2 DATE 1 JAN 1909
+2 PLAC Weymouth, Massachusetts, USA
+2 SOUR @S14@
+1 MARR
+2 DATE 1 JAN 1909
+2 PLAC Weymouth, Massachusetts, USA
+2 SOUR @S14@
+1 MARR
+2 DATE 1 JAN 1909
+2 PLAC Weymouth, Massachusetts, USA
+2 SOUR @S14@
+0 @F5@ FAM
+1 HUSB @I20@
+1 WIFE @I33@
+1 CHIL @I18@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I48@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I61@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I62@
+2 _FREL Natural
+2 _MREL Natural
+1 MARR
+2 DATE 8 APR 1939
+2 PLAC Salem Depot, New Hampshire, USA
+2 SOUR @S11@
+3 OBJE @M4@
+2 SOUR @S12@
+3 OBJE @M22@
+2 SOUR @S14@
+2 SOUR @S15@
+2 SOUR @S11@
+3 PAGE New England Historical Genealogical Society; New Hampshire Bureau of Vital Records, Concord, New Hampshire
+3 OBJE @M4@
+0 @S3@ SOUR
+1 AUTH Ancestry.com
+1 TITL 1930 United States Federal Census
+1 PUBL Name: Name: Name: Ancestry.com Operations Inc; Location: Provo, UT, USA; Date: 2002;;;
+1 REPO @R1@
+1 NOTE
+2 CONC United States of America, Bureau of the Census. <i>Fifteenth Census of the United States, 1930</i>. Washington, D.C.: National Archives and Records Administration, 1930. T626, 2,667 rolls.
+0 @S4@ SOUR
+1 AUTH Ancestry.com
+1 TITL 1940 United States Federal Census
+1 PUBL Name: Name: Name: Ancestry.com Operations, Inc.; Location: Provo, UT, USA; Date: 2012;;;
+1 REPO @R1@
+1 NOTE
+2 CONC United States of America, Bureau of the Census. <i>Sixteenth Census of the United States, 1940</i>. Washington, D.C.: National Archives and Records Administration, 1940. T627, 4,643 rolls.
+0 @S5@ SOUR
+1 AUTH Ancestry.com
+1 TITL 1950 United States Federal Census
+1 PUBL Name: Name: Name: Ancestry.com Operations, Inc.; Location: Lehi, UT, USA; Date: 2022;;;
+1 REPO @R1@
+1 NOTE
+2 CONC Department of Commerce. Bureau of the Census. 1913-1/1/1972. <i>Population Schedules for the 1950 Census, 1950 - 1950</i>. Washington, DC: National Archives at Washington, DC. <p><i>Population Schedules for the 1950 Census, 1950 - 1950</i>. NAID
+2 CONC : <a href="https://catalog.archives.gov/id/43290879" target="_blank">43290879</a>. Records of the Bureau of the Census, 1790 - 2007, Record Group 29. National Archives at Washington, DC., Washington, DC.</p>
+0 @S6@ SOUR
+1 TITL Ancestry Family Tree
+1 PUBL Name: Name: Location: Online publication - Provo, UT, USA: Ancestry.com.  Original data:  Family Tree files submitted by Ancestry members.;;;
+1 REPO @R1@
+0 @S7@ SOUR
+1 AUTH Ancestry.com
+1 TITL U.S., Cemetery and Funeral Home Collection, 1847-Current
+1 PUBL Name: Name: Name: Ancestry.com Operations Inc; Location: Lehi, UT, USA; Date: 2011;;;
+1 REPO @R1@
+1 NOTE
+2 CONC See source information provided with each entry.
+0 @S8@ SOUR
+1 AUTH FamilySearch.org
+1 TITL United States, Social Security Numerical Identification Files (NUMIDENT), 1936-2007
+1 REPO @R2@
+0 @S9@ SOUR
+1 AUTH FamilySearch.org
+1 TITL FamilySearch FamilyTree
+1 REPO @R2@
+0 @S11@ SOUR
+1 AUTH Ancestry,com
+1 TITL New Hampshire, U.S., Marriage and Divorce Records, 1659-1947
+1 PUBL Name: Name: Name: Ancestry.com Operations, Inc.; Location: Provo, UT, USA; Date: 2013;;;
+1 REPO @R1@
+1 NOTE
+2 CONC <p>“New Hampshire, Marriage and Divorce Records, 1659–1947.” Online index and digital images. <i> New England Historical Genealogical Society</i>. Citing New Hampshire Bureau of Vital Records, Concord, New Hampshire.</p>
+0 @S12@ SOUR
+1 AUTH Ancestry.com
+1 TITL New Hampshire, U.S., Marriage Records, 1700-1971
+1 PUBL Name: Name: Name: Ancestry.com Operations, Inc.; Location: Lehi, UT, USA; Date: 2021;;;
+1 REPO @R1@
+1 NOTE
+2 CONC New Hampshire, Marriage Records, 1700-1971.  New Hampshire Department of Health, Concord, New Hampshire.
+0 @S13@ SOUR
+1 AUTH Ancestry.com
+1 TITL U.S., Find a Grave® Index, 1600s-Current
+1 PUBL Name: Name: Name: Ancestry.com Operations, Inc.; Location: Lehi, UT, USA; Date: 2012;;;
+1 REPO @R1@
+1 NOTE
+2 CONC <i>Find a Grave</i>. Find a Grave®. http://www.findagrave.com/cgi-bin/fg.cgi.
+0 @S14@ SOUR
+1 AUTH Ancestry.com
+1 TITL Geneanet Community Trees Index
+1 PUBL Name: Name: Name: Ancestry.com Operations, Inc.; Location: Lehi, UT, USA; Date: 2022;;;
+1 REPO @R1@
+1 NOTE
+2 CONC Geneanet Community Trees Index
+0 @S15@ SOUR
+1 AUTH Ancestry.com
+1 TITL New Hampshire, U.S., Marriage Records Index, 1637-1947
+1 PUBL Name: Name: Name: Ancestry.com Operations, Inc.; Location: Provo, UT, USA; Date: 2011;;;
+1 REPO @R1@
+0 @S16@ SOUR
+1 AUTH Ancestry.com
+1 TITL Texas, U.S., Divorce Index, 1968-2015
+1 PUBL Name: Name: Name: Ancestry.com Operations Inc; Location: Lehi, UT, USA; Date: 2005;;;
+1 REPO @R1@
+1 NOTE
+2 CONC Texas Department of State Health Services. <i>Texas Divorce Index, 1968-2015</i>. Texas, USA: Texas Department of State Health Services.
+0 @S17@ SOUR
+1 AUTH Ancestry.com
+1 TITL Massachusetts, U.S., Marriage Index, 1901-1955 and 1966-1970
+1 PUBL Name: Name: Name: Ancestry.com Operations, Inc.; Location: Provo, UT, USA; Date: 2013;;;
+1 REPO @R1@
+1 NOTE
+2 CONC Department of Public Health, Registry of Vital Records and Statistics. <i>Massachusetts Vital Records Index to Marriages [1916–1970]</i>. Volumes 76–166, 192– 207. Facsimile edition. Boston, MA: New England Historic Genealogical Society, Boston, M
+2 CONC assachusetts.
+0 @S21@ SOUR
+1 AUTH Ancestry.com
+1 TITL 1920 United States Federal Census
+1 PUBL Name: Name: Name: Ancestry.com Operations, Inc.; Location: Provo, UT, USA; Date: 2010;;;
+1 REPO @R1@
+1 NOTE
+2 CONC Fourteenth Census of the United States, 1920. (NARA microfilm publication T625, 2076 rolls). Records of the Bureau of the Census, Record Group 29. National Archives, Washington, D.C. For details on the contents of the film numbers, visit the follo
+2 CONC wing NARA web page: <a href="https://www.archives.gov/research/census/publications-microfilm-catalogs-census/1920/part-07.html" target="_blank">NARA</a>. Note: Enumeration Districts 819-839 are on roll 323 (Chicago City).
+0 @S24@ SOUR
+1 AUTH Ancestry.com
+1 TITL U.S., Public Records Index, 1950-1993, Volume 1
+1 PUBL Name: Name: Name: Ancestry.com Operations, Inc.; Location: Lehi, UT, USA; Date: 2010;;;
+1 REPO @R1@
+1 NOTE
+2 CONC Voter Registration Lists, Public Record Filings, Historical Residential Records, and Other Household Database Listings
+0 @S25@ SOUR
+1 AUTH Ancestry.com
+1 TITL U.S., Index to Public Records, 1994-2019
+1 PUBL Name: Name: Name: Ancestry.com Operations, Inc.; Location: Lehi, UT, USA; Date: 2020;;;
+1 REPO @R1@
+1 NOTE
+2 CONC <i>Voter Registration Lists, Public Record Filings, Historical Residential Records, and Other Household Database Listings</i>.
+0 @S26@ SOUR
+1 AUTH Ancestry.com
+1 TITL U.S., Public Records Index, 1950-1993, Volume 2
+1 PUBL Name: Name: Name: Ancestry.com Operations, Inc.; Location: Lehi, UT, USA; Date: 2010;;;
+1 REPO @R1@
+1 NOTE
+2 CONC <i>Voter Registration Lists, Public Record Filings, Historical Residential Records, and Other Household Database Listings</i>.
+0 @S28@ SOUR
+1 AUTH Ancestry.com
+1 TITL Florida, U.S., Newspapers.com™ Stories and Events Index, 1800's-current
+1 PUBL Name: Ancestry.com Operations Inc; Location: Lehi, UT, USA; Date: 2023;
+1 REPO @R1@
+1 NOTE
+2 CONC See newspaper information provided with each entry.
+0 @S29@ SOUR
+1 AUTH Ancestry.com
+1 TITL U.S., Phone and Address Directories, 1993-2002
+1 PUBL Name: Name: Name: Ancestry.com Operations Inc; Location: Lehi, UT, USA; Date: 2005;;;
+1 REPO @R1@
+1 NOTE
+2 CONC <i>1993-2002 White Pages</i>. Little Rock, AR, USA: Acxiom Corporation.
+0 @S30@ SOUR
+1 AUTH Ancestry.com
+1 TITL Massachusetts, U.S., Newspapers.com™ Stories and Events Index, 1800's-current
+1 PUBL Name: Name: Name: Ancestry.com Operations Inc; Location: Lehi, UT, USA; Date: 2022;;;
+1 REPO @R1@
+1 NOTE
+2 CONC See newspaper information provided with each entry.
+0 @R1@ REPO
+1 NAME Ancestry.com
+1 ADDR
+1 EMAIL
+1 PHON
+0 @R2@ REPO
+1 NAME FamilySearch
+1 ADDR
+1 EMAIL
+1 PHON
+0 @M1@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024(2) Media\1950 United States Federal Census.jpg
+2 FORM jpg
+2 TITL 1950 United States Federal Census
+2 _TEXT National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Methuen, Essex, Massachusetts; Roll: 2863; Page: 76; Enumeration District: 5-268
+0 @M2@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024(2) Media\1930 United States Federal Census.jpg
+2 FORM jpg
+2 TITL 1930 United States Federal Census
+0 @M4@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024(2) Media\New Hampshire, U.S., Marriage and Divorce Records, 1659-1947.jpg
+2 FORM jpg
+2 TITL New Hampshire, U.S., Marriage and Divorce Records, 1659-1947
+2 _TEXT New England Historical Genealogical Society; New Hampshire Bureau of Vital Records, Concord, New Hampshire
+0 @M8@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024(2) Media\1940 United States Federal Census.jpg
+2 FORM jpg
+2 TITL 1940 United States Federal Census
+2 _TEXT Year: 1940; Census Place: Methuen, Essex, Massachusetts; Roll: m-t0627-01586; Page: 6A; Enumeration District: 5-259
+0 @M9@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024(2) Media\ScotlandsPeople_OPR123_000_0010_0256Z.jpg
+2 FORM jpg
+2 TITL ScotlandsPeople_OPR123_000_0010_0256Z
+2 _DATE 12 12 1738
+0 @M11@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024(2) Media\Richard Carr Naturalzation.jpg
+2 FORM jpg
+2 TITL Richard Carr Naturalzation
+2 _DATE 6/10/2012 7:29:02 PM
+0 @M12@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024(2) Media\UK, Royal Hospital Chelsea Pensioner Admission and Discharge Records Page 103 - UK, Royal Hospital C.jpg
+2 FORM jpg
+2 TITL UK, Royal Hospital Chelsea Pensioner Admission and Discharge Records Page 103 - UK, Royal Hospital Chelsea Pensioner Admission a
+2 _DATE 1760-1887
+0 @M13@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024(2) Media\Fraser of Lovat Coat of Arms.jpg
+2 FORM jpg
+2 TITL Fraser of Lovat Coat of Arms
+0 @M14@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024(2) Media\Massachusetts, U.S., Marriage Index, 1901-1955 and 1966-1970.jpg
+2 FORM jpg
+2 TITL Massachusetts, U.S., Marriage Index, 1901-1955 and 1966-1970
+0 @M15@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024(2) Media\1AD0BB65-0D94-4BAF-8FF2-628646C84167.jpg
+2 FORM jpg
+2 TITL 1AD0BB65-0D94-4BAF-8FF2-628646C84167
+0 @M16@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024(2) Media\tartan_MacPhersonDress.jpg
+2 FORM jpg
+2 TITL tartan_MacPhersonDress
+0 @M18@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024(2) Media\Castle MENZIES at night.jpg
+2 FORM jpg
+2 TITL Castle MENZIES at night
+0 @M19@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024(2) Media\1950 United States Federal Census(1).jpg
+2 FORM jpg
+2 TITL 1950 United States Federal Census
+0 @M21@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024(2) Media\1950 United States Federal Census(2).jpg
+2 FORM jpg
+2 TITL 1950 United States Federal Census
+2 _TEXT National Archives at Washington, DC; Washington, D.C.; Seventeenth Census of the United States, 1950; Year: 1950; Census Place: Haverhill, Essex, Massachusetts; Roll: 2860; Page: 8; Enumeration District: 5-155
+0 @M22@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024(2) Media\New Hampshire, U.S., Marriage Records, 1700-1971.jpg
+2 FORM jpg
+2 TITL New Hampshire, U.S., Marriage Records, 1700-1971
+2 _TEXT New Hampshire Department of Health & Human Services; Concord, NH, USA; New Hampshire Marriage Records, 1700-1969
+0 @M24@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024(2) Media\1920 United States Federal Census.jpg
+2 FORM jpg
+2 TITL 1920 United States Federal Census
+2 _TEXT Year: 1920; Census Place: Methuen, Essex, Massachusetts; Roll: T625_689; Page: 4A; Enumeration District: 217
+0 @M26@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024(2) Media\New Hampshire, U.S., Marriage Records, 1700-1971(1).jpg
+2 FORM jpg
+2 TITL New Hampshire, U.S., Marriage Records, 1700-1971
+0 @M28@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024(2) Media\New Hampshire, U.S., Marriage Records, 1700-1971(2).jpg
+2 FORM jpg
+2 TITL New Hampshire, U.S., Marriage Records, 1700-1971
+0 @M29@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024(2) Media\TFM.jpg
+2 FORM jpg
+2 TITL TFM
+0 TRLR

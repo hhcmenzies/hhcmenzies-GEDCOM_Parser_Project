@@ -1,0 +1,171 @@
+{
+  "religious_titles": {
+    "christianity": {
+      "papal_titles": {
+        "Pope": "Supreme leader of the Catholic Church",
+        "Pontiff": "Another title for the Pope",
+        "Bishop of Rome": "Pope's official title as the Bishop of Rome",
+        "Vicar of Christ": "Title for the Pope signifying his role as Christ's representative on Earth",
+        "Supreme Pontiff": "Formal title for the Pope",
+        "Holy Father": "Honorific title for the Pope"
+      },
+      "cardinal_titles": {
+        "Cardinal": "Senior official in the Catholic Church ranking below the Pope",
+        "Cardinal Bishop": "Highest rank among cardinals",
+        "Cardinal Priest": "Middle rank among cardinals",
+        "Cardinal Deacon": "Lowest rank among cardinals"
+      },
+      "bishop_titles": {
+        "Patriarch": "Senior bishop in Eastern Orthodox and Catholic Churches",
+        "Major Archbishop": "Title in Eastern Catholic Churches",
+        "Archbishop": "Bishop of an important diocese",
+        "Metropolitan": "Senior bishop overseeing multiple dioceses",
+        "Bishop": "Overseer of a diocese",
+        "Auxiliary Bishop": "Assists a diocesan bishop",
+        "Coadjutor Bishop": "Bishop with right of succession",
+        "Titular Bishop": "Bishop assigned to a former diocese"
+      },
+      "priest_titles": {
+        "Monsignor": "Honorary title for senior priests",
+        "Pastor": "Head of a local parish",
+        "Parish Priest": "Priest in charge of a parish",
+        "Chaplain": "Cleric serving in a non-parish role",
+        "Prelate": "High-ranking priest or bishop",
+        "Canon": "Member of a cathedral or collegiate chapter",
+        "Father": "General title for priests"
+      },
+      "deacon_titles": {
+        "Deacon": "Ordained minister ranking below a priest",
+        "Permanent Deacon": "Deacon who does not become a priest",
+        "Transitional Deacon": "Deacon preparing for priesthood"
+      },
+      "monastic_titles": {
+        "Abbot": "Head of a monastery",
+        "Abbess": "Female equivalent of an Abbot",
+        "Prior": "Deputy head of a monastery",
+        "Prioress": "Female equivalent of a Prior",
+        "Brother": "Title for male monastics",
+        "Sister": "Title for female monastics",
+        "Friar": "Member of a mendicant order",
+        "Nun": "Female member of a monastic order"
+      },
+      "protestant_titles": {
+        "Pastor": "Leader of a Protestant church",
+        "Minister": "Title for clergy in many Protestant denominations",
+        "Reverend": "Honorific title for Protestant clergy",
+        "Elder": "Senior member of a Protestant church",
+        "Deacon": "Assists in church administration",
+        "Bishop": "Overseer in some Protestant denominations",
+        "Presbyter": "Alternative title for elder",
+        "Preacher": "Person who delivers sermons"
+      },
+      "orthodox_titles": {
+        "Ecumenical Patriarch": "Leader of the Eastern Orthodox Church",
+        "Patriarch": "Head of an Orthodox church",
+        "Metropolitan": "Senior Orthodox bishop",
+        "Archbishop": "High-ranking Orthodox bishop",
+        "Bishop": "Diocesan overseer",
+        "Hieromonk": "Monk who is also a priest",
+        "Archimandrite": "Senior monk with leadership roles",
+        "Protopresbyter": "Senior priest title",
+        "Deacon": "Assists in Orthodox services"
+      }
+    },
+    "islam": {
+      "clerical_titles": {
+        "Caliph": "Supreme leader of the Islamic community",
+        "Imam": "Leader of prayer and religious scholar",
+        "Grand Imam": "Senior Islamic leader, e.g., Al-Azhar Grand Imam",
+        "Ayatollah": "High-ranking Shia scholar",
+        "Grand Ayatollah": "Highest rank in Shia Islam",
+        "Sheikh": "Islamic scholar and leader",
+        "Mullah": "Islamic scholar and cleric",
+        "Mufti": "Islamic legal expert who issues fatwas",
+        "Qadi": "Islamic judge",
+        "Faqih": "Expert in Islamic jurisprudence",
+        "Muezzin": "Caller to prayer in a mosque"
+      },
+      "sufi_titles": {
+        "Pir": "Spiritual master in Sufism",
+        "Murshid": "Spiritual guide in Sufism",
+        "Dervish": "Member of a Sufi order",
+        "Qutb": "High spiritual leader in Sufism"
+      }
+    },
+    "judaism": {
+      "rabbinical_titles": {
+        "Rabbi": "Jewish religious leader",
+        "Grand Rabbi": "Senior rabbi in some traditions",
+        "Chief Rabbi": "Head of a Jewish community",
+        "Rav": "Alternative title for Rabbi",
+        "Dayan": "Jewish judge",
+        "Gaon": "Title of prestigious Talmudic scholars",
+        "Haham": "Sephardic Jewish scholar",
+        "Rebbe": "Spiritual leader in Hasidic Judaism",
+        "Tzadik": "Righteous person in Jewish mysticism"
+      },
+      "synagogue_titles": {
+        "Cantor": "Leads prayers in Jewish services",
+        "Gabbai": "Administrator in a synagogue",
+        "Chazan": "Alternative term for Cantor",
+        "Shochet": "Jewish ritual slaughterer",
+        "Mohel": "Performs circumcision ceremonies"
+      }
+    },
+    "hinduism": {
+      "spiritual_titles": {
+        "Swami": "Hindu spiritual leader",
+        "Guru": "Religious teacher",
+        "Acharya": "Highly learned scholar",
+        "Sadhu": "Hindu holy person",
+        "Sannyasi": "Renunciant monk",
+        "Pujari": "Temple priest",
+        "Shankaracharya": "Title for leaders of Hindu monastic orders",
+        "Pandit": "Hindu scholar"
+      }
+    },
+    "buddhism": {
+      "monastic_titles": {
+        "Dalai Lama": "Spiritual leader of Tibetan Buddhism",
+        "Panchen Lama": "High-ranking Tibetan Buddhist leader",
+        "Bhikkhu": "Buddhist monk",
+        "Bhikkhuni": "Buddhist nun",
+        "Rinpoche": "Tibetan Buddhist master",
+        "Ajahn": "Respected Buddhist teacher",
+        "Geshe": "Tibetan Buddhist scholar",
+        "Roshi": "Zen Buddhist teacher"
+      }
+    },
+    "sikhism": {
+      "religious_titles": {
+        "Guru": "Spiritual teacher (historically, 10 Sikh Gurus)",
+        "Giani": "Scholar of Sikh scripture",
+        "Granthi": "Caretaker of the Guru Granth Sahib",
+        "Jathedar": "Leader of a Sikh institution",
+        "Sant": "Spiritual leader in Sikhism"
+      }
+    },
+    "taoism": {
+      "spiritual_titles": {
+        "Daoshi": "Taoist priest",
+        "Zhenren": "Taoist master",
+        "Fashi": "Taoist ritual leader"
+      }
+    },
+    "shinto": {
+      "priestly_titles": {
+        "Kannushi": "Shinto priest",
+        "Gūji": "Head priest of a Shinto shrine",
+        "Miko": "Female shrine attendant"
+      }
+    },
+    "other_religious_titles": {
+      "Shaman": "Spiritual leader in animistic traditions",
+      "Medicine Man": "Spiritual healer in indigenous cultures",
+      "Druid": "Spiritual leader in Celtic traditions",
+      "Pope Emeritus": "Retired Pope",
+      "Lama": "Buddhist teacher in Tibetan traditions",
+      "Oracle": "Spiritual prophet in various religions"
+    }
+  }
+}

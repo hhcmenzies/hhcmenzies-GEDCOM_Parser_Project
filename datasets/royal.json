@@ -1,0 +1,160 @@
+{
+  "royal_and_noble_titles": {
+    "monarchs": {
+      "Emperor": "Sovereign ruler of an empire",
+      "Empress": "Female equivalent of an emperor",
+      "King": "Sovereign ruler of a kingdom",
+      "Queen": "Female equivalent of a king",
+      "Tsar": "Slavic emperor (e.g., Russian Tsars)",
+      "Tsarina": "Female equivalent of a Tsar",
+      "Czar": "Alternative spelling of Tsar",
+      "Czarina": "Female equivalent of a Czar",
+      "Shah": "Persian title for a monarch",
+      "Padishah": "Emperor in Persian and Ottoman contexts",
+      "Sultan": "Islamic sovereign ruler",
+      "Sultana": "Female equivalent of a Sultan",
+      "Rajah": "Indian king or prince",
+      "Rani": "Female equivalent of a Rajah",
+      "Maharaja": "Great Indian king",
+      "Maharani": "Great Indian queen",
+      "Grand Duke": "Sovereign duke of a grand duchy",
+      "Grand Duchess": "Female equivalent of a Grand Duke",
+      "Prince Sovereign": "Sovereign prince in small principalities (e.g., Monaco)"
+    },
+    "royal_titles": {
+      "Crown Prince": "Heir apparent to a throne",
+      "Crown Princess": "Female heir apparent",
+      "Prince": "Royal male title",
+      "Princess": "Royal female title",
+      "Infante": "Prince in Spain and Portugal",
+      "Infanta": "Princess in Spain and Portugal",
+      "Archduke": "Austrian noble title",
+      "Archduchess": "Female equivalent of Archduke",
+      "Grand Prince": "Noble rank below Emperor",
+      "Grand Princess": "Female equivalent of Grand Prince",
+      "Dauphin": "Heir apparent to the French throne",
+      "Tsarevich": "Heir apparent to the Russian Tsar",
+      "Tsarevna": "Daughter of a Tsar"
+    },
+    "high_nobility": {
+      "Duke": "Highest rank in the peerage",
+      "Duchess": "Female equivalent of a Duke",
+      "Marquess": "Noble rank below a Duke",
+      "Marchioness": "Female equivalent of a Marquess",
+      "Margrave": "Noble overseeing border territories",
+      "Margravine": "Female equivalent of a Margrave",
+      "Count": "Noble rank below a Marquess",
+      "Countess": "Female equivalent of a Count",
+      "Earl": "British noble equivalent to Count",
+      "Viscount": "Rank below a Count or Earl",
+      "Viscountess": "Female equivalent of a Viscount",
+      "Baron": "Lowest rank of major nobility",
+      "Baroness": "Female equivalent of a Baron",
+      "Boyar": "High-ranking noble in Eastern Europe"
+    },
+    "lesser_nobility": {
+      "Lord": "General noble title in Britain",
+      "Lady": "Female equivalent of a Lord",
+      "Seigneur": "Feudal lord in France",
+      "Dame": "Female equivalent of a knight",
+      "Knight": "Military-based nobility",
+      "Chevalier": "French equivalent of a knight",
+      "Cavalier": "Italian equivalent of a knight",
+      "Hidalgo": "Spanish minor nobility",
+      "Junker": "Prussian and German minor nobility",
+      "Squire": "Apprentice knight or minor noble",
+      "Patrician": "Noble class in some European republics"
+    },
+    "titles_of_royal_address": {
+      "Majesty": "Address for monarchs",
+      "Imperial Majesty": "Address for emperors/empresses",
+      "Royal Majesty": "Address for kings/queens",
+      "Highness": "General royal address",
+      "Serene Highness": "Address for some princes",
+      "Grand Ducal Highness": "Address for Grand Dukes/Duchesses",
+      "His Highness": "Male noble or royal address",
+      "Her Highness": "Female noble or royal address",
+      "His Excellency": "Address for high-ranking nobles",
+      "Her Excellency": "Female equivalent of Excellency",
+      "His Grace": "British address for Dukes",
+      "Her Grace": "Female equivalent of His Grace",
+      "His Lordship": "Address for Lords",
+      "Her Ladyship": "Address for Ladies"
+    },
+    "titles_in_specific_regions": {
+      "Persian": {
+        "Padishah": "Emperor",
+        "Shahanshah": "King of Kings",
+        "Shahzadeh": "Prince",
+        "Mirza": "Title for noble males"
+      },
+      "Arabic": {
+        "Sultan": "Ruler of a Sultanate",
+        "Sultana": "Female Sultan",
+        "Emir": "Ruler of an emirate",
+        "Emira": "Female equivalent of Emir",
+        "Sheikh": "Noble or tribal leader",
+        "Sheikha": "Female equivalent of Sheikh",
+        "Malik": "King",
+        "Malika": "Queen"
+      },
+      "Chinese": {
+        "Huangdi": "Emperor",
+        "Wang": "King",
+        "Gong": "Duke",
+        "Hou": "Marquess",
+        "Bo": "Count",
+        "Zi": "Viscount",
+        "Nan": "Baron",
+        "Taizi": "Crown Prince"
+      },
+      "Japanese": {
+        "Tennō": "Emperor",
+        "Shōgun": "Military ruler",
+        "Daimyō": "Feudal lord",
+        "Kuge": "Court noble",
+        "Kōshaku": "Duke",
+        "Shishaku_marquess": "Marquess",
+        "Hakushaku": "Count",
+        "Shishaku": "Viscount",
+        "Danshaku": "Baron"
+      },
+      "Indian": {
+        "Maharaja": "Great King",
+        "Maharani": "Great Queen",
+        "Rajah": "King or Prince",
+        "Rani": "Queen",
+        "Nawab": "Muslim ruler of a region",
+        "Begum": "Female equivalent of Nawab",
+        "Thakur": "Noble lord",
+        "Thakurain": "Female equivalent of Thakur",
+        "Zamindar": "Landowning noble"
+      },
+      "Mongolian": {
+        "Khan": "Ruler or leader",
+        "Khatun": "Female ruler or noble",
+        "Khagan": "Emperor",
+        "Noyan": "High-ranking noble"
+      },
+      "Russian": {
+        "Tsar": "Emperor",
+        "Tsarina": "Empress",
+        "Grand Duke": "High-ranking noble",
+        "Grand Duchess": "Female equivalent",
+        "Boyar": "High-ranking noble",
+        "Knyaz": "Prince",
+        "Knyaginya": "Princess"
+      }
+    },
+    "honorific_titles": {
+      "Prince Consort": "Husband of a reigning queen",
+      "Queen Consort": "Wife of a reigning king",
+      "Dowager Queen": "Widow of a king",
+      "Dowager Empress": "Widow of an emperor",
+      "Prince Regent": "Prince acting as temporary ruler",
+      "Princess Royal": "Title for eldest daughter of a monarch",
+      "Grand Prince": "High-ranking royal title",
+      "Grand Duchess": "Female equivalent of Grand Prince"
+    }
+  }
+}

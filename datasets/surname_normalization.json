@@ -1,0 +1,76 @@
+{
+  "surname_normalization": {
+    "McDonald": {
+      "standardized": "MacDonald",
+      "variants": ["Macdonald", "Mc Donald", "M'Donald"],
+      "meaning": "Son of Donald",
+      "origin": "Scottish"
+    },
+    "O'Brien": {
+      "standardized": "Ó Briain",
+      "variants": ["O Brien", "O’Brian", "O'Bryan"],
+      "meaning": "Descendant of Brian",
+      "origin": "Irish"
+    },
+    "Van Buren": {
+      "standardized": "Van Buren",
+      "variants": ["VanBuren", "VanB."],
+      "meaning": "From Buren",
+      "origin": "Dutch"
+    },
+    "de la Cruz": {
+      "standardized": "De la Cruz",
+      "variants": ["Delacruz", "de la Cruz", "De LaCruz"],
+      "meaning": "Of the Cross",
+      "origin": "Spanish"
+    },
+    "Gonzalez": {
+      "standardized": "González",
+      "variants": ["Gonzales", "Gonsalez"],
+      "meaning": "Son of Gonzalo",
+      "origin": "Spanish"
+    },
+    "Rodriguez": {
+      "standardized": "Rodríguez",
+      "variants": ["Rodrigues", "Rodreguez"],
+      "meaning": "Son of Rodrigo",
+      "origin": "Spanish"
+    },
+    "Schmidt": {
+      "standardized": "Schmidt",
+      "variants": ["Schmitt", "Schmid"],
+      "meaning": "Smith (metalworker)",
+      "origin": "German"
+    },
+    "Petrov": {
+      "standardized": "Petrov",
+      "variants": ["Petroff", "Petrow"],
+      "meaning": "Son of Peter",
+      "origin": "Russian"
+    },
+    "Dubois": {
+      "standardized": "Dubois",
+      "variants": ["Du Bois", "DuBois"],
+      "meaning": "From the woods",
+      "origin": "French"
+    },
+    "Chang": {
+      "standardized": "Chang",
+      "variants": ["Zhang", "Ch'ang"],
+      "meaning": "Stretch or extend",
+      "origin": "Chinese"
+    },
+    "Kim": {
+      "standardized": "Kim",
+      "variants": ["Gim", "Kym"],
+      "meaning": "Gold",
+      "origin": "Korean"
+    },
+    "Nguyen": {
+      "standardized": "Nguyễn",
+      "variants": ["Nuyen", "Nguyn"],
+      "meaning": "Musical instrument or lute",
+      "origin": "Vietnamese"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "gaelic_name_conversion": {
+    "John": {"scottish_gaelic": "Iain", "irish_gaelic": "Seán"},
+    "James": {"scottish_gaelic": "Seumas", "irish_gaelic": "Séamus"},
+    "William": {"scottish_gaelic": "Uilleam", "irish_gaelic": "Liam"},
+    "Robert": {"scottish_gaelic": "Raibeart", "irish_gaelic": "Roibeárd"},
+    "Alexander": {"scottish_gaelic": "Alasdair", "irish_gaelic": "Alastar"},
+    "Andrew": {"scottish_gaelic": "Anndra", "irish_gaelic": "Aindrias"},
+    "Patrick": {"scottish_gaelic": "Pàdraig", "irish_gaelic": "Pádraig"},
+    "Matthew": {"scottish_gaelic": "Mata", "irish_gaelic": "Matha"},
+    "Michael": {"scottish_gaelic": "Mìcheal", "irish_gaelic": "Mícheál"},
+    "Charles": {"scottish_gaelic": "Teàrlach", "irish_gaelic": "Cathal"},
+    "Henry": {"scottish_gaelic": "Eanraig", "irish_gaelic": "Anraí"},
+    "George": {"scottish_gaelic": "Seòras", "irish_gaelic": "Seoirse"},
+    "Donald": {"scottish_gaelic": "Dòmhnall", "irish_gaelic": "Dónall"},
+    "Peter": {"scottish_gaelic": "Pàdraig", "irish_gaelic": "Peadar"},
+    "Francis": {"scottish_gaelic": "Frang", "irish_gaelic": "Proinsias"},
+    "David": {"scottish_gaelic": "Daibhidh", "irish_gaelic": "Dáithí"},
+    "Thomas": {"scottish_gaelic": "Tòmas", "irish_gaelic": "Tomás"},
+    "Angus": {"scottish_gaelic": "Aonghas", "irish_gaelic": "Aonghus"},
+    "Ewan": {"scottish_gaelic": "Eòghann", "irish_gaelic": "Eoghan"},
+    "Malcolm": {"scottish_gaelic": "Maol Chaluim", "irish_gaelic": "Maolmhuire"},
+    "Duncan": {"scottish_gaelic": "Donnchadh", "irish_gaelic": "Donnacha"},
+    "Isaac": {"scottish_gaelic": "Ìsac", "irish_gaelic": "Íosác"},
+    "Jeremiah": {"scottish_gaelic": "Diarmad", "irish_gaelic": "Diarmuid"},
+    "Edward": {"scottish_gaelic": "Eideard", "irish_gaelic": "Éamonn"},
+    "Richard": {"scottish_gaelic": "Risdeard", "irish_gaelic": "Risteárd"},
+    "Benjamin": {"scottish_gaelic": "Beathan", "irish_gaelic": "Biniamín"},
+    "Samuel": {"scottish_gaelic": "Somhairle", "irish_gaelic": "Somhairle"},
+    "Zachariah": {"scottish_gaelic": "Sachairi", "irish_gaelic": "Sacharia"},
+    "Nathaniel": {"scottish_gaelic": "Natanail", "irish_gaelic": "Nathanael"}
+  }
+}

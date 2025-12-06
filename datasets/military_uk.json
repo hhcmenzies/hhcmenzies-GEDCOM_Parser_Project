@@ -1,0 +1,387 @@
+{
+  "uk_military_ranks": {
+    "british_army": {
+      "enlisted": {
+        "E-1": {
+          "title": "Recruit",
+          "abbreviation": ""
+        },
+        "E-2": {
+          "title": "Private",
+          "abbreviation": "Pte"
+        },
+        "E-3": {
+          "title": "Lance Corporal",
+          "abbreviation": "LCpl"
+        },
+        "E-4": {
+          "title": "Corporal",
+          "abbreviation": "Cpl"
+        },
+        "E-5": {
+          "title": "Sergeant",
+          "abbreviation": "Sgt"
+        },
+        "E-6": {
+          "title": "Staff Sergeant (or Colour Sergeant)",
+          "abbreviation": "SSgt/CSgt"
+        },
+        "E-7": {
+          "title": "— (See Warrant Officers Below)",
+          "abbreviation": ""
+        },
+        "E-8": {
+          "title": "— (See Warrant Officers Below)",
+          "abbreviation": ""
+        },
+        "E-9": {
+          "title": "— (See Warrant Officers Below)",
+          "abbreviation": ""
+        }
+      },
+      "warrant_officers": {
+        "W-1": {
+          "title": "Warrant Officer Class 2",
+          "abbreviation": "WO2"
+        },
+        "W-2": {
+          "title": "Warrant Officer Class 1",
+          "abbreviation": "WO1"
+        }
+      },
+      "officers": {
+        "O-1": {
+          "title": "Second Lieutenant",
+          "abbreviation": "2Lt"
+        },
+        "O-2": {
+          "title": "Lieutenant",
+          "abbreviation": "Lt"
+        },
+        "O-3": {
+          "title": "Captain",
+          "abbreviation": "Capt"
+        },
+        "O-4": {
+          "title": "Major",
+          "abbreviation": "Maj"
+        },
+        "O-5": {
+          "title": "Lieutenant Colonel",
+          "abbreviation": "Lt Col"
+        },
+        "O-6": {
+          "title": "Colonel",
+          "abbreviation": "Col"
+        },
+        "O-7": {
+          "title": "Brigadier",
+          "abbreviation": "Brig"
+        },
+        "O-8": {
+          "title": "Major General",
+          "abbreviation": "Maj Gen"
+        },
+        "O-9": {
+          "title": "Lieutenant General",
+          "abbreviation": "Lt Gen"
+        },
+        "O-10": {
+          "title": "General",
+          "abbreviation": "Gen"
+        },
+        "Special": {
+          "title": "Field Marshal",
+          "abbreviation": "FM"
+        }
+      }
+    },
+
+    "royal_navy": {
+      "enlisted": {
+        "E-1": {
+          "title": "Trainee / Recruit",
+          "abbreviation": ""
+        },
+        "E-2": {
+          "title": "Able Seaman (AB)",
+          "abbreviation": "AB"
+        },
+        "E-3": {
+          "title": "Leading Rate (Leading Seaman, etc.)",
+          "abbreviation": "LDG"
+        },
+        "E-4": {
+          "title": "Petty Officer",
+          "abbreviation": "PO"
+        },
+        "E-5": {
+          "title": "Chief Petty Officer",
+          "abbreviation": "CPO"
+        },
+        "E-6": {
+          "title": "Warrant Officer Class 2 (where applicable)",
+          "abbreviation": "WO2"
+        },
+        "E-7": {
+          "title": "Warrant Officer Class 1",
+          "abbreviation": "WO1"
+        },
+        "E-8": {
+          "title": "— (Royal Navy does not use E-8 label)",
+          "abbreviation": ""
+        },
+        "E-9": {
+          "title": "— (Royal Navy does not use E-9 label)",
+          "abbreviation": ""
+        }
+      },
+      "warrant_officers": {
+        "W-1": {
+          "title": "Warrant Officer Class 2",
+          "abbreviation": "WO2"
+        },
+        "W-2": {
+          "title": "Warrant Officer Class 1",
+          "abbreviation": "WO1"
+        }
+      },
+      "officers": {
+        "O-1": {
+          "title": "Midshipman / Acting Sub-Lieutenant",
+          "abbreviation": "Mid (or A/Slt)"
+        },
+        "O-2": {
+          "title": "Sub-Lieutenant",
+          "abbreviation": "S/Lt"
+        },
+        "O-3": {
+          "title": "Lieutenant",
+          "abbreviation": "Lt"
+        },
+        "O-4": {
+          "title": "Lieutenant Commander",
+          "abbreviation": "Lt Cdr"
+        },
+        "O-5": {
+          "title": "Commander",
+          "abbreviation": "Cdr"
+        },
+        "O-6": {
+          "title": "Captain",
+          "abbreviation": "Capt"
+        },
+        "O-7": {
+          "title": "Commodore",
+          "abbreviation": "Cdre"
+        },
+        "O-8": {
+          "title": "Rear Admiral",
+          "abbreviation": "RAdm"
+        },
+        "O-9": {
+          "title": "Vice Admiral",
+          "abbreviation": "VAdm"
+        },
+        "O-10": {
+          "title": "Admiral",
+          "abbreviation": "Adm"
+        },
+        "Special": {
+          "title": "Admiral of the Fleet",
+          "abbreviation": "Adm of the Fleet"
+        }
+      }
+    },
+
+    "royal_marines": {
+      "enlisted": {
+        "E-1": {
+          "title": "Recruit",
+          "abbreviation": ""
+        },
+        "E-2": {
+          "title": "Marine",
+          "abbreviation": "Mne"
+        },
+        "E-3": {
+          "title": "Lance Corporal",
+          "abbreviation": "LCpl"
+        },
+        "E-4": {
+          "title": "Corporal",
+          "abbreviation": "Cpl"
+        },
+        "E-5": {
+          "title": "Sergeant",
+          "abbreviation": "Sgt"
+        },
+        "E-6": {
+          "title": "Colour Sergeant",
+          "abbreviation": "CSgt"
+        },
+        "E-7": {
+          "title": "Warrant Officer Class 2",
+          "abbreviation": "WO2"
+        },
+        "E-8": {
+          "title": "Warrant Officer Class 1",
+          "abbreviation": "WO1"
+        },
+        "E-9": {
+          "title": "— (RM does not use E-9 label explicitly)",
+          "abbreviation": ""
+        }
+      },
+      "warrant_officers": {
+        "W-1": {
+          "title": "Warrant Officer Class 2",
+          "abbreviation": "WO2"
+        },
+        "W-2": {
+          "title": "Warrant Officer Class 1",
+          "abbreviation": "WO1"
+        }
+      },
+      "officers": {
+        "O-1": {
+          "title": "Second Lieutenant",
+          "abbreviation": "2Lt"
+        },
+        "O-2": {
+          "title": "Lieutenant",
+          "abbreviation": "Lt"
+        },
+        "O-3": {
+          "title": "Captain",
+          "abbreviation": "Capt"
+        },
+        "O-4": {
+          "title": "Major",
+          "abbreviation": "Maj"
+        },
+        "O-5": {
+          "title": "Lieutenant Colonel",
+          "abbreviation": "Lt Col"
+        },
+        "O-6": {
+          "title": "Colonel",
+          "abbreviation": "Col"
+        },
+        "O-7": {
+          "title": "Brigadier",
+          "abbreviation": "Brig"
+        },
+        "O-8": {
+          "title": "Major General",
+          "abbreviation": "Maj Gen"
+        },
+        "O-9": {
+          "title": "Lieutenant General",
+          "abbreviation": "Lt Gen"
+        },
+        "O-10": {
+          "title": "General",
+          "abbreviation": "Gen"
+        },
+        "Special": {
+          "title": "Captain General Royal Marines (Honorary)",
+          "abbreviation": "Capt Gen RM"
+        }
+      }
+    },
+
+    "royal_air_force": {
+      "enlisted": {
+        "E-1": {
+          "title": "Air Recruit",
+          "abbreviation": ""
+        },
+        "E-2": {
+          "title": "Aircraftman (AC) / Aircraftwoman (ACW)",
+          "abbreviation": "AC/ACW"
+        },
+        "E-3": {
+          "title": "Leading Aircraftman / Aircraftwoman",
+          "abbreviation": "LAC/LACW"
+        },
+        "E-4": {
+          "title": "Senior Aircraftman / Aircraftwoman",
+          "abbreviation": "SAC/SACW"
+        },
+        "E-5": {
+          "title": "Corporal",
+          "abbreviation": "Cpl"
+        },
+        "E-6": {
+          "title": "Sergeant",
+          "abbreviation": "Sgt"
+        },
+        "E-7": {
+          "title": "Flight Sergeant",
+          "abbreviation": "FS"
+        },
+        "E-8": {
+          "title": "Warrant Officer",
+          "abbreviation": "WO"
+        },
+        "E-9": {
+          "title": "— (RAF does not use E-9 label explicitly)",
+          "abbreviation": ""
+        }
+      },
+      "warrant_officers": {
+        "W-1": {
+          "title": "Warrant Officer",
+          "abbreviation": "WO"
+        }
+      },
+      "officers": {
+        "O-1": {
+          "title": "Pilot Officer",
+          "abbreviation": "Plt Off"
+        },
+        "O-2": {
+          "title": "Flying Officer",
+          "abbreviation": "Fg Off"
+        },
+        "O-3": {
+          "title": "Flight Lieutenant",
+          "abbreviation": "Flt Lt"
+        },
+        "O-4": {
+          "title": "Squadron Leader",
+          "abbreviation": "Sqn Ldr"
+        },
+        "O-5": {
+          "title": "Wing Commander",
+          "abbreviation": "Wg Cdr"
+        },
+        "O-6": {
+          "title": "Group Captain",
+          "abbreviation": "Gp Capt"
+        },
+        "O-7": {
+          "title": "Air Commodore",
+          "abbreviation": "Air Cdre"
+        },
+        "O-8": {
+          "title": "Air Vice-Marshal",
+          "abbreviation": "AVM"
+        },
+        "O-9": {
+          "title": "Air Marshal",
+          "abbreviation": "Air Mshl"
+        },
+        "O-10": {
+          "title": "Air Chief Marshal",
+          "abbreviation": "Air Chf Mshl"
+        },
+        "Special": {
+          "title": "Marshal of the Royal Air Force",
+          "abbreviation": "MRAF"
+        }
+      }
+    }
+  }
+}

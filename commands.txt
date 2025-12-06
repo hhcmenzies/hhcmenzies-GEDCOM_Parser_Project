@@ -1,0 +1,35 @@
+cd /home/david/GEDCOM_Parser_Project
+export PYTHONPATH=./src
+
+# 1) Main parser → export.json
+python -m gedcom_parser.main \
+    -i mock_files/gedcom_1.ged \
+    -o outputs/export.json \
+    --debug
+
+# 2) XREF resolver → export_xref.json  (new CLI with -i/-o)
+python -m gedcom_parser.postprocess.xref_resolver \
+    -i outputs/export.json \
+    -o outputs/export_xref.json \
+    --debug
+
+# 3) Place standardizer → export_standardized.json  (new CLI with -i/-o)
+python -m gedcom_parser.postprocess.place_standardizer \
+    -i outputs/export_xref.json \
+    -o outputs/export_standardized.json \
+    --debug
+
+# 4) Event disambiguator → export_events_resolved.json
+#    (still original CLI: positional input, -o optional)
+python -m gedcom_parser.postprocess.event_disambiguator \
+    outputs/export_standardized.json \
+    -o outputs/export_events_resolved.json \
+    --debug
+
+# 5) Event scoring → export_scored.json + event_scores.json + scoring_summary.json
+python -m gedcom_parser.postprocess.event_scoring \
+    outputs/export_events_resolved.json \
+    -o outputs/export_scored.json \
+    --event-scores outputs/event_scores.json \
+    --summary outputs/scoring_summary.json \
+    --debug

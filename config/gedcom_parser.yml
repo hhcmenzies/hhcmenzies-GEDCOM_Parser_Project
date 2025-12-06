@@ -1,0 +1,20 @@
+# Global GEDCOM parser configuration
+
+paths:
+  input: "GEDCOM_Parser_OLD/mock_files/gedcom_1.ged"
+  output_dir: "outputs"
+  logs_dir: "logs"
+
+pipeline:
+  parse: true
+  xref: true
+  place_standardize: true
+  event_disambiguate: true
+  name_identity: true
+
+logging:
+  level: "INFO"
+  file: "gedcom_parser.log"
+  rotate: false
+
+debug: true
