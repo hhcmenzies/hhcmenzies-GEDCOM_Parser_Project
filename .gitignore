@@ -1,7 +1,73 @@
-__pycache__/
+# Python
 *.pyc
+__pycache__/
+*.pyo
+*.pyd
+*.env
+*.venv
+venv/
+env/
+ENV/
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
 *.log
-outputs/
-.idea/
+
+# IDEs and editors
 .vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Jupyter and IPython
+.ipynb_checkpoints
+
+# Logs and dumps
+logs/
+*.log
+*.out
+*.pid
+*.dump
+
+# Virtual environments
+*.env
+.venv/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+coverage.xml
+*.cover
+.hypothesis/
+
+# GitHub workflows
+*.bak
+*.old
 .DS_Store
+
+# JSON outputs
+outputs/
+mock_files/
+*.json.zip
+*.ged
+*.ged.zip
+
+# Security-sensitive
+me
+me.pub
+*.pem
+*.key
