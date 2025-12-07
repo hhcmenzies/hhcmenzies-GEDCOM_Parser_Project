@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from gedcom_parser.loader import (
     tokenize_file,
     build_tree,
@@ -8,10 +10,12 @@ from gedcom_parser.loader import (
     summarize_pointer_prefixes,
 )
 
+DATA_DIR = Path(__file__).resolve().parent.parent / "mock_files"
+
 
 def test_segment_and_pointers_smoke():
     tokens = list(
-        tokenize_file("GEDCOM_Parser_OLD/mock_files/gedcom_1.ged")
+        tokenize_file(str(DATA_DIR / "gedcom_1.ged"))
     )
     tree = build_tree(tokens)
     tree = reconstruct_values(tree)

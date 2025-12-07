@@ -171,7 +171,7 @@ def uuid_for_event(
 
 def uuid_for_occupation(
     record_uuid: Optional[str],
-    primary: str,
+    occupation: Any,
 ) -> Optional[str]:
     """
     Deterministic UUID for an occupation identity block.
@@ -180,6 +180,11 @@ def uuid_for_occupation(
       - parent record UUID (if any)
       - primary occupation string (normalized by caller)
     """
+    if isinstance(occupation, dict):
+        primary = occupation.get("primary") or ""
+    else:
+        primary = occupation or ""
+
     if not record_uuid and not primary:
         return None
 

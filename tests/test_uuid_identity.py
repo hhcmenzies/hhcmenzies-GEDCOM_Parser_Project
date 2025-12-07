@@ -10,7 +10,7 @@ from gedcom_parser.identity.uuid_factory import (
     uuid_for_occupation,
 )
 
-DATA_DIR = Path("GEDCOM_Parser_OLD/mock_files")
+DATA_DIR = Path(__file__).resolve().parent.parent / "mock_files"
 
 
 def test_entity_uuid_determinism():

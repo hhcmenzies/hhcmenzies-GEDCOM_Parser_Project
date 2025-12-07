@@ -244,7 +244,7 @@ def extract_indi(entity_root: Dict[str, Any]) -> Dict[str, Any]:
         enriched = merge_name_tags(base_block, name_children)
 
         enriched["uuid"] = uuid_for_name(
-            pointer,
+            indi_uuid,
             enriched.get("full_name_normalized") or primary
         )
 

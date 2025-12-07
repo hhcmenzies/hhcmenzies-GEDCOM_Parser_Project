@@ -31,6 +31,13 @@ from dataclasses import dataclass, field
 from typing import Any, Dict, Iterable
 
 from gedcom_parser.logger import get_logger
+from gedcom_parser.entities.models import (
+    IndividualEntity,
+    FamilyEntity,
+    SourceEntity,
+    RepositoryEntity,
+    MediaObjectEntity,
+)
 
 log = get_logger("entities.registry")
 
@@ -44,11 +51,14 @@ class EntityRegistry:
     Values are plain dicts as returned by the entity extractors.
     """
 
-    individuals: Dict[str, Dict[str, Any]] = field(default_factory=dict)
-    families: Dict[str, Dict[str, Any]] = field(default_factory=dict)
-    sources: Dict[str, Dict[str, Any]] = field(default_factory=dict)
-    repositories: Dict[str, Dict[str, Any]] = field(default_factory=dict)
-    media_objects: Dict[str, Dict[str, Any]] = field(default_factory=dict)
+    individuals: Dict[str, IndividualEntity] = field(default_factory=dict)
+    families: Dict[str, FamilyEntity] = field(default_factory=dict)
+    sources: Dict[str, SourceEntity] = field(default_factory=dict)
+    repositories: Dict[str, RepositoryEntity] = field(default_factory=dict)
+    media_objects: Dict[str, MediaObjectEntity] = field(default_factory=dict)
+
+    def get_individual(self, pointer: str) -> IndividualEntity | None:
+        return self.individuals.get(pointer)
 
     def stats(self) -> Dict[str, int]:
         """Return simple counts for each entity category."""
@@ -105,27 +115,47 @@ def build_entity_registry(root_records: Iterable[Dict[str, Any]]) -> EntityRegis
 
         if tag == "INDI":
             block = extract_indi(node)
-            registry.individuals[pointer] = block
+            registry.individuals[pointer] = IndividualEntity(
+                pointer=pointer,
+                root=node,
+                facts=block,
+            )
             indi_count += 1
 
         elif tag == "FAM":
             block = extract_family(node)
-            registry.families[pointer] = block
+            registry.families[pointer] = FamilyEntity(
+                pointer=pointer,
+                root=node,
+                members=block,
+            )
             fam_count += 1
 
         elif tag == "SOUR":
             block = extract_source(node)
-            registry.sources[pointer] = block
+            registry.sources[pointer] = SourceEntity(
+                pointer=pointer,
+                root=node,
+                meta=block,
+            )
             src_count += 1
 
         elif tag == "REPO":
             block = extract_repository(node)
-            registry.repositories[pointer] = block
+            registry.repositories[pointer] = RepositoryEntity(
+                pointer=pointer,
+                root=node,
+                meta=block,
+            )
             repo_count += 1
 
         elif tag == "OBJE":
             block = extract_media_object(node)
-            registry.media_objects[pointer] = block
+            registry.media_objects[pointer] = MediaObjectEntity(
+                pointer=pointer,
+                root=node,
+                meta=block,
+            )
             obje_count += 1
 
         # Other top-level tags (SUBM, HEAD, TRLR, etc.) are ignored here,

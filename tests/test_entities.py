@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from gedcom_parser.loader import (
     tokenize_file,
     build_tree,
@@ -6,9 +8,11 @@ from gedcom_parser.loader import (
 )
 from gedcom_parser.entities.registry import build_entity_registry
 
+DATA_DIR = Path(__file__).resolve().parent.parent / "mock_files"
+
 
 def test_entity_registry_counts_match_sections():
-    tokens = list(tokenize_file("GEDCOM_Parser_OLD/mock_files/gedcom_1.ged"))
+    tokens = list(tokenize_file(str(DATA_DIR / "gedcom_1.ged")))
     tree = build_tree(tokens)
     tree = reconstruct_values(tree)
 
@@ -23,7 +27,7 @@ def test_entity_registry_counts_match_sections():
 
 
 def test_entity_registry_sample_individual():
-    tokens = list(tokenize_file("GEDCOM_Parser_OLD/mock_files/gedcom_1.ged"))
+    tokens = list(tokenize_file(str(DATA_DIR / "gedcom_1.ged")))
     tree = build_tree(tokens)
     tree = reconstruct_values(tree)
     registry = build_entity_registry(tree)

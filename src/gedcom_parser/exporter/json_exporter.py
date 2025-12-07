@@ -20,6 +20,17 @@ from gedcom_parser.normalization.name_normalization import (
     build_name_block_from_gedcom
 )
 
+
+def _serialize_entities(entities: Dict[str, Any]) -> Dict[str, Any]:
+    """Convert entity objects to plain dicts for JSON serialization."""
+    serialized = {}
+    for ptr, entity in entities.items():
+        if hasattr(entity, "as_dict"):
+            serialized[ptr] = entity.as_dict()
+        else:
+            serialized[ptr] = entity
+    return serialized
+
 log = get_logger("json_exporter")
 
 
@@ -83,11 +94,11 @@ def export_registry_to_json(registry, output_path: str) -> None:
 
     # STEP 2 — Construct output dictionary
     root_dict = {
-        "individuals": registry.individuals,
-        "families": registry.families,
-        "sources": registry.sources,
-        "repositories": registry.repositories,
-        "media_objects": registry.media_objects,
+        "individuals": _serialize_entities(registry.individuals),
+        "families": _serialize_entities(registry.families),
+        "sources": _serialize_entities(registry.sources),
+        "repositories": _serialize_entities(registry.repositories),
+        "media_objects": _serialize_entities(registry.media_objects),
         "uuid_index": registry.uuid_index,
     }
 
