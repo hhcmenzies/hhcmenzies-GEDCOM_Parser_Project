@@ -34,23 +34,9 @@ import re
 import difflib
 from typing import Any, Dict, Iterable, List, Optional, Tuple
 
-# ---------------------------------------------------------------------------
-# Logging setup
-# ---------------------------------------------------------------------------
+from gedcom_parser.logging import get_logger
 
-try:
-    from gedcom_parser.logging import get_logger  # type: ignore[attr-defined]
-except Exception:  # fallback if project logger isn't importable
-
-    def get_logger(name: str) -> logging.Logger:
-        logging.basicConfig(
-            level=logging.INFO,
-            format="[%(asctime)s] %(levelname)-8s %(name)s: %(message)s",
-            datefmt="%m/%d/%y %H:%M:%S",
-        )
-        return logging.getLogger(name)
-
-log = get_logger("entity_resolution")
+log = get_logger(__name__)
 
 # ---------------------------------------------------------------------------
 # Global thresholds / defaults (CLI can override)

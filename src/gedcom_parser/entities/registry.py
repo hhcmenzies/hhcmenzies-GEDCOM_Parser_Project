@@ -30,9 +30,9 @@ from __future__ import annotations
 from dataclasses import dataclass, field
 from typing import Any, Dict, Iterable
 
-from gedcom_parser.logger import get_logger
+from gedcom_parser.logging import get_logger
 
-log = get_logger("entities.registry")
+log = get_logger(__name__)
 
 
 @dataclass

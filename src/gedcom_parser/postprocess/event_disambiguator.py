@@ -28,10 +28,10 @@ import argparse
 import json
 from typing import Any, Dict, List
 
-from gedcom_parser.logger import get_logger
+from gedcom_parser.logging import get_logger
 from gedcom_parser.registry import get_registry
 
-log = get_logger("event_disambiguator")
+log = get_logger(__name__)
 
 
 # ---------------------------------------------------------------------------

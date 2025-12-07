@@ -7,7 +7,7 @@ from __future__ import annotations
 from typing import Any, Dict, List
 
 from gedcom_parser.config import get_config
-from gedcom_parser.logger import get_logger
+from gedcom_parser.logging import get_logger
 from gedcom_parser.loader.tokenizer import tokenize_file
 from gedcom_parser.loader.tree_builder import build_tree
 from gedcom_parser.loader.value_reconstructor import reconstruct_values
@@ -26,7 +26,7 @@ class GEDCOMParser:
 
     def __init__(self, config=None):
         self.cfg = config if config is not None else get_config()
-        self.log = get_logger("parser_core")
+        self.log = get_logger(__name__)
 
         self.tokens: List[Dict[str, Any]] = []
         self.roots: List[Dict[str, Any]] = []

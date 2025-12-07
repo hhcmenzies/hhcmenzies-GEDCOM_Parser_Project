@@ -6,11 +6,11 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 from gedcom_parser.config import get_config
-from gedcom_parser.logger import get_logger
+from gedcom_parser.logging import get_logger
 from gedcom_parser.parser_core import GEDCOMParser
 from gedcom_parser.exporter import export_registry_to_json
 
-log = get_logger("main")
+log = get_logger(__name__)
 
 
 def build_arg_parser() -> argparse.ArgumentParser:
