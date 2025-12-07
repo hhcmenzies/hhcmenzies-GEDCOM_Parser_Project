@@ -1,13 +1,12 @@
 """
 exporter.py
+High-level JSON export entry point.
 
-High-level export facade for gedcom_parser.
+This module provides a stable API used by gedcom_parser.main:
 
-Goals:
-- Provide a stable, *simple* API for writing the registry to JSON.
-- Maintain backward compatibility with older code calling
-  `export_registry_to_json(registry, output_path)`.
-- Route all actual work through `json_exporter.export_registry_json`.
+    export_registry_to_json(registry, output_path)
+
+It delegates the actual JSON construction to json_exporter.export_registry_json.
 """
 
 from __future__ import annotations
@@ -15,53 +14,45 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Any
 
-from gedcom_parser.logging import get_logger
+from gedcom_parser.logger import get_logger
+
 from .json_exporter import export_registry_json
 
 log = get_logger("exporter")
 
 
-def export_registry(registry: Any, output_path: str | Path) -> None:
+def export_registry_to_json(*args: Any, **kwargs: Any) -> None:
     """
-    Preferred modern API.
+    Backward-compatible entry point for exporting a registry to JSON.
 
-    Usage:
+    Supported call form (current pipeline):
 
-        from gedcom_parser.exporter import export_registry
+        export_registry_to_json(registry, output_path)
 
-        export_registry(registry, "outputs/export.json")
+    - 'registry' is the in-memory EntityRegistry (or compatible object).
+    - 'output_path' is a str or Path.
+
+    Any keyword arguments (e.g., indent=2) are forwarded to
+    json_exporter.export_registry_json.
+
+    The old single-argument style is no longer supported and will
+    raise a clear error instead of silently doing nothing.
     """
-    path = Path(output_path)
-    log.debug("export_registry called with output_path=%s", path)
-    export_registry_json(registry, path)
+    if len(args) == 2:
+        registry, output_path = args
+        output_path = Path(output_path)
 
+        # Delegate to json_exporter
+        export_registry_json(registry, output_path, **kwargs)
+        return
 
-def export_registry_to_json(*args: Any) -> None:
-    """
-    Backward-compatible adapter.
-
-    Historically this function sometimes accepted:
-      - export_registry_to_json(registry, output_path)
-
-    We now standardize that as the *only* valid signature.
-    Any legacy single-argument usage will raise a clear error.
-    """
     if len(args) == 1:
-        # Older code might have expected some global registry export.
-        # We explicitly reject that now to avoid silent behavior.
-        raise TypeError(
-            "export_registry_to_json now requires two arguments: "
-            "export_registry_to_json(registry, output_path)."
+        raise NotImplementedError(
+            "export_registry_to_json(output_path) without explicit registry "
+            "is no longer supported. Call export_registry_to_json(registry, output_path)."
         )
 
-    if len(args) != 2:
-        raise TypeError(
-            "export_registry_to_json expects exactly two arguments: "
-            "(registry, output_path). Got %d." % len(args)
-        )
-
-    registry, output_path = args
-    log.debug(
-        "export_registry_to_json(adapter) called with output_path=%s", output_path
+    raise TypeError(
+        "export_registry_to_json expects either "
+        "(registry, output_path) or a single output_path argument."
     )
-    export_registry(registry, output_path)

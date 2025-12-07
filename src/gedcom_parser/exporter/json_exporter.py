@@ -1,108 +1,165 @@
 """
 json_exporter.py
-Unified JSON export module WITH integrated name normalization.
+Safe JSON exporter for EntityRegistry-style objects.
 
-This module replaces the old exporter behavior by:
-- Accepting an EntityRegistry instance.
-- Injecting name_block (ParsedName + NormalizedName) for every individual.
-- Serializing the registry to JSON in a stable and consistent format.
+This module:
 
-Called by main.py as part of the standard pipeline.
+- Accepts the current in-memory registry object (with dict attributes).
+- Produces a plain JSON-compatible dict.
+- Writes it to disk with robust logging.
+- Does NOT change the structure of the registry; it just serializes it.
+
+Expected registry shape (minimal):
+
+    registry.individuals    -> dict
+    registry.families       -> dict
+    registry.sources        -> dict
+    registry.repositories   -> dict
+    registry.media_objects  -> dict
+    registry.uuid_index     -> dict (optional)
 """
 
 from __future__ import annotations
+
 import json
 from pathlib import Path
 from typing import Any, Dict
 
 from gedcom_parser.logger import get_logger
-from gedcom_parser.normalization.name_normalization import (
-    build_name_block_from_gedcom
-)
 
 log = get_logger("json_exporter")
 
 
-def _normalize_individual_names(individuals: Dict[str, Dict[str, Any]]) -> None:
+def _safe_json_value(obj: Any) -> Any:
     """
-    Mutates each individual in-place by adding a normalized name_block.
-    Uses hybrid name parsing: raw NAME + child tags.
+    Make sure any value is JSON-serializable.
+
+    - Passes through primitives (None, bool, int, float, str).
+    - Recursively handles dict, list, tuple, set.
+    - Fallback: use str(obj).
+
+    This matches the intent of the earlier safe exporter:
+    don't mutate the registry structure, just ensure we can dump it.
     """
+    if obj is None or isinstance(obj, (bool, int, float, str)):
+        return obj
 
-    for indi_id, indi in individuals.items():
-        # There should always be at least one NAME
-        raw_names = indi.get("names", [])
-        name_children = indi.get("raw_children", [])
+    if isinstance(obj, dict):
+        return {str(k): _safe_json_value(v) for k, v in obj.items()}
 
-        if not raw_names:
-            log.warning(f"Individual {indi_id} has no NAME tag.")
-            continue
+    if isinstance(obj, (list, tuple, set)):
+        return [_safe_json_value(v) for v in obj]
 
-        # Use the first NAME (GEDCOM allows multiple)
-        primary_raw = raw_names[0]
-
-        # Extract child tags belonging to NAME (GIVN, SURN, etc.)
-        name_child_nodes = []
-        for child in name_children:
-            if child.get("tag") == "NAME":
-                name_child_nodes = child.get("children", [])
-                break
-
-        try:
-            block = build_name_block_from_gedcom(primary_raw, name_child_nodes)
-
-            if block is None:
-                log.warning(f"Name normalization failed for {indi_id}")
-                continue
-
-            indi["name_block"] = block.model_dump()
-
-        except Exception as exc:
-            log.exception(
-                f"Error generating name_block for {indi_id}: {exc}"
-            )
+    # Fallback for any custom object (e.g., dataclasses, models)
+    return str(obj)
 
 
-def export_registry_to_json(registry, output_path: str) -> None:
+def build_registry_dict(registry: Any) -> Dict[str, Any]:
     """
-    Main export function used by main.py
+    Build the top-level dict that will be written to JSON.
 
-    Steps:
-      1. Normalize all individual names → name_block
-      2. Build JSON dictionary
-      3. Write final JSON output
+    This preserves the original JSON structure:
+
+    {
+        "individuals":  { ... },
+        "families":     { ... },
+        "sources":      { ... },
+        "repositories": { ... },
+        "media_objects":{ ... },
+        "uuid_index":   { ... }   # when present
+    }
     """
+    individuals = getattr(registry, "individuals", {}) or {}
+    families = getattr(registry, "families", {}) or {}
+    sources = getattr(registry, "sources", {}) or {}
+    repositories = getattr(registry, "repositories", {}) or {}
+    media_objects = getattr(registry, "media_objects", {}) or {}
+    uuid_index = getattr(registry, "uuid_index", None)
 
-    output = Path(output_path)
-    output.parent.mkdir(parents=True, exist_ok=True)
-
-    log.info(f"Exporting registry JSON to: {output}")
-
-    # STEP 1 — Insert normalized name_block
-    _normalize_individual_names(registry.individuals)
-
-    # STEP 2 — Construct output dictionary
-    root_dict = {
-        "individuals": registry.individuals,
-        "families": registry.families,
-        "sources": registry.sources,
-        "repositories": registry.repositories,
-        "media_objects": registry.media_objects,
-        "uuid_index": registry.uuid_index,
+    data: Dict[str, Any] = {
+        "individuals": {
+            ptr: _safe_json_value(ent) for ptr, ent in individuals.items()
+        },
+        "families": {
+            ptr: _safe_json_value(ent) for ptr, ent in families.items()
+        },
+        "sources": {
+            ptr: _safe_json_value(ent) for ptr, ent in sources.items()
+        },
+        "repositories": {
+            ptr: _safe_json_value(ent) for ptr, ent in repositories.items()
+        },
+        "media_objects": {
+            ptr: _safe_json_value(ent) for ptr, ent in media_objects.items()
+        },
     }
 
-    # STEP 3 — Serialize to disk
+    # uuid_index was present in your later pipeline exports – keep it when available
+    if uuid_index is not None:
+        data["uuid_index"] = _safe_json_value(uuid_index)
+
+    return data
+
+
+def serialize_registry_to_json_string(registry: Any, indent: int = 2) -> str:
+    """
+    Return a JSON string representation of the registry.
+
+    This is a pure function (no I/O); useful for tests or callers that
+    want the JSON string without writing a file.
+    """
+    data = build_registry_dict(registry)
+    return json.dumps(data, indent=indent, ensure_ascii=False)
+
+
+def export_registry_json(registry: Any, output_path: str | Path, indent: int = 2) -> None:
+    """
+    High-level helper: serialize the registry and write it to disk.
+
+    This function:
+
+    - Logs entity counts (INDI / FAM / SOUR / REPO / OBJE).
+    - Creates parent directories as needed.
+    - Writes UTF-8 JSON with the given indent.
+    - Logs final file size in bytes.
+
+    It is the function importer by exporter.export_registry_to_json
+    and is the main I/O entry point for JSON export.
+    """
+    output_path = Path(output_path)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    # Count entities for logging
+    individuals = getattr(registry, "individuals", {}) or {}
+    families = getattr(registry, "families", {}) or {}
+    sources = getattr(registry, "sources", {}) or {}
+    repositories = getattr(registry, "repositories", {}) or {}
+    media_objects = getattr(registry, "media_objects", {}) or {}
+
+    log.info(
+        "Exporting registry JSON to: %s "
+        "(INDI=%d, FAM=%d, SOUR=%d, REPO=%d, OBJE=%d)",
+        output_path,
+        len(individuals),
+        len(families),
+        len(sources),
+        len(repositories),
+        len(media_objects),
+    )
+
+    # Serialize to string first so we can easily compute size if desired
+    json_str = serialize_registry_to_json_string(registry, indent=indent)
+
     try:
-        with open(output, "w", encoding="utf-8") as f:
-            json.dump(
-                root_dict,
-                f,
-                indent=2,
-                ensure_ascii=False,
-            )
-    except Exception:
+        with output_path.open("w", encoding="utf-8") as f:
+            f.write(json_str)
+    except Exception:  # pragma: no cover
         log.exception("JSON export failed.")
         raise
 
-    size = output.stat().st_size
-    log.info(f"JSON export complete. size={size} bytes")
+    try:
+        size_bytes = output_path.stat().st_size
+    except OSError:
+        size_bytes = len(json_str.encode("utf-8"))
+
+    log.info("JSON export complete. size=%d bytes", size_bytes)
