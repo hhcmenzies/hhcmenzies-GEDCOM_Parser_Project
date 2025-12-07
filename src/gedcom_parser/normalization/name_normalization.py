@@ -46,7 +46,7 @@ from gedcom_parser.entities.name_block import (
     NormalizedName,
 )
 
-log = get_logger("name_normalization")
+log = get_logger(__name__)
 
 
 # ---------------------------------------------------------------------------

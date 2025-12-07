@@ -22,7 +22,7 @@ from typing import Any, Dict, List, Optional
 from gedcom_parser.identity.uuid_factory import uuid_for_pointer
 from gedcom_parser.logging import get_logger
 
-log = get_logger("xref_resolver")
+log = get_logger(__name__)
 
 
 # =====================================================================

@@ -18,7 +18,7 @@ from typing import Any
 from gedcom_parser.logging import get_logger
 from .json_exporter import export_registry_json
 
-log = get_logger("exporter")
+log = get_logger(__name__)
 
 
 def export_registry(registry: Any, output_path: str | Path) -> None:

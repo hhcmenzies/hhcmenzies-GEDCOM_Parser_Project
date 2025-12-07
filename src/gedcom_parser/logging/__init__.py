@@ -1,10 +1,24 @@
 """
-Logging package for gedcom_parser.
+Logging package for ``gedcom_parser``.
 
-Exposes get_logger() from logger.py so modules can do:
-    from gedcom_parser.logging import get_logger
+Use ``get_logger(__name__)`` in modules to inherit shared handlers and write to a
+module-specific log file.
 """
 
-from .logger import get_logger
+from .logger import (
+    get_logger,
+    list_active_loggers,
+    log_debug,
+    log_error,
+    log_info,
+    log_warning,
+)
 
-__all__ = ["get_logger"]
+__all__ = [
+    "get_logger",
+    "list_active_loggers",
+    "log_debug",
+    "log_error",
+    "log_info",
+    "log_warning",
+]

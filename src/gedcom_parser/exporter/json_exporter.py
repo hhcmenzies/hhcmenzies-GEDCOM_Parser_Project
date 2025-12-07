@@ -15,12 +15,12 @@ import json
 from pathlib import Path
 from typing import Any, Dict
 
-from gedcom_parser.logger import get_logger
+from gedcom_parser.logging import get_logger
 from gedcom_parser.normalization.name_normalization import (
     build_name_block_from_gedcom
 )
 
-log = get_logger("json_exporter")
+log = get_logger(__name__)
 
 
 def _normalize_individual_names(individuals: Dict[str, Dict[str, Any]]) -> None:

@@ -16,9 +16,9 @@ from pathlib import Path
 from typing import Dict, Any
 
 from gedcom_parser.config import get_config
-from gedcom_parser.logger import get_logger
+from gedcom_parser.logging import get_logger
 
-log = get_logger("registry")
+log = get_logger(__name__)
 
 # ---------------------------------------------------------------------
 # Registry Object

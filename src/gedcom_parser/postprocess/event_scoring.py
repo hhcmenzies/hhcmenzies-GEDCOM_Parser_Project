@@ -15,21 +15,10 @@ import argparse
 import json
 from typing import Any, Dict, List, Tuple, Optional
 
-# Try to use project logger, else fallback to print/logging
-try:
-    from gedcom_parser.logging import get_logger
-    from gedcom_parser.config import get_config
-except Exception:  # fallback
-    import logging
-    def get_logger(name: str):
-        logging.basicConfig(level=logging.INFO)
-        return logging.getLogger(name)
-    def get_config():
-        class Cfg:
-            debug = False
-        return Cfg()
+from gedcom_parser.config import get_config
+from gedcom_parser.logging import get_logger
 
-log = get_logger("event_scoring")
+log = get_logger(__name__)
 
 # ======================================================================
 # CLI ENTRY POINT

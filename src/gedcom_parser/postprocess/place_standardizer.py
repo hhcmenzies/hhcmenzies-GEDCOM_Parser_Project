@@ -17,7 +17,7 @@ from typing import Any, Dict, Iterable, Tuple
 
 from gedcom_parser.logging import get_logger
 
-log = get_logger("place_standardizer")
+log = get_logger(__name__)
 
 # Deterministic namespace UUID for place IDs
 PLACE_NAMESPACE_UUID = uuid.UUID("c7a6f962-4b2e-4d30-9b21-9a9daf0d2b11")
