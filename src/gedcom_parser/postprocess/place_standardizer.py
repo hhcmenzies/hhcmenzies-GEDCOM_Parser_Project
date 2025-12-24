@@ -1,229 +1,228 @@
 """
-C.24.4.5 - Place Standardization Post-Processor (Option B)
+place_standardizer.py
 
-Responsibilities:
-- Walk all individuals and families.
-- Standardize every event's place field (including alternates).
-- Preserve original raw place text.
-- Normalize simple country/state variants.
-- Build a stable UUID5 for each distinct place.
-- Insert a structured "standard_place" block on each event.
+C.24.4.10 – Place Standardization
+
+Input  : XREF-enhanced registry JSON (e.g. export_xref.json)
+Output : Same registry shape, but events get a `standard_place` block
+         when a place string is present.
+
+This version is *conservative*:
+- It never changes the overall registry structure.
+- It never replaces events with strings.
+- It only *adds* `standard_place` dicts when possible.
 """
+
+from __future__ import annotations
 
 import argparse
 import json
-import uuid
-from typing import Any, Dict, Iterable, Tuple
+import logging
+from typing import Any, Dict, Tuple, Optional
 
-from gedcom_parser.logging import get_logger
+try:
+    from gedcom_parser.logging import get_logger  # project logger
+except Exception:  # pragma: no cover - fallback for direct use
+
+    def get_logger(name: str) -> logging.Logger:
+        logging.basicConfig(
+            level=logging.INFO,
+            format="[%(asctime)s] %(levelname)-8s %(name)s: %(message)s",
+            datefmt="%m/%d/%y %H:%M:%S",
+        )
+        return logging.getLogger(name)
+
 
 log = get_logger("place_standardizer")
 
-# Deterministic namespace UUID for place IDs
-PLACE_NAMESPACE_UUID = uuid.UUID("c7a6f962-4b2e-4d30-9b21-9a9daf0d2b11")
 
-COUNTRY_MAP: Dict[str, str] = {
-    "usa": "United States",
-    "u.s.a": "United States",
-    "u.s.": "United States",
-    "us": "United States",
-    "united states of america": "United States",
-    "uk": "United Kingdom",
-    "eng": "England",
-}
+# ---------------------------------------------------------------------------
+# Simple place normalization / standard_place builder
+# ---------------------------------------------------------------------------
 
-STATE_MAP: Dict[str, str] = {
-    "ca": "California",
-    "calif": "California",
-    "ny": "New York",
-    "tx": "Texas",
-    "fl": "Florida",
-    "oh": "Ohio",
-}
-
-
-def _normalize_component(text: str) -> str:
-    """Normalize a single place component using COUNTRY_MAP/STATE_MAP."""
-    if not text:
-        return ""
-    t = text.strip()
-    low = t.lower()
-    if low in COUNTRY_MAP:
-        return COUNTRY_MAP[low]
-    if low in STATE_MAP:
-        return STATE_MAP[low]
-    return t
-
-
-def _standardize_place_block(place_block: Dict[str, Any]) -> Dict[str, Any]:
+def normalize_place_string(raw: str) -> str:
     """
-    Given an existing place block of the form:
+    Minimal normalization of a place string.
+    This is deliberately simple and deterministic; you can plug in
+    a richer standardization engine later.
+    """
+    return " ".join(raw.split()).strip()
+
+
+def build_standard_place(raw: Optional[str]) -> Optional[Dict[str, Any]]:
+    """
+    Given a raw place string, return a standard_place dict or None.
+
+    Standard shape:
+
         {
-            "raw": "...",
-            "parts": {
-                "city": ...,
-                "county": ...,
-                "state": ...,
-                "country": ...
-            },
-            "coordinates": {...}
+            "id": "<normalized-lowercase-id>",
+            "raw": "<original string>",
+            "normalized": "<cleaned string>"
         }
 
-    Build a canonical standard_place structure and return it.
+    This keeps us compatible with later steps that expect a dict with `id`.
     """
-    raw = place_block.get("raw") or ""
-    parts = place_block.get("parts") or {}
+    if not raw:
+        return None
 
-    city = _normalize_component(parts.get("city") or "")
-    county = _normalize_component(parts.get("county") or "")
-    state = _normalize_component(parts.get("state") or "")
-    country = _normalize_component(parts.get("country") or "")
+    raw_str = str(raw)
+    normalized = normalize_place_string(raw_str)
+    if not normalized:
+        return None
 
-    norm_parts = {
-        "city": city or None,
-        "county": county or None,
-        "state": state or None,
-        "country": country or None,
-    }
+    place_id = normalized.lower()
 
-    # Hierarchy string from available fields
-    hierarchy_components = [c for c in [city, county, state, country] if c]
-    hierarchy = ", ".join(hierarchy_components)
-
-    # Deterministic UUID using raw string; if raw is missing, fall back to hierarchy
-    key = raw.strip() or hierarchy
-    place_id = str(uuid.uuid5(PLACE_NAMESPACE_UUID, key)) if key else None
-
-    standard_place = {
+    return {
         "id": place_id,
-        "hierarchy": hierarchy,
-        "parts": norm_parts,
-        "raw": raw,
+        "raw": raw_str,
+        "normalized": normalized,
     }
-    return standard_place
 
 
-def _process_single_event(event: Dict[str, Any]) -> Tuple[int, int]:
+# ---------------------------------------------------------------------------
+# Core standardization over registry
+# ---------------------------------------------------------------------------
+
+def _process_event(evt: Any, counters: Dict[str, int]) -> Any:
     """
-    Process a single event dict.
+    Safely process a single event.
 
-    Returns (events_seen, events_with_place) for counters.
+    - If evt is not a dict, leave it exactly as-is (no mutation).
+    - If evt is a dict, copy it, add `standard_place` when possible,
+      and return the new dict.
+
+    counters is updated in-place for metrics.
     """
-    if not isinstance(event, dict):
-        return 0, 0
+    counters["total_events"] += 1
 
-    events_seen = 1
-    events_with_place = 0
+    if not isinstance(evt, dict):
+        # This is the critical guard: NEVER treat non-dict events as dicts.
+        # We just return it untouched.
+        counters["non_dict_events"] += 1
+        return evt
 
-    place = event.get("place")
-    if isinstance(place, dict):
-        event["standard_place"] = _standardize_place_block(place)
-        events_with_place += 1
+    place_raw = evt.get("place")
+    std = build_standard_place(place_raw)
+    if std is not None:
+        new_evt = dict(evt)
+        new_evt["standard_place"] = std
+        counters["with_places"] += 1
+        return new_evt
 
-    # Alternates (if present)
-    alternates = event.get("alternates") or []
-    if isinstance(alternates, list):
-        for alt in alternates:
-            if not isinstance(alt, dict):
+    return evt
+
+
+def standardize_registry_places(registry: Dict[str, Any]) -> Tuple[Dict[str, Any], Dict[str, int]]:
+    """
+    Walk the full registry and add `standard_place` to events
+    on individuals and families.
+
+    Returns:
+        (new_registry, metrics_dict)
+    """
+    counters: Dict[str, int] = {
+        "individuals": 0,
+        "families": 0,
+        "total_events": 0,
+        "with_places": 0,
+        "non_dict_events": 0,
+    }
+
+    # Work on a shallow copy of the registry dict so we don't mutate the
+    # original reference unexpectedly.
+    out: Dict[str, Any] = dict(registry)
+
+    individuals = out.get("individuals", {})
+    if isinstance(individuals, dict):
+        for indi_id, ind in individuals.items():
+            if not isinstance(ind, dict):
                 continue
-            alt_place = alt.get("place")
-            if isinstance(alt_place, dict):
-                alt["standard_place"] = _standardize_place_block(alt_place)
-                events_with_place += 1
-                events_seen += 1
+            counters["individuals"] += 1
+            events = ind.get("events", [])
+            if not isinstance(events, list):
+                continue
 
-    return events_seen, events_with_place
+            new_events = []
+            for evt in events:
+                new_events.append(_process_event(evt, counters))
 
+            ind["events"] = new_events
 
-def _iter_events_from_record(record: Dict[str, Any]) -> Iterable[Dict[str, Any]]:
-    """
-    Yield all event dicts from an individual or family record.
+    families = out.get("families", {})
+    if isinstance(families, dict):
+        for fam_id, fam in families.items():
+            if not isinstance(fam, dict):
+                continue
+            counters["families"] += 1
+            events = fam.get("events", [])
+            if not isinstance(events, list):
+                continue
 
-    For your current registry structure, events live at:
-        record["events"] -> {TAG: event or [event, ...]}
-    """
-    if not isinstance(record, dict):
-        return []
+            new_events = []
+            for evt in events:
+                new_events.append(_process_event(evt, counters))
 
-    events_by_tag = record.get("events") or {}
-    if not isinstance(events_by_tag, dict):
-        return []
+            fam["events"] = new_events
 
-    for tag, ev_block in events_by_tag.items():
-        # ev_block can be a dict (single event) or a list of events
-        if isinstance(ev_block, dict):
-            yield ev_block
-        elif isinstance(ev_block, list):
-            for ev in ev_block:
-                if isinstance(ev, dict):
-                    yield ev
+    return out, counters
 
 
-def standardize_places(registry: Dict[str, Any]) -> Dict[str, Any]:
-    """
-    Walk the individuals and families collections and standardize places.
-    """
-    individuals = registry.get("individuals") or {}
-    families = registry.get("families") or {}
+# ---------------------------------------------------------------------------
+# CLI
+# ---------------------------------------------------------------------------
 
-    events_seen = 0
-    events_with_places = 0
-
-    # Individuals
-    for ptr, person in individuals.items():
-        for ev in _iter_events_from_record(person):
-            seen, with_place = _process_single_event(ev)
-            events_seen += seen
-            events_with_places += with_place
-
-    # Families
-    for fptr, fam in families.items():
-        for ev in _iter_events_from_record(fam):
-            seen, with_place = _process_single_event(ev)
-            events_seen += seen
-            events_with_places += with_place
-
-    log.info(
-        "Place standardization complete: individuals=%d, families=%d, events=%d, with_places=%d",
-        len(individuals),
-        len(families),
-        events_seen,
-        events_with_places,
-    )
-
-    return registry
-
-
-def main() -> None:
-    parser = argparse.ArgumentParser(description="GEDCOM Place Standardizer (Option B)")
+def build_arg_parser() -> argparse.ArgumentParser:
+    parser = argparse.ArgumentParser(description="C.24.4.10 – Place Standardization")
     parser.add_argument(
-        "-i", "--input", required=True, help="Input JSON file (e.g. outputs/export_xref.json)"
+        "-i",
+        "--input",
+        required=True,
+        help="Input registry JSON (e.g. outputs/export_xref.json)",
     )
     parser.add_argument(
         "-o",
         "--output",
         required=True,
-        help="Output JSON file (e.g. outputs/export_standardized.json)",
+        help="Output registry JSON with standardized places (e.g. outputs/export_places.json)",
     )
     parser.add_argument(
-        "--debug", action="store_true", help="Enable debug logging for place_standardizer"
+        "--debug",
+        action="store_true",
+        help="Enable debug logging",
     )
+    return parser
+
+
+def main() -> None:
+    parser = build_arg_parser()
     args = parser.parse_args()
 
     if args.debug:
-        log.setLevel("DEBUG")
+        log.setLevel(logging.DEBUG)
 
     log.info("Starting place standardization. Input=%s Output=%s", args.input, args.output)
 
     with open(args.input, "r", encoding="utf-8") as f:
         registry = json.load(f)
 
-    updated = standardize_places(registry)
+    out_registry, counters = standardize_registry_places(registry)
 
     with open(args.output, "w", encoding="utf-8") as f:
-        json.dump(updated, f, indent=2, ensure_ascii=False)
+        json.dump(out_registry, f, indent=2)
 
+    log.info(
+        "Place standardization complete: individuals=%d, families=%d, "
+        "events=%d, with_places=%d, non_dict_events=%d",
+        counters["individuals"],
+        counters["families"],
+        counters["total_events"],
+        counters["with_places"],
+        counters["non_dict_events"],
+    )
     log.info("Standardized export written to: %s", args.output)
+
+    # Keep the simple stdout confirmation you were seeing:
     print(f"[INFO] Standardized export written to: {args.output}")
 
 

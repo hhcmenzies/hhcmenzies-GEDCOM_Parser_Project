@@ -1,0 +1,6 @@
+Codex, refactor ONLY entities/entity_base.py for clarity and maintain ALL methods exactly as written.
+
+Apply ONLY minimal changes. Do not delete or rename existing functions unless I explicitly approve.
+
+Never restructure the API surface.
+

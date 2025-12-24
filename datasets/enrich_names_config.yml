@@ -1,0 +1,27 @@
+---
+# Enrichment configuration for GEDCOM Parser name processing.
+# This file enables or disables various romanized and phonetic name types
+# for name enrichment purposes.
+
+romanized_name_types:
+  ASCII: true
+  Arabic Transliteration: true
+  Hepburn: true
+  ISO 9: true
+  Library of Congress: true
+  McCune–Reischauer: true
+  Other: true
+  Pinyin: true
+  Revised Hepburn: true
+  Revised Romanization: true
+  Wade-Giles: true
+  Yale: true
+
+phonetic_name_types:
+  Metaphone: true
+  Double Metaphone: true
+  Soundex: true
+  NYSIIS: true
+  Caverphone: true
+  IPA: true
+  Custom Phonetics: true

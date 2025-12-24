@@ -1,0 +1,493 @@
+{
+  "HEAD": {
+    "description": "Metadata about the GEDCOM file.",
+    "category": "Header",
+    "child_tags": [
+      "GEDC",
+      "CHAR",
+      "DATE",
+      "DEST",
+      "SUBM",
+      "FILE",
+      "LANG"
+    ],
+    "data_type": "record",
+    "required": true,
+    "multiple_occurrences": false
+  },
+  "GEDC": {
+    "description": "GEDCOM standard version.",
+    "category": "Header",
+    "child_tags": [
+      "VERS",
+      "FORM"
+    ],
+    "data_type": "metadata",
+    "required": true,
+    "multiple_occurrences": false
+  },
+  "CHAR": {
+    "description": "Character set used in the GEDCOM file.",
+    "category": "Header",
+    "child_tags": [],
+    "data_type": "text",
+    "required": true,
+    "multiple_occurrences": false
+  },
+  "SUBM": {
+    "description": "Submitter information.",
+    "category": "Submission",
+    "child_tags": [
+      "NAME",
+      "ADDR",
+      "PHON",
+      "EMAIL",
+      "WWW"
+    ],
+    "data_type": "record",
+    "required": true,
+    "multiple_occurrences": false
+  },
+  "INDI": {
+    "description": "Individual person record.",
+    "category": "Individual",
+    "child_tags": [
+      "NAME",
+      "SEX",
+      "BIRT",
+      "CHR",
+      "DEAT",
+      "BURI",
+      "CREM",
+      "ADOP",
+      "BAPM",
+      "CONF",
+      "NATI",
+      "CAST",
+      "RELI",
+      "OCCU",
+      "EDUC",
+      "RESI",
+      "NCHI",
+      "NMR",
+      "ALIA",
+      "FAMC",
+      "FAMS",
+      "IDNO",
+      "CHAN",
+      "NOTE",
+      "SOUR",
+      "OBJE"
+    ],
+    "data_type": "record",
+    "required": true,
+    "multiple_occurrences": true
+  },
+  "NAME": {
+    "description": "Full name of the individual.",
+    "category": "Individual",
+    "child_tags": [
+      "NPFX",
+      "GIVN",
+      "SPFX",
+      "SURN",
+      "NSFX",
+      "NICK",
+      "ROMN",
+      "FONE"
+    ],
+    "data_type": "text",
+    "required": true,
+    "multiple_occurrences": true
+  },
+  "NPFX": {
+    "description": "Name prefix (e.g., Dr., Mr., Rev.).",
+    "category": "Individual",
+    "child_tags": [],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "GIVN": {
+    "description": "Given name (first and middle names).",
+    "category": "Individual",
+    "child_tags": [],
+    "data_type": "text",
+    "required": true,
+    "multiple_occurrences": false
+  },
+  "SPFX": {
+    "description": "Surname prefix (e.g., 'van', 'de', 'von').",
+    "category": "Individual",
+    "child_tags": [],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "SURN": {
+    "description": "Surname (last name).",
+    "category": "Individual",
+    "child_tags": [],
+    "data_type": "text",
+    "required": true,
+    "multiple_occurrences": false
+  },
+  "NSFX": {
+    "description": "Name suffix (e.g., Jr., Sr., III).",
+    "category": "Individual",
+    "child_tags": [],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "NICK": {
+    "description": "Nickname.",
+    "category": "Individual",
+    "child_tags": [],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "ROMN": {
+    "description": "Romanized name.",
+    "category": "Individual",
+    "child_tags": [],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "FONE": {
+    "description": "Phonetic name.",
+    "category": "Individual",
+    "child_tags": [],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "SEX": {
+    "description": "Gender of the individual (M/F/X).",
+    "category": "Individual",
+    "child_tags": [],
+    "data_type": "text",
+    "required": true,
+    "multiple_occurrences": false
+  },
+  "BIRT": {
+    "description": "Birth event.",
+    "category": "Event",
+    "child_tags": [
+      "DATE",
+      "PLAC"
+    ],
+    "data_type": "event",
+    "required": true,
+    "multiple_occurrences": false
+  },
+  "CHR": {
+    "description": "Christening event.",
+    "category": "Event",
+    "child_tags": [
+      "DATE",
+      "PLAC"
+    ],
+    "data_type": "event",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "DEAT": {
+    "description": "Death event.",
+    "category": "Event",
+    "child_tags": [
+      "DATE",
+      "PLAC",
+      "CAUS"
+    ],
+    "data_type": "event",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "BURI": {
+    "description": "Burial event.",
+    "category": "Event",
+    "child_tags": [
+      "DATE",
+      "PLAC"
+    ],
+    "data_type": "event",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "CREM": {
+    "description": "Cremation event.",
+    "category": "Event",
+    "child_tags": [
+      "DATE",
+      "PLAC"
+    ],
+    "data_type": "event",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "CAUS": {
+    "description": "Cause of death or event.",
+    "category": "Event",
+    "child_tags": [],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "MARR": {
+    "description": "Marriage event.",
+    "category": "Event",
+    "child_tags": [
+      "DATE",
+      "PLAC",
+      "TYPE"
+    ],
+    "data_type": "event",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "DIV": {
+    "description": "Divorce event.",
+    "category": "Event",
+    "child_tags": [
+      "DATE",
+      "PLAC"
+    ],
+    "data_type": "event",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "DATE": {
+    "description": "Date value. Expected format: 'DD MMM YYYY' (e.g., '22 DEC 2013').",
+    "category": "Event",
+    "child_tags": [],
+    "data_type": "text",
+    "required": true,
+    "multiple_occurrences": false,
+    "format": "^[0-9]{1,2} [A-Z]{3} [0-9]{4}$"
+  },
+  "PLAC": {
+    "description": "Place of event.",
+    "category": "Location",
+    "child_tags": [
+      "MAP"
+    ],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "MAP": {
+    "description": "Geographic mapping.",
+    "category": "Location",
+    "child_tags": [
+      "LATI",
+      "LONG"
+    ],
+    "data_type": "metadata",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "LATI": {
+    "description": "Latitude coordinate. Expected format: e.g., 'N42.5584'.",
+    "category": "Location",
+    "child_tags": [],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": false,
+    "format": "^(N|S)[0-9]+(\\.[0-9]+)?$"
+  },
+  "LONG": {
+    "description": "Longitude coordinate. Expected format: e.g., 'W70.88'.",
+    "category": "Location",
+    "child_tags": [],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": false,
+    "format": "^(E|W)[0-9]+(\\.[0-9]+)?$"
+  },
+  "FAM": {
+    "description": "Family unit record.",
+    "category": "Family",
+    "child_tags": [
+      "HUSB",
+      "WIFE",
+      "CHIL",
+      "MARR",
+      "DIV"
+    ],
+    "data_type": "record",
+    "required": true,
+    "multiple_occurrences": true
+  },
+  "HUSB": {
+    "description": "Pointer to the husband's individual record.",
+    "category": "Family",
+    "child_tags": [],
+    "data_type": "identifier",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "WIFE": {
+    "description": "Pointer to the wife's individual record.",
+    "category": "Family",
+    "child_tags": [],
+    "data_type": "identifier",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "CHIL": {
+    "description": "Pointer to a child's individual record.",
+    "category": "Family",
+    "child_tags": [],
+    "data_type": "identifier",
+    "required": false,
+    "multiple_occurrences": true
+  },
+  "SOUR": {
+    "description": "Source citation.",
+    "category": "Source",
+    "child_tags": [
+      "TITL",
+      "AUTH",
+      "PUBL",
+      "TEXT",
+      "DATA"
+    ],
+    "data_type": "record",
+    "required": false,
+    "multiple_occurrences": true
+  },
+  "TEXT": {
+    "description": "Source text description.",
+    "category": "Source",
+    "child_tags": [],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "AUTH": {
+    "description": "Author of the source.",
+    "category": "Source",
+    "child_tags": [],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "PUBL": {
+    "description": "Publication information.",
+    "category": "Source",
+    "child_tags": [],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "REPO": {
+    "description": "Repository storing sources.",
+    "category": "Source",
+    "child_tags": [
+      "NAME",
+      "ADDR",
+      "PHON",
+      "EMAIL",
+      "FAX",
+      "WWW"
+    ],
+    "data_type": "record",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "CHAN": {
+    "description": "Record change tracking.",
+    "category": "Metadata",
+    "child_tags": [
+      "DATE"
+    ],
+    "data_type": "metadata",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "LANG": {
+    "description": "Language of text.",
+    "category": "Metadata",
+    "child_tags": [],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "CONC": {
+    "description": "Concatenation for long text.",
+    "category": "Text Formatting",
+    "child_tags": [],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "CONT": {
+    "description": "Continuation of text on a new line.",
+    "category": "Text Formatting",
+    "child_tags": [],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "RIN": {
+    "description": "Record Identification Number.",
+    "category": "Metadata",
+    "child_tags": [],
+    "data_type": "identifier",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "TRLR": {
+    "description": "Marks the end of a GEDCOM file.",
+    "category": "Header",
+    "child_tags": [],
+    "data_type": "record",
+    "required": true,
+    "multiple_occurrences": false
+  },
+  "OBJE": {
+    "description": "Multimedia object record.",
+    "category": "Multimedia",
+    "child_tags": [],
+    "data_type": "record",
+    "required": false,
+    "multiple_occurrences": true
+  },
+  "ADDR": {
+    "description": "Address information.",
+    "category": "Location",
+    "child_tags": [],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": false
+  },
+  "FCOM": {
+    "description": "Family comment or additional family-level communication.",
+    "category": "Custom",
+    "child_tags": [],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": true
+  },
+  "_WEIG": {
+    "description": "Custom weight attribute (e.g., individual's weight).",
+    "category": "Custom",
+    "child_tags": [],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": false,
+    "format": "^[0-9]+(\\.[0-9]+)?$"
+  },
+  "_HEIG": {
+    "description": "Custom height attribute (e.g., individual's height).",
+    "category": "Custom",
+    "child_tags": [],
+    "data_type": "text",
+    "required": false,
+    "multiple_occurrences": false,
+    "format": "^[0-9]+'[0-9]+\"$"
+  }
+}

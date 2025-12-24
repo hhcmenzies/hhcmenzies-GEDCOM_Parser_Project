@@ -1,0 +1,177 @@
+🧭 WHAT MUST BE BUILT — FULL LIST
+A. Core Entity Layer (MISSING)
+
+We must create:
+
+1️⃣ entities/event.py
+
+Defines the event model. Required.
+
+2️⃣ entities/fact.py
+
+Defines non-event facts (OCCU, RESI, NATU, etc.).
+
+3️⃣ entities/tag_constants.py
+
+Central mapping of GEDCOM tags → event/fact types.
+
+B. Parsing Layer (BROKEN)
+
+We must repair:
+
+4️⃣ extractor.py
+
+Currently extracts only strings.
+Must build Event objects via a factory.
+
+5️⃣ tree_builder.py
+
+Currently attaches event.tag (string).
+Must attach event.to_dict().
+
+C. Normalization Layer (MISSING)
+6️⃣ normalization/event_normalizer.py
+
+Normalizes:
+
+date formats
+
+place strings
+
+age fields
+
+witnesses, roles, etc.
+
+D. Postprocessing Layer (PARTIAL / NON-FUNCTIONAL)
+7️⃣ postprocess/event_disambiguator.py
+
+Must resolve conflicts, duplicates, mixed tagging.
+
+8️⃣ postprocess/event_scoring.py
+
+Must score structured events.
+Currently useless because events are strings.
+
+🎯 ORDER OF OPERATIONS (MOST PRACTICAL PLAN)
+
+Here is the correct—and safe—order to rebuild the system without losing functionality:
+
+PHASE 1 — Build Foundational Event Model
+
+1️⃣ Create entities/event.py
+2️⃣ Create entities/fact.py
+3️⃣ Create entities/tag_constants.py
+
+Deliverables:
+• Event class
+• Fact class
+• .to_dict() and .from_dict()
+• event-type lookup tables
+
+This phase REQUIRES no changes to the rest of the system yet.
+
+PHASE 2 — Repair Parsing Layer
+
+4️⃣ Modify extractor.py → build Event objects
+5️⃣ Modify tree_builder.py → emit dicts, not strings
+6️⃣ Modify parser_core.py → integrate event construction
+
+Deliverables:
+
+Parsed individuals contain events = [ {dict}, {dict}, ... ]
+
+No raw strings like "BIRT"
+
+At this point, your Step 1 → Step 3 pipeline will start working correctly.
+
+PHASE 3 — Enable Place Standardization
+
+7️⃣ Modify place_standardizer.py to consume structured events
+8️⃣ Add missing standardization for residence, occupation, etc.
+
+PHASE 4 — Enable Event Scoring & Disambiguation
+
+Now that events are structured:
+
+9️⃣ Rebuild event_disambiguator.py
+🔟 Rebuild event_scoring.py
+
+PHASE 5 — Entity Resolution Gains Birth Year, Birth Place
+
+The module entity_resolution.py will now be able to:
+
+extract birth event
+
+compute similarity
+
+block individuals by place/year
+
+Right now, resolution is missing 80% of intended functionality because events don't exist.
+
+📌 THE SINGLE MOST PRACTICAL COURSE OF ACTION
+We must implement PHASE 1 and PHASE 2 immediately.
+
+Everything else depends on them.
+
+Until events exist as structured objects:
+
+place standardizer cannot function
+
+event scoring cannot function
+
+entity resolution cannot match birth years
+
+merging cannot occur
+
+the entire postprocessing pipeline collapses
+
+This is exactly what we saw during the step-by-step run.
+
+🚀 YOUR NEXT ACTION
+
+Tell me:
+
+👉 Do you want me to generate Phase 1 (Event model layer) now?
+
+This includes:
+
+event.py
+
+fact.py
+
+tag_constants.py
+
+full Pydantic models (or lightweight classes)
+
+examples & test harness
+
+integration notes for later phases
+
+I will deliver fully working code that drops directly into your project.
+
+📝 OPTIONAL (but recommended)
+
+If you want, I can also:
+
+map all your existing GEDCOM event tags (from your real files)
+
+create a dictionary of all observed tags
+
+propose a normalized event ontology
+
+Just say “yes, generate event model”.
+
+✔ Summary
+
+You asked:
+
+What modules are missing?
+What needs to be generated?
+What needs to be refactored?
+What is the correct order?
+
+This message answers all four precisely.
+
+⭐ Your move:
+
+Would you like me to generate the missing Event subsystem (Phase 1)?

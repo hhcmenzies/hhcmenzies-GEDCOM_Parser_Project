@@ -1,0 +1,294 @@
+.
+├── config
+│   ├── gedcom_parser.yml
+│   └── tag_metadata.json
+├── datasets
+│   ├── date_normalization.json
+│   ├── early_massachusetts.json
+│   ├── enrich_names_config.yml
+│   ├── gaelic_name_conversion.json
+│   ├── gedcom_schema.json
+│   ├── gedcom_tags.json
+│   ├── gedcom_tags_meta_schema.json
+│   ├── mayflower.json
+│   ├── military_aus.json
+│   ├── military_can.json
+│   ├── military_germ.json
+│   ├── military_rank_standardization.json
+│   ├── military_uk.json
+│   ├── military_us_normalization.json
+│   ├── name_normalization.json
+│   ├── name_prefixes.json
+│   ├── name_variants.json
+│   ├── new_england.json
+│   ├── nicknames.json
+│   ├── npfx_standardization.json
+│   ├── nsfx_list.json
+│   ├── nsfx_standardization.json
+│   ├── occupations.json
+│   ├── prefix_draft.json
+│   ├── religious.json
+│   ├── royal.json
+│   ├── salem_witch_trials.json
+│   ├── spfx_list.json
+│   ├── spfx_standardization.json
+│   ├── surname_normalization.json
+│   ├── titles_normalization.json
+│   └── us_states.json
+├── docs
+│   ├── 2024_TL_Shapefiles_File_Name_Definitions.pdf
+│   ├── action_plan.md
+│   ├── Architecture and Approach for GEDCOM 5.5.5 Data Processing.pdf
+│   ├── assessment_roadmap.md
+│   ├── clear_prompt.txt
+│   ├── codex_prompt.txt
+│   ├── commands.txt
+│   ├── course of actions.txt
+│   ├── database.md
+│   ├── database_targets.md
+│   ├── forward.md
+│   ├── ged551.pdf
+│   ├── GEDCOM 5.5.5.pdf
+│   ├── gedcom7-rc.pdf
+│   ├── GEDCOM_Consolidated_Roadmap.md
+│   ├── __GEDCOM Parser Project – Architecture Review and Roadmap__.pdf
+│   ├── GEDCOM Parser Project – Comprehensive Audit & Upgrade Plan.pdf
+│   ├── json_to_gedcom.md
+│   ├── next_steps.md
+│   ├── processing_roadmap.md
+│   ├── raodmap_alignment.md
+│   ├── README.md
+│   ├── Review and Corrections for GEDCOM_Parser_Project (up to C.24.4.8).pdf
+│   ├── roadmap.md
+│   ├── roadmap_next_steps.md
+│   ├── roadmap_refactoring.md
+│   ├── roadmap_sql.md
+│   ├── Technical Review of GEDCOM Parser & Processor Project.pdf
+│   └── transitional.txt
+├── GEDCOM logo.png
+├── GEDCOM_Parser_Project.code-workspace
+├── .gitignore
+├── inventories
+│   ├── dataset_dump.txt
+│   ├── gedcom_file_structure.txt
+│   ├── gedcom_parser_inventory.csv
+│   ├── inventory_script.ps1
+│   ├── legacy_inventory.txt
+│   ├── project_detailed_inventory.txt
+│   ├── project_inventory_full.txt
+│   ├── project_inventory.md
+│   ├── project_inventory.txt
+│   ├── project_size_report.txt
+│   └── project_tree.txt
+├── logs
+│   ├── entities.entity_base.log
+│   ├── entities.registry.log
+│   ├── entity_resolution.log
+│   ├── event_disambiguator.log
+│   ├── event_scoring.log
+│   ├── exporter.log
+│   ├── gedcom_parser.entities.registry.log
+│   ├── gedcom_parser.log
+│   ├── gedcom_parser.log.1
+│   ├── gedcom_parser.log.2
+│   ├── gedcom_parser.log.3
+│   ├── gedcom_parser.log.4
+│   ├── gedcom_parser.log.5
+│   ├── json_exporter.log
+│   ├── logger.b64
+│   ├── main.log
+│   ├── main_run (1).log
+│   ├── main_run.log
+│   ├── name_normalization.log
+│   ├── name_test.log
+│   ├── parser_core.log
+│   ├── parser_core.log.1
+│   ├── parser_core.log.2
+│   ├── parser_test.log
+│   ├── place_standardizer.log
+│   ├── registry.log
+│   ├── test_logger.log
+│   ├── xref_resolver.log
+│   └── xref_run.log
+├── me
+├── me.pub
+├── misc
+├── mock_files
+│   ├── 0 HEAD.ged
+│   ├── gedcom_0.ged
+│   ├── gedcom_18_anc.ged
+│   ├── gedcom_18.ged
+│   ├── gedcom_19.ged
+│   ├── gedcom_1.ged
+│   ├── gedcom_20.ged
+│   ├── gedcom_2.ged
+│   ├── gedcom_3.ged
+│   ├── gedcom_4.ged
+│   ├── gedcom_5.ged
+│   ├── gedcom_6.ged
+│   ├── gedcom_9.ged
+│   ├── gedcom.ged
+│   ├── head_ftm.ged
+│   ├── head.ged
+│   ├── Menzies Dempsey.ged
+│   ├── mock.ged
+│   ├── mock_names.ged
+│   ├── utf16.ged
+│   └── utf8.ged
+├── outputs
+│   ├── candidates.json
+│   ├── entity_candidates.json
+│   ├── entity_resolution_summary.json
+│   ├── event_scores.json
+│   ├── export_entities_resolved.json
+│   ├── export_events_resolved.json
+│   ├── export.json
+│   ├── export_names_normalized.json
+│   ├── export_places.json
+│   ├── export_scored.json
+│   ├── export_standardized.json
+│   ├── export_xref_built.json
+│   ├── export_xref.json
+│   ├── scoring_summary.json
+│   └── summary.json
+├── parse_gedcom.py
+├── project_tree.txt
+├── .pytest_cache
+│   ├── CACHEDIR.TAG
+│   ├── .gitignore
+│   ├── README.md
+│   └── v
+│       └── cache
+│           ├── lastfailed
+│           └── nodeids
+├── requirements.txt
+├── run_pipeline.sh
+├── run.py
+├── schemas
+│   └── name_block_schema.json
+├── src
+│   └── gedcom_parser
+│       ├── attachments.py
+│       ├── cli
+│       │   ├── app.py
+│       │   ├── commands
+│       │   │   ├── export.py
+│       │   │   ├── __init__.py
+│       │   │   └── stats.py
+│       │   ├── __init__.py
+│       │   └── utils.py
+│       ├── config.py
+│       ├── data
+│       │   └── occupation_keywords.json
+│       ├── dates
+│       │   ├── __init__.py
+│       │   └── normalizer.py
+│       ├── entities
+│       │   ├── entity_base.py
+│       │   ├── extraction
+│       │   │   ├── __init__.py
+│       │   │   ├── name_normalization.py
+│       │   │   ├── name.py
+│       │   │   ├── occupation.py
+│       │   │   └── place.py
+│       │   ├── extractor.py
+│       │   ├── __init__.py
+│       │   ├── models.py
+│       │   ├── name_block.py
+│       │   └── registry.py
+│       ├── events
+│       │   ├── event.py
+│       │   └── __init__.py
+│       ├── exporter
+│       │   ├── exporter.py
+│       │   ├── __init__.py
+│       │   └── json_exporter.py
+│       ├── generated_attachments.py
+│       ├── generated_entities.py
+│       ├── identity
+│       │   ├── __init__.py
+│       │   └── uuid_factory.py
+│       ├── __init__.py
+│       ├── loader
+│       │   ├── file_loader.py
+│       │   ├── file_locator.py
+│       │   ├── __init__.py
+│       │   ├── reconstruct.py
+│       │   ├── segmenter.py
+│       │   ├── tokenizer.py
+│       │   ├── tree_builder.py
+│       │   └── value_reconstructor.py
+│       ├── loader.py
+│       ├── logger.py
+│       ├── logging
+│       │   ├── __init__.py
+│       │   └── logger.py
+│       ├── main.py
+│       ├── models.py
+│       ├── normalization
+│       │   ├── __init__.py
+│       │   └── name_normalization.py
+│       ├── occupation
+│       │   ├── inference.py
+│       │   └── __init__.py
+│       ├── parser_core.py
+│       ├── postprocess
+│       │   ├── entity_resolution.py
+│       │   ├── event_disambiguator.py
+│       │   ├── event_scoring.py
+│       │   ├── graph_builder.py
+│       │   ├── __init__.py
+│       │   ├── name_identity.py
+│       │   ├── place_standardizer.py
+│       │   ├── xref_builder.py
+│       │   └── xref_resolver.py
+│       ├── registry
+│       │   ├── build_family.py
+│       │   ├── build_individual.py
+│       │   ├── build_media_object.py
+│       │   ├── build_note.py
+│       │   ├── build_registry.py
+│       │   ├── build_source.py
+│       │   ├── entities.py
+│       │   ├── generated_build_registry.py
+│       │   ├── __init__.py
+│       │   ├── link_entities.py
+│       │   ├── promote_media.py
+│       │   └── utils.py
+│       ├── tree_builder.py
+│       ├── utils
+│       │   ├── __init__.py
+│       │   └── pathing.py
+│       └── utils.py
+├── tests
+│   ├── data
+│   │   └── gedcom_1.ged
+│   ├── .pytest_cache
+│   │   ├── CACHEDIR.TAG
+│   │   ├── .gitignore
+│   │   ├── README.md
+│   │   └── v
+│   │       └── cache
+│   │           ├── lastfailed
+│   │           └── nodeids
+│   ├── test_basic.py
+│   ├── test_build_family.py
+│   ├── test_build_individual.py
+│   ├── test_build_media_object.py
+│   ├── test_build_note.py
+│   ├── test_build_source.py
+│   ├── test_dates.py
+│   ├── test_entities.py
+│   ├── test_entity_linking.py
+│   ├── test_events_enriched.py
+│   ├── test_events_extended.py
+│   ├── test_events.py
+│   ├── test_reconstruct_values.py
+│   ├── test_registry_entities.py
+│   ├── test_segmenter.py
+│   ├── test_tokenizer.py
+│   ├── test_tree_builder.py
+│   └── test_uuid_identity.py
+└── verify_all.sh
+
+36 directories, 256 files

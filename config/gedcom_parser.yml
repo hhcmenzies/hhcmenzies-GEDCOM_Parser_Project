@@ -1,20 +1,31 @@
-# Global GEDCOM parser configuration
+# config/gedcom_parser.yml
 
 paths:
-  input: "GEDCOM_Parser_OLD/mock_files/gedcom_1.ged"
-  output_dir: "outputs"
-  logs_dir: "logs"
+  # Default input GEDCOM file for development / smoke tests.
+  # The application should resolve this relative to the project root using
+  # gedcom_parser.utils.resolve_project_path().
+  input: "mock_files/gedcom_1.ged"
 
-pipeline:
-  parse: true
-  xref: true
-  place_standardize: true
-  event_disambiguate: true
-  name_identity: true
+  # Optional default output directory for JSON exports.
+  output_dir: "outputs"
 
 logging:
+  # Default log level: DEBUG, INFO, WARNING, ERROR, CRITICAL
   level: "INFO"
+  # Directory for log files, relative to the project root.
+  dir: "logs"
+  # Base filename for the main log file (e.g., gedcom_parser.log)
   file: "gedcom_parser.log"
-  rotate: false
 
-debug: true
+pipeline:
+  # Core pipeline switches. Initially, only 'build_registry' and 'export_json'
+  # will matter; others will be added in later phases.
+  build_registry: true
+  export_json: false
+  xref: false
+  place_standardize: false
+  event_disambiguate: false
+  name_identity: false
+
+debug:
+  enabled: false

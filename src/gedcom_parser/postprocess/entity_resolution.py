@@ -1,28 +1,13 @@
 """
-C.24.4.10 - Entity Resolution / Duplicate Detection (Individuals v1.1)
+C.24.4.10 - Entity Resolution / Duplicate Detection (Individuals v1.2)
 
-This module now implements:
-- REAL blocking + similarity scoring for INDIVIDUALS.
-- Skeleton stubs for FAMILIES and EVENTS (no real candidates yet).
+This module implements:
 
-Pipeline position (recommended input):
-  1) main                  → export.json
-  2) xref_resolver         → export_xref.json
-  3) place_standardizer    → export_standardized.json
-  4) event_disambiguator   → export_events_resolved.json
-  5) event_scoring         → export_scored.json   (input here)
-  6) entity_resolution     → export_entities_resolved.json + candidates + summary
-
-Expected input registry (export_scored.json):
-
-{
-    "individuals":  { "<indi_id>": { ... }, ... },
-    "families":     { "<fam_id>":  { ... }, ... },
-    "sources":      { ... },
-    "repositories": { ... },
-    "media_objects":{ ... },
-    "uuid_index":   { ... }      # from xref_resolver
-}
+- Blocking + similarity scoring for INDIVIDUALS
+- Skeleton stubs for FAMILIES and EVENTS
+- Full support for the new name_block structure
+- Backward compatibility with legacy "names" lists
+- Conservative merge logic with an explicit merge plan
 """
 
 from __future__ import annotations
@@ -50,6 +35,7 @@ except Exception:  # fallback if project logger isn't importable
         )
         return logging.getLogger(name)
 
+
 log = get_logger("entity_resolution")
 
 # ---------------------------------------------------------------------------
@@ -61,6 +47,8 @@ DEFAULT_AUTO_MERGE_THRESHOLD = 0.92
 DEFAULT_REVIEW_THRESHOLD = 0.80
 DEFAULT_MAX_PAIRS = 200_000
 
+# For “strict” entity resolution (Option B):
+STRICT_SURNAME_MATCH_THRESHOLD = 0.95
 
 # ---------------------------------------------------------------------------
 # Helper utilities
@@ -87,40 +75,285 @@ def jaro_ratio(a: str, b: str) -> float:
 
 
 # ---------------------------------------------------------------------------
-# Individual field extraction helpers
+# Name handling (NEW: uses name_block, but backward compatible)
 # ---------------------------------------------------------------------------
 
-def extract_primary_name(person: Dict[str, Any]) -> Tuple[str, str]:
+def _ensure_list(value: Any) -> List[str]:
+    if value is None:
+        return []
+    if isinstance(value, list):
+        return [safe_str(v) for v in value if v is not None]
+    if isinstance(value, str):
+        val = value.strip()
+        return [val] if val else []
+    return [safe_str(value)]
+
+
+def parse_gedcom_name_string(raw: str) -> Dict[str, Any]:
     """
-    Return (given, surname) for the primary name, if available.
-    GEDCOM-derived JSON usually has:
-        person["names"] = [
-            {"given": "...", "surname": "...", "type": "primary", ...}, ...
-        ]
-    We fall back to the first name if no explicit primary type is present.
+    Parse a classic GEDCOM-style name string:
+      - "David Thomas /Menzies/"
+      - "John /Smith/"
+      - "Mary (Polly) /Brown/"
+
+    This is a fallback only if we don't have structured name_block fields.
     """
-    names = person.get("names", [])
-    if not isinstance(names, list) or not names:
-        return "", ""
+    raw = safe_str(raw).strip()
+    given = None
+    middle: List[str] = []
+    surname = None
+    nickname = None
 
-    primary = None
-    for n in names:
-        if isinstance(n, dict) and n.get("type", "").lower() == "primary":
-            primary = n
-            break
+    # Extract surname between slashes
+    m = re.search(r"/([^/]+)/", raw)
+    if m:
+        surname = m.group(1).strip()
+        before = raw[:m.start()].strip()
+    else:
+        surname = None
+        before = raw
 
-    if primary is None:
-        primary = names[0]
+    # Handle nickname in parentheses (very common in GEDCOM exports)
+    nick_match = re.search(r"\(([^)]+)\)", before)
+    if nick_match:
+        nickname = nick_match.group(1).strip()
+        before = (before[:nick_match.start()] + before[nick_match.end():]).strip()
 
-    given = safe_str(primary.get("given"))
-    surname = safe_str(primary.get("surname"))
-    return given, surname
+    # Remaining tokens before surname: given + middle
+    if before:
+        tokens = before.split()
+        if tokens:
+            given = tokens[0]
+            if len(tokens) > 1:
+                middle = tokens[1:]
 
+    return {
+        "given": given,
+        "middle": middle,
+        "surname": surname,
+        "nickname": nickname,
+    }
+
+
+def get_normalized_name_view(person: Dict[str, Any]) -> Dict[str, str]:
+    """
+    Unified, backward-compatible name accessor.
+
+    Returns a dict with:
+      - given:        original given name (best effort)
+      - surname:      original surname (best effort)
+      - given_norm:   normalized token for given
+      - surname_norm: normalized token for surname
+      - full_norm:    "<given_norm> <surname_norm>" or "" if not available
+
+    Priority:
+      1) name_block.normalized.{given, surname}
+      2) name_block.parsed.{given, surname}
+      3) person["names"] list (dict or string entries)
+      4) fallback single string fields: name / full_name / display_name
+    """
+
+    given = ""
+    surname = ""
+
+    # 1) Preferred: name_block
+    block = person.get("name_block")
+    if isinstance(block, dict):
+        norm = block.get("normalized") or {}
+        parsed = block.get("parsed") or {}
+
+        given = safe_str(norm.get("given") or parsed.get("given") or "")
+        surname = safe_str(norm.get("surname") or parsed.get("surname") or "")
+
+        # If both empty, try raw as a last-ditch parse
+        if not given and not surname:
+            raw = safe_str(block.get("raw") or "")
+            raw = raw.replace("/", " ")
+            parts = raw.split()
+            if len(parts) == 1:
+                surname = parts[0]
+            elif len(parts) >= 2:
+                given = parts[0]
+                surname = parts[-1]
+
+    # 2) Fallback: names list
+    if not (given or surname):
+        names = person.get("names", [])
+        if isinstance(names, list) and names:
+            primary_dict = None
+
+            # Prefer dict entries with type="primary"
+            for n in names:
+                if isinstance(n, dict) and n.get("type", "").lower() == "primary":
+                    primary_dict = n
+                    break
+
+            # If no explicit primary, use first dict entry
+            if primary_dict is None:
+                for n in names:
+                    if isinstance(n, dict):
+                        primary_dict = n
+                        break
+
+            if primary_dict is not None:
+                given = safe_str(primary_dict.get("given") or "")
+                surname = safe_str(primary_dict.get("surname") or "")
+            else:
+                # names list may contain strings
+                first = names[0]
+                if isinstance(first, str):
+                    raw = first.replace("/", " ")
+                    parts = raw.split()
+                    if len(parts) == 1:
+                        surname = parts[0]
+                    elif len(parts) >= 2:
+                        given = parts[0]
+                        surname = parts[-1]
+
+    # 3) Fallback: single string fields
+    if not (given or surname):
+        for key in ("name", "full_name", "display_name"):
+            val = person.get(key)
+            if isinstance(val, str) and val.strip():
+                raw = val.replace("/", " ")
+                parts = raw.split()
+                if len(parts) == 1:
+                    surname = parts[0]
+                elif len(parts) >= 2:
+                    given = parts[0]
+                    surname = parts[-1]
+                break
+
+    given_norm = normalize_token(given)
+    surname_norm = normalize_token(surname)
+
+    if not given_norm:
+        given_norm = "unknown"
+    if not surname_norm:
+        surname_norm = "unknown"
+
+    full_norm = (given_norm + " " + surname_norm).strip()
+
+    return {
+        "given": given,
+        "surname": surname,
+        "given_norm": given_norm,
+        "surname_norm": surname_norm,
+        "full_norm": full_norm,
+    }
+
+
+    """
+    Return a unified normalized name structure, using:
+
+      1) name_block.normalized   (preferred)
+      2) name_block.parsed       (fallback)
+      3) legacy person["names"]  (dict or GEDCOM-style string)
+      4) else, empty fields
+
+    Returned shape:
+
+        {
+            "given": str | None,
+            "middle": List[str],
+            "surname": str | None,
+            "nickname": str | None,
+            "maiden_name": str | None,
+            "title": str | None,
+            "full_name_normalized": str | None,
+        }
+    """
+    block = person.get("name_block") or {}
+    norm = block.get("normalized") or {}
+    parsed = block.get("parsed") or {}
+
+    # Preferred sources
+    given = norm.get("given") or parsed.get("given")
+    middle = norm.get("middle") or parsed.get("middle")
+    surname = norm.get("surname") or parsed.get("surname")
+    nickname = norm.get("nickname") or parsed.get("nickname")
+    maiden_name = norm.get("maiden_name") or parsed.get("maiden_name")
+    title = norm.get("title") or parsed.get("title")
+    full_norm = norm.get("full_name_normalized")
+
+    # Coerce middle to list
+    middle_list = _ensure_list(middle)
+
+    # If we still don't have enough info, fall back to legacy "names"
+    if not (given or surname or full_norm):
+        names = person.get("names", [])
+        if isinstance(names, list) and names:
+            primary = None
+
+            # Case 1: dict entries like {"given": "...", "surname": "..."}
+            for n in names:
+                if isinstance(n, dict) and n.get("type", "").lower() == "primary":
+                    primary = n
+                    break
+            if primary is None:
+                # first dict if any
+                primary = next((n for n in names if isinstance(n, dict)), None)
+
+            if isinstance(primary, dict):
+                given = given or primary.get("given")
+                surname = surname or primary.get("surname")
+                # if middle exists as separate field, we honor it
+                if not middle_list and primary.get("middle"):
+                    middle_list = _ensure_list(primary.get("middle"))
+
+            # Case 2: strings like "David Thomas /Menzies/"
+            if primary is None:
+                first = names[0]
+                if isinstance(first, str):
+                    parsed_fallback = parse_gedcom_name_string(first)
+                    given = given or parsed_fallback["given"]
+                    surname = surname or parsed_fallback["surname"]
+                    if not middle_list and parsed_fallback["middle"]:
+                        middle_list = parsed_fallback["middle"]
+                    if not nickname and parsed_fallback["nickname"]:
+                        nickname = parsed_fallback["nickname"]
+
+    # If no full_name_normalized, synthesize from parts
+    if not full_norm:
+        parts: List[str] = []
+        if given:
+            parts.append(str(given))
+        parts.extend(middle_list)
+        if surname:
+            parts.append(str(surname))
+        full_norm = " ".join(p for p in parts if p).strip().lower() or None
+
+    return {
+        "given": given,
+        "middle": middle_list,
+        "surname": surname,
+        "nickname": nickname,
+        "maiden_name": maiden_name,
+        "title": title,
+        "full_name_normalized": full_norm,
+    }
 
 def extract_normalized_given_surname(person: Dict[str, Any]) -> Tuple[str, str]:
-    given, surname = extract_primary_name(person)
-    return normalize_token(given), normalize_token(surname)
+    """
+    Thin wrapper around get_normalized_name_view, returning
+    normalized given/surname tokens for blocking + scoring.
+    """
+    view = get_normalized_name_view(person)
+    return view["given_norm"], view["surname_norm"]
 
+    """
+    Return normalized (given, surname) tokens for blocking and scoring.
+
+    Uses get_normalized_name_view; if nothing is available, returns ("","").
+    """
+    view = get_normalized_name_view(person)
+    given_n = normalize_token(safe_str(view.get("given", "")))
+    surname_n = normalize_token(safe_str(view.get("surname", "")))
+    return given_n, surname_n
+
+# ---------------------------------------------------------------------------
+# Birth event / date / place extraction
+# ---------------------------------------------------------------------------
 
 def extract_birth_event(person: Dict[str, Any]) -> Optional[Dict[str, Any]]:
     """
@@ -187,14 +420,11 @@ def extract_birth_year(person: Dict[str, Any]) -> Optional[int]:
 def extract_birth_year_bucket(person: Dict[str, Any]) -> str:
     """
     Return a coarse birth-year bucket string.
-    Example: "1880" (exact), "1880s", "UNKNOWN".
-    For blocking we just need something stable-ish; we will use the
-    exact year if we can parse it, otherwise "UNKNOWN".
+    For now we use the exact year if parsed, else "UNKNOWN".
     """
     year = extract_birth_year(person)
     if year is None:
         return "UNKNOWN"
-    # You *could* put them in decade buckets; for now keep exact year.
     return str(year)
 
 
@@ -234,8 +464,11 @@ def individual_blocking_key(person: Dict[str, Any]) -> str:
     given_n, surname_n = extract_normalized_given_surname(person)
     year_bucket = extract_birth_year_bucket(person)
     place_id = extract_birth_place_uuid(person)
-    # We intentionally ignore given name for blocking; it's used in scoring.
-    return f"{surname_n}|{year_bucket}|{place_id}"
+
+    # If we truly have nothing, we still need a key but this shouldn't
+    # collapse all individuals *unless* they really all lack data.
+    surname_component = surname_n or "unknown_surname"
+    return f"{surname_component}|{year_bucket}|{place_id}"
 
 
 def build_individual_blocks(individuals: Dict[str, Any]) -> Dict[str, List[str]]:
@@ -278,6 +511,48 @@ def generate_block_pairs(blocks: Dict[str, List[str]], max_pairs: int) -> List[T
 # ---------------------------------------------------------------------------
 
 def name_similarity(p1: Dict[str, Any], p2: Dict[str, Any]) -> float:
+    """
+    Name similarity with strict surname requirement (Option B).
+
+    Logic:
+      - Compute normalized surname & given tokens via get_normalized_name_view.
+      - If either surname is effectively unknown → 0.0
+      - Compute surname fuzzy score.
+      - If surname_score < STRICT_SURNAME_MATCH_THRESHOLD → 0.0
+      - Else combine:
+            score = 0.7 * surname_score + 0.3 * given_score
+
+    This guarantees:
+      - No non-trivial score unless surnames are *very* close (≥ 0.95).
+      - Downstream thresholds (min_score, auto-merge) still fully apply.
+    """
+    v1 = get_normalized_name_view(p1)
+    v2 = get_normalized_name_view(p2)
+
+    s1 = v1["surname_norm"]
+    s2 = v2["surname_norm"]
+    g1 = v1["given_norm"]
+    g2 = v2["given_norm"]
+
+    # If we don't have usable surnames, we don't risk a false positive.
+    if not s1 or s1 == "unknown" or not s2 or s2 == "unknown":
+        return 0.0
+
+    surname_score = jaro_ratio(s1, s2)
+    # Option B: strict surname requirement
+    if surname_score < STRICT_SURNAME_MATCH_THRESHOLD:
+        return 0.0
+
+    # Given name similarity (so “John” vs “Jon” can help, but never override surname gate)
+    given_score = jaro_ratio(g1, g2) if (g1 and g2 and g1 != "unknown" and g2 != "unknown") else 0.0
+
+    return 0.7 * surname_score + 0.3 * given_score
+
+
+    """
+    Compare normalized names using name_block (or legacy fields).
+    Weighted more on surname, then given.
+    """
     g1, s1 = extract_normalized_given_surname(p1)
     g2, s2 = extract_normalized_given_surname(p2)
 
@@ -370,7 +645,7 @@ def compute_individual_similarity(
     """
     Compare two individuals and return (score, details dict).
     """
-    sims = {}
+    sims: Dict[str, float] = {}
     sims["name"] = name_similarity(p1, p2)
     sims["birth"] = birth_similarity(p1, p2)
     sims["place"] = place_similarity(p1, p2)
@@ -606,42 +881,67 @@ def apply_merges_to_registry(
 ) -> Dict[str, Any]:
     """
     Apply auto-merges to the registry, retain originals for review/no_merge.
-    - For now, we:
-        * auto_merge → create a new unified individual U<CID>
-        * review/no_merge → keep originals
-    - We also rewrite families using the resulting ID map.
+
+    - Start from an identity mapping: every individual is kept as-is.
+    - auto_merge clusters create a new unified individual U<CID> and
+      redirect member IDs to that unified ID.
+    - review / no_merge clusters keep their members unchanged.
+    - Individuals that never appear in any cluster are preserved.
+
+    The resulting registry gains:
+      - "individuals": updated individuals map
+      - "families":   rewritten via id_map
+      - "id_map":     original_id -> final_id
     """
     individuals = registry.get("individuals", {})
-    new_individuals: Dict[str, Any] = {}
+    families = registry.get("families", {})
 
+    # 1) Start from identity: everyone maps to themselves and is retained.
+    new_individuals: Dict[str, Any] = {}
     id_map: Dict[str, str] = {}
 
+    for iid, person in individuals.items():
+        new_individuals[iid] = person
+        id_map[iid] = iid
+
+    # 2) If there is no merge_plan at all, just rewrite families with
+    #    the identity map and return.
+    if not merge_plan:
+        out = dict(registry)
+        out["individuals"] = new_individuals
+        out["families"] = rewrite_families(families, id_map)
+        out["id_map"] = id_map
+        return out
+
+    # 3) Process each cluster in the merge plan.
     for cid, info in merge_plan.items():
         members = info.get("members", [])
         action = info.get("action", "no_merge")
 
         if action == "auto_merge" and len(members) >= 2:
+            # Create a unified individual for this cluster.
             new_id = f"U{cid}"
             unified = merge_individual_group(new_id, members, individuals)
             new_individuals[new_id] = unified
+
+            # Redirect all members to the unified ID and remove originals.
             for m in members:
                 id_map[m] = new_id
+                if m in new_individuals:
+                    del new_individuals[m]
         else:
-            # no_merge or review → keep them as-is
+            # review / no_merge: keep them as-is; identity mapping already set.
             for m in members:
-                if m not in new_individuals and m in individuals:
-                    new_individuals[m] = individuals[m]
                 id_map.setdefault(m, m)
 
-    # Rewrite families via id_map
-    new_families = rewrite_families(registry.get("families", {}), id_map)
+    # 4) Rewrite families via the final id_map.
+    new_families = rewrite_families(families, id_map)
 
     out = dict(registry)
     out["individuals"] = new_individuals
     out["families"] = new_families
     out["id_map"] = id_map
     return out
-
 
 def merge_individual_group(
     new_id: str,
@@ -668,6 +968,10 @@ def merge_individual_group(
         # Merge names
         if "names" in p and isinstance(p["names"], list):
             merged["names"].extend(p["names"])
+
+        # Carry over name_block if present (keep the first as canonical)
+        if "name_block" in p and "name_block" not in merged:
+            merged["name_block"] = p["name_block"]
 
         # Merge events
         if "events" in p and isinstance(p["events"], list):

@@ -1,0 +1,1284 @@
+{
+  "tables": {
+    "header": {
+      "columns": {
+        "id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "gedcom_version": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "character_set": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "source_system": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "submitter": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "destination": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "record_date": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "place": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "created_at": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "last_modified": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": {
+        "check": [],
+        "unique": [
+          [
+            "id"
+          ]
+        ]
+      },
+      "create_sql": "CREATE TABLE header (\n  id             TEXT PRIMARY KEY,\n  gedcom_version TEXT,\n  character_set  TEXT,\n  source_system  TEXT,\n  submitter      TEXT,\n  destination    TEXT,\n  record_date    TEXT,  -- renamed from \"date\"\n  place          TEXT,\n  created_at     TEXT DEFAULT (CURRENT_TIMESTAMP),\n  last_modified  TEXT DEFAULT (CURRENT_TIMESTAMP)\n)"
+    },
+    "places": {
+      "columns": {
+        "id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "standardized_name": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "latitude": {
+          "type": "REAL",
+          "not_null": false,
+          "default": null
+        },
+        "longitude": {
+          "type": "REAL",
+          "not_null": false,
+          "default": null
+        },
+        "country": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "region": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "city": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "source": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "created_at": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "last_modified": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": {
+        "check": [
+          "latitude BETWEEN -90 AND 90",
+          "longitude BETWEEN -180 AND 180",
+          "LENGTH(country) = 2"
+],
+
+        "unique": [
+          [
+            "id"
+          ]
+        ]
+      },
+      "create_sql": "CREATE TABLE places (\n  id                TEXT PRIMARY KEY,\n  standardized_name TEXT NOT NULL,\n  latitude          REAL CHECK (latitude BETWEEN -90 AND 90),\n  longitude         REAL CHECK (longitude BETWEEN -180 AND 180),\n  country           TEXT CHECK (LENGTH(country) = 2),\n  region            TEXT,\n  city              TEXT,\n  source            TEXT,\n  created_at        TEXT DEFAULT (CURRENT_TIMESTAMP),\n  last_modified     TEXT DEFAULT (CURRENT_TIMESTAMP)\n)"
+    },
+    "individuals": {
+      "columns": {
+        "id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "gedcom_id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "gedcom_xref": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "full_name": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "npfx": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "given_name": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "middle_name": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "spfx": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "surname": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "nsfx": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "nick_name": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "title": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "residual_name_data": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "name_type": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "sex": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "'U'"
+        },
+        "birth_date_raw": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "birth_date": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "birth_date_qualifier": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "birth_place": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "death_date_raw": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "death_date": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "death_date_qualifier": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "death_place": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "occupation": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "marriage_date_raw": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "marriage_date": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "marriage_date_qualifier": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "marriage_place": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "created_at": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "last_modified": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "death_place",
+          "ref_table": "places",
+          "ref_column": "id",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE"
+        },
+        {
+          "column": "birth_place",
+          "ref_table": "places",
+          "ref_column": "id",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE"
+        }
+      ],
+      "constraints": {
+        "check": [
+          "sex IN ('M','F','U')",
+          "birth_date_qualifier IN ('ABT','BEF','AFT','BET','CAL','EST')",
+          "death_date_qualifier IN ('ABT','BEF','AFT','BET','CAL','EST')",
+          "marriage_date_qualifier IN ('ABT','BEF','AFT','BET','CAL','EST')"
+        ],
+        "unique": [
+          [
+            "gedcom_id"
+          ],
+          [
+            "id"
+          ]
+        ]
+      },
+      "create_sql": "CREATE TABLE individuals (\n  id                       TEXT PRIMARY KEY,\n  gedcom_id                TEXT NOT NULL UNIQUE,\n  gedcom_xref              TEXT NOT NULL,\n\n  -- Full original \"NAME\" line if desired\n  full_name                TEXT NOT NULL,\n\n  -- Name components\n  npfx                     TEXT,   -- Name prefix (Dr., Sir, etc.)\n  given_name               TEXT,\n  middle_name              TEXT,\n  spfx                     TEXT,   -- Surname prefix (e.g., \"de\", \"van\", \"Mac\")\n  surname                  TEXT,\n  nsfx                     TEXT,   -- Name suffix (Jr., Sr., III, etc.)\n  nick_name                TEXT,\n  title                    TEXT,   -- Store a primary title (e.g., \"Earl of Argyll\")\n  residual_name_data       TEXT,   -- Catch-all for leftover/junk\n\n  name_type                TEXT,\n  sex                      TEXT DEFAULT 'U' CHECK (sex IN ('M','F','U')),\n\n  birth_date_raw           TEXT,\n  birth_date               TEXT,\n  birth_date_qualifier     TEXT CHECK (birth_date_qualifier IN ('ABT','BEF','AFT','BET','CAL','EST')),\n  birth_place              TEXT,\n\n  death_date_raw           TEXT,\n  death_date               TEXT,\n  death_date_qualifier     TEXT CHECK (death_date_qualifier IN ('ABT','BEF','AFT','BET','CAL','EST')),\n  death_place              TEXT,\n\n  occupation               TEXT,\n\n  marriage_date_raw        TEXT,\n  marriage_date            TEXT,\n  marriage_date_qualifier  TEXT CHECK (marriage_date_qualifier IN ('ABT','BEF','AFT','BET','CAL','EST')),\n  marriage_place           TEXT,\n\n  created_at               TEXT DEFAULT (CURRENT_TIMESTAMP),\n  last_modified            TEXT DEFAULT (CURRENT_TIMESTAMP),\n\n  FOREIGN KEY (birth_place) REFERENCES places(id) ON DELETE CASCADE,\n  FOREIGN KEY (death_place) REFERENCES places(id) ON DELETE CASCADE\n)"
+    },
+    "raw_individuals": {
+      "columns": {
+        "id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "individual_id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "raw_name": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "tag": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "value": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "created_at": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "last_modified": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "individual_id",
+          "ref_table": "individuals",
+          "ref_column": "id",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE"
+        }
+      ],
+      "constraints": {
+        "check": [
+          "tag IN ('NAME','GIVN','SURN','NPFX','NSFX','NICK','ALIA','ROMN','PONE')"
+        ],
+        "unique": [
+          [
+            "id"
+          ]
+        ]
+      },
+      "create_sql": "CREATE TABLE raw_individuals (\n  id             TEXT PRIMARY KEY,\n  individual_id  TEXT NOT NULL,\n  raw_name       TEXT,\n  tag            TEXT NOT NULL CHECK (tag IN ('NAME','GIVN','SURN','NPFX','NSFX','NICK','ALIA','ROMN','PONE')),\n  value          TEXT,\n  created_at     TEXT DEFAULT (CURRENT_TIMESTAMP),\n  last_modified  TEXT DEFAULT (CURRENT_TIMESTAMP),\n\n  FOREIGN KEY (individual_id) REFERENCES individuals(id) ON DELETE CASCADE\n)"
+    },
+    "individual_aliases": {
+      "columns": {
+        "id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "individual_id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "alias_name": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "alias_type": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "alias_source": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "is_primary_alias": {
+          "type": "INTEGER",
+          "not_null": false,
+          "default": "0"
+        },
+        "created_at": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "last_modified": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "individual_id",
+          "ref_table": "individuals",
+          "ref_column": "id",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE"
+        }
+      ],
+      "constraints": {
+        "check": [
+          "alias_type IN ('Alternative','Nickname','Maiden Name')"
+        ],
+        "unique": [
+          [
+            "id"
+          ]
+        ]
+      },
+      "create_sql": "CREATE TABLE individual_aliases (\n  id               TEXT PRIMARY KEY,\n  individual_id    TEXT NOT NULL,\n  alias_name       TEXT NOT NULL,\n  alias_type       TEXT CHECK (alias_type IN ('Alternative','Nickname','Maiden Name')),\n  alias_source     TEXT,\n  is_primary_alias INTEGER DEFAULT 0,\n  created_at       TEXT DEFAULT (CURRENT_TIMESTAMP),\n  last_modified    TEXT DEFAULT (CURRENT_TIMESTAMP),\n\n  FOREIGN KEY (individual_id) REFERENCES individuals(id) ON DELETE CASCADE\n)"
+    },
+    "enriched_names": {
+      "columns": {
+        "individual_id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "romanized_name_ascii": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "romanized_name_pinyin": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "romanized_name_pone": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "phonetic_name_soundex": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "phonetic_name_pone": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "is_enriched": {
+          "type": "INTEGER",
+          "not_null": true,
+          "default": null
+        },
+        "enrichment_method": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "created_at": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "last_modified": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "primary_keys": [
+        "individual_id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "individual_id",
+          "ref_table": "individuals",
+          "ref_column": "id",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE"
+        }
+      ],
+      "constraints": {
+        "check": [
+          "is_enriched IN (0,1)"
+        ],
+        "unique": [
+          [
+            "individual_id"
+          ]
+        ]
+      },
+      "create_sql": "CREATE TABLE enriched_names (\n  individual_id            TEXT PRIMARY KEY,\n  romanized_name_ascii     TEXT,\n  romanized_name_pinyin    TEXT,\n  romanized_name_pone      TEXT,  -- newly added for a second Romanized variant\n  phonetic_name_soundex    TEXT,\n  phonetic_name_pone       TEXT,  -- newly added for PONE form\n  is_enriched              INTEGER NOT NULL CHECK (is_enriched IN (0,1)),\n  enrichment_method        TEXT,\n  created_at               TEXT DEFAULT (CURRENT_TIMESTAMP),\n  last_modified            TEXT DEFAULT (CURRENT_TIMESTAMP),\n\n  FOREIGN KEY (individual_id) REFERENCES individuals(id) ON DELETE CASCADE\n)"
+    },
+    "attributes": {
+      "columns": {
+        "id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "individual_id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "attribute_type": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "attribute_value": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "source": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "created_at": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "last_modified": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "individual_id",
+          "ref_table": "individuals",
+          "ref_column": "id",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE"
+        }
+      ],
+      "constraints": {
+        "check": [
+          "attribute_type IN ('Title','Occupation','Religious Title','Territorial Designation')"
+        ],
+        "unique": [
+          [
+            "id"
+          ]
+        ]
+      },
+      "create_sql": "CREATE TABLE attributes (\n  id               TEXT PRIMARY KEY,\n  individual_id    TEXT NOT NULL,\n  attribute_type   TEXT NOT NULL CHECK (attribute_type IN ('Title','Occupation','Religious Title','Territorial Designation')),\n  attribute_value  TEXT,\n  source           TEXT,\n  created_at       TEXT DEFAULT (CURRENT_TIMESTAMP),\n  last_modified    TEXT DEFAULT (CURRENT_TIMESTAMP),\n\n  FOREIGN KEY (individual_id) REFERENCES individuals(id) ON DELETE CASCADE\n)"
+    },
+    "families": {
+      "columns": {
+        "id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "fam_id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "husband_id": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "wife_id": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "marriage_date_raw": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "marriage_date": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "marriage_date_qualifier": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "marriage_place": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "divorce_date_raw": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "divorce_date": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "divorce_date_qualifier": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "divorce_place": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "created_at": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "last_modified": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "divorce_place",
+          "ref_table": "places",
+          "ref_column": "id",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE"
+        },
+        {
+          "column": "marriage_place",
+          "ref_table": "places",
+          "ref_column": "id",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE"
+        },
+        {
+          "column": "wife_id",
+          "ref_table": "individuals",
+          "ref_column": "id",
+          "on_update": "NO ACTION",
+          "on_delete": "SET NULL"
+        },
+        {
+          "column": "husband_id",
+          "ref_table": "individuals",
+          "ref_column": "id",
+          "on_update": "NO ACTION",
+          "on_delete": "SET NULL"
+        }
+      ],
+      "constraints": {
+        "check": [
+          "marriage_date_qualifier IN ('ABT','BEF','AFT','BET','CAL','EST')",
+          "divorce_date_qualifier IN ('ABT','BEF','AFT','BET','CAL','EST')"
+        ],
+        "unique": [
+          [
+            "fam_id"
+          ],
+          [
+            "id"
+          ]
+        ]
+      },
+      "create_sql": "CREATE TABLE families (\n  id                            TEXT PRIMARY KEY,\n  fam_id                        TEXT NOT NULL UNIQUE,\n  husband_id                    TEXT,\n  wife_id                       TEXT,\n  marriage_date_raw             TEXT,\n  marriage_date                 TEXT,\n  marriage_date_qualifier       TEXT CHECK (marriage_date_qualifier IN ('ABT','BEF','AFT','BET','CAL','EST')),\n  marriage_place                TEXT,\n  divorce_date_raw              TEXT,\n  divorce_date                  TEXT,\n  divorce_date_qualifier        TEXT CHECK (divorce_date_qualifier IN ('ABT','BEF','AFT','BET','CAL','EST')),\n  divorce_place                 TEXT,\n  created_at                    TEXT DEFAULT (CURRENT_TIMESTAMP),\n  last_modified                 TEXT DEFAULT (CURRENT_TIMESTAMP),\n\n  FOREIGN KEY (husband_id)      REFERENCES individuals(id) ON DELETE SET NULL,\n  FOREIGN KEY (wife_id)         REFERENCES individuals(id) ON DELETE SET NULL,\n  FOREIGN KEY (marriage_place)  REFERENCES places(id) ON DELETE CASCADE,\n  FOREIGN KEY (divorce_place)   REFERENCES places(id) ON DELETE CASCADE\n)"
+    },
+    "family_children": {
+      "columns": {
+        "id": {
+          "type": "INTEGER",
+          "not_null": true,
+          "default": null
+        },
+        "family_id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "child_id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        }
+      },
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "child_id",
+          "ref_table": "individuals",
+          "ref_column": "id",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE"
+        },
+        {
+          "column": "family_id",
+          "ref_table": "families",
+          "ref_column": "id",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE"
+        }
+      ],
+      "constraints": {
+        "check": [],
+        "unique": []
+      },
+      "create_sql": "CREATE TABLE family_children (\n  id         INTEGER PRIMARY KEY,\n  family_id  TEXT NOT NULL,\n  child_id   TEXT NOT NULL,\n\n  FOREIGN KEY (family_id) REFERENCES families(id) ON DELETE CASCADE,\n  FOREIGN KEY (child_id)  REFERENCES individuals(id) ON DELETE CASCADE\n)"
+    },
+    "events": {
+      "columns": {
+        "id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "event_type": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "event_date_raw": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "event_date": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "event_date_qualifier": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "event_place": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "event_detail": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "individual_id": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "family_id": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "created_at": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "last_modified": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "family_id",
+          "ref_table": "families",
+          "ref_column": "id",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE"
+        },
+        {
+          "column": "individual_id",
+          "ref_table": "individuals",
+          "ref_column": "id",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE"
+        },
+        {
+          "column": "event_place",
+          "ref_table": "places",
+          "ref_column": "id",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE"
+        }
+      ],
+      "constraints": {
+       "check": [
+         "event_date_qualifier IN ('ABT','BEF','AFT','BET','CAL','EST')",
+         "individual_id IS NOT NULL OR family_id IS NOT NULL"
+],
+        "unique": [
+          [
+            "id"
+          ]
+        ]
+      },
+      "create_sql": "CREATE TABLE events (\n  id                     TEXT PRIMARY KEY,\n  event_type             TEXT NOT NULL,\n  event_date_raw         TEXT,\n  event_date             TEXT,\n  event_date_qualifier   TEXT CHECK (event_date_qualifier IN ('ABT','BEF','AFT','BET','CAL','EST')),\n  event_place            TEXT,\n  event_detail           TEXT,\n  individual_id          TEXT,\n  family_id              TEXT,\n  created_at             TEXT DEFAULT (CURRENT_TIMESTAMP),\n  last_modified          TEXT DEFAULT (CURRENT_TIMESTAMP),\n  CHECK (individual_id IS NOT NULL OR family_id IS NOT NULL),\n\n  FOREIGN KEY (event_place)   REFERENCES places(id) ON DELETE CASCADE,\n  FOREIGN KEY (individual_id) REFERENCES individuals(id) ON DELETE CASCADE,\n  FOREIGN KEY (family_id)     REFERENCES families(id) ON DELETE CASCADE\n)"
+    },
+    "repositories": {
+      "columns": {
+        "repo_id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "name": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "address": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "phone": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "email": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "fax": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "www": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "created_at": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "last_modified": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "primary_keys": [
+        "repo_id"
+      ],
+      "foreign_keys": [],
+      "constraints": {
+        "check": [],
+        "unique": [
+          [
+            "repo_id"
+          ]
+        ]
+      },
+      "create_sql": "CREATE TABLE repositories (\n  repo_id       TEXT PRIMARY KEY,\n  name          TEXT NOT NULL,\n  address       TEXT,\n  phone         TEXT,\n  email         TEXT,\n  fax           TEXT,\n  www           TEXT,\n  created_at    TEXT DEFAULT (CURRENT_TIMESTAMP),\n  last_modified TEXT DEFAULT (CURRENT_TIMESTAMP)\n)"
+    },
+    "sources": {
+      "columns": {
+        "id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "sour_id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "title": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "author": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "publication": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "call_number": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "repository_id": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "created_at": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "last_modified": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "repository_id",
+          "ref_table": "repositories",
+          "ref_column": "repo_id",
+          "on_update": "NO ACTION",
+          "on_delete": "SET NULL"
+        }
+      ],
+      "constraints": {
+        "check": [],
+        "unique": [
+          [
+            "id"
+          ]
+        ]
+      },
+      "create_sql": "CREATE TABLE sources (\n  id            TEXT PRIMARY KEY,\n  sour_id       TEXT NOT NULL,\n  title         TEXT,\n  author        TEXT,\n  publication   TEXT,\n  call_number   TEXT,\n  repository_id TEXT,\n  created_at    TEXT DEFAULT (CURRENT_TIMESTAMP),\n  last_modified TEXT DEFAULT (CURRENT_TIMESTAMP),\n\n  FOREIGN KEY (repository_id) REFERENCES repositories(repo_id) ON DELETE SET NULL\n)"
+    },
+    "citations": {
+      "columns": {
+        "id": {
+          "type": "INTEGER",
+          "not_null": true,
+          "default": null
+        },
+        "source_id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "ref_id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "citation_text": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "created_at": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "last_modified": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [
+        {
+          "column": "source_id",
+          "ref_table": "sources",
+          "ref_column": "id",
+          "on_update": "NO ACTION",
+          "on_delete": "CASCADE"
+        }
+      ],
+      "constraints": {
+        "check": [],
+        "unique": []
+      },
+      "create_sql": "CREATE TABLE citations (\n  id            INTEGER PRIMARY KEY,\n  source_id     TEXT NOT NULL,\n  ref_id        TEXT NOT NULL,\n  citation_text TEXT,\n  created_at    TEXT DEFAULT (CURRENT_TIMESTAMP),\n  last_modified TEXT DEFAULT (CURRENT_TIMESTAMP),\n\n  FOREIGN KEY (source_id) REFERENCES sources(id) ON DELETE CASCADE\n)"
+    },
+    "multimedia": {
+      "columns": {
+        "id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "obje_id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "file_path": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "media_format": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "title": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "notes": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "created_at": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "last_modified": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": {
+        "check": [],
+        "unique": [
+          [
+            "id"
+          ]
+        ]
+      },
+      "create_sql": "CREATE TABLE multimedia (\n  id            TEXT PRIMARY KEY,\n  obje_id       TEXT NOT NULL,\n  file_path     TEXT,\n  media_format  TEXT,\n  title         TEXT,\n  notes         TEXT,\n  created_at    TEXT DEFAULT (CURRENT_TIMESTAMP),\n  last_modified TEXT DEFAULT (CURRENT_TIMESTAMP)\n)"
+    },
+    "notes": {
+      "columns": {
+        "id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "note_id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "content": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "created_at": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "last_modified": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": {
+        "check": [],
+        "unique": [
+          [
+            "id"
+          ]
+        ]
+      },
+      "create_sql": "CREATE TABLE notes (\n  id            TEXT PRIMARY KEY,\n  note_id       TEXT NOT NULL,\n  content       TEXT,\n  created_at    TEXT DEFAULT (CURRENT_TIMESTAMP),\n  last_modified TEXT DEFAULT (CURRENT_TIMESTAMP)\n)"
+    },
+    "custom_tags": {
+      "columns": {
+        "id": {
+          "type": "INTEGER",
+          "not_null": true,
+          "default": null
+        },
+        "ref_id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "tag": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "value": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "created_at": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "last_modified": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": {
+        "check": [],
+        "unique": []
+      },
+      "create_sql": "CREATE TABLE custom_tags (\n  id            INTEGER PRIMARY KEY,\n  ref_id        TEXT NOT NULL,\n  tag           TEXT NOT NULL,\n  value         TEXT,\n  created_at    TEXT DEFAULT (CURRENT_TIMESTAMP),\n  last_modified TEXT DEFAULT (CURRENT_TIMESTAMP)\n)"
+    },
+    "attributes_global": {
+      "columns": {
+        "id": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "attribute_name": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "attribute_value": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": null
+        },
+        "created_at": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        },
+        "last_modified": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": {
+        "check": [],
+        "unique": [
+          [
+            "id"
+          ]
+        ]
+      },
+      "create_sql": "CREATE TABLE attributes_global (\n  id              TEXT PRIMARY KEY,\n  attribute_name  TEXT NOT NULL,\n  attribute_value TEXT,\n  created_at      TEXT DEFAULT (CURRENT_TIMESTAMP),\n  last_modified   TEXT DEFAULT (CURRENT_TIMESTAMP)\n)"
+    },
+    "logs": {
+      "columns": {
+        "id": {
+          "type": "INTEGER",
+          "not_null": true,
+          "default": null
+        },
+        "log_level": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "log_message": {
+          "type": "TEXT",
+          "not_null": true,
+          "default": null
+        },
+        "created_at": {
+          "type": "TEXT",
+          "not_null": false,
+          "default": "CURRENT_TIMESTAMP"
+        }
+      },
+      "primary_keys": [
+        "id"
+      ],
+      "foreign_keys": [],
+      "constraints": {
+        "check": [
+          "log_level IN ('INFO','WARNING','ERROR')"
+        ],
+        "unique": []
+      },
+      "create_sql": "CREATE TABLE logs (\n  id          INTEGER PRIMARY KEY,\n  log_level   TEXT NOT NULL CHECK (log_level IN ('INFO','WARNING','ERROR')),\n  log_message TEXT NOT NULL,\n  created_at  TEXT DEFAULT (CURRENT_TIMESTAMP)\n)"
+    }
+  },
+  "views": {
+    "v_individuals_details": {
+      "create_sql": "CREATE VIEW v_individuals_details AS\n  SELECT\n    i.id,\n    i.full_name,\n    i.gedcom_xref,\n    p.standardized_name  AS birth_place,\n    p2.standardized_name AS death_place\n  FROM individuals i\n  LEFT JOIN places p\n    ON i.birth_place = p.id\n  LEFT JOIN places p2\n    ON i.death_place = p2.id"
+    }
+  },
+  "triggers": {
+    "trg_update_individuals_last_modified": {
+      "create_sql": "CREATE TRIGGER trg_update_individuals_last_modified\nAFTER UPDATE ON individuals\nFOR EACH ROW\nBEGIN\n  UPDATE individuals\n  SET last_modified = CURRENT_TIMESTAMP\n  WHERE id = OLD.id;\nEND",
+      "event_type": "AFTER UPDATE"
+    }
+  },
+  "indexes": {
+    "idx_places_standardized_name": {
+      "table": "places"
+    },
+    "idx_attributes_individual_id": {
+      "table": "attributes"
+    }
+  }
+}

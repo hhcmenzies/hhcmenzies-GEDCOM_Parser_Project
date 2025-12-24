@@ -10,6 +10,3 @@ Holds modules for:
 Minimal, SAFE package initializer.
 """
 
-from .place_standardizer import standardize_places
-
-__all__ = ["standardize_places"]

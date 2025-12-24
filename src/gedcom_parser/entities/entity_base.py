@@ -1,187 +1,183 @@
 """
-entity_base.py
+Base entity abstraction for GEDCOM-derived records.
 
-Common base class for genealogical entities (Individual, Family, Source, etc.).
+Phase 1 – Entities backbone
+===========================
 
-Goals:
-- Provide a shared set of core fields (pointer, tag, uuid, notes, sources, extras).
-- Provide a safe, cycle-aware serialization method (`to_dict`) suitable for JSON export.
-- Play nicely with:
-    * dataclasses
-    * Pydantic models (e.g. NameBlock / NormalizedName)
-    * simple nested dict/list structures
+This module defines a light-weight `BaseEntity` that can wrap the
+normalized blocks produced by the extraction layer.
 
-This module is intentionally lightweight and does NOT depend on the rest of the
-entities package, so it can be imported early by registry, models, exporter, etc.
+Design goals
+------------
+
+* Provide a consistent *shape* for entities:
+    - pointer: original GEDCOM XREF (e.g., "@I1@", "@F12@", "@S3@").
+    - tag:     record type ("INDI", "FAM", "SOUR", "REPO", "OBJE", ...).
+    - data:    normalized dict block that is stored in the EntityRegistry.
+    - raw_node: (optional) original parsed GEDCOM node (token tree dict).
+    - meta:    (optional) extra metadata (line numbers, provenance, flags).
+
+* Be conservative:
+    - Do NOT move core logic here.
+    - Do NOT change registry/exporter behavior.
+    - Act mostly as a structured envelope plus a few convenience helpers.
+
+Most of the "real" logic for individuals, families, etc. remains in:
+
+    - gedcom_parser.entities.extraction.*
+    - gedcom_parser.postprocess.*
+
+Future phases (C.24.4.10 and beyond) may:
+    - introduce typed subclasses (IndividualEntity, FamilyEntity, ...),
+    - add richer helpers for sources/notes/UUIDs,
+    - integrate directly with name/date/place normalization blocks.
+
+For now, BaseEntity is intentionally minimal.
 """
 
 from __future__ import annotations
 
-from dataclasses import asdict, dataclass, field, is_dataclass
-from typing import Any, Dict, List, Optional, Set
-from uuid import UUID, uuid4
-
-try:
-    # Optional: for Pydantic-based sub-objects like NameBlock
-    from pydantic import BaseModel as PydanticBaseModel  # type: ignore
-except Exception:  # pragma: no cover - pydantic may not be installed in all contexts
-    class PydanticBaseModel:  # type: ignore[no-redef]
-        """Fallback shim if Pydantic is not installed in all contexts."""
-        pass
-
-from gedcom_parser.logger import get_logger
-
-log = get_logger("entities.entity_base")
+from dataclasses import dataclass, field
+from typing import Any, Dict, Iterable, List, Optional
 
 
 @dataclass
 class BaseEntity:
     """
-    Base class for all entity types stored in the EntityRegistry.
+    Generic envelope for a normalized GEDCOM entity.
 
-    Fields
-    ------
+    Attributes
+    ----------
     pointer:
-        Original GEDCOM pointer (e.g. '@I123@', '@F45@', '@S12@').
+        Original GEDCOM XREF (e.g., "@I1@", "@F12@", "@S3@").
+
     tag:
-        Record type tag (e.g. 'INDI', 'FAM', 'SOUR', 'REPO', 'OBJE').
-    uuid:
-        Stable UUID for this entity instance. By default, a random v4 UUID is
-        generated, but callers can override this if they need deterministic IDs.
-    payload:
-        Main structured data payload for this entity. This typically includes
-        parsed fields such as name_block, events, attributes, etc.
-    notes:
-        Any notes associated with the entity (inline or record-level).
-    sources:
-        Source/citation identifiers associated with this entity.
-    extras:
-        Catch-all for tags/fields we don't yet model explicitly. This ensures we
-        never silently drop information from the GEDCOM: “nothing should be excluded”.
+        GEDCOM record type tag ("INDI", "FAM", "SOUR", "REPO", "OBJE", etc.).
+
+    data:
+        Normalized dictionary as produced by the extraction layer.
+        This is exactly what we store in EntityRegistry.{individuals,families,...}.
+
+    raw_node:
+        Optional original parsed GEDCOM node (token tree dict) for this entity.
+        Included for debugging / advanced enrichment, but not required.
+
+    meta:
+        Miscellaneous metadata:
+            - line numbers
+            - source file info
+            - flags used by post-processing
+
+        Left intentionally free-form.
     """
 
     pointer: str
     tag: str
+    data: Dict[str, Any]
+    raw_node: Optional[Dict[str, Any]] = None
+    meta: Dict[str, Any] = field(default_factory=dict)
 
-    uuid: UUID = field(default_factory=uuid4)
-    payload: Dict[str, Any] = field(default_factory=dict)
-    notes: List[str] = field(default_factory=list)
-    sources: List[str] = field(default_factory=list)
-    extras: Dict[str, Any] = field(default_factory=dict)
-
-    # -------------------------------------------------------------------------
-    # Convenience properties
-    # -------------------------------------------------------------------------
-    @property
-    def id(self) -> str:
-        """Alias for the GEDCOM pointer, for compatibility with older code."""
-        return self.pointer
-
-    # -------------------------------------------------------------------------
-    # Serialization
-    # -------------------------------------------------------------------------
-    def to_dict(
-        self,
-        *,
-        include_uuid: bool = True,
-        include_pointer: bool = True,
-        include_tag: bool = True,
-    ) -> Dict[str, Any]:
+    # ------------------------------------------------------------------
+    # Basic dict-like helpers
+    # ------------------------------------------------------------------
+    def get(self, key: str, default: Any = None) -> Any:
         """
-        Convert this entity into a JSON-serializable dictionary.
+        Convenience wrapper around self.data.get(...) so callers can treat
+        BaseEntity as a slightly smarter dict.
+        """
+        return self.data.get(key, default)
 
-        This method is careful to:
-        - Serialize nested BaseEntity instances by pointer to avoid cycles.
-        - Serialize dataclasses via dataclasses.asdict.
-        - Serialize Pydantic models via .model_dump().
-        - Recursively handle lists/dicts.
+    def set(self, key: str, value: Any) -> None:
+        """
+        Set a field on the underlying data block.
+        """
+        self.data[key] = value
+
+    def ensure_list_field(self, key: str) -> List[Any]:
+        """
+        Ensure that `data[key]` is a list, creating it if needed.
+        Returns the list for chaining.
+        """
+        current = self.data.get(key)
+        if current is None:
+            lst: List[Any] = []
+            self.data[key] = lst
+            return lst
+        if not isinstance(current, list):
+            lst = [current]
+            self.data[key] = lst
+            return lst
+        return current
+
+    # ------------------------------------------------------------------
+    # Sources / notes helpers (non-mandatory but convenient)
+    # ------------------------------------------------------------------
+    def add_source(self, source_pointer: str) -> None:
+        """
+        Append a source pointer to the entity's `sources` list.
+
+        This does NOT deduplicate; caller can handle that if desired.
+        """
+        sources = self.ensure_list_field("sources")
+        sources.append(source_pointer)
+
+    def add_note(self, note_text: str) -> None:
+        """
+        Append a free-form note string to the entity's `notes` list.
+        """
+        notes = self.ensure_list_field("notes")
+        notes.append(note_text)
+
+    # ------------------------------------------------------------------
+    # Serialization helpers
+    # ------------------------------------------------------------------
+    def to_dict(self, include_pointer_and_tag: bool = False) -> Dict[str, Any]:
+        """
+        Return the normalized data block as a plain dict.
 
         Parameters
         ----------
-        include_uuid:
-            If True, include "uuid" in the output.
-        include_pointer:
-            If True, include "id" (GEDCOM pointer) in the output.
-        include_tag:
-            If True, include "tag" in the output.
+        include_pointer_and_tag:
+            If True, the returned dict will include:
+                "_pointer": original GEDCOM XREF
+                "_tag":     record type
 
-        Returns
-        -------
-        dict
-            A JSON-ready dictionary representing this entity.
+            This is *optional* and not currently used by the exporter,
+            but is convenient for debugging or standalone serialization.
         """
+        if not include_pointer_and_tag:
+            return dict(self.data)
 
-        # use `id()` to avoid infinite recursion
-        seen: Set[int] = set()
-        data: Dict[str, Any] = {}
+        merged: Dict[str, Any] = {
+            "_pointer": self.pointer,
+            "_tag": self.tag,
+        }
+        merged.update(self.data)
+        return merged
 
-        if include_pointer:
-            data["id"] = self.pointer
-        if include_uuid:
-            data["uuid"] = str(self.uuid)
-        if include_tag:
-            data["tag"] = self.tag
-
-        data["payload"] = self._serialize_value(self.payload, seen)
-        data["notes"] = self._serialize_value(self.notes, seen)
-        data["sources"] = self._serialize_value(self.sources, seen)
-        data["extras"] = self._serialize_value(self.extras, seen)
-
-        return data
-
-    # -------------------------------------------------------------------------
-    # Internal helpers
-    # -------------------------------------------------------------------------
-    def _serialize_value(self, value: Any, seen: Set[int]) -> Any:
+    # ------------------------------------------------------------------
+    # Factory helper
+    # ------------------------------------------------------------------
+    @classmethod
+    def from_extracted_block(
+        cls,
+        pointer: str,
+        tag: str,
+        block: Dict[str, Any],
+        raw_node: Optional[Dict[str, Any]] = None,
+        meta: Optional[Dict[str, Any]] = None,
+    ) -> "BaseEntity":
         """
-        Recursively convert `value` into JSON-serializable structures.
+        Construct a BaseEntity from an already-normalized block.
 
-        Handles:
-        - BaseEntity → pointer string (to avoid deep cycles)
-        - dataclasses → dict via asdict()
-        - Pydantic models → dict via model_dump()
-        - dict / list / tuple / set → recursively serialized
-        - primitives left as-is
+        This is a thin wrapper intended for use in the extraction layer
+        and registry builder. It does not modify `block` beyond storing
+        it as-is in `data`.
         """
-        # Avoid infinite recursion for container cycles
-        vid = id(value)
-        if vid in seen:
-            # If there's a deep cycle, just give a marker string.
-            return "<cycle>"
-        # Only mark containers / complex types
-        complex_type = isinstance(value, (dict, list, tuple, set)) or is_dataclass(value) or isinstance(
-            value, (BaseEntity, PydanticBaseModel)
+        return cls(
+            pointer=pointer,
+            tag=tag,
+            data=dict(block),  # shallow copy for safety
+            raw_node=raw_node,
+            meta=dict(meta or {}),
         )
-        if complex_type:
-            seen.add(vid)
-
-        # BaseEntity → pointer string (no deep recursion here)
-        if isinstance(value, BaseEntity):
-            return value.pointer
-
-        # Pydantic model → dict
-        if isinstance(value, PydanticBaseModel):
-            try:
-                return value.model_dump()
-            except Exception:
-                log.exception("Failed to model_dump Pydantic object %r", value)
-                return repr(value)
-
-        # Dataclass → dict
-        if is_dataclass(value) and not isinstance(value, type):
-            try:
-                return asdict(value)
-            except Exception:
-                log.exception("Failed to asdict() dataclass %r", value)
-                return repr(value)
-
-        # Dict → dict of serialized values
-        if isinstance(value, dict):
-            return {k: self._serialize_value(v, seen) for k, v in value.items()}
-
-        # Iterable containers → list of serialized values
-        if isinstance(value, (list, tuple, set)):
-            return [self._serialize_value(v, seen) for v in value]
-
-        # Primitive / unknown → return as-is (must be JSON-serializable upstream)
-        return value

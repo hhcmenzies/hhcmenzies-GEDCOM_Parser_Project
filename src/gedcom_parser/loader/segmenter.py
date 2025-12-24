@@ -1,110 +1,132 @@
-"""
-GEDCOM record segmentation and pointer indexing.
-
-Takes the flat tree (from tree_builder) and:
-- Groups top-level records (level 0) by TAG (INDI, FAM, SOUR, REPO, etc.).
-- Builds a pointer index mapping @X...@ -> list of nodes that reference it.
-
-This is intentionally generic and read-only: it does not mutate the tree.
-"""
+# src/gedcom_parser/loader/segmenter.py
 
 from __future__ import annotations
 
-from typing import Any, Dict, List, Tuple
+from dataclasses import dataclass, field
+from typing import List, Optional, Iterator
+
+from .tokenizer import Token
 
 
-Node = Dict[str, Any]
-Tree = List[Node]
-
-
-def segment_top_level(tree: Tree) -> Dict[str, List[Node]]:
+@dataclass
+class GEDCOMNode:
     """
-    Group top-level (level 0) records by their TAG.
+    A hierarchical GEDCOM tree node produced from a flat token stream.
 
-    Example result keys:
-        "HEAD", "INDI", "FAM", "SOUR", "REPO", "NOTE", "TRLR", etc.
+    Attributes:
+        level: GEDCOM level number (0 for records, >0 for substructures).
+        tag: The GEDCOM tag (HEAD, INDI, BIRT, DATE, NOTE, etc.).
+        value: The raw tag value (string).
+        pointer: Optional GEDCOM @XREF@ pointer on level-0 records.
+        children: Nested GEDCOMNode list ordered as they appeared.
+        lineno: Line number in original file (for debugging).
     """
-    sections: Dict[str, List[Node]] = {}
 
-    for node in tree:
-        if node.get("level") != 0:
+    level: int
+    tag: str
+    value: str = ""
+    pointer: Optional[str] = None
+    lineno: int = 0
+    children: List["GEDCOMNode"] = field(default_factory=list)
+
+    # ---------- Helper / Mixin Methods ----------
+
+    def add_child(self, child: "GEDCOMNode") -> None:
+        self.children.append(child)
+
+    def find_children(self, tag: str) -> List["GEDCOMNode"]:
+        """Return all direct children of this node with a given tag."""
+        return [c for c in self.children if c.tag == tag]
+
+    def find_first(self, tag: str) -> Optional["GEDCOMNode"]:
+        """Return the first direct child with this tag, or None."""
+        for c in self.children:
+            if c.tag == tag:
+                return c
+        return None
+
+    def iter_subtree(self) -> Iterator["GEDCOMNode"]:
+        """Yield this node and all descendants in depth-first order."""
+        yield self
+        for child in self.children:
+            yield from child.iter_subtree()
+
+    def __repr__(self) -> str:
+        ptr = f" {self.pointer}" if self.pointer else ""
+        return f"<GEDCOMNode {self.level}{ptr} {self.tag}: {self.value!r}>"
+
+
+# ---------- SEGMENTER IMPLEMENTATION ----------
+
+class GEDCOMStructureError(Exception):
+    """Raised when hierarchical structure rules are violated."""
+
+
+def segment_lines(tokens: List[Token]) -> List[GEDCOMNode]:
+    """
+    Convert a flat list of Tokens into a full hierarchical tree.
+
+    Rules:
+        - Level 0 tokens are roots.
+        - Level N nodes must be children of the nearest previous node
+          with level (N-1).
+        - Levels may not jump more than +1 (e.g., level 3 cannot follow level 1).
+
+    This function returns ALL nodes, preserving hierarchy.
+    Use segment_records() to extract record-level (level 0) nodes only.
+    """
+    if not tokens:
+        return []
+
+    root_nodes: List[GEDCOMNode] = []
+    stack: List[GEDCOMNode] = []  # stack[level] = last node at that level
+
+    for tok in tokens:
+        node = GEDCOMNode(
+            level=tok.level,
+            tag=tok.tag,
+            value=tok.value,
+            pointer=tok.pointer,
+            lineno=tok.lineno,
+        )
+
+        # Level-0: always a new root
+        if tok.level == 0:
+            root_nodes.append(node)
+            stack = [node]  # reset stack
             continue
-        tag = node.get("tag") or "UNKNOWN"
-        sections.setdefault(tag, []).append(node)
 
-    return sections
+        # For non-zero levels:
+        # Validate jump constraints (cannot skip levels)
+        if tok.level > len(stack):
+            raise GEDCOMStructureError(
+                f"Line {tok.lineno}: Level jumped from {len(stack)-1} to {tok.level} without intermediate parent"
+            )
 
+        # Pop the stack down to parent level
+        parent_level = tok.level - 1
+        stack = stack[: tok.level]
 
-def summarize_top_level(tree: Tree) -> Dict[str, int]:
-    """
-    Return a simple summary: TAG -> count of level-0 records.
-    """
-    summary: Dict[str, int] = {}
-    for node in tree:
-        if node.get("level") != 0:
-            continue
-        tag = node.get("tag") or "UNKNOWN"
-        summary[tag] = summary.get(tag, 0) + 1
-    return summary
+        if parent_level < 0 or parent_level >= len(stack):
+            raise GEDCOMStructureError(
+                f"Line {tok.lineno}: No valid parent for level {tok.level}"
+            )
 
+        parent = stack[parent_level]
+        parent.add_child(node)
 
-def build_pointer_index(tree: Tree) -> Dict[str, List[Node]]:
-    """
-    Build a global index of all nodes that carry a GEDCOM pointer value.
-
-    Pointers look like:
-        @I1@       (individual)
-        @F12@      (family)
-        @S416073157@  (source)
-        @R305860344@  (repository)
-
-    The same pointer might appear multiple times (definition + references),
-    so the value is always a list.
-    """
-    index: Dict[str, List[Node]] = {}
-
-    for node in tree:
-        pointer = node.get("pointer")
-        if not pointer:
-            continue
-        index.setdefault(pointer, []).append(node)
-
-    return index
-
-
-def summarize_pointer_index(index: Dict[str, List[Node]]) -> Dict[str, int]:
-    """
-    Reduce the pointer index to: pointer -> occurrence count.
-    """
-    return {ptr: len(nodes) for ptr, nodes in index.items()}
-
-
-def summarize_pointer_prefixes(index: Dict[str, List[Node]]) -> Dict[str, int]:
-    """
-    Quick sanity view of pointer "types" by first character after '@'.
-
-    Examples:
-        @I1@  -> 'I' (individual)
-        @F12@ -> 'F' (family)
-        @S... -> 'S' (source)
-        @R... -> 'R' (repository)
-
-    Returns a mapping like:
-        {"I": 1234, "F": 456, "S": 789, "R": 12}
-    """
-    prefix_counts: Dict[str, int] = {}
-
-    for ptr, nodes in index.items():
-        if len(ptr) >= 3 and ptr[0] == "@" and "@" in ptr[1:]:
-            # take first char after initial '@'
-            second_at = ptr.rfind("@")
-            if second_at > 1:
-                prefix = ptr[1]
-            else:
-                prefix = "?"
+        # Push node to stack
+        if tok.level == len(stack):
+            stack.append(node)
         else:
-            prefix = "?"
+            stack[tok.level] = node
 
-        prefix_counts[prefix] = prefix_counts.get(prefix, 0) + len(nodes)
+    return root_nodes
 
-    return prefix_counts
+
+def segment_records(tokens: List[Token]) -> List[GEDCOMNode]:
+    """
+    Convenience wrapper: build the tree and return only level-0 nodes.
+    """
+    tree = segment_lines(tokens)
+    return tree

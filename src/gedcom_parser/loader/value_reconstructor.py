@@ -1,54 +1,85 @@
+# src/gedcom_parser/loader/value_reconstructor.py
+
 """
-GEDCOM Value Reconstruction
----------------------------
+Value Reconstructor: Handles GEDCOM CONT / CONC tags.
 
-Rebuilds multi-line values using CONC and CONT tags.
+Rules (GEDCOM 5.5.1 / 5.5.5):
+    - CONC: Append text directly to the parent's value.
+            No newline added.
+
+    - CONT: Append a newline + the text.
+            Always produces a new line in the logical output.
+
+Examples:
+    Parent NOTE value: "Line one"
+    Child CONC value:  " and more"
+        → "Line one and more"
+
+    Child CONT value:  "Second line"
+        → "Line one and more\nSecond line"
+
+This module walks the GEDCOMNode tree (from segmenter) and reconstructs
+all values according to these rules, removing CONC/CONT nodes afterwards.
 """
 
-from typing import List, Dict, Any
+from __future__ import annotations
+
+from typing import List
+
+from .segmenter import GEDCOMNode
 
 
-def reconstruct_values(tree: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+def _reconstruct_node(node: GEDCOMNode) -> None:
     """
-    Walk the entire GEDCOM tree and merge multiline values.
+    Recursively reconstruct values for this node and its children.
+    Mutates the node in place.
 
-    Rules:
-    - CONC: append text directly
-    - CONT: append newline + text
+    After reconstruction:
+      - Parent.value has the final reconstructed text
+      - CONC and CONT child nodes are removed
+      - Other children remain and are also processed
     """
+    new_children: List[GEDCOMNode] = []
+    base_value = node.value or ""
 
-    for node in tree:
-        _process_node(node)
-
-    return tree
-
-
-def _process_node(node: Dict[str, Any]):
-    """
-    Recursively process this node and its children.
-    """
-
-    children = node.get("children", [])
-    if not children:
-        return
-
-    new_children = []
-    buffer_value = node.get("value", "")
-
-    for child in children:
-        tag = child["tag"]
+    for child in node.children:
+        tag = (child.tag or "").upper()
 
         if tag == "CONC":
-            buffer_value += child["value"]
-            continue
+            # Append directly (no newline)
+            if child.value:
+                base_value += child.value
 
-        if tag == "CONT":
-            buffer_value += "\n" + child["value"]
-            continue
+        elif tag == "CONT":
+            # Append newline + child text
+            base_value += "\n"
+            if child.value:
+                base_value += child.value
 
-        # Non-CONC/CONT child passes through
-        new_children.append(child)
-        _process_node(child)
+        else:
+            # Normal GEDCOM child; recurse into it
+            _reconstruct_node(child)
+            new_children.append(child)
 
-    node["value"] = buffer_value
-    node["children"] = new_children
+    # Apply the reconstructed value
+    node.value = base_value
+    node.children = new_children
+
+
+def reconstruct_values(records: List[GEDCOMNode]) -> List[GEDCOMNode]:
+    """
+    Reconstruct all values for every top-level record and its descendants.
+
+    Args:
+        records: The list of root GEDCOMNode objects (level-0 records).
+
+    Returns:
+        The same list (records), after in-place reconstruction.
+
+    This is a pure transformation: structure is unchanged except for
+    removal of CONC/CONT nodes.
+    """
+    for rec in records:
+        _reconstruct_node(rec)
+
+    return records

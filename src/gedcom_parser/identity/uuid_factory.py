@@ -1,190 +1,179 @@
-"""
-C.24.4.6 – UUID Identity Layer
-
-Centralized, deterministic UUID generation for:
-- Top-level records (INDI, FAM, SOUR, REPO, OBJE)
-- Names
-- Events
-- Occupations
-
-Design goals:
-- Deterministic: same logical identity -> same UUID every run.
-- Stable across refactors: based on semantic keys, not memory layout.
-- Flexible: callers can pass either normalized dicts or simple strings
-  (for names), without breaking.
-"""
-
+# src/gedcom_parser/identity/uuid_factory.py
 from __future__ import annotations
 
 import hashlib
 import json
-import uuid
-from typing import Any, Optional
+from typing import Any, Dict, Optional
 
 
-# ==========================================================
-# INTERNAL HELPER
-# ==========================================================
+# -----------------------------
+# Core deterministic hashing
+# -----------------------------
 
-def _hash_to_uuid(namespace: str, payload: Any) -> str:
+def _stable_hash(key: str) -> str:
+    # Deterministic stable hashing; SHA1 is fine for identity/fingerprints (not security).
+    return hashlib.sha1(key.encode("utf-8")).hexdigest()
+
+
+def _uuid_from_key(key: str) -> str:
     """
-    Deterministically map (namespace, payload) -> UUID.
-
-    We SHA-256 the JSON-encoded payload, then slice the first 32 hex
-    chars into a UUID.
-
-    This is *not* cryptographic identity; it's just a stable mapping.
+    Convert an arbitrary key string into a canonical UUID-like value (8-4-4-4-12)
+    based on SHA1. Deterministic for the same key.
     """
-    key = json.dumps({"ns": namespace, "payload": payload}, sort_keys=True)
-    h = hashlib.sha256(key.encode("utf-8")).hexdigest()
-    return str(uuid.UUID(h[:32]))
+    h = _stable_hash(key)
+    h32 = h[:32]
+    return f"{h32[0:8]}-{h32[8:12]}-{h32[12:16]}-{h32[16:20]}-{h32[20:32]}"
 
 
-# ==========================================================
-# RECORD-LEVEL UUIDs
-# ==========================================================
-
-def uuid_for_record(record_type: str, pointer: Optional[str]) -> Optional[str]:
+def deterministic_uuid(*parts: object) -> str:
     """
-    Stable UUID for any top-level GEDCOM record (INDI/FAM/SOUR/REPO/OBJE),
-    keyed solely by its pointer and record_type.
-
-    If pointer is missing, returns None (caller can decide how to handle
-    anonymous / synthetic records).
+    Backwards-compatible helper used across the codebase.
     """
-    if not pointer:
+    key = "|".join("" if p is None else str(p) for p in parts)
+    return _uuid_from_key(key)
+
+
+# -----------------------------
+# Pointer normalization
+# -----------------------------
+
+def normalize_pointer(pointer: Optional[str]) -> Optional[str]:
+    """
+    Normalize GEDCOM pointer:
+      - strip whitespace
+      - uppercase
+      - ensure wrapped in @...@
+    """
+    if pointer is None:
         return None
+
+    p = pointer.strip().upper()
+    if not p:
+        return None
+
+    if not (p.startswith("@") and p.endswith("@")):
+        # best-effort normalization
+        if "@" not in p:
+            p = f"@{p}@"
+        else:
+            if not p.startswith("@"):
+                p = "@" + p
+            if not p.endswith("@"):
+                p = p + "@"
+
+    return p
+
+
+def uuid_for_pointer(pointer: str) -> str:
+    p = normalize_pointer(pointer)
+    if p is None:
+        raise ValueError(f"Invalid pointer: {pointer!r}")
+    return _uuid_from_key(f"PTR|{p}")
+
+
+# -----------------------------
+# Record identity (non-pointer)
+# -----------------------------
+
+def uuid_for_record(record_node: Dict[str, Any]) -> str:
+    """
+    Deterministic UUID for a record dict (used for promotion/fingerprints).
+    We intentionally include structure so two different inline OBJE nodes
+    don't collide.
+    """
+    tag = (record_node.get("tag") or "UNK").upper()
+    value = record_node.get("value")
+    lineno = record_node.get("lineno")
+    pointer = record_node.get("pointer")
+
+    children = record_node.get("children") or []
+    child_fps = []
+    for c in children:
+        ctag = (c.get("tag") or "UNK").upper()
+        cval = c.get("value")
+        child_fps.append(f"{ctag}:{'' if cval is None else str(cval)}")
 
     payload = {
-        "record_type": record_type,
+        "tag": tag,
+        "value": value,
+        "lineno": lineno,
         "pointer": pointer,
+        "children": child_fps,
     }
-    return _hash_to_uuid("record", payload)
+
+    key = "REC|" + json.dumps(payload, sort_keys=True, default=str)
+    return _uuid_from_key(key)
 
 
-def uuid_for_pointer(record_type: str, pointer: Optional[str]) -> Optional[str]:
+# -----------------------------
+# Sub-identities used by tests
+# -----------------------------
+
+def uuid_for_name(record_uuid: str, full_name: str) -> str:
     """
-    Thin wrapper kept for caller convenience.
-
-    Semantics: identical to uuid_for_record(record_type, pointer).
+    Deterministic identity for a NameRecord attached to an entity.
     """
-    return uuid_for_record(record_type, pointer)
+    return _uuid_from_key(f"NAME|{record_uuid}|{(full_name or '').strip()}")
 
-
-# ==========================================================
-# NAME UUIDs
-# ==========================================================
-
-def uuid_for_name(pointer: Optional[str], name_block: Any) -> Optional[str]:
-    """
-    Deterministic UUID for a *logical name identity*.
-
-    Supports two calling patterns (for backward compatibility):
-
-    1) pointer + normalized name dict (preferred):
-        name_block = {
-            "prefix": ...,
-            "given": ...,
-            "middle": ...,
-            "surname_prefix": ...,
-            "surname": ...,
-            "suffix": ...,
-            "full": ...,
-            "full_name_normalized": ...,
-            ...
-        }
-
-    2) pointer + string (fallback / legacy):
-        name_block = "David Thomas /Menzies/"
-
-    In both cases, we hash a structured payload containing:
-      - the owning record pointer (if present)
-      - the normalized/full name info
-    """
-    if pointer is None and not name_block:
-        return None
-
-    # Dict-style: assume it's already a structured block
-    if isinstance(name_block, dict):
-        payload = {
-            "ptr": pointer,
-            "name": {
-                "prefix": name_block.get("prefix"),
-                "given": name_block.get("given"),
-                "middle": name_block.get("middle"),
-                "surname_prefix": name_block.get("surname_prefix"),
-                "surname": name_block.get("surname"),
-                "suffix": name_block.get("suffix"),
-                "full": name_block.get("full"),
-                "normalized": name_block.get("full_name_normalized"),
-            },
-        }
-    else:
-        # String-style: treat as a single full name field
-        payload = {
-            "ptr": pointer,
-            "name": {
-                "full": str(name_block),
-            },
-        }
-
-    return _hash_to_uuid("name", payload)
-
-
-# ==========================================================
-# EVENT UUIDs
-# ==========================================================
 
 def uuid_for_event(
-    record_uuid: Optional[str],
+    record_uuid: str,
     tag: str,
-    date: str,
-    place_raw: str,
-) -> Optional[str]:
+    date: str = "",
+    place: str = "",
+) -> str:
     """
-    Deterministic UUID for a particular event instance on a record.
-
-    Keyed by:
-      - parent record UUID
-      - event tag (BIRT/DEAT/MARR/etc.)
-      - raw date string
-      - raw place string
-
-    If record_uuid is missing, returns None (caller can treat such events
-    as anonymous or synthetic).
+    Deterministic identity for an event attached to an entity.
     """
-    if not record_uuid:
-        return None
+    t = (tag or "").strip().upper()
+    d = (date or "").strip()
+    p = (place or "").strip()
+    return _uuid_from_key(f"EVT|{record_uuid}|{t}|{d}|{p}")
 
+
+def uuid_for_occupation(record_uuid: str, occ: Any) -> str:
+    """
+    Deterministic occupation identity.
+    Tests may pass either a string or a dict.
+    """
+    if isinstance(occ, str):
+        payload = occ.strip()
+    elif isinstance(occ, dict):
+        payload = json.dumps(occ, sort_keys=True, default=str)
+    else:
+        payload = str(occ)
+    return _uuid_from_key(f"OCCU|{record_uuid}|{payload}")
+
+
+def uuid_for_inline_media(
+    *,
+    owner_uuid: Optional[str],
+    owner_pointer: Optional[str],
+    lineno: Optional[int],
+    file: Optional[str],
+    title: Optional[str],
+) -> str:
+    """
+    Deterministic identity for promoted inline OBJE media objects.
+    """
     payload = {
-        "record_uuid": record_uuid,
-        "tag": tag,
-        "date": date,
-        "place_raw": place_raw,
+        "owner_uuid": owner_uuid,
+        "owner_pointer": owner_pointer,
+        "lineno": lineno,
+        "file": file,
+        "title": title,
     }
-    return _hash_to_uuid("event", payload)
+    key = "IMEDIA|" + json.dumps(payload, sort_keys=True, default=str)
+    return _uuid_from_key(key)
 
 
-# ==========================================================
-# OCCUPATION UUIDs
-# ==========================================================
-
-def uuid_for_occupation(
-    record_uuid: Optional[str],
-    primary: str,
-) -> Optional[str]:
-    """
-    Deterministic UUID for an occupation identity block.
-
-    Keyed by:
-      - parent record UUID (if any)
-      - primary occupation string (normalized by caller)
-    """
-    if not record_uuid and not primary:
-        return None
-
-    payload = {
-        "record_uuid": record_uuid,
-        "primary": primary,
-    }
-    return _hash_to_uuid("occupation", payload)
+__all__ = [
+    "deterministic_uuid",
+    "normalize_pointer",
+    "uuid_for_pointer",
+    "uuid_for_record",
+    "uuid_for_name",
+    "uuid_for_event",
+    "uuid_for_occupation",
+    "uuid_for_inline_media",
+]
