@@ -71,3 +71,18 @@ me
 me.pub
 *.pem
 *.key
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Outputs/logs
+logs/
+outputs/
+*.log
+
+# OS
+.DS_Store
