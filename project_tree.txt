@@ -153,14 +153,6 @@
 │   └── summary.json
 ├── parse_gedcom.py
 ├── project_tree.txt
-├── .pytest_cache
-│   ├── CACHEDIR.TAG
-│   ├── .gitignore
-│   ├── README.md
-│   └── v
-│       └── cache
-│           ├── lastfailed
-│           └── nodeids
 ├── requirements.txt
 ├── run_pipeline.sh
 ├── run.py
@@ -263,14 +255,6 @@
 ├── tests
 │   ├── data
 │   │   └── gedcom_1.ged
-│   ├── .pytest_cache
-│   │   ├── CACHEDIR.TAG
-│   │   ├── .gitignore
-│   │   ├── README.md
-│   │   └── v
-│   │       └── cache
-│   │           ├── lastfailed
-│   │           └── nodeids
 │   ├── test_basic.py
 │   ├── test_build_family.py
 │   ├── test_build_individual.py
@@ -291,4 +275,4 @@
 │   └── test_uuid_identity.py
 └── verify_all.sh
 
-36 directories, 256 files
+30 directories, 246 files

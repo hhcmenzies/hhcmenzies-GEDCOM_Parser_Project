@@ -1,57 +1,86 @@
 """
 Main entry for GEDCOM Parser Project.
+
+This module is intentionally thin:
+- argument parsing
+- configuration setup
+- pipeline orchestration
+
+No parsing or business logic lives here.
 """
 
 from __future__ import annotations
+
 import argparse
 from pathlib import Path
+
 from gedcom_parser.config import get_config
 from gedcom_parser.logger import get_logger
-from gedcom_parser.parser_core import GEDCOMParser
-from gedcom_parser.exporter import export_registry_to_json
+
+from gedcom_parser.core.context import ParseContext
+from gedcom_parser.core.pipeline import Pipeline
 
 log = get_logger("main")
 
 
+# ---------------------------------------------------------
+# CLI Argument Parsing
+# ---------------------------------------------------------
 def build_arg_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="GEDCOM Parser Project – Phase 1 Backbone"
     )
     parser.add_argument(
-        "-i", "--input",
+        "-i",
+        "--input",
         required=True,
-        help="Path to GEDCOM input file"
+        help="Path to GEDCOM input file",
     )
     parser.add_argument(
-        "-o", "--output",
+        "-o",
+        "--output",
         default="outputs/export.json",
-        help="Final output JSON path"
+        help="Final output JSON path",
     )
     parser.add_argument(
         "--debug",
         action="store_true",
-        help="Enable debug output"
+        help="Enable debug output",
     )
     return parser
 
 
-def run(input_path: str, output_path: str, debug_flag: bool):
+# ---------------------------------------------------------
+# Pipeline Runner
+# ---------------------------------------------------------
+def run(input_path: str, output_path: str, debug_flag: bool) -> None:
+    """
+    Prepare context and execute the parsing pipeline.
+    """
+
     cfg = get_config()
     cfg.debug = bool(debug_flag)
 
     log.info(f"Loading GEDCOM: {input_path}")
 
-    parser = GEDCOMParser(config=cfg)
+    ctx = ParseContext(
+        config=cfg,
+        logger=log,
+        input_path=input_path,
+        output_path=output_path,
+        debug=cfg.debug,
+    )
 
-    registry = parser.run(input_path)
-
-    # EXPORT: now supports (registry, out_path)
-    export_registry_to_json(registry, output_path)
+    pipeline = Pipeline(ctx)
+    pipeline.run()
 
     log.info(f"Main pipeline complete. Output: {output_path}")
 
 
-def main():
+# ---------------------------------------------------------
+# Program Entry Point
+# ---------------------------------------------------------
+def main() -> None:
     ap = build_arg_parser()
     args = ap.parse_args()
 
@@ -59,7 +88,7 @@ def main():
         run(
             input_path=args.input,
             output_path=args.output,
-            debug_flag=args.debug
+            debug_flag=args.debug,
         )
     except Exception as exc:
         log.exception(f"Unhandled exception in main: {exc}")

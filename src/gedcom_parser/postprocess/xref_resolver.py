@@ -1,15 +1,11 @@
 """
-C.24.4.7 – Cross-Reference Resolver / UUID Mapper
+C.24.4.7 – Cross-Reference Resolver / UUID Mapper (Modern Export Schema)
 
-Takes the base export produced by gedcom_parser.main (which contains
-fully-extracted INDI/FAM/SOUR/REPO/OBJE records), then:
-
-1. Ensures every record type has a proper deterministic UUID.
-2. Builds a uuid_index:
-       { "INDI": {pointer → uuid}, ... }
-3. Resolves all INDI relationships (FAMC/FAMS) to UUIDs.
-4. Resolves all FAM members (HUSB/WIFE/CHIL) to UUIDs.
-5. Writes an enhanced export (default: outputs/export_xref.json).
+Modern assumptions:
+- export.json contains top-level dicts:
+    individuals, families, sources, repositories, media_objects
+- each record is a dict (NOT stringified dataclasses)
+- records may or may not already contain a UUID
 """
 
 from __future__ import annotations
@@ -20,26 +16,53 @@ import logging
 from typing import Any, Dict, List, Optional
 
 from gedcom_parser.identity.uuid_factory import uuid_for_pointer
-from gedcom_parser.logging import get_logger
+from gedcom_parser.logger import get_logger
 
 log = get_logger("xref_resolver")
 
 
-# =====================================================================
-# UUID INDEX
-# =====================================================================
+def _ensure_dict(x: Any) -> Dict[str, Any]:
+    """Return x if it's a dict, else an empty dict."""
+    return x if isinstance(x, dict) else {}
+
+
+def _get_record_uuid(record: Dict[str, Any]) -> Optional[str]:
+    """
+    Modern exports may store uuid in:
+      - record["uuid"]
+      - record["facts"]["uuid"]   (legacy-ish pipeline blocks)
+    We support both, preferring record["uuid"].
+    """
+    if isinstance(record.get("uuid"), str) and record["uuid"].strip():
+        return record["uuid"].strip()
+
+    facts = record.get("facts")
+    if isinstance(facts, dict):
+        u = facts.get("uuid")
+        if isinstance(u, str) and u.strip():
+            return u.strip()
+
+    return None
+
+
+def _set_record_uuid(record: Dict[str, Any], uuid_val: str) -> None:
+    """
+    Write UUID in modern location + preserve facts.uuid if facts block exists.
+    """
+    record["uuid"] = uuid_val
+
+    facts = record.get("facts")
+    if isinstance(facts, dict):
+        facts["uuid"] = uuid_val
+        record["facts"] = facts
+
 
 def build_uuid_index(root: Dict[str, Any]) -> Dict[str, Dict[str, str]]:
     """
-    Scans all individuals, families, sources, repositories, and objects
-    and ensures each one has a deterministic UUID, using uuid_for_pointer().
+    Build uuid_index = { "INDI": {ptr:uuid}, "FAM":..., "OBJE":... }
 
-    Returns:
-        { "INDI": {pointer: uuid}, ... }
-
-    Also backfills uuid fields inside the records where missing.
+    Also backfills UUIDs into records when missing.
     """
-
     uuid_index: Dict[str, Dict[str, str]] = {
         "INDI": {},
         "FAM": {},
@@ -48,187 +71,148 @@ def build_uuid_index(root: Dict[str, Any]) -> Dict[str, Dict[str, str]]:
         "OBJE": {},
     }
 
-    sections = {
-        "INDI": root.get("individuals", {}),
-        "FAM":  root.get("families", {}),
-        "SOUR": root.get("sources", {}),
-        "REPO": root.get("repositories", {}),
-        "OBJE": root.get("media", {}),
+    individuals = _ensure_dict(root.get("individuals"))
+    families = _ensure_dict(root.get("families"))
+    sources = _ensure_dict(root.get("sources"))
+    repositories = _ensure_dict(root.get("repositories"))
+
+    # Modern key
+    media_objects = _ensure_dict(root.get("media_objects"))
+
+    # Backward compat (if any older exports still use it)
+    legacy_media = _ensure_dict(root.get("media"))
+
+    # Prefer modern media_objects; merge legacy as fallback without overwriting
+    for k, v in legacy_media.items():
+        if k not in media_objects:
+            media_objects[k] = v
+
+    sections: Dict[str, Dict[str, Any]] = {
+        "INDI": individuals,
+        "FAM": families,
+        "SOUR": sources,
+        "REPO": repositories,
+        "OBJE": media_objects,
     }
 
     for rec_type, group in sections.items():
         for ptr, record in group.items():
-            facts = record.get("facts", {}) or {}
-            cur_uuid = facts.get("uuid")
+            if not isinstance(record, dict):
+                # Modern pipeline expects dicts; skip anything else safely.
+                continue
 
-            # Guarantee a UUID
+            cur_uuid = _get_record_uuid(record)
             new_uuid = cur_uuid or uuid_for_pointer(rec_type, ptr)
 
-            # Save into the facts block
-            facts["uuid"] = new_uuid
-            record["facts"] = facts
-
-            # Save in the index
+            _set_record_uuid(record, new_uuid)
             uuid_index[rec_type][ptr] = new_uuid
 
     return uuid_index
 
-
-# =====================================================================
-# INDI RELATIONSHIP RESOLUTION
-# =====================================================================
 
 def resolve_indi_relationships(
     individuals: Dict[str, Any],
     uuid_index: Dict[str, Dict[str, str]],
 ) -> None:
     """
-    Converts:
-        facts["relationships"] = { "FAMC": ["@F123@"], ... }
+    Resolve INDI relationships (FAMC/FAMS) to UUIDs.
 
-    Into:
-        facts["relationships_resolved"] = {
-            "FAMC": [ { "pointer": "@F123@", "uuid": "...", "type": "FAM"} ],
-            ...
-        }
+    Supports modern + legacy layouts:
+    - Modern: individuals[*]["families_as_child"] / ["families_as_spouse"]
+    - Legacy: individuals[*]["facts"]["relationships"]["FAMC"/"FAMS"]
+    Writes a normalized output under individuals[*]["relationships_resolved"].
     """
-
     fam_map = uuid_index.get("FAM", {})
 
     for ptr, indi in individuals.items():
-        facts = indi.get("facts", {}) or {}
-        rel = facts.get("relationships", {}) or {}
+        if not isinstance(indi, dict):
+            continue
 
-        resolved = {"FAMC": [], "FAMS": []}
+        famc_list: List[str] = []
+        fams_list: List[str] = []
 
-        # FAMC
-        for fam_ptr in rel.get("FAMC", []):
-            resolved["FAMC"].append({
-                "pointer": fam_ptr,
-                "uuid": fam_map.get(fam_ptr),
-                "type": "FAM",
-            })
+        # Modern
+        if isinstance(indi.get("families_as_child"), list):
+            famc_list = [x for x in indi["families_as_child"] if isinstance(x, str)]
+        if isinstance(indi.get("families_as_spouse"), list):
+            fams_list = [x for x in indi["families_as_spouse"] if isinstance(x, str)]
 
-        # FAMS
-        for fam_ptr in rel.get("FAMS", []):
-            resolved["FAMS"].append({
-                "pointer": fam_ptr,
-                "uuid": fam_map.get(fam_ptr),
-                "type": "FAM",
-            })
+        # Legacy facts.relationships fallback
+        facts = indi.get("facts")
+        if isinstance(facts, dict):
+            rel = facts.get("relationships")
+            if isinstance(rel, dict):
+                famc_list = famc_list or [x for x in rel.get("FAMC", []) if isinstance(x, str)]
+                fams_list = fams_list or [x for x in rel.get("FAMS", []) if isinstance(x, str)]
 
-        facts["relationships_resolved"] = resolved
-        indi["facts"] = facts
+        resolved = {
+            "FAMC": [{"pointer": p, "uuid": fam_map.get(p), "type": "FAM"} for p in famc_list],
+            "FAMS": [{"pointer": p, "uuid": fam_map.get(p), "type": "FAM"} for p in fams_list],
+        }
 
+        indi["relationships_resolved"] = resolved
 
-# =====================================================================
-# FAMILY MEMBER RESOLUTION
-# =====================================================================
 
 def resolve_family_members(
     families: Dict[str, Any],
     uuid_index: Dict[str, Dict[str, str]],
 ) -> None:
     """
-    Converts:
-        facts["members"] = {"husband": "@I123@", "wife": ..., "children": [...]}
+    Resolve family members (husband/wife/children) to UUIDs.
 
-    Into:
-        facts["members_resolved"] = {
-            "husband": {"pointer": "@I123@", "uuid": "..."},
-            "wife": {...},
-            "children": [{...}, {...}]
-        }
+    Supports modern + legacy layouts:
+    - Modern: families[*]["husband"], ["wife"], ["children"]
+    - Legacy: families[*]["facts"]["members"]
+    Writes families[*]["members_resolved"].
     """
-
     indi_map = uuid_index.get("INDI", {})
 
     for ptr, fam in families.items():
-        facts = fam.get("facts", {}) or {}
-        members = facts.get("members", {}) or {}
+        if not isinstance(fam, dict):
+            continue
+
+        husband = fam.get("husband") if isinstance(fam.get("husband"), str) else None
+        wife = fam.get("wife") if isinstance(fam.get("wife"), str) else None
+        children = fam.get("children") if isinstance(fam.get("children"), list) else []
+
+        # Legacy fallback
+        facts = fam.get("facts")
+        if isinstance(facts, dict) and isinstance(facts.get("members"), dict):
+            mem = facts["members"]
+            husband = husband or (mem.get("husband") if isinstance(mem.get("husband"), str) else None)
+            wife = wife or (mem.get("wife") if isinstance(mem.get("wife"), str) else None)
+            if not children:
+                children = mem.get("children") if isinstance(mem.get("children"), list) else []
 
         resolved = {
-            "husband": None,
-            "wife": None,
-            "children": [],
+            "husband": {"pointer": husband, "uuid": indi_map.get(husband), "type": "INDI"} if husband else None,
+            "wife": {"pointer": wife, "uuid": indi_map.get(wife), "type": "INDI"} if wife else None,
+            "children": [
+                {"pointer": c, "uuid": indi_map.get(c), "type": "INDI"}
+                for c in children
+                if isinstance(c, str)
+            ],
         }
 
-        # Husband
-        h = members.get("husband")
-        if h:
-            resolved["husband"] = {
-                "pointer": h,
-                "uuid": indi_map.get(h),
-                "type": "INDI",
-            }
+        fam["members_resolved"] = resolved
 
-        # Wife
-        w = members.get("wife")
-        if w:
-            resolved["wife"] = {
-                "pointer": w,
-                "uuid": indi_map.get(w),
-                "type": "INDI",
-            }
-
-        # Children
-        for c in members.get("children", []):
-            resolved["children"].append({
-                "pointer": c,
-                "uuid": indi_map.get(c),
-                "type": "INDI",
-            })
-
-        facts["members_resolved"] = resolved
-        fam["facts"] = facts
-
-
-# =====================================================================
-# MAIN RESOLUTION DRIVER
-# =====================================================================
 
 def resolve(root: Dict[str, Any]) -> Dict[str, Any]:
-    """
-    Apply UUID mapping and relationship resolution to the export JSON.
-    """
     uuid_index = build_uuid_index(root)
-    resolve_indi_relationships(root.get("individuals", {}), uuid_index)
-    resolve_family_members(root.get("families", {}), uuid_index)
+
+    resolve_indi_relationships(_ensure_dict(root.get("individuals")), uuid_index)
+    resolve_family_members(_ensure_dict(root.get("families")), uuid_index)
 
     root["uuid_index"] = uuid_index
     return root
 
 
-# =====================================================================
-# CLI DRIVER
-# =====================================================================
-
 def main(argv: Optional[List[str]] = None) -> None:
-    ap = argparse.ArgumentParser(
-        description="C.24.4.7 – XREF/UUID resolver for GEDCOM exports."
-    )
-    ap.add_argument(
-        "input",
-        nargs="?",
-        help="Input export.json from main extractor",
-    )
-    ap.add_argument(
-        "-i",
-        "--input",
-        dest="input_path",
-        help="Input export.json from main extractor",
-    )
-    ap.add_argument(
-        "-o",
-        "--output",
-        default="outputs/export_xref.json",
-        help="Output XREF-enhanced JSON",
-    )
-    ap.add_argument(
-        "--debug",
-        action="store_true",
-        help="Enable DEBUG logging",
-    )
+    ap = argparse.ArgumentParser(description="C.24.4.7 – XREF/UUID resolver (modern schema).")
+    ap.add_argument("input", nargs="?", help="Input export.json from main extractor")
+    ap.add_argument("-i", "--input", dest="input_path", help="Input export.json from main extractor")
+    ap.add_argument("-o", "--output", default="outputs/export_xref.json", help="Output XREF-enhanced JSON")
+    ap.add_argument("--debug", action="store_true", help="Enable DEBUG logging")
 
     args = ap.parse_args(argv)
 
@@ -253,16 +237,14 @@ def main(argv: Optional[List[str]] = None) -> None:
     ui = enhanced.get("uuid_index", {})
 
     msg = (
-        "XREF/UUID resolver complete. "
-        f"INDI={len(ui.get('INDI', {}))}, "
-        f"FAM={len(ui.get('FAM', {}))}, "
-        f"SOUR={len(ui.get('SOUR', {}))}, "
-        f"REPO={len(ui.get('REPO', {}))}, "
+        "XREF complete. "
+        f"INDI={len(ui.get('INDI', {}))} "
+        f"FAM={len(ui.get('FAM', {}))} "
+        f"SOUR={len(ui.get('SOUR', {}))} "
+        f"REPO={len(ui.get('REPO', {}))} "
         f"OBJE={len(ui.get('OBJE', {}))}"
     )
     log.info(msg)
-    log.info("XREF export written to: %s", args.output)
-
     print(f"[INFO] {msg}")
     print(f"[INFO] XREF export written to: {args.output}")
 

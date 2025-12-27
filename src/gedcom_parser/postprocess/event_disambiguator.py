@@ -1,35 +1,26 @@
 """
-C.24.4.8 – Event Disambiguation & Scoring
+C.24.4.8 – Event Disambiguation & Scoring (Modern Export Compatible)
 
-Goal
-----
-For each record that has an "events" dict (typically INDI/FAM):
+Works on modern exports where:
+  - root is a dict
+  - records live under keys like "individuals", "families", etc.
+  - record["events"] is typically a LIST of event dicts
 
-- Look at the primary event and any `.alternates`.
-- Compute a heuristic score per candidate using:
-    * date presence / quality
-    * place presence / granularity / coordinates
-    * attached sources / notes
-- Pick a single "primary" winner whenever possible.
-- Preserve ALL alternates, but clearly mark which one was chosen
-  and why (or mark as a true tie).
+If an event dict contains:
+  - "alternates": [ {event}, {event}, ... ]
+Then we score [primary] + alternates, select a winner, and overwrite the
+primary event dict in-place (preserving alternates + disambiguation containers).
 
-Runs AFTER:
-  - main export
-  - xref_resolver
-  - place_standardizer
-
-We do *in-place* updates to the JSON tree and write it back out.
+This module intentionally does NOT depend on registry initialization.
 """
 
 from __future__ import annotations
 
 import argparse
 import json
-from typing import Any, Dict, List
+from typing import Any, Dict, Iterable, List, Optional
 
 from gedcom_parser.logger import get_logger
-from gedcom_parser.registry import get_registry
 
 log = get_logger("event_disambiguator")
 
@@ -42,11 +33,11 @@ def _safe_place_raw(ev: Dict[str, Any]) -> str:
     """Best-effort extraction of raw place text from an event block."""
     place = ev.get("place")
     if isinstance(place, dict):
-        raw = place.get("raw")
+        raw = place.get("raw") or place.get("normalized")
         if raw:
             return str(raw)
 
-    # Legacy fallbacks if the structure isn't standardized yet
+    # Legacy-ish fallbacks
     if ev.get("place_raw"):
         return str(ev["place_raw"])
     if ev.get("value"):
@@ -54,15 +45,8 @@ def _safe_place_raw(ev: Dict[str, Any]) -> str:
     return ""
 
 
-def _score_event(ev: Dict[str, Any]) -> int:
-    """
-    Heuristic scoring function for choosing a primary event.
-
-    Rough weighting:
-      - Date presence / quality dominates.
-      - Place granularity & coordinates next.
-      - Sources & notes as tie-breakers.
-    """
+def _score_event(ev: Any) -> int:
+    """Heuristic scoring function for choosing a primary event."""
     if not isinstance(ev, dict):
         return 0
 
@@ -73,19 +57,16 @@ def _score_event(ev: Dict[str, Any]) -> int:
     if raw_date:
         score += 50
         upper = raw_date.upper()
-        # Penalize fuzzy dates
         if any(q in upper for q in ("ABT", "BEF", "AFT", "EST", "CALC")):
             score -= 10
-        # Reward more "structured" dates
         if any(sep in raw_date for sep in (" ", "/", "-")):
             score += 5
 
     # 2) Place quality
-    place = ev.get("place") or {}
-    if isinstance(place, dict) and (place.get("raw") or place.get("parts")):
+    place = ev.get("place")
+    if isinstance(place, dict) and (place.get("raw") or place.get("parts") or place.get("normalized")):
         score += 30
         parts = place.get("parts") or {}
-        # Good if we have at least 2+ structured parts
         non_empty_parts = [v for v in parts.values() if v]
         if len(non_empty_parts) >= 2:
             score += 5
@@ -93,7 +74,6 @@ def _score_event(ev: Dict[str, Any]) -> int:
         if coords.get("lat") is not None and coords.get("lon") is not None:
             score += 5
     else:
-        # Fallback to any raw place text
         if _safe_place_raw(ev):
             score += 10
 
@@ -107,10 +87,10 @@ def _score_event(ev: Dict[str, Any]) -> int:
 
     # 4) Notes
     notes = ev.get("notes") or []
-    if isinstance(notes, list) and len(notes) > 0:
+    if isinstance(notes, list) and notes:
         score += 3
 
-    # 5) Slight bump if explicitly marked non-ambiguous
+    # 5) slight bump if already explicitly non-ambiguous
     if ev.get("ambiguous") is False:
         score += 2
 
@@ -119,51 +99,41 @@ def _score_event(ev: Dict[str, Any]) -> int:
 
 def _copy_event_fields(dst: Dict[str, Any], src: Dict[str, Any]) -> None:
     """
-    In-place overwrite of dst (the primary event slot) with src's data,
+    In-place overwrite of dst with src's data,
     preserving the 'alternates' and 'disambiguation' containers.
     """
     preserve = {"alternates", "disambiguation"}
 
-    # Clear everything but preserved keys
     for key in list(dst.keys()):
         if key not in preserve:
             dst.pop(key, None)
 
-    # Copy new content in
     for key, value in src.items():
         if key in preserve:
             continue
         dst[key] = value
 
 
-def _iter_records_with_events(node: Any):
+def _iter_record_dicts(root: Any) -> Iterable[Dict[str, Any]]:
     """
-    Generic tree walk: yield any dict that has an 'events' key which looks
-    like our events mapping. This makes the disambiguator agnostic to the
-    exact nesting of INDI/FAM/etc.
+    Yield any dict that looks like a record (has an 'events' key).
+    This is intentionally schema-agnostic.
     """
-    if isinstance(node, dict):
-        if isinstance(node.get("events"), dict):
-            yield node
-        for val in node.values():
-            yield from _iter_records_with_events(val)
-    elif isinstance(node, list):
-        for item in node:
-            yield from _iter_records_with_events(item)
+    if isinstance(root, dict):
+        if "events" in root:
+            yield root
+        for v in root.values():
+            yield from _iter_record_dicts(v)
+    elif isinstance(root, list):
+        for item in root:
+            yield from _iter_record_dicts(item)
 
 
 # ---------------------------------------------------------------------------
 # Core disambiguation
 # ---------------------------------------------------------------------------
 
-def disambiguate_events_tree(
-    root: Dict[str, Any],
-    debug_enabled: bool = False,
-) -> Dict[str, Any]:
-    """
-    Walk the entire JSON tree, disambiguate all events that have alternates,
-    and return the modified root.
-    """
+def disambiguate_events_tree(root: Dict[str, Any], debug_enabled: bool = False) -> Dict[str, Any]:
     total_records = 0
     total_events = 0
     with_alts = 0
@@ -171,94 +141,118 @@ def disambiguate_events_tree(
     ties = 0
     remaining_ambiguous = 0
 
-    for rec in _iter_records_with_events(root):
-        total_records += 1
-        rec_id = rec.get("uuid") or rec.get("pointer") or "<??>"
-        events = rec.get("events") or {}
+    for rec in _iter_record_dicts(root):
+        events = rec.get("events")
 
-        for tag, primary in events.items():
-            total_events += 1
+        # Modern: events is a LIST
+        if isinstance(events, list):
+            total_records += 1
+            rec_id = rec.get("uuid") or rec.get("pointer") or "<??>"
 
-            if not isinstance(primary, dict):
-                continue
+            for ev in events:
+                total_events += 1
+                if not isinstance(ev, dict):
+                    continue
 
-            alts = primary.get("alternates") or []
-            if not alts:
-                # Nothing to disambiguate
-                continue
+                alts = ev.get("alternates") or []
+                if not isinstance(alts, list) or not alts:
+                    continue
 
-            with_alts += 1
-            candidates: List[Dict[str, Any]] = [primary] + list(alts)
-            scores: List[int] = []
+                with_alts += 1
+                candidates: List[Dict[str, Any]] = [ev] + [a for a in alts if isinstance(a, dict)]
+                scores: List[int] = []
 
-            # Score each candidate
-            for idx, ev in enumerate(candidates):
-                sc = _score_event(ev)
-                scores.append(sc)
+                for idx, cand in enumerate(candidates):
+                    sc = _score_event(cand)
+                    scores.append(sc)
+                    cand.setdefault("disambiguation", {})
+                    cand["disambiguation"]["score"] = sc
 
-                ev.setdefault("disambiguation", {})
-                ev["disambiguation"]["score"] = sc
+                    if debug_enabled:
+                        log.debug("Record %s candidate #%d score=%d", rec_id, idx, sc)
 
-                if debug_enabled:
-                    log.debug(
-                        "Record %s tag=%s candidate #%d score=%d",
-                        rec_id,
-                        tag,
-                        idx,
-                        sc,
-                    )
+                if not scores:
+                    continue
 
-            max_score = max(scores)
-            winners = [i for i, sc in enumerate(scores) if sc == max_score]
+                max_score = max(scores)
+                winners = [i for i, sc in enumerate(scores) if sc == max_score]
 
-            if len(winners) > 1:
-                # Tie: leave ambiguous; do NOT alter alternates
-                ties += 1
-                primary["ambiguous"] = True
-                primary.setdefault("disambiguation", {})["tie"] = True
-                remaining_ambiguous += 1
+                if len(winners) > 1:
+                    ties += 1
+                    ev["ambiguous"] = True
+                    ev.setdefault("disambiguation", {})["tie"] = True
+                    remaining_ambiguous += 1
+                    continue
 
-                if debug_enabled:
-                    log.debug(
-                        "Record %s tag=%s remains ambiguous (tie among %s, score=%d)",
-                        rec_id,
-                        tag,
-                        winners,
-                        max_score,
-                    )
-                continue
+                winner_idx = winners[0]
+                winner = candidates[winner_idx]
 
-            # Unique winner
-            winner_idx = winners[0]
-            winner = candidates[winner_idx]
+                _copy_event_fields(ev, winner)
+                ev["ambiguous"] = False
 
-            # Overwrite primary slot with winner's data
-            _copy_event_fields(primary, winner)
-            primary["ambiguous"] = False
+                # rebuild alternates (no self-reference)
+                if winner_idx == 0:
+                    loser_list = list(alts)
+                else:
+                    loser_list = [a for i, a in enumerate(alts) if (i + 1) != winner_idx]
 
-            # Build a safe alternates list WITHOUT self-reference
-            if winner_idx == 0:
-                # Original primary wins – all alts remain as alternates
-                loser_list = list(alts)
-            else:
-                # One of the alternates wins – alternates = all other alternates
-                # (we do NOT include the primary container itself to avoid cycles)
-                loser_list = [
-                    ev for i, ev in enumerate(alts) if (i + 1) != winner_idx
-                ]
+                ev["alternates"] = loser_list
+                ev.setdefault("disambiguation", {})["winner_index"] = winner_idx
+                resolved += 1
 
-            primary["alternates"] = loser_list
-            primary.setdefault("disambiguation", {})["winner_index"] = winner_idx
-            resolved += 1
+            continue
 
-            if debug_enabled:
-                log.debug(
-                    "Record %s tag=%s resolved to candidate #%d (score=%d)",
-                    rec_id,
-                    tag,
-                    winner_idx,
-                    max_score,
-                )
+        # Legacy fallback: events is a DICT (keep compatibility if encountered)
+        if isinstance(events, dict):
+            total_records += 1
+            rec_id = rec.get("uuid") or rec.get("pointer") or "<??>"
+
+            for tag, primary in events.items():
+                total_events += 1
+                if not isinstance(primary, dict):
+                    continue
+
+                alts = primary.get("alternates") or []
+                if not isinstance(alts, list) or not alts:
+                    continue
+
+                with_alts += 1
+                candidates = [primary] + [a for a in alts if isinstance(a, dict)]
+                scores = []
+                for idx, cand in enumerate(candidates):
+                    sc = _score_event(cand)
+                    scores.append(sc)
+                    cand.setdefault("disambiguation", {})
+                    cand["disambiguation"]["score"] = sc
+                    if debug_enabled:
+                        log.debug("Record %s tag=%s candidate #%d score=%d", rec_id, tag, idx, sc)
+
+                if not scores:
+                    continue
+
+                max_score = max(scores)
+                winners = [i for i, sc in enumerate(scores) if sc == max_score]
+
+                if len(winners) > 1:
+                    ties += 1
+                    primary["ambiguous"] = True
+                    primary.setdefault("disambiguation", {})["tie"] = True
+                    remaining_ambiguous += 1
+                    continue
+
+                winner_idx = winners[0]
+                winner = candidates[winner_idx]
+                _copy_event_fields(primary, winner)
+                primary["ambiguous"] = False
+
+                if winner_idx == 0:
+                    loser_list = list(alts)
+                else:
+                    loser_list = [a for i, a in enumerate(alts) if (i + 1) != winner_idx]
+
+                primary["alternates"] = loser_list
+                primary.setdefault("disambiguation", {})["winner_index"] = winner_idx
+                resolved += 1
 
     log.info(
         "Event disambiguation: records=%d, events=%d, with_alts=%d, "
@@ -270,7 +264,6 @@ def disambiguate_events_tree(
         ties,
         remaining_ambiguous,
     )
-
     return root
 
 
@@ -278,38 +271,21 @@ def disambiguate_events_tree(
 # CLI
 # ---------------------------------------------------------------------------
 
-def main(argv: List[str] | None = None) -> None:
+def main(argv: Optional[List[str]] = None) -> None:
     parser = argparse.ArgumentParser(
-        description="C.24.4.8 – GEDCOM event disambiguation based on scoring."
+        description="C.24.4.8 – GEDCOM event disambiguation based on scoring (modern export compatible)."
     )
-    parser.add_argument(
-        "input",
-        help="Input JSON file (from place_standardizer).",
-    )
+    parser.add_argument("input", help="Input JSON file (from place_standardizer).")
     parser.add_argument(
         "-o",
         "--output",
         default="outputs/export_events_resolved.json",
         help="Output JSON file (default: outputs/export_events_resolved.json)",
     )
-    parser.add_argument(
-        "--debug",
-        action="store_true",
-        help="Request verbose debugging (requires debug:true in config/gedcom_parser.yml).",
-    )
-
+    parser.add_argument("--debug", action="store_true", help="Enable verbose debugging.")
     args = parser.parse_args(argv)
 
-    # Ensure config + registry are instantiated (also configures logging).
-    reg = get_registry()
-    cfg = reg.config
-    debug_enabled = bool(args.debug and cfg.debug)
-
-    if args.debug and not cfg.debug:
-        log.warning(
-            "--debug flag passed but config.debug is False; "
-            "set debug: true in config/gedcom_parser.yml to see debug lines."
-        )
+    debug_enabled = bool(args.debug)
 
     log.info("Loading input JSON: %s", args.input)
     with open(args.input, "r", encoding="utf-8") as f:

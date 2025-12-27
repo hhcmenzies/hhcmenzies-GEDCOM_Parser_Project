@@ -1,22 +1,11 @@
 """
 json_exporter.py
-Safe JSON exporter for EntityRegistry-style objects.
+Structured JSON exporter for EntityRegistry-style objects.
 
-This module:
-
-- Accepts the current in-memory registry object (with dict attributes).
-- Produces a plain JSON-compatible dict.
-- Writes it to disk with robust logging.
-- Does NOT change the structure of the registry; it just serializes it.
-
-Expected registry shape (minimal):
-
-    registry.individuals    -> dict
-    registry.families       -> dict
-    registry.sources        -> dict
-    registry.repositories   -> dict
-    registry.media_objects  -> dict
-    registry.uuid_index     -> dict (optional)
+This exporter:
+- Converts dataclasses and objects to dictionaries (NOT strings)
+- Preserves full structure for downstream processing
+- Is safe, deterministic, and lossless
 """
 
 from __future__ import annotations
@@ -24,112 +13,89 @@ from __future__ import annotations
 import json
 from pathlib import Path
 from typing import Any, Dict
+from dataclasses import is_dataclass, asdict
 
 from gedcom_parser.logger import get_logger
 
 log = get_logger("json_exporter")
 
 
-def _safe_json_value(obj: Any) -> Any:
+def _to_json_compatible(obj: Any) -> Any:
     """
-    Make sure any value is JSON-serializable.
+    Recursively convert objects into JSON-compatible structures.
 
-    - Passes through primitives (None, bool, int, float, str).
-    - Recursively handles dict, list, tuple, set.
-    - Fallback: use str(obj).
-
-    This matches the intent of the earlier safe exporter:
-    don't mutate the registry structure, just ensure we can dump it.
+    Rules:
+    - Primitives pass through
+    - dataclasses → dict (recursively)
+    - dict → dict (recursively)
+    - list / tuple / set → list (recursively)
+    - Unknown objects → __dict__ if present, else str(obj)
     """
     if obj is None or isinstance(obj, (bool, int, float, str)):
         return obj
 
+    if is_dataclass(obj):
+        return {k: _to_json_compatible(v) for k, v in asdict(obj).items()}
+
     if isinstance(obj, dict):
-        return {str(k): _safe_json_value(v) for k, v in obj.items()}
+        return {str(k): _to_json_compatible(v) for k, v in obj.items()}
 
     if isinstance(obj, (list, tuple, set)):
-        return [_safe_json_value(v) for v in obj]
+        return [_to_json_compatible(v) for v in obj]
 
-    # Fallback for any custom object (e.g., dataclasses, models)
+    # Fallback: try object's __dict__
+    if hasattr(obj, "__dict__"):
+        return {k: _to_json_compatible(v) for k, v in obj.__dict__.items()}
+
+    # Last resort
     return str(obj)
 
 
 def build_registry_dict(registry: Any) -> Dict[str, Any]:
     """
-    Build the top-level dict that will be written to JSON.
-
-    This preserves the original JSON structure:
-
-    {
-        "individuals":  { ... },
-        "families":     { ... },
-        "sources":      { ... },
-        "repositories": { ... },
-        "media_objects":{ ... },
-        "uuid_index":   { ... }   # when present
-    }
+    Convert the in-memory registry into a JSON-safe dict.
     """
-    individuals = getattr(registry, "individuals", {}) or {}
-    families = getattr(registry, "families", {}) or {}
-    sources = getattr(registry, "sources", {}) or {}
-    repositories = getattr(registry, "repositories", {}) or {}
-    media_objects = getattr(registry, "media_objects", {}) or {}
-    uuid_index = getattr(registry, "uuid_index", None)
-
-    data: Dict[str, Any] = {
+    return {
         "individuals": {
-            ptr: _safe_json_value(ent) for ptr, ent in individuals.items()
+            ptr: _to_json_compatible(ent)
+            for ptr, ent in (getattr(registry, "individuals", {}) or {}).items()
         },
         "families": {
-            ptr: _safe_json_value(ent) for ptr, ent in families.items()
+            ptr: _to_json_compatible(ent)
+            for ptr, ent in (getattr(registry, "families", {}) or {}).items()
         },
         "sources": {
-            ptr: _safe_json_value(ent) for ptr, ent in sources.items()
+            ptr: _to_json_compatible(ent)
+            for ptr, ent in (getattr(registry, "sources", {}) or {}).items()
         },
         "repositories": {
-            ptr: _safe_json_value(ent) for ptr, ent in repositories.items()
+            ptr: _to_json_compatible(ent)
+            for ptr, ent in (getattr(registry, "repositories", {}) or {}).items()
         },
         "media_objects": {
-            ptr: _safe_json_value(ent) for ptr, ent in media_objects.items()
+            ptr: _to_json_compatible(ent)
+            for ptr, ent in (getattr(registry, "media_objects", {}) or {}).items()
         },
+        **(
+            {"uuid_index": _to_json_compatible(registry.uuid_index)}
+            if hasattr(registry, "uuid_index") and registry.uuid_index
+            else {}
+        ),
     }
-
-    # uuid_index was present in your later pipeline exports – keep it when available
-    if uuid_index is not None:
-        data["uuid_index"] = _safe_json_value(uuid_index)
-
-    return data
 
 
 def serialize_registry_to_json_string(registry: Any, indent: int = 2) -> str:
-    """
-    Return a JSON string representation of the registry.
-
-    This is a pure function (no I/O); useful for tests or callers that
-    want the JSON string without writing a file.
-    """
-    data = build_registry_dict(registry)
-    return json.dumps(data, indent=indent, ensure_ascii=False)
+    return json.dumps(
+        build_registry_dict(registry),
+        indent=indent,
+        ensure_ascii=False,
+    )
 
 
 def export_registry_json(registry: Any, output_path: str | Path, indent: int = 2) -> None:
-    """
-    High-level helper: serialize the registry and write it to disk.
-
-    This function:
-
-    - Logs entity counts (INDI / FAM / SOUR / REPO / OBJE).
-    - Creates parent directories as needed.
-    - Writes UTF-8 JSON with the given indent.
-    - Logs final file size in bytes.
-
-    It is the function importer by exporter.export_registry_to_json
-    and is the main I/O entry point for JSON export.
-    """
     output_path = Path(output_path)
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
-    # Count entities for logging
     individuals = getattr(registry, "individuals", {}) or {}
     families = getattr(registry, "families", {}) or {}
     sources = getattr(registry, "sources", {}) or {}
@@ -147,19 +113,10 @@ def export_registry_json(registry: Any, output_path: str | Path, indent: int = 2
         len(media_objects),
     )
 
-    # Serialize to string first so we can easily compute size if desired
     json_str = serialize_registry_to_json_string(registry, indent=indent)
 
-    try:
-        with output_path.open("w", encoding="utf-8") as f:
-            f.write(json_str)
-    except Exception:  # pragma: no cover
-        log.exception("JSON export failed.")
-        raise
+    with output_path.open("w", encoding="utf-8") as f:
+        f.write(json_str)
 
-    try:
-        size_bytes = output_path.stat().st_size
-    except OSError:
-        size_bytes = len(json_str.encode("utf-8"))
-
+    size_bytes = output_path.stat().st_size
     log.info("JSON export complete. size=%d bytes", size_bytes)

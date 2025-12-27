@@ -43,8 +43,8 @@ python -m gedcom_parser.postprocess.xref_resolver \
 ##########################################
 echo "[3] Running place_standardizer → export_standardized.json"
 python -m gedcom_parser.postprocess.place_standardizer \
-    "$OUT/export_xref.json" \
-    -o "$OUT/export_standardized.json"
+  -i outputs/export_xref.json \
+  -o outputs/export_standardized.json
 
 ##########################################
 # 4. EVENT DISAMBIGUATOR

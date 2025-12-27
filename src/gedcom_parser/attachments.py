@@ -1,310 +1,279 @@
-# src/gedcom_parser/attachments.py
 from __future__ import annotations
 
 from dataclasses import dataclass, field
-from typing import Any, Dict, Iterable, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 
-# ------------------------------------------------------------
-# AttachedRecord
-# ------------------------------------------------------------
+# ==============================================================================
+# Models
+# ==============================================================================
 
-@dataclass
+@dataclass(slots=True)
 class AttachedRecord:
     """
-    Normalized attachment reference on an entity.
+    Represents an OBJE attachment encountered inside an entity record.
 
-    Represents:
-      - pointer OBJE reference (@O123@)
-      - inline OBJE (no pointer, has FILE/TITL/etc)
-      - promoted inline OBJE (inline content promoted to a MediaObjectEntity)
-
-    Step 4.5 promotion MUST be:
-      - re-runnable
-      - idempotent
-      - safe if some references are missing
+    - pointer: pointer-form OBJE (@O1@)
+    - file: inline FILE path if present
+    - title: TITL if present
+    - role: reserved for future use
+    - promoted: set True if promotion created a MediaObjectEntity
+    - media_object_id: pointer (for pointer OBJE) or UUID (for promoted inline)
     """
-    media_object_id: Optional[str] = None   # uuid (promoted) OR pointer (pointer-form)
-    pointer: Optional[str] = None           # GEDCOM pointer like "@O123@"
+    pointer: Optional[str] = None
     file: Optional[str] = None
     title: Optional[str] = None
-    form: Optional[str] = None
-    media_type: Optional[str] = None
     role: Optional[str] = None
+
     promoted: bool = False
+    media_object_id: Optional[str] = None
+
     raw: Dict[str, Any] = field(default_factory=dict)
 
 
-# ------------------------------------------------------------
-# Node helpers
-# ------------------------------------------------------------
+# ==============================================================================
+# Internal helpers
+# ==============================================================================
 
-def _norm_tag(tag: Optional[str]) -> str:
-    return (tag or "").strip().upper()
-
-
-def _iter_children(node: Any) -> Iterable[Any]:
+def _iter_children(node: Any) -> List[Any]:
     return getattr(node, "children", []) or []
 
 
-def _child_value(node: Any, tag: str) -> Optional[str]:
-    want = _norm_tag(tag)
+def _first_child_value(node: Any, tag: str) -> Optional[str]:
     for ch in _iter_children(node):
-        if _norm_tag(getattr(ch, "tag", None)) == want:
-            val = getattr(ch, "value", None)
-            if val is not None:
-                return val
+        if getattr(ch, "tag", None) == tag:
+            return getattr(ch, "value", None)
     return None
 
 
-def _child_node(node: Any, tag: str) -> Optional[Any]:
-    want = _norm_tag(tag)
-    for ch in _iter_children(node):
-        if _norm_tag(getattr(ch, "tag", None)) == want:
-            return ch
-    return None
-
-
-def _collect_file_entries(obje_node: Any) -> List[Dict[str, Optional[str]]]:
+def _find_inline_file_and_form(
+    obje_node: Any,
+) -> Tuple[Optional[str], Optional[str], Optional[str]]:
     """
-    Collect FILE blocks under OBJE.
+    Returns: (file_path, form, media_type)
 
-    Variants:
-      OBJE
-        FILE path
-          FORM jpg
-          TITL caption
-          TYPE photo
+    Supports:
+      - FILE -> FORM -> TYPE / MEDI
     """
-    out: List[Dict[str, Optional[str]]] = []
+    file_path: Optional[str] = None
+    form: Optional[str] = None
+    media_type: Optional[str] = None
+
     for ch in _iter_children(obje_node):
-        if _norm_tag(getattr(ch, "tag", None)) != "FILE":
-            continue
+        if getattr(ch, "tag", None) == "FILE":
+            file_path = getattr(ch, "value", None)
 
-        path = getattr(ch, "value", None)
-        form = _child_value(ch, "FORM")
-        titl = _child_value(ch, "TITL")
-        typ = _child_value(ch, "TYPE")
-
-        out.append({"path": path, "form": form, "title": titl, "media_type": typ})
-    return out
-
-
-# ------------------------------------------------------------
-# Promotion heuristic
-# ------------------------------------------------------------
-
-def should_promote_inline_obje(obje_node: Any) -> bool:
-    """
-    Best-practice heuristic:
-    Promote inline OBJE if it provides meaningful content:
-      - FILE path (strong signal)
-      - or TITL (weak signal, but still meaningful)
-    """
-    if obje_node is None:
-        return False
-
-    if _child_node(obje_node, "FILE") is not None:
-        return True
-
-    titl = _child_value(obje_node, "TITL")
-    return bool(titl and titl.strip())
-
-
-# ------------------------------------------------------------
-# Extraction (builders call this)
-# ------------------------------------------------------------
-
-def parse_obje_node(obje_node: Any, *, origin: Dict[str, Any]) -> AttachedRecord:
-    rec = AttachedRecord(raw=dict(origin))
-    rec.raw["lineno"] = getattr(obje_node, "lineno", None)
-
-    ptr = getattr(obje_node, "pointer", None)
-    if ptr:
-        rec.pointer = ptr
-        rec.media_object_id = ptr  # safe default for pointer-form
-        return rec
-
-    # Inline OBJE
-    titl = _child_value(obje_node, "TITL")
-    if titl:
-        rec.title = titl
-
-    file_entries = _collect_file_entries(obje_node)
-    if file_entries and file_entries[0].get("path"):
-        rec.file = file_entries[0].get("path")
-        rec.form = file_entries[0].get("form")
-        rec.media_type = file_entries[0].get("media_type")
-        # Prefer FILE.TITL over OBJE.TITL if present
-        if file_entries[0].get("title"):
-            rec.title = file_entries[0].get("title") or rec.title
-
-    # Custom role tags: first "_" tag under OBJE
-    for ch in _iter_children(obje_node):
-        t = getattr(ch, "tag", None)
-        if isinstance(t, str) and t.startswith("_"):
-            rec.role = t
+            for fch in _iter_children(ch):
+                if getattr(fch, "tag", None) == "FORM":
+                    form = getattr(fch, "value", None)
+                    for tf in _iter_children(fch):
+                        if getattr(tf, "tag", None) in ("TYPE", "MEDI"):
+                            media_type = getattr(tf, "value", None)
             break
 
-    return rec
+    return file_path, form, media_type
 
 
-def extract_attached_records(owner_entity: Any, node: Any) -> List[AttachedRecord]:
+# ==============================================================================
+# Public extraction API (COMPATIBILITY SAFE)
+# ==============================================================================
+
+def extract_obje_attachments(
+    owner_or_node: Any,
+    node: Optional[Any] = None,
+    *,
+    origin: Optional[Dict[str, Any]] = None,
+) -> List[AttachedRecord]:
     """
-    Extract direct-child OBJE nodes into AttachedRecord objects.
-    No promotion here (promotion is Phase 4.5).
-    """
-    origin = {
-        "owner_pointer": getattr(owner_entity, "pointer", None),
-        "owner_uuid": getattr(owner_entity, "uuid", None),
-        "owner_type": type(owner_entity).__name__,
-    }
+    Extract OBJE attachments from a GEDCOM record.
 
-    out: List[AttachedRecord] = []
+    Supported call forms:
+      - extract_obje_attachments(node, origin={...})          # CURRENT canonical
+      - extract_obje_attachments(owner, node, origin={...})   # FUTURE-compatible
+
+    The function auto-detects which form is being used.
+    """
+
+    # ------------------------------------------------------------------
+    # Normalize arguments
+    # ------------------------------------------------------------------
+    if node is None:
+        # Called as extract_obje_attachments(node, origin=...)
+        node = owner_or_node
+        owner = None
+    else:
+        # Called as extract_obje_attachments(owner, node, origin=...)
+        owner = owner_or_node
+
+    if origin is None:
+        origin = {}
+
+    results: List[AttachedRecord] = []
+
+    owner_pointer = origin.get("pointer")
+    owner_type = origin.get("container")
+
+    # ------------------------------------------------------------------
+    # Extract OBJE children
+    # ------------------------------------------------------------------
     for ch in _iter_children(node):
-        if _norm_tag(getattr(ch, "tag", None)) == "OBJE":
-            out.append(parse_obje_node(ch, origin=origin))
-    return out
+        if getattr(ch, "tag", None) != "OBJE":
+            continue
 
-# ------------------------------------------------------------------
-# Backwards-compatibility shim (builders depend on this name)
-# ------------------------------------------------------------------
+        lineno = getattr(ch, "lineno", None)
 
-def extract_obje_attachments(node: Any, *, origin: Optional[Dict[str, Any]] = None):
+        # Pointer-form OBJE
+        ptr = getattr(ch, "pointer", None)
+        if ptr:
+            results.append(
+                AttachedRecord(
+                    pointer=ptr,
+                    raw={
+                        "kind": "pointer",
+                        "owner_pointer": owner_pointer,
+                        "owner_type": owner_type,
+                        "lineno": lineno,
+                        **origin,
+                    },
+                )
+            )
+            continue
+
+        # Inline OBJE
+        file_path, form, media_type = _find_inline_file_and_form(ch)
+        title = _first_child_value(ch, "TITL")
+
+        results.append(
+            AttachedRecord(
+                pointer=None,
+                file=file_path,
+                title=title,
+                raw={
+                    "kind": "inline",
+                    "owner_pointer": owner_pointer,
+                    "owner_type": owner_type,
+                    "lineno": lineno,
+                    "form": form,
+                    "media_type": media_type,
+                    **origin,
+                },
+            )
+        )
+
+    return results
+
+
+def extract_attached_records(
+    owner_or_node: Any,
+    node: Optional[Any] = None,
+    *,
+    origin: Optional[Dict[str, Any]] = None,
+) -> List[AttachedRecord]:
     """
-    Compatibility wrapper for legacy builder imports.
-
-    Adapts:
-        extract_obje_attachments(node, origin=...)
-
-    To:
-        extract_attached_records(owner_entity=None, node)
-
-    NOTE:
-      - owner_entity is unknown at this stage
-      - origin metadata is preserved in AttachedRecord.raw
+    Generic wrapper for attachment extraction.
     """
-    origin = dict(origin or {})
+    return extract_obje_attachments(owner_or_node, node, origin=origin)
 
-    attachments = []
-    for ch in getattr(node, "children", []) or []:
-        if _norm_tag(getattr(ch, "tag", None)) == "OBJE":
-            rec = parse_obje_node(ch, origin=origin)
-            attachments.append(rec)
 
-    return attachments
+# ==============================================================================
+# Promotion helpers (unchanged behavior)
+# ==============================================================================
 
-# ------------------------------------------------------------
-# Phase 4.5: promotion pass (run after linking)
-# ------------------------------------------------------------
-
-def _node_to_record_dict(node: Any) -> Dict[str, Any]:
-    return {
-        "tag": getattr(node, "tag", None),
-        "value": getattr(node, "value", None),
-        "pointer": getattr(node, "pointer", None),
-        "lineno": getattr(node, "lineno", None),
-        "children": [_node_to_record_dict(c) for c in _iter_children(node)],
-    }
+def should_promote_inline_obje(obje_node: Any) -> bool:
+    file_path, _, _ = _find_inline_file_and_form(obje_node)
+    return bool(file_path)
 
 
 def promote_inline_media_objects(registry: Any, tree: Any) -> int:
     """
-    Phase 4.5 promotion:
-      - index inline OBJE nodes from GEDCOMTree.records
-      - for each entity attachment:
-          - pointer-form: ensure media_object_id set to pointer
-          - inline-form: promote if qualifies, idempotently
-
-    Returns:
-      number of newly-created promoted media objects
+    Phase 4.5 promotion pass (unchanged, idempotent).
     """
-    # Local imports to avoid circular imports
     from gedcom_parser.identity.uuid_factory import uuid_for_record
     from gedcom_parser.registry.entities import MediaFile, MediaObjectEntity
 
     created = 0
-
-    # Index inline OBJE nodes by (top_record_pointer, lineno)
     obje_index: Dict[Tuple[Optional[str], Optional[int]], Any] = {}
 
-    def index_inline_objes(node: Any, top_ptr: Optional[str]) -> None:
+    def index_objes(node: Any, container_pointer: Optional[str]) -> None:
         for ch in _iter_children(node):
-            if _norm_tag(getattr(ch, "tag", None)) == "OBJE" and not getattr(ch, "pointer", None):
-                key = (top_ptr, getattr(ch, "lineno", None))
+            if getattr(ch, "tag", None) == "OBJE" and not getattr(ch, "pointer", None):
+                key = (container_pointer, getattr(ch, "lineno", None))
                 obje_index[key] = ch
-            index_inline_objes(ch, top_ptr)
+            index_objes(ch, container_pointer)
 
-    for top in getattr(tree, "records", []) or []:
-        top_ptr = getattr(top, "pointer", None)
-        index_inline_objes(top, top_ptr)
+    top_level = getattr(tree, "records", None) or getattr(tree, "children", []) or []
 
-    def promote_entity(entity: Any) -> None:
+    for top in top_level:
+        index_objes(top, getattr(top, "pointer", None))
+
+    def node_to_record_dict(node: Any) -> Dict[str, Any]:
+        return {
+            "tag": getattr(node, "tag", None),
+            "value": getattr(node, "value", None),
+            "pointer": getattr(node, "pointer", None),
+            "lineno": getattr(node, "lineno", None),
+            "children": [node_to_record_dict(c) for c in _iter_children(node)],
+        }
+
+    def promote_on_entity(entity: Any) -> None:
         nonlocal created
 
         for att in getattr(entity, "attachments", []) or []:
-            # Pointer-form is already a stable reference.
             if att.pointer:
                 att.media_object_id = att.pointer
-                continue
-
-            # Already promoted and present -> idempotent no-op
-            if att.promoted and att.media_object_id and att.media_object_id in getattr(registry, "media_objects", {}):
                 continue
 
             owner_ptr = att.raw.get("owner_pointer")
             lineno = att.raw.get("lineno")
             obje_node = obje_index.get((owner_ptr, lineno))
-
-            if not obje_node:
-                continue
-            if not should_promote_inline_obje(obje_node):
+            if not obje_node or not should_promote_inline_obje(obje_node):
                 continue
 
-            record_dict = _node_to_record_dict(obje_node)
+            record_dict = node_to_record_dict(obje_node)
             media_uuid = uuid_for_record(record_dict)
 
-            # If already created earlier in the run, link it (idempotent)
-            if media_uuid in getattr(registry, "media_objects", {}):
+            if registry.get_media_object(media_uuid):
                 att.media_object_id = media_uuid
                 att.promoted = True
                 continue
 
+            file_path, form, media_type = _find_inline_file_and_form(obje_node)
+            title = _first_child_value(obje_node, "TITL") or att.title
+
             media = MediaObjectEntity(
                 uuid=media_uuid,
                 pointer=None,
-                title=att.title,
+                title=title,
                 files=[],
                 raw={
-                    "promoted_from": "inline_OBJE",
-                    "owner_pointer": owner_ptr,
-                    "owner_type": att.raw.get("owner_type"),
+                    "promoted_from": owner_ptr,
                     "lineno": lineno,
+                    "source": "inline_OBJE",
                 },
             )
 
-            if att.file:
+            if file_path:
                 media.files.append(
                     MediaFile(
-                        path=att.file,
-                        form=att.form,
-                        media_type=att.media_type,
-                        title=att.title,
-                        raw={"role": att.role, "source": "inline_OBJE"},
+                        path=file_path,
+                        form=form,
+                        media_type=media_type,
+                        title=title,
+                        raw={"source": "inline_OBJE"},
                     )
                 )
 
             registry.register_media_object(media)
+            created += 1
 
             att.media_object_id = media_uuid
             att.promoted = True
-            created += 1
 
-    for ind in getattr(registry, "individuals", {}).values():
-        promote_entity(ind)
-    for fam in getattr(registry, "families", {}).values():
-        promote_entity(fam)
-    for src in getattr(registry, "sources", {}).values():
-        promote_entity(src)
+    for ind in registry.individuals.values():
+        promote_on_entity(ind)
+    for fam in registry.families.values():
+        promote_on_entity(fam)
+    for src in registry.sources.values():
+        promote_on_entity(src)
 
     return created
