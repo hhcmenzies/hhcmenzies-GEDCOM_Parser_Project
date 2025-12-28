@@ -1,0 +1,279 @@
+openapi: 3.1.0
+info:
+  title: GEDCOM Parser Canonical Export (C.24.5)
+  version: "C.24.5"
+  description: >
+    Canonical JSON export produced by the GEDCOM Parser pipeline at phase C.24.5.
+    This spec is additive and permissive: producers may include additional fields
+    under `raw` and other extension points.
+servers: []
+paths: {}
+components:
+  schemas:
+    Export:
+      type: object
+      required: [individuals, families, sources, repositories, media_objects]
+      additionalProperties: true
+      properties:
+        meta:
+          type: object
+          additionalProperties: true
+        schema_version:
+          type: string
+          description: Optional explicit schema version marker (e.g., "C.24.5").
+        individuals:
+          type: object
+          additionalProperties:
+            $ref: "#/components/schemas/Individual"
+        families:
+          type: object
+          additionalProperties:
+            $ref: "#/components/schemas/Family"
+        sources:
+          type: object
+          additionalProperties:
+            $ref: "#/components/schemas/Source"
+        repositories:
+          type: object
+          additionalProperties:
+            type: object
+            additionalProperties: true
+        media_objects:
+          type: object
+          additionalProperties:
+            $ref: "#/components/schemas/MediaObject"
+        places:
+          type: object
+          nullable: true
+          additionalProperties:
+            $ref: "#/components/schemas/Place"
+        uuid_index:
+          type: object
+          nullable: true
+          additionalProperties: true
+
+    Name:
+      type: object
+      additionalProperties: true
+      properties:
+        full: { type: string }
+        given: { type: string, nullable: true }
+        surname: { type: string, nullable: true }
+        prefix: { type: string, nullable: true }
+        suffix: { type: string, nullable: true }
+        nickname: { type: string, nullable: true }
+        name_type: { type: string, nullable: true }
+        normalized_full: { type: string, nullable: true }
+        raw:
+          type: object
+          nullable: true
+          additionalProperties: true
+
+    NameBlock:
+      type: object
+      additionalProperties: true
+      properties:
+        primary: { $ref: "#/components/schemas/Name" }
+        all:
+          type: array
+          items: { $ref: "#/components/schemas/Name" }
+        display: { type: string, nullable: true }
+        normalized_display: { type: string, nullable: true }
+
+    Date:
+      type: object
+      nullable: true
+      additionalProperties: true
+      properties:
+        raw: { type: string, nullable: true }
+        normalized: { type: string, nullable: true }
+        kind: { type: string, nullable: true }
+        modifier: { type: string, nullable: true }
+        date: { type: string, nullable: true }
+        precision: { type: string, nullable: true }
+        start: { type: string, nullable: true }
+        end: { type: string, nullable: true }
+        calendar: { type: string, nullable: true }
+        season: { type: string, nullable: true }
+
+    StandardPlace:
+      type: object
+      nullable: true
+      additionalProperties: true
+      required: [id]
+      properties:
+        id: { type: string }
+        raw: { type: string, nullable: true }
+        normalized: { type: string, nullable: true }
+
+    Event:
+      type: object
+      additionalProperties: true
+      properties:
+        uuid: { type: string, nullable: true }
+        tag: { type: string, nullable: true }
+        type: { type: string, nullable: true }
+        subtype: { type: string, nullable: true }
+        date: { $ref: "#/components/schemas/Date" }
+        place:
+          description: Raw place string or future structured place object.
+          oneOf:
+            - { type: string }
+            - { type: object, additionalProperties: true }
+            - { type: "null" }
+        standard_place: { $ref: "#/components/schemas/StandardPlace" }
+        place_id:
+          type: string
+          nullable: true
+          description: Reference key into top-level `places`.
+        value: { type: string, nullable: true }
+        notes: { type: array, items: { type: string } }
+        sources: { type: array, items: { type: string } }
+        roles: { type: array, items: { type: string } }
+        pointer: { type: string, nullable: true }
+        lineno: { type: integer, nullable: true }
+        alternates:
+          type: array
+          nullable: true
+          items: { type: object, additionalProperties: true }
+        disambiguation:
+          type: object
+          nullable: true
+          additionalProperties: true
+        ambiguous: { type: boolean, nullable: true }
+
+    Attachment:
+      type: object
+      additionalProperties: true
+      properties:
+        pointer: { type: string, nullable: true }
+        file: { type: string, nullable: true }
+        title: { type: string, nullable: true }
+        role: { type: string, nullable: true }
+        promoted: { type: boolean, nullable: true }
+        media_object_id: { type: string, nullable: true }
+        raw: { type: object, nullable: true, additionalProperties: true }
+
+    GenericAttribute:
+      type: object
+      required: [tag]
+      additionalProperties: true
+      properties:
+        tag: { type: string }
+        value: { type: string, nullable: true }
+        pointer: { type: string, nullable: true }
+        children:
+          type: array
+          nullable: true
+          items: { type: object, additionalProperties: true }
+        lineno: { type: integer, nullable: true }
+        raw: { type: object, nullable: true, additionalProperties: true }
+
+    Individual:
+      type: object
+      required: [uuid, pointer]
+      additionalProperties: true
+      properties:
+        uuid: { type: string }
+        pointer: { type: string }
+        gender: { type: string, nullable: true }
+        names: { type: array, items: { $ref: "#/components/schemas/Name" } }
+        name_block: { $ref: "#/components/schemas/NameBlock" }
+        events: { type: array, items: { $ref: "#/components/schemas/Event" } }
+        occupations: { type: array, items: { type: string } }
+        families_as_spouse: { type: array, items: { type: string } }
+        families_as_child: { type: array, items: { type: string } }
+        spouse_in_families:
+          type: array
+          items: { type: object, additionalProperties: true }
+        child_in_families:
+          type: array
+          items: { type: object, additionalProperties: true }
+        notes: { type: array, items: { type: string } }
+        sources: { type: array, items: { type: string } }
+        attributes: { type: array, items: { $ref: "#/components/schemas/GenericAttribute" } }
+        attachments: { type: array, items: { $ref: "#/components/schemas/Attachment" } }
+        raw: { type: object, nullable: true, additionalProperties: true }
+
+    Family:
+      type: object
+      required: [uuid, pointer]
+      additionalProperties: true
+      properties:
+        uuid: { type: string }
+        pointer: { type: string }
+        husband: { type: string, nullable: true }
+        wife: { type: string, nullable: true }
+        children: { type: array, items: { type: string } }
+        events: { type: array, items: { $ref: "#/components/schemas/Event" } }
+        notes: { type: array, items: { type: string } }
+        sources: { type: array, items: { type: string } }
+        attributes: { type: array, items: { $ref: "#/components/schemas/GenericAttribute" } }
+        attachments: { type: array, items: { $ref: "#/components/schemas/Attachment" } }
+        raw: { type: object, nullable: true, additionalProperties: true }
+
+    Source:
+      type: object
+      required: [uuid, pointer]
+      additionalProperties: true
+      properties:
+        uuid: { type: string }
+        pointer: { type: string }
+        title: { type: string, nullable: true }
+        author: { type: string, nullable: true }
+        publication: { type: string, nullable: true }
+        repository_pointer: { type: string, nullable: true }
+        notes: { type: array, items: { type: string } }
+        sources: { type: array, items: { type: string } }
+        attributes: { type: array, items: { $ref: "#/components/schemas/GenericAttribute" } }
+        attachments: { type: array, items: { $ref: "#/components/schemas/Attachment" } }
+        raw: { type: object, nullable: true, additionalProperties: true }
+
+    MediaFile:
+      type: object
+      required: [path]
+      additionalProperties: true
+      properties:
+        path: { type: string }
+        form: { type: string, nullable: true }
+        media_type: { type: string, nullable: true }
+        title: { type: string, nullable: true }
+        normalized:
+          type: object
+          nullable: true
+          additionalProperties: true
+        raw:
+          type: object
+          nullable: true
+          additionalProperties: true
+
+    MediaObject:
+      type: object
+      required: [uuid]
+      additionalProperties: true
+      properties:
+        uuid: { type: string }
+        pointer: { type: string, nullable: true }
+        title: { type: string, nullable: true }
+        files: { type: array, items: { $ref: "#/components/schemas/MediaFile" } }
+        attributes: { type: array, items: { $ref: "#/components/schemas/GenericAttribute" } }
+        notes: { type: array, items: { type: string } }
+        sources: { type: array, items: { type: string } }
+        raw: { type: object, nullable: true, additionalProperties: true }
+
+    Place:
+      type: object
+      required: [id]
+      additionalProperties: true
+      properties:
+        id: { type: string }
+        normalized: { type: string, nullable: true }
+        raw_examples: { type: array, items: { type: string } }
+        counts:
+          type: object
+          required: [events, individual_events, family_events]
+          additionalProperties: false
+          properties:
+            events: { type: integer }
+            individual_events: { type: integer }
+            family_events: { type: integer }

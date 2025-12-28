@@ -1,0 +1,125 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/c24_6_canonical_export.strict.schema.json",
+  "title": "C.24.6 Canonical GEDCOM Export (Strict)",
+  "type": "object",
+  "additionalProperties": false,
+
+  "required": [
+    "individuals",
+    "families",
+    "sources",
+    "media_objects",
+    "places"
+  ],
+
+  "properties": {
+    "individuals": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/entity_individual_strict" }
+    },
+    "families": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/entity_family_strict" }
+    },
+    "sources": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/entity_source_strict" }
+    },
+    "media_objects": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/entity_media_strict" }
+    },
+    "places": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/place_record_strict" }
+    }
+  },
+
+  "$defs": {
+    "entity_individual_strict": {
+      "type": "object",
+      "required": ["uuid", "pointer"],
+      "additionalProperties": true,
+      "properties": {
+        "uuid": { "type": "string" },
+        "pointer": { "type": "string" },
+        "events": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/event_strict" }
+        }
+      }
+    },
+
+    "entity_family_strict": {
+      "type": "object",
+      "required": ["uuid", "pointer"],
+      "additionalProperties": true,
+      "properties": {
+        "uuid": { "type": "string" },
+        "pointer": { "type": "string" },
+        "events": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/event_strict" }
+        }
+      }
+    },
+
+    "entity_source_strict": {
+      "type": "object",
+      "required": ["uuid", "pointer"],
+      "additionalProperties": true
+    },
+
+    "entity_media_strict": {
+      "type": "object",
+      "required": ["uuid", "files"],
+      "additionalProperties": true,
+      "properties": {
+        "uuid": { "type": "string" },
+        "files": {
+          "type": "array",
+          "minItems": 1
+        }
+      }
+    },
+
+    "event_strict": {
+      "type": "object",
+      "required": ["tag"],
+      "properties": {
+        "tag": { "type": "string" },
+        "place_id": { "type": ["string", "null"] },
+        "place_hierarchy": { "$ref": "#/$defs/place_hierarchy_ref" }
+      },
+      "additionalProperties": true
+    },
+
+    "place_hierarchy_ref": {
+      "type": "object",
+      "required": ["place_id"],
+      "properties": {
+        "place_id": { "type": "string", "pattern": "^[a-z0-9 ,.-]+$" },
+        "parent_id": { "type": ["string", "null"] },
+        "ancestor_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": false
+    },
+
+    "place_record_strict": {
+      "type": "object",
+      "required": ["id", "normalized"],
+      "additionalProperties": true,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9 ,.-]+$" },
+        "normalized": { "type": "string" },
+        "parent_id": { "type": ["string", "null"] },
+        "ancestor_ids": { "type": "array", "items": { "type": "string" } },
+        "child_ids": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

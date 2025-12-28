@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/schemas/c24_6_canonical_export.schema.json",
+  "title": "C.24.6 Canonical GEDCOM Export",
+  "type": "object",
+
+  "required": [
+    "individuals",
+    "families",
+    "sources",
+    "media_objects",
+    "places"
+  ],
+
+  "properties": {
+    "individuals": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/entity_individual" }
+    },
+
+    "families": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/entity_family" }
+    },
+
+    "sources": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/entity_source" }
+    },
+
+    "media_objects": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/entity_media" }
+    },
+
+    "places": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/place_record" }
+    },
+
+    "uuid_index": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": { "type": "string" }
+      }
+    }
+  },
+
+  "additionalProperties": true,
+
+  "$defs": {
+    "entity_individual": {
+      "type": "object",
+      "required": ["uuid", "pointer"],
+      "properties": {
+        "uuid": { "type": "string" },
+        "pointer": { "type": "string" },
+        "names": { "type": "array", "items": { "$ref": "#/$defs/name_block" } },
+        "gender": { "type": ["string", "null"] },
+        "events": { "type": "array", "items": { "$ref": "#/$defs/event" } },
+        "attachments": { "type": "array", "items": { "$ref": "#/$defs/attachment" } }
+      },
+      "additionalProperties": true
+    },
+
+    "entity_family": {
+      "type": "object",
+      "required": ["uuid", "pointer"],
+      "properties": {
+        "uuid": { "type": "string" },
+        "pointer": { "type": "string" },
+        "events": { "type": "array", "items": { "$ref": "#/$defs/event" } },
+        "attachments": { "type": "array", "items": { "$ref": "#/$defs/attachment" } }
+      },
+      "additionalProperties": true
+    },
+
+    "entity_source": {
+      "type": "object",
+      "required": ["uuid", "pointer"],
+      "properties": {
+        "uuid": { "type": "string" },
+        "pointer": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+
+    "entity_media": {
+      "type": "object",
+      "required": ["uuid"],
+      "properties": {
+        "uuid": { "type": "string" },
+        "title": { "type": ["string", "null"] },
+        "files": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["path"],
+            "properties": {
+              "path": { "type": "string" },
+              "form": { "type": ["string", "null"] },
+              "media_type": { "type": ["string", "null"] }
+            },
+            "additionalProperties": true
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+
+    "name_block": {
+      "type": "object",
+      "properties": {
+        "full": { "type": "string" },
+        "given": { "type": ["string", "null"] },
+        "surname": { "type": ["string", "null"] },
+        "normalized_full": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    },
+
+    "event": {
+      "type": "object",
+      "properties": {
+        "tag": { "type": "string" },
+        "date": {},
+        "place": {},
+        "place_id": { "type": ["string", "null"] },
+        "place_hierarchy": { "$ref": "#/$defs/place_hierarchy_ref" }
+      },
+      "additionalProperties": true
+    },
+
+    "place_hierarchy_ref": {
+      "type": "object",
+      "properties": {
+        "place_id": { "type": "string" },
+        "parent_id": { "type": ["string", "null"] },
+        "ancestor_ids": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+
+    "place_record": {
+      "type": "object",
+      "required": ["id"],
+      "properties": {
+        "id": { "type": "string" },
+        "normalized": { "type": "string" },
+        "parts": { "type": "object", "additionalProperties": { "type": "string" } },
+        "levels": { "type": "object", "additionalProperties": { "type": "string" } },
+        "parent_id": { "type": ["string", "null"] },
+        "ancestor_ids": { "type": "array", "items": { "type": "string" } },
+        "child_ids": { "type": "array", "items": { "type": "string" } },
+        "generated": { "type": "boolean" },
+        "generated_from": { "type": "string" }
+      },
+      "additionalProperties": true
+    },
+
+    "attachment": {
+      "type": "object",
+      "properties": {
+        "media_object_id": { "type": "string" },
+        "pointer": { "type": ["string", "null"] }
+      },
+      "additionalProperties": true
+    }
+  }
+}
