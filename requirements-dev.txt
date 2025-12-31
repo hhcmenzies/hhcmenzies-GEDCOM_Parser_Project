@@ -1,0 +1,7 @@
+# GEDCOM_Parser_Project - development requirements
+# Install with: pip install -r requirements.txt -r requirements-dev.txt
+
+black>=23.11
+flake8>=6.1
+pytest>=7.4
+mypy>=1.8
