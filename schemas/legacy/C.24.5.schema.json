@@ -1,0 +1,353 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "C.24.5.schema.json",
+  "title": "GEDCOM Parser Canonical Export Schema C.24.5",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["meta", "uuid_index", "individuals", "families", "sources", "media_objects", "places"],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["schema_version", "generated_at", "pipeline"],
+      "properties": {
+        "schema_version": { "type": "string", "const": "C.24.5" },
+        "generated_at": { "type": "string", "description": "ISO-8601 timestamp" },
+        "input": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "path": { "type": "string" },
+            "hash": { "type": "string" },
+            "producer": { "type": "string" }
+          }
+        },
+        "pipeline": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": true,
+            "required": ["stage", "output"],
+            "properties": {
+              "stage": { "type": "string" },
+              "output": { "type": "string" },
+              "version": { "type": "string" },
+              "metrics": { "type": "object", "additionalProperties": true }
+            }
+          }
+        }
+      }
+    },
+
+    "uuid_index": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["INDI", "FAM", "SOUR", "REPO", "OBJE", "PLAC"],
+      "properties": {
+        "INDI": { "$ref": "#/$defs/uuidMap" },
+        "FAM": { "$ref": "#/$defs/uuidMap" },
+        "SOUR": { "$ref": "#/$defs/uuidMap" },
+        "REPO": { "$ref": "#/$defs/uuidMap" },
+        "OBJE": { "$ref": "#/$defs/uuidMap" },
+        "PLAC": { "$ref": "#/$defs/uuidMap" }
+      }
+    },
+
+    "individuals": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/Individual" }
+    },
+    "families": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/Family" }
+    },
+    "sources": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/Source" }
+    },
+    "media_objects": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/MediaObject" }
+    },
+    "places": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/Place" }
+    }
+  },
+
+  "$defs": {
+    "uuid": {
+      "type": "string",
+      "minLength": 8,
+      "description": "Deterministic UUID string"
+    },
+
+    "xref": {
+      "type": "string",
+      "pattern": "^@[^@\\s]+@$"
+    },
+
+    "uuidMap": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/uuid" }
+    },
+
+    "EntityBase": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["uuid"],
+      "properties": {
+        "uuid": { "$ref": "#/$defs/uuid" },
+        "pointer": { "$ref": "#/$defs/xref" },
+        "raw": { "type": "object", "additionalProperties": true }
+      }
+    },
+
+    "Name": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["full"],
+      "properties": {
+        "full": { "type": "string" },
+
+        "given": { "type": ["string", "null"] },
+        "surname": { "type": ["string", "null"] },
+        "prefix": { "type": ["string", "null"] },
+        "suffix": { "type": ["string", "null"] },
+        "nickname": { "type": ["string", "null"] },
+        "name_type": { "type": ["string", "null"] },
+
+        "normalized_full": { "type": ["string", "null"] },
+        "raw": { "type": "object", "additionalProperties": true }
+      }
+    },
+
+    "Date": {
+      "type": ["object", "null"],
+      "additionalProperties": true,
+      "properties": {
+        "raw": { "type": ["string", "null"] },
+        "normalized": { "type": ["string", "null"] },
+        "kind": { "type": ["string", "null"] },
+        "modifier": { "type": ["string", "null"] },
+        "precision": { "type": ["string", "null"] },
+        "start": { "type": ["string", "null"] },
+        "end": { "type": ["string", "null"] }
+      }
+    },
+
+    "PlaceRef": {
+      "type": ["object", "null"],
+      "additionalProperties": true,
+      "required": ["id"],
+      "properties": {
+        "id": { "type": "string" },
+        "raw": { "type": ["string", "null"] },
+        "normalized": { "type": ["string", "null"] }
+      }
+    },
+
+    "Event": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["tag"],
+      "properties": {
+        "uuid": { "type": ["string", "null"] },
+        "tag": { "type": "string" },
+
+        "type": { "type": ["string", "null"] },
+        "subtype": { "type": ["string", "null"] },
+        "value": { "type": ["string", "null"] },
+
+        "date": { "$ref": "#/$defs/Date" },
+
+        "place": { "type": ["string", "null"], "description": "Legacy/optional raw place string (kept)" },
+        "standard_place": { "$ref": "#/$defs/PlaceRef" },
+
+        "notes": { "type": "array", "items": { "type": "string" } },
+        "sources": { "type": "array", "items": { "$ref": "#/$defs/xref" } },
+
+        "attachments": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/Attachment" }
+        },
+
+        "alternates": {
+          "type": "array",
+          "items": { "type": "object", "additionalProperties": true }
+        },
+        "disambiguation": { "type": "object", "additionalProperties": true }
+      }
+    },
+
+    "Attachment": {
+      "type": "object",
+      "additionalProperties": true,
+      "properties": {
+        "media_xref": { "$ref": "#/$defs/xref" },
+        "media_uuid": { "$ref": "#/$defs/uuid" },
+        "primary": { "type": ["boolean", "null"] },
+        "context": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "promoted_from_inline": { "type": "boolean" },
+        "link_raw": { "type": "object", "additionalProperties": true }
+      }
+    },
+
+    "Individual": {
+      "allOf": [
+        { "$ref": "#/$defs/EntityBase" },
+        {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "gender": { "type": ["string", "null"] },
+            "names": { "type": "array", "items": { "$ref": "#/$defs/Name" } },
+            "events": { "type": "array", "items": { "$ref": "#/$defs/Event" } },
+
+            "families_as_spouse": { "type": "array", "items": { "$ref": "#/$defs/xref" } },
+            "families_as_child": { "type": "array", "items": { "$ref": "#/$defs/xref" } },
+
+            "relationships_resolved": {
+              "type": "object",
+              "additionalProperties": true
+            },
+
+            "notes": { "type": "array", "items": { "type": "string" } },
+            "sources": { "type": "array", "items": { "$ref": "#/$defs/xref" } },
+
+            "attachments": { "type": "array", "items": { "$ref": "#/$defs/Attachment" } },
+            "attributes": { "type": "array", "items": { "type": "object", "additionalProperties": true } }
+          }
+        }
+      ]
+    },
+
+    "Family": {
+      "allOf": [
+        { "$ref": "#/$defs/EntityBase" },
+        {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "husband": { "type": ["string", "null"] },
+            "wife": { "type": ["string", "null"] },
+            "children": { "type": "array", "items": { "$ref": "#/$defs/xref" } },
+
+            "members_resolved": {
+              "type": "object",
+              "additionalProperties": true
+            },
+
+            "events": { "type": "array", "items": { "$ref": "#/$defs/Event" } },
+            "notes": { "type": "array", "items": { "type": "string" } },
+            "sources": { "type": "array", "items": { "$ref": "#/$defs/xref" } },
+            "attachments": { "type": "array", "items": { "$ref": "#/$defs/Attachment" } },
+            "attributes": { "type": "array", "items": { "type": "object", "additionalProperties": true } }
+          }
+        }
+      ]
+    },
+
+    "Source": {
+      "allOf": [
+        { "$ref": "#/$defs/EntityBase" },
+        {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "title": { "type": ["string", "null"] },
+            "author": { "type": ["string", "null"] },
+            "publication": { "type": ["string", "null"] },
+            "repository_pointer": { "type": ["string", "null"] },
+
+            "notes": { "type": "array", "items": { "type": "string" } },
+            "sources": { "type": "array", "items": { "$ref": "#/$defs/xref" } },
+            "attachments": { "type": "array", "items": { "$ref": "#/$defs/Attachment" } },
+            "attributes": { "type": "array", "items": { "type": "object", "additionalProperties": true } }
+          }
+        }
+      ]
+    },
+
+    "MediaObject": {
+      "allOf": [
+        { "$ref": "#/$defs/EntityBase" },
+        {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "title": { "type": ["string", "null"] },
+
+            "files": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "additionalProperties": true,
+                "required": ["path"],
+                "properties": {
+                  "path": { "type": "string" },
+                  "form": { "type": ["string", "null"] },
+                  "media_type": { "type": ["string", "null"] },
+                  "title": { "type": ["string", "null"] },
+                  "raw": { "type": "object", "additionalProperties": true }
+                }
+              }
+            },
+
+            "normalized_media": {
+              "type": "object",
+              "additionalProperties": true,
+              "properties": {
+                "primary_path": { "type": ["string", "null"] },
+                "path_normalized": { "type": ["string", "null"] },
+                "ext": { "type": ["string", "null"] },
+                "mime_guess": { "type": ["string", "null"] },
+                "basename": { "type": ["string", "null"] }
+              }
+            },
+
+            "notes": { "type": "array", "items": { "type": "string" } },
+            "sources": { "type": "array", "items": { "$ref": "#/$defs/xref" } },
+            "attributes": { "type": "array", "items": { "type": "object", "additionalProperties": true } }
+          }
+        }
+      ]
+    },
+
+    "Place": {
+      "type": "object",
+      "additionalProperties": true,
+      "required": ["id", "normalized"],
+      "properties": {
+        "id": { "type": "string" },
+        "uuid": { "$ref": "#/$defs/uuid" },
+
+        "raw_variants": { "type": "array", "items": { "type": "string" } },
+        "normalized": { "type": "string" },
+
+        "parts": { "type": "object", "additionalProperties": true },
+        "coordinates": {
+          "type": ["object", "null"],
+          "additionalProperties": true,
+          "properties": {
+            "lat": { "type": ["number", "null"] },
+            "lon": { "type": ["number", "null"] }
+          }
+        },
+
+        "stats": {
+          "type": "object",
+          "additionalProperties": true,
+          "properties": {
+            "event_refs": { "type": "integer" },
+            "individual_refs": { "type": "integer" },
+            "family_refs": { "type": "integer" }
+          }
+        }
+      }
+    }
+  }
+}

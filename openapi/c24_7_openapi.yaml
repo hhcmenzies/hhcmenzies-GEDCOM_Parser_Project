@@ -1,0 +1,1025 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "GEDCOM Parser Canonical Export API (C.24.7)",
+    "version": "c24.7",
+    "description": "OpenAPI 3.1 spec generated from the C.24.7 canonical export schemas.\nThis API is intentionally minimal: it describes the shape of the C.24.7 export, and provides example endpoints for serving and validating exports."
+  },
+  "servers": [
+    {
+      "url": "http://localhost:8000",
+      "description": "Local development server"
+    }
+  ],
+  "paths": {
+    "/exports/c24_7": {
+      "get": {
+        "summary": "Fetch the latest C.24.7 canonical export",
+        "responses": {
+          "200": {
+            "description": "C.24.7 canonical export JSON document",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/C24_7_Export_Strict"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/validate/c24_7": {
+      "post": {
+        "summary": "Validate a JSON document against the C.24.7 strict schema",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/C24_7_Export_Strict"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Validation succeeded",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": {
+                      "type": "boolean",
+                      "const": true
+                    }
+                  },
+                  "required": [
+                    "ok"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          },
+          "422": {
+            "description": "Validation failed",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "ok": {
+                      "type": "boolean",
+                      "const": false
+                    },
+                    "errors": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "properties": {
+                          "path": {
+                            "type": "string"
+                          },
+                          "message": {
+                            "type": "string"
+                          }
+                        },
+                        "required": [
+                          "path",
+                          "message"
+                        ],
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "required": [
+                    "ok",
+                    "errors"
+                  ],
+                  "additionalProperties": false
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "C24_7_Export_Strict": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://example.com/schemas/c24_7_canonical_export.strict.schema.json",
+        "title": "C.24.7 Canonical Export (Temporal & Jurisdiction Layers)",
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "individuals",
+          "families",
+          "sources",
+          "media_objects",
+          "places"
+        ],
+        "properties": {
+          "individuals": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/$defs/entity_individual_strict"
+            }
+          },
+          "families": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/$defs/entity_family_strict"
+            }
+          },
+          "sources": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/$defs/entity_source_strict"
+            }
+          },
+          "media_objects": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/$defs/entity_media_strict"
+            }
+          },
+          "places": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/$defs/place_record_strict"
+            }
+          },
+          "jurisdiction_systems": {
+            "type": "object",
+            "description": "Registry of jurisdiction systems used for place versioning (C.24.7).",
+            "additionalProperties": {
+              "$ref": "#/$defs/jurisdiction_system_record_strict"
+            },
+            "default": {}
+          },
+          "place_versions": {
+            "type": "object",
+            "description": "Registry of temporal/jurisdiction interpretations of places (C.24.7).",
+            "additionalProperties": {
+              "$ref": "#/$defs/place_version_record_strict"
+            },
+            "default": {}
+          },
+          "repositories": {
+            "type": "object",
+            "additionalProperties": true,
+            "description": "Repository entities (REPO). May be empty."
+          },
+          "uuid_index": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "additionalProperties": true,
+            "description": "Optional uuid_index mapping."
+          }
+        },
+        "$defs": {
+          "entity_individual_strict": {
+            "type": "object",
+            "required": [
+              "uuid",
+              "pointer"
+            ],
+            "additionalProperties": true,
+            "properties": {
+              "uuid": {
+                "type": "string"
+              },
+              "pointer": {
+                "type": "string"
+              },
+              "events": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/event_strict"
+                }
+              }
+            }
+          },
+          "entity_family_strict": {
+            "type": "object",
+            "required": [
+              "uuid",
+              "pointer"
+            ],
+            "additionalProperties": true,
+            "properties": {
+              "uuid": {
+                "type": "string"
+              },
+              "pointer": {
+                "type": "string"
+              },
+              "events": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/event_strict"
+                }
+              }
+            }
+          },
+          "entity_source_strict": {
+            "type": "object",
+            "required": [
+              "uuid",
+              "pointer"
+            ],
+            "additionalProperties": true
+          },
+          "entity_media_strict": {
+            "type": "object",
+            "required": [
+              "uuid",
+              "files"
+            ],
+            "additionalProperties": true,
+            "properties": {
+              "uuid": {
+                "type": "string"
+              },
+              "files": {
+                "type": "array",
+                "minItems": 1
+              }
+            }
+          },
+          "event_strict": {
+            "type": "object",
+            "required": [
+              "tag"
+            ],
+            "properties": {
+              "tag": {
+                "type": "string"
+              },
+              "place_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "place_hierarchy": {
+                "$ref": "#/$defs/place_hierarchy_ref"
+              },
+              "place_refs": {
+                "type": "array",
+                "description": "Optional per-event place reference interpretations (C.24.7).",
+                "items": {
+                  "$ref": "#/$defs/place_ref_strict"
+                }
+              }
+            },
+            "additionalProperties": true
+          },
+          "place_hierarchy_ref": {
+            "type": "object",
+            "required": [
+              "place_id"
+            ],
+            "properties": {
+              "place_id": {
+                "type": "string",
+                "pattern": "^[^\\u0000-\\u001F]+$"
+              },
+              "parent_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ancestor_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": false
+          },
+          "place_record_strict": {
+            "type": "object",
+            "required": [
+              "id",
+              "normalized"
+            ],
+            "additionalProperties": true,
+            "properties": {
+              "id": {
+                "type": "string",
+                "pattern": "^[^\\u0000-\\u001F]+$"
+              },
+              "normalized": {
+                "type": "string"
+              },
+              "parent_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ancestor_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "child_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "generated_block_strict": {
+            "type": "object",
+            "description": "Metadata about inferred/defaulted fields to support future enrichment.",
+            "properties": {
+              "by": {
+                "type": "string"
+              },
+              "rule": {
+                "type": "string"
+              },
+              "inferred": {
+                "type": "boolean"
+              },
+              "enrichment_candidate": {
+                "type": "boolean"
+              },
+              "confidence": {
+                "type": "number",
+                "minimum": 0.0,
+                "maximum": 1.0
+              }
+            },
+            "additionalProperties": true
+          },
+          "temporal_block_strict": {
+            "type": "object",
+            "description": "Temporal bucket for place versioning. Currently supports year buckets.",
+            "properties": {
+              "bucket": {
+                "type": "string",
+                "enum": [
+                  "year"
+                ]
+              },
+              "year": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9999
+              },
+              "open_ended": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "bucket"
+            ],
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "if": {
+                  "properties": {
+                    "bucket": {
+                      "const": "year"
+                    }
+                  },
+                  "required": [
+                    "bucket"
+                  ]
+                },
+                "then": {
+                  "oneOf": [
+                    {
+                      "required": [
+                        "year"
+                      ],
+                      "properties": {
+                        "open_ended": {
+                          "not": {}
+                        }
+                      }
+                    },
+                    {
+                      "required": [
+                        "open_ended"
+                      ],
+                      "properties": {
+                        "open_ended": {
+                          "const": true
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          },
+          "jurisdiction_system_record_strict": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "kind": {
+                "type": "string",
+                "description": "Optional classification (e.g., civil, ecclesiastical, military)."
+              },
+              "generated": {
+                "$ref": "#/$defs/generated_block_strict"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "additionalProperties": false
+          },
+          "place_version_record_strict": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "place_id": {
+                "type": "string"
+              },
+              "jurisdiction_system_id": {
+                "type": "string"
+              },
+              "temporal": {
+                "$ref": "#/$defs/temporal_block_strict"
+              },
+              "generated": {
+                "$ref": "#/$defs/generated_block_strict"
+              },
+              "meta": {
+                "type": "object",
+                "properties": {
+                  "events": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "individual_events": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "family_events": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [
+                  "events",
+                  "individual_events",
+                  "family_events"
+                ],
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "id",
+              "place_id",
+              "jurisdiction_system_id",
+              "temporal"
+            ],
+            "additionalProperties": false
+          },
+          "place_ref_strict": {
+            "type": "object",
+            "properties": {
+              "place_id": {
+                "type": "string"
+              },
+              "place_version_id": {
+                "type": "string"
+              },
+              "jurisdiction_system_id": {
+                "type": "string"
+              },
+              "temporal": {
+                "$ref": "#/$defs/temporal_block_strict"
+              },
+              "generated": {
+                "$ref": "#/$defs/generated_block_strict"
+              }
+            },
+            "required": [
+              "place_id",
+              "place_version_id",
+              "jurisdiction_system_id",
+              "temporal"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "description": "C.24.7 canonical JSON export schema. Extends C.24.6 with temporal & jurisdiction layers (place versioning and optional per-event place_refs)."
+      },
+      "C24_7_Export": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "https://example.com/schemas/c24_7_canonical_export.schema.json",
+        "title": "C.24.7 Canonical Export (Temporal & Jurisdiction Layers)",
+        "type": "object",
+        "required": [
+          "individuals",
+          "families",
+          "sources",
+          "media_objects",
+          "places"
+        ],
+        "properties": {
+          "individuals": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/$defs/entity_individual"
+            }
+          },
+          "families": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/$defs/entity_family"
+            }
+          },
+          "sources": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/$defs/entity_source"
+            }
+          },
+          "media_objects": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/$defs/entity_media"
+            }
+          },
+          "places": {
+            "type": "object",
+            "additionalProperties": {
+              "$ref": "#/$defs/place_record"
+            }
+          },
+          "uuid_index": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object",
+              "additionalProperties": {
+                "type": "string"
+              }
+            }
+          },
+          "jurisdiction_systems": {
+            "type": "object",
+            "description": "Registry of jurisdiction systems used for place versioning (C.24.7).",
+            "additionalProperties": {
+              "$ref": "#/$defs/jurisdiction_system_record"
+            },
+            "default": {}
+          },
+          "place_versions": {
+            "type": "object",
+            "description": "Registry of temporal/jurisdiction interpretations of places (C.24.7).",
+            "additionalProperties": {
+              "$ref": "#/$defs/place_version_record"
+            },
+            "default": {}
+          },
+          "repositories": {
+            "type": "object",
+            "additionalProperties": true,
+            "description": "Repository entities (REPO). May be empty."
+          }
+        },
+        "additionalProperties": true,
+        "$defs": {
+          "entity_individual": {
+            "type": "object",
+            "required": [
+              "uuid",
+              "pointer"
+            ],
+            "properties": {
+              "uuid": {
+                "type": "string"
+              },
+              "pointer": {
+                "type": "string"
+              },
+              "names": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/name_block"
+                }
+              },
+              "gender": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "events": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/event"
+                }
+              },
+              "attachments": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/attachment"
+                }
+              }
+            },
+            "additionalProperties": true
+          },
+          "entity_family": {
+            "type": "object",
+            "required": [
+              "uuid",
+              "pointer"
+            ],
+            "properties": {
+              "uuid": {
+                "type": "string"
+              },
+              "pointer": {
+                "type": "string"
+              },
+              "events": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/event"
+                }
+              },
+              "attachments": {
+                "type": "array",
+                "items": {
+                  "$ref": "#/$defs/attachment"
+                }
+              }
+            },
+            "additionalProperties": true
+          },
+          "entity_source": {
+            "type": "object",
+            "required": [
+              "uuid",
+              "pointer"
+            ],
+            "properties": {
+              "uuid": {
+                "type": "string"
+              },
+              "pointer": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          },
+          "entity_media": {
+            "type": "object",
+            "required": [
+              "uuid"
+            ],
+            "properties": {
+              "uuid": {
+                "type": "string"
+              },
+              "title": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "files": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "path"
+                  ],
+                  "properties": {
+                    "path": {
+                      "type": "string"
+                    },
+                    "form": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "media_type": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  },
+                  "additionalProperties": true
+                }
+              }
+            },
+            "additionalProperties": true
+          },
+          "name_block": {
+            "type": "object",
+            "properties": {
+              "full": {
+                "type": "string"
+              },
+              "given": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "surname": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "normalized_full": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": true
+          },
+          "event": {
+            "type": "object",
+            "properties": {
+              "tag": {
+                "type": "string"
+              },
+              "date": {},
+              "place": {},
+              "place_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "place_hierarchy": {
+                "$ref": "#/$defs/place_hierarchy_ref"
+              },
+              "place_refs": {
+                "type": "array",
+                "description": "Optional per-event place reference interpretations (C.24.7).",
+                "items": {
+                  "$ref": "#/$defs/place_ref"
+                }
+              }
+            },
+            "additionalProperties": true
+          },
+          "place_hierarchy_ref": {
+            "type": "object",
+            "properties": {
+              "place_id": {
+                "type": "string"
+              },
+              "parent_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ancestor_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": false
+          },
+          "place_record": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "normalized": {
+                "type": "string"
+              },
+              "parts": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              },
+              "levels": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              },
+              "parent_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "ancestor_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "child_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "generated": {
+                "type": "boolean"
+              },
+              "generated_from": {
+                "type": "string"
+              }
+            },
+            "additionalProperties": true
+          },
+          "attachment": {
+            "type": "object",
+            "properties": {
+              "media_object_id": {
+                "type": "string"
+              },
+              "pointer": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              }
+            },
+            "additionalProperties": true
+          },
+          "generated_block": {
+            "type": "object",
+            "description": "Metadata about inferred/defaulted fields to support future enrichment.",
+            "properties": {
+              "by": {
+                "type": "string"
+              },
+              "rule": {
+                "type": "string"
+              },
+              "inferred": {
+                "type": "boolean"
+              },
+              "enrichment_candidate": {
+                "type": "boolean"
+              },
+              "confidence": {
+                "type": "number",
+                "minimum": 0.0,
+                "maximum": 1.0
+              }
+            },
+            "additionalProperties": true
+          },
+          "temporal_block": {
+            "type": "object",
+            "description": "Temporal bucket for place versioning. Currently supports year buckets.",
+            "properties": {
+              "bucket": {
+                "type": "string",
+                "enum": [
+                  "year"
+                ]
+              },
+              "year": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 9999
+              },
+              "open_ended": {
+                "type": "boolean"
+              }
+            },
+            "required": [
+              "bucket"
+            ],
+            "additionalProperties": true,
+            "allOf": []
+          },
+          "jurisdiction_system_record": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "kind": {
+                "type": "string",
+                "description": "Optional classification (e.g., civil, ecclesiastical, military)."
+              },
+              "generated": {
+                "$ref": "#/$defs/generated_block"
+              }
+            },
+            "required": [
+              "id"
+            ],
+            "additionalProperties": true
+          },
+          "place_version_record": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "place_id": {
+                "type": "string"
+              },
+              "jurisdiction_system_id": {
+                "type": "string"
+              },
+              "temporal": {
+                "$ref": "#/$defs/temporal_block"
+              },
+              "generated": {
+                "$ref": "#/$defs/generated_block"
+              },
+              "meta": {
+                "type": "object",
+                "properties": {
+                  "events": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "individual_events": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "family_events": {
+                    "type": "integer",
+                    "minimum": 0
+                  }
+                },
+                "required": [],
+                "additionalProperties": true
+              }
+            },
+            "required": [
+              "id",
+              "place_id",
+              "jurisdiction_system_id",
+              "temporal"
+            ],
+            "additionalProperties": true
+          },
+          "place_ref": {
+            "type": "object",
+            "properties": {
+              "place_id": {
+                "type": "string"
+              },
+              "place_version_id": {
+                "type": "string"
+              },
+              "jurisdiction_system_id": {
+                "type": "string"
+              },
+              "temporal": {
+                "$ref": "#/$defs/temporal_block"
+              },
+              "generated": {
+                "$ref": "#/$defs/generated_block"
+              }
+            },
+            "required": [
+              "place_id",
+              "place_version_id"
+            ],
+            "additionalProperties": true
+          }
+        },
+        "description": "C.24.7 canonical JSON export schema. Extends C.24.6 with temporal & jurisdiction layers (place versioning and optional per-event place_refs)."
+      }
+    }
+  }
+}

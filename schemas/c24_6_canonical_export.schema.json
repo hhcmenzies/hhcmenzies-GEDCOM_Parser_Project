@@ -41,14 +41,8 @@
   },
 
   "$defs": {
-    "uuid": {
-      "type": "string",
-      "minLength": 8
-    },
-    "pointer": {
-      "type": "string",
-      "minLength": 3
-    },
+    "uuid": { "type": "string", "minLength": 8 },
+    "pointer": { "type": "string", "minLength": 3 },
 
     "entity_individual": {
       "type": "object",
@@ -57,18 +51,10 @@
       "properties": {
         "uuid": { "$ref": "#/$defs/uuid" },
         "pointer": { "$ref": "#/$defs/pointer" },
-        "gender": { "type": ["string", "null"] },
-        "names": {
-          "type": "array",
-          "items": { "$ref": "#/$defs/name_block" }
-        },
+        "names": { "type": "array" },
         "events": {
           "type": "array",
           "items": { "$ref": "#/$defs/event" }
-        },
-        "attachments": {
-          "type": "array",
-          "items": { "$ref": "#/$defs/attachment" }
         }
       }
     },
@@ -83,10 +69,6 @@
         "events": {
           "type": "array",
           "items": { "$ref": "#/$defs/event" }
-        },
-        "attachments": {
-          "type": "array",
-          "items": { "$ref": "#/$defs/attachment" }
         }
       }
     },
@@ -94,63 +76,19 @@
     "entity_source": {
       "type": "object",
       "required": ["uuid", "pointer"],
-      "additionalProperties": true,
-      "properties": {
-        "uuid": { "$ref": "#/$defs/uuid" },
-        "pointer": { "$ref": "#/$defs/pointer" }
-      }
+      "additionalProperties": true
     },
 
     "entity_repository": {
       "type": "object",
       "required": ["uuid", "pointer"],
-      "additionalProperties": true,
-      "properties": {
-        "uuid": { "$ref": "#/$defs/uuid" },
-        "pointer": { "$ref": "#/$defs/pointer" }
-      }
+      "additionalProperties": true
     },
 
     "entity_media": {
       "type": "object",
       "required": ["uuid"],
-      "additionalProperties": true,
-      "properties": {
-        "uuid": { "$ref": "#/$defs/uuid" },
-        "pointer": { "type": ["string", "null"] },
-        "title": { "type": ["string", "null"] },
-        "files": {
-          "type": "array",
-          "items": { "$ref": "#/$defs/media_file" }
-        }
-      }
-    },
-
-    "media_file": {
-      "type": "object",
-      "required": ["path"],
-      "additionalProperties": true,
-      "properties": {
-        "path": { "type": "string", "minLength": 1 },
-        "form": { "type": ["string", "null"] },
-        "media_type": { "type": ["string", "null"] },
-        "title": { "type": ["string", "null"] }
-      }
-    },
-
-    "name_block": {
-      "type": "object",
-      "additionalProperties": true,
-      "properties": {
-        "full": { "type": "string" },
-        "given": { "type": ["string", "null"] },
-        "surname": { "type": ["string", "null"] },
-        "prefix": { "type": ["string", "null"] },
-        "suffix": { "type": ["string", "null"] },
-        "nickname": { "type": ["string", "null"] },
-        "name_type": { "type": ["string", "null"] },
-        "normalized_full": { "type": ["string", "null"] }
-      }
+      "additionalProperties": true
     },
 
     "event": {
@@ -158,13 +96,7 @@
       "required": ["tag"],
       "additionalProperties": true,
       "properties": {
-        "uuid": { "type": ["string", "null"] },
-        "tag": { "type": "string", "minLength": 1 },
-
-        "date": {},
-        "place": {},
-        "standard_place": {},
-
+        "tag": { "type": "string" },
         "place_id": { "type": ["string", "null"] },
         "place_hierarchy": { "$ref": "#/$defs/place_hierarchy_ref" }
       }
@@ -175,7 +107,7 @@
       "required": ["place_id"],
       "additionalProperties": false,
       "properties": {
-        "place_id": { "$ref": "#/$defs/place_id" },
+        "place_id": { "type": "string" },
         "parent_id": { "type": ["string", "null"] },
         "ancestor_ids": {
           "type": "array",
@@ -184,70 +116,30 @@
       }
     },
 
-    "place_id": {
-      "type": "string",
-      "minLength": 1
-    },
-
     "place_record": {
       "type": "object",
       "required": ["id"],
       "additionalProperties": true,
       "properties": {
-        "id": { "$ref": "#/$defs/place_id" },
-
+        "id": { "type": "string" },
+        "normalized": { "type": "string" },
         "raw_examples": {
           "type": "array",
           "items": { "type": "string" }
         },
-
-        "normalized": { "type": "string" },
-
-        "counts": {
-          "type": "object",
-          "additionalProperties": true,
-          "properties": {
-            "events": { "type": "integer", "minimum": 0 },
-            "individual_events": { "type": "integer", "minimum": 0 },
-            "family_events": { "type": "integer", "minimum": 0 }
-          }
-        },
-
-        "parts": {
-          "type": "object",
-          "additionalProperties": { "type": "string" }
-        },
-
-        "levels": {
-          "type": "object",
-          "additionalProperties": { "type": "string" }
-        },
-
+        "parts": { "type": "object" },
+        "levels": { "type": "object" },
         "parent_id": { "type": ["string", "null"] },
-
         "ancestor_ids": {
           "type": "array",
           "items": { "type": "string" }
         },
-
         "child_ids": {
           "type": "array",
           "items": { "type": "string" }
         },
-
         "generated": { "type": "boolean" },
         "generated_from": { "type": "string" }
-      }
-    },
-
-    "attachment": {
-      "type": "object",
-      "additionalProperties": true,
-      "properties": {
-        "media_object_id": { "type": "string" },
-        "pointer": { "type": ["string", "null"] },
-        "lineno": { "type": ["integer", "null"] },
-        "origin": {}
       }
     }
   }

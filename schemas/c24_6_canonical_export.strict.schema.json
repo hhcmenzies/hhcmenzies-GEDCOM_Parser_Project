@@ -1,0 +1,136 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gedcom.dev/schemas/c24_6_canonical_export.strict.schema.json",
+  "title": "GEDCOM Canonical Export C.24.6 (Strict)",
+  "type": "object",
+  "additionalProperties": false,
+
+  "required": [
+    "individuals",
+    "families",
+    "sources",
+    "repositories",
+    "media_objects",
+    "places"
+  ],
+
+  "properties": {
+    "meta": {
+      "type": "object",
+      "additionalProperties": true
+    },
+
+    "individuals": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/record_any" }
+    },
+
+    "families": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/record_any" }
+    },
+
+    "sources": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/record_any" }
+    },
+
+    "repositories": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/record_any" }
+    },
+
+    "media_objects": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/record_any" }
+    },
+
+    "uuid_index": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": { "type": "string" }
+      }
+    },
+
+    "places": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/place_record_strict" }
+    }
+  },
+
+  "$defs": {
+    "record_any": {
+      "type": "object",
+      "additionalProperties": true
+    },
+
+    "place_record_strict": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id"],
+
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+
+        "normalized": { "type": "string" },
+
+        "raw_examples": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+
+        "counts": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "events": { "type": "integer", "minimum": 0 },
+            "individual_events": { "type": "integer", "minimum": 0 },
+            "family_events": { "type": "integer", "minimum": 0 }
+          }
+        },
+
+        "parts": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+
+        "levels": {
+          "type": "object",
+          "additionalProperties": { "type": "string" }
+        },
+
+        "aliases": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+
+        "generated": { "type": "boolean" },
+
+        "generated_from": { "type": "string" },
+
+        "hierarchy_confidence": {
+          "oneOf": [
+            { "type": "number", "minimum": 0, "maximum": 1 },
+            {
+              "type": "string",
+              "enum": ["heuristic", "inferred", "exact", "unknown"]
+            }
+          ]
+        },
+
+        "parent_id": { "type": ["string", "null"] },
+
+        "ancestor_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+
+        "child_ids": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    }
+  }
+}

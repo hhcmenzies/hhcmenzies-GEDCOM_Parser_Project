@@ -5,13 +5,7 @@
   "type": "object",
   "additionalProperties": false,
 
-  "required": [
-    "individuals",
-    "families",
-    "sources",
-    "media_objects",
-    "places"
-  ],
+  "required": ["individuals", "families", "sources", "media_objects", "places"],
 
   "properties": {
     "individuals": {
@@ -26,6 +20,10 @@
       "type": "object",
       "additionalProperties": { "$ref": "#/$defs/entity_source_strict" }
     },
+    "repositories": {
+      "type": "object",
+      "additionalProperties": { "$ref": "#/$defs/entity_repository_strict" }
+    },
     "media_objects": {
       "type": "object",
       "additionalProperties": { "$ref": "#/$defs/entity_media_strict" }
@@ -33,17 +31,65 @@
     "places": {
       "type": "object",
       "additionalProperties": { "$ref": "#/$defs/place_record_strict" }
+    },
+    "uuid_index": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": { "type": "string" }
+      }
     }
   },
 
   "$defs": {
+    "uuid": {
+      "type": "string",
+      "minLength": 8
+    },
+    "pointer": {
+      "type": "string",
+      "minLength": 3
+    },
+
+    "place_id": {
+      "type": "string",
+      "minLength": 1,
+
+      "pattern": "^[a-z0-9][a-z0-9 ,.'\\-]*$"
+    },
+
+    "event_strict": {
+      "type": "object",
+      "required": ["tag"],
+      "additionalProperties": true,
+      "properties": {
+        "tag": { "type": "string", "minLength": 1 },
+        "place_id": { "type": ["string", "null"] },
+        "place_hierarchy": { "$ref": "#/$defs/place_hierarchy_ref_strict" }
+      }
+    },
+
+    "place_hierarchy_ref_strict": {
+      "type": "object",
+      "required": ["place_id"],
+      "additionalProperties": false,
+      "properties": {
+        "place_id": { "$ref": "#/$defs/place_id" },
+        "parent_id": { "type": ["string", "null"] },
+        "ancestor_ids": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        }
+      }
+    },
+
     "entity_individual_strict": {
       "type": "object",
       "required": ["uuid", "pointer"],
       "additionalProperties": true,
       "properties": {
-        "uuid": { "type": "string" },
-        "pointer": { "type": "string" },
+        "uuid": { "$ref": "#/$defs/uuid" },
+        "pointer": { "$ref": "#/$defs/pointer" },
         "events": {
           "type": "array",
           "items": { "$ref": "#/$defs/event_strict" }
@@ -56,8 +102,8 @@
       "required": ["uuid", "pointer"],
       "additionalProperties": true,
       "properties": {
-        "uuid": { "type": "string" },
-        "pointer": { "type": "string" },
+        "uuid": { "$ref": "#/$defs/uuid" },
+        "pointer": { "$ref": "#/$defs/pointer" },
         "events": {
           "type": "array",
           "items": { "$ref": "#/$defs/event_strict" }
@@ -68,7 +114,21 @@
     "entity_source_strict": {
       "type": "object",
       "required": ["uuid", "pointer"],
-      "additionalProperties": true
+      "additionalProperties": true,
+      "properties": {
+        "uuid": { "$ref": "#/$defs/uuid" },
+        "pointer": { "$ref": "#/$defs/pointer" }
+      }
+    },
+
+    "entity_repository_strict": {
+      "type": "object",
+      "required": ["uuid", "pointer"],
+      "additionalProperties": true,
+      "properties": {
+        "uuid": { "$ref": "#/$defs/uuid" },
+        "pointer": { "$ref": "#/$defs/pointer" }
+      }
     },
 
     "entity_media_strict": {
@@ -76,49 +136,44 @@
       "required": ["uuid", "files"],
       "additionalProperties": true,
       "properties": {
-        "uuid": { "type": "string" },
+        "uuid": { "$ref": "#/$defs/uuid" },
         "files": {
           "type": "array",
-          "minItems": 1
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["path"],
+            "additionalProperties": true,
+            "properties": {
+              "path": { "type": "string", "minLength": 1 }
+            }
+          }
         }
       }
     },
 
-    "event_strict": {
-      "type": "object",
-      "required": ["tag"],
-      "properties": {
-        "tag": { "type": "string" },
-        "place_id": { "type": ["string", "null"] },
-        "place_hierarchy": { "$ref": "#/$defs/place_hierarchy_ref" }
-      },
-      "additionalProperties": true
-    },
-
-    "place_hierarchy_ref": {
-      "type": "object",
-      "required": ["place_id"],
-      "properties": {
-        "place_id": { "type": "string", "pattern": "^[a-z0-9 ,.-]+$" },
-        "parent_id": { "type": ["string", "null"] },
-        "ancestor_ids": {
-          "type": "array",
-          "items": { "type": "string" }
-        }
-      },
-      "additionalProperties": false
-    },
-
     "place_record_strict": {
       "type": "object",
-      "required": ["id", "normalized"],
+      "required": ["id"],
       "additionalProperties": true,
       "properties": {
-        "id": { "type": "string", "pattern": "^[a-z0-9 ,.-]+$" },
+        "id": { "$ref": "#/$defs/place_id" },
+
         "normalized": { "type": "string" },
+
         "parent_id": { "type": ["string", "null"] },
-        "ancestor_ids": { "type": "array", "items": { "type": "string" } },
-        "child_ids": { "type": "array", "items": { "type": "string" } }
+
+        "ancestor_ids": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+
+        "child_ids": {
+          "type": "array",
+          "items": { "type": "string", "minLength": 1 }
+        },
+
+        "generated": { "type": "boolean" }
       }
     }
   }
