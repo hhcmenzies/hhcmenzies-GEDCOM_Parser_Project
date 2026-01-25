@@ -29,3 +29,23 @@ pipeline:
 
 debug:
   enabled: false
+
+place_processing:
+  enable_place_versions: true
+  enable_event_place_refs: true
+  allow_multiple_place_refs_per_event: false
+
+  default_jurisdiction_system: js:civil-us
+  jurisdiction_systems_enabled:
+    - js:civil-us
+
+  temporal:
+    bucket: year
+    open_ended_fallback: true
+
+  inference:
+    enable_overlay_inference: false
+    overlay_rules:
+      baptisms_to_ecclesiastical: true
+      marriages_to_ecclesiastical: false
+      military_events_to_military: false

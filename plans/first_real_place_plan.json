@@ -1,0 +1,15 @@
+{
+  "plan_id": "plan_first_real_noop",
+  "spec_version": "c24.9",
+  "created_at": "2026-01-04T00:00:00Z",
+  "actor": "human:david",
+  "notes": "C.24.9 plumbing verification plan (no-op). Validates schemas, applier, reporting, and output writing before introducing real merge/split operations.",
+  "policy": {
+    "fail_on_soft_warnings": false,
+    "fail_on_advisory": false,
+    "max_chain_depth": 25,
+    "allow_cross_jurisdiction_override": false,
+    "allow_root_conflict_override": false
+  },
+  "operations": []
+}

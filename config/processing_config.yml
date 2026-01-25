@@ -1,0 +1,30 @@
+---
+# Processing configuration for GEDCOM Parser.
+# This file configures the normalization and enrichment processes,
+# including module toggles and dataset file paths.
+
+normalization:
+  enable_name_normalization: true
+  enable_date_normalization: true
+  enable_place_normalization: false
+  date_normalization_mode: "strict"
+  # Datasets to load for name normalization.
+  name_datasets:
+    - "name_normalization"
+    - "nicknames"
+    - "titles"
+
+enrichment:
+  enable_enrichment: true
+  modules:
+    - "historical_military_data"
+    - "royalty_titles"
+    - "religious_affiliations"
+
+files:
+  name_normalization: "../normalization/datasets/name_normalization.json"
+  nicknames: "../normalization/datasets/nicknames.json"
+  titles: "../normalization/datasets/titles.json"
+  historical_military_data: "../normalization/datasets/us_military.json"
+  royalty_titles: "../normalization/datasets/royal.json"
+  religious_affiliations: "../normalization/datasets/religious.json"

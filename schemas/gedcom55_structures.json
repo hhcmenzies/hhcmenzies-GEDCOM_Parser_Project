@@ -1,0 +1,3636 @@
+{
+  "ADDR": {
+    "children": {
+      "ADR1": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "ADR2": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "ADR3": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CITY": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CTRY": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "POST": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "STAE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    }
+  },
+  "ASSO": {
+    "children": {
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "RELA": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "ROLE": {
+        "max": 1,
+        "min": 0,
+        "payload": "enum",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      }
+    }
+  },
+  "CHAN": {
+    "children": {
+      "DATE": {
+        "max": 1,
+        "min": 1,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    }
+  },
+  "CHAN.DATE": {
+    "children": {
+      "TIME": {
+        "max": 1,
+        "min": 0,
+        "payload": "time",
+        "pointer_to": null
+      }
+    }
+  },
+  "FAM": {
+    "children": {
+      "ANUL": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "CENS": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "CHAN": {
+        "max": 1,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "CHIL": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "INDI"
+      },
+      "DIV": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "EVEN": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "HUSB": {
+        "max": 1,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "INDI"
+      },
+      "MARR": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "NCHI": {
+        "max": 1,
+        "min": 0,
+        "payload": "int",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text_or_pointer",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "REFN": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "RESI": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "RIN": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SLGS": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "WIFE": {
+        "max": 1,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "INDI"
+      }
+    }
+  },
+  "FAM.ANUL": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Family event detail for ANUL."
+    ]
+  },
+  "FAM.CENS": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Family event detail for CENS."
+    ]
+  },
+  "FAM.DIV": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Family event detail for DIV."
+    ]
+  },
+  "FAM.EVEN": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Family event detail for EVEN."
+    ]
+  },
+  "FAM.MARR": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Family event detail for MARR."
+    ]
+  },
+  "FAM.RESI": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Family event detail for RESI."
+    ]
+  },
+  "FAM.SLGS": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Family event detail for SLGS."
+    ]
+  },
+  "HEAD": {
+    "children": {
+      "CHAR": {
+        "max": 1,
+        "min": 1,
+        "payload": "enum",
+        "pointer_to": null
+      },
+      "COPR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "DEST": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "FILE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "GEDC": {
+        "max": 1,
+        "min": 1,
+        "payload": null,
+        "pointer_to": null
+      },
+      "LANG": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SUBM": {
+        "max": 1,
+        "min": 1,
+        "payload": "pointer",
+        "pointer_to": "SUBM"
+      },
+      "SUBN": {
+        "max": 1,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SUBN"
+      }
+    },
+    "notes": [
+      "Record HEAD (header). Constraints vary by form; this is Lineage-Linked focused."
+    ]
+  },
+  "HEAD.DATE": {
+    "children": {
+      "TIME": {
+        "max": 1,
+        "min": 0,
+        "payload": "time",
+        "pointer_to": null
+      }
+    }
+  },
+  "HEAD.GEDC": {
+    "children": {
+      "FORM": {
+        "max": 1,
+        "min": 1,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "VERS": {
+        "max": 1,
+        "min": 1,
+        "payload": "text",
+        "pointer_to": null
+      }
+    }
+  },
+  "HEAD.PLAC": {
+    "children": {
+      "FORM": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    }
+  },
+  "HEAD.SOUR": {
+    "children": {
+      "CORP": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATA": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "NAME": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "VERS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    }
+  },
+  "HEAD.SOUR.CORP": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "EMAIL": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "FAX": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "PHON": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "WWW": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    }
+  },
+  "HEAD.SOUR.DATA": {
+    "children": {
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      }
+    }
+  },
+  "HEAD.SOUR.DATA.DATE": {
+    "children": {
+      "TIME": {
+        "max": 1,
+        "min": 0,
+        "payload": "time",
+        "pointer_to": null
+      }
+    }
+  },
+  "INDI": {
+    "children": {
+      "ADOP": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "ALIA": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "INDI"
+      },
+      "ANCI": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SUBM"
+      },
+      "ASSO": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "INDI"
+      },
+      "BAPM": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "BARM": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "BASM": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "BIRT": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "BLES": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "BURI": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "CAST": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CENS": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "CHAN": {
+        "max": 1,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "CHRA": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "CONF": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "CREM": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "DEAT": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "DESI": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SUBM"
+      },
+      "DSCR": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "EDUC": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "EMIG": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "EVEN": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "FACT": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "FAMC": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "FAM"
+      },
+      "FAMS": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "FAM"
+      },
+      "FCOM": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "GRAD": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "IDNO": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "IMMI": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "NAME": {
+        "max": null,
+        "min": 0,
+        "payload": "name",
+        "pointer_to": null
+      },
+      "NATI": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "NATU": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "NCHI": {
+        "max": null,
+        "min": 0,
+        "payload": "int",
+        "pointer_to": null
+      },
+      "NMR": {
+        "max": null,
+        "min": 0,
+        "payload": "int",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text_or_pointer",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "OCCU": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "ORDN": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PROB": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PROP": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "REFN": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "RELI": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "RESI": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "RETI": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "RIN": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SEX": {
+        "max": 1,
+        "min": 0,
+        "payload": "enum",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "SSN": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "TITL": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "WILL": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "INDI record. Many event tags share EVENT_DETAIL children."
+    ]
+  },
+  "INDI.ADOP": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for ADOP."
+    ]
+  },
+  "INDI.BAPL": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "LDS ordinance BAPL."
+    ]
+  },
+  "INDI.BAPM": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for BAPM."
+    ]
+  },
+  "INDI.BARM": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for BARM."
+    ]
+  },
+  "INDI.BASM": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for BASM."
+    ]
+  },
+  "INDI.BIRT": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for BIRT."
+    ]
+  },
+  "INDI.BLES": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for BLES."
+    ]
+  },
+  "INDI.BURI": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for BURI."
+    ]
+  },
+  "INDI.CENS": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for CENS."
+    ]
+  },
+  "INDI.CHRA": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for CHRA."
+    ]
+  },
+  "INDI.CONF": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for CONF."
+    ]
+  },
+  "INDI.CONL": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "LDS ordinance CONL."
+    ]
+  },
+  "INDI.CREM": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for CREM."
+    ]
+  },
+  "INDI.DEAT": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for DEAT."
+    ]
+  },
+  "INDI.EMIG": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for EMIG."
+    ]
+  },
+  "INDI.ENDL": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "LDS ordinance ENDL."
+    ]
+  },
+  "INDI.EVEN": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for EVEN."
+    ]
+  },
+  "INDI.FAMC": {
+    "children": {
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "PEDI": {
+        "max": 1,
+        "min": 0,
+        "payload": "enum",
+        "pointer_to": null
+      },
+      "STAT": {
+        "max": 1,
+        "min": 0,
+        "payload": "enum",
+        "pointer_to": null
+      }
+    }
+  },
+  "INDI.FAMS": {
+    "children": {
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    }
+  },
+  "INDI.FCOM": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for FCOM."
+    ]
+  },
+  "INDI.GRAD": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for GRAD."
+    ]
+  },
+  "INDI.IMMI": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for IMMI."
+    ]
+  },
+  "INDI.NATU": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for NATU."
+    ]
+  },
+  "INDI.ORDN": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for ORDN."
+    ]
+  },
+  "INDI.PROB": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for PROB."
+    ]
+  },
+  "INDI.RESI": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for RESI."
+    ]
+  },
+  "INDI.RETI": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for RETI."
+    ]
+  },
+  "INDI.SLGC": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "LDS ordinance SLGC."
+    ]
+  },
+  "INDI.SLGS": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "LDS ordinance SLGS."
+    ]
+  },
+  "INDI.WILL": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "age",
+        "pointer_to": null
+      },
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CAUS": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "TYPE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "Event detail for WILL."
+    ]
+  },
+  "NAME": {
+    "children": {
+      "GIVN": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "NICK": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "NPFX": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "NSFX": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SOUR"
+      },
+      "SPFX": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SURN": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    }
+  },
+  "NOTE": {
+    "children": {
+      "CONC": {
+        "max": null,
+        "min": 0,
+        "notes": [
+          "Handled by line reconstruction; included for schema completeness"
+        ],
+        "payload": "text",
+        "pointer_to": null
+      },
+      "CONT": {
+        "max": null,
+        "min": 0,
+        "notes": [
+          "Handled by line reconstruction; included for schema completeness"
+        ],
+        "payload": "text",
+        "pointer_to": null
+      },
+      "REFN": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "RIN": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SOUR": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      }
+    }
+  },
+  "OBJE": {
+    "children": {
+      "BLOB": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "FILE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "FORM": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "REFN": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "RIN": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "TITL": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    }
+  },
+  "OBJE.FILE": {
+    "children": {
+      "FORM": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "TITL": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    }
+  },
+  "REPO": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "EMAIL": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "FAX": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "NAME": {
+        "max": 1,
+        "min": 1,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "PHON": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "REFN": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "RIN": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "WWW": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    }
+  },
+  "SOUR": {
+    "children": {
+      "ABBR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "AUTH": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DATA": {
+        "max": 1,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PUBL": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "REFN": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "REPO": {
+        "max": null,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "REPO"
+      },
+      "RIN": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "TEXT": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "TITL": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    }
+  },
+  "SOUR.DATA": {
+    "children": {
+      "AGNC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "EVEN": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "TEXT": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    }
+  },
+  "SOUR.DATA.EVEN": {
+    "children": {
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "PLAC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    }
+  },
+  "SOUR.REPO": {
+    "children": {
+      "CALN": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    }
+  },
+  "SOUR.REPO.CALN": {
+    "children": {
+      "MEDI": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    }
+  },
+  "SOURCIT": {
+    "children": {
+      "DATA": {
+        "max": 1,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "EVEN": {
+        "max": 1,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "OBJE": {
+        "max": null,
+        "min": 0,
+        "payload": null,
+        "pointer_to": null
+      },
+      "PAGE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "QUAY": {
+        "max": 1,
+        "min": 0,
+        "payload": "enum",
+        "pointer_to": null
+      }
+    }
+  },
+  "SOURCIT.DATA": {
+    "children": {
+      "DATE": {
+        "max": 1,
+        "min": 0,
+        "payload": "date",
+        "pointer_to": null
+      },
+      "TEXT": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    }
+  },
+  "SOURCIT.DATA.DATE": {
+    "children": {
+      "TIME": {
+        "max": 1,
+        "min": 0,
+        "payload": "time",
+        "pointer_to": null
+      }
+    }
+  },
+  "SOURCIT.EVEN": {
+    "children": {
+      "ROLE": {
+        "max": 1,
+        "min": 0,
+        "payload": "enum",
+        "pointer_to": null
+      }
+    }
+  },
+  "SUBM": {
+    "children": {
+      "ADDR": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "EMAIL": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "FAX": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "LANG": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "NAME": {
+        "max": 1,
+        "min": 1,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "PHON": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "RFN": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "RIN": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "WWW": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    },
+    "notes": [
+      "SUBM record (submitter)."
+    ]
+  },
+  "SUBN": {
+    "children": {
+      "ANCE": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "DESC": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "FAMF": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "NOTE": {
+        "max": null,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "ORDI": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "RIN": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      },
+      "SUBM": {
+        "max": 1,
+        "min": 0,
+        "payload": "pointer",
+        "pointer_to": "SUBM"
+      },
+      "TEMP": {
+        "max": 1,
+        "min": 0,
+        "payload": "text",
+        "pointer_to": null
+      }
+    }
+  }
+}

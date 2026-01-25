@@ -1,0 +1,56 @@
+=== MA Notables Inventory ===
+Timestamp: 2026-01-23T11:24:20-05:00
+PWD: /home/david/GEDCOM_Parser_Project
+
+== Key files (long listing) ==
+
+== Upgrade pack dir ==
+total 76
+drwx------  3 david david  4096 Jan 23 11:19 .
+drwxrwxr-x 22 david david  4096 Jan 23 09:48 ..
+-rw-rw-r--  1 david david  4845 Jan 23 11:19 collections.json
+-rw-r--r--  1 david david  3314 Jan 22 18:10 collections.schema.json
+-rw-r--r--  1 david david  4394 Jan 22 18:10 collections.upgraded.json
+-rw-rw-r--  1 david david 30165 Jan 22 18:10 ma_notables_pipeline.py
+drwxrwxr-x  4 david david  4096 Jan 23 09:44 out
+-rw-r--r--  1 david david   960 Jan 22 19:19 README.md
+-rw-r--r--  1 david david    17 Jan 22 18:10 requirements-ma-notables.txt
+-rw-r--r--  1 david david    17 Jan 22 19:19 requirements.txt
+
+== Output dir ==
+
+== Output collections ==
+
+== File list (side-project scope) ==
+./ma_notables_upgrade_pack/collections.json
+./ma_notables_upgrade_pack/collections.schema.json
+./ma_notables_upgrade_pack/collections.upgraded.json
+./ma_notables_upgrade_pack/ma_notables_pipeline.py
+./ma_notables_upgrade_pack/out
+./ma_notables_upgrade_pack/out/collections
+./ma_notables_upgrade_pack/out/collections/american_revolution_ma.jsonl
+./ma_notables_upgrade_pack/out/collections/boston_massacre.jsonl
+./ma_notables_upgrade_pack/out/collections/boston_tea_party.jsonl
+./ma_notables_upgrade_pack/out/collections/colonial_boston.jsonl
+./ma_notables_upgrade_pack/out/collections/colonial_massachusetts.jsonl
+./ma_notables_upgrade_pack/out/collections/eighteenth_century_ma.jsonl
+./ma_notables_upgrade_pack/out/collections/french_indian_war_ma.jsonl
+./ma_notables_upgrade_pack/out/collections/king_philips_war.jsonl
+./ma_notables_upgrade_pack/out/collections/mayflower_passengers.jsonl
+./ma_notables_upgrade_pack/out/collections/plymouth_colony.jsonl
+./ma_notables_upgrade_pack/out/collections/salem_witch_trials.jsonl
+./ma_notables_upgrade_pack/out/collections/seventeenth_century_ma.jsonl
+./ma_notables_upgrade_pack/out/collections/shays_rebellion.jsonl
+./ma_notables_upgrade_pack/out/manifest.json
+./ma_notables_upgrade_pack/out/master_ma_1600_1799.jsonl
+./ma_notables_upgrade_pack/out/qa_report.json
+./ma_notables_upgrade_pack/out/rejected_nonhuman.jsonl
+./ma_notables_upgrade_pack/out/rejected_no_qid.jsonl
+./ma_notables_upgrade_pack/out/rejected_outside_window.jsonl
+./ma_notables_upgrade_pack/out/runs
+./ma_notables_upgrade_pack/out/runs/2026-01-23T144456Z
+./ma_notables_upgrade_pack/README.md
+./ma_notables_upgrade_pack/requirements-ma-notables.txt
+./ma_notables_upgrade_pack/requirements.txt
+
+== Sizes (key outputs) ==

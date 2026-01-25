@@ -1,0 +1,9 @@
+root.setdefault("provenance", {})
+root["provenance"].setdefault("place_versioning", {})
+root["provenance"]["place_versioning"]["c24_7_applied"] = True
+
+
+
+
+chmod +x verify_all_C24_8.sh
+./verify_all_C24_8.sh

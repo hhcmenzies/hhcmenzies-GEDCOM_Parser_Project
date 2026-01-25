@@ -1,0 +1,11 @@
+ 2375 total
+  490 schemas/c24_7_canonical_export.schema.json
+  419 schemas/c24_7_canonical_export.strict.schema.json
+  353 schemas/legacy/C.24.5.schema.json
+  254 schemas/c24_5_canonical_export.schema.json
+  180 schemas/c24_5_canonical_export.strict.schema.json
+  178 schemas/c24_8_canonical_export_schema.json
+  146 schemas/c24_6_canonical_export.schema.json
+  136 schemas/c24_6_canonical_export.strict.schema.json
+  119 schemas/name_block_schema.json
+  100 schemas/c24_8_canonical_export_strict.schema.json

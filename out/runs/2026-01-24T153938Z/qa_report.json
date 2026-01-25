@@ -1,0 +1,339 @@
+{
+  "schema_version": "1.1",
+  "target_window": {
+    "start_year": 1600,
+    "end_year": 1799
+  },
+  "counts": {
+    "candidates_total_titles": 6127,
+    "candidates_with_wp_meta": 5965,
+    "candidates_with_qid": 5780,
+    "rejected_no_qid": 11,
+    "rejected_nonhuman": 2376,
+    "rejected_outside_window": 0,
+    "included_master_records": 3404
+  },
+  "missingness_in_master": {
+    "birth_date_missing": 347,
+    "birth_place_missing": 1238,
+    "death_date_missing": 882,
+    "death_place_missing": 2116,
+    "notability_summary_missing": 22
+  },
+  "collections": {
+    "colonial_massachusetts": {
+      "label": "People from colonial Massachusetts",
+      "records": 500,
+      "window": {
+        "start_year": 1600,
+        "end_year": 1776
+      },
+      "association": {
+        "type": "categorized_as",
+        "label": "People from colonial Massachusetts"
+      },
+      "sources": [
+        {
+          "type": "category",
+          "title": "Category:People from colonial Massachusetts",
+          "traverse_subcategories": false
+        }
+      ]
+    },
+    "colonial_boston": {
+      "label": "People from colonial Boston",
+      "records": 224,
+      "window": {
+        "start_year": 1600,
+        "end_year": 1776
+      },
+      "association": {
+        "type": "event_in",
+        "label": "Colonial Boston"
+      },
+      "sources": [
+        {
+          "type": "category",
+          "title": "Category:People from colonial Boston",
+          "traverse_subcategories": true
+        }
+      ]
+    },
+    "plymouth_colony": {
+      "label": "People of the Plymouth Colony",
+      "records": 96,
+      "window": {
+        "start_year": 1620,
+        "end_year": 1691
+      },
+      "association": {
+        "type": "event_in",
+        "label": "Plymouth Colony"
+      },
+      "sources": [
+        {
+          "type": "category",
+          "title": "Category:People of the Plymouth Colony",
+          "traverse_subcategories": true
+        }
+      ]
+    },
+    "mayflower_passengers": {
+      "label": "Mayflower passengers",
+      "records": 56,
+      "window": {
+        "start_year": 1620,
+        "end_year": 1621
+      },
+      "association": {
+        "type": "event_in",
+        "label": "Mayflower voyage"
+      },
+      "sources": [
+        {
+          "type": "list_page",
+          "title": "List of Mayflower passengers",
+          "traverse_subcategories": false
+        }
+      ]
+    },
+    "salem_witch_trials": {
+      "label": "People of the Salem witch trials",
+      "records": 92,
+      "window": {
+        "start_year": 1692,
+        "end_year": 1693
+      },
+      "association": {
+        "type": "event_in",
+        "label": "Salem witch trials"
+      },
+      "sources": [
+        {
+          "type": "category",
+          "title": "Category:People of the Salem witch trials",
+          "traverse_subcategories": true
+        }
+      ]
+    },
+    "french_indian_war_ma": {
+      "label": "People of Massachusetts in the French and Indian War",
+      "records": 38,
+      "window": {
+        "start_year": 1754,
+        "end_year": 1763
+      },
+      "association": {
+        "type": "event_in",
+        "label": "French and Indian War (Massachusetts)"
+      },
+      "sources": [
+        {
+          "type": "category",
+          "title": "Category:People of Massachusetts in the French and Indian War",
+          "traverse_subcategories": true
+        }
+      ]
+    },
+    "american_revolution_ma": {
+      "label": "People of Massachusetts in the American Revolution",
+      "records": 285,
+      "window": {
+        "start_year": 1775,
+        "end_year": 1783
+      },
+      "association": {
+        "type": "event_in",
+        "label": "American Revolution (Massachusetts)"
+      },
+      "sources": [
+        {
+          "type": "category",
+          "title": "Category:People of Massachusetts in the American Revolution",
+          "traverse_subcategories": true
+        }
+      ]
+    },
+    "seventeenth_century_ma": {
+      "label": "17th-century people from Massachusetts",
+      "records": 67,
+      "window": {
+        "start_year": 1601,
+        "end_year": 1700
+      },
+      "association": {
+        "type": "period_in",
+        "label": "17th-century Massachusetts"
+      },
+      "sources": [
+        {
+          "type": "category",
+          "title": "Category:17th-century people from Massachusetts",
+          "traverse_subcategories": true
+        }
+      ]
+    },
+    "eighteenth_century_ma": {
+      "label": "18th-century people from Massachusetts",
+      "records": 356,
+      "window": {
+        "start_year": 1701,
+        "end_year": 1799
+      },
+      "association": {
+        "type": "period_in",
+        "label": "18th-century Massachusetts"
+      },
+      "sources": [
+        {
+          "type": "category",
+          "title": "Category:18th-century people from Massachusetts",
+          "traverse_subcategories": true
+        }
+      ]
+    },
+    "boston_massacre": {
+      "label": "Boston Massacre",
+      "records": 122,
+      "window": {
+        "start_year": 1770,
+        "end_year": 1770
+      },
+      "association": {
+        "type": "event_in",
+        "label": "Boston Massacre"
+      },
+      "sources": [
+        {
+          "type": "list_page",
+          "title": "Boston Massacre",
+          "traverse_subcategories": false
+        }
+      ]
+    },
+    "boston_tea_party": {
+      "label": "Boston Tea Party",
+      "records": 103,
+      "window": {
+        "start_year": 1773,
+        "end_year": 1773
+      },
+      "association": {
+        "type": "event_in",
+        "label": "Boston Tea Party"
+      },
+      "sources": [
+        {
+          "type": "list_page",
+          "title": "Boston Tea Party",
+          "traverse_subcategories": false
+        }
+      ]
+    },
+    "king_philips_war": {
+      "label": "King Philip's War",
+      "records": 49,
+      "window": {
+        "start_year": 1675,
+        "end_year": 1678
+      },
+      "association": {
+        "type": "event_in",
+        "label": "King Philip's War"
+      },
+      "sources": [
+        {
+          "type": "list_page",
+          "title": "King Philip's War",
+          "traverse_subcategories": false
+        }
+      ]
+    },
+    "shays_rebellion": {
+      "label": "Shays's Rebellion",
+      "records": 28,
+      "window": {
+        "start_year": 1786,
+        "end_year": 1787
+      },
+      "association": {
+        "type": "event_in",
+        "label": "Shays's Rebellion"
+      },
+      "sources": [
+        {
+          "type": "list_page",
+          "title": "Shays's Rebellion",
+          "traverse_subcategories": false
+        }
+      ]
+    },
+    "military_colonial_ma": {
+      "label": "Military personnel from colonial Massachusetts",
+      "records": 105,
+      "window": {
+        "start_year": 1600,
+        "end_year": 1799
+      },
+      "association": {
+        "type": "categorized_as",
+        "label": "Military personnel (colonial Massachusetts)"
+      },
+      "sources": [
+        {
+          "type": "category",
+          "title": "Category:Military personnel from colonial Massachusetts",
+          "traverse_subcategories": true
+        }
+      ]
+    },
+    "judges_ma": {
+      "label": "Massachusetts judges (1600–1799)",
+      "records": 187,
+      "window": {
+        "start_year": 1600,
+        "end_year": 1799
+      },
+      "association": {
+        "type": "categorized_as",
+        "label": "Massachusetts judges"
+      },
+      "sources": [
+        {
+          "type": "list_page",
+          "title": "List of justices of the Massachusetts Supreme Judicial Court",
+          "traverse_subcategories": false
+        },
+        {
+          "type": "list_page",
+          "title": "Chief Justice of the Massachusetts Supreme Judicial Court",
+          "traverse_subcategories": false
+        }
+      ]
+    },
+    "legislators_ma": {
+      "label": "Massachusetts legislators (1600–1799)",
+      "records": 2215,
+      "window": {
+        "start_year": 1600,
+        "end_year": 1799
+      },
+      "association": {
+        "type": "categorized_as",
+        "label": "Massachusetts legislators"
+      },
+      "sources": [
+        {
+          "type": "category",
+          "title": "Category:Members of the Massachusetts General Court",
+          "traverse_subcategories": true
+        },
+        {
+          "type": "category",
+          "title": "Category:Massachusetts General Court",
+          "traverse_subcategories": true
+        }
+      ]
+    }
+  }
+}

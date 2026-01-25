@@ -1,0 +1,20 @@
+{
+  "merges": [
+    {
+      "id": "m_example",
+      "merge_kind": "place_version",
+      "from_place_version_ids": [
+        "pv_example1",
+        "pv_example2"
+      ],
+      "override": false,
+      "notes": "Example merge (expected to fail because ids do not exist)"
+    }
+  ],
+  "policy": {
+    "fail_on_soft_warnings": false,
+    "min_events_for_auto_merge": 10,
+    "allow_override_cross_jurisdiction": false,
+    "allow_override_root_conflict": false
+  }
+}

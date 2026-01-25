@@ -1,0 +1,11 @@
+2026-01-02 21:02:50 -0500 5aec36a C.24.8: place merge/split verifier (safety + invariants)
+2025-12-31 18:37:33 -0500 9b00bf0 C.24.7: place versioning, temporal semantics, schemas, OpenAPI
+2025-12-31 15:14:32 -0500 38bd2d9 C.24.7: temporal & jurisdiction place semantics (place versions + event.place_refs)
+2025-12-28 15:31:11 -0500 10dc5cc C.24.5: lock canonical schema, strict validation, verification script
+2025-12-27 18:07:44 -0500 36e1b52 C.24.4.x complete: stable pipeline, OBJE promoted, modern schema aligned
+2025-12-23 20:25:51 -0500 bfd259c WIP: sync local changes
+2025-12-23 20:25:18 -0500 94d4eb9 Update .gitignore
+2025-12-07 17:21:32 -0500 8a8997f Stabilized exporter system, validated full pipeline
+2025-12-06 08:37:51 -0500 35a893d Add updated requirements.txt based on audit
+2025-12-06 08:27:34 -0500 b2ef631 Add project-specific .gitignore
+2025-12-06 08:23:40 -0500 9d8560f Initial commit of new GEDCOM_Parser_Project

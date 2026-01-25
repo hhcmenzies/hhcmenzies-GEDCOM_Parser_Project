@@ -1,0 +1,251 @@
+.
+├── config
+│   ├── gedcom_parser.yml
+│   └── tag_metadata.json
+├── datasets
+│   ├── date_normalization.json
+│   ├── early_massachusetts.json
+│   ├── enrich_names_config.yml
+│   ├── gaelic_name_conversion.json
+│   ├── gedcom_schema.json
+│   ├── gedcom_tags.json
+│   ├── gedcom_tags_meta_schema.json
+│   ├── mayflower.json
+│   ├── military_aus.json
+│   ├── military_can.json
+│   ├── military_germ.json
+│   ├── military_rank_standardization.json
+│   ├── military_uk.json
+│   ├── military_us_normalization.json
+│   ├── name_normalization.json
+│   ├── name_prefixes.json
+│   ├── name_variants.json
+│   ├── new_england.json
+│   ├── nicknames.json
+│   ├── npfx_standardization.json
+│   ├── nsfx_list.json
+│   ├── nsfx_standardization.json
+│   ├── occupations.json
+│   ├── prefix_draft.json
+│   ├── religious.json
+│   ├── royal.json
+│   ├── salem_witch_trials.json
+│   ├── spfx_list.json
+│   ├── spfx_standardization.json
+│   ├── surname_normalization.json
+│   ├── titles_normalization.json
+│   └── us_states.json
+├── docs
+│   ├── C.24.5_Canonical_Export_Schema.md
+│   ├── C.24.5-schema.md
+│   ├── C.24.6_Place_Hierarchy.md
+│   ├── C.24.7_Place_Semantics.md
+│   ├── C.24.8_Place_Merge_Split.md
+│   ├── clear_prompt.txt
+│   ├── ged551.pdf
+│   ├── GEDCOM 5.5.5.pdf
+│   ├── gedcom7-rc.pdf
+│   ├── legacy
+│   │   ├── 2024_TL_Shapefiles_File_Name_Definitions.pdf
+│   │   ├── action_plan.md
+│   │   ├── Architecture and Approach for GEDCOM 5.5.5 Data Processing.pdf
+│   │   ├── assessment_roadmap.md
+│   │   ├── codex_prompt.txt
+│   │   ├── commands.txt
+│   │   ├── course of actions.txt
+│   │   ├── database.md
+│   │   ├── database_targets.md
+│   │   ├── forward.md
+│   │   ├── GEDCOM_Consolidated_Roadmap.md
+│   │   ├── __GEDCOM Parser Project – Architecture Review and Roadmap__.pdf
+│   │   ├── GEDCOM Parser Project – Comprehensive Audit & Upgrade Plan.pdf
+│   │   ├── Gedcom Parser Project – Next Phase Execution Plan.pdf
+│   │   ├── gedcom_v1_1_issues.csv
+│   │   ├── json_to_gedcom.md
+│   │   ├── next_steps.md
+│   │   ├── processing_roadmap.md
+│   │   ├── raodmap_alignment.md
+│   │   ├── README.md
+│   │   ├── Review and Corrections for GEDCOM_Parser_Project (up to C.24.4.8).pdf
+│   │   ├── roadmap.md
+│   │   ├── roadmap_next_steps.md
+│   │   ├── roadmap_refactoring.md
+│   │   ├── roadmap_sql.md
+│   │   ├── Technical Review of GEDCOM Parser & Processor Project.pdf
+│   │   └── transitional.txt
+│   └── project_tree_public.txt
+├── GEDCOM logo.png
+├── GEDCOM_Parser_Project.code-workspace
+├── .gitignore
+├── inventories
+│   ├── dataset_dump.txt
+│   ├── gedcom_file_structure.txt
+│   ├── gedcom_parser_inventory.csv
+│   ├── inventory_script.ps1
+│   ├── legacy_inventory.txt
+│   ├── project_detailed_inventory.txt
+│   ├── project_inventory_full.txt
+│   ├── project_inventory.md
+│   ├── project_inventory.txt
+│   └── project_size_report.txt
+├── me
+├── me.pub
+├── misc
+│   ├── verify_all_C24_5.sh
+│   ├── verify_all_C24_5.sh.patch.txt
+│   ├── verify_all_C24_6.sh
+│   └── verify_all.sh
+├── openapi
+│   └── c24_7_openapi.yaml
+├── parse_gedcom.py
+├── project_tree.sh
+├── project_tree.txt
+├── requirements-dev.txt
+├── requirements.txt
+├── run_pipeline.sh
+├── run.py
+├── schemas
+│   ├── c24_5_canonical_export_openapi.yaml
+│   ├── c24_5_canonical_export.schema.json
+│   ├── c24_5_canonical_export.strict.schema.json
+│   ├── c24_6_canonical_export.schema.json
+│   ├── c24_6_canonical_export.strict.schema.json
+│   ├── c24_7_canonical_export.schema.json
+│   ├── c24_7_canonical_export.strict.schema.json
+│   ├── c24_8_canonical_export_schema.json
+│   ├── c24_8_canonical_export_strict.schema.json
+│   ├── legacy
+│   │   └── C.24.5.schema.json
+│   └── name_block_schema.json
+├── src
+│   └── gedcom_parser
+│       ├── attachments.py
+│       ├── cli
+│       │   ├── app.py
+│       │   ├── commands
+│       │   │   ├── export.py
+│       │   │   ├── __init__.py
+│       │   │   └── stats.py
+│       │   ├── __init__.py
+│       │   └── utils.py
+│       ├── config.py
+│       ├── core
+│       │   ├── context.py
+│       │   ├── exceptions.py
+│       │   ├── __init__.py
+│       │   └── pipeline.py
+│       ├── data
+│       │   └── occupation_keywords.json
+│       ├── dates
+│       │   ├── __init__.py
+│       │   └── normalizer.py
+│       ├── entities
+│       │   ├── entity_base.py
+│       │   ├── extraction
+│       │   │   ├── __init__.py
+│       │   │   ├── name_normalization.py
+│       │   │   ├── name.py
+│       │   │   ├── occupation.py
+│       │   │   └── place.py
+│       │   ├── extractor.py
+│       │   ├── __init__.py
+│       │   ├── models.py
+│       │   ├── name_block.py
+│       │   └── registry.py
+│       ├── events
+│       │   ├── event.py
+│       │   └── __init__.py
+│       ├── exporter
+│       │   ├── exporter.py
+│       │   ├── __init__.py
+│       │   └── json_exporter.py
+│       ├── generated_attachments.py
+│       ├── generated_entities.py
+│       ├── identity
+│       │   ├── __init__.py
+│       │   └── uuid_factory.py
+│       ├── __init__.py
+│       ├── loader
+│       │   ├── file_loader.py
+│       │   ├── file_locator.py
+│       │   ├── __init__.py
+│       │   ├── reconstruct.py
+│       │   ├── segmenter.py
+│       │   ├── tokenizer.py
+│       │   ├── tree_builder.py
+│       │   └── value_reconstructor.py
+│       ├── loader.py
+│       ├── logger.py
+│       ├── logging
+│       │   ├── __init__.py
+│       │   └── logger.py
+│       ├── main.py
+│       ├── model
+│       │   └── __init__.py
+│       ├── models.py
+│       ├── normalization
+│       │   ├── __init__.py
+│       │   └── name_normalization.py
+│       ├── occupation
+│       │   ├── inference.py
+│       │   └── __init__.py
+│       ├── parse
+│       │   └── __init__.py
+│       ├── parser_core.py
+│       ├── postprocess
+│       │   ├── entity_resolution.py
+│       │   ├── event_disambiguator.py
+│       │   ├── event_scoring.py
+│       │   ├── graph_builder.py
+│       │   ├── __init__.py
+│       │   ├── media_normalizer.py
+│       │   ├── name_identity.py
+│       │   ├── place_hierarchy_builder.py
+│       │   ├── place_merge_split_verifier.py
+│       │   ├── place_registry_builder.py
+│       │   ├── place_standardizer.py
+│       │   ├── place_version_builder.py
+│       │   ├── xref_builder.py
+│       │   └── xref_resolver.py
+│       ├── registry
+│       │   ├── build_family.py
+│       │   ├── build_individual.py
+│       │   ├── build_media_object.py
+│       │   ├── build_note.py
+│       │   ├── build_registry.py
+│       │   ├── build_source.py
+│       │   ├── entities.py
+│       │   ├── generated_build_registry.py
+│       │   ├── __init__.py
+│       │   ├── link_entities.py
+│       │   ├── promote_media.py
+│       │   └── utils.py
+│       ├── tree_builder.py
+│       ├── utils
+│       │   ├── __init__.py
+│       │   └── pathing.py
+│       └── utils.py
+├── tests
+│   ├── data
+│   │   └── gedcom_1.ged
+│   ├── test_basic.py
+│   ├── test_build_family.py
+│   ├── test_build_individual.py
+│   ├── test_build_media_object.py
+│   ├── test_build_note.py
+│   ├── test_build_source.py
+│   ├── test_dates.py
+│   ├── test_entities.py
+│   ├── test_entity_linking.py
+│   ├── test_events_enriched.py
+│   ├── test_events_extended.py
+│   ├── test_events.py
+│   ├── test_reconstruct_values.py
+│   ├── test_registry_entities.py
+│   ├── test_segmenter.py
+│   ├── test_tokenizer.py
+│   ├── test_tree_builder.py
+│   └── test_uuid_identity.py
+└── verify_all_C24_7.sh
+
+33 directories, 216 files

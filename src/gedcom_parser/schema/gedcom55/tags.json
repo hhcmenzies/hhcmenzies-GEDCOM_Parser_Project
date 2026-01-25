@@ -1,0 +1,664 @@
+{
+  "HEAD": {
+    "tag": "HEAD",
+    "level": 0,
+    "record_type": true,
+    "payload": "none",
+    "pointer_to": null,
+    "description": "Header record containing metadata about the GEDCOM transmission.",
+    "category": "record",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "TRLR": {
+    "tag": "TRLR",
+    "level": 0,
+    "record_type": true,
+    "payload": "none",
+    "pointer_to": null,
+    "description": "Trailer record marking the end of the GEDCOM file.",
+    "category": "record",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+  "INDI": {
+    "tag": "INDI",
+    "level": 0,
+    "record_type": true,
+    "payload": "pointer",
+    "pointer_to": null,
+    "description": "Individual record.",
+    "category": "record",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "FAM": {
+    "tag": "FAM",
+    "level": 0,
+    "record_type": true,
+    "payload": "pointer",
+    "pointer_to": null,
+    "description": "Family record.",
+    "category": "record",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "SOUR": {
+    "tag": "SOUR",
+    "level": 0,
+    "record_type": true,
+    "payload": "pointer",
+    "pointer_to": null,
+    "description": "Source record.",
+    "category": "record",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "NOTE": {
+    "tag": "NOTE",
+    "level": 0,
+    "record_type": true,
+    "payload": "pointer_or_text",
+    "pointer_to": null,
+    "description": "Note record.",
+    "category": "record",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "OBJE": {
+    "tag": "OBJE",
+    "level": 0,
+    "record_type": true,
+    "payload": "pointer",
+    "pointer_to": null,
+    "description": "Multimedia object record.",
+    "category": "record",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "REPO": {
+    "tag": "REPO",
+    "level": 0,
+    "record_type": true,
+    "payload": "pointer",
+    "pointer_to": null,
+    "description": "Repository record.",
+    "category": "record",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "SUBM": {
+    "tag": "SUBM",
+    "level": 0,
+    "record_type": true,
+    "payload": "pointer",
+    "pointer_to": null,
+    "description": "Submitter record.",
+    "category": "record",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "SUBN": {
+    "tag": "SUBN",
+    "level": 0,
+    "record_type": true,
+    "payload": "pointer",
+    "pointer_to": null,
+    "description": "Submission record.",
+    "category": "record",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+
+  "NAME": {
+    "tag": "NAME",
+    "level": 1,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Individual's name.",
+    "category": "structure",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "GIVN": {
+    "tag": "GIVN",
+    "level": 2,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Given name.",
+    "category": "structure",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+  "SURN": {
+    "tag": "SURN",
+    "level": 2,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Surname.",
+    "category": "structure",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+  "NPFX": {
+    "tag": "NPFX",
+    "level": 2,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Name prefix.",
+    "category": "structure",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+  "NSFX": {
+    "tag": "NSFX",
+    "level": 2,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Name suffix.",
+    "category": "structure",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+  "NICK": {
+    "tag": "NICK",
+    "level": 2,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Nickname.",
+    "category": "structure",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+
+  "SEX": {
+    "tag": "SEX",
+    "level": 1,
+    "record_type": false,
+    "payload": "enum",
+    "pointer_to": null,
+    "description": "Sex of the individual (M, F, U).",
+    "category": "attribute",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+
+  "BIRT": {
+    "tag": "BIRT",
+    "level": 1,
+    "record_type": false,
+    "payload": "none",
+    "pointer_to": null,
+    "description": "Birth event.",
+    "category": "event",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "DEAT": {
+    "tag": "DEAT",
+    "level": 1,
+    "record_type": false,
+    "payload": "none",
+    "pointer_to": null,
+    "description": "Death event.",
+    "category": "event",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "MARR": {
+    "tag": "MARR",
+    "level": 1,
+    "record_type": false,
+    "payload": "none",
+    "pointer_to": null,
+    "description": "Marriage event.",
+    "category": "event",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "DIV": {
+    "tag": "DIV",
+    "level": 1,
+    "record_type": false,
+    "payload": "none",
+    "pointer_to": null,
+    "description": "Divorce event.",
+    "category": "event",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+
+  "DATE": {
+    "tag": "DATE",
+    "level": 2,
+    "record_type": false,
+    "payload": "date",
+    "pointer_to": null,
+    "description": "Date value.",
+    "category": "structure",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+  "PLAC": {
+    "tag": "PLAC",
+    "level": 2,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Place name.",
+    "category": "structure",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+
+  "FAMC": {
+    "tag": "FAMC",
+    "level": 1,
+    "record_type": false,
+    "payload": "pointer",
+    "pointer_to": "FAM",
+    "description": "Family where the individual is a child.",
+    "category": "link",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+  "FAMS": {
+    "tag": "FAMS",
+    "level": 1,
+    "record_type": false,
+    "payload": "pointer",
+    "pointer_to": "FAM",
+    "description": "Family where the individual is a spouse or parent.",
+    "category": "link",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+
+  "HUSB": {
+    "tag": "HUSB",
+    "level": 1,
+    "record_type": false,
+    "payload": "pointer",
+    "pointer_to": "INDI",
+    "description": "Husband in a family.",
+    "category": "link",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+  "WIFE": {
+    "tag": "WIFE",
+    "level": 1,
+    "record_type": false,
+    "payload": "pointer",
+    "pointer_to": "INDI",
+    "description": "Wife in a family.",
+    "category": "link",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+  "CHIL": {
+    "tag": "CHIL",
+    "level": 1,
+    "record_type": false,
+    "payload": "pointer",
+    "pointer_to": "INDI",
+    "description": "Child in a family.",
+    "category": "link",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+
+  "NOTE_TEXT": {
+    "tag": "CONT",
+    "level": 2,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Continued text from previous line.",
+    "category": "text",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+  "NOTE_CONC": {
+    "tag": "CONC",
+    "level": 2,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Concatenated text from previous line.",
+    "category": "text",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  }
+}
+  "CHR": {
+    "tag": "CHR",
+    "level": 1,
+    "record_type": false,
+    "payload": "none",
+    "pointer_to": null,
+    "description": "Christening event.",
+    "category": "event",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "BURI": {
+    "tag": "BURI",
+    "level": 1,
+    "record_type": false,
+    "payload": "none",
+    "pointer_to": null,
+    "description": "Burial event.",
+    "category": "event",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "CREM": {
+    "tag": "CREM",
+    "level": 1,
+    "record_type": false,
+    "payload": "none",
+    "pointer_to": null,
+    "description": "Cremation event.",
+    "category": "event",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "ADOP": {
+    "tag": "ADOP",
+    "level": 1,
+    "record_type": false,
+    "payload": "none",
+    "pointer_to": null,
+    "description": "Adoption event.",
+    "category": "event",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "EDUC": {
+    "tag": "EDUC",
+    "level": 1,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Educational attainment.",
+    "category": "attribute",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "OCCU": {
+    "tag": "OCCU",
+    "level": 1,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Occupation.",
+    "category": "attribute",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "RESI": {
+    "tag": "RESI",
+    "level": 1,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Residence attribute.",
+    "category": "attribute",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "CENS": {
+    "tag": "CENS",
+    "level": 1,
+    "record_type": false,
+    "payload": "none",
+    "pointer_to": null,
+    "description": "Census event.",
+    "category": "event",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "EVEN": {
+    "tag": "EVEN",
+    "level": 1,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Generic event.",
+    "category": "event",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "FACT": {
+    "tag": "FACT",
+    "level": 1,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Generic fact or attribute.",
+    "category": "attribute",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+
+  "AGE": {
+    "tag": "AGE",
+    "level": 2,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Age at event.",
+    "category": "structure",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+  "CAUS": {
+    "tag": "CAUS",
+    "level": 2,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Cause of event.",
+    "category": "structure",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+  "AGNC": {
+    "tag": "AGNC",
+    "level": 2,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Responsible agency.",
+    "category": "structure",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+
+  "MAP": {
+    "tag": "MAP",
+    "level": 2,
+    "record_type": false,
+    "payload": "none",
+    "pointer_to": null,
+    "description": "Geographic coordinates structure.",
+    "category": "structure",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+  "LATI": {
+    "tag": "LATI",
+    "level": 3,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Latitude coordinate.",
+    "category": "structure",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+  "LONG": {
+    "tag": "LONG",
+    "level": 3,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Longitude coordinate.",
+    "category": "structure",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+
+  "SOUR_CIT": {
+    "tag": "SOUR",
+    "level": 1,
+    "record_type": false,
+    "payload": "pointer",
+    "pointer_to": "SOUR",
+    "description": "Source citation reference.",
+    "category": "citation",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "PAGE": {
+    "tag": "PAGE",
+    "level": 2,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Citation page reference.",
+    "category": "citation",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+  "QUAY": {
+    "tag": "QUAY",
+    "level": 2,
+    "record_type": false,
+    "payload": "enum",
+    "pointer_to": null,
+    "description": "Quality of data (0–3).",
+    "category": "citation",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+  "DATA": {
+    "tag": "DATA",
+    "level": 2,
+    "record_type": false,
+    "payload": "none",
+    "pointer_to": null,
+    "description": "Source data details.",
+    "category": "citation",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+  "TEXT": {
+    "tag": "TEXT",
+    "level": 3,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Text from a source.",
+    "category": "citation",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+
+  "CALN": {
+    "tag": "CALN",
+    "level": 2,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Call number.",
+    "category": "structure",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+  "MEDI": {
+    "tag": "MEDI",
+    "level": 3,
+    "record_type": false,
+    "payload": "enum",
+    "pointer_to": null,
+    "description": "Medium used for a source.",
+    "category": "structure",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+
+  "CHAN": {
+    "tag": "CHAN",
+    "level": 1,
+    "record_type": false,
+    "payload": "none",
+    "pointer_to": null,
+    "description": "Change date structure.",
+    "category": "metadata",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+  "TIME": {
+    "tag": "TIME",
+    "level": 3,
+    "record_type": false,
+    "payload": "text",
+    "pointer_to": null,
+    "description": "Time of event.",
+    "category": "metadata",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": false
+  },
+
+  "BAPL": {
+    "tag": "BAPL",
+    "level": 1,
+    "record_type": false,
+    "payload": "none",
+    "pointer_to": null,
+    "description": "LDS baptism ordinance.",
+    "category": "lds",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "ENDL": {
+    "tag": "ENDL",
+    "level": 1,
+    "record_type": false,
+    "payload": "none",
+    "pointer_to": null,
+    "description": "LDS endowment ordinance.",
+    "category": "lds",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "SLGC": {
+    "tag": "SLGC",
+    "level": 1,
+    "record_type": false,
+    "payload": "none",
+    "pointer_to": null,
+    "description": "LDS sealing to parents.",
+    "category": "lds",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  },
+  "SLGS": {
+    "tag": "SLGS",
+    "level": 1,
+    "record_type": false,
+    "payload": "none",
+    "pointer_to": null,
+    "description": "LDS sealing to spouse.",
+    "category": "lds",
+    "gedcom_version": "5.5.5",
+    "extensions_allowed": true
+  }

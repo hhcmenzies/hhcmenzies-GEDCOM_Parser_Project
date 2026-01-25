@@ -1,0 +1,276 @@
+{
+  "schema_version": "1.1",
+  "target_window": {
+    "start_year": 1600,
+    "end_year": 1799
+  },
+  "master_file": "master_ma_1600_1799.jsonl",
+  "master_records": 1247,
+  "collections": [
+    {
+      "slug": "colonial_massachusetts",
+      "label": "People from colonial Massachusetts",
+      "association": {
+        "type": "categorized_as",
+        "label": "People from colonial Massachusetts"
+      },
+      "window": {
+        "start_year": 1600,
+        "end_year": 1776
+      },
+      "sources": [
+        {
+          "type": "category",
+          "title": "Category:People from colonial Massachusetts",
+          "traverse_subcategories": false
+        }
+      ],
+      "records": 500
+    },
+    {
+      "slug": "colonial_boston",
+      "label": "People from colonial Boston",
+      "association": {
+        "type": "event_in",
+        "label": "Colonial Boston"
+      },
+      "window": {
+        "start_year": 1600,
+        "end_year": 1776
+      },
+      "sources": [
+        {
+          "type": "category",
+          "title": "Category:People from colonial Boston",
+          "traverse_subcategories": true
+        }
+      ],
+      "records": 224
+    },
+    {
+      "slug": "plymouth_colony",
+      "label": "People of the Plymouth Colony",
+      "association": {
+        "type": "event_in",
+        "label": "Plymouth Colony"
+      },
+      "window": {
+        "start_year": 1620,
+        "end_year": 1691
+      },
+      "sources": [
+        {
+          "type": "category",
+          "title": "Category:People of the Plymouth Colony",
+          "traverse_subcategories": true
+        }
+      ],
+      "records": 96
+    },
+    {
+      "slug": "mayflower_passengers",
+      "label": "Mayflower passengers",
+      "association": {
+        "type": "event_in",
+        "label": "Mayflower voyage"
+      },
+      "window": {
+        "start_year": 1620,
+        "end_year": 1621
+      },
+      "sources": [
+        {
+          "type": "list_page",
+          "title": "List of Mayflower passengers",
+          "traverse_subcategories": false
+        }
+      ],
+      "records": 56
+    },
+    {
+      "slug": "salem_witch_trials",
+      "label": "People of the Salem witch trials",
+      "association": {
+        "type": "event_in",
+        "label": "Salem witch trials"
+      },
+      "window": {
+        "start_year": 1692,
+        "end_year": 1693
+      },
+      "sources": [
+        {
+          "type": "category",
+          "title": "Category:People of the Salem witch trials",
+          "traverse_subcategories": true
+        }
+      ],
+      "records": 92
+    },
+    {
+      "slug": "french_indian_war_ma",
+      "label": "People of Massachusetts in the French and Indian War",
+      "association": {
+        "type": "event_in",
+        "label": "French and Indian War (Massachusetts)"
+      },
+      "window": {
+        "start_year": 1754,
+        "end_year": 1763
+      },
+      "sources": [
+        {
+          "type": "category",
+          "title": "Category:People of Massachusetts in the French and Indian War",
+          "traverse_subcategories": true
+        }
+      ],
+      "records": 38
+    },
+    {
+      "slug": "american_revolution_ma",
+      "label": "People of Massachusetts in the American Revolution",
+      "association": {
+        "type": "event_in",
+        "label": "American Revolution (Massachusetts)"
+      },
+      "window": {
+        "start_year": 1775,
+        "end_year": 1783
+      },
+      "sources": [
+        {
+          "type": "category",
+          "title": "Category:People of Massachusetts in the American Revolution",
+          "traverse_subcategories": true
+        }
+      ],
+      "records": 285
+    },
+    {
+      "slug": "seventeenth_century_ma",
+      "label": "17th-century people from Massachusetts",
+      "association": {
+        "type": "period_in",
+        "label": "17th-century Massachusetts"
+      },
+      "window": {
+        "start_year": 1601,
+        "end_year": 1700
+      },
+      "sources": [
+        {
+          "type": "category",
+          "title": "Category:17th-century people from Massachusetts",
+          "traverse_subcategories": true
+        }
+      ],
+      "records": 67
+    },
+    {
+      "slug": "eighteenth_century_ma",
+      "label": "18th-century people from Massachusetts",
+      "association": {
+        "type": "period_in",
+        "label": "18th-century Massachusetts"
+      },
+      "window": {
+        "start_year": 1701,
+        "end_year": 1800
+      },
+      "sources": [
+        {
+          "type": "category",
+          "title": "Category:18th-century people from Massachusetts",
+          "traverse_subcategories": true
+        }
+      ],
+      "records": 356
+    },
+    {
+      "slug": "boston_massacre",
+      "label": "Boston Massacre",
+      "association": {
+        "type": "event_in",
+        "label": "Boston Massacre"
+      },
+      "window": {
+        "start_year": 1770,
+        "end_year": 1770
+      },
+      "sources": [
+        {
+          "type": "list_page",
+          "title": "Boston Massacre",
+          "traverse_subcategories": false
+        }
+      ],
+      "records": 122
+    },
+    {
+      "slug": "boston_tea_party",
+      "label": "Boston Tea Party",
+      "association": {
+        "type": "event_in",
+        "label": "Boston Tea Party"
+      },
+      "window": {
+        "start_year": 1773,
+        "end_year": 1773
+      },
+      "sources": [
+        {
+          "type": "list_page",
+          "title": "Boston Tea Party",
+          "traverse_subcategories": false
+        }
+      ],
+      "records": 103
+    },
+    {
+      "slug": "king_philips_war",
+      "label": "King Philip's War",
+      "association": {
+        "type": "event_in",
+        "label": "King Philip's War"
+      },
+      "window": {
+        "start_year": 1675,
+        "end_year": 1678
+      },
+      "sources": [
+        {
+          "type": "list_page",
+          "title": "King Philip's War",
+          "traverse_subcategories": false
+        }
+      ],
+      "records": 49
+    },
+    {
+      "slug": "shays_rebellion",
+      "label": "Shays's Rebellion",
+      "association": {
+        "type": "event_in",
+        "label": "Shays's Rebellion"
+      },
+      "window": {
+        "start_year": 1786,
+        "end_year": 1787
+      },
+      "sources": [
+        {
+          "type": "list_page",
+          "title": "Shays's Rebellion",
+          "traverse_subcategories": false
+        },
+        {
+          "type": "category",
+          "title": "Category:Shays' Rebellion",
+          "traverse_subcategories": true
+        }
+      ],
+      "records": 28
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+origin	git@github.com:hhcmenzies/hhcmenzies-GEDCOM_Parser_Project.git (fetch)
+origin	git@github.com:hhcmenzies/hhcmenzies-GEDCOM_Parser_Project.git (push)

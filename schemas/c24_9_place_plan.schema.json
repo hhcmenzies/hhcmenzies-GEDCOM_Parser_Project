@@ -1,0 +1,766 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "c24_9_place_plan.schema.json",
+  "title": "C.24.9 Place Operation Plan",
+  "description": "Plan schema for C.24.9 applier. Includes operations and policy for policy-driven severities.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "operations": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/operation"
+      }
+    },
+    "policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fail_on_soft": {
+          "type": "boolean",
+          "default": false
+        },
+        "emit_advisory": {
+          "type": "boolean",
+          "default": true
+        },
+        "max_redirect_chain": {
+          "type": "integer",
+          "minimum": 1,
+          "default": 25
+        },
+        "allow_override_cross_jurisdiction": {
+          "type": "boolean",
+          "default": false
+        },
+        "allow_override_root_conflict": {
+          "type": "boolean",
+          "default": false
+        },
+        "min_events_for_auto_merge": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 10
+        },
+        "diagnostic_mode": {
+          "type": "string",
+          "enum": [
+            "off",
+            "summary",
+            "verbose"
+          ],
+          "default": "summary"
+        }
+      },
+      "required": [
+        "fail_on_soft",
+        "emit_advisory",
+        "max_redirect_chain",
+        "allow_override_cross_jurisdiction",
+        "allow_override_root_conflict",
+        "min_events_for_auto_merge",
+        "diagnostic_mode"
+      ]
+    },
+    "meta": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "operations",
+    "policy"
+  ],
+  "$defs": {
+    "id_nonempty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "iso_datetime": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 date-time string."
+    },
+    "severity_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "hard": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "soft": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "advisory": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "hard",
+        "soft",
+        "advisory"
+      ]
+    },
+    "temporal_scope": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "Optional temporal scope. If null or open_ended=true, rule applies without date constraints.",
+      "additionalProperties": false,
+      "properties": {
+        "bucket": {
+          "type": "string",
+          "enum": [
+            "year"
+          ]
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "start_year": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end_year": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "open_ended": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "bucket"
+      ],
+      "allOf": [
+        {
+          "anyOf": [
+            {
+              "required": [
+                "open_ended"
+              ],
+              "properties": {
+                "open_ended": {
+                  "const": true
+                }
+              }
+            },
+            {
+              "required": [
+                "year"
+              ]
+            },
+            {
+              "required": [
+                "start_year"
+              ]
+            },
+            {
+              "required": [
+                "end_year"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "generated_meta": {
+      "type": "object",
+      "description": "Provenance metadata for generated/derived data.",
+      "additionalProperties": true,
+      "properties": {
+        "by": {
+          "type": "string"
+        },
+        "rule": {
+          "type": "string"
+        },
+        "inferred": {
+          "type": "boolean"
+        },
+        "enrichment_candidate": {
+          "type": "boolean"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0
+        }
+      },
+      "required": [
+        "by"
+      ]
+    },
+    "redirect_rule": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "place_id",
+            "place_version"
+          ]
+        },
+        "to_place_id": {
+          "type": "string"
+        },
+        "to_place_version_id": {
+          "type": "string"
+        },
+        "jurisdiction_system_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "temporal": {
+          "$ref": "#/$defs/temporal_scope"
+        },
+        "audit_id": {
+          "$ref": "#/$defs/id_nonempty"
+        },
+        "operation_id": {
+          "$ref": "#/$defs/id_nonempty"
+        },
+        "priority": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 100
+        },
+        "generated": {
+          "$ref": "#/$defs/generated_meta"
+        }
+      },
+      "required": [
+        "kind",
+        "audit_id",
+        "operation_id"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "place_id"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "to_place_id"
+            ],
+            "not": {
+              "required": [
+                "to_place_version_id"
+              ]
+            }
+          },
+          "else": {
+            "required": [
+              "to_place_version_id"
+            ],
+            "not": {
+              "required": [
+                "to_place_id"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "redirects_map": {
+      "type": "object",
+      "description": "Mapping from source identifier -> array of redirect rules. Keys are from_place_id or from_place_version_id depending on kind.",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/redirect_rule"
+        }
+      }
+    },
+    "audit_effects": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "redirects_created": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "redirects_updated": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "entities_impacted": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "place_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "place_version_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "place_ids",
+            "place_version_ids"
+          ]
+        }
+      },
+      "required": [
+        "entities_impacted"
+      ]
+    },
+    "audit_entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "audit_id": {
+          "$ref": "#/$defs/id_nonempty"
+        },
+        "operation_id": {
+          "$ref": "#/$defs/id_nonempty"
+        },
+        "applied_at": {
+          "$ref": "#/$defs/iso_datetime"
+        },
+        "actor": {
+          "type": "string"
+        },
+        "policy_snapshot": {
+          "type": "object"
+        },
+        "effects": {
+          "$ref": "#/$defs/audit_effects"
+        },
+        "before": {
+          "type": "object"
+        },
+        "after": {
+          "type": "object"
+        },
+        "metrics": {
+          "type": "object"
+        },
+        "severity": {
+          "$ref": "#/$defs/severity_counts"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "audit_id",
+        "operation_id",
+        "applied_at",
+        "policy_snapshot",
+        "effects",
+        "before",
+        "after",
+        "metrics",
+        "severity"
+      ]
+    },
+    "place_change_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "merges_applied": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "splits_applied": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "supersedes_applied": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "redirects_created": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "redirects_updated": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "events_touched": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "event_place_resolution": {
+      "type": "object",
+      "description": "Trace-only, optional. Explains how a place_id/place_ref resolves under redirects.",
+      "additionalProperties": false,
+      "properties": {
+        "input_place_id": {
+          "type": "string"
+        },
+        "input_place_version_id": {
+          "type": "string"
+        },
+        "jurisdiction_system_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "temporal": {
+          "$ref": "#/$defs/temporal_scope"
+        },
+        "resolved_place_id": {
+          "type": "string"
+        },
+        "resolved_place_version_id": {
+          "type": "string"
+        },
+        "redirect_chain": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "from": {
+                "type": "string"
+              },
+              "to": {
+                "type": "string"
+              },
+              "operation_id": {
+                "type": "string"
+              },
+              "audit_id": {
+                "type": "string"
+              },
+              "priority": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "from",
+              "to"
+            ]
+          }
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "resolved",
+            "unresolved",
+            "ambiguous",
+            "error"
+          ]
+        },
+        "messages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "status"
+      ]
+    },
+    "scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "jurisdiction_system_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "temporal": {
+          "$ref": "#/$defs/temporal_scope"
+        }
+      }
+    },
+    "operation_base": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id_nonempty"
+        },
+        "kind": {
+          "type": "string",
+          "enum": [
+            "merge",
+            "split",
+            "supersede"
+          ]
+        },
+        "entity_kind": {
+          "type": "string",
+          "enum": [
+            "place_id",
+            "place_version"
+          ]
+        },
+        "scope": {
+          "$ref": "#/$defs/scope"
+        },
+        "override": {
+          "type": "boolean",
+          "default": false
+        },
+        "actor": {
+          "type": "string"
+        },
+        "timestamp": {
+          "$ref": "#/$defs/iso_datetime"
+        },
+        "notes": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "id",
+        "kind",
+        "entity_kind"
+      ]
+    },
+    "merge_op": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/operation_base"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "const": "merge"
+            },
+            "from_place_ids": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "string"
+              }
+            },
+            "to_place_id": {
+              "type": "string"
+            },
+            "from_place_version_ids": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "string"
+              }
+            },
+            "to_place_version_id": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "split_op": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/operation_base"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "const": "split"
+            },
+            "from_place_id": {
+              "type": "string"
+            },
+            "to_place_ids": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "string"
+              }
+            },
+            "from_place_version_id": {
+              "type": "string"
+            },
+            "to_place_version_ids": {
+              "type": "array",
+              "minItems": 2,
+              "items": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      ]
+    },
+    "supersede_op": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/operation_base"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "kind": {
+              "const": "supersede"
+            },
+            "from_place_id": {
+              "type": "string"
+            },
+            "to_place_id": {
+              "type": "string"
+            },
+            "from_place_version_id": {
+              "type": "string"
+            },
+            "to_place_version_id": {
+              "type": "string"
+            }
+          }
+        }
+      ]
+    },
+    "operation": {
+      "oneOf": [
+        {
+          "allOf": [
+            {
+              "$ref": "#/$defs/merge_op"
+            },
+            {
+              "if": {
+                "properties": {
+                  "entity_kind": {
+                    "const": "place_id"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "from_place_ids"
+                ],
+                "not": {
+                  "required": [
+                    "from_place_version_ids"
+                  ]
+                }
+              },
+              "else": {
+                "required": [
+                  "from_place_version_ids"
+                ],
+                "not": {
+                  "required": [
+                    "from_place_ids"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {
+              "$ref": "#/$defs/split_op"
+            },
+            {
+              "if": {
+                "properties": {
+                  "entity_kind": {
+                    "const": "place_id"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "from_place_id",
+                  "to_place_ids"
+                ],
+                "not": {
+                  "required": [
+                    "from_place_version_id"
+                  ]
+                }
+              },
+              "else": {
+                "required": [
+                  "from_place_version_id",
+                  "to_place_version_ids"
+                ],
+                "not": {
+                  "required": [
+                    "from_place_id"
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        {
+          "allOf": [
+            {
+              "$ref": "#/$defs/supersede_op"
+            },
+            {
+              "if": {
+                "properties": {
+                  "entity_kind": {
+                    "const": "place_id"
+                  }
+                }
+              },
+              "then": {
+                "required": [
+                  "from_place_id",
+                  "to_place_id"
+                ],
+                "not": {
+                  "required": [
+                    "from_place_version_id"
+                  ]
+                }
+              },
+              "else": {
+                "required": [
+                  "from_place_version_id",
+                  "to_place_version_id"
+                ],
+                "not": {
+                  "required": [
+                    "from_place_id"
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

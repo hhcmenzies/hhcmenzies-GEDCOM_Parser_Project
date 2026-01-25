@@ -1,0 +1,46 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "GEDCOM Tags Meta-Schema",
+  "description": "A meta-schema for validating the structure of gedcom_tags.json. Each key is a GEDCOM tag with required properties and optional metadata.",
+  "type": "object",
+  "patternProperties": {
+    "^[A-Z0-9]+$": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "A human-readable description of the tag."
+        },
+        "category": {
+          "type": "string",
+          "description": "The high-level category for the tag (e.g., Header, Individual, Event, Source, Multimedia, etc.)."
+        },
+        "child_tags": {
+          "type": "array",
+          "description": "An array of valid child tag names for this tag.",
+          "items": { "type": "string" }
+        },
+        "data_type": {
+          "type": "string",
+          "description": "The type of data expected (e.g., record, metadata, text, identifier, event).",
+          "enum": ["record", "metadata", "text", "identifier", "event"]
+        },
+        "required": {
+          "type": "boolean",
+          "description": "Indicates if this tag is required in a GEDCOM file."
+        },
+        "multiple_occurrences": {
+          "type": "boolean",
+          "description": "Indicates if the tag can appear multiple times in a record."
+        },
+        "format": {
+          "type": "string",
+          "description": "A regex or format descriptor for the expected value, if applicable."
+        }
+      },
+      "required": ["description", "category", "child_tags", "data_type"],
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

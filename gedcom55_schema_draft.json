@@ -1,0 +1,2304 @@
+{
+  "ABBR": {
+    "tag": "ABBR",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "ADDR": {
+    "tag": "ADDR",
+    "gedcom_version": "5.5.5",
+    "category": "Location",
+    "description": "Address information.",
+    "payload": "text",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "REPO",
+      "SUBM"
+    ],
+    "notes": []
+  },
+  "ADOP": {
+    "tag": "ADOP",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "ADR1": {
+    "tag": "ADR1",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "ADR2": {
+    "tag": "ADR2",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "ADR3": {
+    "tag": "ADR3",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "AFN": {
+    "tag": "AFN",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "AGE": {
+    "tag": "AGE",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "AGNC": {
+    "tag": "AGNC",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "ALIA": {
+    "tag": "ALIA",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "ANCI": {
+    "tag": "ANCI",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "ANUL": {
+    "tag": "ANUL",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "ASSO": {
+    "tag": "ASSO",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "AUTH": {
+    "tag": "AUTH",
+    "gedcom_version": "5.5.5",
+    "category": "Source",
+    "description": "Author of the source.",
+    "payload": "text",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "SOUR"
+    ],
+    "notes": []
+  },
+  "BAPL": {
+    "tag": "BAPL",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "BAPM": {
+    "tag": "BAPM",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "BARM": {
+    "tag": "BARM",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "BASM": {
+    "tag": "BASM",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "BIRT": {
+    "tag": "BIRT",
+    "gedcom_version": "5.5.5",
+    "category": "Event",
+    "description": "Birth event.",
+    "payload": "event",
+    "occurs": {
+      "required": true,
+      "multiple": false
+    },
+    "allowed_children": [
+      "DATE",
+      "PLAC"
+    ],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": []
+  },
+  "BLES": {
+    "tag": "BLES",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "BLOB": {
+    "tag": "BLOB",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "BURI": {
+    "tag": "BURI",
+    "gedcom_version": "5.5.5",
+    "category": "Event",
+    "description": "Burial event.",
+    "payload": "event",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [
+      "DATE",
+      "PLAC"
+    ],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": []
+  },
+  "CALN": {
+    "tag": "CALN",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "CAST": {
+    "tag": "CAST",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "CAUS": {
+    "tag": "CAUS",
+    "gedcom_version": "5.5.5",
+    "category": "Event",
+    "description": "Cause of death or event.",
+    "payload": "text",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "DEAT"
+    ],
+    "notes": []
+  },
+  "CENS": {
+    "tag": "CENS",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "CHAN": {
+    "tag": "CHAN",
+    "gedcom_version": "5.5.5",
+    "category": "Metadata",
+    "description": "Record change tracking.",
+    "payload": "metadata",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [
+      "DATE"
+    ],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": []
+  },
+  "CHAR": {
+    "tag": "CHAR",
+    "gedcom_version": "5.5.5",
+    "category": "Header",
+    "description": "Character set used in the GEDCOM file.",
+    "payload": "text",
+    "occurs": {
+      "required": true,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "HEAD"
+    ],
+    "notes": []
+  },
+  "CHIL": {
+    "tag": "CHIL",
+    "gedcom_version": "5.5.5",
+    "category": "Family",
+    "description": "Pointer to a child's individual record.",
+    "payload": "identifier",
+    "occurs": {
+      "required": false,
+      "multiple": true
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "FAM"
+    ],
+    "notes": []
+  },
+  "CHR": {
+    "tag": "CHR",
+    "gedcom_version": "5.5.5",
+    "category": "Event",
+    "description": "Christening event.",
+    "payload": "event",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [
+      "DATE",
+      "PLAC"
+    ],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": []
+  },
+  "CHRA": {
+    "tag": "CHRA",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "CITY": {
+    "tag": "CITY",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "CONC": {
+    "tag": "CONC",
+    "gedcom_version": "5.5.5",
+    "category": "Text Formatting",
+    "description": "Concatenation for long text.",
+    "payload": "text",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": []
+  },
+  "CONF": {
+    "tag": "CONF",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "CONL": {
+    "tag": "CONL",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "CONT": {
+    "tag": "CONT",
+    "gedcom_version": "5.5.5",
+    "category": "Text Formatting",
+    "description": "Continuation of text on a new line.",
+    "payload": "text",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": []
+  },
+  "COPR": {
+    "tag": "COPR",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "CORP": {
+    "tag": "CORP",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "CREM": {
+    "tag": "CREM",
+    "gedcom_version": "5.5.5",
+    "category": "Event",
+    "description": "Cremation event.",
+    "payload": "event",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [
+      "DATE",
+      "PLAC"
+    ],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": []
+  },
+  "CTRY": {
+    "tag": "CTRY",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "DATA": {
+    "tag": "DATA",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "SOUR"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "DATE": {
+    "tag": "DATE",
+    "gedcom_version": "5.5.5",
+    "category": "Event",
+    "description": "Date value. Expected format: 'DD MMM YYYY' (e.g., '22 DEC 2013').",
+    "payload": "text",
+    "occurs": {
+      "required": true,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "BIRT",
+      "BURI",
+      "CHAN",
+      "CHR",
+      "CREM",
+      "DEAT",
+      "DIV",
+      "HEAD",
+      "MARR"
+    ],
+    "notes": []
+  },
+  "DEAT": {
+    "tag": "DEAT",
+    "gedcom_version": "5.5.5",
+    "category": "Event",
+    "description": "Death event.",
+    "payload": "event",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [
+      "DATE",
+      "PLAC",
+      "CAUS"
+    ],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": []
+  },
+  "DESC": {
+    "tag": "DESC",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "DESI": {
+    "tag": "DESI",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "DEST": {
+    "tag": "DEST",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "HEAD"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "DIV": {
+    "tag": "DIV",
+    "gedcom_version": "5.5.5",
+    "category": "Event",
+    "description": "Divorce event.",
+    "payload": "event",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [
+      "DATE",
+      "PLAC"
+    ],
+    "allowed_parents": [
+      "FAM"
+    ],
+    "notes": []
+  },
+  "DIVF": {
+    "tag": "DIVF",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "DSCR": {
+    "tag": "DSCR",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "EDUC": {
+    "tag": "EDUC",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "EMAIL": {
+    "tag": "EMAIL",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "REPO",
+      "SUBM"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "EMIG": {
+    "tag": "EMIG",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "ENDL": {
+    "tag": "ENDL",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "ENGA": {
+    "tag": "ENGA",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "EVEN": {
+    "tag": "EVEN",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "FAM": {
+    "tag": "FAM",
+    "gedcom_version": "5.5.5",
+    "category": "Family",
+    "description": "Family unit record.",
+    "payload": "record",
+    "occurs": {
+      "required": true,
+      "multiple": true
+    },
+    "allowed_children": [
+      "HUSB",
+      "WIFE",
+      "CHIL",
+      "MARR",
+      "DIV"
+    ],
+    "allowed_parents": [],
+    "notes": []
+  },
+  "FAMC": {
+    "tag": "FAMC",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "FAMS": {
+    "tag": "FAMS",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "FAX": {
+    "tag": "FAX",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "REPO"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "FCID": {
+    "tag": "FCID",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "FCOM": {
+    "tag": "FCOM",
+    "gedcom_version": "5.5.5",
+    "category": "Custom",
+    "description": "Family comment or additional family-level communication.",
+    "payload": "text",
+    "occurs": {
+      "required": false,
+      "multiple": true
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": []
+  },
+  "FILE": {
+    "tag": "FILE",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "HEAD"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "FONE": {
+    "tag": "FONE",
+    "gedcom_version": "5.5.5",
+    "category": "Individual",
+    "description": "Phonetic name.",
+    "payload": "text",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "NAME"
+    ],
+    "notes": []
+  },
+  "FORM": {
+    "tag": "FORM",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "GEDC"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "GEDC": {
+    "tag": "GEDC",
+    "gedcom_version": "5.5.5",
+    "category": "Header",
+    "description": "GEDCOM standard version.",
+    "payload": "metadata",
+    "occurs": {
+      "required": true,
+      "multiple": false
+    },
+    "allowed_children": [
+      "VERS",
+      "FORM"
+    ],
+    "allowed_parents": [
+      "HEAD"
+    ],
+    "notes": []
+  },
+  "GIVN": {
+    "tag": "GIVN",
+    "gedcom_version": "5.5.5",
+    "category": "Individual",
+    "description": "Given name (first and middle names).",
+    "payload": "text",
+    "occurs": {
+      "required": true,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "NAME"
+    ],
+    "notes": []
+  },
+  "GRAD": {
+    "tag": "GRAD",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "HEAD": {
+    "tag": "HEAD",
+    "gedcom_version": "5.5.5",
+    "category": "Header",
+    "description": "Metadata about the GEDCOM file.",
+    "payload": "record",
+    "occurs": {
+      "required": true,
+      "multiple": false
+    },
+    "allowed_children": [
+      "GEDC",
+      "CHAR",
+      "DATE",
+      "DEST",
+      "SUBM",
+      "FILE",
+      "LANG"
+    ],
+    "allowed_parents": [],
+    "notes": []
+  },
+  "HUSB": {
+    "tag": "HUSB",
+    "gedcom_version": "5.5.5",
+    "category": "Family",
+    "description": "Pointer to the husband's individual record.",
+    "payload": "identifier",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "FAM"
+    ],
+    "notes": []
+  },
+  "IDNO": {
+    "tag": "IDNO",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "IMMI": {
+    "tag": "IMMI",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "INDI": {
+    "tag": "INDI",
+    "gedcom_version": "5.5.5",
+    "category": "Individual",
+    "description": "Individual person record.",
+    "payload": "record",
+    "occurs": {
+      "required": true,
+      "multiple": true
+    },
+    "allowed_children": [
+      "NAME",
+      "SEX",
+      "BIRT",
+      "CHR",
+      "DEAT",
+      "BURI",
+      "CREM",
+      "ADOP",
+      "BAPM",
+      "CONF",
+      "NATI",
+      "CAST",
+      "RELI",
+      "OCCU",
+      "EDUC",
+      "RESI",
+      "NCHI",
+      "NMR",
+      "ALIA",
+      "FAMC",
+      "FAMS",
+      "IDNO",
+      "CHAN",
+      "NOTE",
+      "SOUR",
+      "OBJE"
+    ],
+    "allowed_parents": [],
+    "notes": []
+  },
+  "LANG": {
+    "tag": "LANG",
+    "gedcom_version": "5.5.5",
+    "category": "Metadata",
+    "description": "Language of text.",
+    "payload": "text",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "HEAD"
+    ],
+    "notes": []
+  },
+  "LATI": {
+    "tag": "LATI",
+    "gedcom_version": "5.5.5",
+    "category": "Location",
+    "description": "Latitude coordinate. Expected format: e.g., 'N42.5584'.",
+    "payload": "text",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "MAP"
+    ],
+    "notes": []
+  },
+  "LONG": {
+    "tag": "LONG",
+    "gedcom_version": "5.5.5",
+    "category": "Location",
+    "description": "Longitude coordinate. Expected format: e.g., 'W70.88'.",
+    "payload": "text",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "MAP"
+    ],
+    "notes": []
+  },
+  "MAP": {
+    "tag": "MAP",
+    "gedcom_version": "5.5.5",
+    "category": "Location",
+    "description": "Geographic mapping.",
+    "payload": "metadata",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [
+      "LATI",
+      "LONG"
+    ],
+    "allowed_parents": [
+      "PLAC"
+    ],
+    "notes": []
+  },
+  "MARB": {
+    "tag": "MARB",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "MARC": {
+    "tag": "MARC",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "MARL": {
+    "tag": "MARL",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "MARR": {
+    "tag": "MARR",
+    "gedcom_version": "5.5.5",
+    "category": "Event",
+    "description": "Marriage event.",
+    "payload": "event",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [
+      "DATE",
+      "PLAC",
+      "TYPE"
+    ],
+    "allowed_parents": [
+      "FAM"
+    ],
+    "notes": []
+  },
+  "MARS": {
+    "tag": "MARS",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "MEDI": {
+    "tag": "MEDI",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "NAME": {
+    "tag": "NAME",
+    "gedcom_version": "5.5.5",
+    "category": "Individual",
+    "description": "Full name of the individual.",
+    "payload": "text",
+    "occurs": {
+      "required": true,
+      "multiple": true
+    },
+    "allowed_children": [
+      "NPFX",
+      "GIVN",
+      "SPFX",
+      "SURN",
+      "NSFX",
+      "NICK",
+      "ROMN",
+      "FONE"
+    ],
+    "allowed_parents": [
+      "INDI",
+      "REPO",
+      "SUBM"
+    ],
+    "notes": []
+  },
+  "NATI": {
+    "tag": "NATI",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "NCHI": {
+    "tag": "NCHI",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "NICK": {
+    "tag": "NICK",
+    "gedcom_version": "5.5.5",
+    "category": "Individual",
+    "description": "Nickname.",
+    "payload": "text",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "NAME"
+    ],
+    "notes": []
+  },
+  "NMR": {
+    "tag": "NMR",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "NOTE": {
+    "tag": "NOTE",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "NPFX": {
+    "tag": "NPFX",
+    "gedcom_version": "5.5.5",
+    "category": "Individual",
+    "description": "Name prefix (e.g., Dr., Mr., Rev.).",
+    "payload": "text",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "NAME"
+    ],
+    "notes": []
+  },
+  "NSFX": {
+    "tag": "NSFX",
+    "gedcom_version": "5.5.5",
+    "category": "Individual",
+    "description": "Name suffix (e.g., Jr., Sr., III).",
+    "payload": "text",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "NAME"
+    ],
+    "notes": []
+  },
+  "OBJE": {
+    "tag": "OBJE",
+    "gedcom_version": "5.5.5",
+    "category": "Multimedia",
+    "description": "Multimedia object record.",
+    "payload": "record",
+    "occurs": {
+      "required": false,
+      "multiple": true
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": []
+  },
+  "OCCU": {
+    "tag": "OCCU",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "ORDN": {
+    "tag": "ORDN",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "PAGE": {
+    "tag": "PAGE",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "PEDI": {
+    "tag": "PEDI",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "PHON": {
+    "tag": "PHON",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "REPO",
+      "SUBM"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "PLAC": {
+    "tag": "PLAC",
+    "gedcom_version": "5.5.5",
+    "category": "Location",
+    "description": "Place of event.",
+    "payload": "text",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [
+      "MAP"
+    ],
+    "allowed_parents": [
+      "BIRT",
+      "BURI",
+      "CHR",
+      "CREM",
+      "DEAT",
+      "DIV",
+      "MARR"
+    ],
+    "notes": []
+  },
+  "POST": {
+    "tag": "POST",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "PROB": {
+    "tag": "PROB",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "PROP": {
+    "tag": "PROP",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "PUBL": {
+    "tag": "PUBL",
+    "gedcom_version": "5.5.5",
+    "category": "Source",
+    "description": "Publication information.",
+    "payload": "text",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "SOUR"
+    ],
+    "notes": []
+  },
+  "QUAY": {
+    "tag": "QUAY",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "REFN": {
+    "tag": "REFN",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "RELA": {
+    "tag": "RELA",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "RELI": {
+    "tag": "RELI",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "REPO": {
+    "tag": "REPO",
+    "gedcom_version": "5.5.5",
+    "category": "Source",
+    "description": "Repository storing sources.",
+    "payload": "record",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [
+      "NAME",
+      "ADDR",
+      "PHON",
+      "EMAIL",
+      "FAX",
+      "WWW"
+    ],
+    "allowed_parents": [],
+    "notes": []
+  },
+  "RESI": {
+    "tag": "RESI",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "RESN": {
+    "tag": "RESN",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "RETI": {
+    "tag": "RETI",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "RFN": {
+    "tag": "RFN",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "RIN": {
+    "tag": "RIN",
+    "gedcom_version": "5.5.5",
+    "category": "Metadata",
+    "description": "Record Identification Number.",
+    "payload": "identifier",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": []
+  },
+  "ROLE": {
+    "tag": "ROLE",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "ROMN": {
+    "tag": "ROMN",
+    "gedcom_version": "5.5.5",
+    "category": "Individual",
+    "description": "Romanized name.",
+    "payload": "text",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "NAME"
+    ],
+    "notes": []
+  },
+  "SEX": {
+    "tag": "SEX",
+    "gedcom_version": "5.5.5",
+    "category": "Individual",
+    "description": "Gender of the individual (M/F/X).",
+    "payload": "text",
+    "occurs": {
+      "required": true,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": []
+  },
+  "SLGC": {
+    "tag": "SLGC",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "SLGS": {
+    "tag": "SLGS",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "SOUR": {
+    "tag": "SOUR",
+    "gedcom_version": "5.5.5",
+    "category": "Source",
+    "description": "Source citation.",
+    "payload": "record",
+    "occurs": {
+      "required": false,
+      "multiple": true
+    },
+    "allowed_children": [
+      "TITL",
+      "AUTH",
+      "PUBL",
+      "TEXT",
+      "DATA"
+    ],
+    "allowed_parents": [
+      "INDI"
+    ],
+    "notes": []
+  },
+  "SPFX": {
+    "tag": "SPFX",
+    "gedcom_version": "5.5.5",
+    "category": "Individual",
+    "description": "Surname prefix (e.g., 'van', 'de', 'von').",
+    "payload": "text",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "NAME"
+    ],
+    "notes": []
+  },
+  "SSN": {
+    "tag": "SSN",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "STAE": {
+    "tag": "STAE",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "STAT": {
+    "tag": "STAT",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "SUBM": {
+    "tag": "SUBM",
+    "gedcom_version": "5.5.5",
+    "category": "Submission",
+    "description": "Submitter information.",
+    "payload": "record",
+    "occurs": {
+      "required": true,
+      "multiple": false
+    },
+    "allowed_children": [
+      "NAME",
+      "ADDR",
+      "PHON",
+      "EMAIL",
+      "WWW"
+    ],
+    "allowed_parents": [
+      "HEAD"
+    ],
+    "notes": []
+  },
+  "SUBN": {
+    "tag": "SUBN",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "SURN": {
+    "tag": "SURN",
+    "gedcom_version": "5.5.5",
+    "category": "Individual",
+    "description": "Surname (last name).",
+    "payload": "text",
+    "occurs": {
+      "required": true,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "NAME"
+    ],
+    "notes": []
+  },
+  "TEMP": {
+    "tag": "TEMP",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "TEXT": {
+    "tag": "TEXT",
+    "gedcom_version": "5.5.5",
+    "category": "Source",
+    "description": "Source text description.",
+    "payload": "text",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "SOUR"
+    ],
+    "notes": []
+  },
+  "TIME": {
+    "tag": "TIME",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "TITL": {
+    "tag": "TITL",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "SOUR"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "TRLR": {
+    "tag": "TRLR",
+    "gedcom_version": "5.5.5",
+    "category": "Header",
+    "description": "Marks the end of a GEDCOM file.",
+    "payload": "record",
+    "occurs": {
+      "required": true,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": []
+  },
+  "TYPE": {
+    "tag": "TYPE",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "MARR"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "VERS": {
+    "tag": "VERS",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "GEDC"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "WIFE": {
+    "tag": "WIFE",
+    "gedcom_version": "5.5.5",
+    "category": "Family",
+    "description": "Pointer to the wife's individual record.",
+    "payload": "identifier",
+    "occurs": {
+      "required": false,
+      "multiple": false
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "FAM"
+    ],
+    "notes": []
+  },
+  "WILL": {
+    "tag": "WILL",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  },
+  "WWW": {
+    "tag": "WWW",
+    "gedcom_version": "5.5.5",
+    "category": null,
+    "description": null,
+    "payload": null,
+    "occurs": {
+      "required": null,
+      "multiple": null
+    },
+    "allowed_children": [],
+    "allowed_parents": [
+      "REPO",
+      "SUBM"
+    ],
+    "notes": [
+      "TODO: populate from GEDCOM 5.5.5 Appendix A and structure grammar; legacy dataset did not define this tag."
+    ]
+  }
+}

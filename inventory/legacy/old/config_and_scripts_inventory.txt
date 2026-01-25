@@ -1,0 +1,12 @@
+-rw-rw-r-- 1 david david 1.4K Dec 30 20:53 config/gedcom_parser.yml
+-rw-rw-r-- 1 david david 29K Dec 31 16:20 openapi/c24_7_openapi.yaml
+-rw-rw-r-- 1 david david 1.4K Dec 30 20:53 ./config/gedcom_parser.yml
+-rwxrwxr-x 1 david david 12K Dec 31 09:57 ./verify_all_C24_7.sh
+-rw-rw-r-- 1 david david 592 Nov 27 22:21 ./datasets/enrich_names_config.yml
+-rwxrwxr-x 1 david david 2.1K Dec  3 11:48 ./run_pipeline.sh
+-rwxrwxr-x 1 david david 3.5K Dec 27 15:13 ./misc/verify_all.sh
+-rwxrwxr-x 1 david david 6.4K Dec 30 07:43 ./misc/verify_all_C24_5.sh
+-rwxrwxr-x 1 david david 6.4K Dec 30 10:38 ./misc/verify_all_C24_6.sh
+-rw-rw-r-- 1 david david 147 Jan  2 15:54 ./project_tree.sh
+-rw-rw-r-- 1 david david 9.9K Dec 27 19:19 ./schemas/c24_5_canonical_export_openapi.yaml
+-rw-rw-r-- 1 david david 29K Dec 31 16:20 ./openapi/c24_7_openapi.yaml

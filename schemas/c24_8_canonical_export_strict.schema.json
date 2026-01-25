@@ -1,0 +1,100 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.local/schemas/c24_8_canonical_export.strict.schema.json",
+  "title": "GEDCOM Parser Canonical Export (C.24.8 STRICT)",
+  "description": "Strict schema: C.24.8 extends C.24.7 strict schema and forbids unevaluated properties.",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "c24_7_canonical_export.strict.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "place_operations": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/PlaceOperation" },
+          "default": []
+        },
+        "place_redirects": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/PlaceRedirect" },
+            "default": []
+          },
+          "default": {}
+        }
+      },
+      "unevaluatedProperties": false
+    }
+  ],
+  "$defs": {
+    "TemporalRef": {
+      "type": "object",
+      "properties": {
+        "bucket": { "type": "string", "enum": ["year"] },
+        "year": { "type": "integer", "minimum": 0 },
+        "start_year": { "type": "integer", "minimum": 0 },
+        "end_year": { "type": "integer", "minimum": 0 },
+        "open_ended": { "type": "boolean" }
+      },
+      "required": ["bucket"],
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": { "required": ["year"] },
+          "then": { "not": { "anyOf": [ { "required": ["start_year"] }, { "required": ["end_year"] } ] } }
+        }
+      ]
+    },
+    "GeneratedMeta": {
+      "type": "object",
+      "properties": {
+        "by": { "type": "string" },
+        "rule": { "type": "string" },
+        "inferred": { "type": "boolean" },
+        "enrichment_candidate": { "type": "boolean" },
+        "confidence": { "type": "number", "minimum": 0.0, "maximum": 1.0 }
+      },
+      "required": ["by"],
+      "additionalProperties": true
+    },
+    "PlaceRedirect": {
+      "type": "object",
+      "properties": {
+        "to_place_id": { "type": "string", "minLength": 1 },
+        "jurisdiction_system_id": { "type": "string", "minLength": 1 },
+        "temporal": { "$ref": "#/$defs/TemporalRef" },
+        "reason": { "type": "string" },
+        "op_id": { "type": "string" },
+        "generated": { "$ref": "#/$defs/GeneratedMeta" }
+      },
+      "required": ["to_place_id"],
+      "additionalProperties": false
+    },
+    "PlaceOperation": {
+      "type": "object",
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "kind": { "type": "string", "enum": ["merge", "split", "supersede"] },
+        "timestamp": { "type": "string" },
+        "jurisdiction_system_id": { "type": "string" },
+        "temporal": { "$ref": "#/$defs/TemporalRef" },
+        "from_place_id": { "type": "string" },
+        "from_place_ids": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "to_place_id": { "type": "string" },
+        "to_place_ids": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+        "notes": { "type": "array", "items": { "type": "string" } },
+        "generated": { "$ref": "#/$defs/GeneratedMeta" }
+      },
+      "required": ["id", "kind"],
+      "additionalProperties": false,
+      "allOf": [
+        { "if": { "properties": { "kind": { "const": "merge" } } }, "then": { "required": ["from_place_ids", "to_place_id"] } },
+        { "if": { "properties": { "kind": { "const": "split" } } }, "then": { "required": ["from_place_id", "to_place_ids"] } },
+        { "if": { "properties": { "kind": { "const": "supersede" } } }, "then": { "required": ["from_place_id", "to_place_id"] } }
+      ]
+    }
+  }
+}

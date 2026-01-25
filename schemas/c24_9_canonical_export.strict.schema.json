@@ -1,0 +1,442 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "c24_9_canonical_export.strict.schema.json",
+  "title": "C.24.9 Canonical Export Strict (delta over C.24.7)",
+  "description": "C.24.9 adds merge/split application outputs to a C.24.7 export. This schema is intentionally a DELTA: it validates the C.24.9 additions and assumes the base C.24.7 structure is validated separately. Top-level additional properties are allowed to preserve C.24.7 compatibility. 'Strict' here means the C.24.9 registries themselves are strictly shaped (no extra fields). It still allows other C.24.7 top-level keys.",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "place_redirects": {
+      "$ref": "#/$defs/redirects_map"
+    },
+    "place_audit_ledger": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/audit_entry"
+      }
+    },
+    "place_change_summary": {
+      "$ref": "#/$defs/place_change_summary"
+    },
+    "place_version_redirects": {
+      "$ref": "#/$defs/redirects_map",
+      "description": "Redirect rules keyed by from_place_version_id (C.24.9). See also place_redirects for place_id redirects."
+    }
+  },
+  "required": [
+    "place_redirects",
+    "place_audit_ledger",
+    "place_version_redirects"
+  ],
+  "$defs": {
+    "id_nonempty": {
+      "type": "string",
+      "minLength": 1
+    },
+    "iso_datetime": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 date-time string."
+    },
+    "severity_counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "hard": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "soft": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "advisory": {
+          "type": "integer",
+          "minimum": 0
+        }
+      },
+      "required": [
+        "hard",
+        "soft",
+        "advisory"
+      ]
+    },
+    "temporal_scope": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "Optional temporal scope. If null or open_ended=true, rule applies without date constraints.",
+      "additionalProperties": false,
+      "properties": {
+        "bucket": {
+          "type": "string",
+          "enum": [
+            "year"
+          ]
+        },
+        "year": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "start_year": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "end_year": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "open_ended": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "bucket"
+      ],
+      "allOf": [
+        {
+          "anyOf": [
+            {
+              "required": [
+                "open_ended"
+              ],
+              "properties": {
+                "open_ended": {
+                  "const": true
+                }
+              }
+            },
+            {
+              "required": [
+                "year"
+              ]
+            },
+            {
+              "required": [
+                "start_year"
+              ]
+            },
+            {
+              "required": [
+                "end_year"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "generated_meta": {
+      "type": "object",
+      "description": "Provenance metadata for generated/derived data.",
+      "additionalProperties": true,
+      "properties": {
+        "by": {
+          "type": "string"
+        },
+        "rule": {
+          "type": "string"
+        },
+        "inferred": {
+          "type": "boolean"
+        },
+        "enrichment_candidate": {
+          "type": "boolean"
+        },
+        "confidence": {
+          "type": "number",
+          "minimum": 0.0,
+          "maximum": 1.0
+        }
+      },
+      "required": [
+        "by"
+      ]
+    },
+    "redirect_rule": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "place_id",
+            "place_version"
+          ]
+        },
+        "to_place_id": {
+          "type": "string"
+        },
+        "to_place_version_id": {
+          "type": "string"
+        },
+        "jurisdiction_system_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "temporal": {
+          "$ref": "#/$defs/temporal_scope"
+        },
+        "audit_id": {
+          "$ref": "#/$defs/id_nonempty"
+        },
+        "operation_id": {
+          "$ref": "#/$defs/id_nonempty"
+        },
+        "priority": {
+          "type": "integer",
+          "minimum": 0,
+          "default": 100
+        },
+        "generated": {
+          "$ref": "#/$defs/generated_meta"
+        }
+      },
+      "required": [
+        "kind",
+        "audit_id",
+        "operation_id"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "kind": {
+                "const": "place_id"
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "to_place_id"
+            ],
+            "not": {
+              "required": [
+                "to_place_version_id"
+              ]
+            }
+          },
+          "else": {
+            "required": [
+              "to_place_version_id"
+            ],
+            "not": {
+              "required": [
+                "to_place_id"
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "redirects_map": {
+      "type": "object",
+      "description": "Mapping from source identifier -> array of redirect rules. Keys are from_place_id or from_place_version_id depending on kind.",
+      "additionalProperties": {
+        "type": "array",
+        "items": {
+          "$ref": "#/$defs/redirect_rule"
+        }
+      }
+    },
+    "audit_effects": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "redirects_created": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "redirects_updated": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "entities_impacted": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "place_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            },
+            "place_version_ids": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "required": [
+            "place_ids",
+            "place_version_ids"
+          ]
+        }
+      },
+      "required": [
+        "entities_impacted"
+      ]
+    },
+    "audit_entry": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "audit_id": {
+          "$ref": "#/$defs/id_nonempty"
+        },
+        "operation_id": {
+          "$ref": "#/$defs/id_nonempty"
+        },
+        "applied_at": {
+          "$ref": "#/$defs/iso_datetime"
+        },
+        "actor": {
+          "type": "string"
+        },
+        "policy_snapshot": {
+          "type": "object"
+        },
+        "effects": {
+          "$ref": "#/$defs/audit_effects"
+        },
+        "before": {
+          "type": "object"
+        },
+        "after": {
+          "type": "object"
+        },
+        "metrics": {
+          "type": "object"
+        },
+        "severity": {
+          "$ref": "#/$defs/severity_counts"
+        },
+        "notes": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "audit_id",
+        "operation_id",
+        "applied_at",
+        "policy_snapshot",
+        "effects",
+        "before",
+        "after",
+        "metrics",
+        "severity"
+      ]
+    },
+    "place_change_summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "merges_applied": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "splits_applied": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "supersedes_applied": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "redirects_created": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "redirects_updated": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "events_touched": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "event_place_resolution": {
+      "type": "object",
+      "description": "Trace-only, optional. Explains how a place_id/place_ref resolves under redirects.",
+      "additionalProperties": false,
+      "properties": {
+        "input_place_id": {
+          "type": "string"
+        },
+        "input_place_version_id": {
+          "type": "string"
+        },
+        "jurisdiction_system_id": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "temporal": {
+          "$ref": "#/$defs/temporal_scope"
+        },
+        "resolved_place_id": {
+          "type": "string"
+        },
+        "resolved_place_version_id": {
+          "type": "string"
+        },
+        "redirect_chain": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "from": {
+                "type": "string"
+              },
+              "to": {
+                "type": "string"
+              },
+              "operation_id": {
+                "type": "string"
+              },
+              "audit_id": {
+                "type": "string"
+              },
+              "priority": {
+                "type": "integer"
+              }
+            },
+            "required": [
+              "from",
+              "to"
+            ]
+          }
+        },
+        "status": {
+          "type": "string",
+          "enum": [
+            "resolved",
+            "unresolved",
+            "ambiguous",
+            "error"
+          ]
+        },
+        "messages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "status"
+      ]
+    }
+  }
+}
