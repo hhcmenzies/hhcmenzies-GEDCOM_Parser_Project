@@ -153,6 +153,10 @@ gedcom55_tag_catalog_*.csv
 gedcom55_tag_gaps_*.csv
 gedcom_schema_postgresql_sanitized.sql
 
+# Allow versioned reports (override ignores above)
+!reports/
+!reports/**
+
 ################################################################################
 # Notes:
 # - schemas/ and datasets/gedcom/{canonical,extensions,mocks}/ remain tracked.
