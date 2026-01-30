@@ -148,6 +148,11 @@ current_schema.sql
 # mock_files/
 # tests/data/
 
+# Local reports/artifacts (generated)
+gedcom55_tag_catalog_*.csv
+gedcom55_tag_gaps_*.csv
+gedcom_schema_postgresql_sanitized.sql
+
 ################################################################################
 # Notes:
 # - schemas/ and datasets/gedcom/{canonical,extensions,mocks}/ remain tracked.
