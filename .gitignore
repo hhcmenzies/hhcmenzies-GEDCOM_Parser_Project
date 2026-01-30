@@ -1,88 +1,152 @@
-# Python
-*.pyc
-__pycache__/
-*.pyo
-*.pyd
-*.env
-*.venv
-venv/
-env/
-ENV/
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
-*.log
+################################################################################
+# GEDCOM_Parser_Project - .gitignore
+# Purpose: Keep repo clean of local/dev/runtime artifacts while tracking
+#          source, schemas, datasets, docs, and scripts.
+################################################################################
 
-# IDEs and editors
-.vscode/
+# ----------------------------
+# IDE / editor
+# ----------------------------
 .idea/
+.vscode/
 *.sublime-project
 *.sublime-workspace
 
-# Jupyter and IPython
-.ipynb_checkpoints
+# ----------------------------
+# OS junk
+# ----------------------------
+.DS_Store
+Thumbs.db
 
-# Logs and dumps
+# ----------------------------
+# Python caches / bytecode
+# ----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ----------------------------
+# Virtual environments / env files
+# ----------------------------
+venv/
+.venv/
+env/
+ENV/
+.python-version
+.env
+.env.*
+pip-wheel-metadata/
+
+# ----------------------------
+# Python build / packaging
+# ----------------------------
+build/
+dist/
+develop-eggs/
+eggs/
+.eggs/
+*.egg-info/
+.installed.cfg
+*.egg
+wheels/
+
+# ----------------------------
+# Test / coverage / typecheck caches
+# ----------------------------
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+
+# ----------------------------
+# Logs, dumps, and runtime artifacts
+# ----------------------------
 logs/
 *.log
 *.out
 *.pid
 *.dump
 
-# Virtual environments
-*.env
-.venv/
-
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-coverage.xml
-*.cover
-.hypothesis/
-
-# GitHub workflows
-*.bak
-*.old
-.DS_Store
-
-# JSON outputs
+# Pipeline outputs / generated JSON
 outputs/
-mock_files/
+parsed_data.json
+validate_results*.json
+tag_context_index*.json
 *.json.zip
-*.ged
-*.ged.zip
 
-# Security-sensitive
-me
-me.pub
+# ----------------------------
+# Local databases & SQL artifacts (generated locally)
+# (You have Postgres + local sqlite files; keep them out of git)
+# ----------------------------
+*.db
+*.sqlite
+*.sqlite3
+*.sql.tmp
+*.psql
+
+# If you have specific generated SQL you *never* want committed:
+# current_schema.sql
+# gedcom_schema_postgresql_sanitized.sql
+
+# ----------------------------
+# Security-sensitive keys (never commit)
+# ----------------------------
 *.pem
 *.key
+*.crt
+*.p12
+*.pfx
+me
+me.pub
 
-# Python
-__pycache__/
-*.py[cod]
-.venv/
-venv/
-.pytest_cache/
+# ----------------------------
+# Archives / local scratch
+# ----------------------------
+archive/
+tmp/
+temp/
 
-# Outputs/logs
-logs/
-outputs/
-*.log
+# ----------------------------
+# Compressed / exports
+# ----------------------------
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
 
-# OS
-.DS_Store
+# ----------------------------
+# Inventory policy (your current behavior preserved)
+# - ignore timestamped runs
+# - keep inventory/latest and legacy
+# ----------------------------
+inventory/*/
+!inventory/latest
+!inventory/legacy/**
+inventory/latest/*
+!inventory/latest/.keep
+
+# ----------------------------
+# Generated/compiled GEDCOM artifacts
+# (Keep canonical/extensions/mocks tracked; ignore compiled + observed outputs)
+# ----------------------------
+datasets/gedcom/compiled/*.log
+datasets/gedcom/compiled/*.tmp
+datasets/gedcom/observed/*
+
+# ----------------------------
+# Optional: ignore large GEDCOM samples if you don't want them tracked
+# (COMMENT OUT if you want to keep mock_files under version control)
+# ----------------------------
+# mock_files/
+# tests/data/
+
+################################################################################
+# Notes:
+# - schemas/ and datasets/gedcom/{canonical,extensions,mocks}/ remain tracked.
+# - outputs/, logs/, db files, and inventory timestamp folders stay out of git.
+################################################################################
