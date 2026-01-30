@@ -30,7 +30,7 @@ python -m gedcom_parser.main \
 # [2] XREF/UUID resolver → export_xref.json
 ########################################
 echo "[2] Running xref_resolver → export_xref.json"
-python -m gedcom_parser.postprocess.xref_resolver \
+python -m gedcom_parser.enrichment.xref_resolver \
   -i "$OUTDIR/export.json" \
   -o "$OUTDIR/export_xref.json"
 
@@ -38,7 +38,7 @@ python -m gedcom_parser.postprocess.xref_resolver \
 # [3] Place standardization → export_standardized.json
 ########################################
 echo "[3] Running place_standardizer → export_standardized.json"
-python -m gedcom_parser.postprocess.place_standardizer \
+python -m gedcom_parser.enrichment.place_standardizer \
   -i "$OUTDIR/export_xref.json" \
   -o "$OUTDIR/export_standardized.json"
 
@@ -46,7 +46,7 @@ python -m gedcom_parser.postprocess.place_standardizer \
 # [4] Event disambiguation → export_events_resolved.json
 ########################################
 echo "[4] Running event_disambiguator → export_events_resolved.json"
-python -m gedcom_parser.postprocess.event_disambiguator \
+python -m gedcom_parser.enrichment.event_disambiguator \
   "$OUTDIR/export_standardized.json" \
   -o "$OUTDIR/export_events_resolved.json"
 
@@ -62,7 +62,7 @@ python -m gedcom_parser.normalization.name_normalization \
 # [6] Media normalization (OBJE → first-class) → export_media_normalized.json
 ########################################
 echo "[6] Running media_normalizer → export_media_normalized.json"
-python -m gedcom_parser.postprocess.media_normalizer \
+python -m gedcom_parser.enrichment.media_normalizer \
   -i "$OUTDIR/export_names_normalized.json" \
   -o "$OUTDIR/export_media_normalized.json"
 
@@ -70,7 +70,7 @@ python -m gedcom_parser.postprocess.media_normalizer \
 # [7] Place registry promotion (C.24.5) → export_c24_5.json
 ########################################
 echo "[7] Running place_registry_builder → export_c24_5.json"
-python -m gedcom_parser.postprocess.place_registry_builder \
+python -m gedcom_parser.enrichment.place_registry_builder \
   -i "$OUTDIR/export_media_normalized.json" \
   -o "$OUTDIR/export_c24_5.json"
 
@@ -78,7 +78,7 @@ python -m gedcom_parser.postprocess.place_registry_builder \
 # [8] Place hierarchy build (C.24.6) → export_c24_6.json
 ########################################
 echo "[8] Running place_hierarchy_builder → export_c24_6.json"
-python -m gedcom_parser.postprocess.place_hierarchy_builder \
+python -m gedcom_parser.enrichment.place_hierarchy_builder \
   -i "$OUTDIR/export_c24_5.json" \
   -o "$OUTDIR/export_c24_6.json"
 

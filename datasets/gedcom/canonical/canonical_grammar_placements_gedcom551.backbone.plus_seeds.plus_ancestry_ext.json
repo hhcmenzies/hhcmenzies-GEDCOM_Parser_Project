@@ -1,0 +1,5542 @@
+{
+  "meta": {
+    "canonical_meta": {
+      "backbone_meta": {
+        "build": "canonical_backbone_from_prefix_graph",
+        "generated_at": null,
+        "source": "from_prefix_graph.safe built from full_candidate(merged canonical+observed)",
+        "stats": {
+          "placements_out": 678
+        }
+      },
+      "build": "seed_missing_tag_placements",
+      "generated_at": null,
+      "inputs": {
+        "backbone": "datasets/gedcom/canonical/canonical_grammar_placements_gedcom551.backbone.json",
+        "coverage_report": "inventory/latest/context_index_coverage/context_index_coverage_report.json"
+      },
+      "stats": {
+        "missing_tags_in_report": 6,
+        "placements_in": 678,
+        "placements_out": 685,
+        "seed_paths_added": 7
+      }
+    },
+    "generated_at": null,
+    "note": "Merged canonical backbone placements with vendor extension placements (Option A). Canonical wins on collisions.",
+    "source_canonical": "datasets/gedcom/canonical/canonical_grammar_placements_gedcom551.backbone.plus_seeds.json",
+    "source_extensions": [
+      "datasets/gedcom/extensions/placements.vendor.ancestry.run3_ctx.json"
+    ]
+  },
+  "placements": [
+    {
+      "context_path": "FAM",
+      "level": 0,
+      "parent_path": null,
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "FAM"
+    },
+    {
+      "context_path": "FAM.ANUL",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "ANUL"
+    },
+    {
+      "context_path": "FAM.ANUL.HUSB",
+      "level": 2,
+      "parent_path": "FAM.ANUL",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "HUSB"
+    },
+    {
+      "context_path": "FAM.CHAN",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "CHAN"
+    },
+    {
+      "context_path": "FAM.CHAN.DATE",
+      "level": 2,
+      "parent_path": "FAM.CHAN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "FAM.CHAN.NOTE",
+      "level": 2,
+      "parent_path": "FAM.CHAN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "FAM.CHIL",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "CHIL"
+    },
+    {
+      "context_path": "FAM.CHIL._FREL",
+      "level": 2,
+      "parent_path": "FAM.CHIL",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "_FREL"
+    },
+    {
+      "context_path": "FAM.CHIL._MREL",
+      "level": 2,
+      "parent_path": "FAM.CHIL",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "_MREL"
+    },
+    {
+      "context_path": "FAM.DIV",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "DIV"
+    },
+    {
+      "context_path": "FAM.DIV.DATE",
+      "level": 2,
+      "parent_path": "FAM.DIV",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "FAM.DIV.PLAC",
+      "level": 2,
+      "parent_path": "FAM.DIV",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "FAM.DIV.PLAC.MAP",
+      "level": 3,
+      "parent_path": "FAM.DIV.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "FAM.DIV.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "FAM.DIV.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "FAM.DIV.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "FAM.DIV.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "FAM.DIV.SOUR",
+      "level": 2,
+      "parent_path": "FAM.DIV",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "FAM.DIV.SOUR.PAGE",
+      "level": 3,
+      "parent_path": "FAM.DIV.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "FAM.DIV.SOUR._HPID",
+      "level": 3,
+      "parent_path": "FAM.DIV.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "_HPID"
+    },
+    {
+      "context_path": "FAM.DIV.SOUR._WPID",
+      "level": 3,
+      "parent_path": "FAM.DIV.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "_WPID"
+    },
+    {
+      "context_path": "FAM.DIVF",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "DIVF"
+    },
+    {
+      "context_path": "FAM.DIVF.DATE",
+      "level": 2,
+      "parent_path": "FAM.DIVF",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "FAM.DIVF.PLAC",
+      "level": 2,
+      "parent_path": "FAM.DIVF",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "FAM.DIVF.PLAC.MAP",
+      "level": 3,
+      "parent_path": "FAM.DIVF.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "FAM.DIVF.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "FAM.DIVF.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "FAM.DIVF.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "FAM.DIVF.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "FAM.ENGA",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "ENGA"
+    },
+    {
+      "context_path": "FAM.ENGA.DATE",
+      "level": 2,
+      "parent_path": "FAM.ENGA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "FAM.ENGA.NOTE",
+      "level": 2,
+      "parent_path": "FAM.ENGA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "FAM.ENGA.PLAC",
+      "level": 2,
+      "parent_path": "FAM.ENGA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "FAM.ENGA.PLAC.MAP",
+      "level": 3,
+      "parent_path": "FAM.ENGA.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "FAM.ENGA.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "FAM.ENGA.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "FAM.ENGA.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "FAM.ENGA.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "FAM.HUSB",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "HUSB"
+    },
+    {
+      "context_path": "FAM.MARB",
+      "expanded_from": "MANUAL_SEED",
+      "level": 1,
+      "max": "M",
+      "min": 0,
+      "parent_path": "FAM",
+      "provenance": "SEEDED_MISSING_TAG",
+      "record_root": "FAM",
+      "source_production": "MANUAL_SEED",
+      "tag": "MARB"
+    },
+    {
+      "context_path": "FAM.MARC",
+      "expanded_from": "MANUAL_SEED",
+      "level": 1,
+      "max": "M",
+      "min": 0,
+      "parent_path": "FAM",
+      "provenance": "SEEDED_MISSING_TAG",
+      "record_root": "FAM",
+      "source_production": "MANUAL_SEED",
+      "tag": "MARC"
+    },
+    {
+      "context_path": "FAM.MARL",
+      "expanded_from": "MANUAL_SEED",
+      "level": 1,
+      "max": "M",
+      "min": 0,
+      "parent_path": "FAM",
+      "provenance": "SEEDED_MISSING_TAG",
+      "record_root": "FAM",
+      "source_production": "MANUAL_SEED",
+      "tag": "MARL"
+    },
+    {
+      "context_path": "FAM.MARR",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "MARR"
+    },
+    {
+      "context_path": "FAM.MARR.DATE",
+      "level": 2,
+      "parent_path": "FAM.MARR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "FAM.MARR.NOTE",
+      "level": 2,
+      "parent_path": "FAM.MARR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "FAM.MARR.PLAC",
+      "level": 2,
+      "parent_path": "FAM.MARR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "FAM.MARR.PLAC.LATI",
+      "level": 3,
+      "parent_path": "FAM.MARR.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "FAM.MARR.PLAC.LONG",
+      "level": 3,
+      "parent_path": "FAM.MARR.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "FAM.MARR.PLAC.MAP",
+      "level": 3,
+      "parent_path": "FAM.MARR.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "FAM.MARR.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "FAM.MARR.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "FAM.MARR.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "FAM.MARR.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "FAM.MARR.SOUR",
+      "level": 2,
+      "parent_path": "FAM.MARR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "FAM.MARR.SOUR.DATA",
+      "level": 3,
+      "parent_path": "FAM.MARR.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "FAM.MARR.SOUR.DATA.TEXT",
+      "level": 4,
+      "parent_path": "FAM.MARR.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "TEXT"
+    },
+    {
+      "context_path": "FAM.MARR.SOUR.DATA.WWW",
+      "level": 4,
+      "parent_path": "FAM.MARR.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "WWW"
+    },
+    {
+      "context_path": "FAM.MARR.SOUR.NOTE",
+      "level": 3,
+      "parent_path": "FAM.MARR.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "FAM.MARR.SOUR.OBJE",
+      "level": 3,
+      "parent_path": "FAM.MARR.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "FAM.MARR.SOUR.PAGE",
+      "level": 3,
+      "parent_path": "FAM.MARR.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "FAM.MARR.SOUR.PAGE.CONC",
+      "level": 4,
+      "parent_path": "FAM.MARR.SOUR.PAGE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "FAM.MARR.SOUR._HPID",
+      "level": 3,
+      "parent_path": "FAM.MARR.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "_HPID"
+    },
+    {
+      "context_path": "FAM.MARR.SOUR._LINK",
+      "level": 3,
+      "parent_path": "FAM.MARR.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "_LINK"
+    },
+    {
+      "context_path": "FAM.MARR.SOUR._WPID",
+      "level": 3,
+      "parent_path": "FAM.MARR.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "_WPID"
+    },
+    {
+      "context_path": "FAM.MARS",
+      "expanded_from": "MANUAL_SEED",
+      "level": 1,
+      "max": "M",
+      "min": 0,
+      "parent_path": "FAM",
+      "provenance": "SEEDED_MISSING_TAG",
+      "record_root": "FAM",
+      "source_production": "MANUAL_SEED",
+      "tag": "MARS"
+    },
+    {
+      "context_path": "FAM.NCHI",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "NCHI"
+    },
+    {
+      "context_path": "FAM.NOTE",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "FAM.OBJE",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "FAM.REFN",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "REFN"
+    },
+    {
+      "context_path": "FAM.REFN.TYPE",
+      "level": 2,
+      "parent_path": "FAM.REFN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "TYPE"
+    },
+    {
+      "context_path": "FAM.RESN",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "RESN"
+    },
+    {
+      "context_path": "FAM.RIN",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "RIN"
+    },
+    {
+      "context_path": "FAM.SLGS",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "SLGS"
+    },
+    {
+      "context_path": "FAM.SLGS.DATE",
+      "level": 2,
+      "parent_path": "FAM.SLGS",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "FAM.SLGS.NOTE",
+      "level": 2,
+      "parent_path": "FAM.SLGS",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "FAM.SLGS.PLAC",
+      "level": 2,
+      "parent_path": "FAM.SLGS",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "FAM.SLGS.SOUR",
+      "level": 2,
+      "parent_path": "FAM.SLGS",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "FAM.SLGS.STAT",
+      "level": 2,
+      "parent_path": "FAM.SLGS",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "STAT"
+    },
+    {
+      "context_path": "FAM.SLGS.TEMP",
+      "level": 2,
+      "parent_path": "FAM.SLGS",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "TEMP"
+    },
+    {
+      "context_path": "FAM.SOUR",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "FAM.SOUR.DATA",
+      "level": 2,
+      "parent_path": "FAM.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "FAM.SOUR.EVEN",
+      "level": 2,
+      "parent_path": "FAM.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "EVEN"
+    },
+    {
+      "context_path": "FAM.SOUR.NOTE",
+      "level": 2,
+      "parent_path": "FAM.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "FAM.SOUR.OBJE",
+      "level": 2,
+      "parent_path": "FAM.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "FAM.SOUR.PAGE",
+      "level": 2,
+      "parent_path": "FAM.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "FAM.SOUR.QUAY",
+      "level": 2,
+      "parent_path": "FAM.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "QUAY"
+    },
+    {
+      "context_path": "FAM.SUBM",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "SUBM"
+    },
+    {
+      "context_path": "FAM.WIFE",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "WIFE"
+    },
+    {
+      "context_path": "FAM._SEPR",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "_SEPR"
+    },
+    {
+      "context_path": "FAM._SEPR.DATE",
+      "level": 2,
+      "parent_path": "FAM._SEPR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "FAM._SEPR.PLAC",
+      "level": 2,
+      "parent_path": "FAM._SEPR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "FAM._SEPR.PLAC.MAP",
+      "level": 3,
+      "parent_path": "FAM._SEPR.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "FAM._SEPR.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "FAM._SEPR.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "FAM._SEPR.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "FAM._SEPR.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "FAM._SREL",
+      "level": 1,
+      "parent_path": "FAM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "FAM",
+      "tag": "_SREL"
+    },
+    {
+      "context_path": "HEAD",
+      "level": 0,
+      "parent_path": null,
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "HEAD"
+    },
+    {
+      "context_path": "HEAD.CHAR",
+      "level": 1,
+      "parent_path": "HEAD",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "CHAR"
+    },
+    {
+      "context_path": "HEAD.CHAR.VERS",
+      "level": 2,
+      "parent_path": "HEAD.CHAR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "VERS"
+    },
+    {
+      "context_path": "HEAD.COPR",
+      "level": 1,
+      "parent_path": "HEAD",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "COPR"
+    },
+    {
+      "context_path": "HEAD.DATE",
+      "level": 1,
+      "parent_path": "HEAD",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "HEAD.DATE.TIME",
+      "level": 2,
+      "parent_path": "HEAD.DATE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "TIME"
+    },
+    {
+      "context_path": "HEAD.DEST",
+      "level": 1,
+      "parent_path": "HEAD",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "DEST"
+    },
+    {
+      "context_path": "HEAD.FILE",
+      "level": 1,
+      "parent_path": "HEAD",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "FILE"
+    },
+    {
+      "context_path": "HEAD.GEDC",
+      "level": 1,
+      "parent_path": "HEAD",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "GEDC"
+    },
+    {
+      "context_path": "HEAD.GEDC.FORM",
+      "level": 2,
+      "parent_path": "HEAD.GEDC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "FORM"
+    },
+    {
+      "context_path": "HEAD.GEDC.FORM.VERS",
+      "level": 3,
+      "parent_path": "HEAD.GEDC.FORM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "VERS"
+    },
+    {
+      "context_path": "HEAD.GEDC.VERS",
+      "level": 2,
+      "parent_path": "HEAD.GEDC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "VERS"
+    },
+    {
+      "context_path": "HEAD.LANG",
+      "level": 1,
+      "parent_path": "HEAD",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "LANG"
+    },
+    {
+      "context_path": "HEAD.NOTE",
+      "level": 1,
+      "parent_path": "HEAD",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "HEAD.PLAC",
+      "level": 1,
+      "parent_path": "HEAD",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "HEAD.PLAC.FORM",
+      "level": 2,
+      "parent_path": "HEAD.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "FORM"
+    },
+    {
+      "context_path": "HEAD.SOUR",
+      "level": 1,
+      "parent_path": "HEAD",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "HEAD.SOUR.CORP",
+      "level": 2,
+      "parent_path": "HEAD.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "CORP"
+    },
+    {
+      "context_path": "HEAD.SOUR.CORP.ADDR",
+      "level": 3,
+      "parent_path": "HEAD.SOUR.CORP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "ADDR"
+    },
+    {
+      "context_path": "HEAD.SOUR.CORP.ADDR.CITY",
+      "level": 4,
+      "parent_path": "HEAD.SOUR.CORP.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "CITY"
+    },
+    {
+      "context_path": "HEAD.SOUR.CORP.ADDR.CONT",
+      "level": 4,
+      "parent_path": "HEAD.SOUR.CORP.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "CONT"
+    },
+    {
+      "context_path": "HEAD.SOUR.CORP.PHON",
+      "level": 3,
+      "parent_path": "HEAD.SOUR.CORP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "PHON"
+    },
+    {
+      "context_path": "HEAD.SOUR.CORP.WWW",
+      "level": 3,
+      "parent_path": "HEAD.SOUR.CORP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "WWW"
+    },
+    {
+      "context_path": "HEAD.SOUR.DATA",
+      "level": 2,
+      "parent_path": "HEAD.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "HEAD.SOUR.NAME",
+      "level": 2,
+      "parent_path": "HEAD.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "NAME"
+    },
+    {
+      "context_path": "HEAD.SOUR.VERS",
+      "level": 2,
+      "parent_path": "HEAD.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "VERS"
+    },
+    {
+      "context_path": "HEAD.SOUR._TREE",
+      "level": 2,
+      "parent_path": "HEAD.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "_TREE"
+    },
+    {
+      "context_path": "HEAD.SOUR._TREE.RIN",
+      "level": 3,
+      "parent_path": "HEAD.SOUR._TREE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "RIN"
+    },
+    {
+      "context_path": "HEAD.SOUR._TREE._ENV",
+      "level": 3,
+      "parent_path": "HEAD.SOUR._TREE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "_ENV"
+    },
+    {
+      "context_path": "HEAD.SUBM",
+      "level": 1,
+      "parent_path": "HEAD",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "SUBM"
+    },
+    {
+      "context_path": "HEAD.SUBN",
+      "level": 1,
+      "parent_path": "HEAD",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "HEAD",
+      "tag": "SUBN"
+    },
+    {
+      "context_path": "INDI",
+      "level": 0,
+      "parent_path": null,
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "INDI"
+    },
+    {
+      "context_path": "INDI.ADDR",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "ADDR"
+    },
+    {
+      "context_path": "INDI.ADDR.DATE",
+      "level": 2,
+      "parent_path": "INDI.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.ADDR.NOTE",
+      "level": 2,
+      "parent_path": "INDI.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.ADDR.PLAC",
+      "level": 2,
+      "parent_path": "INDI.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.ADOP",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "ADOP"
+    },
+    {
+      "context_path": "INDI.ADOP.DATE",
+      "level": 2,
+      "parent_path": "INDI.ADOP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.ADOP.NOTE",
+      "level": 2,
+      "parent_path": "INDI.ADOP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.AFN",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "AFN"
+    },
+    {
+      "context_path": "INDI.ALIA",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "ALIA"
+    },
+    {
+      "context_path": "INDI.ANCI",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "ANCI"
+    },
+    {
+      "context_path": "INDI.ASSO",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "ASSO"
+    },
+    {
+      "context_path": "INDI.ASSO.NOTE",
+      "level": 2,
+      "parent_path": "INDI.ASSO",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.ASSO.RELA",
+      "level": 2,
+      "parent_path": "INDI.ASSO",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "RELA"
+    },
+    {
+      "context_path": "INDI.ASSO.SOUR",
+      "level": 2,
+      "parent_path": "INDI.ASSO",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI.BAPL",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "BAPL"
+    },
+    {
+      "context_path": "INDI.BAPL.DATE",
+      "level": 2,
+      "parent_path": "INDI.BAPL",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.BAPL.NOTE",
+      "level": 2,
+      "parent_path": "INDI.BAPL",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.BAPL.PLAC",
+      "level": 2,
+      "parent_path": "INDI.BAPL",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.BAPL.SOUR",
+      "level": 2,
+      "parent_path": "INDI.BAPL",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI.BAPL.STAT",
+      "level": 2,
+      "parent_path": "INDI.BAPL",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "STAT"
+    },
+    {
+      "context_path": "INDI.BAPL.TEMP",
+      "level": 2,
+      "parent_path": "INDI.BAPL",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TEMP"
+    },
+    {
+      "context_path": "INDI.BAPM",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "BAPM"
+    },
+    {
+      "context_path": "INDI.BAPM.DATE",
+      "level": 2,
+      "parent_path": "INDI.BAPM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.BAPM.NOTE",
+      "level": 2,
+      "parent_path": "INDI.BAPM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.BAPM.PLAC",
+      "level": 2,
+      "parent_path": "INDI.BAPM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.BAPM.PLAC.MAP",
+      "level": 3,
+      "parent_path": "INDI.BAPM.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "INDI.BAPM.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "INDI.BAPM.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "INDI.BAPM.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "INDI.BAPM.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "INDI.BAPM.SOUR",
+      "level": 2,
+      "parent_path": "INDI.BAPM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI.BAPM.SOUR.DATA",
+      "level": 3,
+      "parent_path": "INDI.BAPM.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "INDI.BAPM.SOUR.DATA.TEXT",
+      "level": 4,
+      "parent_path": "INDI.BAPM.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TEXT"
+    },
+    {
+      "context_path": "INDI.BAPM.SOUR.DATA.WWW",
+      "level": 4,
+      "parent_path": "INDI.BAPM.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "WWW"
+    },
+    {
+      "context_path": "INDI.BAPM.SOUR.NOTE",
+      "level": 3,
+      "parent_path": "INDI.BAPM.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.BAPM.SOUR.OBJE",
+      "level": 3,
+      "parent_path": "INDI.BAPM.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "INDI.BAPM.SOUR.PAGE",
+      "level": 3,
+      "parent_path": "INDI.BAPM.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "INDI.BAPM.SOUR._APID",
+      "level": 3,
+      "parent_path": "INDI.BAPM.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_APID"
+    },
+    {
+      "context_path": "INDI.BAPM.SOUR._LINK",
+      "level": 3,
+      "parent_path": "INDI.BAPM.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_LINK"
+    },
+    {
+      "context_path": "INDI.BIRT",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "BIRT"
+    },
+    {
+      "context_path": "INDI.BIRT.AGE",
+      "level": 2,
+      "parent_path": "INDI.BIRT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "AGE"
+    },
+    {
+      "context_path": "INDI.BIRT.CONC",
+      "level": 2,
+      "parent_path": "INDI.BIRT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.BIRT.DATE",
+      "level": 2,
+      "parent_path": "INDI.BIRT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.BIRT.FAMC",
+      "level": 2,
+      "parent_path": "INDI.BIRT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "FAMC"
+    },
+    {
+      "context_path": "INDI.BIRT.NOTE",
+      "level": 2,
+      "parent_path": "INDI.BIRT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.BIRT.NOTE.CONC",
+      "level": 3,
+      "parent_path": "INDI.BIRT.NOTE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.BIRT.PLAC",
+      "level": 2,
+      "parent_path": "INDI.BIRT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.BIRT.PLAC.LATI",
+      "level": 3,
+      "parent_path": "INDI.BIRT.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "INDI.BIRT.PLAC.LONG",
+      "level": 3,
+      "parent_path": "INDI.BIRT.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "INDI.BIRT.PLAC.MAP",
+      "level": 3,
+      "parent_path": "INDI.BIRT.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "INDI.BIRT.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "INDI.BIRT.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "INDI.BIRT.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "INDI.BIRT.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "INDI.BIRT.SOUR",
+      "level": 2,
+      "parent_path": "INDI.BIRT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI.BIRT.SOUR.DATA",
+      "level": 3,
+      "parent_path": "INDI.BIRT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "INDI.BIRT.SOUR.DATA.TEXT",
+      "level": 4,
+      "parent_path": "INDI.BIRT.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TEXT"
+    },
+    {
+      "context_path": "INDI.BIRT.SOUR.DATA.WWW",
+      "level": 4,
+      "parent_path": "INDI.BIRT.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "WWW"
+    },
+    {
+      "context_path": "INDI.BIRT.SOUR.NOTE",
+      "level": 3,
+      "parent_path": "INDI.BIRT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.BIRT.SOUR.OBJE",
+      "level": 3,
+      "parent_path": "INDI.BIRT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "INDI.BIRT.SOUR.PAGE",
+      "level": 3,
+      "parent_path": "INDI.BIRT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "INDI.BIRT.SOUR.PAGE.CONC",
+      "level": 4,
+      "parent_path": "INDI.BIRT.SOUR.PAGE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.BIRT.SOUR._APID",
+      "level": 3,
+      "parent_path": "INDI.BIRT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_APID"
+    },
+    {
+      "context_path": "INDI.BIRT.SOUR._LINK",
+      "level": 3,
+      "parent_path": "INDI.BIRT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_LINK"
+    },
+    {
+      "context_path": "INDI.BURI",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "BURI"
+    },
+    {
+      "context_path": "INDI.BURI.DATE",
+      "level": 2,
+      "parent_path": "INDI.BURI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.BURI.NOTE",
+      "level": 2,
+      "parent_path": "INDI.BURI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.BURI.PLAC",
+      "level": 2,
+      "parent_path": "INDI.BURI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.BURI.PLAC.MAP",
+      "level": 3,
+      "parent_path": "INDI.BURI.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "INDI.BURI.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "INDI.BURI.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "INDI.BURI.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "INDI.BURI.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "INDI.BURI.SOUR",
+      "level": 2,
+      "parent_path": "INDI.BURI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI.BURI.SOUR.DATA",
+      "level": 3,
+      "parent_path": "INDI.BURI.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "INDI.BURI.SOUR.DATA.TEXT",
+      "level": 4,
+      "parent_path": "INDI.BURI.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TEXT"
+    },
+    {
+      "context_path": "INDI.BURI.SOUR.DATA.WWW",
+      "level": 4,
+      "parent_path": "INDI.BURI.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "WWW"
+    },
+    {
+      "context_path": "INDI.BURI.SOUR.NOTE",
+      "level": 3,
+      "parent_path": "INDI.BURI.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.BURI.SOUR.OBJE",
+      "level": 3,
+      "parent_path": "INDI.BURI.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "INDI.BURI.SOUR.PAGE",
+      "level": 3,
+      "parent_path": "INDI.BURI.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "INDI.BURI.SOUR.PAGE.CONC",
+      "level": 4,
+      "parent_path": "INDI.BURI.SOUR.PAGE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.BURI.SOUR._APID",
+      "level": 3,
+      "parent_path": "INDI.BURI.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_APID"
+    },
+    {
+      "context_path": "INDI.BURI.SOUR._LINK",
+      "level": 3,
+      "parent_path": "INDI.BURI.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_LINK"
+    },
+    {
+      "context_path": "INDI.CAST",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CAST"
+    },
+    {
+      "context_path": "INDI.CAST.AGE",
+      "level": 2,
+      "parent_path": "INDI.CAST",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "AGE"
+    },
+    {
+      "context_path": "INDI.CENS",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CENS"
+    },
+    {
+      "context_path": "INDI.CENS.DATE",
+      "level": 2,
+      "parent_path": "INDI.CENS",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.CENS.PLAC",
+      "level": 2,
+      "parent_path": "INDI.CENS",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.CHAN",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CHAN"
+    },
+    {
+      "context_path": "INDI.CHAN.DATE",
+      "level": 2,
+      "parent_path": "INDI.CHAN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.CHAN.NOTE",
+      "level": 2,
+      "parent_path": "INDI.CHAN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.CHR",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CHR"
+    },
+    {
+      "context_path": "INDI.CHR.DATE",
+      "level": 2,
+      "parent_path": "INDI.CHR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.CHR.NOTE",
+      "level": 2,
+      "parent_path": "INDI.CHR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.CHR.PLAC",
+      "level": 2,
+      "parent_path": "INDI.CHR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.CHR.PLAC.MAP",
+      "level": 3,
+      "parent_path": "INDI.CHR.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "INDI.CHR.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "INDI.CHR.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "INDI.CHR.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "INDI.CHR.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "INDI.CHR.SOUR",
+      "level": 2,
+      "parent_path": "INDI.CHR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI.CHR.SOUR.DATA",
+      "level": 3,
+      "parent_path": "INDI.CHR.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "INDI.CHR.SOUR.DATA.WWW",
+      "level": 4,
+      "parent_path": "INDI.CHR.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "WWW"
+    },
+    {
+      "context_path": "INDI.CHR.SOUR.NOTE",
+      "level": 3,
+      "parent_path": "INDI.CHR.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.CHR.SOUR.PAGE",
+      "level": 3,
+      "parent_path": "INDI.CHR.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "INDI.CHR.SOUR.PAGE.CONC",
+      "level": 4,
+      "parent_path": "INDI.CHR.SOUR.PAGE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.CHR.SOUR._APID",
+      "level": 3,
+      "parent_path": "INDI.CHR.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_APID"
+    },
+    {
+      "context_path": "INDI.CHR.SOUR._LINK",
+      "level": 3,
+      "parent_path": "INDI.CHR.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_LINK"
+    },
+    {
+      "context_path": "INDI.CHRA",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CHRA"
+    },
+    {
+      "context_path": "INDI.CHRA.DATE",
+      "level": 2,
+      "parent_path": "INDI.CHRA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.CHRA.NOTE",
+      "level": 2,
+      "parent_path": "INDI.CHRA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.CHRA.PLAC",
+      "level": 2,
+      "parent_path": "INDI.CHRA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.CONF",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONF"
+    },
+    {
+      "context_path": "INDI.CONF.DATE",
+      "level": 2,
+      "parent_path": "INDI.CONF",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.CONF.PLAC",
+      "level": 2,
+      "parent_path": "INDI.CONF",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.CONF.SOUR",
+      "level": 2,
+      "parent_path": "INDI.CONF",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI.CONF.SOUR._APID",
+      "level": 3,
+      "parent_path": "INDI.CONF.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_APID"
+    },
+    {
+      "context_path": "INDI.DEAT",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DEAT"
+    },
+    {
+      "context_path": "INDI.DEAT.CAUS",
+      "level": 2,
+      "parent_path": "INDI.DEAT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CAUS"
+    },
+    {
+      "context_path": "INDI.DEAT.DATE",
+      "level": 2,
+      "parent_path": "INDI.DEAT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.DEAT.NOTE",
+      "level": 2,
+      "parent_path": "INDI.DEAT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.DEAT.NOTE.CONC",
+      "level": 3,
+      "parent_path": "INDI.DEAT.NOTE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.DEAT.NOTE.CONT",
+      "level": 3,
+      "parent_path": "INDI.DEAT.NOTE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONT"
+    },
+    {
+      "context_path": "INDI.DEAT.PLAC",
+      "level": 2,
+      "parent_path": "INDI.DEAT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.DEAT.PLAC.LATI",
+      "level": 3,
+      "parent_path": "INDI.DEAT.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "INDI.DEAT.PLAC.LONG",
+      "level": 3,
+      "parent_path": "INDI.DEAT.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "INDI.DEAT.PLAC.MAP",
+      "level": 3,
+      "parent_path": "INDI.DEAT.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "INDI.DEAT.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "INDI.DEAT.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "INDI.DEAT.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "INDI.DEAT.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "INDI.DEAT.SOUR",
+      "level": 2,
+      "parent_path": "INDI.DEAT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI.DEAT.SOUR.DATA",
+      "level": 3,
+      "parent_path": "INDI.DEAT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "INDI.DEAT.SOUR.DATA.TEXT",
+      "level": 4,
+      "parent_path": "INDI.DEAT.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TEXT"
+    },
+    {
+      "context_path": "INDI.DEAT.SOUR.DATA.WWW",
+      "level": 4,
+      "parent_path": "INDI.DEAT.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "WWW"
+    },
+    {
+      "context_path": "INDI.DEAT.SOUR.NOTE",
+      "level": 3,
+      "parent_path": "INDI.DEAT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.DEAT.SOUR.OBJE",
+      "level": 3,
+      "parent_path": "INDI.DEAT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "INDI.DEAT.SOUR.PAGE",
+      "level": 3,
+      "parent_path": "INDI.DEAT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "INDI.DEAT.SOUR.PAGE.CONC",
+      "level": 4,
+      "parent_path": "INDI.DEAT.SOUR.PAGE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.DEAT.SOUR._APID",
+      "level": 3,
+      "parent_path": "INDI.DEAT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_APID"
+    },
+    {
+      "context_path": "INDI.DEAT.SOUR._LINK",
+      "level": 3,
+      "parent_path": "INDI.DEAT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_LINK"
+    },
+    {
+      "context_path": "INDI.DESI",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DESI"
+    },
+    {
+      "context_path": "INDI.DIV",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DIV"
+    },
+    {
+      "context_path": "INDI.DIV.DATE",
+      "level": 2,
+      "parent_path": "INDI.DIV",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.DIV.NOTE",
+      "level": 2,
+      "parent_path": "INDI.DIV",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.DIV.PLAC",
+      "level": 2,
+      "parent_path": "INDI.DIV",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.DSCR",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DSCR"
+    },
+    {
+      "context_path": "INDI.EDUC",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "EDUC"
+    },
+    {
+      "context_path": "INDI.EMAI",
+      "expanded_from": "MANUAL_SEED",
+      "level": 1,
+      "max": "M",
+      "min": 0,
+      "parent_path": "INDI",
+      "provenance": "SEEDED_MISSING_TAG",
+      "record_root": "INDI",
+      "source_production": "MANUAL_SEED",
+      "tag": "EMAI"
+    },
+    {
+      "context_path": "INDI.EMAIL",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "EMAIL"
+    },
+    {
+      "context_path": "INDI.EMIG",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "EMIG"
+    },
+    {
+      "context_path": "INDI.EMIG.DATE",
+      "level": 2,
+      "parent_path": "INDI.EMIG",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.EMIG.NOTE",
+      "level": 2,
+      "parent_path": "INDI.EMIG",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.EMIG.PLAC",
+      "level": 2,
+      "parent_path": "INDI.EMIG",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.EMIG.PLAC.MAP",
+      "level": 3,
+      "parent_path": "INDI.EMIG.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "INDI.EMIG.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "INDI.EMIG.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "INDI.EMIG.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "INDI.EMIG.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "INDI.EVEN",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "EVEN"
+    },
+    {
+      "context_path": "INDI.EVEN.CONC",
+      "level": 2,
+      "parent_path": "INDI.EVEN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.EVEN.DATE",
+      "level": 2,
+      "parent_path": "INDI.EVEN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.EVEN.NOTE",
+      "level": 2,
+      "parent_path": "INDI.EVEN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.EVEN.NOTE.CONC",
+      "level": 3,
+      "parent_path": "INDI.EVEN.NOTE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.EVEN.OBJE",
+      "level": 2,
+      "parent_path": "INDI.EVEN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "INDI.EVEN.PLAC",
+      "level": 2,
+      "parent_path": "INDI.EVEN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.EVEN.PLAC.MAP",
+      "level": 3,
+      "parent_path": "INDI.EVEN.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "INDI.EVEN.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "INDI.EVEN.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "INDI.EVEN.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "INDI.EVEN.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "INDI.EVEN.SOUR",
+      "level": 2,
+      "parent_path": "INDI.EVEN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI.EVEN.SOUR.DATA",
+      "level": 3,
+      "parent_path": "INDI.EVEN.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "INDI.EVEN.SOUR.DATA.TEXT",
+      "level": 4,
+      "parent_path": "INDI.EVEN.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TEXT"
+    },
+    {
+      "context_path": "INDI.EVEN.SOUR.DATA.WWW",
+      "level": 4,
+      "parent_path": "INDI.EVEN.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "WWW"
+    },
+    {
+      "context_path": "INDI.EVEN.SOUR.DATA.WWW.CONC",
+      "level": 5,
+      "parent_path": "INDI.EVEN.SOUR.DATA.WWW",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.EVEN.SOUR.NOTE",
+      "level": 3,
+      "parent_path": "INDI.EVEN.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.EVEN.SOUR.OBJE",
+      "level": 3,
+      "parent_path": "INDI.EVEN.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "INDI.EVEN.SOUR.PAGE",
+      "level": 3,
+      "parent_path": "INDI.EVEN.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "INDI.EVEN.SOUR.PAGE.CONC",
+      "level": 4,
+      "parent_path": "INDI.EVEN.SOUR.PAGE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.EVEN.SOUR._APID",
+      "level": 3,
+      "parent_path": "INDI.EVEN.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_APID"
+    },
+    {
+      "context_path": "INDI.EVEN.SOUR._LINK",
+      "level": 3,
+      "parent_path": "INDI.EVEN.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_LINK"
+    },
+    {
+      "context_path": "INDI.EVEN.TYPE",
+      "level": 2,
+      "parent_path": "INDI.EVEN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TYPE"
+    },
+    {
+      "context_path": "INDI.FACT",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "FACT"
+    },
+    {
+      "context_path": "INDI.FACT.NOTE",
+      "level": 2,
+      "parent_path": "INDI.FACT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.FACT.SOUR",
+      "level": 2,
+      "parent_path": "INDI.FACT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI.FACT.SOUR.DATA",
+      "level": 3,
+      "parent_path": "INDI.FACT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "INDI.FACT.SOUR.DATA.TEXT",
+      "level": 4,
+      "parent_path": "INDI.FACT.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TEXT"
+    },
+    {
+      "context_path": "INDI.FACT.SOUR.DATA.WWW",
+      "level": 4,
+      "parent_path": "INDI.FACT.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "WWW"
+    },
+    {
+      "context_path": "INDI.FACT.SOUR._APID",
+      "level": 3,
+      "parent_path": "INDI.FACT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_APID"
+    },
+    {
+      "context_path": "INDI.FACT.TYPE",
+      "level": 2,
+      "parent_path": "INDI.FACT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TYPE"
+    },
+    {
+      "context_path": "INDI.FAMC",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "FAMC"
+    },
+    {
+      "context_path": "INDI.FAMC.NOTE",
+      "level": 2,
+      "parent_path": "INDI.FAMC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.FAMC.PEDI",
+      "level": 2,
+      "parent_path": "INDI.FAMC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PEDI"
+    },
+    {
+      "context_path": "INDI.FAMC.STAT",
+      "level": 2,
+      "parent_path": "INDI.FAMC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "STAT"
+    },
+    {
+      "context_path": "INDI.FAMS",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "FAMS"
+    },
+    {
+      "context_path": "INDI.FAMS.NOTE",
+      "level": 2,
+      "parent_path": "INDI.FAMS",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.FCID",
+      "expanded_from": "MANUAL_SEED",
+      "level": 1,
+      "max": "M",
+      "min": 0,
+      "parent_path": "INDI",
+      "provenance": "SEEDED_MISSING_TAG",
+      "record_root": "INDI",
+      "source_production": "MANUAL_SEED",
+      "tag": "FCID"
+    },
+    {
+      "context_path": "INDI.FCOM",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "FCOM"
+    },
+    {
+      "context_path": "INDI.FCOM.DATE",
+      "level": 2,
+      "parent_path": "INDI.FCOM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.FONE",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "FONE"
+    },
+    {
+      "context_path": "INDI.FSID",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "FSID"
+    },
+    {
+      "context_path": "INDI.FSID.SOUR",
+      "level": 2,
+      "parent_path": "INDI.FSID",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI.FSID.SOUR.NOTE",
+      "level": 3,
+      "parent_path": "INDI.FSID.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.FSID.SOUR.PAGE",
+      "level": 3,
+      "parent_path": "INDI.FSID.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "INDI.FSID.SOUR._LINK",
+      "level": 3,
+      "parent_path": "INDI.FSID.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_LINK"
+    },
+    {
+      "context_path": "INDI.GIVN",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "GIVN"
+    },
+    {
+      "context_path": "INDI.GRAD",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "GRAD"
+    },
+    {
+      "context_path": "INDI.GRAD.DATE",
+      "level": 2,
+      "parent_path": "INDI.GRAD",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.GRAD.PLAC",
+      "level": 2,
+      "parent_path": "INDI.GRAD",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.IDNO",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "IDNO"
+    },
+    {
+      "context_path": "INDI.IMMI",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "IMMI"
+    },
+    {
+      "context_path": "INDI.IMMI.DATE",
+      "level": 2,
+      "parent_path": "INDI.IMMI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.IMMI.NOTE",
+      "level": 2,
+      "parent_path": "INDI.IMMI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.IMMI.PLAC",
+      "level": 2,
+      "parent_path": "INDI.IMMI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.IMMI.PLAC.MAP",
+      "level": 3,
+      "parent_path": "INDI.IMMI.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "INDI.IMMI.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "INDI.IMMI.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "INDI.IMMI.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "INDI.IMMI.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "INDI.MARR",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "MARR"
+    },
+    {
+      "context_path": "INDI.MARR.DATE",
+      "level": 2,
+      "parent_path": "INDI.MARR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.MARR.PLAC",
+      "level": 2,
+      "parent_path": "INDI.MARR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.MARR.SOUR",
+      "level": 2,
+      "parent_path": "INDI.MARR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI.MARR.SOUR.DATA",
+      "level": 3,
+      "parent_path": "INDI.MARR.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "INDI.MARR.SOUR.DATA.TEXT",
+      "level": 4,
+      "parent_path": "INDI.MARR.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TEXT"
+    },
+    {
+      "context_path": "INDI.MARR.SOUR.DATA.WWW",
+      "level": 4,
+      "parent_path": "INDI.MARR.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "WWW"
+    },
+    {
+      "context_path": "INDI.MARR.SOUR.OBJE",
+      "level": 3,
+      "parent_path": "INDI.MARR.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "INDI.MARR.SOUR.PAGE",
+      "level": 3,
+      "parent_path": "INDI.MARR.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "INDI.MARR.SOUR.PAGE.CONC",
+      "level": 4,
+      "parent_path": "INDI.MARR.SOUR.PAGE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.MARR.SOUR._APID",
+      "level": 3,
+      "parent_path": "INDI.MARR.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_APID"
+    },
+    {
+      "context_path": "INDI.NAME",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NAME"
+    },
+    {
+      "context_path": "INDI.NAME.FONE",
+      "level": 2,
+      "parent_path": "INDI.NAME",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "FONE"
+    },
+    {
+      "context_path": "INDI.NAME.GIVN",
+      "level": 2,
+      "parent_path": "INDI.NAME",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "GIVN"
+    },
+    {
+      "context_path": "INDI.NAME.NPFX",
+      "level": 2,
+      "parent_path": "INDI.NAME",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NPFX"
+    },
+    {
+      "context_path": "INDI.NAME.NSFX",
+      "level": 2,
+      "parent_path": "INDI.NAME",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NSFX"
+    },
+    {
+      "context_path": "INDI.NAME.ROMN",
+      "level": 2,
+      "parent_path": "INDI.NAME",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "ROMN"
+    },
+    {
+      "context_path": "INDI.NAME.SOUR",
+      "level": 2,
+      "parent_path": "INDI.NAME",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI.NAME.SOUR.DATA",
+      "level": 3,
+      "parent_path": "INDI.NAME.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "INDI.NAME.SOUR.DATA.TEXT",
+      "level": 4,
+      "parent_path": "INDI.NAME.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TEXT"
+    },
+    {
+      "context_path": "INDI.NAME.SOUR.DATA.WWW",
+      "level": 4,
+      "parent_path": "INDI.NAME.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "WWW"
+    },
+    {
+      "context_path": "INDI.NAME.SOUR.NOTE",
+      "level": 3,
+      "parent_path": "INDI.NAME.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.NAME.SOUR.OBJE",
+      "level": 3,
+      "parent_path": "INDI.NAME.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "INDI.NAME.SOUR.PAGE",
+      "level": 3,
+      "parent_path": "INDI.NAME.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "INDI.NAME.SOUR.PAGE.CONC",
+      "level": 4,
+      "parent_path": "INDI.NAME.SOUR.PAGE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.NAME.SOUR._APID",
+      "level": 3,
+      "parent_path": "INDI.NAME.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_APID"
+    },
+    {
+      "context_path": "INDI.NAME.SOUR._LINK",
+      "level": 3,
+      "parent_path": "INDI.NAME.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_LINK"
+    },
+    {
+      "context_path": "INDI.NAME.SURN",
+      "level": 2,
+      "parent_path": "INDI.NAME",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SURN"
+    },
+    {
+      "context_path": "INDI.NAME.TYPE",
+      "level": 2,
+      "parent_path": "INDI.NAME",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TYPE"
+    },
+    {
+      "context_path": "INDI.NATI",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NATI"
+    },
+    {
+      "context_path": "INDI.NATU",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NATU"
+    },
+    {
+      "context_path": "INDI.NATU.DATE",
+      "level": 2,
+      "parent_path": "INDI.NATU",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.NATU.PLAC",
+      "level": 2,
+      "parent_path": "INDI.NATU",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.NATU.SOUR",
+      "level": 2,
+      "parent_path": "INDI.NATU",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI.NATU.SOUR.PAGE",
+      "level": 3,
+      "parent_path": "INDI.NATU.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "INDI.NATU.SOUR.PAGE.CONC",
+      "level": 4,
+      "parent_path": "INDI.NATU.SOUR.PAGE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.NATU.SOUR._APID",
+      "level": 3,
+      "parent_path": "INDI.NATU.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_APID"
+    },
+    {
+      "context_path": "INDI.NCHI",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NCHI"
+    },
+    {
+      "context_path": "INDI.NICK",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NICK"
+    },
+    {
+      "context_path": "INDI.NMR",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NMR"
+    },
+    {
+      "context_path": "INDI.NOTE",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.NOTE.CONC",
+      "level": 2,
+      "parent_path": "INDI.NOTE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.NOTE.CONT",
+      "level": 2,
+      "parent_path": "INDI.NOTE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONT"
+    },
+    {
+      "context_path": "INDI.NPFX",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NPFX"
+    },
+    {
+      "context_path": "INDI.NSFX",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NSFX"
+    },
+    {
+      "context_path": "INDI.OBJE",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "INDI.OBJE._CROP",
+      "level": 2,
+      "parent_path": "INDI.OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_CROP"
+    },
+    {
+      "context_path": "INDI.OBJE._CROP._HGHT",
+      "level": 3,
+      "parent_path": "INDI.OBJE._CROP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_HGHT"
+    },
+    {
+      "context_path": "INDI.OBJE._CROP._LEFT",
+      "level": 3,
+      "parent_path": "INDI.OBJE._CROP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_LEFT"
+    },
+    {
+      "context_path": "INDI.OBJE._CROP._TOP",
+      "level": 3,
+      "parent_path": "INDI.OBJE._CROP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_TOP"
+    },
+    {
+      "context_path": "INDI.OBJE._CROP._TYPE",
+      "level": 3,
+      "parent_path": "INDI.OBJE._CROP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_TYPE"
+    },
+    {
+      "context_path": "INDI.OBJE._CROP._WDTH",
+      "level": 3,
+      "parent_path": "INDI.OBJE._CROP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_WDTH"
+    },
+    {
+      "context_path": "INDI.OBJE._PRIM",
+      "level": 2,
+      "parent_path": "INDI.OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_PRIM"
+    },
+    {
+      "context_path": "INDI.OCCU",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "OCCU"
+    },
+    {
+      "context_path": "INDI.OCCU.DATE",
+      "level": 2,
+      "parent_path": "INDI.OCCU",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.OCCU.PLAC",
+      "level": 2,
+      "parent_path": "INDI.OCCU",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.OCCU.PLAC.MAP",
+      "level": 3,
+      "parent_path": "INDI.OCCU.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "INDI.OCCU.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "INDI.OCCU.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "INDI.OCCU.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "INDI.OCCU.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "INDI.PHON",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PHON"
+    },
+    {
+      "context_path": "INDI.PHON.PLAC",
+      "level": 2,
+      "parent_path": "INDI.PHON",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.PHON.PLAC.MAP",
+      "level": 3,
+      "parent_path": "INDI.PHON.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "INDI.PHON.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "INDI.PHON.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "INDI.PHON.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "INDI.PHON.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "INDI.PHON.TYPE",
+      "level": 2,
+      "parent_path": "INDI.PHON",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TYPE"
+    },
+    {
+      "context_path": "INDI.PROB",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PROB"
+    },
+    {
+      "context_path": "INDI.PROB.DATE",
+      "level": 2,
+      "parent_path": "INDI.PROB",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.PROB.NOTE",
+      "level": 2,
+      "parent_path": "INDI.PROB",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.PROB.PLAC",
+      "level": 2,
+      "parent_path": "INDI.PROB",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.PROB.PLAC.MAP",
+      "level": 3,
+      "parent_path": "INDI.PROB.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "INDI.PROB.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "INDI.PROB.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "INDI.PROB.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "INDI.PROB.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "INDI.PROB.SOUR",
+      "level": 2,
+      "parent_path": "INDI.PROB",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI.PROB.SOUR.OBJE",
+      "level": 3,
+      "parent_path": "INDI.PROB.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "INDI.PROB.SOUR.PAGE",
+      "level": 3,
+      "parent_path": "INDI.PROB.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "INDI.PROB.SOUR._APID",
+      "level": 3,
+      "parent_path": "INDI.PROB.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_APID"
+    },
+    {
+      "context_path": "INDI.PROP",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PROP"
+    },
+    {
+      "context_path": "INDI.PROP.PLAC",
+      "level": 2,
+      "parent_path": "INDI.PROP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.REFN",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "REFN"
+    },
+    {
+      "context_path": "INDI.REFN.TYPE",
+      "level": 2,
+      "parent_path": "INDI.REFN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TYPE"
+    },
+    {
+      "context_path": "INDI.RELI",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "RELI"
+    },
+    {
+      "context_path": "INDI.RELI.DATE",
+      "level": 2,
+      "parent_path": "INDI.RELI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.RELI.PLAC",
+      "level": 2,
+      "parent_path": "INDI.RELI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.RESI",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "RESI"
+    },
+    {
+      "context_path": "INDI.RESI.CONC",
+      "level": 2,
+      "parent_path": "INDI.RESI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.RESI.DATE",
+      "level": 2,
+      "parent_path": "INDI.RESI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.RESI.NOTE",
+      "level": 2,
+      "parent_path": "INDI.RESI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.RESI.NOTE.CONC",
+      "level": 3,
+      "parent_path": "INDI.RESI.NOTE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.RESI.PLAC",
+      "level": 2,
+      "parent_path": "INDI.RESI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.RESI.PLAC.MAP",
+      "level": 3,
+      "parent_path": "INDI.RESI.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "INDI.RESI.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "INDI.RESI.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "INDI.RESI.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "INDI.RESI.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "INDI.RESI.SOUR",
+      "level": 2,
+      "parent_path": "INDI.RESI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI.RESI.SOUR.DATA",
+      "level": 3,
+      "parent_path": "INDI.RESI.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "INDI.RESI.SOUR.DATA.TEXT",
+      "level": 4,
+      "parent_path": "INDI.RESI.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TEXT"
+    },
+    {
+      "context_path": "INDI.RESI.SOUR.DATA.WWW",
+      "level": 4,
+      "parent_path": "INDI.RESI.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "WWW"
+    },
+    {
+      "context_path": "INDI.RESI.SOUR.NOTE",
+      "level": 3,
+      "parent_path": "INDI.RESI.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.RESI.SOUR.OBJE",
+      "level": 3,
+      "parent_path": "INDI.RESI.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "INDI.RESI.SOUR.PAGE",
+      "level": 3,
+      "parent_path": "INDI.RESI.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "INDI.RESI.SOUR.PAGE.CONC",
+      "level": 4,
+      "parent_path": "INDI.RESI.SOUR.PAGE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.RESI.SOUR._APID",
+      "level": 3,
+      "parent_path": "INDI.RESI.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_APID"
+    },
+    {
+      "context_path": "INDI.RESI.SOUR._LINK",
+      "level": 3,
+      "parent_path": "INDI.RESI.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_LINK"
+    },
+    {
+      "context_path": "INDI.RESN",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "RESN"
+    },
+    {
+      "context_path": "INDI.RFN",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "RFN"
+    },
+    {
+      "context_path": "INDI.RIN",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "RIN"
+    },
+    {
+      "context_path": "INDI.ROMN",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "ROMN"
+    },
+    {
+      "context_path": "INDI.SEX",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SEX"
+    },
+    {
+      "context_path": "INDI.SEX.SOUR",
+      "level": 2,
+      "parent_path": "INDI.SEX",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI.SEX.SOUR.DATA",
+      "level": 3,
+      "parent_path": "INDI.SEX.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "INDI.SEX.SOUR.DATA.TEXT",
+      "level": 4,
+      "parent_path": "INDI.SEX.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TEXT"
+    },
+    {
+      "context_path": "INDI.SEX.SOUR.DATA.WWW",
+      "level": 4,
+      "parent_path": "INDI.SEX.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "WWW"
+    },
+    {
+      "context_path": "INDI.SEX.SOUR.PAGE",
+      "level": 3,
+      "parent_path": "INDI.SEX.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "INDI.SEX.SOUR.PAGE.CONC",
+      "level": 4,
+      "parent_path": "INDI.SEX.SOUR.PAGE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.SEX.SOUR._APID",
+      "level": 3,
+      "parent_path": "INDI.SEX.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_APID"
+    },
+    {
+      "context_path": "INDI.SOUR",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI.SOUR.DATA",
+      "level": 2,
+      "parent_path": "INDI.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "INDI.SOUR.DATA.DATE",
+      "level": 3,
+      "parent_path": "INDI.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.SOUR.DATA.TEXT",
+      "level": 3,
+      "parent_path": "INDI.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TEXT"
+    },
+    {
+      "context_path": "INDI.SOUR.DATA.WWW",
+      "level": 3,
+      "parent_path": "INDI.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "WWW"
+    },
+    {
+      "context_path": "INDI.SOUR.DATA.WWW.CONC",
+      "level": 4,
+      "parent_path": "INDI.SOUR.DATA.WWW",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.SOUR.EVEN",
+      "level": 2,
+      "parent_path": "INDI.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "EVEN"
+    },
+    {
+      "context_path": "INDI.SOUR.NOTE",
+      "level": 2,
+      "parent_path": "INDI.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.SOUR.OBJE",
+      "level": 2,
+      "parent_path": "INDI.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "INDI.SOUR.PAGE",
+      "level": 2,
+      "parent_path": "INDI.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "INDI.SOUR.PAGE.CONC",
+      "level": 3,
+      "parent_path": "INDI.SOUR.PAGE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI.SOUR.QUAY",
+      "level": 2,
+      "parent_path": "INDI.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "QUAY"
+    },
+    {
+      "context_path": "INDI.SOUR._APID",
+      "level": 2,
+      "parent_path": "INDI.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_APID"
+    },
+    {
+      "context_path": "INDI.SPFX",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SPFX"
+    },
+    {
+      "context_path": "INDI.SSN",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SSN"
+    },
+    {
+      "context_path": "INDI.SSN.SOUR",
+      "level": 2,
+      "parent_path": "INDI.SSN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI.SSN.SOUR.DATA",
+      "level": 3,
+      "parent_path": "INDI.SSN.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "INDI.SSN.SOUR.DATA.TEXT",
+      "level": 4,
+      "parent_path": "INDI.SSN.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TEXT"
+    },
+    {
+      "context_path": "INDI.SSN.SOUR.DATA.WWW",
+      "level": 4,
+      "parent_path": "INDI.SSN.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "WWW"
+    },
+    {
+      "context_path": "INDI.SSN.SOUR.NOTE",
+      "level": 3,
+      "parent_path": "INDI.SSN.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.SSN.SOUR.PAGE",
+      "level": 3,
+      "parent_path": "INDI.SSN.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "INDI.SSN.SOUR._APID",
+      "level": 3,
+      "parent_path": "INDI.SSN.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_APID"
+    },
+    {
+      "context_path": "INDI.SSN.SOUR._LINK",
+      "level": 3,
+      "parent_path": "INDI.SSN.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_LINK"
+    },
+    {
+      "context_path": "INDI.SUBM",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SUBM"
+    },
+    {
+      "context_path": "INDI.SURN",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SURN"
+    },
+    {
+      "context_path": "INDI.TITL",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TITL"
+    },
+    {
+      "context_path": "INDI.WILL",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "WILL"
+    },
+    {
+      "context_path": "INDI.WILL.DATE",
+      "level": 2,
+      "parent_path": "INDI.WILL",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI.WILL.NOTE",
+      "level": 2,
+      "parent_path": "INDI.WILL",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI.WILL.PLAC",
+      "level": 2,
+      "parent_path": "INDI.WILL",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI.WILL.PLAC.MAP",
+      "level": 3,
+      "parent_path": "INDI.WILL.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "INDI.WILL.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "INDI.WILL.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "INDI.WILL.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "INDI.WILL.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "INDI._DCAUSE",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_DCAUSE"
+    },
+    {
+      "context_path": "INDI._DCAUSE.DATE",
+      "level": 2,
+      "parent_path": "INDI._DCAUSE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI._DCAUSE.NOTE",
+      "level": 2,
+      "parent_path": "INDI._DCAUSE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI._DCAUSE.PLAC",
+      "level": 2,
+      "parent_path": "INDI._DCAUSE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI._EMPLOY",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_EMPLOY"
+    },
+    {
+      "context_path": "INDI._EMPLOY.DATE",
+      "level": 2,
+      "parent_path": "INDI._EMPLOY",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI._EMPLOY.NOTE",
+      "level": 2,
+      "parent_path": "INDI._EMPLOY",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI._EMPLOY.PLAC",
+      "level": 2,
+      "parent_path": "INDI._EMPLOY",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI._EMPLOY.PLAC.MAP",
+      "level": 3,
+      "parent_path": "INDI._EMPLOY.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "INDI._EMPLOY.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "INDI._EMPLOY.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "INDI._EMPLOY.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "INDI._EMPLOY.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "INDI._EMPLOY.SOUR",
+      "level": 2,
+      "parent_path": "INDI._EMPLOY",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI._EMPLOY.SOUR.DATA",
+      "level": 3,
+      "parent_path": "INDI._EMPLOY.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "INDI._EMPLOY.SOUR.DATA.TEXT",
+      "level": 4,
+      "parent_path": "INDI._EMPLOY.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TEXT"
+    },
+    {
+      "context_path": "INDI._EMPLOY.SOUR.DATA.WWW",
+      "level": 4,
+      "parent_path": "INDI._EMPLOY.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "WWW"
+    },
+    {
+      "context_path": "INDI._EMPLOY.SOUR.NOTE",
+      "level": 3,
+      "parent_path": "INDI._EMPLOY.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI._EMPLOY.SOUR.PAGE",
+      "level": 3,
+      "parent_path": "INDI._EMPLOY.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "INDI._EMPLOY.SOUR._APID",
+      "level": 3,
+      "parent_path": "INDI._EMPLOY.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_APID"
+    },
+    {
+      "context_path": "INDI._EMPLOY.SOUR._LINK",
+      "level": 3,
+      "parent_path": "INDI._EMPLOY.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_LINK"
+    },
+    {
+      "context_path": "INDI._FSID",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_FSID"
+    },
+    {
+      "context_path": "INDI._FUN",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_FUN"
+    },
+    {
+      "context_path": "INDI._FUN.DATE",
+      "level": 2,
+      "parent_path": "INDI._FUN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI._FUN.PLAC",
+      "level": 2,
+      "parent_path": "INDI._FUN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI._FUN.PLAC.MAP",
+      "level": 3,
+      "parent_path": "INDI._FUN.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "INDI._FUN.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "INDI._FUN.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "INDI._FUN.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "INDI._FUN.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "INDI._HEIG",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_HEIG"
+    },
+    {
+      "context_path": "INDI._MDCL",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_MDCL"
+    },
+    {
+      "context_path": "INDI._MILT",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_MILT"
+    },
+    {
+      "context_path": "INDI._MILT.DATE",
+      "level": 2,
+      "parent_path": "INDI._MILT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI._MILT.NOTE",
+      "level": 2,
+      "parent_path": "INDI._MILT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI._MILT.PLAC",
+      "level": 2,
+      "parent_path": "INDI._MILT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI._MILT.PLAC.MAP",
+      "level": 3,
+      "parent_path": "INDI._MILT.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "INDI._MILT.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "INDI._MILT.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "INDI._MILT.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "INDI._MILT.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "INDI._MILT.SOUR",
+      "level": 2,
+      "parent_path": "INDI._MILT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "INDI._MILT.SOUR.DATA",
+      "level": 3,
+      "parent_path": "INDI._MILT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "INDI._MILT.SOUR.DATA.TEXT",
+      "level": 4,
+      "parent_path": "INDI._MILT.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "TEXT"
+    },
+    {
+      "context_path": "INDI._MILT.SOUR.DATA.WWW",
+      "level": 4,
+      "parent_path": "INDI._MILT.SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "WWW"
+    },
+    {
+      "context_path": "INDI._MILT.SOUR.NOTE",
+      "level": 3,
+      "parent_path": "INDI._MILT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "INDI._MILT.SOUR.OBJE",
+      "level": 3,
+      "parent_path": "INDI._MILT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "INDI._MILT.SOUR.PAGE",
+      "level": 3,
+      "parent_path": "INDI._MILT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "INDI._MILT.SOUR.PAGE.CONC",
+      "level": 4,
+      "parent_path": "INDI._MILT.SOUR.PAGE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "INDI._MILT.SOUR._APID",
+      "level": 3,
+      "parent_path": "INDI._MILT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_APID"
+    },
+    {
+      "context_path": "INDI._MILT.SOUR._LINK",
+      "level": 3,
+      "parent_path": "INDI._MILT.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_LINK"
+    },
+    {
+      "context_path": "INDI._MILTID",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_MILTID"
+    },
+    {
+      "context_path": "INDI._MILTID.DATE",
+      "level": 2,
+      "parent_path": "INDI._MILTID",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "INDI._MILTID.PLAC",
+      "level": 2,
+      "parent_path": "INDI._MILTID",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "INDI._MILTID.PLAC.MAP",
+      "level": 3,
+      "parent_path": "INDI._MILTID.PLAC",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "MAP"
+    },
+    {
+      "context_path": "INDI._MILTID.PLAC.MAP.LATI",
+      "level": 4,
+      "parent_path": "INDI._MILTID.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LATI"
+    },
+    {
+      "context_path": "INDI._MILTID.PLAC.MAP.LONG",
+      "level": 4,
+      "parent_path": "INDI._MILTID.PLAC.MAP",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "LONG"
+    },
+    {
+      "context_path": "INDI._MTTAG",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_MTTAG"
+    },
+    {
+      "context_path": "INDI._PHOTO",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_PHOTO"
+    },
+    {
+      "context_path": "INDI._WEIG",
+      "level": 1,
+      "parent_path": "INDI",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "INDI",
+      "tag": "_WEIG"
+    },
+    {
+      "context_path": "NOTE",
+      "level": 0,
+      "parent_path": null,
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "NOTE",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "NOTE.CHAN",
+      "level": 1,
+      "parent_path": "NOTE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "NOTE",
+      "tag": "CHAN"
+    },
+    {
+      "context_path": "NOTE.CHAN.DATE",
+      "level": 2,
+      "parent_path": "NOTE.CHAN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "NOTE",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "NOTE.CHAN.NOTE",
+      "level": 2,
+      "parent_path": "NOTE.CHAN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "NOTE",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "NOTE.CONC",
+      "level": 1,
+      "parent_path": "NOTE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "NOTE",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "NOTE.REFN",
+      "level": 1,
+      "parent_path": "NOTE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "NOTE",
+      "tag": "REFN"
+    },
+    {
+      "context_path": "NOTE.REFN.TYPE",
+      "level": 2,
+      "parent_path": "NOTE.REFN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "NOTE",
+      "tag": "TYPE"
+    },
+    {
+      "context_path": "NOTE.RIN",
+      "level": 1,
+      "parent_path": "NOTE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "NOTE",
+      "tag": "RIN"
+    },
+    {
+      "context_path": "NOTE.SOUR",
+      "level": 1,
+      "parent_path": "NOTE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "NOTE",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "NOTE.SOUR.DATA",
+      "level": 2,
+      "parent_path": "NOTE.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "NOTE",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "NOTE.SOUR.EVEN",
+      "level": 2,
+      "parent_path": "NOTE.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "NOTE",
+      "tag": "EVEN"
+    },
+    {
+      "context_path": "NOTE.SOUR.NOTE",
+      "level": 2,
+      "parent_path": "NOTE.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "NOTE",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "NOTE.SOUR.OBJE",
+      "level": 2,
+      "parent_path": "NOTE.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "NOTE",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "NOTE.SOUR.PAGE",
+      "level": 2,
+      "parent_path": "NOTE.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "NOTE",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "NOTE.SOUR.QUAY",
+      "level": 2,
+      "parent_path": "NOTE.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "NOTE",
+      "tag": "QUAY"
+    },
+    {
+      "context_path": "OBJE",
+      "level": 0,
+      "parent_path": null,
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "OBJE.CHAN",
+      "level": 1,
+      "parent_path": "OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "CHAN"
+    },
+    {
+      "context_path": "OBJE.CHAN.DATE",
+      "level": 2,
+      "parent_path": "OBJE.CHAN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "OBJE.CHAN.NOTE",
+      "level": 2,
+      "parent_path": "OBJE.CHAN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "OBJE.DATE",
+      "level": 1,
+      "parent_path": "OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "OBJE.FILE",
+      "level": 1,
+      "parent_path": "OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "FILE"
+    },
+    {
+      "context_path": "OBJE.FILE.FORM",
+      "level": 2,
+      "parent_path": "OBJE.FILE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "FORM"
+    },
+    {
+      "context_path": "OBJE.FILE.FORM.TYPE",
+      "level": 3,
+      "parent_path": "OBJE.FILE.FORM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "TYPE"
+    },
+    {
+      "context_path": "OBJE.FILE.FORM._HGHT",
+      "level": 3,
+      "parent_path": "OBJE.FILE.FORM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_HGHT"
+    },
+    {
+      "context_path": "OBJE.FILE.FORM._MTYPE",
+      "level": 3,
+      "parent_path": "OBJE.FILE.FORM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_MTYPE"
+    },
+    {
+      "context_path": "OBJE.FILE.FORM._SIZE",
+      "level": 3,
+      "parent_path": "OBJE.FILE.FORM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_SIZE"
+    },
+    {
+      "context_path": "OBJE.FILE.FORM._STYPE",
+      "level": 3,
+      "parent_path": "OBJE.FILE.FORM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_STYPE"
+    },
+    {
+      "context_path": "OBJE.FILE.FORM._WDTH",
+      "level": 3,
+      "parent_path": "OBJE.FILE.FORM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_WDTH"
+    },
+    {
+      "context_path": "OBJE.FILE.TITL",
+      "level": 2,
+      "parent_path": "OBJE.FILE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "TITL"
+    },
+    {
+      "context_path": "OBJE.FILE._DATE",
+      "level": 2,
+      "parent_path": "OBJE.FILE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_DATE"
+    },
+    {
+      "context_path": "OBJE.FILE._TEXT",
+      "level": 2,
+      "parent_path": "OBJE.FILE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_TEXT"
+    },
+    {
+      "context_path": "OBJE.FILE._TEXT.CONC",
+      "level": 3,
+      "parent_path": "OBJE.FILE._TEXT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "OBJE.FORM",
+      "level": 1,
+      "parent_path": "OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "FORM"
+    },
+    {
+      "context_path": "OBJE.NOTE",
+      "level": 1,
+      "parent_path": "OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "OBJE.PLAC",
+      "level": 1,
+      "parent_path": "OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "OBJE.REFN",
+      "level": 1,
+      "parent_path": "OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "REFN"
+    },
+    {
+      "context_path": "OBJE.REFN.TYPE",
+      "level": 2,
+      "parent_path": "OBJE.REFN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "TYPE"
+    },
+    {
+      "context_path": "OBJE.RIN",
+      "level": 1,
+      "parent_path": "OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "RIN"
+    },
+    {
+      "context_path": "OBJE.SOUR",
+      "level": 1,
+      "parent_path": "OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "OBJE.SOUR.DATA",
+      "level": 2,
+      "parent_path": "OBJE.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "OBJE.SOUR.EVEN",
+      "level": 2,
+      "parent_path": "OBJE.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "EVEN"
+    },
+    {
+      "context_path": "OBJE.SOUR.NOTE",
+      "level": 2,
+      "parent_path": "OBJE.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "OBJE.SOUR.OBJE",
+      "level": 2,
+      "parent_path": "OBJE.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "OBJE.SOUR.PAGE",
+      "level": 2,
+      "parent_path": "OBJE.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "PAGE"
+    },
+    {
+      "context_path": "OBJE.SOUR.QUAY",
+      "level": 2,
+      "parent_path": "OBJE.SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "QUAY"
+    },
+    {
+      "context_path": "OBJE.TITL",
+      "level": 1,
+      "parent_path": "OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "TITL"
+    },
+    {
+      "context_path": "OBJE._ATL",
+      "level": 1,
+      "parent_path": "OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_ATL"
+    },
+    {
+      "context_path": "OBJE._CLON",
+      "level": 1,
+      "parent_path": "OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_CLON"
+    },
+    {
+      "context_path": "OBJE._CLON._DATE",
+      "level": 2,
+      "parent_path": "OBJE._CLON",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_DATE"
+    },
+    {
+      "context_path": "OBJE._CLON._OID",
+      "level": 2,
+      "parent_path": "OBJE._CLON",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_OID"
+    },
+    {
+      "context_path": "OBJE._CLON._PID",
+      "level": 2,
+      "parent_path": "OBJE._CLON",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_PID"
+    },
+    {
+      "context_path": "OBJE._CLON._TID",
+      "level": 2,
+      "parent_path": "OBJE._CLON",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_TID"
+    },
+    {
+      "context_path": "OBJE._CLON._USER",
+      "level": 2,
+      "parent_path": "OBJE._CLON",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_USER"
+    },
+    {
+      "context_path": "OBJE._CLON._USER._ENCR",
+      "level": 3,
+      "parent_path": "OBJE._CLON._USER",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_ENCR"
+    },
+    {
+      "context_path": "OBJE._CREA",
+      "level": 1,
+      "parent_path": "OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_CREA"
+    },
+    {
+      "context_path": "OBJE._DSCR",
+      "level": 1,
+      "parent_path": "OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_DSCR"
+    },
+    {
+      "context_path": "OBJE._DSCR.CONC",
+      "level": 2,
+      "parent_path": "OBJE._DSCR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "OBJE._DSCR.CONT",
+      "level": 2,
+      "parent_path": "OBJE._DSCR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "CONT"
+    },
+    {
+      "context_path": "OBJE._META",
+      "level": 1,
+      "parent_path": "OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_META"
+    },
+    {
+      "context_path": "OBJE._META.CONC",
+      "level": 2,
+      "parent_path": "OBJE._META",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "OBJE._META.CONT",
+      "level": 2,
+      "parent_path": "OBJE._META",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "CONT"
+    },
+    {
+      "context_path": "OBJE._MSER",
+      "level": 1,
+      "parent_path": "OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_MSER"
+    },
+    {
+      "context_path": "OBJE._MSER._LKID",
+      "level": 2,
+      "parent_path": "OBJE._MSER",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_LKID"
+    },
+    {
+      "context_path": "OBJE._MSER._PARM",
+      "level": 2,
+      "parent_path": "OBJE._MSER",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_PARM"
+    },
+    {
+      "context_path": "OBJE._OID",
+      "level": 1,
+      "parent_path": "OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_OID"
+    },
+    {
+      "context_path": "OBJE._ORIG",
+      "level": 1,
+      "parent_path": "OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_ORIG"
+    },
+    {
+      "context_path": "OBJE._ORIG._URL",
+      "level": 2,
+      "parent_path": "OBJE._ORIG",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_URL"
+    },
+    {
+      "context_path": "OBJE._USER",
+      "level": 1,
+      "parent_path": "OBJE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_USER"
+    },
+    {
+      "context_path": "OBJE._USER._ENCR",
+      "level": 2,
+      "parent_path": "OBJE._USER",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "OBJE",
+      "tag": "_ENCR"
+    },
+    {
+      "context_path": "REPO",
+      "level": 0,
+      "parent_path": null,
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "REPO"
+    },
+    {
+      "context_path": "REPO.ADDR",
+      "level": 1,
+      "parent_path": "REPO",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "ADDR"
+    },
+    {
+      "context_path": "REPO.ADDR.ADR1",
+      "level": 2,
+      "parent_path": "REPO.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "ADR1"
+    },
+    {
+      "context_path": "REPO.ADDR.ADR2",
+      "level": 2,
+      "parent_path": "REPO.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "ADR2"
+    },
+    {
+      "context_path": "REPO.ADDR.ADR3",
+      "level": 2,
+      "parent_path": "REPO.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "ADR3"
+    },
+    {
+      "context_path": "REPO.ADDR.CITY",
+      "level": 2,
+      "parent_path": "REPO.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "CITY"
+    },
+    {
+      "context_path": "REPO.ADDR.CONT",
+      "level": 2,
+      "parent_path": "REPO.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "CONT"
+    },
+    {
+      "context_path": "REPO.ADDR.CTRY",
+      "level": 2,
+      "parent_path": "REPO.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "CTRY"
+    },
+    {
+      "context_path": "REPO.ADDR.POST",
+      "level": 2,
+      "parent_path": "REPO.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "POST"
+    },
+    {
+      "context_path": "REPO.ADDR.STAE",
+      "level": 2,
+      "parent_path": "REPO.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "STAE"
+    },
+    {
+      "context_path": "REPO.CHAN",
+      "level": 1,
+      "parent_path": "REPO",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "CHAN"
+    },
+    {
+      "context_path": "REPO.CHAN.DATE",
+      "level": 2,
+      "parent_path": "REPO.CHAN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "REPO.CHAN.NOTE",
+      "level": 2,
+      "parent_path": "REPO.CHAN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "REPO.EMAIL",
+      "level": 1,
+      "parent_path": "REPO",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "EMAIL"
+    },
+    {
+      "context_path": "REPO.NAME",
+      "level": 1,
+      "parent_path": "REPO",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "NAME"
+    },
+    {
+      "context_path": "REPO.NOTE",
+      "level": 1,
+      "parent_path": "REPO",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "REPO.PHON",
+      "level": 1,
+      "parent_path": "REPO",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "PHON"
+    },
+    {
+      "context_path": "REPO.REFN",
+      "level": 1,
+      "parent_path": "REPO",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "REFN"
+    },
+    {
+      "context_path": "REPO.REFN.TYPE",
+      "level": 2,
+      "parent_path": "REPO.REFN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "TYPE"
+    },
+    {
+      "context_path": "REPO.RIN",
+      "level": 1,
+      "parent_path": "REPO",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "REPO",
+      "tag": "RIN"
+    },
+    {
+      "context_path": "SOUR",
+      "level": 0,
+      "parent_path": null,
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "SOUR"
+    },
+    {
+      "context_path": "SOUR.ABBR",
+      "level": 1,
+      "parent_path": "SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "ABBR"
+    },
+    {
+      "context_path": "SOUR.AUTH",
+      "level": 1,
+      "parent_path": "SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "AUTH"
+    },
+    {
+      "context_path": "SOUR.CALN",
+      "level": 1,
+      "parent_path": "SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "CALN"
+    },
+    {
+      "context_path": "SOUR.CHAN",
+      "level": 1,
+      "parent_path": "SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "CHAN"
+    },
+    {
+      "context_path": "SOUR.CHAN.DATE",
+      "level": 2,
+      "parent_path": "SOUR.CHAN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "SOUR.CHAN.NOTE",
+      "level": 2,
+      "parent_path": "SOUR.CHAN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "SOUR.DATA",
+      "level": 1,
+      "parent_path": "SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "DATA"
+    },
+    {
+      "context_path": "SOUR.DATA.AGNC",
+      "level": 2,
+      "parent_path": "SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "AGNC"
+    },
+    {
+      "context_path": "SOUR.DATA.EVEN",
+      "level": 2,
+      "parent_path": "SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "EVEN"
+    },
+    {
+      "context_path": "SOUR.DATA.EVEN.DATE",
+      "level": 3,
+      "parent_path": "SOUR.DATA.EVEN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "SOUR.DATA.EVEN.PLAC",
+      "level": 3,
+      "parent_path": "SOUR.DATA.EVEN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "SOUR.DATA.NOTE",
+      "level": 2,
+      "parent_path": "SOUR.DATA",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "SOUR.NOTE",
+      "level": 1,
+      "parent_path": "SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "SOUR.NOTE.CONC",
+      "level": 2,
+      "parent_path": "SOUR.NOTE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "SOUR.NOTE.CONT",
+      "level": 2,
+      "parent_path": "SOUR.NOTE",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "CONT"
+    },
+    {
+      "context_path": "SOUR.OBJE",
+      "level": 1,
+      "parent_path": "SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "SOUR.PUBL",
+      "level": 1,
+      "parent_path": "SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "PUBL"
+    },
+    {
+      "context_path": "SOUR.PUBL.CONC",
+      "level": 2,
+      "parent_path": "SOUR.PUBL",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "CONC"
+    },
+    {
+      "context_path": "SOUR.PUBL.DATE",
+      "level": 2,
+      "parent_path": "SOUR.PUBL",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "SOUR.PUBL.PLAC",
+      "level": 2,
+      "parent_path": "SOUR.PUBL",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "PLAC"
+    },
+    {
+      "context_path": "SOUR.REFN",
+      "level": 1,
+      "parent_path": "SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "REFN"
+    },
+    {
+      "context_path": "SOUR.REFN.TYPE",
+      "level": 2,
+      "parent_path": "SOUR.REFN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "TYPE"
+    },
+    {
+      "context_path": "SOUR.REPO",
+      "level": 1,
+      "parent_path": "SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "REPO"
+    },
+    {
+      "context_path": "SOUR.REPO.CALN",
+      "level": 2,
+      "parent_path": "SOUR.REPO",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "CALN"
+    },
+    {
+      "context_path": "SOUR.REPO.NOTE",
+      "level": 2,
+      "parent_path": "SOUR.REPO",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "SOUR.RIN",
+      "level": 1,
+      "parent_path": "SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "RIN"
+    },
+    {
+      "context_path": "SOUR.TEXT",
+      "level": 1,
+      "parent_path": "SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "TEXT"
+    },
+    {
+      "context_path": "SOUR.TITL",
+      "level": 1,
+      "parent_path": "SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "TITL"
+    },
+    {
+      "context_path": "SOUR._APID",
+      "level": 1,
+      "parent_path": "SOUR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SOUR",
+      "tag": "_APID"
+    },
+    {
+      "context_path": "SUBM",
+      "level": 0,
+      "parent_path": null,
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "SUBM"
+    },
+    {
+      "context_path": "SUBM.ADDR",
+      "level": 1,
+      "parent_path": "SUBM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "ADDR"
+    },
+    {
+      "context_path": "SUBM.ADDR.ADR1",
+      "level": 2,
+      "parent_path": "SUBM.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "ADR1"
+    },
+    {
+      "context_path": "SUBM.ADDR.ADR2",
+      "level": 2,
+      "parent_path": "SUBM.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "ADR2"
+    },
+    {
+      "context_path": "SUBM.ADDR.ADR3",
+      "level": 2,
+      "parent_path": "SUBM.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "ADR3"
+    },
+    {
+      "context_path": "SUBM.ADDR.CITY",
+      "level": 2,
+      "parent_path": "SUBM.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "CITY"
+    },
+    {
+      "context_path": "SUBM.ADDR.CONT",
+      "level": 2,
+      "parent_path": "SUBM.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "CONT"
+    },
+    {
+      "context_path": "SUBM.ADDR.CTRY",
+      "level": 2,
+      "parent_path": "SUBM.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "CTRY"
+    },
+    {
+      "context_path": "SUBM.ADDR.POST",
+      "level": 2,
+      "parent_path": "SUBM.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "POST"
+    },
+    {
+      "context_path": "SUBM.ADDR.STAE",
+      "level": 2,
+      "parent_path": "SUBM.ADDR",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "STAE"
+    },
+    {
+      "context_path": "SUBM.CHAN",
+      "level": 1,
+      "parent_path": "SUBM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "CHAN"
+    },
+    {
+      "context_path": "SUBM.CHAN.DATE",
+      "level": 2,
+      "parent_path": "SUBM.CHAN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "SUBM.CHAN.NOTE",
+      "level": 2,
+      "parent_path": "SUBM.CHAN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "SUBM.EMAI",
+      "expanded_from": "MANUAL_SEED",
+      "level": 1,
+      "max": "M",
+      "min": 0,
+      "parent_path": "SUBM",
+      "provenance": "SEEDED_MISSING_TAG",
+      "record_root": "SUBM",
+      "source_production": "MANUAL_SEED",
+      "tag": "EMAI"
+    },
+    {
+      "context_path": "SUBM.LANG",
+      "level": 1,
+      "parent_path": "SUBM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "LANG"
+    },
+    {
+      "context_path": "SUBM.NAME",
+      "level": 1,
+      "parent_path": "SUBM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "NAME"
+    },
+    {
+      "context_path": "SUBM.NOTE",
+      "level": 1,
+      "parent_path": "SUBM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "SUBM.OBJE",
+      "level": 1,
+      "parent_path": "SUBM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "OBJE"
+    },
+    {
+      "context_path": "SUBM.PHON",
+      "level": 1,
+      "parent_path": "SUBM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "PHON"
+    },
+    {
+      "context_path": "SUBM.RFN",
+      "level": 1,
+      "parent_path": "SUBM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "RFN"
+    },
+    {
+      "context_path": "SUBM.RIN",
+      "level": 1,
+      "parent_path": "SUBM",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBM",
+      "tag": "RIN"
+    },
+    {
+      "context_path": "SUBN",
+      "level": 0,
+      "parent_path": null,
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBN",
+      "tag": "SUBN"
+    },
+    {
+      "context_path": "SUBN.ANCE",
+      "level": 1,
+      "parent_path": "SUBN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBN",
+      "tag": "ANCE"
+    },
+    {
+      "context_path": "SUBN.CHAN",
+      "level": 1,
+      "parent_path": "SUBN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBN",
+      "tag": "CHAN"
+    },
+    {
+      "context_path": "SUBN.CHAN.DATE",
+      "level": 2,
+      "parent_path": "SUBN.CHAN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBN",
+      "tag": "DATE"
+    },
+    {
+      "context_path": "SUBN.CHAN.NOTE",
+      "level": 2,
+      "parent_path": "SUBN.CHAN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBN",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "SUBN.DESC",
+      "level": 1,
+      "parent_path": "SUBN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBN",
+      "tag": "DESC"
+    },
+    {
+      "context_path": "SUBN.FAMF",
+      "level": 1,
+      "parent_path": "SUBN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBN",
+      "tag": "FAMF"
+    },
+    {
+      "context_path": "SUBN.NOTE",
+      "level": 1,
+      "parent_path": "SUBN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBN",
+      "tag": "NOTE"
+    },
+    {
+      "context_path": "SUBN.ORDI",
+      "level": 1,
+      "parent_path": "SUBN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBN",
+      "tag": "ORDI"
+    },
+    {
+      "context_path": "SUBN.RIN",
+      "level": 1,
+      "parent_path": "SUBN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBN",
+      "tag": "RIN"
+    },
+    {
+      "context_path": "SUBN.SUBM",
+      "level": 1,
+      "parent_path": "SUBN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBN",
+      "tag": "SUBM"
+    },
+    {
+      "context_path": "SUBN.TEMP",
+      "level": 1,
+      "parent_path": "SUBN",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "SUBN",
+      "tag": "TEMP"
+    },
+    {
+      "context_path": "TRLR",
+      "level": 0,
+      "parent_path": null,
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "TRLR",
+      "tag": "TRLR"
+    },
+    {
+      "context_path": "_MTCAT",
+      "level": 0,
+      "parent_path": null,
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "_MTCAT",
+      "tag": "_MTCAT"
+    },
+    {
+      "context_path": "_MTCAT.NAME",
+      "level": 1,
+      "parent_path": "_MTCAT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "_MTCAT",
+      "tag": "NAME"
+    },
+    {
+      "context_path": "_MTCAT.RIN",
+      "level": 1,
+      "parent_path": "_MTCAT",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "_MTCAT",
+      "tag": "RIN"
+    },
+    {
+      "context_path": "_MTTAG",
+      "level": 0,
+      "parent_path": null,
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "_MTTAG",
+      "tag": "_MTTAG"
+    },
+    {
+      "context_path": "_MTTAG.NAME",
+      "level": 1,
+      "parent_path": "_MTTAG",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "_MTTAG",
+      "tag": "NAME"
+    },
+    {
+      "context_path": "_MTTAG.RIN",
+      "level": 1,
+      "parent_path": "_MTTAG",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "_MTTAG",
+      "tag": "RIN"
+    },
+    {
+      "context_path": "_MTTAG._MTCAT",
+      "level": 1,
+      "parent_path": "_MTTAG",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "_MTTAG",
+      "tag": "_MTCAT"
+    },
+    {
+      "context_path": "_MTTAG._VISI",
+      "level": 1,
+      "parent_path": "_MTTAG",
+      "provenance": "CANONICAL_BACKBONE_PREFIX_GRAPH",
+      "record_root": "_MTTAG",
+      "tag": "_VISI"
+    }
+  ]
+}

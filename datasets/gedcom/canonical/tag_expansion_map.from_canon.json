@@ -1,0 +1,205 @@
+{
+  "map": {
+    "ADDR": {
+      "ADR1": "ADDRESS_STRUCTURE",
+      "ADR2": "ADDRESS_STRUCTURE",
+      "ADR3": "ADDRESS_STRUCTURE",
+      "CITY": "ADDRESS_STRUCTURE",
+      "CONT": "ADDRESS_STRUCTURE",
+      "CTRY": "ADDRESS_STRUCTURE",
+      "POST": "ADDRESS_STRUCTURE",
+      "STAE": "ADDRESS_STRUCTURE"
+    },
+    "ANUL": {
+      "HUSB": "FAMILY_EVENT_STRUCTURE"
+    },
+    "ASSO": {
+      "NOTE": "ASSOCIATION_STRUCTURE",
+      "RELA": "ASSOCIATION_STRUCTURE",
+      "SOUR": "ASSOCIATION_STRUCTURE"
+    },
+    "BAPL": {
+      "DATE": "LDS_INDIVIDUAL_ORDINANCE",
+      "NOTE": "LDS_INDIVIDUAL_ORDINANCE",
+      "PLAC": "LDS_INDIVIDUAL_ORDINANCE",
+      "SOUR": "LDS_INDIVIDUAL_ORDINANCE",
+      "STAT": "LDS_INDIVIDUAL_ORDINANCE",
+      "TEMP": "LDS_INDIVIDUAL_ORDINANCE"
+    },
+    "BIRT": {
+      "AGE": "INDIVIDUAL_EVENT_STRUCTURE",
+      "FAMC": "INDIVIDUAL_EVENT_STRUCTURE"
+    },
+    "CAST": {
+      "AGE": "INDIVIDUAL_ATTRIBUTE_STRUCTURE"
+    },
+    "CHAN": {
+      "DATE": "CHANGE_DATE",
+      "NOTE": "CHANGE_DATE"
+    },
+    "CHAR": {
+      "VERS": "HEADER"
+    },
+    "DATA": {
+      "AGNC": "SOURCE_RECORD",
+      "EVEN": "SOURCE_RECORD",
+      "NOTE": "SOURCE_RECORD"
+    },
+    "DATE": {
+      "TIME": "HEADER"
+    },
+    "FAM": {
+      "ANUL": "FAM_RECORD",
+      "CHAN": "FAM_RECORD",
+      "CHIL": "FAM_RECORD",
+      "HUSB": "FAM_RECORD",
+      "NCHI": "FAM_RECORD",
+      "NOTE": "FAM_RECORD",
+      "OBJE": "FAM_RECORD",
+      "REFN": "FAM_RECORD",
+      "RESN": "FAM_RECORD",
+      "RIN": "FAM_RECORD",
+      "SLGS": "FAM_RECORD",
+      "SOUR": "FAM_RECORD",
+      "SUBM": "FAM_RECORD",
+      "WIFE": "FAM_RECORD"
+    },
+    "FAMC": {
+      "NOTE": "CHILD_TO_FAMILY_LINK",
+      "PEDI": "CHILD_TO_FAMILY_LINK",
+      "STAT": "CHILD_TO_FAMILY_LINK"
+    },
+    "FAMS": {
+      "NOTE": "SPOUSE_TO_FAMILY_LINK"
+    },
+    "FILE": {
+      "FORM": "MULTIMEDIA_RECORD",
+      "TITL": "MULTIMEDIA_RECORD"
+    },
+    "GEDC": {
+      "FORM": "HEADER",
+      "VERS": "HEADER"
+    },
+    "HEAD": {
+      "CHAR": "HEADER",
+      "COPR": "HEADER",
+      "DATE": "HEADER",
+      "DEST": "HEADER",
+      "FILE": "HEADER",
+      "GEDC": "HEADER",
+      "LANG": "HEADER",
+      "NOTE": "HEADER",
+      "PLAC": "HEADER",
+      "SOUR": "HEADER",
+      "SUBM": "HEADER",
+      "SUBN": "HEADER"
+    },
+    "INDI": {
+      "AFN": "INDIVIDUAL_RECORD",
+      "ALIA": "INDIVIDUAL_RECORD",
+      "ANCI": "INDIVIDUAL_RECORD",
+      "ASSO": "INDIVIDUAL_RECORD",
+      "BAPL": "INDIVIDUAL_RECORD",
+      "BIRT": "INDIVIDUAL_RECORD",
+      "CAST": "INDIVIDUAL_RECORD",
+      "CHAN": "INDIVIDUAL_RECORD",
+      "DESI": "INDIVIDUAL_RECORD",
+      "FAMC": "INDIVIDUAL_RECORD",
+      "FAMS": "INDIVIDUAL_RECORD",
+      "NAME": "INDIVIDUAL_RECORD",
+      "NOTE": "INDIVIDUAL_RECORD",
+      "OBJE": "INDIVIDUAL_RECORD",
+      "REFN": "INDIVIDUAL_RECORD",
+      "RESN": "INDIVIDUAL_RECORD",
+      "RFN": "INDIVIDUAL_RECORD",
+      "RIN": "INDIVIDUAL_RECORD",
+      "SEX": "INDIVIDUAL_RECORD",
+      "SOUR": "INDIVIDUAL_RECORD",
+      "SUBM": "INDIVIDUAL_RECORD"
+    },
+    "NAME": {
+      "FONE": "PERSONAL_NAME_STRUCTURE",
+      "NPFX": "PERSONAL_NAME_STRUCTURE",
+      "ROMN": "PERSONAL_NAME_STRUCTURE",
+      "TYPE": "PERSONAL_NAME_STRUCTURE"
+    },
+    "NOTE": {
+      "CHAN": "NOTE_RECORD",
+      "REFN": "NOTE_RECORD",
+      "RIN": "NOTE_RECORD",
+      "SOUR": "NOTE_RECORD"
+    },
+    "OBJE": {
+      "CHAN": "MULTIMEDIA_RECORD",
+      "FILE": "MULTIMEDIA_RECORD",
+      "NOTE": "MULTIMEDIA_RECORD",
+      "REFN": "MULTIMEDIA_RECORD",
+      "RIN": "MULTIMEDIA_RECORD",
+      "SOUR": "MULTIMEDIA_RECORD"
+    },
+    "PLAC": {
+      "FORM": "HEADER"
+    },
+    "REFN": {
+      "TYPE": "FAM_RECORD"
+    },
+    "REPO": {
+      "ADDR": "REPOSITORY_RECORD",
+      "CALN": "SOURCE_REPOSITORY_CITATION",
+      "CHAN": "REPOSITORY_RECORD",
+      "NAME": "REPOSITORY_RECORD",
+      "NOTE": "REPOSITORY_RECORD",
+      "REFN": "REPOSITORY_RECORD",
+      "RIN": "REPOSITORY_RECORD"
+    },
+    "SLGS": {
+      "DATE": "LDS_SPOUSE_SEALING",
+      "NOTE": "LDS_SPOUSE_SEALING",
+      "PLAC": "LDS_SPOUSE_SEALING",
+      "SOUR": "LDS_SPOUSE_SEALING",
+      "STAT": "LDS_SPOUSE_SEALING",
+      "TEMP": "LDS_SPOUSE_SEALING"
+    },
+    "SOUR": {
+      "ABBR": "SOURCE_RECORD",
+      "AUTH": "SOURCE_RECORD",
+      "CHAN": "SOURCE_RECORD",
+      "CORP": "HEADER",
+      "DATA": "SOURCE_CITATION",
+      "EVEN": "SOURCE_CITATION",
+      "NAME": "HEADER",
+      "NOTE": "SOURCE_CITATION",
+      "OBJE": "SOURCE_CITATION",
+      "PAGE": "SOURCE_CITATION",
+      "PUBL": "SOURCE_RECORD",
+      "QUAY": "SOURCE_CITATION",
+      "REFN": "SOURCE_RECORD",
+      "REPO": "SOURCE_RECORD",
+      "RIN": "SOURCE_RECORD",
+      "TEXT": "SOURCE_RECORD",
+      "TITL": "SOURCE_RECORD",
+      "VERS": "HEADER"
+    },
+    "SUBM": {
+      "ADDR": "SUBMITTER_RECORD",
+      "CHAN": "SUBMITTER_RECORD",
+      "LANG": "SUBMITTER_RECORD",
+      "NAME": "SUBMITTER_RECORD",
+      "NOTE": "SUBMITTER_RECORD",
+      "OBJE": "SUBMITTER_RECORD",
+      "RFN": "SUBMITTER_RECORD",
+      "RIN": "SUBMITTER_RECORD"
+    },
+    "SUBN": {
+      "ANCE": "SUBMISSION_RECORD",
+      "CHAN": "SUBMISSION_RECORD",
+      "DESC": "SUBMISSION_RECORD",
+      "FAMF": "SUBMISSION_RECORD",
+      "NOTE": "SUBMISSION_RECORD",
+      "ORDI": "SUBMISSION_RECORD",
+      "RIN": "SUBMISSION_RECORD",
+      "SUBM": "SUBMISSION_RECORD",
+      "TEMP": "SUBMISSION_RECORD"
+    }
+  }
+}

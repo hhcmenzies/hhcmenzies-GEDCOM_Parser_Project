@@ -1,0 +1,4092 @@
+{
+  "meta": {
+    "patched_with_tagmap": {
+      "coverage": 0.16635859519408502,
+      "edges_total": 541,
+      "patched_edges": 90,
+      "tagmap_source": "datasets/gedcom/canonical/tag_expansion_map.from_canon.json"
+    },
+    "source": "gedcom55_structures.json_draft_graph"
+  },
+  "productions": {
+    "ADDR": {
+      "children": [
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADR1"
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADR2"
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADR3"
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CITY"
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CTRY"
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "POST"
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "STAE"
+        }
+      ]
+    },
+    "ASSO": {
+      "children": [
+        {
+          "child_production": "ASSOCIATION_STRUCTURE",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "ASSOCIATION_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RELA"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ROLE"
+        },
+        {
+          "child_production": "ASSOCIATION_STRUCTURE",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "CHAN": {
+      "children": [
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        }
+      ]
+    },
+    "CHAN.DATE": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TIME"
+        }
+      ]
+    },
+    "FAM": {
+      "children": [
+        {
+          "child_production": "FAM_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "ANUL"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "CENS"
+        },
+        {
+          "child_production": "FAM_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CHAN"
+        },
+        {
+          "child_production": "FAM_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "CHIL"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "DIV"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "EVEN"
+        },
+        {
+          "child_production": "FAM_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "HUSB"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "MARR"
+        },
+        {
+          "child_production": "FAM_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "NCHI"
+        },
+        {
+          "child_production": "FAM_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "FAM_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "FAM_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "REFN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "RESI"
+        },
+        {
+          "child_production": "FAM_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": "FAM_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SLGS"
+        },
+        {
+          "child_production": "FAM_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": "FAM_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "WIFE"
+        }
+      ]
+    },
+    "FAM.ANUL": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "FAM.CENS": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "FAM.DIV": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "FAM.EVEN": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "FAM.MARR": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "FAM.RESI": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "FAM.SLGS": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "HEAD": {
+      "children": [
+        {
+          "child_production": "HEADER",
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "CHAR"
+        },
+        {
+          "child_production": "HEADER",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "COPR"
+        },
+        {
+          "child_production": "HEADER",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "HEADER",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DEST"
+        },
+        {
+          "child_production": "HEADER",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "FILE"
+        },
+        {
+          "child_production": "HEADER",
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "GEDC"
+        },
+        {
+          "child_production": "HEADER",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "LANG"
+        },
+        {
+          "child_production": "HEADER",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "HEADER",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "HEADER",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": "HEADER",
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "SUBM"
+        },
+        {
+          "child_production": "HEADER",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "SUBN"
+        }
+      ]
+    },
+    "HEAD.DATE": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TIME"
+        }
+      ]
+    },
+    "HEAD.GEDC": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "FORM"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "VERS"
+        }
+      ]
+    },
+    "HEAD.PLAC": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "FORM"
+        }
+      ]
+    },
+    "HEAD.SOUR": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CORP"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "NAME"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "VERS"
+        }
+      ]
+    },
+    "HEAD.SOUR.CORP": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "EMAIL"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "FAX"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "PHON"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "HEAD.SOUR.DATA": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        }
+      ]
+    },
+    "HEAD.SOUR.DATA.DATE": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TIME"
+        }
+      ]
+    },
+    "INDI": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "ADOP"
+        },
+        {
+          "child_production": "INDIVIDUAL_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "ALIA"
+        },
+        {
+          "child_production": "INDIVIDUAL_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "ANCI"
+        },
+        {
+          "child_production": "INDIVIDUAL_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "ASSO"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "BAPM"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "BARM"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "BASM"
+        },
+        {
+          "child_production": "INDIVIDUAL_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "BIRT"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "BLES"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "BURI"
+        },
+        {
+          "child_production": "INDIVIDUAL_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "CAST"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "CENS"
+        },
+        {
+          "child_production": "INDIVIDUAL_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CHAN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "CHRA"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "CONF"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "CREM"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "DEAT"
+        },
+        {
+          "child_production": "INDIVIDUAL_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "DESI"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "DSCR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "EDUC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "EMIG"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "EVEN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "FACT"
+        },
+        {
+          "child_production": "INDIVIDUAL_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "FAMC"
+        },
+        {
+          "child_production": "INDIVIDUAL_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "FAMS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "FCOM"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "GRAD"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "IDNO"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "IMMI"
+        },
+        {
+          "child_production": "INDIVIDUAL_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NAME"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NATI"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NATU"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NCHI"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NMR"
+        },
+        {
+          "child_production": "INDIVIDUAL_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDIVIDUAL_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OCCU"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "ORDN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "PROB"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "PROP"
+        },
+        {
+          "child_production": "INDIVIDUAL_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "REFN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "RELI"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "RESI"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "RETI"
+        },
+        {
+          "child_production": "INDIVIDUAL_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": "INDIVIDUAL_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "SEX"
+        },
+        {
+          "child_production": "INDIVIDUAL_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SSN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "TITL"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "WILL"
+        }
+      ]
+    },
+    "INDI.ADOP": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.BAPL": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.BAPM": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.BARM": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.BASM": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.BIRT": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.BLES": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.BURI": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.CENS": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.CHRA": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.CONF": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.CONL": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.CREM": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.DEAT": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.EMIG": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.ENDL": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.EVEN": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.FAMC": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PEDI"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "STAT"
+        }
+      ]
+    },
+    "INDI.FAMS": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        }
+      ]
+    },
+    "INDI.FCOM": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.GRAD": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.IMMI": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.NATU": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.ORDN": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.PROB": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.RESI": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.RETI": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.SLGC": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.SLGS": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.WILL": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "NAME": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "GIVN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NICK"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "PERSONAL_NAME_STRUCTURE",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NPFX"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NSFX"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SPFX"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SURN"
+        }
+      ]
+    },
+    "NOTE": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "CONC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "CONT"
+        },
+        {
+          "child_production": "NOTE_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "REFN"
+        },
+        {
+          "child_production": "NOTE_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": "NOTE_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "OBJE": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "BLOB"
+        },
+        {
+          "child_production": "MULTIMEDIA_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "FILE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "FORM"
+        },
+        {
+          "child_production": "MULTIMEDIA_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "MULTIMEDIA_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "REFN"
+        },
+        {
+          "child_production": "MULTIMEDIA_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TITL"
+        }
+      ]
+    },
+    "OBJE.FILE": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "FORM"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TITL"
+        }
+      ]
+    },
+    "REPO": {
+      "children": [
+        {
+          "child_production": "REPOSITORY_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "EMAIL"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "FAX"
+        },
+        {
+          "child_production": "REPOSITORY_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "NAME"
+        },
+        {
+          "child_production": "REPOSITORY_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "PHON"
+        },
+        {
+          "child_production": "REPOSITORY_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "REFN"
+        },
+        {
+          "child_production": "REPOSITORY_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "SOUR": {
+      "children": [
+        {
+          "child_production": "SOURCE_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ABBR"
+        },
+        {
+          "child_production": "SOURCE_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AUTH"
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "SOURCE_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PUBL"
+        },
+        {
+          "child_production": "SOURCE_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "REFN"
+        },
+        {
+          "child_production": "SOURCE_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "REPO"
+        },
+        {
+          "child_production": "SOURCE_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": "SOURCE_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TEXT"
+        },
+        {
+          "child_production": "SOURCE_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TITL"
+        }
+      ]
+    },
+    "SOUR.DATA": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "EVEN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TEXT"
+        }
+      ]
+    },
+    "SOUR.DATA.EVEN": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "SOUR.REPO": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "CALN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        }
+      ]
+    },
+    "SOUR.REPO.CALN": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "MEDI"
+        }
+      ]
+    },
+    "SOURCIT": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "EVEN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "QUAY"
+        }
+      ]
+    },
+    "SOURCIT.DATA": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "TEXT"
+        }
+      ]
+    },
+    "SOURCIT.DATA.DATE": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TIME"
+        }
+      ]
+    },
+    "SOURCIT.EVEN": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ROLE"
+        }
+      ]
+    },
+    "SUBM": {
+      "children": [
+        {
+          "child_production": "SUBMITTER_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "EMAIL"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "FAX"
+        },
+        {
+          "child_production": "SUBMITTER_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "LANG"
+        },
+        {
+          "child_production": "SUBMITTER_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "NAME"
+        },
+        {
+          "child_production": "SUBMITTER_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "PHON"
+        },
+        {
+          "child_production": "SUBMITTER_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RFN"
+        },
+        {
+          "child_production": "SUBMITTER_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "SUBN": {
+      "children": [
+        {
+          "child_production": "SUBMISSION_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ANCE"
+        },
+        {
+          "child_production": "SUBMISSION_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DESC"
+        },
+        {
+          "child_production": "SUBMISSION_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "FAMF"
+        },
+        {
+          "child_production": "SUBMISSION_RECORD",
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "SUBMISSION_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ORDI"
+        },
+        {
+          "child_production": "SUBMISSION_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": "SUBMISSION_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "SUBM"
+        },
+        {
+          "child_production": "SUBMISSION_RECORD",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TEMP"
+        }
+      ]
+    }
+  },
+  "record_roots": [
+    "HEAD",
+    "TRLR",
+    "INDI",
+    "FAM",
+    "SOUR",
+    "REPO",
+    "SUBM",
+    "SUBN",
+    "NOTE",
+    "OBJE"
+  ],
+  "root_tag_map": {
+    "FAM": "FAM",
+    "HEAD": "HEAD",
+    "INDI": "INDI",
+    "NOTE": "NOTE",
+    "OBJE": "OBJE",
+    "REPO": "REPO",
+    "SOUR": "SOUR",
+    "SUBM": "SUBM",
+    "SUBN": "SUBN",
+    "TRLR": "TRLR"
+  }
+}

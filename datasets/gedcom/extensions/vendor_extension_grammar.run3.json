@@ -1,0 +1,1963 @@
+{
+  "meta": {
+    "note": "Underscore tags are legal user-defined tags; semantics are vendor/system-specific (see HEAD.SOUR).",
+    "source_raw_lines": "outputs/raw_capture/run3/raw_lines.jsonl",
+    "source_unknown_tags": "outputs/raw_capture/run3/unknown_tags.jsonl",
+    "system_id": "Ancestry.com Family Trees",
+    "system_id_sanitized": "Ancestry.com_Family_Trees"
+  },
+  "stats": {
+    "record_roots_seen": {
+      "FAM": 1062,
+      "HEAD": 2,
+      "INDI": 31637,
+      "OBJE": 25404,
+      "SOUR": 634,
+      "_MTCAT": 4,
+      "_MTTAG": 27
+    },
+    "unknown_total_lines": 58770,
+    "unknown_unique_tags": 41
+  },
+  "tags": {
+    "_APID": {
+      "count": 30060,
+      "examples": [
+        {
+          "line_no": 28,
+          "raw": "3 _APID 1,1732::216079789",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 31,
+          "raw": "3 _APID 1,2190::335120392",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 33,
+          "raw": "3 _APID 1,62209::41006368",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 43,
+          "raw": "3 _APID 1,1732::216079789",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 45,
+          "raw": "3 _APID 1,62209::41006368",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 68,
+          "raw": "3 _APID 1,62209::41006368",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 81,
+          "raw": "2 _APID 1,1732::216079789",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 84,
+          "raw": "2 _APID 1,2190::335120392",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        }
+      ]
+    },
+    "_ATL": {
+      "count": 2172,
+      "examples": [
+        {
+          "line_no": 256766,
+          "raw": "1 _ATL N",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256781,
+          "raw": "1 _ATL N",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256796,
+          "raw": "1 _ATL N",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256820,
+          "raw": "1 _ATL N",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256835,
+          "raw": "1 _ATL N",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256863,
+          "raw": "1 _ATL N",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256878,
+          "raw": "1 _ATL N",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256902,
+          "raw": "1 _ATL N",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        }
+      ]
+    },
+    "_CLON": {
+      "count": 321,
+      "examples": [
+        {
+          "line_no": 256810,
+          "raw": "1 _CLON",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256852,
+          "raw": "1 _CLON",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256892,
+          "raw": "1 _CLON",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257091,
+          "raw": "1 _CLON",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257159,
+          "raw": "1 _CLON",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257274,
+          "raw": "1 _CLON",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257298,
+          "raw": "1 _CLON",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257352,
+          "raw": "1 _CLON",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        }
+      ]
+    },
+    "_CREA": {
+      "count": 2172,
+      "examples": [
+        {
+          "line_no": 256762,
+          "raw": "1 _CREA 2024-07-14 04:15:33.233",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256777,
+          "raw": "1 _CREA 2024-07-14 04:16:01.140",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256792,
+          "raw": "1 _CREA 2024-07-14 04:17:24.541",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256807,
+          "raw": "1 _CREA 2025-12-12 14:39:32.539",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256831,
+          "raw": "1 _CREA 2024-07-14 04:16:18.122",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256849,
+          "raw": "1 _CREA 2025-12-18 01:34:19.343",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256874,
+          "raw": "1 _CREA 2024-07-14 04:16:08.442",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256889,
+          "raw": "1 _CREA 2024-10-04 03:48:39.631",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        }
+      ]
+    },
+    "_CROP": {
+      "count": 85,
+      "examples": [
+        {
+          "line_no": 29511,
+          "raw": "2 _CROP",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 29518,
+          "raw": "2 _CROP",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 29780,
+          "raw": "2 _CROP",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 29787,
+          "raw": "2 _CROP",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 33311,
+          "raw": "2 _CROP",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 35282,
+          "raw": "2 _CROP",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 40393,
+          "raw": "2 _CROP",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 41689,
+          "raw": "2 _CROP",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        }
+      ]
+    },
+    "_DATE": {
+      "count": 321,
+      "examples": [
+        {
+          "line_no": 256816,
+          "raw": "2 _DATE 2019-07-19 13:19:46.000",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256858,
+          "raw": "2 _DATE 2022-06-12 06:59:08.000",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256898,
+          "raw": "2 _DATE 2023-06-30 15:03:13.717",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257096,
+          "raw": "2 _DATE 2017-01-29 20:48:31.000",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257165,
+          "raw": "2 _DATE 2022-10-26 17:10:58.000",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257280,
+          "raw": "2 _DATE 2017-12-04 07:11:13.000",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257304,
+          "raw": "2 _DATE 2012-12-22 21:17:10.000",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257358,
+          "raw": "2 _DATE 2019-04-23 18:12:45.000",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        }
+      ]
+    },
+    "_DCAUSE": {
+      "count": 9,
+      "examples": [
+        {
+          "line_no": 15891,
+          "raw": "1 _DCAUSE",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 21630,
+          "raw": "1 _DCAUSE",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 22205,
+          "raw": "1 _DCAUSE",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 91045,
+          "raw": "1 _DCAUSE",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 133251,
+          "raw": "1 _DCAUSE",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 141784,
+          "raw": "1 _DCAUSE",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 192826,
+          "raw": "1 _DCAUSE",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 201432,
+          "raw": "1 _DCAUSE",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        }
+      ]
+    },
+    "_DSCR": {
+      "count": 447,
+      "examples": [
+        {
+          "line_no": 256961,
+          "raw": "1 _DSCR Book Title: A short account of the descendants of William Haskell of Gloucester, Mass",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256977,
+          "raw": "1 _DSCR Here lies the remains of John Dick who died 22 Dec 1820 aged 63 years.  Also his wife Mary Read who died 16 Oct 1820 aged 65 years.  Natives of Scotland.",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256993,
+          "raw": "1 _DSCR \"U.S., School Yearbooks, 1880-2012\"; School Name: Westborough High School; Year: 1966",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257070,
+          "raw": "1 _DSCR This photograph was most likely taken in a studio in Newcastle, perhaps a few days following the wedding. It is interesting to note that positioning of the wedding party, with one bridesmaid and father of the bride seated. L-R: Norman Truscott, Emi",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257210,
+          "raw": "1 _DSCR House of Percy, England",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257429,
+          "raw": "1 _DSCR mabel hutchinson dempsey patenaude's son carl dempsey sr funeral program",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257502,
+          "raw": "1 _DSCR A letter that John Dunn wrote to his children left in Ireland. John and his son Patrick moved to West Newbury, MA - someone had deciphered the original letter",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257558,
+          "raw": "1 _DSCR West Yorkshire Archive Service; Wakefield, Yorkshire, England; New Reference Number: RDP68/3B/10",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        }
+      ]
+    },
+    "_EMPLOY": {
+      "count": 4,
+      "examples": [
+        {
+          "line_no": 54,
+          "raw": "1 _EMPLOY",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 142038,
+          "raw": "1 _EMPLOY",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 151500,
+          "raw": "1 _EMPLOY",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 164209,
+          "raw": "1 _EMPLOY",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        }
+      ]
+    },
+    "_ENCR": {
+      "count": 2493,
+      "examples": [
+        {
+          "line_no": 256764,
+          "raw": "2 _ENCR 1",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256779,
+          "raw": "2 _ENCR 1",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256794,
+          "raw": "2 _ENCR 1",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256809,
+          "raw": "2 _ENCR 1",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256815,
+          "raw": "3 _ENCR 1",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256833,
+          "raw": "2 _ENCR 1",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256851,
+          "raw": "2 _ENCR 1",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256857,
+          "raw": "3 _ENCR 1",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        }
+      ]
+    },
+    "_ENV": {
+      "count": 1,
+      "examples": [
+        {
+          "line_no": 8,
+          "raw": "3 _ENV prd",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "HEAD"
+        }
+      ]
+    },
+    "_HEIG": {
+      "count": 9,
+      "examples": [
+        {
+          "line_no": 77,
+          "raw": "1 _HEIG 5'10\"",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 22214,
+          "raw": "1 _HEIG 6'1",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 29762,
+          "raw": "1 _HEIG 5'9",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 153548,
+          "raw": "1 _HEIG 6",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 192831,
+          "raw": "1 _HEIG 5",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 195013,
+          "raw": "1 _HEIG 5'1",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 200302,
+          "raw": "1 _HEIG 5'9",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 201437,
+          "raw": "1 _HEIG 5'9",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        }
+      ]
+    },
+    "_HGHT": {
+      "count": 2253,
+      "examples": [
+        {
+          "line_no": 29515,
+          "raw": "3 _HGHT 1343",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 29522,
+          "raw": "3 _HGHT 679",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 29784,
+          "raw": "3 _HGHT 576",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 29791,
+          "raw": "3 _HGHT 810",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 33315,
+          "raw": "3 _HGHT 207",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 35286,
+          "raw": "3 _HGHT 927",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 40397,
+          "raw": "3 _HGHT 667",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 41693,
+          "raw": "3 _HGHT 120",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        }
+      ]
+    },
+    "_HPID": {
+      "count": 527,
+      "examples": [
+        {
+          "line_no": 238124,
+          "raw": "3 _HPID 1,1623::1915770",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        },
+        {
+          "line_no": 238129,
+          "raw": "3 _HPID 1,5967::486630",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        },
+        {
+          "line_no": 238143,
+          "raw": "3 _HPID 1,62476::4745074956",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        },
+        {
+          "line_no": 238144,
+          "raw": "3 _HPID 1,62476::4745075462",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        },
+        {
+          "line_no": 238217,
+          "raw": "3 _HPID 1,61157::1713831",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        },
+        {
+          "line_no": 238222,
+          "raw": "3 _HPID 1,62476::4745074960",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        },
+        {
+          "line_no": 238225,
+          "raw": "3 _HPID 1,62476::4745075465",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        },
+        {
+          "line_no": 238253,
+          "raw": "3 _HPID 1,3824::66305",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        }
+      ]
+    },
+    "_LEFT": {
+      "count": 85,
+      "examples": [
+        {
+          "line_no": 29512,
+          "raw": "3 _LEFT 327",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 29519,
+          "raw": "3 _LEFT 139",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 29781,
+          "raw": "3 _LEFT 72",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 29788,
+          "raw": "3 _LEFT 320",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 33312,
+          "raw": "3 _LEFT 0",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 35283,
+          "raw": "3 _LEFT 327",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 40394,
+          "raw": "3 _LEFT 44",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 41690,
+          "raw": "3 _LEFT 289",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        }
+      ]
+    },
+    "_LKID": {
+      "count": 371,
+      "examples": [
+        {
+          "line_no": 256819,
+          "raw": "2 _LKID 471aae73-6447-43d6-b345-34329068f23a",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256862,
+          "raw": "2 _LKID 9a0d1789-76be-4a45-92ab-a1b7e57dec3f",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256901,
+          "raw": "2 _LKID 1128861d-ff28-4d7f-885a-735b50ee6a79",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256918,
+          "raw": "2 _LKID 00ed754e-6273-41da-8ced-c43f3a06745f",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257099,
+          "raw": "2 _LKID fa8a2663-eef2-42d8-9b51-424a7b2f0851",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257168,
+          "raw": "2 _LKID b0c7ba07-b20f-4822-a760-de23165ad1ef",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257283,
+          "raw": "2 _LKID a57c0a0e-c36c-4b7f-96f3-03b57243250e",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257307,
+          "raw": "2 _LKID d7f1bb75-0132-4698-bbd8-1094612cf09b",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        }
+      ]
+    },
+    "_META": {
+      "count": 99,
+      "examples": [
+        {
+          "line_no": 257503,
+          "raw": "1 _META <metadataxml><cemetery /><transcription /></metadataxml>",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257662,
+          "raw": "1 _META <metadataxml><cemetery /><transcription /></metadataxml>",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257839,
+          "raw": "1 _META <metadataxml><cemetery /><transcription>The History of Salem Massachusetts",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 258370,
+          "raw": "1 _META <metadataxml><cemetery /><transcription /></metadataxml>",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 258897,
+          "raw": "1 _META <metadataxml><record_source_gid>1283386386:1265</record_source_gid></metadataxml>",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 259087,
+          "raw": "1 _META <metadataxml><cemetery /><transcription /></metadataxml>",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 259644,
+          "raw": "1 _META <metadataxml><transcription /></metadataxml>",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 260683,
+          "raw": "1 _META <metadataxml />",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        }
+      ]
+    },
+    "_MILT": {
+      "count": 94,
+      "examples": [
+        {
+          "line_no": 57,
+          "raw": "1 _MILT",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 3841,
+          "raw": "1 _MILT",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 18678,
+          "raw": "1 _MILT",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 21884,
+          "raw": "1 _MILT",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 22154,
+          "raw": "1 _MILT",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 30477,
+          "raw": "1 _MILT",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 30896,
+          "raw": "1 _MILT",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 34759,
+          "raw": "1 _MILT",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        }
+      ]
+    },
+    "_MSER": {
+      "count": 371,
+      "examples": [
+        {
+          "line_no": 256818,
+          "raw": "1 _MSER",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256861,
+          "raw": "1 _MSER",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256900,
+          "raw": "1 _MSER",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256917,
+          "raw": "1 _MSER",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257098,
+          "raw": "1 _MSER",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257167,
+          "raw": "1 _MSER",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257282,
+          "raw": "1 _MSER",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257306,
+          "raw": "1 _MSER",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        }
+      ]
+    },
+    "_MTCAT": {
+      "count": 13,
+      "examples": [
+        {
+          "line_no": 300513,
+          "raw": "1 _MTCAT @C2@",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "_MTTAG"
+        },
+        {
+          "line_no": 300518,
+          "raw": "1 _MTCAT @C4@",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "_MTTAG"
+        },
+        {
+          "line_no": 300523,
+          "raw": "1 _MTCAT @C5@",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "_MTTAG"
+        },
+        {
+          "line_no": 300528,
+          "raw": "1 _MTCAT @C4@",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "_MTTAG"
+        },
+        {
+          "line_no": 300533,
+          "raw": "1 _MTCAT @C3@",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "_MTTAG"
+        },
+        {
+          "line_no": 300538,
+          "raw": "1 _MTCAT @C2@",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "_MTTAG"
+        },
+        {
+          "line_no": 300543,
+          "raw": "1 _MTCAT @C5@",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "_MTTAG"
+        },
+        {
+          "line_no": 300548,
+          "raw": "1 _MTCAT @C3@",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "_MTTAG"
+        }
+      ]
+    },
+    "_MTTAG": {
+      "count": 234,
+      "examples": [
+        {
+          "line_no": 15965,
+          "raw": "1 _MTTAG @T10@",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 15966,
+          "raw": "1 _MTTAG @T8@",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 15967,
+          "raw": "1 _MTTAG @T24@",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 21771,
+          "raw": "1 _MTTAG @T24@",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 21772,
+          "raw": "1 _MTTAG @T17@",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 21773,
+          "raw": "1 _MTTAG @T8@",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 21774,
+          "raw": "1 _MTTAG @T10@",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 22365,
+          "raw": "1 _MTTAG @T10@",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        }
+      ]
+    },
+    "_MTYPE": {
+      "count": 151,
+      "examples": [
+        {
+          "line_no": 256840,
+          "raw": "3 _MTYPE document",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257081,
+          "raw": "3 _MTYPE portrait",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257493,
+          "raw": "3 _MTYPE portrait",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257608,
+          "raw": "3 _MTYPE portrait",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257655,
+          "raw": "3 _MTYPE portrait",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257831,
+          "raw": "3 _MTYPE document",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 258363,
+          "raw": "3 _MTYPE portrait",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 258436,
+          "raw": "3 _MTYPE portrait",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        }
+      ]
+    },
+    "_OID": {
+      "count": 2493,
+      "examples": [
+        {
+          "line_no": 256761,
+          "raw": "1 _OID 000cc0de-d78c-465c-b9f3-ab4749f6b9a8",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256776,
+          "raw": "1 _OID 004ab8f8-a625-43a6-8dd8-b68b341452ea",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256791,
+          "raw": "1 _OID 004f5e67-9a2d-4b9b-a5f3-d0db5c2ee26a",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256806,
+          "raw": "1 _OID 005cb9c6-4368-4fc0-ab41-fdd89adfb917",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256813,
+          "raw": "2 _OID 471aae73-6447-43d6-b345-34329068f23a",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256830,
+          "raw": "1 _OID 00be4963-bbed-463d-9e82-201facda14ce",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256846,
+          "raw": "1 _OID 00d3f6a5-01a4-4dfe-9c90-9d824cbaf480",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256855,
+          "raw": "2 _OID 9a0d1789-76be-4a45-92ab-a1b7e57dec3f",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        }
+      ]
+    },
+    "_ORIG": {
+      "count": 2172,
+      "examples": [
+        {
+          "line_no": 256765,
+          "raw": "1 _ORIG u",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256780,
+          "raw": "1 _ORIG u",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256795,
+          "raw": "1 _ORIG u",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256817,
+          "raw": "1 _ORIG u",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256834,
+          "raw": "1 _ORIG u",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256859,
+          "raw": "1 _ORIG u",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256877,
+          "raw": "1 _ORIG u",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256899,
+          "raw": "1 _ORIG u",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        }
+      ]
+    },
+    "_PARM": {
+      "count": 3,
+      "examples": [
+        {
+          "line_no": 259894,
+          "raw": "2 _PARM ms_params=",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 283089,
+          "raw": "2 _PARM ms_params=",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 284843,
+          "raw": "2 _PARM ms_params=eyJyb3RhdGUiOiJub25lIiwiZmxpcCI6Im5vbmUifQ==",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        }
+      ]
+    },
+    "_PID": {
+      "count": 314,
+      "examples": [
+        {
+          "line_no": 256812,
+          "raw": "2 _PID 24445306089",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256854,
+          "raw": "2 _PID 122371172055",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256894,
+          "raw": "2 _PID 222401966143",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257161,
+          "raw": "2 _PID 242422844996",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257276,
+          "raw": "2 _PID 360145529245",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257300,
+          "raw": "2 _PID 13033636679",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257354,
+          "raw": "2 _PID 352066126185",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257410,
+          "raw": "2 _PID 48547170124",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        }
+      ]
+    },
+    "_PRIM": {
+      "count": 1356,
+      "examples": [
+        {
+          "line_no": 90,
+          "raw": "2 _PRIM Y",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 403,
+          "raw": "2 _PRIM Y",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 861,
+          "raw": "2 _PRIM Y",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 881,
+          "raw": "2 _PRIM Y",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 1019,
+          "raw": "2 _PRIM Y",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 1084,
+          "raw": "2 _PRIM Y",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 1141,
+          "raw": "2 _PRIM Y",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 1175,
+          "raw": "2 _PRIM Y",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        }
+      ]
+    },
+    "_SEPR": {
+      "count": 1,
+      "examples": [
+        {
+          "line_no": 243652,
+          "raw": "1 _SEPR",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        }
+      ]
+    },
+    "_SIZE": {
+      "count": 2172,
+      "examples": [
+        {
+          "line_no": 256757,
+          "raw": "3 _SIZE 19096",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256772,
+          "raw": "3 _SIZE 24854",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256787,
+          "raw": "3 _SIZE 21570",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256802,
+          "raw": "3 _SIZE 9984",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256826,
+          "raw": "3 _SIZE 11811",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256842,
+          "raw": "3 _SIZE 21390",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256869,
+          "raw": "3 _SIZE 1275628",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256884,
+          "raw": "3 _SIZE 42842",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        }
+      ]
+    },
+    "_SREL": {
+      "count": 3,
+      "examples": [
+        {
+          "line_no": 256726,
+          "raw": "1 _SREL unknown",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        },
+        {
+          "line_no": 256733,
+          "raw": "1 _SREL unknown",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        },
+        {
+          "line_no": 256740,
+          "raw": "1 _SREL unknown",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        }
+      ]
+    },
+    "_STYPE": {
+      "count": 2172,
+      "examples": [
+        {
+          "line_no": 256756,
+          "raw": "3 _STYPE jpg",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256771,
+          "raw": "3 _STYPE jpg",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256786,
+          "raw": "3 _STYPE jpg",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256801,
+          "raw": "3 _STYPE jpeg",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256825,
+          "raw": "3 _STYPE jpg",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256841,
+          "raw": "3 _STYPE jpeg",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256868,
+          "raw": "3 _STYPE jpg",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256883,
+          "raw": "3 _STYPE jpeg",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        }
+      ]
+    },
+    "_TID": {
+      "count": 317,
+      "examples": [
+        {
+          "line_no": 256811,
+          "raw": "2 _TID 46869153",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256853,
+          "raw": "2 _TID 72260134",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256893,
+          "raw": "2 _TID 184387554",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257092,
+          "raw": "2 _TID 38841402",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257160,
+          "raw": "2 _TID 169959860",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257275,
+          "raw": "2 _TID 114492952",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257299,
+          "raw": "2 _TID 49899930",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 257353,
+          "raw": "2 _TID 156242367",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        }
+      ]
+    },
+    "_TOP": {
+      "count": 85,
+      "examples": [
+        {
+          "line_no": 29513,
+          "raw": "3 _TOP 336",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 29520,
+          "raw": "3 _TOP 170",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 29782,
+          "raw": "3 _TOP 192",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 29789,
+          "raw": "3 _TOP 203",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 33313,
+          "raw": "3 _TOP 0",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 35284,
+          "raw": "3 _TOP 232",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 40395,
+          "raw": "3 _TOP 254",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 41691,
+          "raw": "3 _TOP 63",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        }
+      ]
+    },
+    "_TREE": {
+      "count": 1,
+      "examples": [
+        {
+          "line_no": 6,
+          "raw": "2 _TREE Menzies Dempsey",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "HEAD"
+        }
+      ]
+    },
+    "_TYPE": {
+      "count": 85,
+      "examples": [
+        {
+          "line_no": 29516,
+          "raw": "3 _TYPE primary",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 29523,
+          "raw": "3 _TYPE primary",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 29785,
+          "raw": "3 _TYPE primary",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 29792,
+          "raw": "3 _TYPE primary",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 33316,
+          "raw": "3 _TYPE primary",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 35287,
+          "raw": "3 _TYPE primary",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 40398,
+          "raw": "3 _TYPE primary",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 41694,
+          "raw": "3 _TYPE primary",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        }
+      ]
+    },
+    "_URL": {
+      "count": 14,
+      "examples": [
+        {
+          "line_no": 256860,
+          "raw": "2 _URL https://www.findagrave.com/memorial/62117104/judith-foster",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 259466,
+          "raw": "2 _URL https://www.findagrave.com/memorial/174148037/john-paterson",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 265101,
+          "raw": "2 _URL https://www.fold3.com/image/23479531/?terms=poss&xid=2030",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 267068,
+          "raw": "2 _URL https://www.findagrave.com/memorial/8015910/william-rennie",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 267481,
+          "raw": "2 _URL https://www.findagrave.com/memorial/61306863/maire-delannoy",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 270324,
+          "raw": "2 _URL https://www.newspapers.com/clip/46893744/obituary-for-george-w-dunn-aged-83/?xid=865",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 271173,
+          "raw": "2 _URL https://www.findagrave.com/memorial/127504590/margaret-greenleaf",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 274534,
+          "raw": "2 _URL https://www.findagrave.com/memorial/36576843/nicholas-noyes",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        }
+      ]
+    },
+    "_USER": {
+      "count": 2493,
+      "examples": [
+        {
+          "line_no": 256763,
+          "raw": "1 _USER wfa+WXYblB5ERdNhX2cQAEXD7cD9/W0WdfQhMFqq5N8cGsupJpOk1FvbXQazspXW3PPCdgD72u+pxLA1tDNq9Q==",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256778,
+          "raw": "1 _USER 2oJWY6+AuggVYfNpyl4Vy4yfb8ixExCtel5UL6kUJx0gy7m0gat/qGWzw0pwQ503phLBktl3dtQgSYVPWysDvA==",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256793,
+          "raw": "1 _USER F/PNjnKvY4jyuNrJHSdlrA5gJjk41umZjMk0Mx3A9smghqwQeRupvhNAai2Le0WRL/JFd9oioccvgeGSckChsg==",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256808,
+          "raw": "1 _USER 0yd+ViMlSMEq/MF3+d+3wP8xzDR4tUY6ytonBJuUcvZievEv9UGHVrLxrPRr6uHaUNcf+sPyAI48I7zdg2sC0Q==",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256814,
+          "raw": "2 _USER 1mS63/LmHoKPCJbYw0LmsDShPSRS7em26y7rvkSIAUW3t7Vb9LX5L4mmG21tg46IZVW6kZiviYfBFh3lHVyXMQ==",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256832,
+          "raw": "1 _USER H5M19q0pSKtrFh+gGMmx5MGAhJUq5b+9hq+wKRex+pWIHqjH44DXfUFawVATVsxFLveFA9jCY1n/riDfImCa+Q==",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256850,
+          "raw": "1 _USER n3TXIKCHq0o0R4jdiPhyPWkWkSTHVrJNHeQvGgktJooeEuh/Sc9ur2gaZBTTXuxPBhC8W1urE3gyKN7cgwQHqA==",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        },
+        {
+          "line_no": 256856,
+          "raw": "2 _USER DhHXuiuINy02x6fXqtxnEC+0UKMIbEyDpTb7yLfGKlpq0VfPfi5CNkW+ldcR0KkNZSRCU7MunICNhtYhjDMiwg==",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "OBJE"
+        }
+      ]
+    },
+    "_VISI": {
+      "count": 9,
+      "examples": [
+        {
+          "line_no": 300512,
+          "raw": "1 _VISI 1",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "_MTTAG"
+        },
+        {
+          "line_no": 300517,
+          "raw": "1 _VISI 1",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "_MTTAG"
+        },
+        {
+          "line_no": 300522,
+          "raw": "1 _VISI 1",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "_MTTAG"
+        },
+        {
+          "line_no": 300527,
+          "raw": "1 _VISI 1",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "_MTTAG"
+        },
+        {
+          "line_no": 300532,
+          "raw": "1 _VISI 1",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "_MTTAG"
+        },
+        {
+          "line_no": 300537,
+          "raw": "1 _VISI 1",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "_MTTAG"
+        },
+        {
+          "line_no": 300542,
+          "raw": "1 _VISI 1",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "_MTTAG"
+        },
+        {
+          "line_no": 300547,
+          "raw": "1 _VISI 1",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "_MTTAG"
+        }
+      ]
+    },
+    "_WDTH": {
+      "count": 2253,
+      "examples": [
+        {
+          "line_no": 29514,
+          "raw": "3 _WDTH 1309",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 29521,
+          "raw": "3 _WDTH 679",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 29783,
+          "raw": "3 _WDTH 576",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 29790,
+          "raw": "3 _WDTH 1279",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 33314,
+          "raw": "3 _WDTH 243",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 35285,
+          "raw": "3 _WDTH 927",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 40396,
+          "raw": "3 _WDTH 667",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 41692,
+          "raw": "3 _WDTH 120",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        }
+      ]
+    },
+    "_WEIG": {
+      "count": 4,
+      "examples": [
+        {
+          "line_no": 79,
+          "raw": "1 _WEIG 185",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 192837,
+          "raw": "1 _WEIG 220",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 195014,
+          "raw": "1 _WEIG 145",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        },
+        {
+          "line_no": 203333,
+          "raw": "1 _WEIG 225",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "INDI"
+        }
+      ]
+    },
+    "_WPID": {
+      "count": 531,
+      "examples": [
+        {
+          "line_no": 238127,
+          "raw": "3 _WPID 1,1623::5709809",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        },
+        {
+          "line_no": 238132,
+          "raw": "3 _WPID 1,5967::643982",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        },
+        {
+          "line_no": 238141,
+          "raw": "3 _WPID 1,62476::4745074956",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        },
+        {
+          "line_no": 238142,
+          "raw": "3 _WPID 1,62476::4745075462",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        },
+        {
+          "line_no": 238216,
+          "raw": "3 _WPID 1,61157::1713831",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        },
+        {
+          "line_no": 238221,
+          "raw": "3 _WPID 1,62476::4745074960",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        },
+        {
+          "line_no": 238224,
+          "raw": "3 _WPID 1,62476::4745075465",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        },
+        {
+          "line_no": 238252,
+          "raw": "3 _WPID 1,3824::66305",
+          "reason": "TAG_NOT_IN_CANONICAL_TAG_DICTIONARY",
+          "record_root": "FAM"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1362 @@
+{
+  "_meta": {
+    "extraction": "Appendix A tag headings TAG {FORMAL}:=",
+    "generated_utc": "2026-01-25T17:19:46.782396Z",
+    "source_pdf": "/mnt/data/ged551.pdf",
+    "spec": "GEDCOM 5.5.1"
+  },
+  "meta": {
+    "added_tags": [
+      "GIVN"
+    ],
+    "patched_at": null,
+    "patched_by": "patch_canonical_tag_dictionary_add_name_parts"
+  },
+  "tags": {
+    "ABBR": {
+      "description": "A short name of a title, description, or name.",
+      "formal_name": "ABBREVIATION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "ABBR"
+    },
+    "ADDR": {
+      "description": "The contemporary place, usually required for postal purposes, of an individual, a submitter of information, a repository, a business, a school, or a company.",
+      "formal_name": "ADDRESS",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "ADDR"
+    },
+    "ADOP": {
+      "description": "Pertaining to creation of a legally approved child-parent relationship that does not exist biologically.",
+      "formal_name": "ADOPTION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "ADOP"
+    },
+    "ADR1": {
+      "description": "The first line of an address.",
+      "formal_name": "ADDRESS1",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "ADR1"
+    },
+    "ADR2": {
+      "description": "The second line of an address.",
+      "formal_name": "ADDRESS2",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "ADR2"
+    },
+    "AFN": {
+      "description": "A unique permanent record file number of an individual record stored in Ancestral File.",
+      "formal_name": "AFN",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "AFN"
+    },
+    "AGE": {
+      "description": "The age of the individual at the time an event occurred, or the age listed in the document.",
+      "formal_name": "AGE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "AGE"
+    },
+    "AGNC": {
+      "description": "The institution or individual having authority and/or responsibility to manage or govern.",
+      "formal_name": "AGENCY",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "AGNC"
+    },
+    "ALIA": {
+      "description": "An indicator to link different record descriptions of a person who may be the same person.",
+      "formal_name": "ALIAS",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "ALIA"
+    },
+    "ANCE": {
+      "description": "Pertaining to forbearers of an individual.",
+      "formal_name": "ANCESTORS",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "ANCE"
+    },
+    "ANCI": {
+      "description": "Indicates an interest in additional research for ancestors of this individual. (See also DESI, page 86.)",
+      "formal_name": "ANCES_INTEREST",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "ANCI"
+    },
+    "ANUL": {
+      "description": "Declaring a marriage void from the beginning (never existed).",
+      "formal_name": "ANNULMENT",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "ANUL"
+    },
+    "ASSO": {
+      "description": "An indicator to link friends, neighbors, relatives, or associates of an individual.",
+      "formal_name": "ASSOCIATES",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "ASSO"
+    },
+    "AUTH": {
+      "description": "The name of the individual who created or compiled information.",
+      "formal_name": "AUTHOR",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "AUTH"
+    },
+    "BAPL": {
+      "description": "The event of baptism performed at age eight or later by priesthood authority of the LDS Church. (See also BAPM, next)",
+      "formal_name": "BAPTISM-LDS",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "BAPL"
+    },
+    "BAPM": {
+      "description": "The event of baptism (not LDS), performed in infancy or later. (See also BAPL, above, and CHR, page 85.)",
+      "formal_name": "BAPTISM",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "BAPM"
+    },
+    "BARM": {
+      "description": "The ceremonial event held when a Jewish boy reaches age 13.",
+      "formal_name": "BAR_MITZVAH",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "BARM"
+    },
+    "BASM": {
+      "description": "The ceremonial event held when a Jewish girl reaches age 13, also known as \"Bat Mitzvah.\"",
+      "formal_name": "BAS_MITZVAH",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "BASM"
+    },
+    "BIRT": {
+      "description": "The event of entering into life.",
+      "formal_name": "BIRTH",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "BIRT"
+    },
+    "BLES": {
+      "description": "A religious event of bestowing divine care or intercession. Sometimes given in connection with a naming ceremony.",
+      "formal_name": "BLESSING",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "BLES"
+    },
+    "BURI": {
+      "description": "The event of the proper disposing of the mortal remains of a deceased person.",
+      "formal_name": "BURIAL",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "BURI"
+    },
+    "CALN": {
+      "description": "The number used by a repository to identify the specific items in its collections.",
+      "formal_name": "CALL_NUMBER",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "CALN"
+    },
+    "CAST": {
+      "description": "The name of an individual's rank or status in society which is sometimes based on racial or religious differences, or differences in wealth, inherited rank, profession, occupation, etc.",
+      "formal_name": "CASTE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "CAST"
+    },
+    "CAUS": {
+      "description": "A description of the cause of the associated event or fact, such as the cause of death.",
+      "formal_name": "CAUSE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "CAUS"
+    },
+    "CENS": {
+      "description": "The event of the periodic count of the population for a designated locality, such as a national or state Census.",
+      "formal_name": "CENSUS",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "CENS"
+    },
+    "CHAN": {
+      "description": "Indicates a change, correction, or modification. Typically used in connection with a DATE to specify when a change in information occurred.",
+      "formal_name": "CHANGE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "CHAN"
+    },
+    "CHAR": {
+      "description": "An indicator of the character set used in writing this automated information.",
+      "formal_name": "CHARACTER",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "CHAR"
+    },
+    "CHIL": {
+      "description": "The natural, adopted, or sealed (LDS) child of a father and a mother.",
+      "formal_name": "CHILD",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "CHIL"
+    },
+    "CHR": {
+      "description": "The religious event (not LDS) of baptizing and/or naming a child.",
+      "formal_name": "CHRISTENING",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "CHR"
+    },
+    "CHRA": {
+      "description": "The religious event (not LDS) of baptizing and/or naming an adult person.",
+      "formal_name": "ADULT_CHRISTENING",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "CHRA"
+    },
+    "CITY": {
+      "description": "A lower level jurisdictional unit. Normally an incorporated municipal unit.",
+      "formal_name": "CITY",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "CITY"
+    },
+    "CONC": {
+      "description": "An indicator that additional data belongs to the superior value. The information from the CONC value is to be connected to the value of the superior preceding line without a space and without a carriage return and/or new line character. Values that are split for a CONC tag must always be split at a non- space. If the value is split on a space the space will be lost when concatenation takes place. This is because of the treatment that spaces get as a GEDCOM delimiter, many GEDCOM values are trimmed of trailing spaces and some systems look for the first non-space starting after the tag to determine the beginning of the value.",
+      "formal_name": "CONCATENATION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "CONC"
+    },
+    "CONF": {
+      "description": "The religious event (not LDS) of conferring the gift of the Holy Ghost and, among protestants, full church membership.",
+      "formal_name": "CONFIRMATION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "CONF"
+    },
+    "CONL": {
+      "description": "The religious event by which a person receives membership in the LDS Church.",
+      "formal_name": "CONFIRMATION_LDS",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "CONL"
+    },
+    "CONT": {
+      "description": "An indicator that additional data belongs to the superior value. The information from the CONT value is to be connected to the value of the superior preceding line with a carriage return and/or new line character. Leading spaces could be important to the formatting of the resultant text. When importing values from CONT lines the reader should assume only one delimiter character following the CONT tag. Assume that the rest of the leading spaces are to be a part of the value.",
+      "formal_name": "CONTINUED",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "CONT"
+    },
+    "COPR": {
+      "description": "A statement that accompanies data to protect it from unlawful duplication and distribution.",
+      "formal_name": "COPYRIGHT",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "COPR"
+    },
+    "CORP": {
+      "description": "A name of an institution, agency, corporation, or company.",
+      "formal_name": "CORPORATE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "CORP"
+    },
+    "CREM": {
+      "description": "Disposal of the remains of a person's body by fire.",
+      "formal_name": "CREMATION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "CREM"
+    },
+    "CTRY": {
+      "description": "The name or code of the country.",
+      "formal_name": "COUNTRY",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "CTRY"
+    },
+    "DATA": {
+      "description": "Pertaining to stored automated information.",
+      "formal_name": "DATA",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "DATA"
+    },
+    "DATE": {
+      "description": "The time of an event in a calendar format.",
+      "formal_name": "DATE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "DATE"
+    },
+    "DEAT": {
+      "description": "The event when mortal life terminates.",
+      "formal_name": "DEATH",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "DEAT"
+    },
+    "DESC": {
+      "description": "Pertaining to offspring of an individual.",
+      "formal_name": "DESCENDANTS",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "DESC"
+    },
+    "DESI": {
+      "description": "Indicates an interest in research to identify additional descendants of this individual. (See also ANCI, page 84.)",
+      "formal_name": "DESCENDANT_INT",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "DESI"
+    },
+    "DEST": {
+      "description": "A system receiving data.",
+      "formal_name": "DESTINATION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "DEST"
+    },
+    "DIV": {
+      "description": "An event of dissolving a marriage through civil action.",
+      "formal_name": "DIVORCE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "DIV"
+    },
+    "DIVF": {
+      "description": "An event of filing for a divorce by a spouse.",
+      "formal_name": "DIVORCE_FILED",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "DIVF"
+    },
+    "DSCR": {
+      "description": "The physical characteristics of a person, place, or thing.",
+      "formal_name": "PHY_DESCRIPTION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "DSCR"
+    },
+    "EDUC": {
+      "description": "Indicator of a level of education attained.",
+      "formal_name": "EDUCATION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "EDUC"
+    },
+    "EMAI": {
+      "description": "An electronic mail address.",
+      "formal_name": "EMAIL",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "EMAI"
+    },
+    "EMIG": {
+      "description": "An event of leaving one's homeland with the intent of residing elsewhere.",
+      "formal_name": "EMIGRATION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "EMIG"
+    },
+    "ENDL": {
+      "description": "A religious event where an endowment ordinance for an individual was performed by priesthood authority in an LDS temple.",
+      "formal_name": "ENDOWMENT",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "ENDL"
+    },
+    "ENGA": {
+      "description": "An event of recording or announcing an agreement between two people to become married.",
+      "formal_name": "ENGAGEMENT",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "ENGA"
+    },
+    "EVEN": {
+      "description": "Pertaining to a noteworthy happening related to an individual, a group, or an organization. An EVENt structure is usually qualified or classified by a subordinate use of the TYPE tag.",
+      "formal_name": "EVENT",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "EVEN"
+    },
+    "FACT": {
+      "description": "Pertaining to a noteworthy attribute or fact concerning an individual, a group, or an organization. A FACT structure is usually qualified or classified by a subordinate use of the TYPE tag.",
+      "formal_name": "FACT",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "FACT"
+    },
+    "FAM": {
+      "description": "Identifies a legal, common law, or other customary relationship of man and woman and their children, if any, or a family created by virtue of the birth of a child to its biological father and mother.",
+      "formal_name": "FAMILY",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "FAM"
+    },
+    "FAMC": {
+      "description": "Identifies the family in which an individual appears as a child.",
+      "formal_name": "FAMILY_CHILD",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "FAMC"
+    },
+    "FAMF": {
+      "description": "Pertaining to, or the name of, a family file. Names stored in a file that are assigned to a family for doing temple ordinance work.",
+      "formal_name": "FAMILY_FILE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "FAMF"
+    },
+    "FAMS": {
+      "description": "Identifies the family in which an individual appears as a spouse.",
+      "formal_name": "FAMILY_SPOUSE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "FAMS"
+    },
+    "FAX": {
+      "description": "Electronic facimilie transmission.",
+      "formal_name": "FACIMILIE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "FAX"
+    },
+    "FCOM": {
+      "description": "A religious rite, the first act of sharing in the Lord's supper as part of church worship.",
+      "formal_name": "FIRST_COMMUNION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "FCOM"
+    },
+    "FILE": {
+      "description": "An information storage place that is ordered and arranged for preservation and reference.",
+      "formal_name": "FILE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "FILE"
+    },
+    "FORM": {
+      "description": "An assigned name given to a consistent format in which information can be conveyed. FONE {PHONETIC} A phonetic variation of a superior text string",
+      "formal_name": "FORMAT",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "FORM"
+    },
+    "GEDC": {
+      "description": "Information about the use of GEDCOM in a transmission. GIVN {GIVEN_NAME} A given or earned name used for official identification of a person.",
+      "formal_name": "GEDCOM",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "GEDC"
+    },
+    "GIVN": {
+      "notes": "Added to avoid misclassifying standard NAME-part tags as unknown.",
+      "provenance": "patch_canonical_tag_dictionary_add_name_parts",
+      "status": "ADDED_BY_PATCH"
+    },
+    "GRAD": {
+      "description": "An event of awarding educational diplomas or degrees to individuals.",
+      "formal_name": "GRADUATION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "GRAD"
+    },
+    "HEAD": {
+      "description": "Identifies information pertaining to an entire GEDCOM transmission.",
+      "formal_name": "HEADER",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "HEAD"
+    },
+    "HUSB": {
+      "description": "An individual in the family role of a married man or father.",
+      "formal_name": "HUSBAND",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "HUSB"
+    },
+    "IDNO": {
+      "description": "A number assigned to identify a person within some significant external system.",
+      "formal_name": "IDENT_NUMBER",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "IDNO"
+    },
+    "IMMI": {
+      "description": "An event of entering into a new locality with the intent of residing there.",
+      "formal_name": "IMMIGRATION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "IMMI"
+    },
+    "INDI": {
+      "description": "A person.",
+      "formal_name": "INDIVIDUAL",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "INDI"
+    },
+    "LANG": {
+      "description": "The name of the language used in a communication or transmission of information.",
+      "formal_name": "LANGUAGE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "LANG"
+    },
+    "LATI": {
+      "description": "A value indicating a coordinate position on a line, plane, or space.",
+      "formal_name": "LATITUDE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "LATI"
+    },
+    "LONG": {
+      "description": "A value indicating a coordinate position on a line, plane, or space.",
+      "formal_name": "LONGITUDE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "LONG"
+    },
+    "MAP": {
+      "description": "Pertains to a representation of measurements usually presented in a graphical form.",
+      "formal_name": "MAP",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "MAP"
+    },
+    "MARB": {
+      "description": "An event of an official public notice given that two people intend to marry.",
+      "formal_name": "MARRIAGE_BANN",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "MARB"
+    },
+    "MARC": {
+      "description": "An event of recording a formal agreement of marriage, including the prenuptial agreement in which marriage partners reach agreement about the property rights of one or both, securing property to their children.",
+      "formal_name": "MARR_CONTRACT",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "MARC"
+    },
+    "MARL": {
+      "description": "An event of obtaining a legal license to marry.",
+      "formal_name": "MARR_LICENSE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "MARL"
+    },
+    "MARR": {
+      "description": "A legal, common-law, or customary event of creating a family unit of a man and a woman as husband and wife.",
+      "formal_name": "MARRIAGE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "MARR"
+    },
+    "MARS": {
+      "description": "An event of creating an agreement between two people contemplating marriage, at which time they agree to release or modify property rights that would otherwise arise from the marriage.",
+      "formal_name": "MARR_SETTLEMENT",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "MARS"
+    },
+    "MEDI": {
+      "description": "Identifies information about the media or having to do with the medium in which information is stored.",
+      "formal_name": "MEDIA",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "MEDI"
+    },
+    "NAME": {
+      "description": "A word or combination of words used to help identify an individual, title, or other item. More than one NAME line should be used for people who were known by multiple names.",
+      "formal_name": "NAME",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "NAME"
+    },
+    "NATI": {
+      "description": "The national heritage of an individual.",
+      "formal_name": "NATIONALITY",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "NATI"
+    },
+    "NATU": {
+      "description": "The event of obtaining citizenship.",
+      "formal_name": "NATURALIZATION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "NATU"
+    },
+    "NCHI": {
+      "description": "The number of children that this person is known to be the parent of (all marriages) when subordinate to an individual, or that belong to this family when subordinate to a FAM_RECORD.",
+      "formal_name": "CHILDREN_COUNT",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "NCHI"
+    },
+    "NICK": {
+      "description": "A descriptive or familiar that is used instead of, or in addition to, one's proper name.",
+      "formal_name": "NICKNAME",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "NICK"
+    },
+    "NMR": {
+      "description": "The number of times this person has participated in a family as a spouse or parent.",
+      "formal_name": "MARRIAGE_COUNT",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "NMR"
+    },
+    "NOTE": {
+      "description": "Additional information provided by the submitter for understanding the enclosing data.",
+      "formal_name": "NOTE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "NOTE"
+    },
+    "NPFX": {
+      "description": "Text which appears on a name line before the given and surname parts of a name. i.e. (Lt. Cmndr.) Joseph /Allen/ jr. In this example Lt. Cmndr. is considered as the name prefix portion.",
+      "formal_name": "NAME_PREFIX",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "NPFX"
+    },
+    "NSFX": {
+      "description": "Text which appears on a name line after or behind the given and surname parts of a name. i.e. Lt. Cmndr. Joseph /Allen/ (jr.) In this example jr. is considered as the name suffix portion.",
+      "formal_name": "NAME_SUFFIX",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "NSFX"
+    },
+    "OBJE": {
+      "description": "Pertaining to a grouping of attributes used in describing something. Usually referring to the data required to represent a multimedia object, such an audio recording, a photograph of a person, or an image of a document.",
+      "formal_name": "OBJECT",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "OBJE"
+    },
+    "OCCU": {
+      "description": "The type of work or profession of an individual.",
+      "formal_name": "OCCUPATION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "OCCU"
+    },
+    "ORDI": {
+      "description": "Pertaining to a religious ordinance in general.",
+      "formal_name": "ORDINANCE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "ORDI"
+    },
+    "ORDN": {
+      "description": "A religious event of receiving authority to act in religious matters.",
+      "formal_name": "ORDINATION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "ORDN"
+    },
+    "PAGE": {
+      "description": "A number or description to identify where information can be found in a referenced work.",
+      "formal_name": "PAGE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "PAGE"
+    },
+    "PEDI": {
+      "description": "Information pertaining to an individual to parent lineage chart.",
+      "formal_name": "PEDIGREE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "PEDI"
+    },
+    "PHON": {
+      "description": "A unique number assigned to access a specific telephone.",
+      "formal_name": "PHONE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "PHON"
+    },
+    "PLAC": {
+      "description": "A jurisdictional name to identify the place or location of an event.",
+      "formal_name": "PLACE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "PLAC"
+    },
+    "POST": {
+      "description": "A code used by a postal service to identify an area to facilitate mail handling.",
+      "formal_name": "POSTAL_CODE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "POST"
+    },
+    "PROB": {
+      "description": "An event of judicial determination of the validity of a will. May indicate several related court activities over several dates.",
+      "formal_name": "PROBATE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "PROB"
+    },
+    "PROP": {
+      "description": "Pertaining to possessions such as real estate or other property of interest.",
+      "formal_name": "PROPERTY",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "PROP"
+    },
+    "PUBL": {
+      "description": "Refers to when and/or where a work was published or created.",
+      "formal_name": "PUBLICATION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "PUBL"
+    },
+    "QUAY": {
+      "description": "An assessment of the certainty of the evidence to support the conclusion drawn from evidence.",
+      "formal_name": "QUALITY_OF_DATA",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "QUAY"
+    },
+    "REFN": {
+      "description": "A description or number used to identify an item for filing, storage, or other reference purposes.",
+      "formal_name": "REFERENCE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "REFN"
+    },
+    "RELA": {
+      "description": "A relationship value between the indicated contexts.",
+      "formal_name": "RELATIONSHIP",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "RELA"
+    },
+    "RELI": {
+      "description": "A religious denomination to which a person is affiliated or for which a record applies.",
+      "formal_name": "RELIGION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "RELI"
+    },
+    "REPO": {
+      "description": "An institution or person that has the specified item as part of their collection(s).",
+      "formal_name": "REPOSITORY",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "REPO"
+    },
+    "RESI": {
+      "description": "An address or place of residence that a family or individual resided.",
+      "formal_name": "RESIDENCE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "RESI"
+    },
+    "RESN": {
+      "description": "A processing indicator signifying access to information has been denied or otherwise restricted.",
+      "formal_name": "RESTRICTION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "RESN"
+    },
+    "RETI": {
+      "description": "An event of exiting an occupational relationship with an employer after a qualifying time period.",
+      "formal_name": "RETIREMENT",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "RETI"
+    },
+    "RFN": {
+      "description": "A permanent number assigned to a record that uniquely identifies it within a known file.",
+      "formal_name": "REC_FILE_NUMBER",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "RFN"
+    },
+    "RIN": {
+      "description": "A number assigned to a record by an originating automated system that can be used by a receiving system to report results pertaining to that record.",
+      "formal_name": "REC_ID_NUMBER",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "RIN"
+    },
+    "ROLE": {
+      "description": "A name given to a role played by an individual in connection with an event.",
+      "formal_name": "ROLE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "ROLE"
+    },
+    "ROMN": {
+      "description": "A romanized variation of a superior text string.",
+      "formal_name": "ROMANIZED",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "ROMN"
+    },
+    "SEX": {
+      "description": "Indicates the sex of an individual--male or female.",
+      "formal_name": "SEX",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "SEX"
+    },
+    "SLGC": {
+      "description": "A religious event pertaining to the sealing of a child to his or her parents in an LDS temple ceremony.",
+      "formal_name": "SEALING_CHILD",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "SLGC"
+    },
+    "SLGS": {
+      "description": "A religious event pertaining to the sealing of a husband and wife in an LDS temple ceremony.",
+      "formal_name": "SEALING_SPOUSE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "SLGS"
+    },
+    "SOUR": {
+      "description": "The initial or original material from which information was obtained.",
+      "formal_name": "SOURCE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "SOUR"
+    },
+    "SPFX": {
+      "description": "A name piece used as a non-indexing pre-part of a surname.",
+      "formal_name": "SURN_PREFIX",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "SPFX"
+    },
+    "SSN": {
+      "description": "A number assigned by the United States Social Security Administration. Used for tax identification purposes.",
+      "formal_name": "SOC_SEC_NUMBER",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "SSN"
+    },
+    "STAE": {
+      "description": "A geographical division of a larger jurisdictional area, such as a State within the United States of America.",
+      "formal_name": "STATE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "STAE"
+    },
+    "STAT": {
+      "description": "An assessment of the state or condition of something.",
+      "formal_name": "STATUS",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "STAT"
+    },
+    "SUBM": {
+      "description": "An individual or organization who contributes genealogical data to a file or transfers it to someone else.",
+      "formal_name": "SUBMITTER",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "SUBM"
+    },
+    "SUBN": {
+      "description": "Pertains to a collection of data issued for processing.",
+      "formal_name": "SUBMISSION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "SUBN"
+    },
+    "SURN": {
+      "description": "A family name passed on or used by members of a family.",
+      "formal_name": "SURNAME",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "SURN"
+    },
+    "TEMP": {
+      "description": "The name or code that represents the name of an LDS Church Temple.",
+      "formal_name": "TEMPLE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "TEMP"
+    },
+    "TEXT": {
+      "description": "The exact wording found in an original source document.",
+      "formal_name": "TEXT",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "TEXT"
+    },
+    "TIME": {
+      "description": "A time value in a 24-hour clock format, including hours, minutes, and optional seconds, separated by a colon (:). Fractions of seconds are shown in decimal notation.",
+      "formal_name": "TIME",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "TIME"
+    },
+    "TITL": {
+      "description": "A description of a specific writing or other work, such as the title of a book when used in a source context, or a formal designation used by an individual in connection with positions of royalty or other social status, such as Grand Duke.",
+      "formal_name": "TITLE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "TITL"
+    },
+    "TRLR": {
+      "description": "At level 0, specifies the end of a GEDCOM transmission.",
+      "formal_name": "TRAILER",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "TRLR"
+    },
+    "TYPE": {
+      "description": "A further qualification to the meaning of the associated superior tag. The value does not have any computer processing reliability. It is more in the form of a short one or two word note that should be displayed any time the associated data is displayed.",
+      "formal_name": "TYPE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "TYPE"
+    },
+    "VERS": {
+      "description": "Indicates which version of a product, item, or publication is being used or referenced.",
+      "formal_name": "VERSION",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "VERS"
+    },
+    "WIFE": {
+      "description": "An individual in the role as a mother and/or married woman.",
+      "formal_name": "WIFE",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "WIFE"
+    },
+    "WILL": {
+      "description": "A legal document treated as an event, by which a person disposes of his or her estate, to take effect after death. The event date is the date the will was signed while the person was alive. (See also PROBate, page 91.)",
+      "formal_name": "WILL",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "WILL"
+    },
+    "WWW": {
+      "description": "World Wide Web home page. Latter-day Saints Temple Codes (no longer available): ANSEL Character Set The following tables show the spacing and non-spacing diacritic characters that are contained in the ANSEL set required by the languages supported by GEDCOM 5. This table was added to give help to those receiving the GEDCOM standard on disk. The graphic characters shown are not always accurate, however the name of the diacritic and the decimal equivalent should agree with the ANSEL standard. ANSEL is implemented by replacing any code page characters that are greater than hex 7E with its ANSEL equivalent from this table. Sometimes this requires one character found from the spacing character table and sometimes this requires two characters. Most diacritical markings require two characters. In this case the non-spacing diacritical mark is found from the non-spacing character table followed by the base character, for example, an a with an angstrom or little circle above is represented by two characters, hex EA followed by the normal hex code for the letter a, which is hex 61. ! HEX is the hexidecimal equivalent to the column and row of the American National Standard Z39.47-1985 table showing the ANSEL character graphic and its 8 bit binary representation. The hexadecimal equivalent is obtained from converting the C/R column in to a hexadecimal number, for example 14/10 converts to EA hex or 234 dec. ! wpcode column shows the Wordperfect (code page and character number, for example 1,2) chosen as the closest representation of the diacritic as shown in Wordperfect 5.1 Appendix P. ! Dec column shows to the decimal equivalent for that diacritic as is used in the ANSEL character set. ! Name column gives the english name of the diacritic. ! example of use column shows an example of words using this diacritic. For the non-spacing diacritic, this mark appears before the character in which it should be superimposed. ANSEL Non-spacing graphic characters HEX wpcode Dec Graphic Name example of use E1 1,0 225 ! grave accent règle E2 1,6 226 ´ acute accent está E3 1,3 227 ˆ circumflex accent même E4 1,2 228 ˜ tilde niño E5 1,8 229 ¯ macron g~j(cid:145)js C/R wpcode Dec Graphic Name example of use E6 1,22 230 7 breve alt| E7 1,15 231 0 dot above (cid:243)aba E8 1,7 232 ¨ umlaut (diaeresis) öppna E9 1,19 233 ˆ hacek vædy EA 1,14 234 E circle above (angstrom) hår ED 1,10 237 + high comma, off center rozdel+ovac EE 1,16 238 1 double acute accent id¯szaki F0 1,17 240 S cedilla ça F1 1,18 241 3 right hook, ogonek viet(cid:129) F6 2,7 246 O underscore samar FE 1,9 254 * high comma, centered g(cid:143)otermika ANSEL Spacing graphic characters C/R wpcode Dec Graphic Name example of use A1 1,152 161 ” slash L—uppercase ”ód(cid:243) A2 1,80 162 Ø slash O—uppercase Øst A3 1,78 163 o slash D—uppercase ouro A4 1,88 164 Þ thorn—uppercase Þann A5 1,36 165 Æ ligature AE—uppercase Ægir A6 1,166 166 Œ ligature OE—uppercase Œuvre A8 1,1 168 \" middle dot novel\"la A9 5,28 169 = musical flat AA 4,32 170 ® registered trademark AB 6,1 171 ± plus or minus AE 1,11 174 , alif Un,yusho B0 2,11 176 # ayn fa#il B1 1,153 177 » slash l—lowercase rozbi» B2 1,81 178 ø slash o—lowercase høj B3 1,79 179 p slash d—lowercase pavola B4 1,89 180 þ thorn—lowercase þann B5 1,37 181 æ ligature ae—lowercase skæg B6 1,167 182 œ ligature oe—lowercase œuvre B8 1,24 184 i dotless i—lowercase masali B9 4,11 185 £ British pound £5.00 BA 1,87 186 ð eth verður C3 4,23 195 © copyright mark ©1993 C5 4,8 197 ¿ inverted question mark ¿Que C6 4,7 198 ¡ inverted exclamation mark ¡Esta CF 1,23 207 ß Ess Zed Preußen",
+      "formal_name": "WEB",
+      "spec": {
+        "edition": "GEDCOM 5.5.1",
+        "section": "Appendix A",
+        "source_pdf": "ged551.pdf"
+      },
+      "tag": "WWW"
+    }
+  }
+}

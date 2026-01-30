@@ -1,28 +1,10 @@
-import yaml
-from pathlib import Path
+import os
 
-CONFIG_PATH = Path(__file__).resolve().parents[2] / "config" / "gedcom_parser.yml"
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
-class GPConfig:
-    def __init__(self, data):
-        self.paths = data.get("paths", {})
-        self.pipeline = data.get("pipeline", {})
-        self.logging = data.get("logging", {})
-        self.debug = data.get("debug", False)
-
-def load_config() -> 'GPConfig':
-    if not CONFIG_PATH.exists():
-        raise FileNotFoundError(f"Config file not found: {CONFIG_PATH}")
-
-    with open(CONFIG_PATH, "r", encoding="utf-8") as f:
-        data = yaml.safe_load(f) or {}
-
-    return GPConfig(data)
-
-_config_cache = None
-
-def get_config() -> 'GPConfig':
-    global _config_cache
-    if _config_cache is None:
-        _config_cache = load_config()
-    return _config_cache
+DEFAULTS = {
+    "canonical_tag_dict": os.path.join(BASE_DIR, "../../datasets/gedcom/canonical/canonical_tag_dictionary_gedcom551.patched.json"),
+    "grammar_placements": os.path.join(BASE_DIR, "../../datasets/gedcom/canonical/canonical_grammar_placements_gedcom551.backbone.plus_seeds.plus_ancestry_ext.json"),
+    "raw_lines_dir": os.path.join(BASE_DIR, "../../outputs/raw_capture/run3_ctx"),
+    "output_dir": os.path.join(BASE_DIR, "../../outputs/parsed"),
+}

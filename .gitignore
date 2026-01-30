@@ -137,6 +137,9 @@ inventory/latest/*
 datasets/gedcom/compiled/*.log
 datasets/gedcom/compiled/*.tmp
 datasets/gedcom/observed/*
+datasets/gedcom/compiled/*
+datasets/gedcom/observed/*
+current_schema.sql
 
 # ----------------------------
 # Optional: ignore large GEDCOM samples if you don't want them tracked

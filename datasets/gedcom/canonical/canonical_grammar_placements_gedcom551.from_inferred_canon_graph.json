@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "generated_at": null,
+    "inputs": {
+      "production_graph": "datasets/gedcom/canonical/canonical_production_graph_gedcom551.inferred_from_canon.json"
+    },
+    "placements_by_record_root": {
+      "TRLR": 1
+    },
+    "stats": {
+      "max_depth": 12,
+      "max_placements": 50000,
+      "placements_out": 1,
+      "record_roots": 1
+    },
+    "top_source_productions": [
+      [
+        "UNKNOWN_ROOT_PRODUCTION",
+        1
+      ]
+    ]
+  },
+  "placements": [
+    {
+      "context_path": "TRLR",
+      "expanded_from": null,
+      "level": 0,
+      "max": 1,
+      "min": 1,
+      "parent_path": null,
+      "record_root": "TRLR",
+      "source_production": "UNKNOWN_ROOT_PRODUCTION",
+      "tag": "TRLR"
+    }
+  ]
+}

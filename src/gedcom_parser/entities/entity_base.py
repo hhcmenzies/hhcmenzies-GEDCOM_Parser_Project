@@ -25,7 +25,7 @@ Design goals
 Most of the "real" logic for individuals, families, etc. remains in:
 
     - gedcom_parser.entities.extraction.*
-    - gedcom_parser.postprocess.*
+    - gedcom_parser.enrichment.*
 
 Future phases (C.24.4.10 and beyond) may:
     - introduce typed subclasses (IndividualEntity, FamilyEntity, ...),

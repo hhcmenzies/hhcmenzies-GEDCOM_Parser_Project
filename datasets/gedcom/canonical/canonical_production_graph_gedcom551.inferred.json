@@ -1,0 +1,1200 @@
+{
+  "meta": {
+    "generated_at": null,
+    "source": "inferred_from_canonical_placements"
+  },
+  "productions": {
+    "ADDRESS_STRUCTURE": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADR1"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADR2"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADR3"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CITY"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "3",
+          "min": 0,
+          "tag": "CONT"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CTRY"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "POST"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "STAE"
+        }
+      ]
+    },
+    "ASSOCIATION_STRUCTURE": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "RELA"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "CHANGE_DATE": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        }
+      ]
+    },
+    "CHILD_TO_FAMILY_LINK": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PEDI"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "STAT"
+        }
+      ]
+    },
+    "FAMILY_EVENT_STRUCTURE": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "HUSB"
+        }
+      ]
+    },
+    "FAM_RECORD": {
+      "children": [
+        {
+          "child_production": "FAMILY_EVENT_STRUCTURE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ANUL"
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CHAN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CHIL"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "HUSB"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "NCHI"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "REFN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "RESN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": "LDS_SPOUSE_SEALING",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SLGS"
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SUBM"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "WIFE"
+        }
+      ]
+    },
+    "HEADER": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "CHAR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "COPR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CORP"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "None",
+          "min": 0,
+          "tag": "DEST"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "FILE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "FORM"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "GEDC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "LANG"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "NAME"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "SUBM"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "SUBN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TIME"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "VERS"
+        }
+      ]
+    },
+    "INDIVIDUAL_ATTRIBUTE_STRUCTURE": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        }
+      ]
+    },
+    "INDIVIDUAL_EVENT_STRUCTURE": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "FAMC"
+        }
+      ]
+    },
+    "INDIVIDUAL_RECORD": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AFN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ALIA"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ANCI"
+        },
+        {
+          "child_production": "ASSOCIATION_STRUCTURE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ASSO"
+        },
+        {
+          "child_production": "LDS_INDIVIDUAL_ORDINANCE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "BAPL"
+        },
+        {
+          "child_production": "INDIVIDUAL_EVENT_STRUCTURE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "BIRT"
+        },
+        {
+          "child_production": "INDIVIDUAL_ATTRIBUTE_STRUCTURE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CAST"
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CHAN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DESI"
+        },
+        {
+          "child_production": "CHILD_TO_FAMILY_LINK",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "FAMC"
+        },
+        {
+          "child_production": "SPOUSE_TO_FAMILY_LINK",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "FAMS"
+        },
+        {
+          "child_production": "PERSONAL_NAME_STRUCTURE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NAME"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "REFN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RESN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RFN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "SEX"
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SUBM"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "LDS_INDIVIDUAL_ORDINANCE": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "STAT"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TEMP"
+        }
+      ]
+    },
+    "LDS_SPOUSE_SEALING": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "STAT"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TEMP"
+        }
+      ]
+    },
+    "MULTIMEDIA_RECORD": {
+      "children": [
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CHAN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 1,
+          "tag": "FILE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "FORM"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "REFN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TITL"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "NOTE_RECORD": {
+      "children": [
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CHAN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "REFN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "PERSONAL_NAME_STRUCTURE": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "FONE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "NPFX"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ROMN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "REPOSITORY_RECORD": {
+      "children": [
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CHAN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "NAME"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "REFN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "SOURCE_CITATION": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "EVEN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "QUAY"
+        }
+      ]
+    },
+    "SOURCE_RECORD": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ABBR"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AUTH"
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CHAN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "EVEN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PUBL"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "REFN"
+        },
+        {
+          "child_production": "SOURCE_REPOSITORY_CITATION",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "REPO"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TEXT"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TITL"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "SOURCE_REPOSITORY_CITATION": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CALN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        }
+      ]
+    },
+    "SPOUSE_TO_FAMILY_LINK": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        }
+      ]
+    },
+    "SUBMISSION_RECORD": {
+      "children": [
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ANCE"
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CHAN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DESC"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "FAMF"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ORDI"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "SUBM"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TEMP"
+        }
+      ]
+    },
+    "SUBMITTER_RECORD": {
+      "children": [
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CHAN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "3",
+          "min": 0,
+          "tag": "LANG"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "NAME"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RFN"
+        },
+        {
+          "child_production": null,
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "RIN"
+        }
+      ]
+    }
+  },
+  "record_roots": [
+    "FAM",
+    "HEAD",
+    "INDI",
+    "NOTE",
+    "OBJE",
+    "REPO",
+    "SOUR",
+    "SUBM",
+    "SUBN"
+  ],
+  "root_production_map": {
+    "FAM": "FAM_RECORD",
+    "HEAD": "HEADER",
+    "INDI": "INDIVIDUAL_RECORD",
+    "NOTE": "NOTE_RECORD",
+    "OBJE": "MULTIMEDIA_RECORD",
+    "REPO": "REPOSITORY_RECORD",
+    "SOUR": "SOURCE_RECORD",
+    "SUBM": "SUBMITTER_RECORD",
+    "SUBN": "SUBMISSION_RECORD"
+  },
+  "root_tag_map": {
+    "FAM": "FAM",
+    "HEAD": "HEAD",
+    "INDI": "INDI",
+    "NOTE": "NOTE",
+    "OBJE": "OBJE",
+    "REPO": "REPO",
+    "SOUR": "SOUR",
+    "SUBM": "SUBM",
+    "SUBN": "SUBN"
+  }
+}

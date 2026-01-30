@@ -1,0 +1,5522 @@
+{
+  "meta": {
+    "build": "prefix_graph_from_placements",
+    "generated_at": null,
+    "source": "datasets/gedcom/canonical/canonical_grammar_placements_gedcom551.full_candidate.json"
+  },
+  "productions": {
+    "FAM": {
+      "children": [
+        {
+          "child_production": "FAM.ANUL",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ANUL"
+        },
+        {
+          "child_production": "FAM.CHAN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CHAN"
+        },
+        {
+          "child_production": "FAM.CHIL",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CHIL"
+        },
+        {
+          "child_production": "FAM.DIV",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DIV"
+        },
+        {
+          "child_production": "FAM.DIVF",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DIVF"
+        },
+        {
+          "child_production": "FAM.ENGA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ENGA"
+        },
+        {
+          "child_production": "FAM.HUSB",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "HUSB"
+        },
+        {
+          "child_production": "FAM.MARR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MARR"
+        },
+        {
+          "child_production": "FAM.NCHI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NCHI"
+        },
+        {
+          "child_production": "FAM.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "FAM.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "FAM.REFN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "REFN"
+        },
+        {
+          "child_production": "FAM.RESN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "RESN"
+        },
+        {
+          "child_production": "FAM.RIN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": "FAM.SLGS",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SLGS"
+        },
+        {
+          "child_production": "FAM.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": "FAM.SUBM",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SUBM"
+        },
+        {
+          "child_production": "FAM.WIFE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "WIFE"
+        },
+        {
+          "child_production": "FAM._SEPR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_SEPR"
+        },
+        {
+          "child_production": "FAM._SREL",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_SREL"
+        }
+      ]
+    },
+    "FAM.ANUL": {
+      "children": [
+        {
+          "child_production": "FAM.ANUL.HUSB",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "HUSB"
+        }
+      ]
+    },
+    "FAM.CHAN": {
+      "children": [
+        {
+          "child_production": "FAM.CHAN.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "FAM.CHAN.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        }
+      ]
+    },
+    "FAM.CHIL": {
+      "children": [
+        {
+          "child_production": "FAM.CHIL._FREL",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_FREL"
+        },
+        {
+          "child_production": "FAM.CHIL._MREL",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_MREL"
+        }
+      ]
+    },
+    "FAM.DIV": {
+      "children": [
+        {
+          "child_production": "FAM.DIV.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "FAM.DIV.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "FAM.DIV.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "FAM.DIV.PLAC": {
+      "children": [
+        {
+          "child_production": "FAM.DIV.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "FAM.DIV.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "FAM.DIV.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "FAM.DIV.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "FAM.DIV.SOUR": {
+      "children": [
+        {
+          "child_production": "FAM.DIV.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "FAM.DIV.SOUR._HPID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_HPID"
+        },
+        {
+          "child_production": "FAM.DIV.SOUR._WPID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_WPID"
+        }
+      ]
+    },
+    "FAM.DIVF": {
+      "children": [
+        {
+          "child_production": "FAM.DIVF.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "FAM.DIVF.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "FAM.DIVF.PLAC": {
+      "children": [
+        {
+          "child_production": "FAM.DIVF.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "FAM.DIVF.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "FAM.DIVF.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "FAM.DIVF.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "FAM.ENGA": {
+      "children": [
+        {
+          "child_production": "FAM.ENGA.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "FAM.ENGA.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "FAM.ENGA.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "FAM.ENGA.PLAC": {
+      "children": [
+        {
+          "child_production": "FAM.ENGA.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "FAM.ENGA.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "FAM.ENGA.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "FAM.ENGA.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "FAM.MARR": {
+      "children": [
+        {
+          "child_production": "FAM.MARR.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "FAM.MARR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "FAM.MARR.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "FAM.MARR.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "FAM.MARR.PLAC": {
+      "children": [
+        {
+          "child_production": "FAM.MARR.PLAC.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "FAM.MARR.PLAC.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        },
+        {
+          "child_production": "FAM.MARR.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "FAM.MARR.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "FAM.MARR.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "FAM.MARR.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "FAM.MARR.SOUR": {
+      "children": [
+        {
+          "child_production": "FAM.MARR.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "FAM.MARR.SOUR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "FAM.MARR.SOUR.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "FAM.MARR.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "FAM.MARR.SOUR._HPID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_HPID"
+        },
+        {
+          "child_production": "FAM.MARR.SOUR._LINK",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_LINK"
+        },
+        {
+          "child_production": "FAM.MARR.SOUR._WPID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_WPID"
+        }
+      ]
+    },
+    "FAM.MARR.SOUR.DATA": {
+      "children": [
+        {
+          "child_production": "FAM.MARR.SOUR.DATA.TEXT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TEXT"
+        },
+        {
+          "child_production": "FAM.MARR.SOUR.DATA.WWW",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "FAM.MARR.SOUR.PAGE": {
+      "children": [
+        {
+          "child_production": "FAM.MARR.SOUR.PAGE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        }
+      ]
+    },
+    "FAM.REFN": {
+      "children": [
+        {
+          "child_production": "FAM.REFN.TYPE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "FAM.SLGS": {
+      "children": [
+        {
+          "child_production": "FAM.SLGS.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "FAM.SLGS.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "FAM.SLGS.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "FAM.SLGS.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": "FAM.SLGS.STAT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "STAT"
+        },
+        {
+          "child_production": "FAM.SLGS.TEMP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TEMP"
+        }
+      ]
+    },
+    "FAM.SOUR": {
+      "children": [
+        {
+          "child_production": "FAM.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "FAM.SOUR.EVEN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "EVEN"
+        },
+        {
+          "child_production": "FAM.SOUR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "FAM.SOUR.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "FAM.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "FAM.SOUR.QUAY",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "QUAY"
+        }
+      ]
+    },
+    "FAM._SEPR": {
+      "children": [
+        {
+          "child_production": "FAM._SEPR.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "FAM._SEPR.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "FAM._SEPR.PLAC": {
+      "children": [
+        {
+          "child_production": "FAM._SEPR.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "FAM._SEPR.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "FAM._SEPR.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "FAM._SEPR.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "HEAD": {
+      "children": [
+        {
+          "child_production": "HEAD.CHAR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CHAR"
+        },
+        {
+          "child_production": "HEAD.COPR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "COPR"
+        },
+        {
+          "child_production": "HEAD.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "HEAD.DEST",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DEST"
+        },
+        {
+          "child_production": "HEAD.FILE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "FILE"
+        },
+        {
+          "child_production": "HEAD.GEDC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "GEDC"
+        },
+        {
+          "child_production": "HEAD.LANG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LANG"
+        },
+        {
+          "child_production": "HEAD.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "HEAD.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "HEAD.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": "HEAD.SUBM",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SUBM"
+        },
+        {
+          "child_production": "HEAD.SUBN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SUBN"
+        }
+      ]
+    },
+    "HEAD.CHAR": {
+      "children": [
+        {
+          "child_production": "HEAD.CHAR.VERS",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "VERS"
+        }
+      ]
+    },
+    "HEAD.DATE": {
+      "children": [
+        {
+          "child_production": "HEAD.DATE.TIME",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TIME"
+        }
+      ]
+    },
+    "HEAD.GEDC": {
+      "children": [
+        {
+          "child_production": "HEAD.GEDC.FORM",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "FORM"
+        },
+        {
+          "child_production": "HEAD.GEDC.VERS",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "VERS"
+        }
+      ]
+    },
+    "HEAD.GEDC.FORM": {
+      "children": [
+        {
+          "child_production": "HEAD.GEDC.FORM.VERS",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "VERS"
+        }
+      ]
+    },
+    "HEAD.PLAC": {
+      "children": [
+        {
+          "child_production": "HEAD.PLAC.FORM",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "FORM"
+        }
+      ]
+    },
+    "HEAD.SOUR": {
+      "children": [
+        {
+          "child_production": "HEAD.SOUR.CORP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CORP"
+        },
+        {
+          "child_production": "HEAD.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "HEAD.SOUR.NAME",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NAME"
+        },
+        {
+          "child_production": "HEAD.SOUR.VERS",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "VERS"
+        },
+        {
+          "child_production": "HEAD.SOUR._TREE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_TREE"
+        }
+      ]
+    },
+    "HEAD.SOUR.CORP": {
+      "children": [
+        {
+          "child_production": "HEAD.SOUR.CORP.ADDR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": "HEAD.SOUR.CORP.PHON",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PHON"
+        },
+        {
+          "child_production": "HEAD.SOUR.CORP.WWW",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "HEAD.SOUR.CORP.ADDR": {
+      "children": [
+        {
+          "child_production": "HEAD.SOUR.CORP.ADDR.CITY",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CITY"
+        },
+        {
+          "child_production": "HEAD.SOUR.CORP.ADDR.CONT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONT"
+        }
+      ]
+    },
+    "HEAD.SOUR._TREE": {
+      "children": [
+        {
+          "child_production": "HEAD.SOUR._TREE.RIN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": "HEAD.SOUR._TREE._ENV",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_ENV"
+        }
+      ]
+    },
+    "INDI": {
+      "children": [
+        {
+          "child_production": "INDI.ADDR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": "INDI.ADOP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ADOP"
+        },
+        {
+          "child_production": "INDI.AFN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "AFN"
+        },
+        {
+          "child_production": "INDI.ALIA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ALIA"
+        },
+        {
+          "child_production": "INDI.ANCI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ANCI"
+        },
+        {
+          "child_production": "INDI.ASSO",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ASSO"
+        },
+        {
+          "child_production": "INDI.BAPL",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "BAPL"
+        },
+        {
+          "child_production": "INDI.BAPM",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "BAPM"
+        },
+        {
+          "child_production": "INDI.BIRT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "BIRT"
+        },
+        {
+          "child_production": "INDI.BURI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "BURI"
+        },
+        {
+          "child_production": "INDI.CAST",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CAST"
+        },
+        {
+          "child_production": "INDI.CENS",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CENS"
+        },
+        {
+          "child_production": "INDI.CHAN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CHAN"
+        },
+        {
+          "child_production": "INDI.CHR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CHR"
+        },
+        {
+          "child_production": "INDI.CHRA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CHRA"
+        },
+        {
+          "child_production": "INDI.CONF",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONF"
+        },
+        {
+          "child_production": "INDI.DEAT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DEAT"
+        },
+        {
+          "child_production": "INDI.DESI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DESI"
+        },
+        {
+          "child_production": "INDI.DIV",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DIV"
+        },
+        {
+          "child_production": "INDI.DSCR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DSCR"
+        },
+        {
+          "child_production": "INDI.EDUC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "EDUC"
+        },
+        {
+          "child_production": "INDI.EMAIL",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "EMAIL"
+        },
+        {
+          "child_production": "INDI.EMIG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "EMIG"
+        },
+        {
+          "child_production": "INDI.EVEN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "EVEN"
+        },
+        {
+          "child_production": "INDI.FACT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "FACT"
+        },
+        {
+          "child_production": "INDI.FAMC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "FAMC"
+        },
+        {
+          "child_production": "INDI.FAMS",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "FAMS"
+        },
+        {
+          "child_production": "INDI.FCOM",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "FCOM"
+        },
+        {
+          "child_production": "INDI.FONE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "FONE"
+        },
+        {
+          "child_production": "INDI.FSID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "FSID"
+        },
+        {
+          "child_production": "INDI.GIVN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "GIVN"
+        },
+        {
+          "child_production": "INDI.GRAD",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "GRAD"
+        },
+        {
+          "child_production": "INDI.IDNO",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "IDNO"
+        },
+        {
+          "child_production": "INDI.IMMI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "IMMI"
+        },
+        {
+          "child_production": "INDI.MARR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MARR"
+        },
+        {
+          "child_production": "INDI.NAME",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NAME"
+        },
+        {
+          "child_production": "INDI.NATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NATI"
+        },
+        {
+          "child_production": "INDI.NATU",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NATU"
+        },
+        {
+          "child_production": "INDI.NCHI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NCHI"
+        },
+        {
+          "child_production": "INDI.NICK",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NICK"
+        },
+        {
+          "child_production": "INDI.NMR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NMR"
+        },
+        {
+          "child_production": "INDI.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.NPFX",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NPFX"
+        },
+        {
+          "child_production": "INDI.NSFX",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NSFX"
+        },
+        {
+          "child_production": "INDI.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "INDI.OCCU",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OCCU"
+        },
+        {
+          "child_production": "INDI.PHON",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PHON"
+        },
+        {
+          "child_production": "INDI.PROB",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PROB"
+        },
+        {
+          "child_production": "INDI.PROP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PROP"
+        },
+        {
+          "child_production": "INDI.REFN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "REFN"
+        },
+        {
+          "child_production": "INDI.RELI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "RELI"
+        },
+        {
+          "child_production": "INDI.RESI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "RESI"
+        },
+        {
+          "child_production": "INDI.RESN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "RESN"
+        },
+        {
+          "child_production": "INDI.RFN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "RFN"
+        },
+        {
+          "child_production": "INDI.RIN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": "INDI.ROMN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ROMN"
+        },
+        {
+          "child_production": "INDI.SEX",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SEX"
+        },
+        {
+          "child_production": "INDI.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": "INDI.SPFX",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SPFX"
+        },
+        {
+          "child_production": "INDI.SSN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SSN"
+        },
+        {
+          "child_production": "INDI.SUBM",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SUBM"
+        },
+        {
+          "child_production": "INDI.SURN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SURN"
+        },
+        {
+          "child_production": "INDI.TITL",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TITL"
+        },
+        {
+          "child_production": "INDI.WILL",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "WILL"
+        },
+        {
+          "child_production": "INDI._DCAUSE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_DCAUSE"
+        },
+        {
+          "child_production": "INDI._EMPLOY",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_EMPLOY"
+        },
+        {
+          "child_production": "INDI._FSID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_FSID"
+        },
+        {
+          "child_production": "INDI._FUN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_FUN"
+        },
+        {
+          "child_production": "INDI._HEIG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_HEIG"
+        },
+        {
+          "child_production": "INDI._MDCL",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_MDCL"
+        },
+        {
+          "child_production": "INDI._MILT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_MILT"
+        },
+        {
+          "child_production": "INDI._MILTID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_MILTID"
+        },
+        {
+          "child_production": "INDI._MTTAG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_MTTAG"
+        },
+        {
+          "child_production": "INDI._PHOTO",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_PHOTO"
+        },
+        {
+          "child_production": "INDI._WEIG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_WEIG"
+        }
+      ]
+    },
+    "INDI.ADDR": {
+      "children": [
+        {
+          "child_production": "INDI.ADDR.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.ADDR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.ADDR.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "INDI.ADOP": {
+      "children": [
+        {
+          "child_production": "INDI.ADOP.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.ADOP.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        }
+      ]
+    },
+    "INDI.ASSO": {
+      "children": [
+        {
+          "child_production": "INDI.ASSO.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.ASSO.RELA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "RELA"
+        },
+        {
+          "child_production": "INDI.ASSO.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "INDI.BAPL": {
+      "children": [
+        {
+          "child_production": "INDI.BAPL.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.BAPL.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.BAPL.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "INDI.BAPL.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": "INDI.BAPL.STAT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "STAT"
+        },
+        {
+          "child_production": "INDI.BAPL.TEMP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TEMP"
+        }
+      ]
+    },
+    "INDI.BAPM": {
+      "children": [
+        {
+          "child_production": "INDI.BAPM.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.BAPM.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.BAPM.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "INDI.BAPM.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "INDI.BAPM.PLAC": {
+      "children": [
+        {
+          "child_production": "INDI.BAPM.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "INDI.BAPM.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "INDI.BAPM.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "INDI.BAPM.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "INDI.BAPM.SOUR": {
+      "children": [
+        {
+          "child_production": "INDI.BAPM.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "INDI.BAPM.SOUR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.BAPM.SOUR.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "INDI.BAPM.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "INDI.BAPM.SOUR._APID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_APID"
+        },
+        {
+          "child_production": "INDI.BAPM.SOUR._LINK",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_LINK"
+        }
+      ]
+    },
+    "INDI.BAPM.SOUR.DATA": {
+      "children": [
+        {
+          "child_production": "INDI.BAPM.SOUR.DATA.TEXT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TEXT"
+        },
+        {
+          "child_production": "INDI.BAPM.SOUR.DATA.WWW",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "INDI.BIRT": {
+      "children": [
+        {
+          "child_production": "INDI.BIRT.AGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "AGE"
+        },
+        {
+          "child_production": "INDI.BIRT.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        },
+        {
+          "child_production": "INDI.BIRT.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.BIRT.FAMC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "FAMC"
+        },
+        {
+          "child_production": "INDI.BIRT.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.BIRT.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "INDI.BIRT.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "INDI.BIRT.NOTE": {
+      "children": [
+        {
+          "child_production": "INDI.BIRT.NOTE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        }
+      ]
+    },
+    "INDI.BIRT.PLAC": {
+      "children": [
+        {
+          "child_production": "INDI.BIRT.PLAC.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "INDI.BIRT.PLAC.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        },
+        {
+          "child_production": "INDI.BIRT.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "INDI.BIRT.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "INDI.BIRT.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "INDI.BIRT.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "INDI.BIRT.SOUR": {
+      "children": [
+        {
+          "child_production": "INDI.BIRT.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "INDI.BIRT.SOUR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.BIRT.SOUR.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "INDI.BIRT.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "INDI.BIRT.SOUR._APID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_APID"
+        },
+        {
+          "child_production": "INDI.BIRT.SOUR._LINK",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_LINK"
+        }
+      ]
+    },
+    "INDI.BIRT.SOUR.DATA": {
+      "children": [
+        {
+          "child_production": "INDI.BIRT.SOUR.DATA.TEXT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TEXT"
+        },
+        {
+          "child_production": "INDI.BIRT.SOUR.DATA.WWW",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "INDI.BIRT.SOUR.PAGE": {
+      "children": [
+        {
+          "child_production": "INDI.BIRT.SOUR.PAGE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        }
+      ]
+    },
+    "INDI.BURI": {
+      "children": [
+        {
+          "child_production": "INDI.BURI.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.BURI.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.BURI.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "INDI.BURI.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "INDI.BURI.PLAC": {
+      "children": [
+        {
+          "child_production": "INDI.BURI.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "INDI.BURI.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "INDI.BURI.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "INDI.BURI.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "INDI.BURI.SOUR": {
+      "children": [
+        {
+          "child_production": "INDI.BURI.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "INDI.BURI.SOUR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.BURI.SOUR.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "INDI.BURI.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "INDI.BURI.SOUR._APID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_APID"
+        },
+        {
+          "child_production": "INDI.BURI.SOUR._LINK",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_LINK"
+        }
+      ]
+    },
+    "INDI.BURI.SOUR.DATA": {
+      "children": [
+        {
+          "child_production": "INDI.BURI.SOUR.DATA.TEXT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TEXT"
+        },
+        {
+          "child_production": "INDI.BURI.SOUR.DATA.WWW",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "INDI.BURI.SOUR.PAGE": {
+      "children": [
+        {
+          "child_production": "INDI.BURI.SOUR.PAGE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        }
+      ]
+    },
+    "INDI.CAST": {
+      "children": [
+        {
+          "child_production": "INDI.CAST.AGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "AGE"
+        }
+      ]
+    },
+    "INDI.CENS": {
+      "children": [
+        {
+          "child_production": "INDI.CENS.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.CENS.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "INDI.CHAN": {
+      "children": [
+        {
+          "child_production": "INDI.CHAN.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.CHAN.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        }
+      ]
+    },
+    "INDI.CHR": {
+      "children": [
+        {
+          "child_production": "INDI.CHR.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.CHR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.CHR.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "INDI.CHR.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "INDI.CHR.PLAC": {
+      "children": [
+        {
+          "child_production": "INDI.CHR.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "INDI.CHR.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "INDI.CHR.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "INDI.CHR.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "INDI.CHR.SOUR": {
+      "children": [
+        {
+          "child_production": "INDI.CHR.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "INDI.CHR.SOUR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.CHR.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "INDI.CHR.SOUR._APID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_APID"
+        },
+        {
+          "child_production": "INDI.CHR.SOUR._LINK",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_LINK"
+        }
+      ]
+    },
+    "INDI.CHR.SOUR.DATA": {
+      "children": [
+        {
+          "child_production": "INDI.CHR.SOUR.DATA.WWW",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "INDI.CHR.SOUR.PAGE": {
+      "children": [
+        {
+          "child_production": "INDI.CHR.SOUR.PAGE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        }
+      ]
+    },
+    "INDI.CHRA": {
+      "children": [
+        {
+          "child_production": "INDI.CHRA.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.CHRA.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.CHRA.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "INDI.CONF": {
+      "children": [
+        {
+          "child_production": "INDI.CONF.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.CONF.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "INDI.CONF.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "INDI.CONF.SOUR": {
+      "children": [
+        {
+          "child_production": "INDI.CONF.SOUR._APID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_APID"
+        }
+      ]
+    },
+    "INDI.DEAT": {
+      "children": [
+        {
+          "child_production": "INDI.DEAT.CAUS",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CAUS"
+        },
+        {
+          "child_production": "INDI.DEAT.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.DEAT.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.DEAT.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "INDI.DEAT.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "INDI.DEAT.NOTE": {
+      "children": [
+        {
+          "child_production": "INDI.DEAT.NOTE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        },
+        {
+          "child_production": "INDI.DEAT.NOTE.CONT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONT"
+        }
+      ]
+    },
+    "INDI.DEAT.PLAC": {
+      "children": [
+        {
+          "child_production": "INDI.DEAT.PLAC.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "INDI.DEAT.PLAC.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        },
+        {
+          "child_production": "INDI.DEAT.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "INDI.DEAT.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "INDI.DEAT.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "INDI.DEAT.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "INDI.DEAT.SOUR": {
+      "children": [
+        {
+          "child_production": "INDI.DEAT.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "INDI.DEAT.SOUR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.DEAT.SOUR.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "INDI.DEAT.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "INDI.DEAT.SOUR._APID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_APID"
+        },
+        {
+          "child_production": "INDI.DEAT.SOUR._LINK",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_LINK"
+        }
+      ]
+    },
+    "INDI.DEAT.SOUR.DATA": {
+      "children": [
+        {
+          "child_production": "INDI.DEAT.SOUR.DATA.TEXT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TEXT"
+        },
+        {
+          "child_production": "INDI.DEAT.SOUR.DATA.WWW",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "INDI.DEAT.SOUR.PAGE": {
+      "children": [
+        {
+          "child_production": "INDI.DEAT.SOUR.PAGE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        }
+      ]
+    },
+    "INDI.DIV": {
+      "children": [
+        {
+          "child_production": "INDI.DIV.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.DIV.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.DIV.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "INDI.EMIG": {
+      "children": [
+        {
+          "child_production": "INDI.EMIG.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.EMIG.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.EMIG.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "INDI.EMIG.PLAC": {
+      "children": [
+        {
+          "child_production": "INDI.EMIG.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "INDI.EMIG.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "INDI.EMIG.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "INDI.EMIG.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "INDI.EVEN": {
+      "children": [
+        {
+          "child_production": "INDI.EVEN.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        },
+        {
+          "child_production": "INDI.EVEN.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.EVEN.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.EVEN.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "INDI.EVEN.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "INDI.EVEN.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": "INDI.EVEN.TYPE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.EVEN.NOTE": {
+      "children": [
+        {
+          "child_production": "INDI.EVEN.NOTE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        }
+      ]
+    },
+    "INDI.EVEN.PLAC": {
+      "children": [
+        {
+          "child_production": "INDI.EVEN.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "INDI.EVEN.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "INDI.EVEN.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "INDI.EVEN.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "INDI.EVEN.SOUR": {
+      "children": [
+        {
+          "child_production": "INDI.EVEN.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "INDI.EVEN.SOUR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.EVEN.SOUR.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "INDI.EVEN.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "INDI.EVEN.SOUR._APID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_APID"
+        },
+        {
+          "child_production": "INDI.EVEN.SOUR._LINK",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_LINK"
+        }
+      ]
+    },
+    "INDI.EVEN.SOUR.DATA": {
+      "children": [
+        {
+          "child_production": "INDI.EVEN.SOUR.DATA.TEXT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TEXT"
+        },
+        {
+          "child_production": "INDI.EVEN.SOUR.DATA.WWW",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "INDI.EVEN.SOUR.DATA.WWW": {
+      "children": [
+        {
+          "child_production": "INDI.EVEN.SOUR.DATA.WWW.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        }
+      ]
+    },
+    "INDI.EVEN.SOUR.PAGE": {
+      "children": [
+        {
+          "child_production": "INDI.EVEN.SOUR.PAGE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        }
+      ]
+    },
+    "INDI.FACT": {
+      "children": [
+        {
+          "child_production": "INDI.FACT.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.FACT.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": "INDI.FACT.TYPE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.FACT.SOUR": {
+      "children": [
+        {
+          "child_production": "INDI.FACT.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "INDI.FACT.SOUR._APID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_APID"
+        }
+      ]
+    },
+    "INDI.FACT.SOUR.DATA": {
+      "children": [
+        {
+          "child_production": "INDI.FACT.SOUR.DATA.TEXT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TEXT"
+        },
+        {
+          "child_production": "INDI.FACT.SOUR.DATA.WWW",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "INDI.FAMC": {
+      "children": [
+        {
+          "child_production": "INDI.FAMC.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.FAMC.PEDI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PEDI"
+        },
+        {
+          "child_production": "INDI.FAMC.STAT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "STAT"
+        }
+      ]
+    },
+    "INDI.FAMS": {
+      "children": [
+        {
+          "child_production": "INDI.FAMS.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        }
+      ]
+    },
+    "INDI.FCOM": {
+      "children": [
+        {
+          "child_production": "INDI.FCOM.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        }
+      ]
+    },
+    "INDI.FSID": {
+      "children": [
+        {
+          "child_production": "INDI.FSID.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "INDI.FSID.SOUR": {
+      "children": [
+        {
+          "child_production": "INDI.FSID.SOUR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.FSID.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "INDI.FSID.SOUR._LINK",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_LINK"
+        }
+      ]
+    },
+    "INDI.GRAD": {
+      "children": [
+        {
+          "child_production": "INDI.GRAD.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.GRAD.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "INDI.IMMI": {
+      "children": [
+        {
+          "child_production": "INDI.IMMI.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.IMMI.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.IMMI.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "INDI.IMMI.PLAC": {
+      "children": [
+        {
+          "child_production": "INDI.IMMI.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "INDI.IMMI.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "INDI.IMMI.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "INDI.IMMI.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "INDI.MARR": {
+      "children": [
+        {
+          "child_production": "INDI.MARR.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.MARR.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "INDI.MARR.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "INDI.MARR.SOUR": {
+      "children": [
+        {
+          "child_production": "INDI.MARR.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "INDI.MARR.SOUR.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "INDI.MARR.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "INDI.MARR.SOUR._APID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_APID"
+        }
+      ]
+    },
+    "INDI.MARR.SOUR.DATA": {
+      "children": [
+        {
+          "child_production": "INDI.MARR.SOUR.DATA.TEXT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TEXT"
+        },
+        {
+          "child_production": "INDI.MARR.SOUR.DATA.WWW",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "INDI.MARR.SOUR.PAGE": {
+      "children": [
+        {
+          "child_production": "INDI.MARR.SOUR.PAGE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        }
+      ]
+    },
+    "INDI.NAME": {
+      "children": [
+        {
+          "child_production": "INDI.NAME.FONE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "FONE"
+        },
+        {
+          "child_production": "INDI.NAME.GIVN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "GIVN"
+        },
+        {
+          "child_production": "INDI.NAME.NPFX",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NPFX"
+        },
+        {
+          "child_production": "INDI.NAME.NSFX",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NSFX"
+        },
+        {
+          "child_production": "INDI.NAME.ROMN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ROMN"
+        },
+        {
+          "child_production": "INDI.NAME.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": "INDI.NAME.SURN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SURN"
+        },
+        {
+          "child_production": "INDI.NAME.TYPE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.NAME.SOUR": {
+      "children": [
+        {
+          "child_production": "INDI.NAME.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "INDI.NAME.SOUR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.NAME.SOUR.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "INDI.NAME.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "INDI.NAME.SOUR._APID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_APID"
+        },
+        {
+          "child_production": "INDI.NAME.SOUR._LINK",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_LINK"
+        }
+      ]
+    },
+    "INDI.NAME.SOUR.DATA": {
+      "children": [
+        {
+          "child_production": "INDI.NAME.SOUR.DATA.TEXT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TEXT"
+        },
+        {
+          "child_production": "INDI.NAME.SOUR.DATA.WWW",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "INDI.NAME.SOUR.PAGE": {
+      "children": [
+        {
+          "child_production": "INDI.NAME.SOUR.PAGE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        }
+      ]
+    },
+    "INDI.NATU": {
+      "children": [
+        {
+          "child_production": "INDI.NATU.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.NATU.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "INDI.NATU.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "INDI.NATU.SOUR": {
+      "children": [
+        {
+          "child_production": "INDI.NATU.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "INDI.NATU.SOUR._APID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_APID"
+        }
+      ]
+    },
+    "INDI.NATU.SOUR.PAGE": {
+      "children": [
+        {
+          "child_production": "INDI.NATU.SOUR.PAGE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        }
+      ]
+    },
+    "INDI.NOTE": {
+      "children": [
+        {
+          "child_production": "INDI.NOTE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        },
+        {
+          "child_production": "INDI.NOTE.CONT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONT"
+        }
+      ]
+    },
+    "INDI.OBJE": {
+      "children": [
+        {
+          "child_production": "INDI.OBJE._CROP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_CROP"
+        },
+        {
+          "child_production": "INDI.OBJE._PRIM",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_PRIM"
+        }
+      ]
+    },
+    "INDI.OBJE._CROP": {
+      "children": [
+        {
+          "child_production": "INDI.OBJE._CROP._HGHT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_HGHT"
+        },
+        {
+          "child_production": "INDI.OBJE._CROP._LEFT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_LEFT"
+        },
+        {
+          "child_production": "INDI.OBJE._CROP._TOP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_TOP"
+        },
+        {
+          "child_production": "INDI.OBJE._CROP._TYPE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_TYPE"
+        },
+        {
+          "child_production": "INDI.OBJE._CROP._WDTH",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_WDTH"
+        }
+      ]
+    },
+    "INDI.OCCU": {
+      "children": [
+        {
+          "child_production": "INDI.OCCU.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.OCCU.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "INDI.OCCU.PLAC": {
+      "children": [
+        {
+          "child_production": "INDI.OCCU.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "INDI.OCCU.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "INDI.OCCU.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "INDI.OCCU.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "INDI.PHON": {
+      "children": [
+        {
+          "child_production": "INDI.PHON.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "INDI.PHON.TYPE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.PHON.PLAC": {
+      "children": [
+        {
+          "child_production": "INDI.PHON.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "INDI.PHON.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "INDI.PHON.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "INDI.PHON.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "INDI.PROB": {
+      "children": [
+        {
+          "child_production": "INDI.PROB.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.PROB.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.PROB.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "INDI.PROB.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "INDI.PROB.PLAC": {
+      "children": [
+        {
+          "child_production": "INDI.PROB.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "INDI.PROB.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "INDI.PROB.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "INDI.PROB.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "INDI.PROB.SOUR": {
+      "children": [
+        {
+          "child_production": "INDI.PROB.SOUR.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "INDI.PROB.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "INDI.PROB.SOUR._APID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_APID"
+        }
+      ]
+    },
+    "INDI.PROP": {
+      "children": [
+        {
+          "child_production": "INDI.PROP.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "INDI.REFN": {
+      "children": [
+        {
+          "child_production": "INDI.REFN.TYPE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "INDI.RELI": {
+      "children": [
+        {
+          "child_production": "INDI.RELI.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.RELI.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "INDI.RESI": {
+      "children": [
+        {
+          "child_production": "INDI.RESI.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        },
+        {
+          "child_production": "INDI.RESI.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.RESI.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.RESI.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "INDI.RESI.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "INDI.RESI.NOTE": {
+      "children": [
+        {
+          "child_production": "INDI.RESI.NOTE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        }
+      ]
+    },
+    "INDI.RESI.PLAC": {
+      "children": [
+        {
+          "child_production": "INDI.RESI.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "INDI.RESI.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "INDI.RESI.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "INDI.RESI.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "INDI.RESI.SOUR": {
+      "children": [
+        {
+          "child_production": "INDI.RESI.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "INDI.RESI.SOUR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.RESI.SOUR.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "INDI.RESI.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "INDI.RESI.SOUR._APID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_APID"
+        },
+        {
+          "child_production": "INDI.RESI.SOUR._LINK",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_LINK"
+        }
+      ]
+    },
+    "INDI.RESI.SOUR.DATA": {
+      "children": [
+        {
+          "child_production": "INDI.RESI.SOUR.DATA.TEXT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TEXT"
+        },
+        {
+          "child_production": "INDI.RESI.SOUR.DATA.WWW",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "INDI.RESI.SOUR.PAGE": {
+      "children": [
+        {
+          "child_production": "INDI.RESI.SOUR.PAGE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        }
+      ]
+    },
+    "INDI.SEX": {
+      "children": [
+        {
+          "child_production": "INDI.SEX.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "INDI.SEX.SOUR": {
+      "children": [
+        {
+          "child_production": "INDI.SEX.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "INDI.SEX.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "INDI.SEX.SOUR._APID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_APID"
+        }
+      ]
+    },
+    "INDI.SEX.SOUR.DATA": {
+      "children": [
+        {
+          "child_production": "INDI.SEX.SOUR.DATA.TEXT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TEXT"
+        },
+        {
+          "child_production": "INDI.SEX.SOUR.DATA.WWW",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "INDI.SEX.SOUR.PAGE": {
+      "children": [
+        {
+          "child_production": "INDI.SEX.SOUR.PAGE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        }
+      ]
+    },
+    "INDI.SOUR": {
+      "children": [
+        {
+          "child_production": "INDI.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "INDI.SOUR.EVEN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "EVEN"
+        },
+        {
+          "child_production": "INDI.SOUR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.SOUR.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "INDI.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "INDI.SOUR.QUAY",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "QUAY"
+        },
+        {
+          "child_production": "INDI.SOUR._APID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_APID"
+        }
+      ]
+    },
+    "INDI.SOUR.DATA": {
+      "children": [
+        {
+          "child_production": "INDI.SOUR.DATA.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.SOUR.DATA.TEXT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TEXT"
+        },
+        {
+          "child_production": "INDI.SOUR.DATA.WWW",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "INDI.SOUR.DATA.WWW": {
+      "children": [
+        {
+          "child_production": "INDI.SOUR.DATA.WWW.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        }
+      ]
+    },
+    "INDI.SOUR.PAGE": {
+      "children": [
+        {
+          "child_production": "INDI.SOUR.PAGE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        }
+      ]
+    },
+    "INDI.SSN": {
+      "children": [
+        {
+          "child_production": "INDI.SSN.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "INDI.SSN.SOUR": {
+      "children": [
+        {
+          "child_production": "INDI.SSN.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "INDI.SSN.SOUR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.SSN.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "INDI.SSN.SOUR._APID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_APID"
+        },
+        {
+          "child_production": "INDI.SSN.SOUR._LINK",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_LINK"
+        }
+      ]
+    },
+    "INDI.SSN.SOUR.DATA": {
+      "children": [
+        {
+          "child_production": "INDI.SSN.SOUR.DATA.TEXT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TEXT"
+        },
+        {
+          "child_production": "INDI.SSN.SOUR.DATA.WWW",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "INDI.WILL": {
+      "children": [
+        {
+          "child_production": "INDI.WILL.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI.WILL.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI.WILL.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "INDI.WILL.PLAC": {
+      "children": [
+        {
+          "child_production": "INDI.WILL.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "INDI.WILL.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "INDI.WILL.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "INDI.WILL.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "INDI._DCAUSE": {
+      "children": [
+        {
+          "child_production": "INDI._DCAUSE.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI._DCAUSE.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI._DCAUSE.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "INDI._EMPLOY": {
+      "children": [
+        {
+          "child_production": "INDI._EMPLOY.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI._EMPLOY.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI._EMPLOY.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "INDI._EMPLOY.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "INDI._EMPLOY.PLAC": {
+      "children": [
+        {
+          "child_production": "INDI._EMPLOY.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "INDI._EMPLOY.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "INDI._EMPLOY.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "INDI._EMPLOY.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "INDI._EMPLOY.SOUR": {
+      "children": [
+        {
+          "child_production": "INDI._EMPLOY.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "INDI._EMPLOY.SOUR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI._EMPLOY.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "INDI._EMPLOY.SOUR._APID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_APID"
+        },
+        {
+          "child_production": "INDI._EMPLOY.SOUR._LINK",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_LINK"
+        }
+      ]
+    },
+    "INDI._EMPLOY.SOUR.DATA": {
+      "children": [
+        {
+          "child_production": "INDI._EMPLOY.SOUR.DATA.TEXT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TEXT"
+        },
+        {
+          "child_production": "INDI._EMPLOY.SOUR.DATA.WWW",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "INDI._FUN": {
+      "children": [
+        {
+          "child_production": "INDI._FUN.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI._FUN.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "INDI._FUN.PLAC": {
+      "children": [
+        {
+          "child_production": "INDI._FUN.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "INDI._FUN.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "INDI._FUN.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "INDI._FUN.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "INDI._MILT": {
+      "children": [
+        {
+          "child_production": "INDI._MILT.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI._MILT.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI._MILT.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "INDI._MILT.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "INDI._MILT.PLAC": {
+      "children": [
+        {
+          "child_production": "INDI._MILT.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "INDI._MILT.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "INDI._MILT.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "INDI._MILT.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "INDI._MILT.SOUR": {
+      "children": [
+        {
+          "child_production": "INDI._MILT.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "INDI._MILT.SOUR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "INDI._MILT.SOUR.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "INDI._MILT.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "INDI._MILT.SOUR._APID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_APID"
+        },
+        {
+          "child_production": "INDI._MILT.SOUR._LINK",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_LINK"
+        }
+      ]
+    },
+    "INDI._MILT.SOUR.DATA": {
+      "children": [
+        {
+          "child_production": "INDI._MILT.SOUR.DATA.TEXT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TEXT"
+        },
+        {
+          "child_production": "INDI._MILT.SOUR.DATA.WWW",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "WWW"
+        }
+      ]
+    },
+    "INDI._MILT.SOUR.PAGE": {
+      "children": [
+        {
+          "child_production": "INDI._MILT.SOUR.PAGE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        }
+      ]
+    },
+    "INDI._MILTID": {
+      "children": [
+        {
+          "child_production": "INDI._MILTID.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "INDI._MILTID.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "INDI._MILTID.PLAC": {
+      "children": [
+        {
+          "child_production": "INDI._MILTID.PLAC.MAP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "MAP"
+        }
+      ]
+    },
+    "INDI._MILTID.PLAC.MAP": {
+      "children": [
+        {
+          "child_production": "INDI._MILTID.PLAC.MAP.LATI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LATI"
+        },
+        {
+          "child_production": "INDI._MILTID.PLAC.MAP.LONG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LONG"
+        }
+      ]
+    },
+    "NOTE": {
+      "children": [
+        {
+          "child_production": "NOTE.CHAN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CHAN"
+        },
+        {
+          "child_production": "NOTE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        },
+        {
+          "child_production": "NOTE.REFN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "REFN"
+        },
+        {
+          "child_production": "NOTE.RIN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": "NOTE.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        }
+      ]
+    },
+    "NOTE.CHAN": {
+      "children": [
+        {
+          "child_production": "NOTE.CHAN.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "NOTE.CHAN.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        }
+      ]
+    },
+    "NOTE.REFN": {
+      "children": [
+        {
+          "child_production": "NOTE.REFN.TYPE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "NOTE.SOUR": {
+      "children": [
+        {
+          "child_production": "NOTE.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "NOTE.SOUR.EVEN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "EVEN"
+        },
+        {
+          "child_production": "NOTE.SOUR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "NOTE.SOUR.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "NOTE.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "NOTE.SOUR.QUAY",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "QUAY"
+        }
+      ]
+    },
+    "OBJE": {
+      "children": [
+        {
+          "child_production": "OBJE.CHAN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CHAN"
+        },
+        {
+          "child_production": "OBJE.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "OBJE.FILE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "FILE"
+        },
+        {
+          "child_production": "OBJE.FORM",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "FORM"
+        },
+        {
+          "child_production": "OBJE.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "OBJE.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        },
+        {
+          "child_production": "OBJE.REFN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "REFN"
+        },
+        {
+          "child_production": "OBJE.RIN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": "OBJE.SOUR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR"
+        },
+        {
+          "child_production": "OBJE.TITL",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TITL"
+        },
+        {
+          "child_production": "OBJE._ATL",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_ATL"
+        },
+        {
+          "child_production": "OBJE._CLON",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_CLON"
+        },
+        {
+          "child_production": "OBJE._CREA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_CREA"
+        },
+        {
+          "child_production": "OBJE._DSCR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_DSCR"
+        },
+        {
+          "child_production": "OBJE._META",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_META"
+        },
+        {
+          "child_production": "OBJE._MSER",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_MSER"
+        },
+        {
+          "child_production": "OBJE._OID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_OID"
+        },
+        {
+          "child_production": "OBJE._ORIG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_ORIG"
+        },
+        {
+          "child_production": "OBJE._USER",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_USER"
+        }
+      ]
+    },
+    "OBJE.CHAN": {
+      "children": [
+        {
+          "child_production": "OBJE.CHAN.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "OBJE.CHAN.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        }
+      ]
+    },
+    "OBJE.FILE": {
+      "children": [
+        {
+          "child_production": "OBJE.FILE.FORM",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "FORM"
+        },
+        {
+          "child_production": "OBJE.FILE.TITL",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TITL"
+        },
+        {
+          "child_production": "OBJE.FILE._DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_DATE"
+        },
+        {
+          "child_production": "OBJE.FILE._TEXT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_TEXT"
+        }
+      ]
+    },
+    "OBJE.FILE.FORM": {
+      "children": [
+        {
+          "child_production": "OBJE.FILE.FORM.TYPE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TYPE"
+        },
+        {
+          "child_production": "OBJE.FILE.FORM._HGHT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_HGHT"
+        },
+        {
+          "child_production": "OBJE.FILE.FORM._MTYPE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_MTYPE"
+        },
+        {
+          "child_production": "OBJE.FILE.FORM._SIZE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_SIZE"
+        },
+        {
+          "child_production": "OBJE.FILE.FORM._STYPE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_STYPE"
+        },
+        {
+          "child_production": "OBJE.FILE.FORM._WDTH",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_WDTH"
+        }
+      ]
+    },
+    "OBJE.FILE._TEXT": {
+      "children": [
+        {
+          "child_production": "OBJE.FILE._TEXT.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        }
+      ]
+    },
+    "OBJE.REFN": {
+      "children": [
+        {
+          "child_production": "OBJE.REFN.TYPE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "OBJE.SOUR": {
+      "children": [
+        {
+          "child_production": "OBJE.SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "OBJE.SOUR.EVEN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "EVEN"
+        },
+        {
+          "child_production": "OBJE.SOUR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "OBJE.SOUR.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "OBJE.SOUR.PAGE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PAGE"
+        },
+        {
+          "child_production": "OBJE.SOUR.QUAY",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "QUAY"
+        }
+      ]
+    },
+    "OBJE._CLON": {
+      "children": [
+        {
+          "child_production": "OBJE._CLON._DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_DATE"
+        },
+        {
+          "child_production": "OBJE._CLON._OID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_OID"
+        },
+        {
+          "child_production": "OBJE._CLON._PID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_PID"
+        },
+        {
+          "child_production": "OBJE._CLON._TID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_TID"
+        },
+        {
+          "child_production": "OBJE._CLON._USER",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_USER"
+        }
+      ]
+    },
+    "OBJE._CLON._USER": {
+      "children": [
+        {
+          "child_production": "OBJE._CLON._USER._ENCR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_ENCR"
+        }
+      ]
+    },
+    "OBJE._DSCR": {
+      "children": [
+        {
+          "child_production": "OBJE._DSCR.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        },
+        {
+          "child_production": "OBJE._DSCR.CONT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONT"
+        }
+      ]
+    },
+    "OBJE._META": {
+      "children": [
+        {
+          "child_production": "OBJE._META.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        },
+        {
+          "child_production": "OBJE._META.CONT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONT"
+        }
+      ]
+    },
+    "OBJE._MSER": {
+      "children": [
+        {
+          "child_production": "OBJE._MSER._LKID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_LKID"
+        },
+        {
+          "child_production": "OBJE._MSER._PARM",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_PARM"
+        }
+      ]
+    },
+    "OBJE._ORIG": {
+      "children": [
+        {
+          "child_production": "OBJE._ORIG._URL",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_URL"
+        }
+      ]
+    },
+    "OBJE._USER": {
+      "children": [
+        {
+          "child_production": "OBJE._USER._ENCR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_ENCR"
+        }
+      ]
+    },
+    "REPO": {
+      "children": [
+        {
+          "child_production": "REPO.ADDR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": "REPO.CHAN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CHAN"
+        },
+        {
+          "child_production": "REPO.EMAIL",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "EMAIL"
+        },
+        {
+          "child_production": "REPO.NAME",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NAME"
+        },
+        {
+          "child_production": "REPO.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "REPO.PHON",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PHON"
+        },
+        {
+          "child_production": "REPO.REFN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "REFN"
+        },
+        {
+          "child_production": "REPO.RIN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "RIN"
+        }
+      ]
+    },
+    "REPO.ADDR": {
+      "children": [
+        {
+          "child_production": "REPO.ADDR.ADR1",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ADR1"
+        },
+        {
+          "child_production": "REPO.ADDR.ADR2",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ADR2"
+        },
+        {
+          "child_production": "REPO.ADDR.ADR3",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ADR3"
+        },
+        {
+          "child_production": "REPO.ADDR.CITY",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CITY"
+        },
+        {
+          "child_production": "REPO.ADDR.CONT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONT"
+        },
+        {
+          "child_production": "REPO.ADDR.CTRY",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CTRY"
+        },
+        {
+          "child_production": "REPO.ADDR.POST",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "POST"
+        },
+        {
+          "child_production": "REPO.ADDR.STAE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "STAE"
+        }
+      ]
+    },
+    "REPO.CHAN": {
+      "children": [
+        {
+          "child_production": "REPO.CHAN.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "REPO.CHAN.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        }
+      ]
+    },
+    "REPO.REFN": {
+      "children": [
+        {
+          "child_production": "REPO.REFN.TYPE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "SOUR": {
+      "children": [
+        {
+          "child_production": "SOUR.ABBR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ABBR"
+        },
+        {
+          "child_production": "SOUR.AUTH",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "AUTH"
+        },
+        {
+          "child_production": "SOUR.CALN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CALN"
+        },
+        {
+          "child_production": "SOUR.CHAN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CHAN"
+        },
+        {
+          "child_production": "SOUR.DATA",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATA"
+        },
+        {
+          "child_production": "SOUR.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "SOUR.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "SOUR.PUBL",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PUBL"
+        },
+        {
+          "child_production": "SOUR.REFN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "REFN"
+        },
+        {
+          "child_production": "SOUR.REPO",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "REPO"
+        },
+        {
+          "child_production": "SOUR.RIN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": "SOUR.TEXT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TEXT"
+        },
+        {
+          "child_production": "SOUR.TITL",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TITL"
+        },
+        {
+          "child_production": "SOUR._APID",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_APID"
+        }
+      ]
+    },
+    "SOUR.CHAN": {
+      "children": [
+        {
+          "child_production": "SOUR.CHAN.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "SOUR.CHAN.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        }
+      ]
+    },
+    "SOUR.DATA": {
+      "children": [
+        {
+          "child_production": "SOUR.DATA.AGNC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "AGNC"
+        },
+        {
+          "child_production": "SOUR.DATA.EVEN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "EVEN"
+        },
+        {
+          "child_production": "SOUR.DATA.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        }
+      ]
+    },
+    "SOUR.DATA.EVEN": {
+      "children": [
+        {
+          "child_production": "SOUR.DATA.EVEN.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "SOUR.DATA.EVEN.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "SOUR.NOTE": {
+      "children": [
+        {
+          "child_production": "SOUR.NOTE.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        },
+        {
+          "child_production": "SOUR.NOTE.CONT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONT"
+        }
+      ]
+    },
+    "SOUR.PUBL": {
+      "children": [
+        {
+          "child_production": "SOUR.PUBL.CONC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONC"
+        },
+        {
+          "child_production": "SOUR.PUBL.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "SOUR.PUBL.PLAC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PLAC"
+        }
+      ]
+    },
+    "SOUR.REFN": {
+      "children": [
+        {
+          "child_production": "SOUR.REFN.TYPE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TYPE"
+        }
+      ]
+    },
+    "SOUR.REPO": {
+      "children": [
+        {
+          "child_production": "SOUR.REPO.CALN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CALN"
+        },
+        {
+          "child_production": "SOUR.REPO.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        }
+      ]
+    },
+    "SUBM": {
+      "children": [
+        {
+          "child_production": "SUBM.ADDR",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ADDR"
+        },
+        {
+          "child_production": "SUBM.CHAN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CHAN"
+        },
+        {
+          "child_production": "SUBM.LANG",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "LANG"
+        },
+        {
+          "child_production": "SUBM.NAME",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NAME"
+        },
+        {
+          "child_production": "SUBM.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "SUBM.OBJE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE"
+        },
+        {
+          "child_production": "SUBM.PHON",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "PHON"
+        },
+        {
+          "child_production": "SUBM.RFN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "RFN"
+        },
+        {
+          "child_production": "SUBM.RIN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "RIN"
+        }
+      ]
+    },
+    "SUBM.ADDR": {
+      "children": [
+        {
+          "child_production": "SUBM.ADDR.ADR1",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ADR1"
+        },
+        {
+          "child_production": "SUBM.ADDR.ADR2",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ADR2"
+        },
+        {
+          "child_production": "SUBM.ADDR.ADR3",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ADR3"
+        },
+        {
+          "child_production": "SUBM.ADDR.CITY",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CITY"
+        },
+        {
+          "child_production": "SUBM.ADDR.CONT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CONT"
+        },
+        {
+          "child_production": "SUBM.ADDR.CTRY",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CTRY"
+        },
+        {
+          "child_production": "SUBM.ADDR.POST",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "POST"
+        },
+        {
+          "child_production": "SUBM.ADDR.STAE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "STAE"
+        }
+      ]
+    },
+    "SUBM.CHAN": {
+      "children": [
+        {
+          "child_production": "SUBM.CHAN.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "SUBM.CHAN.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        }
+      ]
+    },
+    "SUBN": {
+      "children": [
+        {
+          "child_production": "SUBN.ANCE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ANCE"
+        },
+        {
+          "child_production": "SUBN.CHAN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CHAN"
+        },
+        {
+          "child_production": "SUBN.DESC",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DESC"
+        },
+        {
+          "child_production": "SUBN.FAMF",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "FAMF"
+        },
+        {
+          "child_production": "SUBN.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        },
+        {
+          "child_production": "SUBN.ORDI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ORDI"
+        },
+        {
+          "child_production": "SUBN.RIN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": "SUBN.SUBM",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SUBM"
+        },
+        {
+          "child_production": "SUBN.TEMP",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "TEMP"
+        }
+      ]
+    },
+    "SUBN.CHAN": {
+      "children": [
+        {
+          "child_production": "SUBN.CHAN.DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "DATE"
+        },
+        {
+          "child_production": "SUBN.CHAN.NOTE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE"
+        }
+      ]
+    },
+    "TRLR": {
+      "children": []
+    },
+    "_MTCAT": {
+      "children": [
+        {
+          "child_production": "_MTCAT.NAME",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NAME"
+        },
+        {
+          "child_production": "_MTCAT.RIN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "RIN"
+        }
+      ]
+    },
+    "_MTTAG": {
+      "children": [
+        {
+          "child_production": "_MTTAG.NAME",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NAME"
+        },
+        {
+          "child_production": "_MTTAG.RIN",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "RIN"
+        },
+        {
+          "child_production": "_MTTAG._MTCAT",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_MTCAT"
+        },
+        {
+          "child_production": "_MTTAG._VISI",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "_VISI"
+        }
+      ]
+    }
+  },
+  "record_roots": [
+    "FAM",
+    "HEAD",
+    "INDI",
+    "NOTE",
+    "OBJE",
+    "REPO",
+    "SOUR",
+    "SUBM",
+    "SUBN",
+    "TRLR",
+    "_MTCAT",
+    "_MTTAG"
+  ],
+  "root_tag_map": {
+    "FAM": "FAM",
+    "HEAD": "HEAD",
+    "INDI": "INDI",
+    "NOTE": "NOTE",
+    "OBJE": "OBJE",
+    "REPO": "REPO",
+    "SOUR": "SOUR",
+    "SUBM": "SUBM",
+    "SUBN": "SUBN",
+    "TRLR": "TRLR",
+    "_MTCAT": "_MTCAT",
+    "_MTTAG": "_MTTAG"
+  }
+}

@@ -1,0 +1,770 @@
+{
+  "meta": {
+    "generated_at": null,
+    "source": "datasets/gedcom/canonical/canonical_grammar_placements_gedcom551.json",
+    "stats": {
+      "edges_out": 70,
+      "placements_in": 197,
+      "productions_out": 9,
+      "record_roots": 1
+    }
+  },
+  "productions": {
+    "FAM_RECORD": {
+      "children": [
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATA",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "DATE",
+          "votes": {
+            "CHANGE_DATE": 1,
+            "LDS_SPOUSE_SEALING": 1
+          }
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "EVEN",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "FAMILY_EVENT_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "HUSB",
+          "votes": {
+            "FAMILY_EVENT_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE",
+          "votes": {
+            "CHANGE_DATE": 1,
+            "LDS_SPOUSE_SEALING": 1,
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PAGE",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "LDS_SPOUSE_SEALING",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC",
+          "votes": {
+            "LDS_SPOUSE_SEALING": 1
+          }
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "QUAY",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "LDS_SPOUSE_SEALING",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR",
+          "votes": {
+            "LDS_SPOUSE_SEALING": 1
+          }
+        },
+        {
+          "child_production": "LDS_SPOUSE_SEALING",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "STAT",
+          "votes": {
+            "LDS_SPOUSE_SEALING": 1
+          }
+        },
+        {
+          "child_production": "LDS_SPOUSE_SEALING",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TEMP",
+          "votes": {
+            "LDS_SPOUSE_SEALING": 1
+          }
+        }
+      ]
+    },
+    "INDIVIDUAL_RECORD": {
+      "children": [
+        {
+          "child_production": "INDIVIDUAL_EVENT_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "AGE",
+          "votes": {
+            "INDIVIDUAL_ATTRIBUTE_STRUCTURE": 1,
+            "INDIVIDUAL_EVENT_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATA",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "LDS_INDIVIDUAL_ORDINANCE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "DATE",
+          "votes": {
+            "CHANGE_DATE": 1,
+            "LDS_INDIVIDUAL_ORDINANCE": 1
+          }
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "EVEN",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "INDIVIDUAL_EVENT_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "FAMC",
+          "votes": {
+            "INDIVIDUAL_EVENT_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "PERSONAL_NAME_STRUCTURE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "FONE",
+          "votes": {
+            "PERSONAL_NAME_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "ASSOCIATION_STRUCTURE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE",
+          "votes": {
+            "ASSOCIATION_STRUCTURE": 1,
+            "CHANGE_DATE": 1,
+            "CHILD_TO_FAMILY_LINK": 1,
+            "LDS_INDIVIDUAL_ORDINANCE": 1,
+            "SOURCE_CITATION": 1,
+            "SPOUSE_TO_FAMILY_LINK": 1
+          }
+        },
+        {
+          "child_production": "PERSONAL_NAME_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "NPFX",
+          "votes": {
+            "PERSONAL_NAME_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PAGE",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "CHILD_TO_FAMILY_LINK",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PEDI",
+          "votes": {
+            "CHILD_TO_FAMILY_LINK": 1
+          }
+        },
+        {
+          "child_production": "LDS_INDIVIDUAL_ORDINANCE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PLAC",
+          "votes": {
+            "LDS_INDIVIDUAL_ORDINANCE": 1
+          }
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "QUAY",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "ASSOCIATION_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "RELA",
+          "votes": {
+            "ASSOCIATION_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "PERSONAL_NAME_STRUCTURE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "ROMN",
+          "votes": {
+            "PERSONAL_NAME_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "ASSOCIATION_STRUCTURE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "SOUR",
+          "votes": {
+            "ASSOCIATION_STRUCTURE": 1,
+            "LDS_INDIVIDUAL_ORDINANCE": 1
+          }
+        },
+        {
+          "child_production": "LDS_INDIVIDUAL_ORDINANCE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "STAT",
+          "votes": {
+            "CHILD_TO_FAMILY_LINK": 1,
+            "LDS_INDIVIDUAL_ORDINANCE": 1
+          }
+        },
+        {
+          "child_production": "LDS_INDIVIDUAL_ORDINANCE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TEMP",
+          "votes": {
+            "LDS_INDIVIDUAL_ORDINANCE": 1
+          }
+        },
+        {
+          "child_production": "PERSONAL_NAME_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "TYPE",
+          "votes": {
+            "PERSONAL_NAME_STRUCTURE": 1
+          }
+        }
+      ]
+    },
+    "MULTIMEDIA_RECORD": {
+      "children": [
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATA",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "DATE",
+          "votes": {
+            "CHANGE_DATE": 1
+          }
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "EVEN",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE",
+          "votes": {
+            "CHANGE_DATE": 1,
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PAGE",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "QUAY",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        }
+      ]
+    },
+    "NOTE_RECORD": {
+      "children": [
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "DATA",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "DATE",
+          "votes": {
+            "CHANGE_DATE": 1
+          }
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "EVEN",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE",
+          "votes": {
+            "CHANGE_DATE": 1,
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "OBJE",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "PAGE",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        },
+        {
+          "child_production": "SOURCE_CITATION",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "QUAY",
+          "votes": {
+            "SOURCE_CITATION": 1
+          }
+        }
+      ]
+    },
+    "REPOSITORY_RECORD": {
+      "children": [
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADR1",
+          "votes": {
+            "ADDRESS_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADR2",
+          "votes": {
+            "ADDRESS_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADR3",
+          "votes": {
+            "ADDRESS_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CITY",
+          "votes": {
+            "ADDRESS_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "3",
+          "min": 0,
+          "tag": "CONT",
+          "votes": {
+            "ADDRESS_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CTRY",
+          "votes": {
+            "ADDRESS_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "DATE",
+          "votes": {
+            "CHANGE_DATE": 1
+          }
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE",
+          "votes": {
+            "CHANGE_DATE": 1
+          }
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "POST",
+          "votes": {
+            "ADDRESS_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "STAE",
+          "votes": {
+            "ADDRESS_STRUCTURE": 1
+          }
+        }
+      ]
+    },
+    "SOURCE_RECORD": {
+      "children": [
+        {
+          "child_production": "SOURCE_REPOSITORY_CITATION",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "CALN",
+          "votes": {
+            "SOURCE_REPOSITORY_CITATION": 1
+          }
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "DATE",
+          "votes": {
+            "CHANGE_DATE": 1
+          }
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE",
+          "votes": {
+            "CHANGE_DATE": 1,
+            "SOURCE_REPOSITORY_CITATION": 1
+          }
+        }
+      ]
+    },
+    "SUBMISSION_RECORD": {
+      "children": [
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "DATE",
+          "votes": {
+            "CHANGE_DATE": 1
+          }
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE",
+          "votes": {
+            "CHANGE_DATE": 1
+          }
+        }
+      ]
+    },
+    "SUBMITTER_RECORD": {
+      "children": [
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADR1",
+          "votes": {
+            "ADDRESS_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADR2",
+          "votes": {
+            "ADDRESS_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "ADR3",
+          "votes": {
+            "ADDRESS_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CITY",
+          "votes": {
+            "ADDRESS_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "3",
+          "min": 0,
+          "tag": "CONT",
+          "votes": {
+            "ADDRESS_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "CTRY",
+          "votes": {
+            "ADDRESS_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 1,
+          "tag": "DATE",
+          "votes": {
+            "CHANGE_DATE": 1
+          }
+        },
+        {
+          "child_production": "CHANGE_DATE",
+          "level_delta": 1,
+          "max": "M",
+          "min": 0,
+          "tag": "NOTE",
+          "votes": {
+            "CHANGE_DATE": 1
+          }
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "POST",
+          "votes": {
+            "ADDRESS_STRUCTURE": 1
+          }
+        },
+        {
+          "child_production": "ADDRESS_STRUCTURE",
+          "level_delta": 1,
+          "max": "1",
+          "min": 0,
+          "tag": "STAE",
+          "votes": {
+            "ADDRESS_STRUCTURE": 1
+          }
+        }
+      ]
+    },
+    "TRLR": {
+      "children": []
+    }
+  },
+  "record_roots": [
+    "TRLR"
+  ],
+  "root_tag_map": {
+    "TRLR": "TRLR"
+  }
+}

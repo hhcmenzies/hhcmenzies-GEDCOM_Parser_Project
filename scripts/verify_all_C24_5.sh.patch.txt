@@ -1,11 +1,11 @@
 # --- Add after xref_resolver stage ---
 echo "[3] Running place_standardizer → export_standardized.json"
-python -m gedcom_parser.postprocess.place_standardizer \
+python -m gedcom_parser.enrichment.place_standardizer \
   -i "$OUTDIR/export_xref.json" \
   -o "$OUTDIR/export_standardized.json"
 
 echo "[4] Running event_disambiguator → export_events_resolved.json"
-python -m gedcom_parser.postprocess.event_disambiguator \
+python -m gedcom_parser.enrichment.event_disambiguator \
   "$OUTDIR/export_standardized.json" \
   -o "$OUTDIR/export_events_resolved.json"
 
@@ -15,12 +15,12 @@ python -m gedcom_parser.normalization.name_normalization \
   -o "$OUTDIR/export_names_normalized.json"
 
 echo "[6] Running media_normalizer → export_media_normalized.json"
-python -m gedcom_parser.postprocess.media_normalizer \
+python -m gedcom_parser.enrichment.media_normalizer \
   -i "$OUTDIR/export_names_normalized.json" \
   -o "$OUTDIR/export_media_normalized.json"
 
 echo "[7] Running place_registry_builder → export_c24_5.json"
-python -m gedcom_parser.postprocess.place_registry_builder \
+python -m gedcom_parser.enrichment.place_registry_builder \
   -i "$OUTDIR/export_media_normalized.json" \
   -o "$OUTDIR/export_c24_5.json"
 

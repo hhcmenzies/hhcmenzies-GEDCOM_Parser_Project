@@ -1,0 +1,37 @@
+sudo -u postgres psql gedcom_db
+
+Schema Structure
+
+\dt                          -- List all tables
+\d table_name                -- Describe a table’s columns and constraints
+\di                          -- List indexes
+
+
+Data Inspection
+
+SELECT * FROM gedcom_tag_definitions LIMIT 10;
+SELECT COUNT(*) FROM gedcom_tag_definitions;
+SELECT * FROM gedcom_tag_definitions WHERE in_5_5_5 IS TRUE LIMIT 10;
+SELECT * FROM gedcom_tag_definitions WHERE in_5_5_5 IS TRUE AND in_7 IS FALSE;
+
+
+Advanced Query Example: Tags only in 5.5.5 and not in 7
+
+SELECT tag FROM gedcom_tag_definitions
+WHERE in_5_5_5 IS TRUE AND in_7 IS FALSE;
+
+
+Export Schema to a SQL File (No Data)
+
+pg_dump -U postgres -d gedcom_db --schema-only -f schema/latest_gedcom_schema.sql
+
+
+To Export Both Schema and Data:
+
+pg_dump -U postgres -d gedcom_db -f dumps/full_gedcom_db_dump.sql
+
+
+Version Controlled
+
+git add schema/latest_gedcom_schema.sql
+git commit -m "Update schema after tag classification"
