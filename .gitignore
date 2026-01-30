@@ -158,3 +158,4 @@ gedcom_schema_postgresql_sanitized.sql
 # - schemas/ and datasets/gedcom/{canonical,extensions,mocks}/ remain tracked.
 # - outputs/, logs/, db files, and inventory timestamp folders stay out of git.
 ################################################################################
+reports/
