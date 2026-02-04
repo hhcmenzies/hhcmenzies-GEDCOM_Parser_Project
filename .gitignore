@@ -163,3 +163,12 @@ gedcom_schema_postgresql_sanitized.sql
 # - outputs/, logs/, db files, and inventory timestamp folders stay out of git.
 ################################################################################
 reports/
+
+# Runtime artifacts
+out/
+reports/
+inventory/
+logs/
+cache/
+temp/
+
