@@ -1,0 +1,910 @@
+﻿0 HEAD
+1 GEDC
+2 VERS 5.5.1
+2 FORM LINEAGE-LINKED
+3 VERS 5.5.1
+1 CHAR UTF-8
+1 SOUR FTM
+2 NAME Family Tree Maker for Windows
+2 VERS 24.2.2.1560
+2 CORP The Software MacKiev Company
+3 ADDR 30 Union Wharf
+4 CONT Boston, MA 02109
+3 PHON (617) 227-6681
+1 DEST FTM
+1 DATE 7 DEC 2024
+1 FILE Sample_ftm_2024_2024-12-071.ged
+1 SUBM @SUBM@
+0 @SUBM@ SUBM
+1 NAME Not Given
+0 @I85@ INDI
+1 NAME David Thomas /Menzies/
+2 SOUR @S5@
+3 PAGE Publication Place: Methuen, Massachusetts, USA; URL: https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+3 _LINK https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+3 NOTE https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+2 SOUR @S22@
+2 SOUR @S21@
+1 SEX M
+1 BIRT
+2 DATE 19 OCT 1979
+2 PLAC ,,,,,,,
+2 SOUR @S22@
+2 SOUR @S21@
+1 RESI
+2 DATE BET 2009 AND 2011
+2 PLAC Salem, Massachusetts, USA
+2 SOUR @S21@
+1 OCCU Retired Consultant
+2 DATE 19 OCT 2016
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 SSN 024-62-6977
+1 EVEN http://D2Five.com
+2 TYPE Web Address
+2 DATE 2010
+1 PHON 978-971-7699
+2 PLAC Massachusetts, USA
+3 MAP
+4 LATI N42.1562
+4 LONG W71.5662
+1 NATI American
+1 _MILTID 024-62-6977
+2 DATE 24 JUN 2017
+2 PLAC North Andover, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.6987
+4 LONG W71.1351
+1 _MILT
+2 DATE 2 SEP 1998
+2 PLAC Fort Campbell North, Christian, Kentucky, USA
+3 MAP
+4 LATI N36.6542
+4 LONG W87.4605
+1 _HEIG 5'10"
+1 _WEIG 187
+1 GRAD
+2 DATE 29 AUG 1998
+1 _EMPLOY Boston City Hall
+2 DATE 30 MAY 2006
+2 PLAC Boston, Suffolk, Massachusetts, USA
+3 MAP
+4 LATI N42.3583
+4 LONG W71.0603
+1 EMAIL david@d2five.com
+1 CHR
+2 DATE 19 OCT 1999
+1 CHRA River of Jordon
+2 DATE 19 OCT 1999
+2 PLAC Palistine
+1 NAME David Thomas /Menzies/
+2 SOUR @S5@
+3 PAGE Publication Place: Methuen, Massachusetts, USA; URL: https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+3 _LINK https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+3 NOTE https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+2 SOUR @S22@
+2 SOUR @S21@
+1 NAME David Thomas /Menzies/
+2 SOUR @S5@
+3 PAGE Publication Place: Methuen, Massachusetts, USA; URL: https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+3 _LINK https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+3 NOTE https://www.pollardfuneralhome.com/obituaries/Norman-Menzies/Obituary/
+2 SOUR @S22@
+2 SOUR @S21@
+1 BIRT
+2 DATE 19 OCT 1979
+2 PLAC ,,,,,,,
+2 SOUR @S22@
+2 SOUR @S21@
+1 RESI
+2 DATE BET 2009 AND 2011
+2 PLAC Salem, Massachusetts, USA
+2 SOUR @S21@
+1 OCCU Retired Consultant
+2 DATE 19 OCT 2016
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 SSN 024-62-6977
+1 EVEN http://D2Five.com
+2 TYPE Web Address
+2 DATE 2010
+1 PHON 978-971-7699
+2 PLAC Massachusetts, USA
+3 MAP
+4 LATI N42.1562
+4 LONG W71.5662
+1 NATI American
+1 _MILTID 024-62-6977
+2 DATE 24 JUN 2017
+2 PLAC North Andover, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.6987
+4 LONG W71.1351
+1 _MILT
+2 DATE 2 SEP 1998
+2 PLAC Fort Campbell North, Christian, Kentucky, USA
+3 MAP
+4 LATI N36.6542
+4 LONG W87.4605
+1 _HEIG 5'10"
+1 _WEIG 187
+1 GRAD
+2 DATE 29 AUG 1998
+1 _EMPLOY Boston City Hall
+2 DATE 30 MAY 2006
+2 PLAC Boston, Suffolk, Massachusetts, USA
+3 MAP
+4 LATI N42.3583
+4 LONG W71.0603
+1 EMAIL david@d2five.com
+1 CHR
+2 DATE 19 OCT 1999
+1 BIRT
+2 DATE 19 OCT 1979
+2 PLAC ,,,,,,,
+2 SOUR @S22@
+2 SOUR @S21@
+1 CHRA River of Jordon
+2 DATE 19 OCT 1999
+2 PLAC Palistine
+1 RESI
+2 DATE BET 2009 AND 2011
+2 PLAC Salem, Massachusetts, USA
+2 SOUR @S21@
+1 OCCU Retired Consultant
+2 DATE 19 OCT 2016
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 SSN 024-62-6977
+1 EVEN http://D2Five.com
+2 TYPE Web Address
+2 DATE 2010
+1 PHON 978-971-7699
+2 PLAC Massachusetts, USA
+3 MAP
+4 LATI N42.1562
+4 LONG W71.5662
+1 NATI American
+1 _MILTID 024-62-6977
+2 DATE 24 JUN 2017
+2 PLAC North Andover, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.6987
+4 LONG W71.1351
+1 _MILT
+2 DATE 2 SEP 1998
+2 PLAC Fort Campbell North, Christian, Kentucky, USA
+3 MAP
+4 LATI N36.6542
+4 LONG W87.4605
+1 _HEIG 5'10"
+1 _WEIG 187
+1 GRAD
+2 DATE 29 AUG 1998
+1 _EMPLOY Boston City Hall
+2 DATE 30 MAY 2006
+2 PLAC Boston, Suffolk, Massachusetts, USA
+3 MAP
+4 LATI N42.3583
+4 LONG W71.0603
+1 EMAIL david@d2five.com
+1 CHR
+2 DATE 19 OCT 1999
+1 CHRA River of Jordon
+2 DATE 19 OCT 1999
+2 PLAC Palistine
+1 RESI
+2 DATE BET 2017 AND 2020
+2 PLAC Haverhill, Massachusetts, USA
+2 SOUR @S21@
+1 RESI
+2 PLAC Lawrence, Massachusetts, USA
+2 SOUR @S22@
+1 RESI
+2 DATE BET 2017 AND 2020
+2 PLAC Haverhill, Massachusetts, USA
+2 SOUR @S21@
+1 RESI
+2 PLAC Lawrence, Massachusetts, USA
+2 SOUR @S22@
+1 RESI
+2 DATE BET 2017 AND 2020
+2 PLAC Haverhill, Massachusetts, USA
+2 SOUR @S21@
+1 RESI
+2 PLAC Lawrence, Massachusetts, USA
+2 SOUR @S22@
+1 FAMS @F32@
+0 @I87@ INDI
+1 NAME William T /Poss/
+2 SOUR @S23@
+3 OBJE @M30@
+1 SEX M
+1 BIRT
+2 DATE 1903
+2 PLAC Georgia
+2 SOUR @S23@
+3 OBJE @M30@
+1 RESI Marital Status: Single; Relation to Head of House: Son
+2 DATE 1910
+2 PLAC Beverly Ward 2, Essex, Massachusetts, USA
+2 SOUR @S23@
+3 OBJE @M30@
+1 FAMC @F20@
+0 @I60@ INDI
+1 NAME Clarence C /Poss/
+2 SOUR @S23@
+3 OBJE @M30@
+1 SEX M
+1 BIRT
+2 DATE 1910
+2 PLAC Massachusetts
+2 SOUR @S23@
+3 OBJE @M30@
+1 RESI Marital Status: Single; Relation to Head of House: Son
+2 DATE 1910
+2 PLAC Beverly Ward 2, Essex, Massachusetts, USA
+2 SOUR @S23@
+3 OBJE @M30@
+1 FAMC @F20@
+0 @I59@ INDI
+1 NAME Charles /Poss/
+2 SOUR @S23@
+3 OBJE @M30@
+1 SEX M
+1 BIRT
+2 DATE 1908
+2 PLAC Massachusetts
+2 SOUR @S23@
+3 OBJE @M30@
+1 RESI Marital Status: Single; Relation to Head of House: Son
+2 DATE 1910
+2 PLAC Beverly Ward 2, Essex, Massachusetts, USA
+2 SOUR @S23@
+3 OBJE @M30@
+1 FAMC @F20@
+0 @I58@ INDI
+1 NAME Louisa /Poss/
+2 SOUR @S23@
+3 OBJE @M30@
+1 SEX F
+1 BIRT
+2 DATE 1906
+2 PLAC Massachusetts
+2 SOUR @S23@
+3 OBJE @M30@
+1 RESI Marital Status: Single; Relation to Head of House: Daughter
+2 DATE 1910
+2 PLAC Beverly Ward 2, Essex, Massachusetts, USA
+2 SOUR @S23@
+3 OBJE @M30@
+1 FAMC @F20@
+0 @I86@ INDI
+1 NAME Heather /Diguistino/
+2 SOUR @S29@
+3 PAGE City: Beverly; State: Massachusetts; Year(s): 2002
+2 SOUR @S30@
+3 PAGE The Boston Globe; Publication Date: 3 Dec 2009; Publication Place: Boston, Massachusetts, USA; URL: https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 _LINK https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 NOTE https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+2 SOUR @S21@
+1 SEX F
+1 BIRT
+2 DATE 7 FEB 1987
+2 PLAC Salem, Massachusetts
+2 SOUR @S21@
+1 RESI
+2 DATE BET 2010 AND 2014
+2 PLAC Salem, Massachusetts, USA
+2 SOUR @S21@
+1 NAME Heather /Diguistino/
+2 SOUR @S29@
+3 PAGE City: Beverly; State: Massachusetts; Year(s): 2002
+2 SOUR @S30@
+3 PAGE The Boston Globe; Publication Date: 3 Dec 2009; Publication Place: Boston, Massachusetts, USA; URL: https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 _LINK https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 NOTE https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+2 SOUR @S21@
+1 NAME Heather /Diguistino/
+2 SOUR @S29@
+3 PAGE City: Beverly; State: Massachusetts; Year(s): 2002
+2 SOUR @S30@
+3 PAGE The Boston Globe; Publication Date: 3 Dec 2009; Publication Place: Boston, Massachusetts, USA; URL: https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 _LINK https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 NOTE https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+2 SOUR @S21@
+1 BIRT
+2 DATE 7 FEB 1987
+2 PLAC Salem, Massachusetts
+2 SOUR @S21@
+1 RESI
+2 DATE BET 2010 AND 2014
+2 PLAC Salem, Massachusetts, USA
+2 SOUR @S21@
+1 BIRT
+2 DATE 7 FEB 1987
+2 PLAC Salem, Massachusetts
+2 SOUR @S21@
+1 RESI
+2 DATE BET 2010 AND 2014
+2 PLAC Salem, Massachusetts, USA
+2 SOUR @S21@
+1 RESI
+2 DATE BET 2013 AND 2016
+2 PLAC Haverhill, Massachusetts, USA
+2 SOUR @S21@
+1 RESI
+2 DATE BET 2015 AND 2016
+2 PLAC Danvers, Massachusetts, USA
+2 SOUR @S21@
+1 RESI
+2 DATE BET 2016 AND 2017
+2 PLAC Haverhill, Massachusetts, USA
+2 SOUR @S21@
+1 RESI
+2 DATE 3 DEC 2009
+2 PLAC Boston, Massachusetts, USA
+2 SOUR @S30@
+3 PAGE The Boston Globe; Publication Date: 3 Dec 2009; Publication Place: Boston, Massachusetts, USA; URL: https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 _LINK https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 NOTE https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+1 RESI
+2 DATE 2002
+2 PLAC Beverly, Massachusetts, USA
+2 SOUR @S29@
+3 PAGE City: Beverly; State: Massachusetts; Year(s): 2002
+1 RESI
+2 DATE BET 2013 AND 2016
+2 PLAC Haverhill, Massachusetts, USA
+2 SOUR @S21@
+1 RESI
+2 DATE BET 2015 AND 2016
+2 PLAC Danvers, Massachusetts, USA
+2 SOUR @S21@
+1 RESI
+2 DATE BET 2013 AND 2016
+2 PLAC Haverhill, Massachusetts, USA
+2 SOUR @S21@
+1 RESI
+2 DATE BET 2016 AND 2017
+2 PLAC Haverhill, Massachusetts, USA
+2 SOUR @S21@
+1 RESI
+2 DATE 3 DEC 2009
+2 PLAC Boston, Massachusetts, USA
+2 SOUR @S30@
+3 PAGE The Boston Globe; Publication Date: 3 Dec 2009; Publication Place: Boston, Massachusetts, USA; URL: https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 _LINK https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 NOTE https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+1 RESI
+2 DATE BET 2015 AND 2016
+2 PLAC Danvers, Massachusetts, USA
+2 SOUR @S21@
+1 RESI
+2 DATE 2002
+2 PLAC Beverly, Massachusetts, USA
+2 SOUR @S29@
+3 PAGE City: Beverly; State: Massachusetts; Year(s): 2002
+1 RESI
+2 DATE BET 2016 AND 2017
+2 PLAC Haverhill, Massachusetts, USA
+2 SOUR @S21@
+1 RESI
+2 DATE 3 DEC 2009
+2 PLAC Boston, Massachusetts, USA
+2 SOUR @S30@
+3 PAGE The Boston Globe; Publication Date: 3 Dec 2009; Publication Place: Boston, Massachusetts, USA; URL: https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 _LINK https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+3 NOTE https://www.newspapers.com/image/428177901/?article=d76464f2-4e66-11ed-9b1e-6e1025f9b3fe&xid=4635 &terms=Heather_Menzies
+1 RESI
+2 DATE 2002
+2 PLAC Beverly, Massachusetts, USA
+2 SOUR @S29@
+3 PAGE City: Beverly; State: Massachusetts; Year(s): 2002
+1 FAMS @F32@
+1 FAMC @F3@
+0 @I62@ INDI
+1 NAME Mary /Poss/
+2 SOUR @S23@
+3 OBJE @M30@
+1 SEX F
+1 BIRT
+2 DATE 1875
+2 PLAC Tennessee
+2 SOUR @S23@
+3 OBJE @M30@
+1 RESI Marital Status: Married; Relation to Head of House: Wife
+2 DATE 1910
+2 PLAC Beverly Ward 2, Essex, Massachusetts, USA
+2 SOUR @S23@
+3 OBJE @M30@
+1 FAMS @F20@
+0 @I61@ INDI
+1 NAME William E /Poss/
+2 SOUR @S23@
+3 OBJE @M30@
+1 SEX M
+1 BIRT
+2 DATE 1877
+2 PLAC Georgia
+2 SOUR @S23@
+3 OBJE @M30@
+1 RESI Occupation: Teamster; Marital Status: Married; Relation to Head of House: Head
+2 DATE 1910
+2 PLAC Beverly Ward 2, Essex, Massachusetts, USA
+2 SOUR @S23@
+3 OBJE @M30@
+1 FAMS @F20@
+0 @I27@ INDI
+1 NAME Elin Esther /Hjelm/
+1 SEX F
+1 BIRT
+2 DATE 16 MAR 1905
+2 PLAC Gardner, Worcester County, Massachusetts, USA
+3 MAP
+4 LATI N42.5751
+4 LONG W71.9981
+1 DEAT
+2 DATE 2 NOV 1981
+2 PLAC Peabody, Essex County, Massachusetts, USA
+3 MAP
+4 LATI N42.5279
+4 LONG W70.9287
+1 NAME Elin Esther /Hjelm/
+1 NAME Elin Esther /Hjelm/
+1 BIRT
+2 DATE 16 MAR 1905
+2 PLAC Gardner, Worcester County, Massachusetts, USA
+3 MAP
+4 LATI N42.5751
+4 LONG W71.9981
+1 DEAT
+2 DATE 2 NOV 1981
+2 PLAC Peabody, Essex County, Massachusetts, USA
+3 MAP
+4 LATI N42.5279
+4 LONG W70.9287
+1 BIRT
+2 DATE 16 MAR 1905
+2 PLAC Gardner, Worcester County, Massachusetts, USA
+3 MAP
+4 LATI N42.5751
+4 LONG W71.9981
+1 DEAT
+2 DATE 2 NOV 1981
+2 PLAC Peabody, Essex County, Massachusetts, USA
+3 MAP
+4 LATI N42.5279
+4 LONG W70.9287
+1 _PHOTO @M9@
+1 OBJE @M9@
+1 FAMS @F10@
+0 @I25@ INDI
+1 NAME Paul Wesley /Poss/
+2 SOUR @S23@
+3 PAGE Year: 1910; Census Place: Beverly Ward 2, Essex, Massachusetts; Roll: T624_581; Page: 14b; Enumeration District: 0269; FHL microfilm: 1374594
+3 OBJE @M30@
+1 SEX M
+1 BIRT
+2 DATE 21 OCT 1900
+2 PLAC Georgia, USA
+3 MAP
+4 LATI N32.7583
+4 LONG W82.5583
+2 SOUR @S23@
+3 PAGE Year: 1910; Census Place: Beverly Ward 2, Essex, Massachusetts; Roll: T624_581; Page: 14b; Enumeration District: 0269; FHL microfilm: 1374594
+3 OBJE @M30@
+1 RESI Marital Status: Single; Relation to Head of House: Son
+2 DATE 1910
+2 PLAC Beverly Ward 2, Essex, Massachusetts, USA
+2 SOUR @S23@
+3 PAGE Year: 1910; Census Place: Beverly Ward 2, Essex, Massachusetts; Roll: T624_581; Page: 14b; Enumeration District: 0269; FHL microfilm: 1374594
+3 OBJE @M30@
+1 DEAT
+2 DATE SEP 1968
+2 PLAC Peabody, Essex County, Massachusetts, USA
+3 MAP
+4 LATI N42.5279
+4 LONG W70.9287
+1 NAME Paul Wesley /Poss/
+1 NAME Paul Wesley /Poss/
+1 BIRT
+2 DATE 21 OCT 1900
+2 PLAC Georgia, USA
+3 MAP
+4 LATI N32.7583
+4 LONG W82.5583
+1 DEAT
+2 DATE SEP 1968
+2 PLAC Peabody, Essex County, Massachusetts, USA
+3 MAP
+4 LATI N42.5279
+4 LONG W70.9287
+1 BIRT
+2 DATE 21 OCT 1900
+2 PLAC Georgia, USA
+3 MAP
+4 LATI N32.7583
+4 LONG W82.5583
+1 DEAT
+2 DATE SEP 1968
+2 PLAC Peabody, Essex County, Massachusetts, USA
+3 MAP
+4 LATI N42.5279
+4 LONG W70.9287
+1 FAMS @F10@
+1 FAMC @F20@
+0 @I23@ INDI
+1 NAME Francesca /Sorrenti/
+1 SEX F
+1 BIRT
+2 DATE 5 NOV 1896
+2 PLAC Faro Superiore, Messina, Sicilia, Italy
+3 MAP
+4 LATI N38.2667
+4 LONG E15.5833
+1 DEAT
+2 DATE 28 JUN 1997
+1 NAME Francesca /Sorrenti/
+1 NAME Francesca /Sorrenti/
+1 BIRT
+2 DATE 5 NOV 1896
+2 PLAC Faro Superiore, Messina, Sicilia, Italy
+3 MAP
+4 LATI N38.2667
+4 LONG E15.5833
+1 BIRT
+2 DATE 5 NOV 1896
+2 PLAC Faro Superiore, Messina, Sicilia, Italy
+3 MAP
+4 LATI N38.2667
+4 LONG E15.5833
+1 DEAT
+2 DATE 28 JUN 1997
+1 DEAT
+2 DATE 28 JUN 1997
+1 FAMS @F8@
+0 @I21@ INDI
+1 NAME Raffaelle /Digiustino/
+1 SEX M
+1 BIRT
+2 DATE 27 FEB 1888
+2 PLAC L'Aquila, Abruzzo, Italy
+3 MAP
+4 LATI N42.1966
+4 LONG E13.4843
+1 DEAT
+2 DATE 27 NOV 1983
+2 PLAC Tewksbury, Middlesex, Massachusetts, USA
+3 MAP
+4 LATI N42.6106
+4 LONG W71.2342
+1 NAME Raffaelle /Digiustino/
+1 NAME Raffaelle /Digiustino/
+1 BIRT
+2 DATE 27 FEB 1888
+2 PLAC L'Aquila, Abruzzo, Italy
+3 MAP
+4 LATI N42.1966
+4 LONG E13.4843
+1 BIRT
+2 DATE 27 FEB 1888
+2 PLAC L'Aquila, Abruzzo, Italy
+3 MAP
+4 LATI N42.1966
+4 LONG E13.4843
+1 DEAT
+2 DATE 27 NOV 1983
+2 PLAC Tewksbury, Middlesex, Massachusetts, USA
+3 MAP
+4 LATI N42.6106
+4 LONG W71.2342
+1 DEAT
+2 DATE 27 NOV 1983
+2 PLAC Tewksbury, Middlesex, Massachusetts, USA
+3 MAP
+4 LATI N42.6106
+4 LONG W71.2342
+1 FAMS @F8@
+0 @I57@ INDI
+1 NAME /Bishop/
+1 SEX M
+1 NAME /Bishop/
+1 NAME /Bishop/
+1 FAMS @F41@
+0 @I105@ INDI
+1 NAME Pauline May /Poss/
+1 SEX F
+1 BIRT
+2 DATE 8 MAY 1927
+2 PLAC Peabody, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.5279
+4 LONG W70.9287
+1 DEAT
+2 DATE 28 DEC 2010
+2 PLAC Seabrook, Rockingham, New Hampshire, USA
+3 MAP
+4 LATI N42.8948
+4 LONG W70.8712
+1 NAME Pauline May /Poss/
+1 NAME Pauline May /Poss/
+1 BIRT
+2 DATE 8 MAY 1927
+2 PLAC Peabody, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.5279
+4 LONG W70.9287
+1 DEAT
+2 DATE 28 DEC 2010
+2 PLAC Seabrook, Rockingham, New Hampshire, USA
+3 MAP
+4 LATI N42.8948
+4 LONG W70.8712
+1 BIRT
+2 DATE 8 MAY 1927
+2 PLAC Peabody, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.5279
+4 LONG W70.9287
+1 DEAT
+2 DATE 28 DEC 2010
+2 PLAC Seabrook, Rockingham, New Hampshire, USA
+3 MAP
+4 LATI N42.8948
+4 LONG W70.8712
+1 FAMS @F39@
+1 FAMC @F10@
+0 @I104@ INDI
+1 NAME John F /Digiustino/
+1 SEX M
+1 BIRT
+2 DATE 10 JAN 1919
+2 PLAC Beverly, Massachusetts
+1 DEAT
+2 DATE 8 AUG 2001
+2 PLAC Norway, Oxford, Maine, USA
+3 MAP
+4 LATI N44.214
+4 LONG W70.5448
+1 NAME John F /Digiustino/
+1 NAME John F /Digiustino/
+1 BIRT
+2 DATE 10 JAN 1919
+2 PLAC Beverly, Massachusetts
+1 DEAT
+2 DATE 8 AUG 2001
+2 PLAC Norway, Oxford, Maine, USA
+3 MAP
+4 LATI N44.214
+4 LONG W70.5448
+1 BIRT
+2 DATE 10 JAN 1919
+2 PLAC Beverly, Massachusetts
+1 DEAT
+2 DATE 8 AUG 2001
+2 PLAC Norway, Oxford, Maine, USA
+3 MAP
+4 LATI N44.214
+4 LONG W70.5448
+1 FAMS @F39@
+1 FAMC @F8@
+0 @I22@ INDI
+1 NAME Michelle Christine /Alm/
+1 SEX F
+1 BIRT
+2 DATE 1965
+1 FAMS @F3@
+1 FAMC @F41@
+0 @I13@ INDI
+1 NAME David Scott /Diguistino/
+2 SOUR @S18@
+1 SEX M
+1 DEAT
+2 PLAC Massachusetts
+2 SOUR @S18@
+1 NAME David Scott /Diguistino/
+2 SOUR @S18@
+1 NAME David Scott /Diguistino/
+2 SOUR @S18@
+1 DEAT
+2 PLAC Massachusetts
+2 SOUR @S18@
+1 DEAT
+2 PLAC Massachusetts
+2 SOUR @S18@
+1 FAMS @F3@
+1 FAMC @F39@
+0 @F32@ FAM
+1 HUSB @I85@
+1 WIFE @I86@
+1 MARR Merrimack Valley Golf Club
+2 DATE 29 AUG 2015
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+1 ENGA
+2 DATE 29 AUG 2014
+2 PLAC West Newbury, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.8015
+4 LONG W70.9898
+1 _SEPR
+2 DATE NOV 2017
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 DIV
+2 DATE 15 OCT 2018
+2 PLAC Salem, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.5195
+4 LONG W70.8967
+1 ENGA
+2 DATE 29 AUG 2014
+2 PLAC West Newbury, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.8015
+4 LONG W70.9898
+1 MARR Merrimack Valley Golf Club
+2 DATE 29 AUG 2015
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+1 _SEPR
+2 DATE NOV 2017
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 DIV
+2 DATE 15 OCT 2018
+2 PLAC Salem, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.5195
+4 LONG W70.8967
+1 ENGA
+2 DATE 29 AUG 2014
+2 PLAC West Newbury, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.8015
+4 LONG W70.9898
+1 MARR Merrimack Valley Golf Club
+2 DATE 29 AUG 2015
+2 PLAC Methuen, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7262
+4 LONG W71.1909
+1 _SEPR
+2 DATE NOV 2017
+2 PLAC Haverhill, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.7762
+4 LONG W71.0773
+1 DIV
+2 DATE 15 OCT 2018
+2 PLAC Salem, Essex, Massachusetts, USA
+3 MAP
+4 LATI N42.5195
+4 LONG W70.8967
+0 @F20@ FAM
+1 HUSB @I61@
+1 WIFE @I62@
+1 CHIL @I25@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I58@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I59@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I60@
+2 _FREL Natural
+2 _MREL Natural
+1 CHIL @I87@
+2 _FREL Natural
+2 _MREL Natural
+0 @F10@ FAM
+1 HUSB @I25@
+1 WIFE @I27@
+1 CHIL @I105@
+2 _FREL Natural
+2 _MREL Natural
+0 @F8@ FAM
+1 HUSB @I21@
+1 WIFE @I23@
+1 CHIL @I104@
+2 _FREL Natural
+2 _MREL Natural
+0 @F41@ FAM
+1 HUSB @I57@
+1 CHIL @I22@
+2 _FREL Natural
+0 @F39@ FAM
+1 HUSB @I104@
+1 WIFE @I105@
+1 CHIL @I13@
+2 _FREL Natural
+2 _MREL Natural
+0 @F3@ FAM
+1 HUSB @I13@
+1 WIFE @I22@
+1 CHIL @I86@
+2 _FREL Natural
+2 _MREL Natural
+0 @S5@ SOUR
+1 AUTH Ancestry.com
+1 TITL U.S., Cemetery and Funeral Home Collection, 1847-Current
+1 PUBL Name: Name: Name: Ancestry.com Operations Inc; Location: Lehi, UT, USA; Date: 2011;;;
+1 REPO @R1@
+1 NOTE
+2 CONC See source information provided with each entry.
+0 @S18@ SOUR
+1 AUTH Ancestry.com
+1 TITL Massachusetts, U.S., Death Index, 1970-2003
+1 PUBL Name: Name: Name: Ancestry.com Operations Inc; Location: Provo, UT, USA; Date: 2005;;;
+1 REPO @R1@
+1 NOTE
+2 CONC State of Massachusetts. <i>Massachusetts Death Index, 1970-2003</i>. Boston, MA, USA: Commonwealth of Massachusetts Department of Health Services, 2005.
+0 @S21@ SOUR
+1 AUTH Ancestry.com
+1 TITL U.S., Index to Public Records, 1994-2019
+1 PUBL Name: Name: Name: Ancestry.com Operations, Inc.; Location: Lehi, UT, USA; Date: 2020;;;
+1 REPO @R1@
+1 NOTE
+2 CONC <i>Voter Registration Lists, Public Record Filings, Historical Residential Records, and Other Household Database Listings</i>.
+0 @S22@ SOUR
+1 AUTH Ancestry.com
+1 TITL U.S., Public Records Index, 1950-1993, Volume 2
+1 PUBL Name: Name: Name: Ancestry.com Operations, Inc.; Location: Lehi, UT, USA; Date: 2010;;;
+1 REPO @R1@
+1 NOTE
+2 CONC <i>Voter Registration Lists, Public Record Filings, Historical Residential Records, and Other Household Database Listings</i>.
+0 @S23@ SOUR
+1 AUTH Ancestry.com
+1 TITL 1910 United States Federal Census
+1 PUBL Name: Ancestry.com Operations Inc; Location: Lehi, UT, USA; Date: 2006;
+1 REPO @R1@
+1 NOTE
+2 CONC Thirteenth Census of the United States, 1910 (NARA microfilm publication T624, 1,178 rolls). Records of the Bureau of the Census, Record Group 29. National Archives, Washington, D.C. For details on the contents of the film numbers, visit the follo
+2 CONC wing NARA web page: <a href="http://www.archives.gov/research/census/publications-microfilm-catalogs-census/1910/index.html" target="_blank">NARA</a>.
+0 @S29@ SOUR
+1 AUTH Ancestry.com
+1 TITL U.S., Phone and Address Directories, 1993-2002
+1 PUBL Name: Name: Name: Ancestry.com Operations Inc; Location: Lehi, UT, USA; Date: 2005;;;
+1 REPO @R1@
+1 NOTE
+2 CONC <i>1993-2002 White Pages</i>. Little Rock, AR, USA: Acxiom Corporation.
+0 @S30@ SOUR
+1 AUTH Ancestry.com
+1 TITL Massachusetts, U.S., Newspapers.com™ Stories and Events Index, 1800's-current
+1 PUBL Name: Name: Name: Ancestry.com Operations Inc; Location: Lehi, UT, USA; Date: 2022;;;
+1 REPO @R1@
+1 NOTE
+2 CONC See newspaper information provided with each entry.
+0 @R1@ REPO
+1 NAME Ancestry.com
+1 ADDR
+1 EMAIL
+1 PHON
+0 @M9@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024 Media\Esther Hjelm Poss.jpg
+2 FORM jpg
+2 TITL Esther Hjelm Poss
+2 _TEXT The Victory Cafe
+0 @M30@ OBJE
+1 FILE C:\Users\liqui\Documents\Family Tree Maker\Sample_ftm_2024 Media\1910 United States Federal Census.jpg
+2 FORM jpg
+2 TITL 1910 United States Federal Census
+2 _TEXT Year: 1910; Census Place: Beverly Ward 2, Essex, Massachusetts; Roll: T624_581; Page: 14b; Enumeration District: 0269; FHL microfilm: 1374594
+0 TRLR

@@ -1,0 +1,144 @@
+0 HEAD
+1 SOUR MockGenerator
+2 VERS 5.5.5
+1 GEDC
+2 VERS 5.5.5
+2 FORM LINEAGE-LINKED
+1 CHAR UTF-8
+1 DATE 13 DEC 2024
+1 SUBM @SUB1@
+0 @SUB1@ SUBM
+1 NAME Mock Submitter
+
+0 @I1@ INDI
+1 NAME John /Doe/
+2 GIVN John
+2 SURN Doe
+2 NPFX Mr.
+2 NSFX Jr.
+1 SEX M
+1 BIRT
+2 DATE 15 MAR 1980
+2 PLAC New York, New York, USA
+3 LATI 40.7128N
+3 LONG 74.0060W
+1 DEAT
+2 DATE 20 JUN 2050
+2 PLAC San Francisco, California, USA
+3 LATI 37.7749N
+3 LONG 122.4194W
+1 FAMS @F1@
+
+0 @I2@ INDI
+1 NAME Jane /Smith/
+2 GIVN Jane
+2 SURN Smith
+1 SEX F
+1 BIRT
+2 DATE 22 JUL 1985
+2 PLAC Boston, Massachusetts, USA
+3 LATI 42.3601N
+3 LONG 71.0589W
+1 FAMS @F1@
+
+0 @F1@ FAM
+1 HUSB @I1@
+1 WIFE @I2@
+1 MARR
+2 DATE 14 FEB 2010
+2 PLAC Miami, Florida, USA
+3 LATI 25.7617N
+3 LONG 80.1918W
+1 CHIL @I3@
+1 CHIL @I4@
+
+0 @I3@ INDI
+1 NAME Emily /Doe/
+2 GIVN Emily
+2 SURN Doe
+1 SEX F
+1 BIRT
+2 DATE 30 SEP 2012
+2 PLAC Dallas, Texas, USA
+3 LATI 32.7767N
+3 LONG 96.7970W
+
+0 @I4@ INDI
+1 NAME Michael /Doe/
+2 GIVN Michael
+2 SURN Doe
+1 SEX M
+1 BIRT
+2 DATE 15 DEC 2015
+2 PLAC Austin, Texas, USA
+3 LATI 30.2672N
+3 LONG 97.7431W
+
+0 @I5@ INDI
+1 NAME Robert /Brown/
+2 GIVN Robert
+2 SURN Brown
+1 SEX M
+1 BIRT
+2 DATE 12 MAY 1970
+2 PLAC Denver, Colorado, USA
+3 LATI 39.7392N
+3 LONG 104.9903W
+1 DEAT
+2 DATE 5 APR 2040
+2 PLAC Chicago, Illinois, USA
+3 LATI 41.8781N
+3 LONG 87.6298W
+1 FAMS @F2@
+
+0 @I6@ INDI
+1 NAME Sarah /Johnson/
+2 GIVN Sarah
+2 SURN Johnson
+1 SEX F
+1 BIRT
+2 DATE 28 NOV 1975
+2 PLAC Seattle, Washington, USA
+3 LATI 47.6062N
+3 LONG 122.3321W
+1 FAMS @F2@
+
+0 @F2@ FAM
+1 HUSB @I5@
+1 WIFE @I6@
+1 MARR
+2 DATE 10 JUN 1998
+2 PLAC Los Angeles, California, USA
+3 LATI 34.0522N
+3 LONG 118.2437W
+1 CHIL @I7@
+
+0 @I7@ INDI
+1 NAME Anna /Brown/
+2 GIVN Anna
+2 SURN Brown
+1 SEX F
+1 BIRT
+2 DATE 25 DEC 2000
+2 PLAC Phoenix, Arizona, USA
+3 LATI 33.4484N
+3 LONG 112.0740W
+
+... (Additional Individuals and Families to reach 40 individuals)
+
+0 @OB1@ OBJE
+1 FILE photo1.jpg
+1 TITL John Doe Family Photo
+1 FORM JPEG
+1 NOTE Picture of the Doe family vacation in 2020.
+
+0 @REPO1@ REPO
+1 NAME National Archives
+1 ADDR 700 Pennsylvania Avenue NW
+2 CITY Washington
+2 STAE DC
+2 POST 20408
+2 CTRY USA
+1 PHON +1-866-272-6272
+
+0 TRLR
