@@ -1,0 +1,8 @@
+* text=auto eol=lf
+
+# Treat binary-like assets as binary to prevent line-ending changes
+*.ged   -text
+*.pdf   -text
+*.docx  -text
+*.png   -text
+*.jsonl -text
