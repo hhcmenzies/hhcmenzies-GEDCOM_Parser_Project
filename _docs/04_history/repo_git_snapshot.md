@@ -1,0 +1,91 @@
+# Repo Git Snapshot
+
+## Branch
+- main
+
+## Working Tree (git status --porcelain)
+- A  db/sql/001_places_ingest.sql
+- AM db/sql/001_places_resolution.sql
+- A  db/sql/002_geonames_candidates.sql
+- AM db/sql/003_place_occurrence_add_run_columns.sql
+- AM db/sql/004_place_distinct.sql
+- AM db/sql/005_place_occurrence_drop_unique.sql
+- AM db/sql/006_distinct_place_status.sql
+- AM db/sql/006_refresh_distinct_places.sql
+- AM db/sql/008_geonames_candidates_hint_aware_v2.sql
+- AD docs/AI_CONTRACT.md
+-  D "docs/Computer Parts Bundles _ Micro Center.pdf"
+-  D "docs/GEDCOM Parser Project Reorganization Validation-1.pdf"
+-  D docs/database_commands
+-  D docs/misc
+-  D "mock_files/0 HEAD.ged"
+-  D "mock_files/DiGiustino Bio_2023.ged"
+-  D "mock_files/Fenton Family Tree.ged"
+-  D "mock_files/Menzies Dempsey.ged"
+-  D mock_files/gedcom.ged
+-  D mock_files/gedcom_0.ged
+-  D mock_files/gedcom_1.ged
+-  D mock_files/gedcom_18.ged
+-  D mock_files/gedcom_18_anc.ged
+-  D mock_files/gedcom_19.ged
+-  D mock_files/gedcom_2.ged
+-  D mock_files/gedcom_20.ged
+-  D mock_files/gedcom_3.ged
+-  D mock_files/gedcom_4.ged
+-  D mock_files/gedcom_5.ged
+-  D mock_files/gedcom_6.ged
+-  D mock_files/gedcom_9.ged
+-  D mock_files/head.ged
+-  D mock_files/head_ftm.ged
+-  D mock_files/mock.ged
+-  D mock_files/mock_names.ged
+-  D mock_files/utf16.ged
+-  D mock_files/utf8.ged
+-  M requirements.txt
+- AM src/extract_places.py
+- AM src/generate_candidates.py
+- AM src/load_places_csv.py
+- ?? db/geonames_us_pref.sql
+- ?? db/setup_places.sql
+- ?? db/sql/001_extensions_and_schema.sql
+- ?? db/sql/002_core_tables.sql
+- ?? db/sql/003_geonames_functions.sql
+- ?? db/sql/004_distinct_places.sql
+- ?? db/sql/005_candidates_indexes.sql
+- ?? db/sql/005_generate_candidates_for_run.sql
+- ?? db/sql/005a_candidates_by_place_hash.sql
+- ?? db/sql/005b_generate_candidates_for_run_distinct.sql
+- ?? db/sql/006_expand_candidates_to_occurrences.sql
+- ?? db/sql/007_geonames_candidates_hint_aware.sql
+- ?? docs/Examples.txt
+- ?? "docs/GEDCOM Parser Project \342\200\223 Status and Roadmap Summary.docx"
+- ?? "docs/GEDCOM Parser Project \342\200\223 Status and Roadmap Summary.pdf"
+- ?? docs/GEDCOM_Parser_Project_Conversation_Recap_and_Next_Steps.pdf
+- ?? docs/database_commands.txt
+- ?? docs/db_parameters.txt
+- ?? docs/misc.txt
+- ?? "docs/psql -U postgres -d gedcom.txt"
+- ?? "docs/psql -d gedcom -f .dbschema001_plac.txt"
+
+
+## Recent Commits (git log -n 50)
+- 3cb1637|2026-02-04 18:56:24 -0500|David Menzies|Remove runtime artifacts from repo and ignore them
+- 628fc44|2026-01-30 14:11:45 -0500|David Menzies|Add tag audit reports and sanitized schema export
+- 1f687c7|2026-01-30 14:11:35 -0500|David Menzies|Allow reports folder to be tracked
+- 4bf6717|2026-01-30 14:10:39 -0500|David Menzies|Ignore local reports directory
+- ed437f7|2026-01-30 14:07:16 -0500|David Menzies|Ignore generated tag audit reports and sanitized schema exports
+- 708735a|2026-01-30 14:04:21 -0500|David Menzies|Consolidate project structure: schemas, datasets, scripts, and enrichment pipeline
+- d9f74dc|2026-01-30 13:58:31 -0500|David Menzies|Revise .gitignore for dev artifacts, inventories, outputs, and DBs
+- 7e3ff07|2026-01-28 21:12:18 -0500|David Menzies|Update schema after tag classification
+- 1acb018|2026-01-25 11:25:36 -0500|David Menzies|Project audit: inventory + dataset/schema updates
+- 5aec36a|2026-01-02 21:02:50 -0500|David Menzies|C.24.8: place merge/split verifier (safety + invariants)
+- 9b00bf0|2025-12-31 18:37:33 -0500|David Menzies|C.24.7: place versioning, temporal semantics, schemas, OpenAPI
+- 38bd2d9|2025-12-31 15:14:32 -0500|David Menzies|C.24.7: temporal & jurisdiction place semantics (place versions + event.place_refs)
+- 10dc5cc|2025-12-28 15:31:11 -0500|David Menzies|C.24.5: lock canonical schema, strict validation, verification script
+- 36e1b52|2025-12-27 18:07:44 -0500|David Menzies|C.24.4.x complete: stable pipeline, OBJE promoted, modern schema aligned
+- bfd259c|2025-12-23 20:25:51 -0500|David Menzies|WIP: sync local changes
+- 94d4eb9|2025-12-23 20:25:18 -0500|David Menzies|Update .gitignore
+- 8a8997f|2025-12-07 17:21:32 -0500|David Menzies|Stabilized exporter system, validated full pipeline
+- 35a893d|2025-12-06 08:37:51 -0500|David Menzies|Add updated requirements.txt based on audit
+- b2ef631|2025-12-06 08:27:34 -0500|David Menzies|Add project-specific .gitignore
+- 9d8560f|2025-12-06 08:23:40 -0500|David Menzies|Initial commit of new GEDCOM_Parser_Project

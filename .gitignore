@@ -196,3 +196,6 @@ _ops/
 
 !_docs/
 !_docs/**
+# _docs/_exports contains generated bundles; do not commit by default
+_docs/_exports/*
+!_docs/_exports/.gitkeep
