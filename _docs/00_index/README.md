@@ -3,6 +3,11 @@
 This `_docs/` tree is the **only authoritative documentation** for this project.
 
 ## Start Here (End-User Entry Point)
+## Project Contract (Must Read)
+- `_docs/00_contract/PROJECT_CONTRACT.md` — binding definition of scope, principles, execution model, and non-goals
+
+All documentation, code, pipelines, and enrichment behavior must conform to this contract.
+
 - `_docs/03_state/RUNBOOK.md` — primary end-user runbook and system overview
 
 ## Documentation Map

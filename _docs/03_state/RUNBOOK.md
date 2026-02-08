@@ -1,6 +1,21 @@
 ﻿# GEDCOM Parser & Enrichment System — RUNBOOK
 
 ## 1. Purpose and Scope
+## Governing Contract
+
+This system is governed by the Project Contract:
+
+- `_docs/00_contract/PROJECT_CONTRACT.md`
+
+The contract defines:
+- scope and non-goals,
+- execution stages,
+- enrichment principles,
+- database and schema boundaries,
+- documentation authority rules.
+
+If a behavior is not permitted by the contract, it must not be implemented.
+
 ## 2. System Overview (End-to-End)
 ## 3. Supported GEDCOM Inputs and Variants
 ## 4. Normalization & Enrichment Philosophy
