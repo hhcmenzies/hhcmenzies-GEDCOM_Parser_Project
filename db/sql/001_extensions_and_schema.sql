@@ -1,0 +1,5 @@
+-- db/sql/001_extensions_and_schema.sql
+CREATE EXTENSION IF NOT EXISTS pg_trgm;
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
+
+CREATE SCHEMA IF NOT EXISTS ged;
