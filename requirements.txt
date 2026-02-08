@@ -2,9 +2,10 @@
 #
 # Keep this file lean: only packages imported by the actual pipeline/CLI/runtime.
 # (Dev-only tools like black/pytest belong in requirements-dev.txt.)
-
+rich
 PyYAML>=6.0          # config/gedcom_parser.yml support
 rich>=13.7           # rich logging used by postprocess modules
 typer>=0.12          # CLI entrypoints in src/gedcom_parser/cli
 jsonschema>=4.19     # schema validation in verify_all_*.sh scripts
 psycopg
+
