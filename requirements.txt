@@ -7,3 +7,4 @@ PyYAML>=6.0          # config/gedcom_parser.yml support
 rich>=13.7           # rich logging used by postprocess modules
 typer>=0.12          # CLI entrypoints in src/gedcom_parser/cli
 jsonschema>=4.19     # schema validation in verify_all_*.sh scripts
+psycopg

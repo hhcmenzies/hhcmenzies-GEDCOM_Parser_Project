@@ -172,3 +172,22 @@ logs/
 cache/
 temp/
 
+
+# --- Local/runtime artifacts (auto-added 2026-02-07_16-29-28) ---
+/reports/
+/ma_notables_upgrade_pack/out/
+ma_notables_upgrade_pack/out/
+/docs.zip
+docs.zip
+/_audit_repo/
+_audit_repo/
+/_audit/
+_audit/
+/_runtime/
+_runtime/
+/_docs/
+_docs/
+
+# --- Local/runtime artifacts (auto-added 2026-02-07_16-44-35) ---
+/_ops/
+_ops/
