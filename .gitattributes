@@ -1,4 +1,16 @@
 * text=auto eol=lf
+# --- Canonical text normalization for this repo ---
+* text=auto eol=lf
+
+# Common text file types
+*.py   text eol=lf
+*.sql  text eol=lf
+*.md   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.toml text eol=lf
+*.json text eol=lf
+*.txt  text eol=lf
 
 # Treat binary-like assets as binary to prevent line-ending changes
 *.ged   -text
