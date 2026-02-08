@@ -199,3 +199,5 @@ _ops/
 # _docs/_exports contains generated bundles; do not commit by default
 _docs/_exports/*
 !_docs/_exports/.gitkeep
+# Ops breadcrumbs (local-only)
+_docs/01_environment/LATEST_OPS_RUN.txt
