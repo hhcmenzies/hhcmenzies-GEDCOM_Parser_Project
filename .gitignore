@@ -1,4 +1,4 @@
-################################################################################
+﻿################################################################################
 # GEDCOM_Parser_Project - .gitignore
 # Purpose: Keep repo clean of local/dev/runtime artifacts while tracking
 #          source, schemas, datasets, docs, and scripts.
@@ -185,8 +185,6 @@ _audit_repo/
 _audit/
 /_runtime/
 _runtime/
-/_docs/
-_docs/
 
 # --- Local/runtime artifacts (auto-added 2026-02-07_16-44-35) ---
 /_ops/
@@ -195,3 +193,6 @@ _ops/
 /docs/*.pdf
 /docs/*.docx
 /docs/*.txt
+
+!_docs/
+!_docs/**
