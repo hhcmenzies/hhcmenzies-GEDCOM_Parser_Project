@@ -191,3 +191,7 @@ _docs/
 # --- Local/runtime artifacts (auto-added 2026-02-07_16-44-35) ---
 /_ops/
 _ops/
+# --- Local/legacy docs artifacts (we will migrate useful content into _docs/) ---
+/docs/*.pdf
+/docs/*.docx
+/docs/*.txt
