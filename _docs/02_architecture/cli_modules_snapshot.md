@@ -2,7 +2,7 @@
 
 _Last updated: 2026-02-09_
 
-Source git commit: 3166192
+Source git commit: b200fc3
 
 This snapshot is generated from the current source tree and CLI help output. Regenerate after any CLI change.
 
