@@ -2,7 +2,6 @@
 
 _Last updated: 2026-02-09_
 
-Source git commit: b200fc3
 
 End-user reference for the gedcom CLI.
 

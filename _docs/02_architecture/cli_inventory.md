@@ -6,7 +6,6 @@ This document is the authoritative snapshot of the current CLI surface and its m
 
 ## A) CLI help (generated)
 
-Source git commit: b200fc3
 
 ~~~
                                                                                                                                                                                                               
