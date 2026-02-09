@@ -1,12 +1,12 @@
-﻿# CLI Inventory (Current Surface)
+# CLI Inventory (Current Surface)
 
-_Last updated: 2026-02-08_
+_Last updated: 2026-02-09_
 
 This document is the authoritative snapshot of the current CLI surface and its module mapping.
 
 ## A) CLI help (generated)
 
-Source git commit: e980997
+Source git commit: 3166192
 
 ~~~
                                                                                                                                                                                                               

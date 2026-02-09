@@ -1,8 +1,8 @@
-﻿# CLI Reference (End-User)
+# CLI Reference (End-User)
 
-_Last updated: 2026-02-08_
+_Last updated: 2026-02-09_
 
-Source git commit: 12b8e6d
+Source git commit: 3166192
 
 End-user reference for the gedcom CLI.
 
