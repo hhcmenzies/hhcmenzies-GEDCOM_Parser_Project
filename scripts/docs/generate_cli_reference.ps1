@@ -21,7 +21,6 @@ $add = { param($s) [void]$lines.Add($s) }
 &$add ""
 &$add ("_Last updated: {0}_" -f $dt)
 &$add ""
-&$add ("Source git commit: {0}" -f $src)
 &$add ""
 &$add "End-user reference for the gedcom CLI."
 &$add ""

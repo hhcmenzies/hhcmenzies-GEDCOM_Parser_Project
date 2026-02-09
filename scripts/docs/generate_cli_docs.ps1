@@ -21,7 +21,6 @@ $lines.Clear()
 &$add ""
 &$add ("_Last updated: {0}_" -f $dt)
 &$add ""
-&$add ("Source git commit: {0}" -f $src)
 &$add ""
 &$add "This snapshot is generated from the current source tree and CLI help output. Regenerate after any CLI change."
 &$add ""
@@ -96,7 +95,6 @@ $invAdd = { param($s) [void]$inv.Add($s) }
 &$invAdd ""
 &$invAdd "## A) CLI help (generated)"
 &$invAdd ""
-&$invAdd ("Source git commit: {0}" -f $src)
 &$invAdd ""
 
 $help = (gedcom --help | Out-String).TrimEnd()
