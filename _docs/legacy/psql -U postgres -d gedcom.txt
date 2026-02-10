@@ -1,0 +1,6 @@
+psql -U postgres -d gedcom
+
+
+$env:GEDCOM_DB_DSN = "postgresql://postgres:icecream@localhost:5432/gedcom"
+
+$env:PGPASSWORD = Read-Host "icecream"

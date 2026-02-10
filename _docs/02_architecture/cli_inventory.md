@@ -1,6 +1,6 @@
 # CLI Inventory (Current Surface)
 
-_Last updated: 2026-02-09_
+_Last updated: 2026-02-10_
 
 This document is the authoritative snapshot of the current CLI surface and its module mapping.
 

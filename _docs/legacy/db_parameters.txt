@@ -1,0 +1,3 @@
+$env:GEDCOM_DB_DSN="postgresql://postgres:icecream@127.0.0.1:5432/gedcom"
+$env:PGPASSWORD="icecream"
+$RUN_ID="46c31f13-9398-4942-827b-337e6b26865d"

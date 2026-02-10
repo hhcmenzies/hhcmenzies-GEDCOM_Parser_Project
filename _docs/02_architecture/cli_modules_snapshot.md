@@ -1,6 +1,6 @@
 # CLI Modules & Command Surface (Generated Snapshot)
 
-_Last updated: 2026-02-09_
+_Last updated: 2026-02-10_
 
 
 This snapshot is generated from the current source tree and CLI help output. Regenerate after any CLI change.

@@ -1,42 +1,41 @@
 ﻿# Current Project Status
 
-_Last updated: 2026-02-08_
+*Last updated: 2026-02-09*
 
-## Repository State
-- Default branch: `main`
-- Working tree: clean
-- Documentation system: `_docs/` is authoritative
-- Legacy `/docs/` directory: ignored and deprecated
+## What works
 
-## Implemented and Committed
-- GEDCOM test fixtures under `tests/fixtures/gedcom/`
-- `.gitattributes` enforcing LF and binary handling
-- PostgreSQL schema and pipeline SQL scripts under `db/sql/`
-- Initial Python pipeline modules:
-  - `src/extract_places.py`
-  - `src/generate_candidates.py`
-  - `src/load_places_csv.py`
-- RUNBOOK skeleton established
+* Package installs editable: pip install -e .
+* CLI entrypoint: gedcom
+* CLI commands: doctor,
+  ersion, stats, export
+* CLI documentation generators:
 
-## Database State
-- PostgreSQL database: `gedcom`
-- GeoNames currently integrated as primary geolocation dataset
-- Schema and ingestion scripts tracked but not yet fully documented
+  * scripts/docs/generate\_cli\_docs.ps1
+  * scripts/docs/generate\_cli\_reference.ps1
+  * scripts/docs/generate\_all.ps1
 
-## Not Yet Formalized
-- CLI interface definition
-- Name (NAME) tokenization and enrichment rules
-- Full GEDCOM tag normalization matrix
-- API surface (internal or external)
-- Neo4j integration
-- TIGER / secondary geospatial layers
-- Validation and QA pipelines
+* Repo line endings governed by .gitattributes (LF normalized)
 
-## Known Constraints
-- GEDCOM exporters vary (FTM vs Ancestry)
-- NAME child tags often missing or collapsed
-- Place strings are historically inconsistent
-- Enrichment must be optional and parameter-driven
+## What does not work / pain points
 
-## Immediate Next Step
-- Formalize execution model and pipeline stages
+* Pipeline stages beyond parse/export are not implemented as CLI stages yet (ingest/normalize/enrich/validate/project)
+* Config precedence and runtime provenance/run\_id manifest not yet formalized in code + docs
+
+## Today’s goal
+
+* Produce a complete AI handoff bundle (docs + scripts + configs + inventories + design PDF)
+* Start next milestone plan: staged pipeline scaffolding + run\_id/provenance manifest
+
+## Next actions (ordered)
+
+1. Run pwsh -NoProfile -File scripts/docs/generate\_all.ps1 and confirm clean git diff for generated docs
+2. Write today’s \_docs/06\_handoff/2026-02-09.md
+3. Build handoff zip to H:\\ and attach it to the new chat
+
+## Blockers
+
+* 
+
+## Notes
+
+* \_docs/ is authoritative; /docs is deprecated and should be migrated intentionally.

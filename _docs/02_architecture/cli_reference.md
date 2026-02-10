@@ -1,6 +1,6 @@
 # CLI Reference (End-User)
 
-_Last updated: 2026-02-09_
+_Last updated: 2026-02-10_
 
 
 End-user reference for the gedcom CLI.

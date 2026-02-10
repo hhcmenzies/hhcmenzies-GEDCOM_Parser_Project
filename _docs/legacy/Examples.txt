@@ -1,0 +1,81 @@
+✅ The practical path forward (commands you should run)
+0) Make sure your MV is populated for this run
+
+If mv_distinct_places is built from base tables and should be current:
+
+$env:PGPASSWORD="icecream"
+psql -h 127.0.0.1 -U postgres -d gedcom -v ON_ERROR_STOP=1 -c "REFRESH MATERIALIZED VIEW ged.mv_distinct_places;"
+
+1) Save the script correctly (PowerShell here-string)
+
+Do not paste <PASTE ...> — paste the whole script body.
+
+Set-Content -Path .\src\generate_candidates.py -Encoding UTF8 -Value @'
+<PASTE THE FULL SCRIPT TEXT HERE>
+'@
+
+2) Reset run + clear candidates (clean start)
+$env:PGPASSWORD="icecream"
+$RUN_ID="46c31f13-9398-4942-827b-337e6b26865d"
+
+psql -h 127.0.0.1 -U postgres -d gedcom -v ON_ERROR_STOP=1 -c "
+DELETE FROM ged.place_match_candidate_place WHERE run_id='$RUN_ID';
+UPDATE ged.distinct_place_status
+SET status='new', attempted_at=NULL, last_error=NULL
+WHERE run_id='$RUN_ID';
+"
+
+3) Run a quick smoke test (2 batches)
+$env:GEDCOM_DB_DSN="postgresql://postgres:icecream@127.0.0.1:5432/gedcom"
+
+python -u .\src\generate_candidates.py `
+  --run-id $RUN_ID `
+  --batch-size 50 `
+  --per-place 10 `
+  --function geonames_candidates_hint_aware_v2 `
+  --statement-timeout-seconds 60 `
+  --max-batches 2
+
+4) Run full job
+python -u .\src\generate_candidates.py `
+  --run-id $RUN_ID `
+  --batch-size 500 `
+  --per-place 10 `
+  --function geonames_candidates_hint_aware_v2 `
+  --statement-timeout-seconds 180
+
+5) Monitor progress
+$env:PGPASSWORD="icecream"
+while ($true) {
+  psql -h 127.0.0.1 -U postgres -d gedcom -c "
+  SELECT now() AS ts,
+         count(*) FILTER (WHERE status='new')      AS new,
+         count(*) FILTER (WHERE status='working')  AS working,
+         count(*) FILTER (WHERE status='has_hits') AS has_hits,
+         count(*) FILTER (WHERE status='no_hits')  AS no_hits,
+         count(*) FILTER (WHERE status='error')    AS error,
+         count(*) AS total
+  FROM ged.distinct_place_status
+  WHERE run_id='$RUN_ID';"
+  Start-Sleep -Seconds 30
+}
+
+About “is it finished?”
+
+The version you pasted is not finished / not runnable as-is because near the end it’s clearly corrupted:
+
+It contains broken quoting like f\"Batch...
+
+It ends with stray PY"]} text
+
+That would absolutely cause syntax errors / weird behavior.
+
+Also it still had the SET application_name = %s problem you hit.
+
+The script I provided above is complete and consistent and fixes both major runtime errors you logged:
+
+syntax error at or near "$1" (application_name)
+
+cannot lock rows in materialized view "mv_distinct_places" (FOR UPDATE)
+
+If you run the smoke test (step 3) and paste the first 20 lines of output + the candidate row counts query, I’ll tell you immediately whether the function itself (..._v2) is producing results or whether it’s the SQL function that’s now the bottleneck.

@@ -201,3 +201,11 @@ _docs/_exports/*
 !_docs/_exports/.gitkeep
 # Ops breadcrumbs (local-only)
 _docs/01_environment/LATEST_OPS_RUN.txt
+# Local inventories / exports
+H_drive_inventory_files.csv
+GEDCOM_Parser_Project_inventory.csv
+project_tree.txt
+# Local notes
+_ops/notes/
+*.docx
+~$*.docx
